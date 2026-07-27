@@ -1,5 +1,5 @@
 ---
-title: Drizzleの `with` はJOINではなかった ― relational queriesが発行する実SQLを覗いてみた
+title: DrizzleのwithはJOINだと思っていたので、実際に発行されるSQLを覗いてみた
 tags:
   - Drizzle
   - TypeScript
@@ -16,14 +16,13 @@ posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
 
-## TL;DR
+個人開発2本のバックエンドをDrizzle + Cloudflare D1で運用しているのですが、relational queries(`db.query.xxx.findMany({ with: ... })`)が実際にどんなSQLになるのか、ちゃんと確かめないまま使っていました。
 
-- Drizzleのrelational queries(`db.query.xxx.findMany({ with: ... })`)は、**JOINでもN+1でもなく、相関サブクエリ + `json_array` / `json_group_array` を使った1本のSQL**に変換される(SQLite系での実測)
-- 2段ネストしても**クエリ数は1のまま**(サブクエリが入れ子になる)
-- この設計は、Cloudflare D1のような**ラウンドトリップが高くつくDB**と相性が良い
-- 実プロダクトのスキーマとカスタムloggerで実測した結果を貼りながら解説します
+JOINなのか、それともN+1になっているのか。気になったのでloggerを仕込んで実測したところ、どちらでもありませんでした。相関サブクエリと`json_group_array`を使った1本のSQLに変換されています。何段ネストしてもクエリ数は1のままです。
 
-## 「N+1になってないよね?」という不安
+この記事では実測したSQLをそのまま貼りながら、この挙動を確認していきます。
+
+## 気になっていたこと
 
 Drizzleでリレーション先を含めて取得するとき、こう書きます。
 
@@ -35,16 +34,11 @@ const members = await db.query.memberships.findMany({
 });
 ```
 
-素直に読めば「membershipsを引いてから、各行のuserを引くのかな? それともJOIN?」と思うはずです。ORMの経験則的には、この書き味は
-
-- ActiveRecord的な**遅延ロード(N+1の温床)**か
-- **JOINして行を複製し、アプリ側で組み立てる**か
-
-のどちらかを連想します。私は個人開発2本(Web+iOS)のバックエンドをDrizzle + Cloudflare D1で運用していて、この部分を「たぶん大丈夫」のまま使っていたので、実際に発行されるSQLを覗いてみました。
+ORMの経験則から、この書き味だとActiveRecord的な遅延ロード(N+1の温床)か、JOINして行を複製してアプリ側で組み立てるかのどちらかだろうと想像していました。D1はクエリ回数がそのままレイテンシに響く構造なので、もしN+1だったら結構まずい。それで重い腰を上げて確認した次第です。
 
 ## 検証方法
 
-Drizzleは `drizzle()` 初期化時にカスタムloggerを渡せます。これで発行されるSQLを全部捕まえます。
+Drizzleは`drizzle()`の初期化時にカスタムloggerを渡せます。これで発行されるSQLを全部捕まえられます。
 
 ```ts
 const queries: { query: string; params: unknown[] }[] = [];
@@ -59,9 +53,9 @@ const db = drizzle(client, {
 });
 ```
 
-スキーマは実プロダクト(サークル管理サービス)のもので、`organization` 1—多 `membership` 多—1 `user` という素直なリレーション構成です。環境は drizzle-orm 0.41 + SQLite(libsql / D1と同じSQLite方言)です。
+スキーマは運用中のサービス(サークル管理アプリ)のもので、`organization` 1対多 `membership` 多対1 `user` という素直な構成です。環境はdrizzle-orm 0.41 + SQLite(libsql)。D1と同じSQLite方言です。
 
-## 検証1: 多対1(`memberships` → `user`)
+## 検証1: 多対1(memberships → user)
 
 ```ts
 await db.query.memberships.findMany({
@@ -70,7 +64,7 @@ await db.query.memberships.findMany({
 });
 ```
 
-**発行されたクエリ数: 1**。中身はこうでした(読みやすく整形)。
+発行されたクエリ数は1。中身はこうでした(読みやすく整形しています)。
 
 ```sql
 select "id", "userId", "orgId", "role", "joinedAt",
@@ -83,9 +77,9 @@ from "membership" "memberships"
 limit ?
 ```
 
-JOINではなく、**SELECT句の中の相関サブクエリ**でした。リレーション先のuserは `json_array(...)` で**JSONの配列にシリアライズされて1カラムに詰められて**返ってきます。
+JOINではなく、SELECT句の中の相関サブクエリでした。リレーション先のuserは`json_array(...)`でJSON配列にシリアライズされて、1カラムに詰められて返ってきます。
 
-## 検証2: 1対多(`organizations` → `memberships`)
+## 検証2: 1対多(organizations → memberships)
 
 ```ts
 await db.query.organizations.findMany({
@@ -94,7 +88,7 @@ await db.query.organizations.findMany({
 });
 ```
 
-こちらも**1クエリ**。1対多では `json_group_array` が登場します。
+こちらも1クエリ。1対多では`json_group_array`が出てきます。
 
 ```sql
 select "id", "name", "genre",
@@ -108,8 +102,7 @@ from "organization" "organizations"
 limit ?
 ```
 
-- `json_group_array` はSQLiteの集約関数で、**複数行を1つのJSON配列に畳み込み**ます
-- `coalesce(..., json_array())` により、子が0件でも `null` ではなく**空配列**が返る — `rows.memberships` が常に配列である型保証はSQLレベルで作られていました
+`json_group_array`はSQLiteの集約関数で、複数行を1つのJSON配列に畳み込みます。面白いのは`coalesce(..., json_array())`の部分で、子が0件でもnullではなく空配列が返るようになっています。`rows.memberships`が常に配列であるという型の保証が、SQLレベルで作られているわけです。
 
 ## 検証3: 2段ネスト(組織 → メンバー → ユーザー)
 
@@ -120,7 +113,7 @@ await db.query.organizations.findMany({
 });
 ```
 
-これでも**クエリ数は1**。サブクエリがそのまま入れ子になります。
+これでもクエリ数は1でした。サブクエリがそのまま入れ子になります。
 
 ```sql
 select "id", "name", "genre",
@@ -138,7 +131,7 @@ from "organization" "organizations"
 limit ?
 ```
 
-## 比較: 普通の `leftJoin` はどうなるか
+## 比較: 普通のleftJoinはどうなるか
 
 ```ts
 await db.select().from(memberships)
@@ -153,32 +146,28 @@ left join "user" on "membership"."userId" = "user"."id"
 limit ?
 ```
 
-こちらは想像通りの素直なJOINです。ただしJOINは**親の行が子の数だけ複製される**ので、ネスト構造に組み立て直すのはアプリ側(または自分)の仕事になります。relational queriesはこの組み立てをJSON集約としてSQL側に押し込んでいる、と言えます。
+こちらは想像通りの素直なJOINです。ただしJOINは親の行が子の数だけ複製されるので、ネスト構造への組み立て直しはアプリ側の仕事になります。relational queriesはその組み立てをJSON集約としてSQL側に押し込んでいる、と言えます。
 
-## なぜこの設計が嬉しいのか(特にD1で)
+## D1で使う場合、この設計はかなり都合が良い
 
-この「何段ネストしても1クエリ」という性質は、**DBへのラウンドトリップが高くつく環境**で効きます。
+何段ネストしても1クエリという性質は、DBへのラウンドトリップが高くつく環境で効きます。
 
-Cloudflare D1はWorkerからバインディング越しにクエリを投げる構造上、クエリ回数がそのままレイテンシに響きます。もしrelational queriesがN+1方式だったら、メンバー20人の一覧画面で21回のラウンドトリップが発生するところ、実際には常に1回で済んでいます。「D1 × Drizzle」の組み合わせが実運用で快適な理由の一端はここにありました。
+Cloudflare D1はWorkerからバインディング越しにクエリを投げる構造上、クエリ回数がレイテンシに直結します。もしrelational queriesがN+1方式だったら、メンバー20人の一覧画面で21回のラウンドトリップが発生するところでした。実際には常に1回で済んでいます。D1とDrizzleの組み合わせが実運用で快適だった理由の一端は、たぶんここです。
 
-一方でトレードオフもあります。
+一方で気にしておくべき点もあります。
 
-- 大量の子レコードを `json_group_array` で畳むと、**1行が巨大なJSON文字列**になる(limitを子側にも効かせる設計が大事)
-- 相関サブクエリなので、**結合キー(この例では `membership.userId` / `membership.orgId`)へのインデックス**は引き続き重要
-- SQLが読みにくくなるため、スロークエリ調査時は `EXPLAIN QUERY PLAN` とセットで
+- 大量の子レコードを`json_group_array`で畳むと1行が巨大なJSON文字列になる。子側にもlimitを効かせる設計が大事
+- 相関サブクエリなので、結合キー(この例では`membership.userId`と`membership.orgId`)へのインデックスは引き続き重要
+- 生成されるSQLは読みにくいので、スロークエリを調べるときは`EXPLAIN QUERY PLAN`とセットで見る
 
-## まとめ
+## おわりに
 
-| 書き方 | クエリ数 | SQLの形 | 組み立て |
-|---|---|---|---|
-| `findMany({ with })` | 常に1 | 相関サブクエリ + json集約 | SQL側で完結 |
-| `select().leftJoin()` | 1 | 素直なJOIN(行が複製) | アプリ側で必要 |
-| (ちなみに)素朴なループで個別取得 | N+1 | — | — |
+「withはJOINの糖衣構文だろう」という思い込みは外れていて、実際はJSONを組み立てる1本のSQLへ変換するコンパイラでした。
 
-「`with` はJOINの糖衣構文だろう」という私の思い込みは外れていました。**JSONを組み立てる1本のSQLへのコンパイラ**というのが実像です。ORMの中身は、loggerを1つ挟むだけで簡単に覗けるので、「なんとなく大丈夫」で使っている部分があればぜひ実測してみてください。
+loggerを1つ挟むだけでORMの中身は簡単に覗けるので、「なんとなく大丈夫」で使っている部分がある方は一度実測してみると発見があると思います。私はありました。
 
 ## 環境
 
 - drizzle-orm 0.41 / @libsql/client(SQLite方言。Cloudflare D1も同じSQLite)
-- スキーマ・クエリは本番運用中の個人開発プロダクトのものを簡略化
-- なお生成されるSQLの形はDBの方言やdrizzleのバージョンで変わり得ます(PostgreSQLではlateral join + json系関数)。手元での実測をおすすめします
+- スキーマとクエリは運用中の個人開発プロダクトのものを簡略化
+- 生成されるSQLの形はDBの方言やdrizzleのバージョンで変わる可能性があります。PostgreSQLではlateral joinとjson系関数の組み合わせになるようです
