@@ -3,7 +3,7 @@ title: "tRPC v11でNext.jsとExpoの型を共有する。個人開発Web+iOSア�
 emoji: "🔗"
 type: "tech"
 topics: ["trpc", "nextjs", "expo", "reactnative", "typescript"]
-published: false
+published: true
 ---
 
 Web(Next.js)とiOSアプリ(Expo / React Native)の両方を持つサービスを個人開発しています。この構成で一番避けたかったのは、APIの型定義を2箇所で管理することでした。サーバーのレスポンスが変わるたびにアプリ側の型を手で直す運用は、1人開発だと確実に破綻します。
