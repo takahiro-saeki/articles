@@ -3,12 +3,12 @@ title: "node:sqliteで動いていたNext.jsアプリをCloudflare D1に移行�
 emoji: "🗄️"
 type: "tech"
 topics: ["cloudflare", "d1", "nextjs", "sqlite", "typescript"]
-published: false
+published: true
 ---
 
 ローカルで動かしていた自作のNext.jsアプリを、外出先からも使えるようにCloudflare Workersへデプロイすることにしました。問題はDBです。このアプリはNode.js標準の `node:sqlite` でローカルのSQLiteファイルに読み書きしていて、Workersのランタイムに `node:sqlite` はありません。
 
-デプロイ先をCloudflareにするなら、SQLite互換のマネージドDBであるD1がほぼ一択です。同じSQLite方言なのでSQLはそのまま流用でき、実際の移行作業は「DB層の書き換え」に集中できました。この記事はその移行の実録です。
+デプロイ先に合わせて、DBをSQLite互換のD1へ移しました。今回使っていたSQLはそのまま流用でき、作業の中心はDB層を同期APIから非同期APIへ書き換えることでした。この記事では、そのときに変更した箇所を順番に紹介します。
 
 ## 移行前の構成
 
@@ -86,7 +86,7 @@ export async function listClients(): Promise<Client[]> {
 | `.prepare(sql).run(...params)` | `.prepare(sql).bind(...params).run()` |
 | `result.changes` | `result.meta.changes` |
 
-パラメータを `bind()` で先に渡す形になるのと、更新件数の取得場所が `meta` の下に移るのが機械的な差分です。SQLそのものは1文字も変えていません。
+パラメータを `bind()` で先に渡す形になるのと、更新件数の取得場所が `meta` の下に移るのが主な差分です。今回使っていたSQLは変更せずに移行できました。
 
 1つだけ設計上の注意があります。D1には対話的なトランザクション(`BEGIN` ... `COMMIT`)がなく、複数文をアトミックに実行したい場合は `batch()` に文の配列を渡す形になります。同期SQLite時代にトランザクションへ依存していたコードがあると、ここは書き方の見直しが必要です。
 
@@ -127,7 +127,7 @@ export async function GET() {
 }
 ```
 
-型チェックを回すと直し漏れが全部エラーになるので、TypeScriptならこの工程で漏れは出ません。
+戻り値を `Promise` に変えると、awaitを付け忘れた箇所の多くは型チェックで見つけられます。型が広く定義されている箇所は見逃す可能性があるため、APIの動作確認も合わせて行いました。
 
 ## ローカル開発はどうなるか
 
@@ -139,15 +139,21 @@ import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 initOpenNextCloudflareForDev();
 ```
 
-これで開発中も `wrangler.jsonc` のバインディングが生きて、実体は `.wrangler/state` 配下のSQLiteファイルに保存されます。本番とローカルで同じコードパス・同じマイグレーションが使えるので、「ローカルでは動くのに本番で壊れる」の余地がかなり減りました。
+これで開発中も `wrangler.jsonc` のバインディングを利用でき、ローカル用のデータは `.wrangler/state` 配下に保存されます。本番とローカルで同じDB層とマイグレーションを使えるようになりました。ただし、ローカル環境はD1本番環境そのものではないため、デプロイ前にはdev環境でも確認しています。
 
-移行前のSQLiteファイルにデータがある場合は、`sqlite3` でダンプして `wrangler d1 execute my-db --file=dump.sql` で流し込めます。私の場合は移行時点でデータがほぼ空だったので、この工程は省略しました。
+移行前のSQLiteファイルにデータがある場合は、`sqlite3` でSQLを出力し、`wrangler d1 execute my-db --remote --file=dump.sql` でD1へ取り込めます。私の場合は移行時点でデータがほぼ空だったので、この工程は省略しました。
 
 ## 移行してみて
 
-作業の大半は「同期→非同期」の書き換えで、SQL自体はそのまま動きました。同じSQLite方言というのはやはり大きくて、PostgreSQLへの移行だったらSQLの検証からやり直しだったはずです。
+作業の大半は同期APIから非同期APIへの書き換えで、今回のSQLはそのまま動きました。DB層を小さなモジュールにまとめていたため、変更範囲も追いやすかったです。
 
-コストも今のところゼロです。D1の無料枠は個人アプリには十分すぎる量があり、Workersと合わせて完全無料で外から使えるアプリになりました。「ローカルで動いているNode.js + SQLiteのアプリを外に出したい」というケースには、素直におすすめできる移行先です。
+現在の利用量はD1とWorkersの無料枠に収まっています。無料枠には上限があるので、読み書きの行数やDBサイズはCloudflareのダッシュボードで確認しています。ローカルのNode.jsとSQLiteで作った小さなアプリをWorkersへ移す場合、D1は検討しやすい移行先でした。
+
+## 参考資料
+
+- [Cloudflare D1: Migrations](https://developers.cloudflare.com/d1/reference/migrations/)
+- [Cloudflare D1: Import and export data](https://developers.cloudflare.com/d1/best-practices/import-export-data/)
+- [Cloudflare D1: Limits](https://developers.cloudflare.com/d1/platform/limits/)
 
 ## 環境
 

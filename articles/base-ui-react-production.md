@@ -1,12 +1,12 @@
 ---
-title: "Radixの後継?Base UI(@base-ui/react)をshadcn/uiスタイルで本番採用している構成"
+title: "Base UI(@base-ui/react)をshadcn/uiスタイルで本番採用している構成"
 emoji: "🧩"
 type: "tech"
 topics: ["baseui", "react", "shadcn", "tailwindcss", "nextjs"]
 published: false
 ---
 
-個人開発のWebサービスで、UIプリミティブに **Base UI(@base-ui/react)** を使っています。Radix UIやMaterial UI、Floating UIを作ってきたメンバーが開発しているheadless UIライブラリで、v1系がリリースされて実戦投入できる段階になっています。
+個人開発のWebサービスで、UIプリミティブにBase UI(@base-ui/react)を使っています。Base UIはスタイルを持たないReact向けのUIコンポーネントライブラリです。
 
 「shadcn/uiの構成(Tailwind + cva + コピペ所有のコンポーネント)は好きだが、プリミティブ層をBase UIにしたい」という組み方をしているので、その実例と、書いていて感じたRadixとの違いをまとめます。
 
@@ -102,11 +102,11 @@ Base UI: data-open:animate-in          data-closed:animate-out
 
 ## 使ってみての所感
 
-- **書き味はRadixとほぼ同じ**です。Portal/Trigger/Popupの構造、非制御と制御の切り替え、フォーカス管理など、Radixで身につけた感覚のまま書けます。移行コストは「名前の対応表」程度でした
+- 私が使ったDialog、Popover、Tooltipでは、Radixと構造が近い部分がありました。ただし、パーツ名、data属性、型の参照方法は異なります
 - ドキュメントの情報量やコミュニティの蓄積はまだRadixに分があります。エラーで検索しても記事はほぼ出てこないので、公式ドキュメントとGitHubを読む前提の人向けです
 - shadcn/uiの資産(構造・クラス設計)はほぼそのまま流用できます。プリミティブの置き換えと名前の読み替えが主な作業です
 
-「今Radixで困っていないなら急いで乗り換える必要はない、新規で始めるなら選択肢に入れる価値は十分ある」というのが現時点の私の結論です。
+今Radixで困っていないなら、急いで置き換える理由はありません。私は新規プロジェクトで試し、必要なコンポーネントの差分を確認しながら採用しました。
 
 ## 環境
 

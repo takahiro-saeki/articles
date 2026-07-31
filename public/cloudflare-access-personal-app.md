@@ -11,7 +11,7 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
@@ -73,11 +73,11 @@ $ curl -s -o /dev/null -w "%{http_code}\n" https://my-app.example.workers.dev/
 
 有効化のときに「Workerが機密データを扱う場合は、Access JWTを検証してAccessをバイパスしたリクエストを拒否してください」という注意書きが表示されます。
 
-これはアプリ側でも認証トークンを二重チェックすべきという多層防御の推奨です。ただ、**入口がworkers.devのURLだけで、そこを全てAccessが守っている構成なら、現時点では必須ではない**と判断しました(カスタムドメインや別ルートを足すなら話が変わります)。検証に必要なAUDタグとJWKの公開鍵URLは秘密情報ではないので、後から実装する場合も慌てる必要はありません。
+これは、Accessを通らない経路が生まれた場合に備えて、アプリ側でもトークンを検証するための注意です。現在はworkers.devのURLだけを入口にし、そのURLへAccessを設定しています。ただし、カスタムドメインや別ルートを追加すると前提が変わります。機密性の高いデータを扱う場合は、入口の設定だけに依存せず、Worker側でもAccess JWTを検証する方が安全です。検証に使うAUDタグとJWKの公開鍵URLは、パスワードやAPIキーのような秘密情報ではありません。
 
 ## まとめ
 
-- 個人アプリの保護は、自前ログインよりAccessの方が「強くて安い」ことが多い(エッジで守る・実装ゼロ・無料)
+- 個人アプリでは、Accessを使うとアプリへログイン機能を実装せずに入口を制限できる
 - workers.devのURLならダッシュボードのプルダウンから直接有効化できる(カスタムドメイン不要)
 - プレビューURLの閉じ忘れに注意
 - セッション期間を伸ばせば使い勝手はほぼ普通のアプリ

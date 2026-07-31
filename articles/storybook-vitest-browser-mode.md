@@ -16,7 +16,7 @@ Storybookのvitest addonとVitestのbrowser modeを組み合わせた構成で�
 - `@storybook/addon-vitest` のVitestプラグインが、**各ストーリーをテストケースに変換**する
 - テストはVitestのbrowser mode(Playwright経由の実Chromium)で走る。jsdomではなく本物のブラウザ
 
-つまり `Button.stories.tsx` を書いた時点で、「Buttonが実ブラウザで描画できて、play関数のインタラクションが通る」ことを検証するテストが1本増えます。
+つまり `Button.stories.tsx` を書くと、Buttonを実ブラウザで描画するテストが増えます。ストーリーにplay関数があれば、その操作も同じテストで検証できます。
 
 ## 設定1: .storybook/main.ts
 
@@ -83,7 +83,7 @@ export default defineConfig({
 
 ポイントは2つあります。
 
-1. `storybookTest()` プラグインがストーリーファイルを読み込んで、テストとして登録してくれる。**ストーリー側には何も書き足さない**
+1. `storybookTest()` プラグインがストーリーファイルを読み込み、テストとして登録する。描画確認だけならストーリー側への追加は不要で、操作を検証するときはplay関数を書く
 2. browser modeの `provider: playwright({})` で、テストがheadless Chromiumの中で実行される。CSSレイアウトもフォーカス管理も実ブラウザの挙動で検証される
 
 プロジェクトを分けてあるので、ロジックのテストだけ高速に回したいときは `vitest run --project unit`、ストーリーを含めた全体は `vitest run` と使い分けられます。

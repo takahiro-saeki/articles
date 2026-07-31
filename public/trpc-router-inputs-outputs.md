@@ -10,14 +10,14 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
 
-tRPCを使っているのに、画面側で `interface Schedule { ... }` のような型を手書きしていたら、それはたぶんtRPCの恩恵を半分捨てています。ルーター定義から全procedureの入出力型を取り出せるユーティリティ型があり、これを使うと「APIの型を画面用にもう一度書く」作業が消えます。
+tRPCでは、ルーター定義から各procedureの入出力型を取り出せます。画面側で `interface Schedule { ... }` のような型をもう一度書かなくても、サーバーが返す形をそのまま参照できます。
 
-私はWeb(Next.js)とモバイル(Expo)のmonorepoでtRPC v11を使っていて、この2つの型をパッケージ経由で全アプリに配っています。定義はこれだけです。
+私はWeb(Next.js)とモバイル(Expo)のmonorepoでtRPC v11を使っています。Web側では、次の2つの型を定義しています。
 
 ```ts
 import { type inferRouterInputs, type inferRouterOutputs } from "@trpc/server";
@@ -29,7 +29,7 @@ export type RouterInputs = inferRouterInputs<AppRouter>;
 export type RouterOutputs = inferRouterOutputs<AppRouter>;
 ```
 
-以下、これで手書き型を消していく小技です。
+実際に使っている取り出し方を紹介します。
 
 ## 1. 一覧のitem型を取り出す
 
@@ -95,7 +95,7 @@ utils.schedule.list.setData({ orgId }, (old) =>
 
 ## monorepoならパッケージからre-exportしておく
 
-WebとモバイルでtRPCクライアントを共有している場合は、`packages/api` のような型専用パッケージからAppRouterと一緒にre-exportしておくと、どのアプリからも同じ書き方で使えます。
+WebとモバイルでtRPCクライアントを共有するなら、`packages/api` のような型専用パッケージからAppRouterと一緒にre-exportする方法があります。
 
 ```ts
 // packages/api/src/index.ts
@@ -103,12 +103,14 @@ export type { AppRouter } from "../../apps/web/src/server/api/root";
 export type { RouterInputs, RouterOutputs } from "../../apps/web/src/trpc/react";
 ```
 
+現在のリポジトリには、モバイルからWeb側の `AppRouter` を直接参照している箇所も残っています。この例は移行先として置いている構成です。相対パスでWebの内部実装を参照するため、将来的にはルーター定義そのものを共有パッケージへ移す方が境界は明確になります。
+
 ## まとめ
 
 - 画面側の型は手書きせず `RouterOutputs["ルーター"]["procedure"]` から作る
 - 配列は `[number]`、ネストは添字アクセスで掘る
 - フォームは `RouterInputs` から。zodスキーマとの二重管理を防ぐ
-- 「サーバーを変えたらクライアントに型エラーが出る」状態を保つことが、tRPCを使う目的そのもの
+- サーバー側の変更をクライアントの型チェックで検出できる状態を保つ
 
 ## 環境
 

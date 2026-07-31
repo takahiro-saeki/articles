@@ -44,7 +44,7 @@ npx qiita publish my-article     # 公開
 ### dev.to
 
 ```bash
-DEVTO_API_KEY=xxx node scripts/publish-devto.mjs devto/my-article.md
+node --env-file=.env scripts/publish-devto.mjs devto/my-article.md
 ```
 
 frontmatterの `published: false` なら下書き投稿。投稿後は `devto_id` が自動で書き込まれ、以降は同コマンドで更新になる。APIキーは dev.to の Settings → Extensions で発行。

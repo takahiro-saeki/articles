@@ -11,7 +11,7 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
@@ -45,9 +45,9 @@ node analyze.mjs --days 14 --min-stocks 10
 
 やっていることは3つだけです。
 
-1. **タグ別の獲得LGTM合計** — いま読まれているジャンル
-2. **タイトルの型の出現頻度** — 「〜してみた」「◯選」「入門」など
-3. **LGTM上位記事の一覧** — 実際に伸びた記事
+1. **タグ別の獲得LGTM合計**: いま読まれているジャンル
+2. **タイトルの型の出現頻度**: 「〜してみた」「◯選」「入門」など
+3. **LGTM上位記事の一覧**: 実際に伸びた記事
 
 Node.js 18+ の標準機能(`fetch`)のみで、依存パッケージはありません。
 

@@ -11,7 +11,7 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
@@ -23,7 +23,7 @@ error TS18046: 'body' is of type 'unknown'.
 error TS2339: Property 'name' does not exist on type 'object'.
 ```
 
-`request.json()` の戻り値が突然unknownになる、というのが症状の中心です。原因はwranglerが生成するランタイム型とNext.jsのDOM型の衝突で、最終的に「生成をやめて、`import type` だけの手書きd.tsを置く」形で解決しました。同じ構成の人は確実に踏むと思うので、経緯ごと書いておきます。
+`request.json()` の戻り値が突然unknownになる、というのが症状の中心です。私の環境では、wranglerが生成するランタイム型とNext.jsのDOM型が同じプロジェクトへ入ったことが原因でした。最終的には生成をやめ、`import type` だけの手書きd.tsを置いて解決しました。バージョンやtsconfigの対象範囲によって挙動は変わるため、ここでは発生した構成と回避策を記録します。
 
 ## 何が起きたか
 
@@ -57,7 +57,7 @@ interface CloudflareEnv {
 error TS2552: Cannot find name 'D1Database'. Did you mean 'IDBDatabase'?
 ```
 
-`D1Database` や `Fetcher` はランタイム型が定義するグローバル名なので、**ランタイム型を除外すると生成物が参照する型が存在しなくなる**わけです。ランタイム型を入れればDOMと衝突し、抜けば生成物が壊れる。生成コマンドだけでは詰みでした。
+`D1Database` や `Fetcher` はランタイム型が定義するグローバル名です。私の構成では、ランタイム型を入れるとDOM型と衝突し、除外すると生成物が参照する型を解決できませんでした。
 
 ## 解決策: import typeだけの手書きd.ts
 
@@ -85,7 +85,7 @@ export {};
 
 - `import type` で取り込んだ型は**そのファイルのスコープに閉じる**ので、Workers版の `Request` / `Response` がグローバルへ漏れない。DOM libと衝突しない
 - `declare global` で `CloudflareEnv` だけをグローバルに公開する。@opennextjs/cloudflareの `getCloudflareContext()` は `env` をこの `CloudflareEnv` 型として返すため、これだけで `env.DB` に型が付く
-- 末尾の `export {}` はこのd.tsをモジュール扱いにするためのお約束(これがないと `import type` がファイル全体の意味を変えてしまう)
+- この例では `import type` があるためファイルはモジュールとして扱われる。末尾の `export {}` は明示のために置いているが、必須ではない
 
 利用側は普通に補完が効きます。
 
@@ -106,7 +106,7 @@ function getDb() {
 ## まとめ
 
 - `wrangler types` の生成物はWorkersランタイムのグローバル型を含み、Next.jsのDOM libと衝突する(`json()` がunknownになったらこれ)
-- `--include-runtime=false` は生成物自身が壊れるので解決にならない
+- 私の構成では `--include-runtime=false` だけでは参照先の型を解決できなかった
 - `import type` + `declare global` の手書きd.tsなら、グローバルを汚さずバインディングにだけ型が付く
 
 Workers専用プロジェクトでは起きない問題なので情報が少なく、原因の切り分けに少し時間を使いました。同じ構成(Next.js on Workers)の方の時短になれば幸いです。
