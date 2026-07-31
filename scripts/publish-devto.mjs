@@ -64,7 +64,8 @@ if (!res.ok) {
 }
 const result = await res.json();
 console.log(`${isUpdate ? "更新" : "投稿"}しました: ${result.url}`);
-console.log(`状態: ${result.published ? "公開" : "下書き"}`);
+const isPublished = result.published === true || Boolean(result.published_at);
+console.log(`状態: ${isPublished ? "公開" : "下書き"}`);
 
 // 新規投稿時は devto_id を frontmatter に書き戻して、次回から更新にする
 if (!isUpdate && result.id) {

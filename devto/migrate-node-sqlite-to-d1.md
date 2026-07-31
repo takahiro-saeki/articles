@@ -1,4 +1,5 @@
 ---
+devto_id: 4278788
 title: "Migrating a Next.js app from node:sqlite to Cloudflare D1"
 tags: cloudflare, nextjs, sqlite, typescript
 canonical_url: https://zenn.dev/hirodeath/articles/migrate-node-sqlite-to-d1
