@@ -5,7 +5,7 @@
 | 日付 | 媒体 | 日本語記事 | dev.to | 状態 |
 | --- | --- | --- | --- | --- |
 | 8月1日 | Qiita | Expo SDK 54なのにSDK 55向けパッケージが混ざり、Androidビルドが失敗したときの直し方 | 英訳版 | 公開済み |
-| 8月2日 | Qiita | Expo Routerで通知タップからcold startするとスプラッシュ画面で固まった原因 | 英訳版を同日公開 | 公開待ち |
+| 8月2日 | Qiita | Expo Routerで通知タップからcold startするとスプラッシュ画面で固まった原因 | 英訳版 | 公開済み |
 | 8月3日 | Zenn | Expoアプリを日本語から日英中対応へ段階的に移行した記録 | 英訳版を同日公開 | 公開待ち |
 | 8月4日 | Qiita | expo-notificationsで「通知から起動」と「起動後の通知タップ」を分けて処理する | 英訳版を同日公開 | 公開待ち |
 | 8月5日 | Qiita | Expo RouterでWebの招待リンクをそのままアプリの招待画面として開く | 英訳版を同日公開 | 公開待ち |
@@ -39,3 +39,5 @@
 
 - 8月1日 Qiita: https://qiita.com/hiro123/items/c6e645cc27c4e2a6f919
 - 8月1日 dev.to: https://dev.to/hirodeath/how-i-fixed-an-expo-sdk-54-android-build-with-sdk-55-packages-mixed-in-19d
+- 8月2日 Qiita: https://qiita.com/hiro123/items/9917943f00ec1d6a7d2b
+- 8月2日 dev.to: https://dev.to/hirodeath/why-my-expo-router-app-froze-on-the-splash-screen-after-a-cold-start-notification-tap-40d4
