@@ -1,0 +1,130 @@
+---
+title: Expo SDK 54なのにSDK 55向けパッケージが混ざり、Androidビルドが失敗したときの直し方
+tags:
+  - Expo
+  - ReactNative
+  - Android
+  - EASBuild
+  - pnpm
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
+---
+
+Expo SDK 54のアプリでAndroidビルドが失敗しました。原因は、`expo`本体がSDK 54のままなのに、一部のExpoパッケージだけSDK 55向けになっていたことです。
+
+TypeScriptの型チェックと開発サーバーは通っていたため、EAS Buildを実行するまで気付きませんでした。実際にずれていた依存関係を例に、切り分けから修正までを順に整理します。
+
+## 起きていたこと
+
+`package.json`は次のような状態でした。
+
+```json
+{
+  "dependencies": {
+    "expo": "~54.0.33",
+    "expo-apple-authentication": "~55.0.13",
+    "expo-dev-client": "^55.0.27",
+    "expo-image-picker": "^55.0.18",
+    "expo-linking": "^55.0.12",
+    "expo-notifications": "^55.0.19",
+    "expo-splash-screen": "^55.0.18"
+  }
+}
+```
+
+`expo`は54系ですが、その周辺に55系のパッケージが並んでいます。個別にパッケージを追加した際、最新版をそのまま入れたことが原因でした。
+
+Expoのパッケージは、名前にSDK番号が入っていないものもあります。たとえばSDK 54で使う`expo-notifications`は`0.32`系、`expo-splash-screen`は`31`系です。パッケージのメジャーバージョンだけ見ても、対応するSDKは判断できません。
+
+## まず`expo install --check`を実行する
+
+対応バージョンの確認にはExpo CLIを使います。
+
+```bash
+npx expo install --check
+```
+
+SDK 54以降では、JSON形式でも確認できます。
+
+```bash
+npx expo install --check --json
+```
+
+このコマンドは、現在のExpo SDKに対して期待されるバージョンと、実際にインストールされているバージョンを比較します。`package.json`を目視して推測するより確実です。
+
+まとめて修正する場合は次を使えます。
+
+```bash
+npx expo install --fix
+npx expo-doctor
+```
+
+今回は変更内容を確認したかったため、表示された対応バージョンを見ながら`package.json`を修正しました。
+
+## 実際に揃えたバージョン
+
+主な変更は次の通りです。
+
+```diff
+- "expo-apple-authentication": "~55.0.13"
++ "expo-apple-authentication": "~8.0.8"
+
+- "expo-dev-client": "^55.0.27"
++ "expo-dev-client": "~6.0.21"
+
+- "expo-image-picker": "^55.0.18"
++ "expo-image-picker": "~17.0.11"
+
+- "expo-linking": "^55.0.12"
++ "expo-linking": "~8.0.12"
+
+- "expo-notifications": "^55.0.19"
++ "expo-notifications": "~0.32.17"
+
+- "expo-splash-screen": "^55.0.18"
++ "expo-splash-screen": "~31.0.13"
+```
+
+修正後にlockfileを更新し、もう一度チェックします。
+
+```bash
+pnpm install
+pnpm --filter @squadnote/mobile exec expo install --check
+pnpm --filter @squadnote/mobile exec expo-doctor
+```
+
+monorepoでは、コマンドを実行するpackageを間違えないようにします。ルートで実行して意図した`package.json`を見ていなかった、という状態を避けるためです。
+
+## TypeScriptでは見つからなかった理由
+
+JavaScript側のAPIと型定義だけなら、異なるSDK向けのパッケージでも処理できる場合があります。一方、EAS Buildではconfig pluginやネイティブモジュールも含めてiOS、Androidのプロジェクトを組み立てます。
+
+今回の不一致は、アプリコードの型ではなくネイティブ側の組み合わせで表面化しました。`tsc`が通っても、Expo SDKとの互換性まで確認できたことにはなりません。
+
+## 再発を防ぐ
+
+Expo管理パッケージを追加するときは、package managerを直接使わず`expo install`を使うようにしました。
+
+```bash
+npx expo install expo-notifications
+```
+
+この形なら、現在のSDKに合うバージョンが選ばれます。SDKを更新した後は、EAS Buildを始める前に次の2つを実行します。
+
+```bash
+npx expo install --check
+npx expo-doctor
+```
+
+今回の失敗は、SDKのアップグレードそのものではなく、SDK 54のプロジェクトへSDK 55向けパッケージを個別に追加したことで起きました。`package.json`の数字を眺めるより、Expo CLIに互換性を検査させる方が早く見つけられます。
+
+## 参考
+
+- [Expo: Upgrade Expo SDK](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)
+- [Expo CLI: Version validation](https://docs.expo.dev/more/expo-cli/)
