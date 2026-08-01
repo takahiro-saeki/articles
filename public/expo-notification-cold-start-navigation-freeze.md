@@ -1,0 +1,143 @@
+---
+title: Expo Routerで通知タップからcold startするとスプラッシュ画面で固まった原因
+tags:
+  - Expo
+  - ReactNative
+  - ExpoRouter
+  - Push通知
+  - TypeScript
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
+---
+
+Expoアプリで、終了状態からPush通知をタップして起動すると、スプラッシュ画面のまま進まないことがありました。通常起動と、起動後の通知タップでは再現しません。
+
+原因はスプラッシュ画面そのものではなく、起動直後に2つの画面遷移が競合していたことでした。
+
+## 認証チェックと通知遷移が同時に走っていた
+
+アプリの認証済みレイアウトでは、起動時にSecureStoreのトークンを確認しています。
+
+```tsx
+useEffect(() => {
+  (async () => {
+    const token = await getToken();
+    if (!token) {
+      router.replace("/login");
+      return;
+    }
+    setAuthChecked(true);
+  })();
+}, []);
+```
+
+同じレイアウトから、Push通知の登録と通知タップの監視も始めていました。
+
+```tsx
+useRegisterPushToken();
+```
+
+通知側では`getLastNotificationResponseAsync()`を呼び、通知から起動された場合はURLに対応する画面へ遷移します。
+
+```ts
+Notifications.getLastNotificationResponseAsync().then((response) => {
+  if (response) handleNotificationTap(response.notification);
+});
+```
+
+cold startでは、次の2つが近いタイミングで実行されます。
+
+1. 認証チェックによる`router.replace("/login")`またはレイアウト表示
+2. 通知URLによる`router.push(path)`
+
+ナビゲーションがまだ安定していない間に両方が走り、画面が表示されない状態になっていました。見た目はスプラッシュ画面で止まっているため、最初はSplashScreenの設定を疑いました。
+
+## 通知処理を認証完了後まで待たせる
+
+修正は、通知フックへ`enabled`を渡す形にしました。
+
+```tsx
+const [authChecked, setAuthChecked] = useState(false);
+
+useEffect(() => {
+  (async () => {
+    const token = await getToken();
+    if (!token) {
+      router.replace("/login");
+      return;
+    }
+    setAuthChecked(true);
+  })();
+}, []);
+
+useRegisterPushToken(authChecked);
+```
+
+フック側では、`enabled`がfalseの間は通知に関する副作用を開始しません。
+
+```ts
+export function useRegisterPushToken(enabled = true) {
+  useEffect(() => {
+    if (!enabled) return;
+    if (!Notifications) return;
+
+    void Notifications.getLastNotificationResponseAsync().then((response) => {
+      if (response) handleNotificationTap(response.notification);
+    });
+
+    const sub = Notifications.addNotificationResponseReceivedListener(
+      (response) => handleNotificationTap(response.notification),
+    );
+
+    return () => sub.remove();
+  }, [enabled]);
+}
+```
+
+認証が完了してレイアウトを表示できる状態になってから、最後にタップされた通知を処理します。これでcold start時の遷移競合が起きなくなりました。
+
+## 通知URLもそのまま渡さない
+
+通知データには相対パスと絶対URLの両方が入る可能性があったため、アプリ内のpathへ変換してから`router.push`しています。
+
+```ts
+function handleNotificationTap(notification: Notifications.Notification) {
+  const data = notification.request.content.data as
+    | { url?: string; linkUrl?: string }
+    | null;
+  const raw = data?.url ?? data?.linkUrl;
+  if (!raw) return;
+
+  const path = raw.startsWith("/")
+    ? raw
+    : (raw.match(/^https?:\/\/[^/]+(\/.+)$/)?.[1] ?? null);
+  if (!path) return;
+
+  router.push(path as never);
+}
+```
+
+実際のアプリでは、自分のドメインかどうかを確認した上でpathを取り出す方が安全です。この例は処理の要点だけを抜粋しています。
+
+## 確認した起動パターン
+
+修正後は、少なくとも次の経路を分けて確認しました。
+
+- アプリアイコンから通常起動する
+- アプリ終了中に通知をタップする
+- バックグラウンド中に通知をタップする
+- アプリ表示中に通知をタップする
+- ログアウト状態で通知をタップする
+
+通知からの起動は、通常起動とは初期化順序が変わります。スプラッシュ画面で止まって見える場合でも、SplashScreenだけでなく、認証とDeep Linkが同時に画面遷移していないかを確認すると原因を追いやすくなります。
+
+## 参考
+
+- [Expo Notifications: Handle push notifications with navigation](https://docs.expo.dev/versions/latest/sdk/notifications/)
+
