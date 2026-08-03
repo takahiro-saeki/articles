@@ -103,8 +103,20 @@ const sourceRaw = readFileSync(entry.source, "utf8");
 const devtoRaw = readFileSync(entry.devto, "utf8");
 const sourceSlug = basename(entry.source, ".md");
 
+const sourceFrontmatter = splitMarkdown(sourceRaw).frontmatter;
+const devtoFrontmatter = splitMarkdown(devtoRaw).frontmatter;
+const sourceIsPublished = entry.platform === "qiita"
+  ? field(sourceFrontmatter, "ignorePublish") === "false" && Boolean(field(sourceFrontmatter, "id")) && field(sourceFrontmatter, "id") !== "null"
+  : field(sourceFrontmatter, "published") === "true";
+const devtoIsPublished = field(devtoFrontmatter, "published") === "true" && Boolean(field(devtoFrontmatter, "devto_id"));
+
 if (dryRun) {
-  console.log(JSON.stringify({ today, ...entry, sourceSlug }, null, 2));
+  console.log(JSON.stringify({ today, ...entry, sourceSlug, sourceIsPublished, devtoIsPublished }, null, 2));
+  process.exit(0);
+}
+
+if (sourceIsPublished && devtoIsPublished) {
+  console.log(`${today}: both articles are already published`);
   process.exit(0);
 }
 
