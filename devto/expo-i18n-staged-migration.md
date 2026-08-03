@@ -1,7 +1,9 @@
 ---
+devto_id: 4295752
+canonical_url: https://zenn.dev/hirodeath/articles/expo-i18n-staged-migration
 title: "Migrating an Expo app from Japanese to multi-language support in stages"
 tags: expo, reactnative, i18n, typescript
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

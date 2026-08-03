@@ -3,7 +3,7 @@ title: "Expoアプリを日本語から日英中対応へ段階的に移行し�
 emoji: "🌏"
 type: "tech"
 topics: ["expo", "reactnative", "i18next", "i18n", "typescript"]
-published: false
+published: true
 ---
 
 日本語だけで作っていたExpoアプリを、日本語、英語、中国語簡体字へ移行しました。全画面を一度に翻訳せず、基盤、主要フロー、残りの画面という3段階に分けています。
