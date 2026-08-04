@@ -1,7 +1,9 @@
 ---
+devto_id: 4307178
+canonical_url: https://qiita.com/hiro123/items/f4eb6cb33972bb3ab15e
 title: Handling Notification Taps in expo-notifications: Launch vs. Runtime
 tags: Expo, React Native, Push Notifications, Expo Router
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

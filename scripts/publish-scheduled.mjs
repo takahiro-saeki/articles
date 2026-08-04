@@ -81,7 +81,11 @@ async function publishDevto(path, raw, canonicalUrl) {
       body_markdown: body,
       published: true,
       canonical_url: canonicalUrl,
-      tags: (field(frontmatter, "tags") ?? "").split(",").map((tag) => tag.trim()).filter(Boolean).slice(0, 4),
+      tags: (field(frontmatter, "tags") ?? "")
+        .split(",")
+        .map((tag) => tag.toLowerCase().replace(/[^a-z0-9]/g, ""))
+        .filter(Boolean)
+        .slice(0, 4),
     },
   };
   const response = await fetch(
