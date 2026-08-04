@@ -1,13 +1,13 @@
 ---
 title: expo-notificationsで「通知から起動」と「起動後の通知タップ」を分けて処理する
 tags:
-  - Expo
-  - ReactNative
+  - expo
+  - reactnative
   - expo-notifications
   - ExpoRouter
   - Push通知
 private: false
-updated_at: '2026-08-04T10:03:43+09:00'
+updated_at: '2026-08-04T10:04:31+09:00'
 id: f4eb6cb33972bb3ab15e
 organization_url_name: null
 slide: false
