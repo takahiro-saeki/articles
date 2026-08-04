@@ -7,11 +7,11 @@ tags:
   - ExpoRouter
   - Push通知
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-08-04T10:02:53+09:00'
+id: f4eb6cb33972bb3ab15e
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
