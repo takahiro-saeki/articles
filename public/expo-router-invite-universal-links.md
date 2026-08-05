@@ -1,13 +1,13 @@
 ---
 title: Expo RouterでWebの招待リンクをそのままアプリの招待画面として開く
 tags:
-  - Expo
+  - expo
   - ExpoRouter
-  - ReactNative
+  - reactnative
   - UniversalLinks
   - iOS
 private: false
-updated_at: '2026-08-05T09:08:20+09:00'
+updated_at: '2026-08-05T15:00:47+09:00'
 id: a229ae95d7686b70ec90
 organization_url_name: null
 slide: false
