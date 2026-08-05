@@ -1,12 +1,14 @@
 ---
 devto_id: 4284575
 title: How I Fixed an Expo SDK 54 Android Build with SDK 55 Packages Mixed In
-tags: expo, reactnative, android, eas
+tags: devchallenge, bugsmash, expo, reactnative
 canonical_url: https://qiita.com/hiro123/items/c6e645cc27c4e2a6f919
 published: true
 ---
 
 > This is an English translation of my original article on [Qiita](https://qiita.com/hiro123/items/c6e645cc27c4e2a6f919).
+
+*This is a submission for [DEV's Summer Bug Smash: Smash Stories](https://dev.to/bugsmash) powered by [Sentry](https://sentry.io/).*
 
 An Android build failed in an Expo SDK 54 app. The project still used Expo SDK 54, but several Expo packages had been upgraded to versions intended for SDK 55.
 
@@ -99,6 +101,21 @@ Some packages from a different SDK can still expose JavaScript APIs and type def
 
 The mismatch was in the native package combination, not in the TypeScript surface. A passing `tsc` run does not confirm Expo SDK compatibility.
 
+## The impact of the fix
+
+Correcting the package set restored the Android build without forcing an unplanned SDK upgrade. More importantly, it replaced a misleading signal—passing TypeScript checks—with an SDK-aware validation step that can run before the slower and more expensive native build.
+
+The practical before-and-after was:
+
+- **Before:** the app compiled in TypeScript and ran in development, but failed during the native EAS Build.
+- **After:** every Expo-managed dependency matched SDK 54, `expo install --check` passed, and the project could proceed to a consistent native build.
+
+## What made this bug tricky
+
+The package names made the mismatch look obvious only in hindsight. Expo package major versions do not consistently match the Expo SDK number, so manually downgrading every package to a version beginning with `54` would also have been wrong.
+
+The useful debugging decision was to stop reasoning from version numbers and ask Expo CLI for the compatibility matrix associated with the installed SDK. That turned a native-build failure into a deterministic dependency check.
+
 ## Preventing the same problem
 
 I now use `expo install` when adding Expo-managed packages:
@@ -115,6 +132,12 @@ npx expo-doctor
 ```
 
 In this case, the SDK upgrade itself was not the problem. SDK 55 package versions had been added to a project that still used SDK 54. Expo CLI found the mismatch faster and more accurately than checking version numbers by eye.
+
+## What I learned
+
+A green type check only validates the JavaScript and TypeScript surface. In projects with generated native code, config plugins, or native modules, dependency compatibility needs its own validation step.
+
+I also learned to treat framework-specific installers as part of the package-management workflow rather than as optional convenience commands. For Expo-managed packages, `expo install` encodes compatibility knowledge that a generic package manager does not have.
 
 ## References
 
