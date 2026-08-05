@@ -1,7 +1,9 @@
 ---
+devto_id: 4316423
+canonical_url: https://qiita.com/hiro123/items/a229ae95d7686b70ec90
 title: Opening Web Invite Links Directly in the App with Expo Router
 tags: Expo, Expo Router, Universal Links, React Native
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

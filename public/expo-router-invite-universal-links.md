@@ -7,11 +7,11 @@ tags:
   - UniversalLinks
   - iOS
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-08-05T09:08:20+09:00'
+id: a229ae95d7686b70ec90
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
