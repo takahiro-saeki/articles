@@ -3,7 +3,7 @@ title: "EAS Update導入後のproduction、preview、runtimeVersion運用"
 emoji: "📦"
 type: "tech"
 topics: ["expo", "eas", "reactnative", "mobile", "cicd"]
-published: false
+published: true
 ---
 
 ExpoアプリへEAS Updateを導入し、JavaScriptと画像だけの修正をストア審査なしで配信できるようにしました。ただし、コマンドが動くだけでは安全に運用できません。どのビルドへ更新が届くかを決める`channel`と`runtimeVersion`が必要です。

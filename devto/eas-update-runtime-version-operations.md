@@ -1,7 +1,9 @@
 ---
+devto_id: 4327422
+canonical_url: https://zenn.dev/hirodeath/articles/eas-update-runtime-version-operations
 title: "Managing production, preview, and runtimeVersion after introducing EAS Update"
 tags: expo, eas, reactnative, cicd
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.
