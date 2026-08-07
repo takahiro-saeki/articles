@@ -1,13 +1,13 @@
 ---
 title: React Nativeで招待QRコードをPNGにして共有する
 tags:
-  - ReactNative
-  - Expo
-  - QRCode
+  - reactnative
+  - expo
+  - QRcode
   - TypeScript
   - iOS
 private: false
-updated_at: '2026-08-07T11:46:33+09:00'
+updated_at: '2026-08-07T14:10:07+09:00'
 id: 3dd9bb25393a1bf704f6
 organization_url_name: null
 slide: false
