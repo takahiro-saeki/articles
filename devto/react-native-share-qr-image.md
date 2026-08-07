@@ -1,7 +1,9 @@
 ---
+devto_id: 4336316
+canonical_url: https://qiita.com/hiro123/items/3dd9bb25393a1bf704f6
 title: Converting Invite QR Codes to PNG and Sharing in React Native
 tags: React Native, Expo, QR Code, TypeScript
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

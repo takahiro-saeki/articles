@@ -7,11 +7,11 @@ tags:
   - TypeScript
   - iOS
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-08-07T11:46:33+09:00'
+id: 3dd9bb25393a1bf704f6
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
