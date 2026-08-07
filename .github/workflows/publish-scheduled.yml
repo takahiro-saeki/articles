@@ -2,8 +2,10 @@ name: Publish scheduled article
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-    - cron: "30 0 * * *"
+    # GitHub Actions cron is prone to long delays around the start of an hour.
+    # Start at 08:55 JST, wait until 09:00 JST, then retry at 09:10 JST.
+    - cron: "55 23 * * *"
+    - cron: "10 0 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -26,7 +28,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,6 +38,18 @@ jobs:
         with:
           node-version: 22
 
+      - name: Wait until 09:00 JST
+        if: github.event_name == 'schedule'
+        run: |
+          publish_date=$(TZ=Asia/Tokyo date +%F)
+          publish_epoch=$(date -u -d "${publish_date} 00:00:00" +%s)
+          current_epoch=$(date -u +%s)
+          if (( current_epoch < publish_epoch )); then
+            wait_seconds=$((publish_epoch - current_epoch))
+            echo "Waiting ${wait_seconds} seconds until 09:00 JST"
+            sleep "${wait_seconds}"
+          fi
+
       - name: Publish today's Japanese and English articles
         env:
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
@@ -44,7 +58,19 @@ jobs:
           args=()
           if [ -n "${{ inputs.date }}" ]; then args+=("--date=${{ inputs.date }}"); fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then args+=("--dry-run"); fi
-          node scripts/publish-scheduled.mjs "${args[@]}"
+          max_attempts=3
+          for attempt in $(seq 1 "${max_attempts}"); do
+            if node scripts/publish-scheduled.mjs "${args[@]}"; then
+              exit 0
+            fi
+            if (( attempt == max_attempts )); then
+              echo "Publishing failed after ${max_attempts} attempts"
+              exit 1
+            fi
+            wait_seconds=$((attempt * 30))
+            echo "Publishing attempt ${attempt} failed; retrying in ${wait_seconds} seconds"
+            sleep "${wait_seconds}"
+          done
 
       - name: Commit publication metadata
         if: always() && inputs.dry_run != true
