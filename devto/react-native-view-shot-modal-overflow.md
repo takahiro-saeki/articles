@@ -1,4 +1,5 @@
 ---
+canonical_url: https://qiita.com/hiro123/items/1704eaa555192befe189
 devto_id: 4318459
 title: Why My React Native ScrollView Would Not Scroll Inside a Share Preview Modal
 tags: devchallenge, bugsmash, reactnative, expo
