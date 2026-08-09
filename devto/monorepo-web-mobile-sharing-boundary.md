@@ -1,7 +1,9 @@
 ---
+devto_id: 4350880
+canonical_url: https://zenn.dev/hirodeath/articles/monorepo-web-mobile-sharing-boundary
 title: "How much to share in a monorepo when building common features for web and mobile"
 tags: monorepo, nextjs, expo, trpc
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

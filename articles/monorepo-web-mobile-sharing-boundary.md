@@ -3,7 +3,7 @@ title: "Webとモバイルで共通機能を作るとき、どこまでmonorepo�
 emoji: "🧩"
 type: "tech"
 topics: ["monorepo", "nextjs", "expo", "trpc", "typescript"]
-published: false
+published: true
 ---
 
 Next.jsのWeb版へExpoアプリを追加したとき、最初はできるだけ多くのコードを共有したくなりました。実際に運用すると、共有しやすいのは型と業務ルールで、UIと実行環境への依存は分けた方が扱いやすいと分かりました。
