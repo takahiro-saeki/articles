@@ -1,7 +1,9 @@
 ---
+devto_id: 4355861
+canonical_url: https://qiita.com/hiro123/items/4047a643cdf5e769f0bf
 title: Testing Cloudflare Cron Triggers Locally for Push Notification Workflows
 tags: Cloudflare, CloudflareWorkers, Wrangler, Nextjs
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
