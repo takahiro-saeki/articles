@@ -1,13 +1,13 @@
 ---
 title: Cloudflare Cron Triggersをローカル実行して通知処理をテストする
 tags:
-  - Cloudflare
+  - cloudflare
   - CloudflareWorkers
   - Wrangler
-  - Nextjs
+  - Next.js
   - Push通知
 private: false
-updated_at: '2026-08-10T09:44:04+09:00'
+updated_at: '2026-08-10T10:17:15+09:00'
 id: 4047a643cdf5e769f0bf
 organization_url_name: null
 slide: false

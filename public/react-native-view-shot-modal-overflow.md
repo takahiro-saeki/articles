@@ -1,13 +1,13 @@
 ---
 title: React Nativeの共有プレビューが画面外へはみ出し、ScrollViewも動かなかった原因
 tags:
-  - ReactNative
-  - Expo
+  - reactnative
+  - expo
   - ScrollView
   - react-native-view-shot
   - TypeScript
 private: false
-updated_at: '2026-08-08T09:39:41+09:00'
+updated_at: '2026-08-10T10:17:15+09:00'
 id: 1704eaa555192befe189
 organization_url_name: null
 slide: false
