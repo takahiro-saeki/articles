@@ -32,5 +32,6 @@
   { "date": "2026-09-02", "platform": "qiita", "source": "public/qiita-trend-analyzer.md", "devto": "devto/qiita-trend-analyzer.md" },
   { "date": "2026-09-03", "platform": "zenn", "source": "articles/storybook-vitest-browser-mode.md", "devto": "devto/storybook-vitest-browser-mode.md" },
   { "date": "2026-09-04", "platform": "qiita", "source": "public/trpc-router-inputs-outputs.md", "devto": "devto/trpc-router-inputs-outputs.md" },
-  { "date": "2026-09-05", "platform": "qiita", "source": "public/wrangler-types-dom-conflict.md", "devto": "devto/wrangler-types-dom-conflict.md" }
+  { "date": "2026-09-05", "platform": "qiita", "source": "public/wrangler-types-dom-conflict.md", "devto": "devto/wrangler-types-dom-conflict.md" },
+  { "date": "2026-09-06", "platform": "qiita", "source": "public/godot-stale-class-cache-startup.md", "devto": "devto/godot-stale-class-cache-startup.md" }
 ]
