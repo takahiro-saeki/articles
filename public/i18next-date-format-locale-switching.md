@@ -7,11 +7,11 @@ tags:
   - TypeScript
   - i18n
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-08-11T09:02:57+09:00'
+id: e0b48ea5b3a0e5ae6b51
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---

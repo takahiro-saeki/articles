@@ -1,7 +1,9 @@
 ---
+devto_id: 4364148
+canonical_url: https://qiita.com/hiro123/items/e0b48ea5b3a0e5ae6b51
 title: Supporting Language Switching for Date Formats, Not Just Text, with i18next
 tags: i18next, React Native, Expo, TypeScript
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.
