@@ -1,7 +1,9 @@
 ---
+devto_id: 4373057
+canonical_url: https://zenn.dev/hirodeath/articles/attendance-capacity-waitlist-proxy-design
 title: "Data design for attendance management with capacity, waitlist, and proxy input"
 tags: database, nextjs, drizzle, typescript
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

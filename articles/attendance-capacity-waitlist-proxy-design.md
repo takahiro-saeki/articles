@@ -3,7 +3,7 @@ title: "定員、キャンセル待ち、代理入力がある出欠管理のデ
 emoji: "🪑"
 type: "tech"
 topics: ["database", "nextjs", "drizzle", "typescript", "設計"]
-published: false
+published: true
 ---
 
 単純な出欠表は、ユーザー、予定、参加状態の3つで作れます。ここへ定員、キャンセル待ち、ゲスト、管理者の代理入力を加えると、「参加」という値だけでは状態を表せなくなります。
