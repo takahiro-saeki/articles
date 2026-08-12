@@ -2,12 +2,12 @@
 title: i18nextで文言だけでなく日付フォーマットも言語切り替えへ対応する
 tags:
   - i18next
-  - ReactNative
-  - Expo
+  - reactnative
+  - expo
   - TypeScript
-  - i18n
+  - I18n
 private: false
-updated_at: '2026-08-11T09:02:57+09:00'
+updated_at: '2026-08-12T13:43:30+09:00'
 id: e0b48ea5b3a0e5ae6b51
 organization_url_name: null
 slide: false
