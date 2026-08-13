@@ -1,7 +1,9 @@
 ---
+devto_id: 4382999
+canonical_url: https://qiita.com/hiro123/items/cd81986bbcc2e8502f71
 title: Switching Between Web URLs and App Deep Links for LINE In-App Browser
 tags: LINE, Deep Link, React Native, Next.js
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.
