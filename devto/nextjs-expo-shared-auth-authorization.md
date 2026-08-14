@@ -1,7 +1,9 @@
 ---
+devto_id: 4392049
+canonical_url: https://zenn.dev/hirodeath/articles/nextjs-expo-shared-auth-authorization
 title: "Design evolution toward using the same auth and permission model in Next.js and Expo"
 tags: nextjs, expo, nextauth, trpc
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

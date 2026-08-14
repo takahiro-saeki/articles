@@ -3,7 +3,7 @@ title: "Next.jsとExpoで同じ認証、権限モデルを使うまでの設計�
 emoji: "🔐"
 type: "tech"
 topics: ["nextjs", "expo", "nextauth", "trpc", "authentication"]
-published: false
+published: true
 ---
 
 NextAuthで動いていたNext.jsサービスへExpoアプリを追加しました。WebはCookie、モバイルはBearer JWTを使います。認証方法は別ですが、APIへ入った後のセッション形式と権限判定は共通にしました。
