@@ -1,7 +1,9 @@
 ---
+devto_id: 4400037
+canonical_url: https://qiita.com/hiro123/items/d9b6d880355e7a305dfe
 title: Why Waitlist Promotion Should Be Determined Server-Side, Not Client-Side
 tags: TypeScript, Nextjs, Database, tRPC
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
