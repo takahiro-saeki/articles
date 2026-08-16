@@ -1,7 +1,9 @@
 ---
+devto_id: 4407119
+canonical_url: https://zenn.dev/hirodeath/articles/testflight-continuous-release
 title: "Release process for continuously delivering a personal dev app to TestFlight"
 tags: expo, eas, testflight, ios
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

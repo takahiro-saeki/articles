@@ -3,7 +3,7 @@ title: "個人開発アプリをTestFlightへ継続的に出すためのリリ�
 emoji: "✈️"
 type: "tech"
 topics: ["expo", "eas", "testflight", "ios", "個人開発"]
-published: false
+published: true
 ---
 
 個人開発では、リリース手順を覚えているうちに次のビルドを出せるとは限りません。数週間空くと、versionとbuild numberの違い、証明書、EAS Updateとの境界をもう一度調べることになります。
