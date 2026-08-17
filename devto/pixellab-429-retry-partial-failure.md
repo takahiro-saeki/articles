@@ -1,4 +1,5 @@
 ---
+canonical_url: https://qiita.com/hiro123/items/c8e2c8e6975d98487f9f
 devto_id: 4318449
 title: How I Stopped 429 Retries from Duplicating Successful Batch Jobs
 tags: devchallenge, bugsmash, typescript, nextjs
