@@ -1,4 +1,5 @@
 ---
+canonical_url: https://qiita.com/hiro123/items/1c40c9e35d4058ee75fb
 devto_id: 4318448
 title: The Callback Ref That Trapped My React Image Preview in an Infinite Render Loop
 tags: devchallenge, bugsmash, react, typescript
