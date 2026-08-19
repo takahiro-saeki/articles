@@ -1,7 +1,9 @@
 ---
+devto_id: 4429736
+canonical_url: https://zenn.dev/hirodeath/articles/ai-pixel-character-godot-pipeline
 title: "Pipeline for Importing AI-Generated Pixel Characters into Godot"
 tags: godot, gamedev, pixelart, ai
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

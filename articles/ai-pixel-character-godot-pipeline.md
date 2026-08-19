@@ -3,7 +3,7 @@ title: "AI生成したピクセルキャラクターをGodotへ取り込むパ�
 emoji: "🎨"
 type: "tech"
 topics: ["godot", "gamedev", "pixelart", "ai", "nextjs"]
-published: false
+published: true
 ---
 
 ピクセルキャラクターを生成APIで作っても、そのままGodotへ置くだけではゲーム素材になりません。方向、アニメーション、フレーム数、保存先、採用状態を対応付ける必要があります。
