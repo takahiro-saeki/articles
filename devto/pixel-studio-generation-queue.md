@@ -1,7 +1,9 @@
 ---
+devto_id: 4439055
+canonical_url: https://qiita.com/hiro123/items/2a648245aa396a45296e
 title: Building a Generation Queue Tool for Batch Character Creation
 tags: Nextjs, TypeScript, Queue, API
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
