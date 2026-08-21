@@ -1,7 +1,9 @@
 ---
+devto_id: 4448512
+canonical_url: https://zenn.dev/hirodeath/articles/godot-automated-gameplay-tests
 title: "Automated Testing for Enemy AI, Physics, and Map Connections in Godot"
 tags: godot, gamedev, testing, gdscript
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

@@ -3,7 +3,7 @@ title: "Godotで敵AI、物理挙動、マップ接続を自動テストする"
 emoji: "🧪"
 type: "tech"
 topics: ["godot", "gamedev", "testing", "githubactions", "gdscript"]
-published: false
+published: true
 ---
 
 Godotのゲームを手動プレイだけで確認していると、部屋や敵が増えるほど回帰を見つけにくくなります。Nocturne VaniaではheadlessテストをGitHub Actionsで動かし、敵AI、プレイヤー物理、マップ接続、アセット整合性を分けて確認しています。
