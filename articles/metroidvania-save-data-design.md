@@ -3,7 +3,7 @@ title: "メトロイドヴァニアのセーブデータをどう設計したか
 emoji: "💾"
 type: "tech"
 topics: ["godot", "gamedev", "gdscript", "save", "metroidvania"]
-published: false
+published: true
 ---
 
 メトロイドヴァニアのセーブには、現在位置だけでなく探索済みマップ、取得能力、倒したボス、回収済みアイテムが必要です。マップを後から移動すると、古いセーブの座標もずれます。

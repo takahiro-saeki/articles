@@ -1,7 +1,9 @@
 ---
+devto_id: 4457358
+canonical_url: https://zenn.dev/hirodeath/articles/metroidvania-save-data-design
 title: "How I Designed Save Data for a Metroidvania"
 tags: godot, gamedev, gdscript, metroidvania
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.
