@@ -3,7 +3,7 @@ title: "ヒットストップ、剣閃、コンボ専用モーションで攻撃
 emoji: "⚔️"
 type: "tech"
 topics: ["godot", "gamedev", "gdscript", "animation", "gamefeel"]
-published: false
+published: true
 ---
 
 攻撃判定が正しくても、敵を斬った感触が弱い状態がありました。Nocturne Vaniaでは、ヒットストップ、画面シェイク、ノックバック、剣閃、コンボごとの前進量とモーションをまとめて調整しています。

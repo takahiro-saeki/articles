@@ -1,7 +1,9 @@
 ---
+devto_id: 4464814
+canonical_url: https://zenn.dev/hirodeath/articles/godot-combat-game-feel
 title: "Improving Combat Feel with Hit Stop, Slash Effects, and Combo Animations"
 tags: godot, gamedev, gdscript, animation
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.
