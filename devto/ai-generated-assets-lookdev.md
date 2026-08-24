@@ -1,7 +1,9 @@
 ---
+devto_id: 4470399
+canonical_url: https://zenn.dev/hirodeath/articles/ai-generated-assets-lookdev
 title: "Review AI-Generated Assets In-Game Instead of Adopting Them Directly"
 tags: godot, gamedev, pixelart, ai
-published: false
+published: true
 ---
 
 This article is an English translation of the original Japanese article.

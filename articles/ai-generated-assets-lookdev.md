@@ -3,7 +3,7 @@ title: "AI生成素材をそのまま採用せず、ゲーム内で比較試遊�
 emoji: "🔎"
 type: "tech"
 topics: ["godot", "gamedev", "pixelart", "ai", "tooling"]
-published: false
+published: true
 ---
 
 生成画面で良く見えたピクセルキャラクターが、ゲームへ入れると背景に埋もれることがあります。輪郭、サイズ、アニメーション速度が、実際のカメラ倍率や敵との並びで変わって見えるためです。
