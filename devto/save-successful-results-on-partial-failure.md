@@ -1,7 +1,9 @@
 ---
+devto_id: 4479343
+canonical_url: https://qiita.com/hiro123/items/d47fbdad5f590a1fd5d7
 title: API Design That Allows Partial Failures and Saves Only Successful Assets
 tags: TypeScript, API, Batch, Nextjs
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
