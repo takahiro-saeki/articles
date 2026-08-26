@@ -3,7 +3,7 @@ title: "Base UI(@base-ui/react)をshadcn/uiスタイルで本番採用してい�
 emoji: "🧩"
 type: "tech"
 topics: ["baseui", "react", "shadcn", "tailwindcss", "nextjs"]
-published: false
+published: true
 ---
 
 個人開発のWebサービスで、UIプリミティブにBase UI(@base-ui/react)を使っています。Base UIはスタイルを持たないReact向けのUIコンポーネントライブラリです。

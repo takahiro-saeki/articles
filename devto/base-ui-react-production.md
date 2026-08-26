@@ -1,7 +1,9 @@
 ---
+devto_id: 4488933
+canonical_url: https://zenn.dev/hirodeath/articles/base-ui-react-production
 title: Using Base UI with a shadcn/ui-style component layer in production
 tags: react, baseui, shadcn, tailwind
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
