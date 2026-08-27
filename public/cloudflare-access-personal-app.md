@@ -7,11 +7,11 @@ tags:
   - ZeroTrust
   - セキュリティ
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-08-27T14:17:43+09:00'
+id: 91b4d7112c68c7c1fae7
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---

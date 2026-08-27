@@ -1,7 +1,9 @@
 ---
+devto_id: 4501001
+canonical_url: https://qiita.com/hiro123/items/91b4d7112c68c7c1fae7
 title: Protecting a personal web app with Cloudflare Access and email OTP
 tags: cloudflare, workers, zerotrust, security
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
