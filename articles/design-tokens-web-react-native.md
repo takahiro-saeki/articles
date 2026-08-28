@@ -3,7 +3,7 @@ title: "TailwindのWebとReact Nativeで配色を揃える。小規模なデザ�
 emoji: "🎨"
 type: "tech"
 topics: ["designtokens", "reactnative", "tailwindcss", "expo", "frontend"]
-published: false
+published: true
 ---
 
 Web(Next.js + Tailwind)とiOSアプリ(Expo / React Native)の両方があるサービスを個人開発していると、デザインの一貫性は自分で仕組みを作らない限り守れません。WebはTailwindのユーティリティクラス、React NativeはStyleSheetと、スタイリングの世界が完全に分かれているからです。

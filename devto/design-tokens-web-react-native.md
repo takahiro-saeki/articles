@@ -1,7 +1,9 @@
 ---
+devto_id: 4510921
+canonical_url: https://zenn.dev/hirodeath/articles/design-tokens-web-react-native
 title: Keeping colors consistent between Tailwind on the web and React Native
 tags: designtokens, reactnative, tailwind, expo
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
