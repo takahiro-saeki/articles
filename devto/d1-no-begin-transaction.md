@@ -1,7 +1,9 @@
 ---
+devto_id: 4518908
+canonical_url: https://qiita.com/hiro123/items/94810c8cc6c80501b9ae
 title: Cloudflare D1 has no BEGIN TRANSACTION, so I tested its limits and batch API
 tags: cloudflare, d1, sqlite, database
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
