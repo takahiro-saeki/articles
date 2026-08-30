@@ -1,7 +1,9 @@
 ---
+devto_id: 4525501
+canonical_url: https://zenn.dev/hirodeath/articles/expo-auth-with-nextauth-web
 title: Adding Expo authentication to a NextAuth-based web service
 tags: expo, nextauth, reactnative, jwt
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._

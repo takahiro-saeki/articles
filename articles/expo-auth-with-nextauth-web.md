@@ -3,7 +3,7 @@ title: "NextAuthで動くWebサービスにExpoアプリの認証を後付けし
 emoji: "🔑"
 type: "tech"
 topics: ["expo", "reactnative", "nextauth", "nextjs", "jwt"]
-published: false
+published: true
 ---
 
 NextAuth(Auth.js)で認証しているNext.jsのWebサービスに、後からExpo(React Native)のアプリを追加しました。ここで問題になるのが認証です。NextAuthはセッションCookie前提の設計で、モバイルアプリとCookieの相性は良くありません。
