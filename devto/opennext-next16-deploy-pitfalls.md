@@ -1,7 +1,9 @@
 ---
+devto_id: 4531943
+canonical_url: https://qiita.com/hiro123/items/ce4dd3facc3787a6eaf3
 title: Three problems I hit deploying Next.js 16 to Cloudflare Workers with OpenNext
 tags: nextjs, cloudflare, workers, opennext
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
