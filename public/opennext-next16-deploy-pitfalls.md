@@ -7,7 +7,7 @@ tags:
   - OpenNext
   - TypeScript
 private: false
-updated_at: '2026-08-31T10:51:14+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: ce4dd3facc3787a6eaf3
 organization_url_name: null
 slide: false

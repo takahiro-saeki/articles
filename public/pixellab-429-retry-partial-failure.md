@@ -2,12 +2,12 @@
 title: 外部生成APIの429をリトライしつつ、一部失敗を許容するバッチ設計
 tags:
   - TypeScript
-  - Nextjs
+  - Next.js
   - API
-  - Retry
+  - retry
   - エラーハンドリング
 private: false
-updated_at: '2026-08-17T09:27:58+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: c8e2c8e6975d98487f9f
 organization_url_name: null
 slide: false

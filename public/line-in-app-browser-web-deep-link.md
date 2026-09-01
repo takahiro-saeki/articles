@@ -2,12 +2,12 @@
 title: LINE内ブラウザを考慮してWeb URLとアプリDeep Linkを使い分けた
 tags:
   - LINE
-  - DeepLink
-  - ReactNative
-  - Nextjs
-  - Expo
+  - deeplink
+  - reactnative
+  - Next.js
+  - expo
 private: false
-updated_at: '2026-08-13T09:23:25+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: cd81986bbcc2e8502f71
 organization_url_name: null
 slide: false

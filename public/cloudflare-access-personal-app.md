@@ -4,10 +4,10 @@ tags:
   - cloudflare
   - CloudflareWorkers
   - CloudflareAccess
-  - ZeroTrust
-  - セキュリティ
+  - zerotrust
+  - Security
 private: false
-updated_at: '2026-08-27T14:17:43+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: 91b4d7112c68c7c1fae7
 organization_url_name: null
 slide: false

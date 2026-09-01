@@ -3,11 +3,11 @@ title: APIの部分失敗を許容し、成功した素材だけ保存する設�
 tags:
   - TypeScript
   - API
-  - Batch
+  - batch
   - エラーハンドリング
-  - Nextjs
+  - Next.js
 private: false
-updated_at: '2026-08-25T09:29:19+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: d47fbdad5f590a1fd5d7
 organization_url_name: null
 slide: false

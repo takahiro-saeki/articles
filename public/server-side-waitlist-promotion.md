@@ -2,12 +2,12 @@
 title: キャンセル待ちの繰り上げをクライアントではなくサーバーで確定させる理由
 tags:
   - TypeScript
-  - Nextjs
+  - Next.js
   - Database
   - 設計
   - tRPC
 private: false
-updated_at: '2026-08-15T09:29:09+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: d9b6d880355e7a305dfe
 organization_url_name: null
 slide: false

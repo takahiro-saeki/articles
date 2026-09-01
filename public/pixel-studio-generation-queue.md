@@ -1,13 +1,13 @@
 ---
 title: キャラクター生成をキュー化して一括処理できるツールを作った
 tags:
-  - Nextjs
+  - Next.js
   - TypeScript
-  - Queue
+  - queue
   - API
   - 個人開発
 private: false
-updated_at: '2026-08-20T09:28:44+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: 2a648245aa396a45296e
 organization_url_name: null
 slide: false

@@ -2,12 +2,12 @@
 title: ReactのsetState無限ループが画像プレビューで起きた原因
 tags:
   - React
-  - Nextjs
+  - Next.js
   - TypeScript
   - フロントエンド
-  - デバッグ
+  - debug
 private: false
-updated_at: '2026-08-18T09:28:01+09:00'
+updated_at: '2026-09-01T17:58:41+09:00'
 id: 1c40c9e35d4058ee75fb
 organization_url_name: null
 slide: false
