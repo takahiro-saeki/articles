@@ -3,7 +3,7 @@ title: "個人開発でWeb+iOSアプリを2本運用している技術スタッ�
 emoji: "🧱"
 type: "tech"
 topics: ["nextjs", "expo", "cloudflare", "trpc", "個人開発"]
-published: false
+published: true
 ---
 
 Web(ブラウザ)とiOSアプリの両方を持つサービスを、1人で2本開発・運用しています。サークル運営の管理サービスと、ボイストレーニングの記録アプリです。

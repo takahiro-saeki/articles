@@ -1,7 +1,9 @@
 ---
+devto_id: 4541441
+canonical_url: https://zenn.dev/hirodeath/articles/indie-web-ios-tech-stack
 title: The stack I use to run two indie web and iOS apps
 tags: nextjs, expo, cloudflare, trpc
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
