@@ -1,7 +1,9 @@
 ---
+devto_id: 4550925
+canonical_url: https://qiita.com/hiro123/items/2a0b91291b122da29701
 title: I built a Qiita trend analyzer to decide what technical article to write next
 tags: qiita, node, api, javascript
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
