@@ -3,7 +3,7 @@ title: "StorybookのストーリーをそのままVitestのテストにする。
 emoji: "📖"
 type: "tech"
 topics: ["storybook", "vitest", "nextjs", "playwright", "testing"]
-published: false
+published: true
 ---
 
 Next.jsの個人開発プロジェクトで、UIコンポーネントのカタログとテストを別々に維持するのはコストが高すぎます。私は「**ストーリーを書けば、それがそのままブラウザ実行のテストになる**」構成にしていて、カタログ(Storybook)とコンポーネントテストを1つの成果物で兼ねています。

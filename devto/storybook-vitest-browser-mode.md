@@ -1,7 +1,9 @@
 ---
+devto_id: 4560679
+canonical_url: https://zenn.dev/hirodeath/articles/storybook-vitest-browser-mode
 title: Turning Storybook stories into Vitest browser tests in Next.js
 tags: storybook, vitest, nextjs, playwright
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
