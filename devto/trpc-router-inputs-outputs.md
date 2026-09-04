@@ -1,7 +1,9 @@
 ---
+devto_id: 4569287
+canonical_url: https://qiita.com/hiro123/items/61cc72aec4273e245e33
 title: Removing handwritten API types with tRPC RouterInputs and RouterOutputs
 tags: trpc, typescript, nextjs, react
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
