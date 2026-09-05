@@ -1,7 +1,9 @@
 ---
+devto_id: 4578732
+canonical_url: https://qiita.com/hiro123/items/a8b857525b32e7e85bdb
 title: When Wrangler-generated types collide with Next.js DOM types
 tags: cloudflare, wrangler, nextjs, typescript
-published: false
+published: true
 ---
 
 _This article is an English translation of the original Japanese article._
