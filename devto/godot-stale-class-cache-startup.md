@@ -1,4 +1,5 @@
 ---
+canonical_url: https://qiita.com/hiro123/items/b0c901088ef520e06601
 devto_id: 4356688
 title: The Stale Godot Class Cache Bug That Passed CI but Broke Local Startup
 tags: devchallenge, bugsmash, godot, gamedev
