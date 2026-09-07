@@ -3,7 +3,7 @@ title: "AIで速くなり、Game Jamの締切で完成した。VOLT NOMAD制作�
 emoji: "⚡"
 type: "idea"
 topics: ["gamedev", "godot", "ai", "gamejam", "個人開発"]
-published: false
+published: true
 ---
 
 2026年8月、AI Browser Game Jam 4に向けて、ブラウザゲーム『VOLT NOMAD』を作りました。

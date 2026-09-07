@@ -1,8 +1,9 @@
 ---
+devto_id: 4591141
 title: "AI Made Me Faster, but a Game Jam Made Me Finish: The Making of VOLT NOMAD"
 tags: gamedev, godot, ai, gamejam
 canonical_url: https://zenn.dev/hirodeath/articles/volt-nomad-game-jam-postmortem
-published: false
+published: true
 ---
 
 This article is an English version of my original Japanese post.
