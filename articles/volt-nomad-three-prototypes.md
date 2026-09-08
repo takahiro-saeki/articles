@@ -3,7 +3,7 @@ title: "3つのゲームを作り、どれも採用しなかった。「もう�
 emoji: "🧪"
 type: "idea"
 topics: ["gamedev", "godot", "gamejam", "プロトタイプ", "個人開発"]
-published: false
+published: true
 ---
 
 Game Jamで一番怖いのは、実装が間に合わないことだけではありません。締切の数日前になって、「そもそも、このゲームを最後まで作りたいのか」と迷い始めることです。

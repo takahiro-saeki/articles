@@ -1,8 +1,9 @@
 ---
+devto_id: 4601666
 title: "I Built Three Games and Chose None: Picking a Direction by Whether I Wanted to Play Again"
 tags: gamedev, godot, gamejam, indie
 canonical_url: https://zenn.dev/hirodeath/articles/volt-nomad-three-prototypes
-published: false
+published: true
 ---
 
 This article is an English version of my original Japanese post.
