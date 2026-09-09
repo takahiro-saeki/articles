@@ -1,8 +1,9 @@
 ---
+devto_id: 4610300
 title: "Putting Codex into a Game Production Pipeline, from Godot Implementation to Release Checks"
 tags: ai, godot, gamedev, testing
 canonical_url: https://zenn.dev/hirodeath/articles/volt-nomad-codex-production
-published: false
+published: true
 ---
 
 This article is an English version of my original Japanese post.

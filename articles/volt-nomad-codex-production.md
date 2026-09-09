@@ -3,7 +3,7 @@ title: "Codexをゲーム制作ラインに入れる。企画、Godot実装、�
 emoji: "🤖"
 type: "tech"
 topics: ["codex", "godot", "gamedev", "testing", "ai"]
-published: false
+published: true
 ---
 
 AIをゲーム開発へ使うとき、コードを一度生成してもらうだけでは、完成まであまり近づきません。
