@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-09-11T23:05:29.317913+00:00",
+  "repository": "takahiro-saeki/articles",
+  "default_branch": "main",
+  "main_sha": "832172e636d5881e8a5dce1c2d7dbbacb629a0de",
+  "scheduled_pairs": 90,
+  "historical_entries": 38,
+  "remote_schedule_exact_match": true,
+  "remote_draft_blobs_matching_local": 180,
+  "publisher_and_workflow_match": true,
+  "workflow_state": "active",
+  "external_article_creations_in_this_verification": 0
+}

@@ -29,4 +29,12 @@ python3 scripts/audit-article-stock-completion.py
 node scripts/validate-article-stock.mjs --all
 ```
 
-mainへの反映とGitHub Actions上のdry-runの実行結果は、有効化後にこの記録へ追記する。
+## GitHub上での有効化確認
+
+予約と全180原稿をcommit `832172e636d5881e8a5dce1c2d7dbbacb629a0de` でmainへ反映。remoteの予約JSON、全原稿のGit blob、投稿スクリプト、workflowの一致を読み戻した。予約workflowはactive。[remote確認結果](remote-verification.json)を参照。
+
+- [9月13日・Zennのdry-run](https://github.com/takahiro-saeki/articles/actions/runs/34656632842): 成功。P01の日英原稿を選択し、公開フラグはfalse、メタデータcommitはスキップ。
+- [9月16日・Qiitaのdry-run](https://github.com/takahiro-saeki/articles/actions/runs/34656635434): 成功。T31の日英原稿を選択し、公開フラグはfalse、メタデータcommitはスキップ。
+- [main反映時の既存Qiita workflow](https://github.com/takahiro-saeki/articles/actions/runs/34656612978): 成功。反映後も全180候補のGit blobは検証済み下書きと一致。
+
+[GitHub Actions確認結果](github-actions-verification.json)に実行ID、対象日、対象ファイル、結果を保存した。予約された未来日の本公開はまだ実行していない。

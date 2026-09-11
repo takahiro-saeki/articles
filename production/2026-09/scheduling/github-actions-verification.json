@@ -1,0 +1,40 @@
+{
+  "repository": "takahiro-saeki/articles",
+  "scheduled_dry_runs": [
+    {
+      "run_id": 34656632842,
+      "url": "https://github.com/takahiro-saeki/articles/actions/runs/34656632842",
+      "head_sha": "832172e636d5881e8a5dce1c2d7dbbacb629a0de",
+      "date": "2026-09-13",
+      "platform": "zenn",
+      "source": "articles/plane-project-boundaries.md",
+      "devto": "devto/plane-project-boundaries.md",
+      "conclusion": "success",
+      "published_flags_before": false,
+      "metadata_commit": "skipped",
+      "mode": "dry-run",
+      "node_version": "v22.23.2"
+    },
+    {
+      "run_id": 34656635434,
+      "url": "https://github.com/takahiro-saeki/articles/actions/runs/34656635434",
+      "head_sha": "832172e636d5881e8a5dce1c2d7dbbacb629a0de",
+      "date": "2026-09-16",
+      "platform": "qiita",
+      "source": "public/android-edge-to-edge-insets.md",
+      "devto": "devto/android-edge-to-edge-insets.md",
+      "conclusion": "success",
+      "published_flags_before": false,
+      "metadata_commit": "skipped",
+      "mode": "dry-run",
+      "node_version": "v22.23.2"
+    }
+  ],
+  "main_push_workflow": {
+    "conclusion": "success",
+    "databaseId": 34656612978,
+    "event": "push",
+    "headSha": "832172e636d5881e8a5dce1c2d7dbbacb629a0de",
+    "url": "https://github.com/takahiro-saeki/articles/actions/runs/34656612978"
+  }
+}
