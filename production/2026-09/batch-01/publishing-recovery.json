@@ -1,0 +1,68 @@
+{
+  "ref": "8a1bfa8",
+  "environment": "v24.15.0",
+  "network": "mock only; no real API calls",
+  "cases": 6,
+  "results": [
+    {
+      "case": "both metadata saved",
+      "retryCalls": [],
+      "remote": {
+        "qiita": 1,
+        "devto": 1
+      }
+    },
+    {
+      "case": "devto rejects; qiita id saved",
+      "retryCalls": [
+        "qiita:PATCH",
+        "devto:POST"
+      ],
+      "remote": {
+        "qiita": 1,
+        "devto": 1
+      }
+    },
+    {
+      "case": "qiita accepted; response lost",
+      "retryCalls": [
+        "qiita:POST",
+        "devto:POST"
+      ],
+      "remote": {
+        "qiita": 2,
+        "devto": 1
+      }
+    },
+    {
+      "case": "devto accepted; response lost",
+      "retryCalls": [
+        "qiita:PATCH",
+        "devto:POST"
+      ],
+      "remote": {
+        "qiita": 1,
+        "devto": 2
+      }
+    },
+    {
+      "case": "qiita accepted; local write fails",
+      "retryCalls": [
+        "qiita:POST",
+        "devto:POST"
+      ],
+      "remote": {
+        "qiita": 2,
+        "devto": 1
+      }
+    },
+    {
+      "case": "dry run",
+      "calls": [],
+      "remote": {
+        "qiita": 0,
+        "devto": 0
+      }
+    }
+  ]
+}

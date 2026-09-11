@@ -1,0 +1,358 @@
+{
+  "ref": "8a1bfa8",
+  "environment": "v24.15.0",
+  "first": "2026-08-03",
+  "last": "2026-09-09",
+  "entries": 38,
+  "uniqueDates": 38,
+  "inclusiveDays": 38,
+  "zenn": 19,
+  "qiita": 19,
+  "sourceRecorded": 38,
+  "englishRecorded": 38,
+  "canonicalMatches": 38,
+  "rows": [
+    {
+      "date": "2026-08-03",
+      "platform": "zenn",
+      "source": "articles/expo-i18n-staged-migration.md",
+      "english": "devto/expo-i18n-staged-migration.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-04",
+      "platform": "qiita",
+      "source": "public/expo-notifications-launch-vs-runtime-tap.md",
+      "english": "devto/expo-notifications-launch-vs-runtime-tap.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-05",
+      "platform": "qiita",
+      "source": "public/expo-router-invite-universal-links.md",
+      "english": "devto/expo-router-invite-universal-links.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-06",
+      "platform": "zenn",
+      "source": "articles/eas-update-runtime-version-operations.md",
+      "english": "devto/eas-update-runtime-version-operations.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-07",
+      "platform": "qiita",
+      "source": "public/react-native-share-qr-image.md",
+      "english": "devto/react-native-share-qr-image.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-08",
+      "platform": "qiita",
+      "source": "public/react-native-view-shot-modal-overflow.md",
+      "english": "devto/react-native-view-shot-modal-overflow.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-09",
+      "platform": "zenn",
+      "source": "articles/monorepo-web-mobile-sharing-boundary.md",
+      "english": "devto/monorepo-web-mobile-sharing-boundary.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-10",
+      "platform": "qiita",
+      "source": "public/cloudflare-cron-local-notification-test.md",
+      "english": "devto/cloudflare-cron-local-notification-test.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-11",
+      "platform": "qiita",
+      "source": "public/i18next-date-format-locale-switching.md",
+      "english": "devto/i18next-date-format-locale-switching.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-12",
+      "platform": "zenn",
+      "source": "articles/attendance-capacity-waitlist-proxy-design.md",
+      "english": "devto/attendance-capacity-waitlist-proxy-design.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-13",
+      "platform": "qiita",
+      "source": "public/line-in-app-browser-web-deep-link.md",
+      "english": "devto/line-in-app-browser-web-deep-link.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-14",
+      "platform": "zenn",
+      "source": "articles/nextjs-expo-shared-auth-authorization.md",
+      "english": "devto/nextjs-expo-shared-auth-authorization.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-15",
+      "platform": "qiita",
+      "source": "public/server-side-waitlist-promotion.md",
+      "english": "devto/server-side-waitlist-promotion.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-16",
+      "platform": "zenn",
+      "source": "articles/testflight-continuous-release.md",
+      "english": "devto/testflight-continuous-release.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-17",
+      "platform": "qiita",
+      "source": "public/pixellab-429-retry-partial-failure.md",
+      "english": "devto/pixellab-429-retry-partial-failure.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-18",
+      "platform": "qiita",
+      "source": "public/react-setstate-loop-pixel-preview.md",
+      "english": "devto/react-setstate-loop-pixel-preview.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-19",
+      "platform": "zenn",
+      "source": "articles/ai-pixel-character-godot-pipeline.md",
+      "english": "devto/ai-pixel-character-godot-pipeline.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-20",
+      "platform": "qiita",
+      "source": "public/pixel-studio-generation-queue.md",
+      "english": "devto/pixel-studio-generation-queue.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-21",
+      "platform": "zenn",
+      "source": "articles/godot-automated-gameplay-tests.md",
+      "english": "devto/godot-automated-gameplay-tests.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-22",
+      "platform": "zenn",
+      "source": "articles/metroidvania-save-data-design.md",
+      "english": "devto/metroidvania-save-data-design.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-23",
+      "platform": "zenn",
+      "source": "articles/godot-combat-game-feel.md",
+      "english": "devto/godot-combat-game-feel.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-24",
+      "platform": "zenn",
+      "source": "articles/ai-generated-assets-lookdev.md",
+      "english": "devto/ai-generated-assets-lookdev.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-25",
+      "platform": "qiita",
+      "source": "public/save-successful-results-on-partial-failure.md",
+      "english": "devto/save-successful-results-on-partial-failure.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-26",
+      "platform": "zenn",
+      "source": "articles/base-ui-react-production.md",
+      "english": "devto/base-ui-react-production.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-27",
+      "platform": "qiita",
+      "source": "public/cloudflare-access-personal-app.md",
+      "english": "devto/cloudflare-access-personal-app.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-28",
+      "platform": "zenn",
+      "source": "articles/design-tokens-web-react-native.md",
+      "english": "devto/design-tokens-web-react-native.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-29",
+      "platform": "qiita",
+      "source": "public/d1-no-begin-transaction.md",
+      "english": "devto/d1-no-begin-transaction.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-30",
+      "platform": "zenn",
+      "source": "articles/expo-auth-with-nextauth-web.md",
+      "english": "devto/expo-auth-with-nextauth-web.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-08-31",
+      "platform": "qiita",
+      "source": "public/opennext-next16-deploy-pitfalls.md",
+      "english": "devto/opennext-next16-deploy-pitfalls.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-01",
+      "platform": "zenn",
+      "source": "articles/indie-web-ios-tech-stack.md",
+      "english": "devto/indie-web-ios-tech-stack.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-02",
+      "platform": "qiita",
+      "source": "public/qiita-trend-analyzer.md",
+      "english": "devto/qiita-trend-analyzer.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-03",
+      "platform": "zenn",
+      "source": "articles/storybook-vitest-browser-mode.md",
+      "english": "devto/storybook-vitest-browser-mode.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-04",
+      "platform": "qiita",
+      "source": "public/trpc-router-inputs-outputs.md",
+      "english": "devto/trpc-router-inputs-outputs.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-05",
+      "platform": "qiita",
+      "source": "public/wrangler-types-dom-conflict.md",
+      "english": "devto/wrangler-types-dom-conflict.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-06",
+      "platform": "qiita",
+      "source": "public/godot-stale-class-cache-startup.md",
+      "english": "devto/godot-stale-class-cache-startup.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-07",
+      "platform": "zenn",
+      "source": "articles/volt-nomad-game-jam-postmortem.md",
+      "english": "devto/volt-nomad-game-jam-postmortem.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-08",
+      "platform": "zenn",
+      "source": "articles/volt-nomad-three-prototypes.md",
+      "english": "devto/volt-nomad-three-prototypes.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    },
+    {
+      "date": "2026-09-09",
+      "platform": "zenn",
+      "source": "articles/volt-nomad-codex-production.md",
+      "english": "devto/volt-nomad-codex-production.md",
+      "sourceRecorded": true,
+      "englishRecorded": true,
+      "canonicalMatches": true
+    }
+  ]
+}

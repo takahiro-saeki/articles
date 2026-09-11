@@ -1,0 +1,11 @@
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+const items = JSON.parse(readFileSync('production/2026-09/catalog.json', 'utf8'));
+const complete = items.filter(x => x.status === '完成');
+const link = (path) => existsSync(path) ? `[原稿](${path})` : `予定: ${path}`;
+const rows = items.map(x => `| ${x.id} | ${x.title} | ${x.slug} | ${link(x.japanese)} | ${link(x.english)} | ${x.fact_check} | ${x.verification} | ${x.status} |`).join('\n');
+writeFileSync('ARTICLE_PRODUCTION_STATUS_2026-09.md', `# 記事制作進捗 2026年9月\n\n完成 ${complete.length}/90件（日本語＋英語の組）。残り ${90-complete.length}件。\n\n「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。\n\n台帳の元データは[production/2026-09/catalog.json](production/2026-09/catalog.json)。更新後は \`node scripts/article-production-status.mjs\` で本表を再生成する。調査根拠、実行結果、内容の重複確認、Humanizer監査は各バッチの記録へ残す。\n\n- 最初のバッチ: P01、O01、T28、O05、P03、O03。\n- 続く優先候補: T31、T37、T20、T01、O07、O10。\n- 作業ブランチ: \`codex/article-stock-2026-09\`。mainへのpushで動く既存の公開workflowを起動しない。\n- Qiita新規記事の将来のIDは未確定。canonicalの仮設定方法はユーザーへ確認中。URLを推測して作らない。\n- 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。\n\n| ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n${rows}\n`);
+const path='ARTICLE_IDEAS_2026-09.md';
+let ideas=readFileSync(path,'utf8').replace(/\n<!-- production-progress:start -->[\s\S]*?<!-- production-progress:end -->\n?/,'');
+ideas += `\n<!-- production-progress:start -->\n## 制作状況\n\n完成 ${complete.length}/90件。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。\n\n${complete.map(x=>`- ${x.id}: [${x.title}](${x.japanese}) / [English](${x.english})（完成・未公開）`).join('\n')}\n<!-- production-progress:end -->\n`;
+writeFileSync(path,ideas);
+console.log(`status: ${complete.length}/90 complete`);

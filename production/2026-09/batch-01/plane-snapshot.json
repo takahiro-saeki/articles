@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-09-11",
+  "workspace_slug": "hiro-work",
+  "mode": "read-only",
+  "project_list_complete": true,
+  "projects": [
+    {
+      "name": "SLABYRINTH",
+      "identifier": "DRG"
+    },
+    {
+      "name": "Recital Originals 2026",
+      "identifier": "RECITAL"
+    },
+    {
+      "name": "meguri",
+      "identifier": "MEG"
+    },
+    {
+      "name": "SquadNote",
+      "identifier": "SQN"
+    },
+    {
+      "name": "hiro work",
+      "identifier": "HIROW"
+    }
+  ],
+  "squadnote_non_archived_modules": 0,
+  "squadnote_non_archived_cycles": 0,
+  "dedicated_initiatives_feature": "disabled",
+  "notes": "No project, module, cycle, initiative or work item was created or changed."
+}

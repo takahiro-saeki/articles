@@ -1,0 +1,28 @@
+repository-decision-log-evidence	Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法
+scheduled-publishing-recovery-boundary	予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する
+publishing-38-day-audit	38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える
+expo-push-token-device-ownership	Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計
+plane-project-module-cycle-initiative	PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ
+plane-project-boundaries	個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける
+volt-nomad-game-jam-postmortem	AIで速くなり、Game Jamの締切で完成した。VOLT NOMAD制作記
+volt-nomad-three-prototypes	3つのゲームを作り、どれも採用しなかった。「もう一度遊びたいか」で企画を選んだ話
+storybook-vitest-browser-mode	StorybookのストーリーをそのままVitestのテストにする。nextjs-vite + browser modeの構成
+volt-nomad-codex-production	Codexをゲーム制作ラインに入れる。企画、Godot実装、テスト、提出準備をつないだ方法
+testflight-continuous-release	個人開発アプリをTestFlightへ継続的に出すためのリリース手順
+nextjs-expo-shared-auth-authorization	Next.jsとExpoで同じ認証、権限モデルを使うまでの設計変遷
+metroidvania-save-data-design	メトロイドヴァニアのセーブデータをどう設計したか
+indie-web-ios-tech-stack	個人開発でWeb+iOSアプリを2本運用している技術スタックを全部書く
+godot-automated-gameplay-tests	Godotで敵AI、物理挙動、マップ接続を自動テストする
+godot-combat-game-feel	ヒットストップ、剣閃、コンボ専用モーションで攻撃の手触りを改善する
+expo-auth-with-nextauth-web	NextAuthで動くWebサービスにExpoアプリの認証を後付けした構成と残った課題
+design-tokens-web-react-native	TailwindのWebとReact Nativeで配色を揃える。小規模なデザイントークン運用
+ai-pixel-character-godot-pipeline	AI生成したピクセルキャラクターをGodotへ取り込むパイプライン
+base-ui-react-production	Base UI(@base-ui/react)をshadcn/uiスタイルで本番採用している構成
+ai-generated-assets-lookdev	AI生成素材をそのまま採用せず、ゲーム内で比較試遊できる仕組み
+attendance-waitlist-concurrency-control	出欠管理の同時更新をどう防ぐか。D1で考える一意制約、監査ログ、通知の冪等化
+attendance-capacity-waitlist-proxy-design	定員、キャンセル待ち、代理入力がある出欠管理のデータ設計
+monorepo-web-mobile-sharing-boundary	Webとモバイルで共通機能を作るとき、どこまでmonorepoで共有するか
+eas-update-runtime-version-operations	EAS Update導入後のproduction、preview、runtimeVersion運用
+expo-i18n-staged-migration	Expoアプリを日本語から日英中対応へ段階的に移行した記録
+migrate-node-sqlite-to-d1	node:sqliteで動いていたNext.jsアプリをCloudflare D1に移行する
+trpc-share-types-next-expo	tRPC v11でNext.jsとExpoの型を共有する。個人開発Web+iOSアプリの実構成

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "P01",
+    "path": "articles/plane-project-boundaries.md",
+    "before_sha256": "54edb5ec36b65dfa3983aa22e0ad8e3eb99430b0d5fdafa60a4d7a5f18db10ac",
+    "after_sha256": "300b461b7738bd506912d823c645a2d7219b0f66891587313f2f811773f95d94",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 2,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "P01",
+    "path": "devto/plane-project-boundaries.md",
+    "before_sha256": "8f74c122aaed6ef03ad5966a26b5fcb6ae9a2e69e24090cb85cdf49381c99718",
+    "after_sha256": "7c15e7df1767a3a7cb86986d7c3467110f0f09ab029c279d8f52cd652510ecc6",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 2,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "P03",
+    "path": "articles/plane-project-module-cycle-initiative.md",
+    "before_sha256": "c5396435902ff5e5aad155c178e4907df5fa61fb3611aace344be03d02ef33d9",
+    "after_sha256": "edeb96c88db4af086c077e8a12250c6ba9feced356e0f9e64fc25d227333cb54",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 2,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "P03",
+    "path": "devto/plane-project-module-cycle-initiative.md",
+    "before_sha256": "e09094c40f5c8b8dd08f61497a97900a2d1b04a82765acbd2d261503e8955fbc",
+    "after_sha256": "c1c73af2e89566bc9602cf008d19e94d1fbc8e1c7556817348c6dec7fa0719b2",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 2,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "T28",
+    "path": "articles/expo-push-token-device-ownership.md",
+    "before_sha256": "20d971487a52cab6cbea2c9eaa05c8906b2f6770a02831d07ee10c43539234a7",
+    "after_sha256": "4f7abdb276f4eb40c8df8626f63009ade918deb9527037c06b4bf630857e880e",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 2,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "T28",
+    "path": "devto/expo-push-token-device-ownership.md",
+    "before_sha256": "5e8e43c5cc210f03ef4274fb2c7f9bc52f2cd40b1fa82383653d269349c3b650",
+    "after_sha256": "835ebc2306b18dbb429eb2e0a22489bace10975bac6b077ec5c9bf594d51b66f",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "O01",
+    "path": "articles/publishing-38-day-audit.md",
+    "before_sha256": "230bf552e439e16445707d9e9ecd0a1eb581a44037e52a7825a720f37868db96",
+    "after_sha256": "d712fecc8fa4c18fa189dd32ecb7f381b7f2822f17b7b5a4651315b514b2240f",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "O01",
+    "path": "devto/publishing-38-day-audit.md",
+    "before_sha256": "f056f15849f4df4ae95fd23c5c1b043d0f59098bb4c50eeb2105c578b6648afa",
+    "after_sha256": "32871c3a88f61b3be110fbcc6ce352d24b5efd8710e6c473ad07f5ed8dda5b6b",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "O03",
+    "path": "articles/scheduled-publishing-recovery-boundary.md",
+    "before_sha256": "d7bcaf11a1e5a3ae45e2285fada87c4b720c4116be8126b6ef5a787c686c2a91",
+    "after_sha256": "1de30a04ea9853d2ff7807b3271a9dd9daab8123d0cfe12da0025cf164d8d4c8",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "O03",
+    "path": "devto/scheduled-publishing-recovery-boundary.md",
+    "before_sha256": "1431af4afa5dc8d96ba14c3afe82155cdb358d8e5c67628f7da84b2c55ceae24",
+    "after_sha256": "e4b0413b7b32a9497c63c3566e1d36feee19455c93232b19bad407bf4276a4f1",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "O05",
+    "path": "articles/repository-decision-log-evidence.md",
+    "before_sha256": "357684ca6156d37c911ce55fb1bacfa92205a8bf2e097fdbcd78b543f58490a9",
+    "after_sha256": "6b8218f257f20c985f4694caa945083950a117c5e8db6a6366d7d67470554a84",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  },
+  {
+    "id": "O05",
+    "path": "devto/repository-decision-log-evidence.md",
+    "before_sha256": "a3ef37b3e8b7f8142454ef48d8c24bc6e80c9209e86fd6346a47eac3a11b5a80",
+    "after_sha256": "ae1f0fd227db367bf4b1ac582bf66f011be3aa23696d2d5d4e64718533de3a73",
+    "frontmatter_code_links_numbers_unchanged": true,
+    "prose_edits": 1,
+    "semantic_review": "Evidence scope, uncertainty, implemented/proposed distinction, counts and dates preserved; no invented first-person experience."
+  }
+]

@@ -155,3 +155,16 @@
 - 合計: 90本
 
 同じテーマから複数記事を作る場合も、説明記事、実測記事、失敗と復旧の記事を一つへ詰め込まない。一本ごとに読者が持ち帰る答えを一つに絞る。
+
+<!-- production-progress:start -->
+## 制作状況
+
+完成 6/90件。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
+
+- P01: [個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける](articles/plane-project-boundaries.md) / [English](devto/plane-project-boundaries.md)（完成・未公開）
+- P03: [PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ](articles/plane-project-module-cycle-initiative.md) / [English](devto/plane-project-module-cycle-initiative.md)（完成・未公開）
+- T28: [Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計](articles/expo-push-token-device-ownership.md) / [English](devto/expo-push-token-device-ownership.md)（完成・未公開）
+- O01: [38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える](articles/publishing-38-day-audit.md) / [English](devto/publishing-38-day-audit.md)（完成・未公開）
+- O03: [予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する](articles/scheduled-publishing-recovery-boundary.md) / [English](devto/scheduled-publishing-recovery-boundary.md)（完成・未公開）
+- O05: [Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法](articles/repository-decision-log-evidence.md) / [English](devto/repository-decision-log-evidence.md)（完成・未公開）
+<!-- production-progress:end -->

@@ -1,0 +1,138 @@
+{
+  "pairs": 6,
+  "checks": "frontmatter, flags, tags, canonical, fences, executable snippets, links, titles, no schedule additions",
+  "articles": [
+    {
+      "id": "P01",
+      "jaCharacters": 3044,
+      "enWords": 869,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/volt-nomad-codex-production.md",
+          "score": 0.021
+        },
+        {
+          "path": "articles/monorepo-web-mobile-sharing-boundary.md",
+          "score": 0.018
+        },
+        {
+          "path": "articles/testflight-continuous-release.md",
+          "score": 0.018
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "jaCharacters": 3301,
+      "enWords": 973,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/volt-nomad-codex-production.md",
+          "score": 0.022
+        },
+        {
+          "path": "articles/attendance-waitlist-concurrency-control.md",
+          "score": 0.021
+        },
+        {
+          "path": "articles/trpc-share-types-next-expo.md",
+          "score": 0.018
+        }
+      ]
+    },
+    {
+      "id": "T28",
+      "jaCharacters": 4295,
+      "enWords": 1113,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 7,
+      "nearestExisting": [
+        {
+          "path": "articles/attendance-waitlist-concurrency-control.md",
+          "score": 0.044
+        },
+        {
+          "path": "articles/expo-auth-with-nextauth-web.md",
+          "score": 0.034
+        },
+        {
+          "path": "articles/trpc-share-types-next-expo.md",
+          "score": 0.033
+        }
+      ]
+    },
+    {
+      "id": "O01",
+      "jaCharacters": 3185,
+      "enWords": 908,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/.remote/6a9d9de8e34b671e5674.md",
+          "score": 0.027
+        },
+        {
+          "path": "public/6a9d9de8e34b671e5674.md",
+          "score": 0.027
+        },
+        {
+          "path": "public/qiita-trend-analyzer.md",
+          "score": 0.022
+        }
+      ]
+    },
+    {
+      "id": "O03",
+      "jaCharacters": 3310,
+      "enWords": 960,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/attendance-waitlist-concurrency-control.md",
+          "score": 0.027
+        },
+        {
+          "path": "articles/migrate-node-sqlite-to-d1.md",
+          "score": 0.024
+        },
+        {
+          "path": "public/.remote/c6e645cc27c4e2a6f919.md",
+          "score": 0.022
+        }
+      ]
+    },
+    {
+      "id": "O05",
+      "jaCharacters": 3307,
+      "enWords": 894,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/volt-nomad-codex-production.md",
+          "score": 0.046
+        },
+        {
+          "path": "articles/volt-nomad-game-jam-postmortem.md",
+          "score": 0.03
+        },
+        {
+          "path": "articles/volt-nomad-three-prototypes.md",
+          "score": 0.023
+        }
+      ]
+    }
+  ]
+}
