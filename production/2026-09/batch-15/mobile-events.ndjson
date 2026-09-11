@@ -1,0 +1,25 @@
+{"boot":"mtx2exki","sequence":2,"event":"prevent-request","data":{},"elapsed":1176941001.073}
+{"boot":"mtx2exki","sequence":1,"event":"module","data":{"currentState":"inactive"},"elapsed":1176941000.329875}
+{"boot":"mtx2exki","sequence":3,"event":"initial-url","data":{"url":null},"elapsed":1176941010.091041}
+{"boot":"mtx2exki","sequence":4,"event":"prevent-result","data":{"value":true},"elapsed":1176941010.275583}
+{"boot":"mtx2exki","sequence":5,"event":"root-effect","data":{"currentState":"inactive"},"elapsed":1176941013.144958}
+{"boot":"mtx2exki","sequence":6,"event":"auth-start","data":{"implementation":"local delayed fixture; no credentials"},"elapsed":1176941013.393833}
+{"boot":"mtx2exki","sequence":7,"event":"router-path","data":{"pathname":"/"},"elapsed":1176941013.528458}
+{"boot":"mtx2exki","sequence":8,"event":"font-ready","data":{"fontsLoaded":true,"error":null},"elapsed":1176941023.042125}
+{"boot":"mtx2exki","sequence":9,"event":"hide-request","data":{"mode":"early","authReady":false},"elapsed":1176941088.638}
+{"boot":"mtx2exki","sequence":10,"event":"hide-result","data":{"mode":"early"},"elapsed":1176941088.802791}
+{"boot":"mtx2exki","sequence":11,"event":"auth-ready","data":{},"elapsed":1176945105.205541}
+{"boot":"mtx2exki","sequence":12,"event":"content-layout","data":{"mode":"early","authReady":true},"elapsed":1176945212.599166}
+{"boot":"mtx2fe4q","sequence":2,"event":"prevent-request","data":{},"elapsed":1176962465.125916}
+{"boot":"mtx2fe4q","sequence":3,"event":"initial-url","data":{"url":null},"elapsed":1176962467.0025}
+{"boot":"mtx2fe4q","sequence":4,"event":"root-effect","data":{"currentState":"inactive"},"elapsed":1176962468.938125}
+{"boot":"mtx2fe4q","sequence":5,"event":"auth-start","data":{"implementation":"local delayed fixture; no credentials"},"elapsed":1176962469.17575}
+{"boot":"mtx2fe4q","sequence":1,"event":"module","data":{"currentState":"inactive"},"elapsed":1176962464.711958}
+{"boot":"mtx2fe4q","sequence":6,"event":"router-path","data":{"pathname":"/"},"elapsed":1176962469.309958}
+{"boot":"mtx2fe4q","sequence":7,"event":"prevent-result","data":{"value":true},"elapsed":1176962469.881166}
+{"boot":"mtx2fe4q","sequence":8,"event":"font-ready","data":{"fontsLoaded":true,"error":null},"elapsed":1176962472.042166}
+{"boot":"mtx2fe4q","sequence":9,"event":"auth-ready","data":{},"elapsed":1176966504.918416}
+{"boot":"mtx2fe4q","sequence":10,"event":"content-layout","data":{"mode":"coordinated","authReady":true},"elapsed":1176966551.90875}
+{"boot":"mtx2fe4q","sequence":11,"event":"hide-request","data":{"mode":"coordinated","authReady":true},"elapsed":1176966552.086791}
+{"boot":"mtx2fe4q","sequence":12,"event":"hide-result","data":{"mode":"coordinated"},"elapsed":1176966553.748458}
+{"boot":"mtx2fe4q","sequence":13,"event":"app-state","data":{"value":"background"},"elapsed":1176973935.202041}

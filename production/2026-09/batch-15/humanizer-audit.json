@@ -1,0 +1,96 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md (v2.9.1)",
+  "files": [
+    {
+      "id": "T29",
+      "path": "public/expo-router-initial-url-timing.md",
+      "before_sha256": "ab00474c8eb903bd2f4d653805223def8036c85741e17e16368e305de9abc4f6",
+      "after_sha256": "bd6c981f582dbf744f6918cd5662fc784b40db95829f2ef3ef0edcdbb33a6653",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T29",
+      "path": "devto/expo-router-initial-url-timing.md",
+      "before_sha256": "e576f972cbf16b0aba1f0a9d393b9c782ee4e89a1954fbf8738751edcbbef0c0",
+      "after_sha256": "d814db95ba794fb1b77d1f38f7823d2107f9cb28522052f49e39c8a7d2401be6",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T32",
+      "path": "public/expo-appstate-platform-events.md",
+      "before_sha256": "ecf5c90dc2fa5f3f5afe33a02fe4b7b496fa350e1f2bb476c5dbc5ead99399f9",
+      "after_sha256": "97cfc423b92b8e52fa71ec55daa7a89731c90670ceef1fb1524872b0b461eeae",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T32",
+      "path": "devto/expo-appstate-platform-events.md",
+      "before_sha256": "2f3b1a5d344cb583ecfa8a376bb77dc9115278c097eab78b4acff8795f509ba4",
+      "after_sha256": "adae94cdce2d5cea992e0ed5423798104599ceb0afcd604711d382ad10c76236",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T35",
+      "path": "public/expo-splash-screen-startup-race.md",
+      "before_sha256": "ef2566d2b686277c6f55d4f312478ef331cf28d363b25348ed60a95f767aa1f8",
+      "after_sha256": "021ad2c0527b5d45f343fd27a07f48fec3a986299c3d0fed31e31426ca6fabfd",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T35",
+      "path": "devto/expo-splash-screen-startup-race.md",
+      "before_sha256": "3d8e04e0b5d9af82e3016604cd1935b461c86022dd89f469095dcdf9b4b76c0a",
+      "after_sha256": "8cbececf50937186db5b1525b08ca8fa76fd4b7005efe83a35b42559c9ec799d",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T41",
+      "path": "public/workers-waituntil-failure-lifetime.md",
+      "before_sha256": "bfac997340d8c30b16d1969d2aead06754295f35b924f42748f10f6bf5708686",
+      "after_sha256": "b8018e721f3504a37b957d8c293967ef8ed8776be3e91656048890a05f563164",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T41",
+      "path": "devto/workers-waituntil-failure-lifetime.md",
+      "before_sha256": "351b47ec904db6d1d28428e7418d70c4941670a4ab8f36f76cdead2b1f34512a",
+      "after_sha256": "8db9b9d10f1997ea1d1206d4eb17916b609a3569d5481f17745e40f62f1dabf5",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T43",
+      "path": "public/cloudflare-cache-api-browser-cache.md",
+      "before_sha256": "0a07261863c4d3d305caf60d45fc3e4e195a75b05f4cbff9a3e518a8a3593da3",
+      "after_sha256": "5c5027f92240d0e82ece96a49b3cef6792b5ccfcd42c177a4f058677395540f2",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T43",
+      "path": "devto/cloudflare-cache-api-browser-cache.md",
+      "before_sha256": "1bfe738a7050440e9eb7513b91ecbea5d0d8c44ed3f6898c7aaa292e14ac371b",
+      "after_sha256": "65d0c797fa0ca028ab0f3bab352fb587046e585e4cb28eb83bbc3d1df46cf79b",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "printedBlocksExecutedInWorkerd": 3,
+  "responseStatus": 202,
+  "failureAfterResponse": true,
+  "events": [
+    "/gate/printed",
+    "/failed/printed"
+  ],
+  "stored": {
+    "body": "synthetic",
+    "cacheControl": "public, max-age=60"
+  },
+  "clientCacheControl": "no-store",
+  "remoteResources": false
+}

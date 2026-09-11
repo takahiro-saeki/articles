@@ -1,0 +1,137 @@
+{
+  "node": "v24.15.0",
+  "versions": {
+    "expo": "54.0.33",
+    "expo-router": "6.0.24",
+    "expo-linking": "8.0.12",
+    "react-native": "0.81.5"
+  },
+  "sourceFiles": [
+    {
+      "specifier": "expo-router/build/link/linking.js",
+      "bytes": 6174,
+      "sha256": "9ae3c62d94e9dab1076a29430edf548899e9459d23fd7f2e82a21a8eaae49abc"
+    },
+    {
+      "specifier": "expo-router/build/fork/useLinking.native.js",
+      "bytes": 9168,
+      "sha256": "c2f3635281c97d20e35d2fe0f6a80c30ec4559f684b4cab97d092a575d3013b6"
+    },
+    {
+      "specifier": "expo-router/build/getLinkingConfig.js",
+      "bytes": 5310,
+      "sha256": "d7f88c1bc20b2f1279f678f8d155a1ea0ccf7aaff6a522fd04387efd2efe235a"
+    },
+    {
+      "specifier": "react-native/Libraries/AppState/AppState.js",
+      "bytes": 5702,
+      "sha256": "616e0a4016f6e24e9ea7729829ab8fd9f69a91d37caa0ca6bec47125f16910be"
+    },
+    {
+      "specifier": "react-native/React/CoreModules/RCTAppState.mm",
+      "bytes": 4088,
+      "sha256": "e1c308856d61b5c0dfd3a36a3d4d8aa8d69eb61a34857a21664fade10fbfc95d"
+    },
+    {
+      "specifier": "react-native/ReactAndroid/src/main/java/com/facebook/react/modules/appstate/AppStateModule.kt",
+      "bytes": 3205,
+      "sha256": "0c138c2fadf87c3e27c64dd8ead2df8d90d0cd001fc01a9ecd393074857822c9"
+    },
+    {
+      "specifier": "expo-router/build/utils/splash.js",
+      "bytes": 1916,
+      "sha256": "3317cb20f6d8a530685e1a3ddd393df19780d0e7e7469f3b6812c826c22108ff"
+    },
+    {
+      "specifier": "expo-splash-screen/src/index.native.ts",
+      "bytes": 916,
+      "sha256": "098c6820ab25b32f7d8ee597ef2613cefa53125b36360b178062938fa60a3673"
+    }
+  ],
+  "initialURLCases": [
+    {
+      "name": "ios-synchronous-getter",
+      "value": "articlelab://detail?item=cold",
+      "calls": {
+        "ios": 1,
+        "android": 0,
+        "removed": 0
+      }
+    },
+    {
+      "name": "ios-no-url",
+      "value": "articlelab:///"
+    },
+    {
+      "name": "android-native-resolves-first",
+      "value": "articlelab://detail?item=early",
+      "timeoutArgument": 150
+    },
+    {
+      "name": "android-timeout-before-native",
+      "initial": "articlelab:///",
+      "lateInitialDidNotChangeResult": true,
+      "runtimeEvents": [
+        "articlelab://detail?item=runtime"
+      ],
+      "removed": 1
+    },
+    {
+      "name": "android-rejection-before-timeout",
+      "rejected": true
+    },
+    {
+      "name": "configuration-memoizes-initial-promise",
+      "identicalPromise": true,
+      "nativeCalls": 1
+    }
+  ],
+  "appStateCases": [
+    {
+      "name": "focus-events-do-not-change-state",
+      "changeCalls": 0,
+      "blurCalls": 1,
+      "focusCalls": 1,
+      "currentState": "active"
+    },
+    {
+      "name": "supplied-state-transition",
+      "values": [
+        "inactive",
+        "background",
+        "active"
+      ],
+      "currentState": "active"
+    },
+    {
+      "name": "js-callback-does-not-deduplicate-and-cleanup",
+      "callbackValues": [
+        "active",
+        "active"
+      ],
+      "stateAfterCleanup": "background"
+    },
+    {
+      "name": "initial-null-retrieval",
+      "callbackValues": [
+        "active"
+      ]
+    },
+    {
+      "name": "late-initial-callback-does-not-overwrite-event",
+      "currentState": "background",
+      "callbackValues": [
+        "background"
+      ]
+    },
+    {
+      "name": "actual-badge-effect",
+      "afterMount": 1,
+      "afterSuppliedResume": 2,
+      "afterBlurAndCleanup": 2,
+      "realNotificationAPI": false
+    }
+  ],
+  "scope": "Actual installed package JavaScript with substituted native boundary and controlled timer callbacks; not device timing or OS event generation",
+  "nativeAppExecuted": false
+}

@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Article startup lab",
+    "slug": "article-startup-lab",
+    "scheme": "articlelab",
+    "version": "1.0.0",
+    "plugins": ["expo-router", "expo-splash-screen"],
+    "ios": { "bundleIdentifier": "dev.article.startuplab" },
+    "newArchEnabled": true
+  }
+}

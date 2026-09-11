@@ -1,0 +1,8 @@
+{
+  "command": "npm run typecheck",
+  "directory": "experiments/article-stock-2026-09/workers-batch15",
+  "exit_code": 0,
+  "typescript": "7.0.2",
+  "workers_types": "5.20260911.1",
+  "source_sha256": "887998535e56e11478baf3051c4822e39310adf4851e7aedd828cab6e1f31b0c"
+}

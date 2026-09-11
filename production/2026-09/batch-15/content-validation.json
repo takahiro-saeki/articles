@@ -1,0 +1,194 @@
+{
+  "pairs": 5,
+  "canonicalPending": [
+    "T29",
+    "T32",
+    "T35",
+    "T41",
+    "T43"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "T29",
+      "jaCharacters": 3761,
+      "enWords": 896,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/expo-appstate-platform-events.md",
+          "score": 0.11
+        },
+        {
+          "path": "public/expo-splash-screen-startup-race.md",
+          "score": 0.103
+        },
+        {
+          "path": "public/workers-waituntil-failure-lifetime.md",
+          "score": 0.079
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-appstate-platform-events.md",
+          "score": 0.277
+        },
+        {
+          "path": "devto/expo-splash-screen-startup-race.md",
+          "score": 0.271
+        },
+        {
+          "path": "devto/eas-build-submit-update-artifacts.md",
+          "score": 0.227
+        }
+      ]
+    },
+    {
+      "id": "T32",
+      "jaCharacters": 3403,
+      "enWords": 885,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/expo-router-initial-url-timing.md",
+          "score": 0.11
+        },
+        {
+          "path": "public/expo-splash-screen-startup-race.md",
+          "score": 0.089
+        },
+        {
+          "path": "public/workers-waituntil-failure-lifetime.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-router-initial-url-timing.md",
+          "score": 0.277
+        },
+        {
+          "path": "devto/expo-splash-screen-startup-race.md",
+          "score": 0.246
+        },
+        {
+          "path": "devto/expo-securestore-asyncstorage-boundary.md",
+          "score": 0.229
+        }
+      ]
+    },
+    {
+      "id": "T35",
+      "jaCharacters": 3526,
+      "enWords": 879,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/expo-router-initial-url-timing.md",
+          "score": 0.103
+        },
+        {
+          "path": "public/expo-appstate-platform-events.md",
+          "score": 0.089
+        },
+        {
+          "path": "public/workers-waituntil-failure-lifetime.md",
+          "score": 0.064
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-router-initial-url-timing.md",
+          "score": 0.271
+        },
+        {
+          "path": "devto/expo-appstate-platform-events.md",
+          "score": 0.246
+        },
+        {
+          "path": "devto/eas-build-submit-update-artifacts.md",
+          "score": 0.234
+        }
+      ]
+    },
+    {
+      "id": "T41",
+      "jaCharacters": 3457,
+      "enWords": 854,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/cloudflare-cache-api-browser-cache.md",
+          "score": 0.103
+        },
+        {
+          "path": "public/expo-router-initial-url-timing.md",
+          "score": 0.079
+        },
+        {
+          "path": "public/unknown-api-runtime-validation.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/cloudflare-cache-api-browser-cache.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/expo-appstate-platform-events.md",
+          "score": 0.229
+        },
+        {
+          "path": "devto/expo-router-initial-url-timing.md",
+          "score": 0.223
+        }
+      ]
+    },
+    {
+      "id": "T43",
+      "jaCharacters": 4089,
+      "enWords": 976,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/workers-waituntil-failure-lifetime.md",
+          "score": 0.103
+        },
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.066
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.06
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/workers-waituntil-failure-lifetime.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/expo-appstate-platform-events.md",
+          "score": 0.207
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.203
+        }
+      ]
+    }
+  ]
+}

@@ -800,7 +800,7 @@
   },
   {
     "id": "T29",
-    "title": "Expo Routerのcold start時に最初のURLはいつ取れるのか",
+    "title": "Expo Routerの初期URLとurlイベントを、同じ到着待ちとして扱わない",
     "original_title": "Expo Routerのcold start時に最初のURLはいつ取れるのか",
     "slug": "expo-router-initial-url-timing",
     "angle": "initial URLとruntime event",
@@ -809,10 +809,11 @@
     "japanese": "public/expo-router-initial-url-timing.md",
     "english": "devto/expo-router-initial-url-timing.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 15,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-15/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T30",
@@ -850,7 +851,7 @@
   },
   {
     "id": "T32",
-    "title": "ExpoのAppStateはbackgroundとinactiveをどう通知するか",
+    "title": "AppStateのinactiveとbackgroundを、同じ復帰イベントとして扱わない",
     "original_title": "ExpoのAppStateはbackgroundとinactiveをどう通知するか",
     "slug": "expo-appstate-platform-events",
     "angle": "iOS、Android、復帰処理",
@@ -859,10 +860,11 @@
     "japanese": "public/expo-appstate-platform-events.md",
     "english": "devto/expo-appstate-platform-events.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 15,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-15/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T33",
@@ -899,7 +901,7 @@
   },
   {
     "id": "T35",
-    "title": "SplashScreenを手動で閉じるときの競合を再現した",
+    "title": "SplashScreenを閉じる条件を、フォント読み込みから画面の準備完了へ広げる",
     "original_title": "SplashScreenを手動で閉じるときの競合を再現した",
     "slug": "expo-splash-screen-startup-race",
     "angle": "font、auth、preventAutoHideAsync",
@@ -908,10 +910,11 @@
     "japanese": "public/expo-splash-screen-startup-race.md",
     "english": "devto/expo-splash-screen-startup-race.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 15,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-15/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T36",
@@ -997,7 +1000,7 @@
   },
   {
     "id": "T41",
-    "title": "Workersの`waitUntil()`はレスポンス後どこまで処理を続けるか",
+    "title": "WorkersのwaitUntilで202を返した後、失敗と完了はどこで確認するか",
     "original_title": "Workersの`waitUntil()`はレスポンス後どこまで処理を続けるか",
     "slug": "workers-waituntil-failure-lifetime",
     "angle": "失敗、再試行、観測",
@@ -1006,10 +1009,11 @@
     "japanese": "public/workers-waituntil-failure-lifetime.md",
     "english": "devto/workers-waituntil-failure-lifetime.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 15,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-15/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T42",
@@ -1029,7 +1033,7 @@
   },
   {
     "id": "T43",
-    "title": "Cloudflare Cache APIとブラウザキャッシュを混同しない",
+    "title": "Workersのキャッシュを消しても応答が変わらない。ブラウザ側の保存と分けて確認する",
     "original_title": "Cloudflare Cache APIとブラウザキャッシュを混同しない",
     "slug": "cloudflare-cache-api-browser-cache",
     "angle": "Cache-Controlと保存場所",
@@ -1038,10 +1042,11 @@
     "japanese": "public/cloudflare-cache-api-browser-cache.md",
     "english": "devto/cloudflare-cache-api-browser-cache.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 15,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-15/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T44",

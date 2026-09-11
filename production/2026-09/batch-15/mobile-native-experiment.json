@@ -1,0 +1,95 @@
+{
+  "configuration": "Release",
+  "platform": "iOS Simulator 26.5",
+  "simulator": "iPhone 17 Pro (task-owned)",
+  "buildSucceeded": true,
+  "bundleIdentifier": "dev.article.startuplab",
+  "bundleJsSha256": "154e2d9e3da586e7e595ea48a87d3024fad225eb324367e008a6d123e4d8ba18",
+  "versions": {
+    "expo": "54.0.33",
+    "expo-router": "6.0.24",
+    "react-native": "0.81.5",
+    "expo-splash-screen": "31.0.13",
+    "expo-font": "14.0.12"
+  },
+  "trials": [
+    {
+      "boot": "mtx2exki",
+      "mode": "early",
+      "order": [
+        "module",
+        "prevent-request",
+        "initial-url",
+        "prevent-result",
+        "root-effect",
+        "auth-start",
+        "router-path",
+        "font-ready",
+        "hide-request",
+        "hide-result",
+        "auth-ready",
+        "content-layout"
+      ],
+      "initialURL": null,
+      "stateAtModule": "inactive",
+      "authReadyAtHide": false,
+      "appStateChanges": [],
+      "urlEvents": []
+    },
+    {
+      "boot": "mtx2fe4q",
+      "mode": "coordinated",
+      "order": [
+        "module",
+        "prevent-request",
+        "initial-url",
+        "root-effect",
+        "auth-start",
+        "router-path",
+        "prevent-result",
+        "font-ready",
+        "auth-ready",
+        "content-layout",
+        "hide-request",
+        "hide-result",
+        "app-state"
+      ],
+      "initialURL": null,
+      "stateAtModule": "inactive",
+      "authReadyAtHide": true,
+      "appStateChanges": [
+        "background"
+      ],
+      "urlEvents": []
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "experiments/article-stock-2026-09/mobile-batch15/app/_layout.jsx",
+      "sha256": "cf2778166bedcc99b1110e40bccdf69388237dcd1e073a3943c126b3ce706278"
+    },
+    {
+      "path": "experiments/article-stock-2026-09/mobile-batch15/app/detail.jsx",
+      "sha256": "dbaaae1cbc7a506adab4eca4d246062217d41c5d05366ad50e0c6d9c3361513f"
+    },
+    {
+      "path": "experiments/article-stock-2026-09/mobile-batch15/app/index.jsx",
+      "sha256": "2272d2ae131428c8657b0bce4853f98185a2db7680ec3629e0e8f776881031c1"
+    },
+    {
+      "path": "experiments/article-stock-2026-09/mobile-batch15/trace.js",
+      "sha256": "dcaa1cfbf96e23459e1075fb8657c2918e9c3621c2208809ebc2f0439056562a"
+    },
+    {
+      "path": "experiments/article-stock-2026-09/collect-mobile-batch15.mjs",
+      "sha256": "0458b5d8e3d8755f264f3d09968bbd81b59842ef9fac51a54bea798701761842"
+    }
+  ],
+  "limitations": [
+    "Mac locked; no visual first-frame inspection",
+    "Initial state inactive in both recorded launches; one background event; no complete foreground round trip observed",
+    "simctl openurl returned success, but no URL callback or new cold-launch trace observed; not counted as successful delivery",
+    "Artificial 4000 ms local auth endpoint; no real authentication",
+    "No Android native run, no physical device, no store submission"
+  ]
+}

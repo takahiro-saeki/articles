@@ -1,0 +1,175 @@
+{
+  "node": "v24.15.0",
+  "versions": {
+    "miniflare": "5.20260910.0-alpha",
+    "wrangler": "4.131.0",
+    "workerd": "1.20260910.1"
+  },
+  "compatibilityDateRequested": "2026-09-11",
+  "scope": "local workerd with a Node service-binding substitute; no remote resource or deployment",
+  "results": [
+    {
+      "name": "await",
+      "responseBeforeGate": false
+    },
+    {
+      "name": "waitUntil",
+      "responseBeforeCompletion": true
+    },
+    {
+      "name": "failure-and-independent-task",
+      "responseStatus": 202,
+      "failedStartsAtObservation": 1,
+      "independentCompleted": true
+    },
+    {
+      "name": "explicit-catch-observer",
+      "responseStatus": 202,
+      "failureObserved": true,
+      "starts": 1
+    },
+    {
+      "name": "local-35-second-gate",
+      "gateDelayRequestedMs": 35000,
+      "completedAtObservation": true,
+      "cloudLimitMeasured": false
+    },
+    {
+      "name": "cache-rule",
+      "directive": "no-store",
+      "result": {
+        "putReturnedUndefined": true,
+        "found": false
+      }
+    },
+    {
+      "name": "cache-rule",
+      "directive": "private, max-age=60",
+      "result": {
+        "putReturnedUndefined": true,
+        "found": false
+      }
+    },
+    {
+      "name": "cache-rule",
+      "directive": "public, max-age=60",
+      "result": {
+        "putReturnedUndefined": true,
+        "found": true
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": "job-start",
+      "id": "awaited",
+      "ms": 218.213291
+    },
+    {
+      "event": "gate-release",
+      "id": "awaited",
+      "ms": 275.137291
+    },
+    {
+      "event": "job-done",
+      "id": "awaited",
+      "ms": 281.877666
+    },
+    {
+      "event": "response-read",
+      "id": "awaited",
+      "ms": 286.028583
+    },
+    {
+      "event": "job-start",
+      "id": "detached",
+      "ms": 289.314208
+    },
+    {
+      "event": "response-read",
+      "id": "detached",
+      "ms": 289.365916
+    },
+    {
+      "event": "gate-release",
+      "id": "detached",
+      "ms": 289.39525
+    },
+    {
+      "event": "job-done",
+      "id": "detached",
+      "ms": 289.9465
+    },
+    {
+      "event": "job-start",
+      "id": "failed",
+      "ms": 303.95425
+    },
+    {
+      "event": "job-start",
+      "id": "failed-other",
+      "ms": 304.067458
+    },
+    {
+      "event": "response-read",
+      "id": "failed",
+      "ms": 304.204958
+    },
+    {
+      "event": "gate-release",
+      "id": "failed",
+      "ms": 304.219958
+    },
+    {
+      "event": "gate-release",
+      "id": "failed-other",
+      "ms": 356.556875
+    },
+    {
+      "event": "job-done",
+      "id": "failed-other",
+      "ms": 357.492708
+    },
+    {
+      "event": "job-start",
+      "id": "caught",
+      "ms": 474.928375
+    },
+    {
+      "event": "response-read",
+      "id": "caught",
+      "ms": 475.216083
+    },
+    {
+      "event": "gate-release",
+      "id": "caught",
+      "ms": 475.251708
+    },
+    {
+      "event": "job-failed-observed",
+      "id": "caught",
+      "ms": 477.80375
+    },
+    {
+      "event": "job-start",
+      "id": "long-local",
+      "ms": 490.781125
+    },
+    {
+      "event": "response-read",
+      "id": "long-local",
+      "ms": 490.951
+    },
+    {
+      "event": "gate-release",
+      "id": "long-local",
+      "ms": 35492.765
+    },
+    {
+      "event": "job-done",
+      "id": "long-local",
+      "ms": 35497.647916
+    }
+  ],
+  "runtimeErrors": []
+}

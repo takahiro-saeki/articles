@@ -1,0 +1,213 @@
+{
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "cases": [
+    {
+      "mode": "none",
+      "replies": [
+        {
+          "body": "generation-1",
+          "cacheControl": "no-store"
+        },
+        {
+          "body": "generation-2",
+          "cacheControl": "no-store"
+        }
+      ],
+      "afterTwo": {
+        "visits": 2,
+        "sources": 2
+      },
+      "purge": {
+        "deleted": false
+      },
+      "afterPurgeReply": "generation-3",
+      "afterPurge": {
+        "visits": 3,
+        "sources": 3
+      },
+      "reloadReply": "generation-4",
+      "afterReload": {
+        "visits": 4,
+        "sources": 4
+      }
+    },
+    {
+      "mode": "worker",
+      "replies": [
+        {
+          "body": "generation-1",
+          "cacheControl": "no-store"
+        },
+        {
+          "body": "generation-1",
+          "cacheControl": "no-store"
+        }
+      ],
+      "afterTwo": {
+        "visits": 2,
+        "sources": 1
+      },
+      "purge": {
+        "deleted": true
+      },
+      "afterPurgeReply": "generation-2",
+      "afterPurge": {
+        "visits": 3,
+        "sources": 2
+      },
+      "reloadReply": "generation-2",
+      "afterReload": {
+        "visits": 4,
+        "sources": 2
+      }
+    },
+    {
+      "mode": "browser",
+      "replies": [
+        {
+          "body": "generation-1",
+          "cacheControl": "private, max-age=60"
+        },
+        {
+          "body": "generation-1",
+          "cacheControl": "private, max-age=60"
+        }
+      ],
+      "afterTwo": {
+        "visits": 1,
+        "sources": 1
+      },
+      "purge": {
+        "deleted": false
+      },
+      "afterPurgeReply": "generation-1",
+      "afterPurge": {
+        "visits": 1,
+        "sources": 1
+      },
+      "reloadReply": "generation-2",
+      "afterReload": {
+        "visits": 2,
+        "sources": 2
+      }
+    },
+    {
+      "mode": "both",
+      "replies": [
+        {
+          "body": "generation-1",
+          "cacheControl": "private, max-age=60"
+        },
+        {
+          "body": "generation-1",
+          "cacheControl": "private, max-age=60"
+        }
+      ],
+      "afterTwo": {
+        "visits": 1,
+        "sources": 1
+      },
+      "purge": {
+        "deleted": true
+      },
+      "afterPurgeReply": "generation-1",
+      "afterPurge": {
+        "visits": 1,
+        "sources": 1
+      },
+      "reloadReply": "generation-2",
+      "afterReload": {
+        "visits": 2,
+        "sources": 2
+      }
+    }
+  ],
+  "cacheStorage": {
+    "stored": "explicit-cache-storage",
+    "networkWasDifferent": true,
+    "noServiceWorker": true
+  },
+  "resourceEntries": [
+    {
+      "name": "http://127.0.0.1:9916/data?mode=none&run=browser-1789135272487",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=none&run=browser-1789135272487",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=none&run=browser-1789135272487",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=none&run=browser-1789135272487",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=worker&run=browser-1789135272500",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=worker&run=browser-1789135272500",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=worker&run=browser-1789135272500",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=worker&run=browser-1789135272500",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=browser&run=browser-1789135272510",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=browser&run=browser-1789135272510",
+      "transferSize": 0,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=browser&run=browser-1789135272510",
+      "transferSize": 0,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=browser&run=browser-1789135272510",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=both&run=browser-1789135272515",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=both&run=browser-1789135272515",
+      "transferSize": 0,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=both&run=browser-1789135272515",
+      "transferSize": 0,
+      "encodedBodySize": 32
+    },
+    {
+      "name": "http://127.0.0.1:9916/data?mode=both&run=browser-1789135272515",
+      "transferSize": 332,
+      "encodedBodySize": 32
+    }
+  ],
+  "scope": "Loopback workerd cache and real Chromium HTTP cache/CacheStorage; no Cloudflare PoP, tiered cache, deployment or remote request."
+}

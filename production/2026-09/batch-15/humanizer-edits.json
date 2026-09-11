@@ -1,0 +1,172 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md (v2.9.1)",
+  "files": [
+    {
+      "id": "T29",
+      "path": "public/expo-router-initial-url-timing.md",
+      "edits": [
+        [
+          "初期URLの待ち時間を延ばせば、すべてのリンクが同じ経路から届くわけではありません。",
+          "初期URLを待つ時間と、起動後のイベント購読は別々に確認する必要があります。"
+        ],
+        [
+          "ここで得られる判断材料は、初期取得がタイムアウトした後に初期Promiseを解決する試験と、実行中のurlイベントを届ける試験を別々に持つことです。",
+          "初期取得のタイムアウト後に初期Promiseを解決する試験と、実行中のurlイベントを届ける試験を分けて用意します。"
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T29",
+      "path": "devto/expo-router-initial-url-timing.md",
+      "edits": [
+        [
+          "Extending the initial read does not make every link arrive through that same path.",
+          "Check the initial wait and the later event subscription separately."
+        ],
+        [
+          "The useful distinction is between resolving an initial Promise after the initial read has timed out and delivering a runtime url event. Keep both cases in the investigation.",
+          "Test a late initial-Promise resolution separately from delivery of a runtime url event."
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T32",
+      "path": "public/expo-appstate-platform-events.md",
+      "edits": [
+        [
+          "この違いを使って、アプリの状態を見たいのか、Androidの操作フォーカスを見たいのかを先に決められます。",
+          "復帰処理の条件にする前に、アプリの状態とAndroidの操作フォーカスのどちらが必要かを決めます。"
+        ],
+        [
+          "そのうえで実行条件を選びます。",
+          "観測したイベントから、処理を実行する条件を選びます。"
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T32",
+      "path": "devto/expo-appstate-platform-events.md",
+      "edits": [
+        [
+          "That distinction helps determine whether the application needs a lifecycle state or Android interaction focus.",
+          "Decide whether the operation needs a lifecycle state or Android interaction focus before choosing its trigger."
+        ],
+        [
+          "Choose the trigger from that evidence.",
+          "Use the observed events to choose when the operation should run."
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T35",
+      "path": "public/expo-splash-screen-startup-race.md",
+      "edits": [
+        [
+          "フォントを読み終えた時点でSplashScreenを閉じても、その先に認証確認などの待ちがあれば、表示する画面はまだ準備できていません。",
+          "フォント読み込みが終わっても、認証確認を待っている画面はまだ表示できません。"
+        ],
+        [
+          "これは比較用アプリの断片です。modeとauthReadyはルートのstateで、上記コールバックをViewのonLayoutへ渡します。",
+          "比較用アプリではmodeとauthReadyをルートのstateに持ち、このコールバックをViewのonLayoutへ渡します。"
+        ],
+        [
+          "その通知遷移の競合と、ここで作ったスプラッシュ終了条件の比較は別の対象です。",
+          "その実装が扱うのは通知遷移の競合です。今回の比較はスプラッシュを閉じる条件を扱います。"
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T35",
+      "path": "devto/expo-splash-screen-startup-race.md",
+      "edits": [
+        [
+          "Finishing font loading is not enough to hide a splash screen if authentication or another prerequisite still blocks the first screen.",
+          "The first screen can still be waiting for authentication after its font has loaded."
+        ],
+        [
+          "This is a fragment from the fixture. mode and authReady are root state values, and the callback is passed to the View's onLayout.",
+          "The fixture holds mode and authReady in root state and passes this callback to the View's onLayout."
+        ],
+        [
+          "That notification-navigation race and this comparison of splash-hide conditions are separate subjects.",
+          "That implementation handles a notification-navigation race. This comparison checks the condition for hiding the splash screen."
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T41",
+      "path": "public/workers-waituntil-failure-lifetime.md",
+      "edits": [
+        [
+          "そこで重要だったのは、waitUntilの有無だけでなく、どの結果を観測しているかという点です。",
+          "waitUntilの有無とともに、応答を読めた時点と後続処理の結果を確認しています。"
+        ],
+        [
+          "catchが再試行を行っているわけではありません。",
+          "このcatchは失敗を記録し、再試行は行いません。"
+        ],
+        [
+          "今回得られた記録は、応答、開始、完了、失敗の4種類です。",
+          "実験では、応答、開始、完了、失敗の4種類を記録しました。"
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T41",
+      "path": "devto/workers-waituntil-failure-lifetime.md",
+      "edits": [
+        [
+          "The useful distinction was which result the observer had actually received, as well as whether waitUntil was used.",
+          "The checks record both response consumption and the later job result for each use of waitUntil."
+        ],
+        [
+          "The catch block does not retry the job.",
+          "The catch block records the failure without retrying the job."
+        ],
+        [
+          "The comparison produced 4 kinds of records: response, start, completion, and failure.",
+          "The experiment recorded 4 events: response, start, completion, and failure."
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T43",
+      "path": "public/cloudflare-cache-api-browser-cache.md",
+      "edits": [
+        [
+          "ヘッダーを分ける要点は次の形です。",
+          "保存時と返却時でヘッダーを分けるコードです。"
+        ],
+        [
+          "WorkersのCache API、ブラウザのHTTPキャッシュ、ブラウザのCacheStorageは、名前が似ていても別の保存先です。",
+          "WorkersのCache API、ブラウザのHTTPキャッシュ、ブラウザのCacheStorageは、それぞれ保存先と読み取り経路が異なります。"
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    },
+    {
+      "id": "T43",
+      "path": "devto/cloudflare-cache-api-browser-cache.md",
+      "edits": [
+        [
+          "The essential header separation looks like this.",
+          "This code sets separate headers for storage and for the outgoing response."
+        ],
+        [
+          "The Workers Cache API, browser HTTP cache, and browser CacheStorage are separate stores despite their similar names.",
+          "The Workers Cache API, browser HTTP cache, and browser CacheStorage each have their own storage and read path."
+        ]
+      ],
+      "semantic_review": "All sections, comparisons, source/version distinctions and unverified native/cloud limits reviewed against evidence. No author experience invented; facts, quantities, code, links and scope preserved."
+    }
+  ]
+}

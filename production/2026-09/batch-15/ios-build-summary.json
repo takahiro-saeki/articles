@@ -1,0 +1,25 @@
+{
+  "rawLogBytes": 9460531,
+  "rawLogSha256": "860cf6a4fc6b9758e0c41ff1d2648bf6a3e17861e61dc9b002c304541b02861d",
+  "retainedLines": "command, build result and warning messages only; full raw log moved into ignored generated iOS directory",
+  "command": "    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace ios/Articlestartuplab.xcworkspace -scheme Articlestartuplab -configuration Release -sdk iphonesimulator -destination id=<task-owned-simulator> -derivedDataPath ios/article-derived CODE_SIGNING_ALLOWED=NO build",
+  "buildSucceeded": true,
+  "uniqueWarningLines": 573,
+  "warningSamples": [
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/Pods/Headers/Public/React-renderercss/react/renderer/css/CSSSyntaxParser.h:150:13: warning: parameter '<ReturnT>' not found in the function declaration [-Wdocumentation]",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/node_modules/react-native-safe-area-context/ios/Fabric/RNCSafeAreaProviderComponentView.mm:110:27: warning: ISO C++ requires field designators to be specified in declaration order; field 'left' will be initialized after field 'bottom' [-Wreorder-init-list]",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/node_modules/react-native-safe-area-context/ios/Fabric/RNCSafeAreaProviderComponentView.mm:111:26: warning: ISO C++ requires field designators to be specified in declaration order; field 'bottom' will be initialized after field 'right' [-Wreorder-init-list]",
+    "libtool: warning: 'States-dad074a110cf6012ace4a67b24aa2bc8.o' has no symbols",
+    "libtool: warning: 'States-50219aa2c3552dc840673df88328879e.o' has no symbols",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/Pods/Headers/Public/React-Fabric/react/renderer/mounting/ShadowViewMutation.h:47:7: warning: declaration is marked with '@deprecated' command but does not have a deprecation attribute [-Wdocumentation-deprecated-sync]",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/Pods/Headers/Public/React-Fabric/react/renderer/mounting/ShadowViewMutation.h:64:7: warning: declaration is marked with '@deprecated' command but does not have a deprecation attribute [-Wdocumentation-deprecated-sync]",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/Pods/Headers/Public/React-Fabric/react/renderer/mounting/ShadowViewMutation.h:83:7: warning: declaration is marked with '@deprecated' command but does not have a deprecation attribute [-Wdocumentation-deprecated-sync]",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/article-derived/Build/Products/Release-iphonesimulator/main.jsbundle:93289:16: warning: the variable \"$$EXPO_INITIAL_PROPS\" was not declared in function \"emitDomEvent\"",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/article-derived/Build/Products/Release-iphonesimulator/main.jsbundle:93289:63: warning: the variable \"ReactNativeWebView\" was not declared in function \"emitDomEvent\"",
+    "/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/mobile-batch15/ios/article-derived/Build/Products/Release-iphonesimulator/main.jsbundle:103225:7: warning: the variable \"alert\" was not declared in function \"throwOrAlert\"",
+    "2026-09-11 23:38:19.916 appintentsmetadataprocessor[6987:37420476] warning: Metadata extraction skipped. No AppIntents.framework dependency found.",
+    "warning: Run script build phase '[CP-User] [Hermes] Replace Hermes for the right configuration, if needed' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking \"Based on dependency analysis\" in the script phase. (in target 'hermes-engine' from project 'Pods')"
+  ],
+  "warningsTruncated": true,
+  "xcodeVersion": "Xcode 26.6\nBuild version 17F113"
+}

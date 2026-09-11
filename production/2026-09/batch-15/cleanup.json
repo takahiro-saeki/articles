@@ -1,0 +1,11 @@
+{
+  "task_simulator_deleted": true,
+  "preexisting_simulator_still_booted": true,
+  "local_ports_closed": {
+    "8097": true,
+    "9915": true,
+    "9916": true
+  },
+  "physical_devices_used": false,
+  "playwright_sessions_closed_in_finally": true
+}

@@ -1,0 +1,15 @@
+{
+  "new_pairs_in_batch": 5,
+  "new_article_files_in_batch": 10,
+  "all_candidate_pairs": 90,
+  "all_candidate_article_files": 180,
+  "body_verified": 90,
+  "complete": 41,
+  "canonical_pending": 49,
+  "zenn_list_exit_code": 0,
+  "diff_check_exit_code": 0,
+  "staged_diff_check_exit_code": 0,
+  "schedule_and_workflows_unchanged": true,
+  "staged_files_before_this_report": 62,
+  "published_or_scheduled": false
+}

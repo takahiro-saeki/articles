@@ -2,7 +2,7 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
-本文・日英対訳・Humanizerまで検証済み 85/90件（完成 41件、canonical待ち 44件）。本文の検証が残る候補は 5件。canonical未確定の原稿は完成数に含めない。
+本文・日英対訳・Humanizerまで検証済み 90/90件（完成 41件、canonical待ち 49件）。本文の検証が残る候補は 0件。canonical未確定の原稿は完成数に含めない。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -22,8 +22,9 @@
 - バッチ12: O02、O04、O06、O08、O11、O14。完成 0/6件、本文検証済み 6/6件。
 - バッチ13: P04、P09、P16、P18、O23、O24。完成 0/6件、本文検証済み 6/6件。
 - バッチ14: T03、T26、T27、T30、T33。完成 0/5件、本文検証済み 5/5件。
+- バッチ15: T29、T32、T35、T41、T43。完成 0/5件、本文検証済み 5/5件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: P04、P05、P06、P07、P09、P11、P12、P13、P16、P18、T01、T02、T03、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T26、T27、T30、T31、T33、T37、T38、O02、O04、O06、O08、O11、O14、O23、O24。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: P04、P05、P06、P07、P09、P11、P12、P13、P16、P18、T01、T02、T03、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T26、T27、T29、T30、T31、T32、T33、T35、T37、T38、T41、T43、O02、O04、O06、O08、O11、O14、O23、O24。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -76,21 +77,21 @@
 | T26 | Expo SecureStoreとAsyncStorageを、秘密情報と復旧方法から使い分ける | expo-securestore-asyncstorage-boundary | [原稿](public/expo-securestore-asyncstorage-boundary.md) | [原稿](devto/expo-securestore-asyncstorage-boundary.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T27 | Expo Push Token・FCM Token・APNs Tokenは、送信先のAPIから区別する | expo-fcm-apns-token-routing | [原稿](public/expo-fcm-apns-token-routing.md) | [原稿](devto/expo-fcm-apns-token-routing.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T28 | Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計 | expo-push-token-device-ownership | [原稿](articles/expo-push-token-device-ownership.md) | [原稿](devto/expo-push-token-device-ownership.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
-| T29 | Expo Routerのcold start時に最初のURLはいつ取れるのか | expo-router-initial-url-timing | 予定: public/expo-router-initial-url-timing.md | 予定: devto/expo-router-initial-url-timing.md | 未確認 | 未実施 | 未着手 |
+| T29 | Expo Routerの初期URLとurlイベントを、同じ到着待ちとして扱わない | expo-router-initial-url-timing | [原稿](public/expo-router-initial-url-timing.md) | [原稿](devto/expo-router-initial-url-timing.md) | [一次資料・実験確認](production/2026-09/batch-15/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定 | 執筆中 |
 | T30 | Universal LinksのAASAは200だけでは足りない。開発版のappIDとパスを照合する | universal-links-aasa-diagnostics | [原稿](public/universal-links-aasa-diagnostics.md) | [原稿](devto/universal-links-aasa-diagnostics.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T31 | AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる | android-edge-to-edge-insets | [原稿](public/android-edge-to-edge-insets.md) | [原稿](devto/android-edge-to-edge-insets.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
-| T32 | ExpoのAppStateはbackgroundとinactiveをどう通知するか | expo-appstate-platform-events | 予定: public/expo-appstate-platform-events.md | 予定: devto/expo-appstate-platform-events.md | 未確認 | 未実施 | 未着手 |
+| T32 | AppStateのinactiveとbackgroundを、同じ復帰イベントとして扱わない | expo-appstate-platform-events | [原稿](public/expo-appstate-platform-events.md) | [原稿](devto/expo-appstate-platform-events.md) | [一次資料・実験確認](production/2026-09/batch-15/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定 | 執筆中 |
 | T33 | EAS Build・Submit・Updateの違いを、成功後にできるものから確認する | eas-build-submit-update-artifacts | [原稿](public/eas-build-submit-update-artifacts.md) | [原稿](devto/eas-build-submit-update-artifacts.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T34 | EAS Updateのerror recoveryは何を戻すか。iOSの復旧処理を7条件で確認する | eas-update-error-recovery-boundary | [原稿](articles/eas-update-error-recovery-boundary.md) | [原稿](devto/eas-update-error-recovery-boundary.md) | expo-updates29.0.18、公式45c60e1とSwift本体byte一致、現行Expo公式 | 元Swift本体をmacOSで7条件実行。周辺を代役、実機/DB選択なし。過去成功と今回表示の分岐差 | 完成 |
-| T35 | SplashScreenを手動で閉じるときの競合を再現した | expo-splash-screen-startup-race | 予定: public/expo-splash-screen-startup-race.md | 予定: devto/expo-splash-screen-startup-race.md | 未確認 | 未実施 | 未着手 |
+| T35 | SplashScreenを閉じる条件を、フォント読み込みから画面の準備完了へ広げる | expo-splash-screen-startup-race | [原稿](public/expo-splash-screen-startup-race.md) | [原稿](devto/expo-splash-screen-startup-race.md) | [一次資料・実験確認](production/2026-09/batch-15/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定 | 執筆中 |
 | T36 | D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する | d1-batch-atomicity-boundary | [原稿](articles/d1-batch-atomicity-boundary.md) | [原稿](devto/d1-batch-atomicity-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | T37 | D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた | d1-composite-index-column-order | [原稿](public/d1-composite-index-column-order.md) | [原稿](devto/d1-composite-index-column-order.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T38 | SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する | sqlite-foreign-key-child-index | [原稿](public/sqlite-foreign-key-child-index.md) | [原稿](devto/sqlite-foreign-key-child-index.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
 | T39 | D1の深いOFFSETをカーソルへ変える。読取り行数と途中挿入を比較する | d1-offset-cursor-pagination | [原稿](articles/d1-offset-cursor-pagination.md) | [原稿](devto/d1-offset-cursor-pagination.md) | D1公式indexes、SQLite row values、Wrangler APIとローカルD1 | 10万行・5位置、各4 warmup+11計測。配列一致、rows_read、計画、途中挿入重複をassert | 完成 |
 | T40 | Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする | durable-objects-d1-coordination | [原稿](articles/durable-objects-d1-coordination.md) | [原稿](devto/durable-objects-d1-coordination.md) | 2026-09-11: DO storage/state/namespace/concepts公式と現行Workers型を確認。DO別保存・名前による再取得・横断取得をローカル比較 | Wrangler 4.131.0/Miniflare 5.20260910.0-alphaで8 assertions、生成Env+Workers types 5.20260911.1/TS 5.9.3 checkJs成功。本番移行・性能・分散snapshotは未検証 | 完成 |
-| T41 | Workersの`waitUntil()`はレスポンス後どこまで処理を続けるか | workers-waituntil-failure-lifetime | 予定: public/workers-waituntil-failure-lifetime.md | 予定: devto/workers-waituntil-failure-lifetime.md | 未確認 | 未実施 | 未着手 |
+| T41 | WorkersのwaitUntilで202を返した後、失敗と完了はどこで確認するか | workers-waituntil-failure-lifetime | [原稿](public/workers-waituntil-failure-lifetime.md) | [原稿](devto/workers-waituntil-failure-lifetime.md) | [一次資料・実験確認](production/2026-09/batch-15/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定 | 執筆中 |
 | T42 | Cron Triggers・Queues・Workflowsを、失敗した後にどこから再開するかで選ぶ | cloudflare-cron-queues-workflows | [原稿](articles/cloudflare-cron-queues-workflows.md) | [原稿](devto/cloudflare-cron-queues-workflows.md) | Cloudflare Cron/Queues配送・ack retry/Workflows待機・実装規則の公式仕様 | 再開単位を時刻/メッセージ/ステップで比較。構成と導入時の検証は提案、未導入 | 完成 |
-| T43 | Cloudflare Cache APIとブラウザキャッシュを混同しない | cloudflare-cache-api-browser-cache | 予定: public/cloudflare-cache-api-browser-cache.md | 予定: devto/cloudflare-cache-api-browser-cache.md | 未確認 | 未実施 | 未着手 |
+| T43 | Workersのキャッシュを消しても応答が変わらない。ブラウザ側の保存と分けて確認する | cloudflare-cache-api-browser-cache | [原稿](public/cloudflare-cache-api-browser-cache.md) | [原稿](devto/cloudflare-cache-api-browser-cache.md) | [一次資料・実験確認](production/2026-09/batch-15/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-15/review.md)・canonical未確定 | 執筆中 |
 | T44 | Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する | idempotency-key-result-storage | [原稿](articles/idempotency-key-result-storage.md) | [原稿](devto/idempotency-key-result-storage.md) | Stripe idempotent requests、D1 batch公式仕様 | ローカルD1の6ケース。commit後応答消失、入力相違、actor別、同時miss、rollback、記録削除 | 完成 |
 | T45 | OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける | outbox-database-notification-boundary | [原稿](articles/outbox-database-notification-boundary.md) | [原稿](devto/outbox-database-notification-boundary.md) | AWS transactional outbox、D1 batch公式仕様 | ローカルD1とfake providerで4ケース。意図の同時保存、送信後中断、重複排除あり/なし | 完成 |
 | O01 | 38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える | publishing-38-day-audit | [原稿](articles/publishing-38-day-audit.md) | [原稿](devto/publishing-38-day-audit.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |

@@ -1,0 +1,16 @@
+{
+  "name": "article-workers-batch15",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20260911.1",
+    "miniflare": "5.20260910.0-alpha",
+    "typescript": "7.0.2",
+    "wrangler": "4.131.0"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "experiment": "node run.mjs"
+  }
+}

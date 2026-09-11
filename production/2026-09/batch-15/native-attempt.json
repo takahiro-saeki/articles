@@ -1,0 +1,15 @@
+{
+  "simulator_name": "Article batch15 lab",
+  "simulator_udid": "ADA7399E-1CD6-4906-964B-E4ED48815828",
+  "runtime": "iOS 26.5",
+  "expo_go_cached_version": "54.0.7",
+  "expo_go_started_via_cli": true,
+  "expo_go_project_loaded": false,
+  "gui_blocker": "Computer-use tool reported Mac locked; user asked to unlock. No GUI security setting was changed.",
+  "existing_simulators_modified": false,
+  "physical_android_device_used": false,
+  "standalone_release_built": true,
+  "standalone_release_launched": true,
+  "native_evidence": "mobile-native-experiment.json",
+  "url_delivery_observed": false
+}

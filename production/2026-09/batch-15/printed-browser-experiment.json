@@ -1,0 +1,16 @@
+{
+  "printedCode": "const url = '/data?mode=both&run=' + crypto.randomUUID();\nconst first = await (await fetch(url)).text();\nconst second = await (await fetch(url)).text();\nconst { counts } = await (await fetch('/inspect', { cache: 'no-store' })).json();\nconsole.log({ first, second, counts: counts[new URL(url, location.href).href] });\n",
+  "results": [
+    {
+      "first": "generation-1",
+      "second": "generation-1",
+      "counts": {
+        "visits": 1,
+        "sources": 1
+      }
+    }
+  ],
+  "realBrowser": true,
+  "cacheDisabled": false,
+  "requestsIntercepted": false
+}

@@ -1,0 +1,62 @@
+{
+  "expo-router": {
+    "version": "6.0.24",
+    "registry": "https://registry.npmjs.org/expo-router/6.0.24",
+    "gitHead": "45c60e10956764bbac6c62454890eeb25c74bbd6",
+    "repository": {
+      "url": "git+https://github.com/expo/expo.git",
+      "type": "git",
+      "directory": "packages/expo-router"
+    },
+    "tarball": "https://registry.npmjs.org/expo-router/-/expo-router-6.0.24.tgz",
+    "integrity": "sha512-KIssKXnwjrdCxPWC8GsMTfKTwng40VrCsO16O9x6fKlfUwBW8itxY9PpCGyQeMJkiEADa+DUhtrDgl+uHg4/DA=="
+  },
+  "expo-linking": {
+    "version": "8.0.12",
+    "registry": "https://registry.npmjs.org/expo-linking/8.0.12",
+    "gitHead": "dd4e87727c4ef32ac5d8a7b5a42fd80da254140f",
+    "repository": {
+      "url": "git+https://github.com/expo/expo.git",
+      "type": "git",
+      "directory": "packages/expo-linking"
+    },
+    "tarball": "https://registry.npmjs.org/expo-linking/-/expo-linking-8.0.12.tgz",
+    "integrity": "sha512-FpXeIpFgZuxihwT9lBo86YD3y6LphBuAhN680MMxm/Y7fmsc57vimn2d3vFu68VI0+Z9w457t494mu2wvlgWTQ=="
+  },
+  "expo-splash-screen": {
+    "version": "31.0.13",
+    "registry": "https://registry.npmjs.org/expo-splash-screen/31.0.13",
+    "gitHead": "309f8dc09d24203fb80eca0ad534106c5f73c4b7",
+    "repository": {
+      "url": "git+https://github.com/expo/expo.git",
+      "type": "git",
+      "directory": "packages/expo-splash-screen"
+    },
+    "tarball": "https://registry.npmjs.org/expo-splash-screen/-/expo-splash-screen-31.0.13.tgz",
+    "integrity": "sha512-1epJLC1cDlwwj089R2h8cxaU5uk4ONVAC+vzGiTZH4YARQhL4Stlz1MbR6yAS173GMosvkE6CAeihR7oIbCkDA=="
+  },
+  "expo-font": {
+    "version": "14.0.12",
+    "registry": "https://registry.npmjs.org/expo-font/14.0.12",
+    "gitHead": "45c60e10956764bbac6c62454890eeb25c74bbd6",
+    "repository": {
+      "url": "git+https://github.com/expo/expo.git",
+      "type": "git",
+      "directory": "packages/expo-font"
+    },
+    "tarball": "https://registry.npmjs.org/expo-font/-/expo-font-14.0.12.tgz",
+    "integrity": "sha512-QQzunE2Mxk45AsCWm3tK7OpVljbtVnKD58q4/qliev+cbye1IOduUnRIdD+P7DyButw17G9MTX795kgaQiz5hQ=="
+  },
+  "react-native": {
+    "version": "0.81.5",
+    "registry": "https://registry.npmjs.org/react-native/0.81.5",
+    "gitHead": "57ff54492f4a5a0e9d331e880b3c2264a2bd81f7",
+    "repository": {
+      "url": "git+https://github.com/facebook/react-native.git",
+      "type": "git",
+      "directory": "packages/react-native"
+    },
+    "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.81.5.tgz",
+    "integrity": "sha512-1w+/oSjEXZjMqsIvmkCRsOc8UBYv163bTWKTI8+1mxztvQPhCRYGTvZ/PL1w16xXHneIj/SLGfxWg2GWN2uexw=="
+  }
+}

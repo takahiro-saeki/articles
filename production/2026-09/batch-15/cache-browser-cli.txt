@@ -1,0 +1,10 @@
+### Browser `article-cache-batch15` opened with pid 94602.
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:9916/');
+```
+### Page
+- Page URL: http://127.0.0.1:9916/
+- Page Title: Article cache lab
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-09-11T14-01-11-917Z.yml)

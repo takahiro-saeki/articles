@@ -1,0 +1,14 @@
+{
+  "command": "node scripts/validate-article-stock.mjs --batch=15",
+  "exit_code": 1,
+  "expected_failure": true,
+  "reason": "Qiita future item IDs are unknown; canonical URLs must not be invented",
+  "pending": [
+    "T29",
+    "T32",
+    "T35",
+    "T41",
+    "T43"
+  ],
+  "stderr": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: T29: canonical policy must be resolved in catalog\n+ actual - expected\n\n+ null\n- undefined\n\n    at file:///Users/takahiro_saeki/Documents/GitHub/articles/scripts/validate-article-stock.mjs:76:11\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\n    at async node:internal/modules/esm/loader:639:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: null,\n  expected: undefined,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.15.0\n"
+}

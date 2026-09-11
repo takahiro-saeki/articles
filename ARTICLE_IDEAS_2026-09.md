@@ -159,7 +159,7 @@
 <!-- production-progress:start -->
 ## 制作状況
 
-完成 41/90件。本文・日英対訳・Humanizerまで検証済み 85/90件（うちcanonical待ち 44件）。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
+完成 41/90件。本文・日英対訳・Humanizerまで検証済み 90/90件（うちcanonical待ち 49件）。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
 
 - P01: [個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける](articles/plane-project-boundaries.md) / [English](devto/plane-project-boundaries.md)（完成・未公開）
 - P02: [PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める](articles/plane-workspace-access-boundaries.md) / [English](devto/plane-workspace-access-boundaries.md)（完成・未公開）

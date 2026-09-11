@@ -1,0 +1,26 @@
+{
+  "pairs": 5,
+  "code_blocks": 9,
+  "executable_blocks": 8,
+  "text_blocks": 1,
+  "printed_mobile_blocks_executed_with_substitute_boundaries": 4,
+  "printed_workerd_blocks_executed": 3,
+  "printed_browser_blocks_executed": 1,
+  "package_js_comparison_cases": 12,
+  "native_release_launches": 2,
+  "native_link_delivery_verified": false,
+  "complete_native_resume_cycle_verified": false,
+  "cloud_deployment": false,
+  "humanizer_prose_edits": 24,
+  "guard": {
+    "baseline": "8a1bfa8",
+    "before_batch": "2799b01",
+    "baseline_files_unchanged": 137,
+    "previous_article_files_unchanged": 293,
+    "original_ideas_unchanged": true,
+    "fixed_git_sources": 8,
+    "fixed_package_sources": 8,
+    "native_fixture_sources": 5,
+    "final_humanizer_hashes": 10
+  }
+}
