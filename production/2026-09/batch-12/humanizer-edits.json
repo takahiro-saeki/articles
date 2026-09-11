@@ -1,0 +1,186 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "O02",
+      "path": "public/bilingual-canonical-url-lifecycle.md",
+      "edits": [
+        [
+          "原稿を揃える工程と、URLを確定する工程には境界があります。",
+          "原稿を揃えることと、URLを確定することは別の工程です。"
+        ],
+        [
+          "この調査ではどちらの実スクリプトも実認証情報で起動していません。予約表への追加もしていません。",
+          "調査では実認証情報を使わず、予約表も変更していません。"
+        ]
+      ],
+      "semantic_review": "6 mock cases, Qiita response propagation and literal null string, unpublished/local versus external draft boundary preserved; no API acceptance or SEO claim. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O02",
+      "path": "devto/bilingual-canonical-url-lifecycle.md",
+      "edits": [
+        [
+          "Preparing the manuscripts and resolving their URLs happen at different stages.",
+          "Manuscripts and their URLs become ready at different stages."
+        ],
+        [
+          "These results do not confirm that a real Qiita page exists or that dev.to displays the canonical link.",
+          "Real Qiita page availability and dev.to canonical display were not checked."
+        ]
+      ],
+      "semantic_review": "6 mock cases, Qiita response propagation and literal null string, unpublished/local versus external draft boundary preserved; no API acceptance or SEO claim. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O04",
+      "path": "public/article-stock-coverage-days.md",
+      "edits": [
+        [
+          "「何本書いたか」を日数へ変換するには、使える組数と、一日にどの媒体へ何組出すかを揃えます。",
+          "日数を出すには、使える組数と、一日にどの媒体へ何組出すかを決めます。"
+        ],
+        [
+          "読み手が「何日間は原稿が足りるか」を知りたい場合に対応した数え方です。",
+          "これで、原稿が足りる日が先頭から何日続くかを数えられます。"
+        ]
+      ],
+      "semantic_review": "Pinned 68/41/27/22, 136 files, four allocation assumptions and 38 historic rows retained; hypothetical capacity distinct from future reservations. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O04",
+      "path": "devto/article-stock-coverage-days.md",
+      "edits": [
+        [
+          "Converting article counts into days requires both the usable pair count and the number of pairs needed on each platform per day.",
+          "To count days, establish the usable pairs and each platform's daily requirement."
+        ],
+        [
+          "That matches the question of how many consecutive days have enough manuscripts.",
+          "The result counts consecutive days with enough manuscripts."
+        ]
+      ],
+      "semantic_review": "Pinned 68/41/27/22, 136 files, four allocation assumptions and 38 historic rows retained; hypothetical capacity distinct from future reservations. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O06",
+      "path": "public/personal-company-github-identity-guard.md",
+      "edits": [
+        [
+          "`gh`と`git`を偽物へ差し替えた6ケースで動かしました。",
+          "`gh`と`git`をテスト用コマンドへ差し替えた6ケースで動かしました。"
+        ],
+        [
+          "ブラウザの表示名やコミット作者名だけで済ませないための手順です。",
+          "ブラウザの表示名やコミット作者名だけでは、この確認を代替できません。"
+        ]
+      ],
+      "semantic_review": "Six mock cases and read-only check exits retained; actual hook untouched, registration unknown, CLI identity distinct from SSH/other Git credentials. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O06",
+      "path": "devto/personal-company-github-identity-guard.md",
+      "edits": [
+        [
+          "These directories select the expected identity; changing directories alone does not guarantee authentication.",
+          "The directory selects the expected identity. Authentication still needs a separate check."
+        ],
+        [
+          "There is no need to log the token value.",
+          "Keep the token value out of the log."
+        ]
+      ],
+      "semantic_review": "Six mock cases and read-only check exits retained; actual hook untouched, registration unknown, CLI identity distinct from SSH/other Git credentials. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O08",
+      "path": "public/long-task-repository-handoff.md",
+      "edits": [
+        [
+          "この区別を会話だけに依存させないため、制作台帳、原稿、検証結果を同じcommitから読み直しました。",
+          "会話を読み返さずにこの区別を復元できるか、制作台帳、原稿、検証結果を同じcommitから読み直しました。"
+        ],
+        [
+          "正常系だけを通すと、読めたファイルが古くても気づけません。",
+          "正常系だけの検証では、読めるファイルが古い場合を見落とします。"
+        ]
+      ],
+      "semantic_review": "Fixed snapshot reconstruction and six evidence paths retained; five checks, proposed manifest distinct from existing feature, SHA not semantic proof, live process not inferred. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O08",
+      "path": "devto/long-task-repository-handoff.md",
+      "edits": [
+        [
+          "Those are historical counts. If work has progressed at another commit, recalculate before adopting them as current progress.",
+          "Those counts belong to that snapshot. Recalculate when later commits contain more work."
+        ],
+        [
+          "Matching SHAs do not prove that the articles' technical claims are correct.",
+          "SHA agreement identifies the recorded content; its technical claims still require review."
+        ]
+      ],
+      "semantic_review": "Fixed snapshot reconstruction and six evidence paths retained; five checks, proposed manifest distinct from existing feature, SHA not semantic proof, live process not inferred. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O11",
+      "path": "public/game-prototype-archive-decisions.md",
+      "edits": [
+        [
+          "archiveの存在だけで現行の機能一覧を判断しないための確認例です。",
+          "現行の機能一覧を判断するには、archive以外の確認も必要です。"
+        ],
+        [
+          "「後で参照できる」には段階があります。比較するためのコード保存はbyte一致で確認できました。",
+          "今回byte一致で確認できたのは、後で比較するためのコードが残っていることです。"
+        ]
+      ],
+      "semantic_review": "14 unchanged files, 3 scripts and 4 images plus sidecars, old root README and current entry point retained; no fabricated rejection reasons or rebuild result. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O11",
+      "path": "devto/game-prototype-archive-decisions.md",
+      "edits": [
+        [
+          "This case shows why archive contents alone should not define the current feature list.",
+          "The current feature list needs evidence beyond the archive contents."
+        ],
+        [
+          "The diff does not document each rejected concept's evaluation or a future reuse plan.",
+          "The individual evaluations and future reuse plans are not recorded in the diff."
+        ]
+      ],
+      "semantic_review": "14 unchanged files, 3 scripts and 4 images plus sidecars, old root README and current entry point retained; no fabricated rejection reasons or rebuild result. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O14",
+      "path": "public/bilingual-story-archive-qa.md",
+      "edits": [
+        [
+          "確認表を使うなら、「33件と出た」だけで済ませず、ゲームが読むデータと各行を照合します。",
+          "確認表の「33件」という表示に加えて、各行をゲームが読むデータと照合します。"
+        ],
+        [
+          "数字の確認範囲を混ぜないようにします。",
+          "この集計値と、実データの一致確認は分けて扱います。"
+        ]
+      ],
+      "semantic_review": "33 events, 101 story rows, 12/33 combat table counts, three validator mutations and 100-row multiline defect retained; no UI or full game validation claim. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O14",
+      "path": "devto/bilingual-story-archive-qa.md",
+      "edits": [
+        [
+          "A review table therefore needs comparison against the data read by the game, not just an output message reporting 33 events.",
+          "Compare the review table with the data read by the game, alongside its reported count of 33 events."
+        ],
+        [
+          "Proofreading should first establish that the table contains the full text, then examine meaning and presentation.",
+          "Before reviewing meaning and presentation, check that the table contains the full text."
+        ]
+      ],
+      "semantic_review": "33 events, 101 story rows, 12/33 combat table counts, three validator mutations and 100-row multiline defect retained; no UI or full game validation claim. All Japanese/English sections, results, code, sources and limitations checked."
+    }
+  ]
+}

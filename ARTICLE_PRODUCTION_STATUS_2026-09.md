@@ -2,7 +2,7 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
-本文・日英対訳・Humanizerまで検証済み 68/90件（完成 41件、canonical待ち 27件）。本文の検証が残る候補は 22件。canonical未確定の原稿は完成数に含めない。
+本文・日英対訳・Humanizerまで検証済み 74/90件（完成 41件、canonical待ち 33件）。本文の検証が残る候補は 16件。canonical未確定の原稿は完成数に含めない。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -19,8 +19,9 @@
 - バッチ09: T11、T12、T13、T15、T16、T17。完成 0/6件、本文検証済み 6/6件。
 - バッチ10: T10、T22、T23、T24、T25、T38。完成 0/6件、本文検証済み 6/6件。
 - バッチ11: P05、P06、P07、P11、P12、P13。完成 0/6件、本文検証済み 6/6件。
+- バッチ12: O02、O04、O06、O08、O11、O14。完成 0/6件、本文検証済み 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: P05、P06、P07、P11、P12、P13、T01、T02、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T31、T37、T38。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: P05、P06、P07、P11、P12、P13、T01、T02、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T31、T37、T38、O02、O04、O06、O08、O11、O14。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -91,19 +92,19 @@
 | T44 | Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する | idempotency-key-result-storage | [原稿](articles/idempotency-key-result-storage.md) | [原稿](devto/idempotency-key-result-storage.md) | Stripe idempotent requests、D1 batch公式仕様 | ローカルD1の6ケース。commit後応答消失、入力相違、actor別、同時miss、rollback、記録削除 | 完成 |
 | T45 | OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける | outbox-database-notification-boundary | [原稿](articles/outbox-database-notification-boundary.md) | [原稿](devto/outbox-database-notification-boundary.md) | AWS transactional outbox、D1 batch公式仕様 | ローカルD1とfake providerで4ケース。意図の同時保存、送信後中断、重複排除あり/なし | 完成 |
 | O01 | 38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える | publishing-38-day-audit | [原稿](articles/publishing-38-day-audit.md) | [原稿](devto/publishing-38-day-audit.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
-| O02 | 日本語記事をdev.toへ出すとき、canonical URLをどう管理したか | bilingual-canonical-url-lifecycle | 予定: public/bilingual-canonical-url-lifecycle.md | 予定: devto/bilingual-canonical-url-lifecycle.md | 未確認 | 未実施 | 未着手 |
+| O02 | 日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う | bilingual-canonical-url-lifecycle | [原稿](public/bilingual-canonical-url-lifecycle.md) | [原稿](devto/bilingual-canonical-url-lifecycle.md) | [固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md) | 執筆中 |
 | O03 | 予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する | scheduled-publishing-recovery-boundary | [原稿](articles/scheduled-publishing-recovery-boundary.md) | [原稿](devto/scheduled-publishing-recovery-boundary.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
-| O04 | 記事ストックを「本数」ではなく「日数」で管理する | article-stock-coverage-days | 予定: public/article-stock-coverage-days.md | 予定: devto/article-stock-coverage-days.md | 未確認 | 未実施 | 未着手 |
+| O04 | 記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える | article-stock-coverage-days | [原稿](public/article-stock-coverage-days.md) | [原稿](devto/article-stock-coverage-days.md) | [固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md) | 執筆中 |
 | O05 | Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法 | repository-decision-log-evidence | [原稿](articles/repository-decision-log-evidence.md) | [原稿](devto/repository-decision-log-evidence.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
-| O06 | 個人用と会社用のGitHubアカウントを混ぜないために入れた防止策 | personal-company-github-identity-guard | 予定: public/personal-company-github-identity-guard.md | 予定: devto/personal-company-github-identity-guard.md | 未確認 | 未実施 | 未着手 |
+| O06 | GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける | personal-company-github-identity-guard | [原稿](public/personal-company-github-identity-guard.md) | [原稿](devto/personal-company-github-identity-guard.md) | [固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md) | 執筆中 |
 | O07 | AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む | ai-code-review-invariants | [原稿](articles/ai-code-review-invariants.md) | [原稿](devto/ai-code-review-invariants.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
-| O08 | Codexへ長い作業を任せるとき、途中経過をどこへ残すか | long-task-repository-handoff | 予定: public/long-task-repository-handoff.md | 予定: devto/long-task-repository-handoff.md | 未確認 | 未実施 | 未着手 |
+| O08 | Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す | long-task-repository-handoff | [原稿](public/long-task-repository-handoff.md) | [原稿](devto/long-task-repository-handoff.md) | [固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md) | 執筆中 |
 | O09 | AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる | devlog-primary-source-reconstruction | [原稿](articles/devlog-primary-source-reconstruction.md) | [原稿](devto/devlog-primary-source-reconstruction.md) | game-jam-lab f074703の制作記下書き・監査文書・GDScriptを照合 | 実カタログから720順序×2ボス=1440を再計算。Godot監査/通しプレイは未実行 | 完成 |
 | O10 | Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する | game-jam-repository-reuse | [原稿](articles/game-jam-repository-reuse.md) | [原稿](devto/game-jam-repository-reuse.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
-| O11 | 採用しなかったゲームプロトタイプをarchiveへ残す理由 | game-prototype-archive-decisions | 予定: public/game-prototype-archive-decisions.md | 予定: devto/game-prototype-archive-decisions.md | 未確認 | 未実施 | 未着手 |
+| O11 | ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する | game-prototype-archive-decisions | [原稿](public/game-prototype-archive-decisions.md) | [原稿](devto/game-prototype-archive-decisions.md) | [固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md) | 執筆中 |
 | O12 | itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する | itch-submission-deliverables | [原稿](articles/itch-submission-deliverables.md) | [原稿](devto/itch-submission-deliverables.md) | game-jam-lab f074703の提出キット・8画像とitch.io HTML5公式仕様 | 6スクリーンショットはJPEG 1280×720、2coverはPNG 630×500。ヘッダーとfileで照合 | 完成 |
 | O13 | マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える | game-input-support-sequence | [原稿](articles/game-input-support-sequence.md) | [原稿](devto/game-input-support-sequence.md) | game-jam-lab f074703の入力経路、8/1共通gamepad履歴、Godot InputEvent公式 | Godot4.6.2 headlessで元binding classと抽出motion関数を実行。10イベントと再割当3観点。実ブラウザ/実機未検証 | 完成 |
-| O14 | 日英33イベントのゲーム内テキストをまとめて確認する仕組み | bilingual-story-archive-qa | 予定: public/bilingual-story-archive-qa.md | 予定: devto/bilingual-story-archive-qa.md | 未確認 | 未実施 | 未着手 |
+| O14 | 日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける | bilingual-story-archive-qa | [原稿](public/bilingual-story-archive-qa.md) | [原稿](devto/bilingual-story-archive-qa.md) | [固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md) | 執筆中 |
 | O15 | ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する | game-bgm-selection-log | [原稿](articles/game-bgm-selection-log.md) | [原稿](devto/game-bgm-selection-log.md) | game-jam-lab f074703のSuno選定ブリーフ、BGMStreams/EncounterBGMKeys、関連Git履歴 | 19音声ファイルのffprobe。BGM18slot/17file、jingle込み18file、未参照旧地図曲1。聴感/ラウドネス未測定 | 完成 |
 | O16 | 63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する | trailer-timeline-before-editing | [原稿](articles/trailer-timeline-before-editing.md) | [原稿](devto/trailer-timeline-before-editing.md) | game-jam-lab bf5c7e7/f074703のcapture、README、compose、FFmpeg公式 | 11区間の連続性と実game表示51.5秒、元関数をGodot4.6.2で22assertions、MP4二本のffprobe。再レンダー/全frame目視/効果測定なし | 完成 |
 | O17 | AI生成素材の出典、原本、採否をどう残したか | generated-asset-provenance-decisions | [原稿](articles/generated-asset-provenance-decisions.md) | [原稿](devto/generated-asset-provenance-decisions.md) | game-jam-lab f074703の出典文書・台帳・runtime preload・Git履歴 | 30batch/107候補、原本欠落0、承認35/保留13/却下3/未確認56。未確認3件のコード参照 | 完成 |

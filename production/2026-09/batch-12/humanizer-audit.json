@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "O02",
+      "path": "public/bilingual-canonical-url-lifecycle.md",
+      "before_sha256": "73e6270cbde787542658136fdff5e7b58c55dc5148246219ce650f463d035d39",
+      "after_sha256": "5b21e709d6632cc20610621872ff61274522e2bb65532cdba2e4aedb3c1488e1",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "6 mock cases, Qiita response propagation and literal null string, unpublished/local versus external draft boundary preserved; no API acceptance or SEO claim. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O02",
+      "path": "devto/bilingual-canonical-url-lifecycle.md",
+      "before_sha256": "5442b8593a6e17a068eb1b908c0a2d8667b336da13c23520790846fc342cc770",
+      "after_sha256": "85956bd5db4e608e41392a0b7b8d10d2104451cfd483c57cdef0c31f153eb981",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "6 mock cases, Qiita response propagation and literal null string, unpublished/local versus external draft boundary preserved; no API acceptance or SEO claim. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O04",
+      "path": "public/article-stock-coverage-days.md",
+      "before_sha256": "5e509540a3f0a4cb5ac8da4582ab1ca633010bb0b07abc0aa4690b4fb1c3d39b",
+      "after_sha256": "9b79c594e24bc055c7bac69cd13e65c18045e608247accc9798e3283691c999b",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Pinned 68/41/27/22, 136 files, four allocation assumptions and 38 historic rows retained; hypothetical capacity distinct from future reservations. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O04",
+      "path": "devto/article-stock-coverage-days.md",
+      "before_sha256": "27f079e9866af7142f5eb843841bb86271041ead83d8047de6b8b10adf059e4a",
+      "after_sha256": "6ee96ce219ff731e2448fc2ea1a41c779ea63b8dd6949749289e64cc269eb106",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Pinned 68/41/27/22, 136 files, four allocation assumptions and 38 historic rows retained; hypothetical capacity distinct from future reservations. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O06",
+      "path": "public/personal-company-github-identity-guard.md",
+      "before_sha256": "c09da2390d064ac31cd69ea7dc94ec39a0292add8d5d1cf1f86e02c71d380d45",
+      "after_sha256": "1685a29869d2575f06df4ab06b4fd3ef46e46a9d6195bdd1c936c41d578e902d",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Six mock cases and read-only check exits retained; actual hook untouched, registration unknown, CLI identity distinct from SSH/other Git credentials. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O06",
+      "path": "devto/personal-company-github-identity-guard.md",
+      "before_sha256": "0451cb88ad5702815941fe9b0f9022560e1b4f37d13b5be49a521cc6288a2280",
+      "after_sha256": "bdf27f478865fc9011476dab1a9a1ec9ec59e9b89743a3798c8180baeef510aa",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Six mock cases and read-only check exits retained; actual hook untouched, registration unknown, CLI identity distinct from SSH/other Git credentials. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O08",
+      "path": "public/long-task-repository-handoff.md",
+      "before_sha256": "c7cc34ce1a577738e22327c20c63f8c7d52758334cdec7e73878d2f4b10cbafe",
+      "after_sha256": "5b3b90152faa7927ba389ee636b52aaca4423bf42568e6c77362d6b9ee030bbc",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Fixed snapshot reconstruction and six evidence paths retained; five checks, proposed manifest distinct from existing feature, SHA not semantic proof, live process not inferred. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O08",
+      "path": "devto/long-task-repository-handoff.md",
+      "before_sha256": "69247753d5583a510c887f2a5704bd2902e329c73897770197146ec8091ebb28",
+      "after_sha256": "b10d2f7ec9f8daa8d70047d7de7552a78419a9d83fa87bb1a5db31b406f1f05a",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Fixed snapshot reconstruction and six evidence paths retained; five checks, proposed manifest distinct from existing feature, SHA not semantic proof, live process not inferred. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O11",
+      "path": "public/game-prototype-archive-decisions.md",
+      "before_sha256": "c6a1090489c6998bc22c7011b28a8e71f30496c35cc4f4b4621ee0ba0462d842",
+      "after_sha256": "7d369cd57c8a279993d9a7659dd03efa37f9997194fdb275e688ae4a6ee32dd3",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "14 unchanged files, 3 scripts and 4 images plus sidecars, old root README and current entry point retained; no fabricated rejection reasons or rebuild result. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O11",
+      "path": "devto/game-prototype-archive-decisions.md",
+      "before_sha256": "071a3cf9cb680569a5696ae3d573c93e990dd735125fcdb07fd34fbd7509adab",
+      "after_sha256": "c3f9735318cb884b019da38d1db7dddc436ba6f0149a9074996cefb9a07be027",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "14 unchanged files, 3 scripts and 4 images plus sidecars, old root README and current entry point retained; no fabricated rejection reasons or rebuild result. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O14",
+      "path": "public/bilingual-story-archive-qa.md",
+      "before_sha256": "b852a0087e34014e52506819a49de4583098c551e74b443fb7cdd615079a63c1",
+      "after_sha256": "dd66956373334f387112a3406ebc8589ff3413d68e6eecce697136bce80238ef",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "33 events, 101 story rows, 12/33 combat table counts, three validator mutations and 100-row multiline defect retained; no UI or full game validation claim. All Japanese/English sections, results, code, sources and limitations checked."
+    },
+    {
+      "id": "O14",
+      "path": "devto/bilingual-story-archive-qa.md",
+      "before_sha256": "3f483d13d000275eb5265ac523257bfa1a31ef5a97743cd944f3a76c80278ec9",
+      "after_sha256": "bddc0f04459a3ad1bc78cc719cadb2e27b3e22c2708759d17f4798555d3d7de9",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "33 events, 101 story rows, 12/33 combat table counts, three validator mutations and 100-row multiline defect retained; no UI or full game validation claim. All Japanese/English sections, results, code, sources and limitations checked."
+    }
+  ]
+}

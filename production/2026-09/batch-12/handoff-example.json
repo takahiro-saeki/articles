@@ -1,0 +1,27 @@
+{
+  "status": "new local proposal, not an existing Codex feature",
+  "revision": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+  "branch": "codex/article-stock-2026-09",
+  "counts": {
+    "bodyVerifiedPairs": 68,
+    "completePairs": 41,
+    "canonicalPendingPairs": 27,
+    "remainingBodies": 22
+  },
+  "evidence": {
+    "production/2026-09/catalog.json": "aa8fc5e92d6670f4450470916e3a8ba644f58db48785427fea84983928c5b33a",
+    "ARTICLE_PRODUCTION_STATUS_2026-09.md": "e3332fa3822b445c9666a2f0b44b33989d5c7868d3b4f2a655b47f9012f3bebb",
+    "production/2026-09/batch-11/review.md": "717c2db2991cb7db8e23aebe0b41f0dfa0ab99ebd9e97bedffbd0dc5aadba7f7",
+    "production/2026-09/batch-11/humanizer-audit.json": "b58107771c810712ab4f1d038715017eab6455a09e12829a3facd1c8723f058a",
+    "production/2026-09/batch-11/content-validation.json": "bacd5a1e7e13fd0917367fe237e62b4984fd873ae9c600bf6f8e57850986f1af",
+    "production/2026-09/batch-11/canonical-gate.json": "4594e5489b42024a53bb892f8ef569d639ba524e706484998896417a6396743a"
+  },
+  "nextCandidates": [
+    "P04",
+    "P09",
+    "P16",
+    "P18"
+  ],
+  "unresolved": "Qiita IDs and canonical URLs; do not fabricate or publish to allocate IDs",
+  "resumeAction": "Check current Git status and compare these sources before selecting an unstarted batch"
+}

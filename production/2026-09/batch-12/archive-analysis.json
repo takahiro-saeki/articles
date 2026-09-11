@@ -1,0 +1,100 @@
+{
+  "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "retireCommit": "51984887e2b2be66c1330a3ade8d82a9392532b6",
+  "renamedFiles": 14,
+  "gdScripts": 3,
+  "keyArtImages": 4,
+  "importSidecars": 4,
+  "uidSidecars": 3,
+  "byteIdenticalAtRenameAndRef": true,
+  "renames": [
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/capacitor-defense.jpg",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/capacitor-defense.jpg",
+      "sha256": "e6242f0e0d91df361c51003030612ff8b7fc8717ceaa3cb33c43e174ce91b575",
+      "bytes": 306713
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/capacitor-defense.jpg.import",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/capacitor-defense.jpg.import",
+      "sha256": "7d42e95c410e31a988c174a4a4399c1d0846a6c1485cd1080cb5e4e227b3abb0",
+      "bytes": 969
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/chargeback.jpg",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/chargeback.jpg",
+      "sha256": "3f1304a0cc555dd2dd97c86463488f770c86c028ca8d02de55e6389d2367d7d3",
+      "bytes": 301007
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/chargeback.jpg.import",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/chargeback.jpg.import",
+      "sha256": "082abba811fff47cdac079e4b3eb03fbc3ee73f4eaf0db2fe4dc2fa6c50b79e7",
+      "bytes": 948
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/zero-percent-city-gameplay.png",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/zero-percent-city-gameplay.png",
+      "sha256": "eb579a58622031528038e6eabdb3faa2e9a2995d972ce6169ad54f7fa1a2005e",
+      "bytes": 2033008
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/zero-percent-city-gameplay.png.import",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/zero-percent-city-gameplay.png.import",
+      "sha256": "ede6ea438de6ccbed598ffb2a7ee4ba4b5d19165ec36e0add858cc34e113e6fe",
+      "bytes": 996
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/zero-percent-city.jpg",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/zero-percent-city.jpg",
+      "sha256": "f2f3d3695ccd66a898167a5dd3b29139c6eb332b19ae355ea830e8d783f4c930",
+      "bytes": 213803
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/assets/keyart/zero-percent-city.jpg.import",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/assets/keyart/zero-percent-city.jpg.import",
+      "sha256": "4d65b6bad6a49287095c7f69f5f7775888c3354871072096015ce6f48e24f061",
+      "bytes": 969
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/games/capacitor_defense/capacitor_defense.gd",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/games/capacitor_defense/capacitor_defense.gd",
+      "sha256": "9d66c930934f636d6a38e6f72017cc141e98e247fd6f94a45ad4dabd6b2a761c",
+      "bytes": 43361
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/games/capacitor_defense/capacitor_defense.gd.uid",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/games/capacitor_defense/capacitor_defense.gd.uid",
+      "sha256": "10fde77f99202b510189a7c841edb2f75d339befadc1cba1b71b25009e65b588",
+      "bytes": 20
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/games/chargeback/chargeback.gd",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/games/chargeback/chargeback.gd",
+      "sha256": "662b22f12d748259914c6b4890224684bed275fcbd5f2cf42fcf0bec9e992419",
+      "bytes": 47971
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/games/chargeback/chargeback.gd.uid",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/games/chargeback/chargeback.gd.uid",
+      "sha256": "b3c1da2cf70bdc465d737148e64938667c83b45de65e344cf6a24d71fcc7e9bd",
+      "bytes": 20
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/games/zero_percent_city/zero_percent_city.gd",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/games/zero_percent_city/zero_percent_city.gd",
+      "sha256": "dac42860a9db050d9f4e525c102197c5dc51b05e7fdcc3a4f1d39c1e7d9c54f7",
+      "bytes": 36171
+    },
+    {
+      "old": "events/2026-ai-browser-game-jam-4/godot/games/zero_percent_city/zero_percent_city.gd.uid",
+      "new": "events/2026-ai-browser-game-jam-4/archive/retired-prototypes/games/zero_percent_city/zero_percent_city.gd.uid",
+      "sha256": "9ebdc78fcfab57ce4b7c098eaac7c27e5b5aa3dfe04323bdeaf09972babf714b",
+      "bytes": 20
+    }
+  ],
+  "currentLauncher": "launch_project_charge only",
+  "staleRootReadme": true,
+  "rebuiltArchivePrototypes": false,
+  "measuredExportSize": false
+}

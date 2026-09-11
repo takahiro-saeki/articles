@@ -1,0 +1,231 @@
+{
+  "pairs": 6,
+  "canonicalPending": [
+    "O02",
+    "O04",
+    "O06",
+    "O08",
+    "O11",
+    "O14"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "O02",
+      "jaCharacters": 2613,
+      "enWords": 691,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/publishing-38-day-audit.md",
+          "score": 0.074
+        },
+        {
+          "path": "public/article-stock-coverage-days.md",
+          "score": 0.073
+        },
+        {
+          "path": "articles/scheduled-publishing-recovery-boundary.md",
+          "score": 0.066
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/long-task-repository-handoff.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/publishing-38-day-audit.md",
+          "score": 0.207
+        }
+      ]
+    },
+    {
+      "id": "O04",
+      "jaCharacters": 2376,
+      "enWords": 695,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/long-task-repository-handoff.md",
+          "score": 0.086
+        },
+        {
+          "path": "public/bilingual-canonical-url-lifecycle.md",
+          "score": 0.073
+        },
+        {
+          "path": "articles/publishing-38-day-audit.md",
+          "score": 0.054
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/long-task-repository-handoff.md",
+          "score": 0.226
+        },
+        {
+          "path": "devto/bilingual-canonical-url-lifecycle.md",
+          "score": 0.199
+        },
+        {
+          "path": "devto/publishing-38-day-audit.md",
+          "score": 0.187
+        }
+      ]
+    },
+    {
+      "id": "O06",
+      "jaCharacters": 2689,
+      "enWords": 686,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/long-task-repository-handoff.md",
+          "score": 0.054
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.05
+        },
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.05
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/long-task-repository-handoff.md",
+          "score": 0.215
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.198
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.197
+        }
+      ]
+    },
+    {
+      "id": "O08",
+      "jaCharacters": 2779,
+      "enWords": 765,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/article-stock-coverage-days.md",
+          "score": 0.086
+        },
+        {
+          "path": "public/bilingual-canonical-url-lifecycle.md",
+          "score": 0.06
+        },
+        {
+          "path": "public/personal-company-github-identity-guard.md",
+          "score": 0.054
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/article-stock-coverage-days.md",
+          "score": 0.226
+        },
+        {
+          "path": "devto/plane-recurring-maintenance.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/bilingual-canonical-url-lifecycle.md",
+          "score": 0.218
+        }
+      ]
+    },
+    {
+      "id": "O11",
+      "jaCharacters": 2982,
+      "enWords": 675,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/bilingual-story-archive-qa.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/game-input-support-sequence.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.077
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.227
+        },
+        {
+          "path": "devto/bilingual-story-archive-qa.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.219
+        }
+      ]
+    },
+    {
+      "id": "O14",
+      "jaCharacters": 2886,
+      "enWords": 786,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/game-prototype-archive-decisions.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.079
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.079
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.234
+        },
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/game-prototype-archive-decisions.md",
+          "score": 0.224
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "godot": "4.6.2.stable.official.71f334935",
+  "node": "v24.15.0",
+  "storyEvents": 33,
+  "storyDialogueRows": 101,
+  "combatExchanges": 12,
+  "combatDialogueRows": 33,
+  "allStoryMetadataAndFieldsMatchRuntime": true,
+  "validatorMutations": 3,
+  "multilineMutation": {
+    "godotDataUnchanged": true,
+    "exportedRows": 100,
+    "missingRows": 1
+  },
+  "uiInspected": false,
+  "entireGameRun": false,
+  "releaseBuildExported": false,
+  "sourceSha256": {
+    "tools/export-dialogue-review.mjs": "41e859a6d6d9854b51eaefe513ee24288a93bbb595889a21f09d92384b73bdd1",
+    "godot/games/charge_clicker/story_catalog.gd": "1365977a0c0bffc7b41720036b4108f6d0ad3f465a28a2263df1cb1f3f892df6",
+    "godot/games/charge_clicker/charge_clicker.gd": "53581b551d029a30dab69d9e859dc4a32ad3db67bf26016662f3047b0d6815eb"
+  }
+}

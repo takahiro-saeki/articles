@@ -1,0 +1,192 @@
+{
+  "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+  "node": "v24.15.0",
+  "mode": "original scripts with in-memory fs and fetch mocks; zero external calls",
+  "cases": 6,
+  "results": [
+    {
+      "case": "scheduled Qiita response replaces null",
+      "path": "scripts/publish-scheduled.mjs",
+      "platform": "qiita",
+      "canonical": "null",
+      "calls": [
+        {
+          "url": "https://qiita.com/api/v2/items",
+          "method": "POST",
+          "payload": {
+            "title": "Sample",
+            "body": "Japanese fixture.",
+            "private": false,
+            "tags": [
+              {
+                "name": "JavaScript"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://dev.to/api/articles",
+          "method": "POST",
+          "payload": {
+            "article": {
+              "title": "Sample",
+              "body_markdown": "English fixture.",
+              "published": true,
+              "canonical_url": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+              "tags": [
+                "javascript"
+              ]
+            }
+          }
+        }
+      ],
+      "writes": [
+        "public/sample.md",
+        "devto/sample.md"
+      ],
+      "error": null,
+      "responseUrl": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+      "finalEnglish": "---\ndevto_id: 123\ntitle: Sample\ntags: javascript\ncanonical_url: https://qiita.com/fixture_author/items/0123456789abcdef0123\npublished: true\n---\nEnglish fixture."
+    },
+    {
+      "case": "scheduled Qiita response replaces stale URL",
+      "path": "scripts/publish-scheduled.mjs",
+      "platform": "qiita",
+      "canonical": "https://zenn.dev/hirodeath/articles/stale-sample",
+      "calls": [
+        {
+          "url": "https://qiita.com/api/v2/items",
+          "method": "POST",
+          "payload": {
+            "title": "Sample",
+            "body": "Japanese fixture.",
+            "private": false,
+            "tags": [
+              {
+                "name": "JavaScript"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://dev.to/api/articles",
+          "method": "POST",
+          "payload": {
+            "article": {
+              "title": "Sample",
+              "body_markdown": "English fixture.",
+              "published": true,
+              "canonical_url": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+              "tags": [
+                "javascript"
+              ]
+            }
+          }
+        }
+      ],
+      "writes": [
+        "public/sample.md",
+        "devto/sample.md"
+      ],
+      "error": null,
+      "responseUrl": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+      "finalEnglish": "---\ndevto_id: 123\ntitle: Sample\ntags: javascript\ncanonical_url: https://qiita.com/fixture_author/items/0123456789abcdef0123\npublished: true\n---\nEnglish fixture."
+    },
+    {
+      "case": "Qiita rejection stops before dev.to",
+      "path": "scripts/publish-scheduled.mjs",
+      "platform": "qiita",
+      "canonical": "null",
+      "calls": [
+        {
+          "url": "https://qiita.com/api/v2/items",
+          "method": "POST",
+          "payload": {
+            "title": "Sample",
+            "body": "Japanese fixture.",
+            "private": false,
+            "tags": [
+              {
+                "name": "JavaScript"
+              }
+            ]
+          }
+        }
+      ],
+      "writes": [],
+      "error": "Qiita API 422: local fixture rejection",
+      "responseUrl": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+      "finalEnglish": "---\ntitle: Sample\ntags: javascript\ncanonical_url: null\npublished: false\n---\nEnglish fixture."
+    },
+    {
+      "case": "Zenn uses source slug",
+      "path": "scripts/publish-scheduled.mjs",
+      "platform": "zenn",
+      "canonical": "null",
+      "calls": [
+        {
+          "url": "https://dev.to/api/articles",
+          "method": "POST",
+          "payload": {
+            "article": {
+              "title": "Sample",
+              "body_markdown": "English fixture.",
+              "published": true,
+              "canonical_url": "https://zenn.dev/hirodeath/articles/sample",
+              "tags": [
+                "javascript"
+              ]
+            }
+          }
+        }
+      ],
+      "writes": [
+        "articles/sample.md",
+        "devto/sample.md"
+      ],
+      "error": null,
+      "responseUrl": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+      "finalEnglish": "---\ndevto_id: 123\ntitle: Sample\ntags: javascript\ncanonical_url: https://zenn.dev/hirodeath/articles/sample\npublished: true\n---\nEnglish fixture."
+    },
+    {
+      "case": "standalone parser sends literal null string",
+      "path": "scripts/publish-devto.mjs",
+      "platform": "qiita",
+      "canonical": "null",
+      "calls": [
+        {
+          "url": "https://dev.to/api/articles",
+          "method": "POST",
+          "payload": {
+            "article": {
+              "title": "Sample",
+              "body_markdown": "English fixture.",
+              "published": false,
+              "tags": [
+                "javascript"
+              ],
+              "canonical_url": "null"
+            }
+          }
+        }
+      ],
+      "writes": [
+        "devto/sample.md"
+      ],
+      "error": null,
+      "responseUrl": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+      "finalEnglish": "---\ndevto_id: 123\ntitle: Sample\ntags: javascript\ncanonical_url: null\npublished: false\n---\nEnglish fixture."
+    },
+    {
+      "case": "dry run makes no API call or write",
+      "path": "scripts/publish-scheduled.mjs",
+      "platform": "qiita",
+      "canonical": "null",
+      "calls": [],
+      "writes": [],
+      "error": null,
+      "responseUrl": "https://qiita.com/fixture_author/items/0123456789abcdef0123",
+      "finalEnglish": "---\ntitle: Sample\ntags: javascript\ncanonical_url: null\npublished: false\n---\nEnglish fixture."
+    }
+  ]
+}

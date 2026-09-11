@@ -1,0 +1,71 @@
+{
+  "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+  "candidateCount": 90,
+  "bodyVerifiedPairs": 68,
+  "completePairs": 41,
+  "canonicalPendingPairs": 27,
+  "remainingBodies": 22,
+  "articleFilesForBodyPairs": 136,
+  "readyByPlatform": {
+    "Zenn": 41,
+    "Qiita": 0
+  },
+  "scheduleRows": 38,
+  "scheduleMin": "2026-08-03",
+  "scheduleMax": "2026-09-09",
+  "futureScheduleRowsFrom20260911": 0,
+  "capacityExamples": [
+    {
+      "case": "one Zenn pair daily",
+      "days": 41,
+      "planPreview": [
+        {
+          "Zenn": 1
+        },
+        {
+          "Zenn": 1
+        }
+      ],
+      "assumption": "hypothetical allocation; no schedule written"
+    },
+    {
+      "case": "two Zenn pairs daily",
+      "days": 20,
+      "planPreview": [
+        {
+          "Zenn": 2
+        },
+        {
+          "Zenn": 2
+        }
+      ],
+      "assumption": "hypothetical allocation; no schedule written"
+    },
+    {
+      "case": "Qiita slot first",
+      "days": 0,
+      "planPreview": [
+        {
+          "Qiita": 1
+        },
+        {
+          "Zenn": 1
+        }
+      ],
+      "assumption": "hypothetical allocation; no schedule written"
+    },
+    {
+      "case": "Zenn slot first",
+      "days": 1,
+      "planPreview": [
+        {
+          "Zenn": 1
+        },
+        {
+          "Qiita": 1
+        }
+      ],
+      "assumption": "hypothetical allocation; no schedule written"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "scripts/publish-scheduled.mjs",
+    "sha256": "a5307c89f97b4563ac97b0f0dfe96898b5af518c1a0b90453c65db7cee3cbf9d",
+    "bytes": 5368,
+    "history": [
+      "5cec477 2026-08-04 Normalize tags for scheduled dev.to posts (#7)",
+      "fd3fde8 2026-08-03 Add fallback for scheduled publishing (#6)",
+      "581cc8d 2026-08-02 Add English article stock and daily scheduler (#5)"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "scripts/publish-devto.mjs",
+    "sha256": "3dc7b44180fe39eb7916a9b4dbd4a59345768919f4d53c22b38de6358120c0c6",
+    "bytes": 2620,
+    "history": [
+      "7db9e06 2026-07-31 Record DEV article and fix publish status",
+      "20f2140 2026-07-26 Init articles repo: zenn-cli + qiita-cli + dev.to publish script"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "schedule/publishing-schedule.json",
+    "sha256": "7f3fec628c0baba69e7092a49fe5930fd6fc9bc27a98af81199d71722dfc76c2",
+    "bytes": 5966,
+    "history": [
+      "6f95442 2026-09-01 Schedule VOLT NOMAD development series",
+      "e78127a 2026-08-10 Schedule Japanese Godot class cache article",
+      "f315993 2026-08-10 Schedule articles through September 5"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "production/2026-09/catalog.json",
+    "sha256": "aa8fc5e92d6670f4450470916e3a8ba644f58db48785427fea84983928c5b33a",
+    "bytes": 67813,
+    "history": [
+      "6fe4649 2026-09-11 Add six Plane article pairs with query checks and configuration proposals",
+      "5692e28 2026-09-11 Add six verified article pairs on disposal, Next.js, and SQLite",
+      "597e7cf 2026-09-11 Add six verified React article pairs and browser experiments"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "ARTICLE_PRODUCTION_STATUS_2026-09.md",
+    "sha256": "e3332fa3822b445c9666a2f0b44b33989d5c7868d3b4f2a655b47f9012f3bebb",
+    "bytes": 37729,
+    "history": [
+      "6fe4649 2026-09-11 Add six Plane article pairs with query checks and configuration proposals",
+      "5692e28 2026-09-11 Add six verified article pairs on disposal, Next.js, and SQLite",
+      "597e7cf 2026-09-11 Add six verified React article pairs and browser experiments"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "production/2026-09/batch-11/review.md",
+    "sha256": "717c2db2991cb7db8e23aebe0b41f0dfa0ab99ebd9e97bedffbd0dc5aadba7f7",
+    "bytes": 9942,
+    "history": [
+      "6fe4649 2026-09-11 Add six Plane article pairs with query checks and configuration proposals"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "production/2026-09/batch-11/humanizer-audit.json",
+    "sha256": "b58107771c810712ab4f1d038715017eab6455a09e12829a3facd1c8723f058a",
+    "bytes": 6889,
+    "history": [
+      "6fe4649 2026-09-11 Add six Plane article pairs with query checks and configuration proposals"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "production/2026-09/batch-11/content-validation.json",
+    "sha256": "bacd5a1e7e13fd0917367fe237e62b4984fd873ae9c600bf6f8e57850986f1af",
+    "bytes": 5490,
+    "history": [
+      "6fe4649 2026-09-11 Add six Plane article pairs with query checks and configuration proposals"
+    ]
+  },
+  {
+    "repository": "articles",
+    "ref": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+    "path": "production/2026-09/batch-11/canonical-gate.json",
+    "sha256": "4594e5489b42024a53bb892f8ef569d639ba524e706484998896417a6396743a",
+    "bytes": 826,
+    "history": [
+      "6fe4649 2026-09-11 Add six Plane article pairs with query checks and configuration proposals"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "README.md",
+    "sha256": "bec17e1a12428375eb0c6157ee15e1565e3e5dc88e2130ed728ff283c13279e9",
+    "bytes": 1410,
+    "history": [
+      "b3be93e 2026-08-02 feat: add Project Charge core prototype",
+      "7534faa 2026-08-01 Add keyboard and gamepad controls (#3)",
+      "c6ddcc9 2026-08-01 Add Japanese localization (#2)"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/README.md",
+    "sha256": "e7900df1bdf1932589734d3c6053859d743f95ebbf304309edbf5e58c5a6ca8e",
+    "bytes": 12809,
+    "history": [
+      "49a5e18 2026-08-11 feat(volt-nomad): polish onboarding and trailer",
+      "bf5c7e7 2026-08-11 feat(volt-nomad): add key art and official trailer",
+      "3a40894 2026-08-10 feat: finish encounter storytelling and defeat polish"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/docs/VOLT_NOMAD_STORY_EVENTS.md",
+    "sha256": "c14bc60e1bcffaeba6a02de3435673b0d54b777102d4556d914b4a1f04db0bcd",
+    "bytes": 8457,
+    "history": [
+      "3a40894 2026-08-10 feat: finish encounter storytelling and defeat polish",
+      "8961d42 2026-08-10 Harden onboarding saves and campaign QA",
+      "da892d2 2026-08-10 Add local story archive QA mode"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/docs/CHARGE_CLICKER_PRODUCTION_PLAN.md",
+    "sha256": "6f0bd6805286daa7d78fcfe59a84577dedf00fc0baea21ffcbb27d4662e6d3b7",
+    "bytes": 21541,
+    "history": [
+      "866f336 2026-08-03 feat: connect Project Charge campaign routes",
+      "5354981 2026-08-02 feat: add PixelLab UI identity review",
+      "0bb7774 2026-08-02 feat: add PixelLab control emblem review"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/godot/main.gd",
+    "sha256": "4a3432b995d410ff53a195d2253ab534a6cf019ad5c8b73c9244be3542bb0b8b",
+    "bytes": 1446,
+    "history": [
+      "8961d42 2026-08-10 Harden onboarding saves and campaign QA",
+      "5198488 2026-08-09 Retire prototype game launcher",
+      "faffd0a 2026-08-09 Add dedicated itch.io web build"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/godot/main.tscn",
+    "sha256": "8cde56170868a76f3c892afe3681d1b54467b8dceb69d1b2b4853af4303edade",
+    "bytes": 170,
+    "history": [
+      "5198488 2026-08-09 Retire prototype game launcher",
+      "cd9accd 2026-08-01 Build CHARGE game prototypes (#1)"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/godot/project.godot",
+    "sha256": "343a539438beeda0228186c62c4ea7a4ac622793b33d4a3ff94d96551ce3aba5",
+    "bytes": 2050,
+    "history": [
+      "4ea388d 2026-08-09 Rename game to VOLT NOMAD",
+      "5198488 2026-08-09 Retire prototype game launcher",
+      "07fee10 2026-08-06 Polish Project Charge presentation and audio"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/godot/export_presets.cfg",
+    "sha256": "e09cc75f32164b1cff92af2c9f24a3f20679d17e6969cb406fc7c85e9ff58fd0",
+    "bytes": 2415,
+    "history": [
+      "4ea388d 2026-08-09 Rename game to VOLT NOMAD",
+      "5198488 2026-08-09 Retire prototype game launcher",
+      "faffd0a 2026-08-09 Add dedicated itch.io web build"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/godot/games/charge_clicker/story_catalog.gd",
+    "sha256": "1365977a0c0bffc7b41720036b4108f6d0ad3f465a28a2263df1cb1f3f892df6",
+    "bytes": 37081,
+    "history": [
+      "3a40894 2026-08-10 feat: finish encounter storytelling and defeat polish",
+      "821663a 2026-08-10 Complete VOLT NOMAD story campaign",
+      "6fac79f 2026-08-09 Add VOLT NOMAD story event vertical slice"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/godot/games/charge_clicker/charge_clicker.gd",
+    "sha256": "53581b551d029a30dab69d9e859dc4a32ad3db67bf26016662f3047b0d6815eb",
+    "bytes": 323210,
+    "history": [
+      "49a5e18 2026-08-11 feat(volt-nomad): polish onboarding and trailer",
+      "3a40894 2026-08-10 feat: finish encounter storytelling and defeat polish",
+      "8961d42 2026-08-10 Harden onboarding saves and campaign QA"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/tools/export-dialogue-review.mjs",
+    "sha256": "41e859a6d6d9854b51eaefe513ee24288a93bbb595889a21f09d92384b73bdd1",
+    "bytes": 5180,
+    "history": [
+      "3a40894 2026-08-10 feat: finish encounter storytelling and defeat polish"
+    ]
+  },
+  {
+    "repository": "game-jam-lab",
+    "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+    "path": "events/2026-ai-browser-game-jam-4/tools/build-itch-project-charge.sh",
+    "sha256": "494e9a61980b4228a8343dec8a2f3fd78e53f985fc654f3f6309aeba0b221b7a",
+    "bytes": 1108,
+    "history": [
+      "49a5e18 2026-08-11 feat(volt-nomad): polish onboarding and trailer",
+      "4ea388d 2026-08-09 Rename game to VOLT NOMAD",
+      "5198488 2026-08-09 Retire prototype game launcher"
+    ]
+  }
+]

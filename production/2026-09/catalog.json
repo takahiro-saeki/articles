@@ -1084,7 +1084,7 @@
   },
   {
     "id": "O02",
-    "title": "日本語記事をdev.toへ出すとき、canonical URLをどう管理したか",
+    "title": "日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う",
     "original_title": "日本語記事をdev.toへ出すとき、canonical URLをどう管理したか",
     "slug": "bilingual-canonical-url-lifecycle",
     "angle": "予約表と公開スクリプト",
@@ -1093,10 +1093,11 @@
     "japanese": "public/bilingual-canonical-url-lifecycle.md",
     "english": "devto/bilingual-canonical-url-lifecycle.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 12,
+    "fact_check": "[固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O03",
@@ -1116,7 +1117,7 @@
   },
   {
     "id": "O04",
-    "title": "記事ストックを「本数」ではなく「日数」で管理する",
+    "title": "記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える",
     "original_title": "記事ストックを「本数」ではなく「日数」で管理する",
     "slug": "article-stock-coverage-days",
     "angle": "日本語、英訳、予約の三状態",
@@ -1125,10 +1126,11 @@
     "japanese": "public/article-stock-coverage-days.md",
     "english": "devto/article-stock-coverage-days.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 12,
+    "fact_check": "[固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O05",
@@ -1148,7 +1150,7 @@
   },
   {
     "id": "O06",
-    "title": "個人用と会社用のGitHubアカウントを混ぜないために入れた防止策",
+    "title": "GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける",
     "original_title": "個人用と会社用のGitHubアカウントを混ぜないために入れた防止策",
     "slug": "personal-company-github-identity-guard",
     "angle": "ディレクトリ、事前確認、hook",
@@ -1157,10 +1159,11 @@
     "japanese": "public/personal-company-github-identity-guard.md",
     "english": "devto/personal-company-github-identity-guard.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 12,
+    "fact_check": "[固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O07",
@@ -1180,7 +1183,7 @@
   },
   {
     "id": "O08",
-    "title": "Codexへ長い作業を任せるとき、途中経過をどこへ残すか",
+    "title": "Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す",
     "original_title": "Codexへ長い作業を任せるとき、途中経過をどこへ残すか",
     "slug": "long-task-repository-handoff",
     "angle": "docs、コミット、チェックリスト",
@@ -1189,10 +1192,11 @@
     "japanese": "public/long-task-repository-handoff.md",
     "english": "devto/long-task-repository-handoff.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 12,
+    "fact_check": "[固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O09",
@@ -1228,7 +1232,7 @@
   },
   {
     "id": "O11",
-    "title": "採用しなかったゲームプロトタイプをarchiveへ残す理由",
+    "title": "ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する",
     "original_title": "採用しなかったゲームプロトタイプをarchiveへ残す理由",
     "slug": "game-prototype-archive-decisions",
     "angle": "retired-prototypesと判断記録",
@@ -1237,10 +1241,11 @@
     "japanese": "public/game-prototype-archive-decisions.md",
     "english": "devto/game-prototype-archive-decisions.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 12,
+    "fact_check": "[固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O12",
@@ -1276,7 +1281,7 @@
   },
   {
     "id": "O14",
-    "title": "日英33イベントのゲーム内テキストをまとめて確認する仕組み",
+    "title": "日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける",
     "original_title": "日英33イベントのゲーム内テキストをまとめて確認する仕組み",
     "slug": "bilingual-story-archive-qa",
     "angle": "Story ArchiveとQA文書",
@@ -1285,10 +1290,11 @@
     "japanese": "public/bilingual-story-archive-qa.md",
     "english": "devto/bilingual-story-archive-qa.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 12,
+    "fact_check": "[固定Git・一次資料・実行結果確認](production/2026-09/batch-12/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-12/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O15",

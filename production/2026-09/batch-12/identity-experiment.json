@@ -1,0 +1,40 @@
+{
+  "hookPath": "/Users/takahiro_saeki/.Codex/hooks/check-github-account.sh",
+  "hookSha256": "ff37a39038c8ae2d9ceb2217d0719be6ecad7009514a81dd1e8f7caaaea5eaa1",
+  "checkedOn": "2026-09-11",
+  "mode": "read-only hook process with fake gh/git, no real authentication, no pushes, no hook edits",
+  "results": [
+    {
+      "case": "personal identity matches",
+      "installedHook": "no denial",
+      "proposedCheckExit": 0
+    },
+    {
+      "case": "company credential in personal directory",
+      "installedHook": "deny",
+      "proposedCheckExit": 1
+    },
+    {
+      "case": "identity request fails",
+      "installedHook": "no denial",
+      "proposedCheckExit": 1
+    },
+    {
+      "case": "company remote",
+      "installedHook": "deny",
+      "proposedCheckExit": 1
+    },
+    {
+      "case": "different personal repository",
+      "installedHook": "no denial",
+      "proposedCheckExit": 1
+    },
+    {
+      "case": "read-only command is outside hook scope",
+      "installedHook": "no denial",
+      "proposedCheckExit": 1
+    }
+  ],
+  "cases": 6,
+  "hookRegistrationVerified": false
+}

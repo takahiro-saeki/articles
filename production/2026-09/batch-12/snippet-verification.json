@@ -1,0 +1,33 @@
+{
+  "articlePairs": 6,
+  "printedExecutableBlocks": 6,
+  "otherPrintedBlocks": 3,
+  "printedCoverageFunctionCases": 4,
+  "canonicalMockCases": 6,
+  "identityMockCases": 6,
+  "handoffChecks": 5,
+  "story": {
+    "storyEvents": 33,
+    "storyDialogueRows": 101,
+    "combatExchanges": 12,
+    "combatDialogueRows": 33,
+    "validatorMutations": 3,
+    "multilineMutation": {
+      "godotDataUnchanged": true,
+      "exportedRows": 100,
+      "missingRows": 1
+    }
+  },
+  "archiveFiles": 14,
+  "humanizerProseEdits": 24,
+  "guard": {
+    "baseline": "8a1bfa8",
+    "beforeBatch": "6fe4649",
+    "baselineFilesUnchanged": 137,
+    "previousArticleFilesUnchanged": 259,
+    "originalIdeasUnchanged": true,
+    "finalHumanizerHashes": 12,
+    "fixedGitSources": 21,
+    "localHookUnchanged": true
+  }
+}

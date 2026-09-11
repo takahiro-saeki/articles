@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "case": "fixed snapshot matches",
+      "errors": []
+    },
+    {
+      "case": "different revision",
+      "errors": [
+        "revision mismatch"
+      ]
+    },
+    {
+      "case": "body count mislabeled complete",
+      "errors": [
+        "count mismatch"
+      ]
+    },
+    {
+      "case": "canonical gate evidence missing",
+      "errors": [
+        "missing evidence: production/2026-09/batch-11/canonical-gate.json"
+      ]
+    },
+    {
+      "case": "evidence content changed",
+      "errors": [
+        "changed evidence: production/2026-09/batch-11/canonical-gate.json"
+      ]
+    }
+  ],
+  "limitation": "hash agreement proves snapshot identity, not semantic correctness or current live job state"
+}
