@@ -2,12 +2,12 @@
 title: wrangler typesが生成する型はNext.jsのDOM型と衝突する。回避策はimport typeの手書きd.ts
 tags:
   - cloudflare
-  - wrangler
+  - Wrangler
   - Next.js
   - TypeScript
   - CloudflareWorkers
 private: false
-updated_at: '2026-09-05T10:35:36+09:00'
+updated_at: '2026-09-11T11:47:50+09:00'
 id: a8b857525b32e7e85bdb
 organization_url_name: null
 slide: false
