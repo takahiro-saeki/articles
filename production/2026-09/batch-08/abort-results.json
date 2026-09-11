@@ -1,0 +1,54 @@
+{
+  "environment": {
+    "node": "v24.15.0"
+  },
+  "cases": [
+    {
+      "name": "already-aborted",
+      "status": "rejected",
+      "sameReason": true,
+      "remainingListeners": 0
+    },
+    {
+      "name": "shared-signal",
+      "statuses": [
+        "rejected",
+        "rejected"
+      ],
+      "sameReason": true,
+      "listenersBefore": 2,
+      "remainingListeners": 0
+    },
+    {
+      "name": "abort-after-finish",
+      "status": "fulfilled",
+      "remainingListeners": 0
+    },
+    {
+      "name": "task-without-signal",
+      "cooperative": "rejected",
+      "ignored": "fulfilled",
+      "ignoredTaskFinished": true
+    },
+    {
+      "name": "node-timers-promise",
+      "status": "rejected",
+      "errorName": "AbortError",
+      "sameReason": false,
+      "causeIsReason": true
+    },
+    {
+      "name": "combined-manual-signal",
+      "status": "rejected",
+      "sameReason": true,
+      "remainingListeners": 0
+    },
+    {
+      "name": "timeout-signal",
+      "status": "rejected",
+      "errorName": "TimeoutError",
+      "sameReason": true,
+      "remainingListeners": 0
+    }
+  ]
+}

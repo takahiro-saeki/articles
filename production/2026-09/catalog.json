@@ -338,7 +338,7 @@
   },
   {
     "id": "T02",
-    "title": "TypeScriptの`satisfies`、型注釈、`as`は何が違うのか",
+    "title": "TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる",
     "original_title": "TypeScriptの`satisfies`、型注釈、`as`は何が違うのか",
     "slug": "typescript-satisfies-annotation-assertion",
     "angle": "推論結果と誤りの見逃し方",
@@ -347,10 +347,11 @@
     "japanese": "public/typescript-satisfies-annotation-assertion.md",
     "english": "devto/typescript-satisfies-annotation-assertion.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 8,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-08/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T03",
@@ -370,7 +371,7 @@
   },
   {
     "id": "T04",
-    "title": "`type`と`interface`は結局どう使い分けるか、現在の仕様で整理した",
+    "title": "typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける",
     "original_title": "`type`と`interface`は結局どう使い分けるか、現在の仕様で整理した",
     "slug": "type-interface-declaration-merging",
     "angle": "declaration mergingとunion",
@@ -379,14 +380,15 @@
     "japanese": "public/type-interface-declaration-merging.md",
     "english": "devto/type-interface-declaration-merging.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 8,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-08/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T05",
-    "title": "enumを使わずliteral unionにする理由を改めて調べた",
+    "title": "enumをliteral unionへ変える前に、生成されるJavaScriptを確認する",
     "original_title": "enumを使わずliteral unionにする理由を改めて調べた",
     "slug": "literal-union-enum-output",
     "angle": "出力JavaScriptと型安全性",
@@ -395,14 +397,15 @@
     "japanese": "public/literal-union-enum-output.md",
     "english": "devto/literal-union-enum-output.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 8,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-08/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T06",
-    "title": "`import type`を書かないと何が起きるのか",
+    "title": "import typeを省くと何が残るか。tscとesbuildで副作用まで比較する",
     "original_title": "`import type`を書かないと何が起きるのか",
     "slug": "import-type-bundler-output",
     "angle": "bundler、isolatedModules、型生成",
@@ -411,14 +414,15 @@
     "japanese": "public/import-type-bundler-output.md",
     "english": "devto/import-type-bundler-output.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 8,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-08/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T07",
-    "title": "`structuredClone`とJSON往復コピーの違いを実データで比べた",
+    "title": "structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる",
     "original_title": "`structuredClone`とJSON往復コピーの違いを実データで比べた",
     "slug": "structured-clone-json-data",
     "angle": "Date、Map、循環参照、undefined",
@@ -427,14 +431,15 @@
     "japanese": "public/structured-clone-json-data.md",
     "english": "devto/structured-clone-json-data.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 8,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-08/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T08",
-    "title": "AbortControllerはfetch以外にも使える。キャンセル可能な処理を作ってみた",
+    "title": "AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する",
     "original_title": "AbortControllerはfetch以外にも使える。キャンセル可能な処理を作ってみた",
     "slug": "abortcontroller-cancellable-tasks",
     "angle": "タイマーと複数リクエスト",
@@ -443,10 +448,11 @@
     "japanese": "public/abortcontroller-cancellable-tasks.md",
     "english": "devto/abortcontroller-cancellable-tasks.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 8,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-08/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T09",

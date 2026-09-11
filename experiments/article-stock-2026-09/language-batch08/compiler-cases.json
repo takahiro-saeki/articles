@@ -1,0 +1,384 @@
+[
+  {
+    "name": "satisfies-inference",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nexport const annotated: Notices = { ready: \"Ready\", waiting: [1, 2] };\nexport const checked = { ready: \"Ready\", waiting: [1, 2] } satisfies Notices;\nexport const asserted = { ready: \"Ready\", waiting: [1, 2] } as Notices;\nconsole.log(checked.ready.toUpperCase());"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "READY",
+    "expectedDeclaration": [
+      "annotated: Notices",
+      "ready: string",
+      "waiting: number[]",
+      "asserted: Notices"
+    ]
+  },
+  {
+    "name": "annotation-member",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nconst value: Notices = { ready: \"Ready\", waiting: [1, 2] };\nvalue.ready.toUpperCase();"
+    },
+    "expectedDiagnostics": [
+      2339
+    ]
+  },
+  {
+    "name": "annotation-missing",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nconst value: Notices = { ready: \"Ready\" };"
+    },
+    "expectedDiagnostics": [
+      2741
+    ]
+  },
+  {
+    "name": "satisfies-missing",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nconst value = { ready: \"Ready\" } satisfies Notices;"
+    },
+    "expectedDiagnostics": [
+      2741
+    ]
+  },
+  {
+    "name": "assertion-missing",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nconst value = { ready: \"Ready\" } as Notices;\nconsole.log(value.waiting);"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "undefined"
+  },
+  {
+    "name": "satisfies-context",
+    "article": "T02",
+    "files": {
+      "main.ts": "export const plain = { enabled: true, count: 1 };\nexport const checked = { enabled: true, count: 1 } satisfies { enabled: boolean; count: number };\nexport const frozenType = { enabled: true, count: 1 } as const;"
+    },
+    "expectedDiagnostics": [],
+    "expectedDeclaration": [
+      "enabled: boolean",
+      "enabled: true",
+      "count: number",
+      "readonly count: 1"
+    ]
+  },
+  {
+    "name": "satisfies-extra-literal",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nconst value = { ready: \"Ready\", waiting: [1], typo: 1 } satisfies Notices;"
+    },
+    "expectedDiagnostics": [
+      2353
+    ]
+  },
+  {
+    "name": "satisfies-extra-variable",
+    "article": "T02",
+    "files": {
+      "main.ts": "type Notices = Record<\"ready\" | \"waiting\", string | number[]>;\nconst input = { ready: \"Ready\", waiting: [1], typo: 1 };\nconst value = input satisfies Notices;\nconsole.log(value.typo);"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "1"
+  },
+  {
+    "name": "interface-merge",
+    "article": "T04",
+    "files": {
+      "main.ts": "export interface Ticket { title: string }\nexport interface Ticket { traceId: string }\nexport const ticket: Ticket = { title: \"Fix timer\", traceId: \"local-1\" };\nconsole.log(ticket.traceId);"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "local-1"
+  },
+  {
+    "name": "interface-missing-after-merge",
+    "article": "T04",
+    "files": {
+      "main.ts": "interface Ticket { title: string }\ninterface Ticket { traceId: string }\nconst ticket: Ticket = { title: \"Fix timer\" };\nexport {};"
+    },
+    "expectedDiagnostics": [
+      2741
+    ]
+  },
+  {
+    "name": "type-duplicate",
+    "article": "T04",
+    "files": {
+      "main.ts": "type Ticket = { title: string };\ntype Ticket = { traceId: string };\nexport {};"
+    },
+    "expectedDiagnostics": [
+      2300,
+      2300
+    ]
+  },
+  {
+    "name": "interface-extends-conflict",
+    "article": "T04",
+    "files": {
+      "main.ts": "interface TextId { id: string }\ninterface NumericId extends TextId { id: number }\nexport {};"
+    },
+    "expectedDiagnostics": [
+      2430
+    ]
+  },
+  {
+    "name": "intersection-definition",
+    "article": "T04",
+    "files": {
+      "main.ts": "type TextId = { id: string };\nexport type Combined = TextId & { id: number };\ntype IsNever<T> = [T] extends [never] ? true : false;\nexport const check: IsNever<Combined[\"id\"]> = true;\nconsole.log(check);"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "true"
+  },
+  {
+    "name": "intersection-use",
+    "article": "T04",
+    "files": {
+      "main.ts": "type Combined = { id: string } & { id: number };\nconst value: Combined = { id: 1 };\nexport {};"
+    },
+    "expectedDiagnostics": [
+      2322
+    ]
+  },
+  {
+    "name": "type-structural",
+    "article": "T04",
+    "files": {
+      "main.ts": "type Ticket = { title: string };\nconst input = { title: \"Fix timer\", debug: true };\nconst ticket: Ticket = input;\nconsole.log(\"debug\" in ticket);"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "true"
+  },
+  {
+    "name": "enum-output",
+    "article": "T05",
+    "files": {
+      "main.ts": "export enum NumericState { Ready, Waiting }\nexport enum StringState { Ready = \"ready\", Waiting = \"waiting\" }\nexport type State = \"ready\" | \"waiting\";\nexport const StateValue = { Ready: \"ready\", Waiting: \"waiting\" } as const;\nexport const selected: State = \"ready\";\nconsole.log(JSON.stringify({ numeric: NumericState, string: StringState, object: StateValue, selected }));"
+    },
+    "expectedDiagnostics": [],
+    "expectedRuntime": "{\"numeric\":{\"0\":\"Ready\",\"1\":\"Waiting\",\"Ready\":0,\"Waiting\":1},\"string\":{\"Ready\":\"ready\",\"Waiting\":\"waiting\"},\"object\":{\"Ready\":\"ready\",\"Waiting\":\"waiting\"},\"selected\":\"ready\"}"
+  },
+  {
+    "name": "enum-literal-assignment",
+    "article": "T05",
+    "files": {
+      "main.ts": "enum State { Ready = \"ready\", Waiting = \"waiting\" }\nconst value: State = \"ready\";\nexport {};"
+    },
+    "expectedDiagnostics": [
+      2322
+    ]
+  },
+  {
+    "name": "enum-erasable",
+    "article": "T05",
+    "files": {
+      "main.ts": "enum State { Ready = \"ready\", Waiting = \"waiting\" }\nexport const value = State.Ready;"
+    },
+    "expectedDiagnostics": [
+      1294
+    ],
+    "options": {
+      "erasableSyntaxOnly": true
+    },
+    "nodeStrip": {
+      "expectedError": "ERR_UNSUPPORTED_TYPESCRIPT_SYNTAX"
+    }
+  },
+  {
+    "name": "const-enum-false",
+    "article": "T05",
+    "files": {
+      "main.ts": "const enum State { Ready = \"ready\", Waiting = \"waiting\" }\nexport const value = State.Ready;\nconsole.log(value);"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "isolatedModules": false
+    },
+    "expectedRuntime": "ready"
+  },
+  {
+    "name": "const-enum-true",
+    "article": "T05",
+    "files": {
+      "main.ts": "const enum State { Ready = \"ready\", Waiting = \"waiting\" }\nexport const value = State.Ready;\nconsole.log(value);"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "isolatedModules": true
+    },
+    "expectedRuntime": "ready"
+  },
+  {
+    "name": "const-enum-erasable",
+    "article": "T05",
+    "files": {
+      "main.ts": "const enum State { Ready = \"ready\", Waiting = \"waiting\" }\nexport const value = State.Ready;"
+    },
+    "expectedDiagnostics": [
+      1294
+    ],
+    "options": {
+      "erasableSyntaxOnly": true
+    }
+  },
+  {
+    "name": "object-erasable",
+    "article": "T05",
+    "files": {
+      "main.ts": "export const StateValue = { Ready: \"ready\", Waiting: \"waiting\" } as const;\nexport type State = typeof StateValue[keyof typeof StateValue];\nexport const value: State = \"ready\";\nconsole.log(value, Object.isFrozen(StateValue));"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "erasableSyntaxOnly": true
+    },
+    "expectedRuntime": "ready false"
+  },
+  {
+    "name": "import-plain-false",
+    "article": "T06",
+    "files": {
+      "main.ts": "import { Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": false
+    },
+    "expectedRuntime": "Fix timer",
+    "esbuild": {
+      "expectedRuntime": "Fix timer"
+    }
+  },
+  {
+    "name": "import-whole-type-false",
+    "article": "T06",
+    "files": {
+      "main.ts": "import type { Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": false
+    },
+    "expectedRuntime": "Fix timer",
+    "esbuild": {
+      "expectedRuntime": "Fix timer"
+    }
+  },
+  {
+    "name": "import-inline-type-false",
+    "article": "T06",
+    "files": {
+      "main.ts": "import { type Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": false
+    },
+    "expectedRuntime": "Fix timer",
+    "esbuild": {
+      "expectedRuntime": "Fix timer"
+    }
+  },
+  {
+    "name": "import-explicit-effect-false",
+    "article": "T06",
+    "files": {
+      "main.ts": "import \"./registry.js\";\nimport type { Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": false
+    },
+    "expectedRuntime": "registry evaluated\nFix timer",
+    "esbuild": {
+      "expectedRuntime": "registry evaluated\nFix timer"
+    }
+  },
+  {
+    "name": "import-plain-true",
+    "article": "T06",
+    "files": {
+      "main.ts": "import { Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [
+      1484
+    ],
+    "options": {
+      "verbatimModuleSyntax": true
+    },
+    "expectedRuntime": "Fix timer",
+    "esbuild": {
+      "expectedRuntime": "registry evaluated\nFix timer"
+    }
+  },
+  {
+    "name": "import-whole-type-true",
+    "article": "T06",
+    "files": {
+      "main.ts": "import type { Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": true
+    },
+    "expectedRuntime": "Fix timer",
+    "esbuild": {
+      "expectedRuntime": "Fix timer"
+    }
+  },
+  {
+    "name": "import-inline-type-true",
+    "article": "T06",
+    "files": {
+      "main.ts": "import { type Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": true
+    },
+    "expectedRuntime": "registry evaluated\nFix timer",
+    "esbuild": {
+      "expectedRuntime": "registry evaluated\nFix timer"
+    }
+  },
+  {
+    "name": "import-explicit-effect-true",
+    "article": "T06",
+    "files": {
+      "main.ts": "import \"./registry.js\";\nimport type { Ticket } from \"./registry.js\";\nconst ticket: Ticket = { title: \"Fix timer\" };\nconsole.log(ticket.title);",
+      "registry.ts": "export interface Ticket { title: string }\nconsole.log(\"registry evaluated\");"
+    },
+    "expectedDiagnostics": [],
+    "options": {
+      "verbatimModuleSyntax": true
+    },
+    "expectedRuntime": "registry evaluated\nFix timer",
+    "esbuild": {
+      "expectedRuntime": "registry evaluated\nFix timer"
+    }
+  },
+  {
+    "name": "bundler-no-typecheck",
+    "article": "T06",
+    "files": {
+      "main.ts": "export const count: number = \"wrong\";\nconsole.log(typeof count);"
+    },
+    "expectedDiagnostics": [
+      2322
+    ],
+    "esbuild": {
+      "expectedRuntime": "string"
+    }
+  }
+]

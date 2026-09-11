@@ -2,19 +2,22 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
+本文・日英対訳・Humanizerまで検証済み 50/90件（完成 41件、canonical待ち 9件）。本文の検証が残る候補は 40件。canonical未確定の原稿は完成数に含めない。
+
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
 台帳の元データは[production/2026-09/catalog.json](production/2026-09/catalog.json)。更新後は `node scripts/article-production-status.mjs` で本表を再生成する。調査根拠、実行結果、内容の重複確認、Humanizer監査は各バッチの記録へ残す。
 
-- バッチ01: P01、P03、T28、O01、O03、O05。完成 6/6件。
-- バッチ02: P02、T01、T20、T31、T36、T37、O07、O10。完成 5/8件。
-- バッチ03: P14、P15、O09、O12、O17、O18。完成 6/6件。
-- バッチ04: T09、T39、T40、T42、T44、T45。完成 6/6件。
-- バッチ05: O13、O15、O16、O20、O21、O22。完成 6/6件。
-- バッチ06: P08、P10、P17、P19、T14、O19。完成 6/6件。
-- バッチ07: P20、T18、T19、T21、T34、O25。完成 6/6件。
+- バッチ01: P01、P03、T28、O01、O03、O05。完成 6/6件、本文検証済み 6/6件。
+- バッチ02: P02、T01、T20、T31、T36、T37、O07、O10。完成 5/8件、本文検証済み 8/8件。
+- バッチ03: P14、P15、O09、O12、O17、O18。完成 6/6件、本文検証済み 6/6件。
+- バッチ04: T09、T39、T40、T42、T44、T45。完成 6/6件、本文検証済み 6/6件。
+- バッチ05: O13、O15、O16、O20、O21、O22。完成 6/6件、本文検証済み 6/6件。
+- バッチ06: P08、P10、P17、P19、T14、O19。完成 6/6件、本文検証済み 6/6件。
+- バッチ07: P20、T18、T19、T21、T34、O25。完成 6/6件、本文検証済み 6/6件。
+- バッチ08: T02、T04、T05、T06、T07、T08。完成 0/6件、本文検証済み 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: T01、T02、T04、T05、T06、T07、T08、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -40,13 +43,13 @@
 | P19 | 一人開発のEstimateは、残り日数より抱えている作業の偏りに使う | plane-estimate-capacity-experiment | [原稿](articles/plane-estimate-capacity-experiment.md) | [原稿](devto/plane-estimate-capacity-experiment.md) | SquadNote非アーカイブ52件と現行Work Points、公式Estimates | Python3.14.5で未完了22件148pt、In Progress6件48pt、3件11対24pt。欠損/0/尺度外/重複4拒否 | 完成 |
 | P20 | Plane Cloudとセルフホストを、復元時に引き受ける作業から比べる | plane-cloud-self-host-comparison | [原稿](articles/plane-cloud-self-host-comparison.md) | [原稿](devto/plane-cloud-self-host-comparison.md) | Plane公式料金/Edition/backup仕様、preview 2f895b8のCompose/restore.sh | 公式CLIを未変更で4模擬失敗条件。実DB/volume復元なし | 完成 |
 | T01 | Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる | promise-combinators-partial-failure | [原稿](public/promise-combinators-partial-failure.md) | [原稿](devto/promise-combinators-partial-failure.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
-| T02 | TypeScriptの`satisfies`、型注釈、`as`は何が違うのか | typescript-satisfies-annotation-assertion | 予定: public/typescript-satisfies-annotation-assertion.md | 予定: devto/typescript-satisfies-annotation-assertion.md | 未確認 | 未実施 | 未着手 |
+| T02 | TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる | typescript-satisfies-annotation-assertion | [原稿](public/typescript-satisfies-annotation-assertion.md) | [原稿](devto/typescript-satisfies-annotation-assertion.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T03 | `unknown`と`any`を外部APIレスポンスで比べてみた | unknown-api-runtime-validation | 予定: public/unknown-api-runtime-validation.md | 予定: devto/unknown-api-runtime-validation.md | 未確認 | 未実施 | 未着手 |
-| T04 | `type`と`interface`は結局どう使い分けるか、現在の仕様で整理した | type-interface-declaration-merging | 予定: public/type-interface-declaration-merging.md | 予定: devto/type-interface-declaration-merging.md | 未確認 | 未実施 | 未着手 |
-| T05 | enumを使わずliteral unionにする理由を改めて調べた | literal-union-enum-output | 予定: public/literal-union-enum-output.md | 予定: devto/literal-union-enum-output.md | 未確認 | 未実施 | 未着手 |
-| T06 | `import type`を書かないと何が起きるのか | import-type-bundler-output | 予定: public/import-type-bundler-output.md | 予定: devto/import-type-bundler-output.md | 未確認 | 未実施 | 未着手 |
-| T07 | `structuredClone`とJSON往復コピーの違いを実データで比べた | structured-clone-json-data | 予定: public/structured-clone-json-data.md | 予定: devto/structured-clone-json-data.md | 未確認 | 未実施 | 未着手 |
-| T08 | AbortControllerはfetch以外にも使える。キャンセル可能な処理を作ってみた | abortcontroller-cancellable-tasks | 予定: public/abortcontroller-cancellable-tasks.md | 予定: devto/abortcontroller-cancellable-tasks.md | 未確認 | 未実施 | 未着手 |
+| T04 | typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける | type-interface-declaration-merging | [原稿](public/type-interface-declaration-merging.md) | [原稿](devto/type-interface-declaration-merging.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
+| T05 | enumをliteral unionへ変える前に、生成されるJavaScriptを確認する | literal-union-enum-output | [原稿](public/literal-union-enum-output.md) | [原稿](devto/literal-union-enum-output.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
+| T06 | import typeを省くと何が残るか。tscとesbuildで副作用まで比較する | import-type-bundler-output | [原稿](public/import-type-bundler-output.md) | [原稿](devto/import-type-bundler-output.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
+| T07 | structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる | structured-clone-json-data | [原稿](public/structured-clone-json-data.md) | [原稿](devto/structured-clone-json-data.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
+| T08 | AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する | abortcontroller-cancellable-tasks | [原稿](public/abortcontroller-cancellable-tasks.md) | [原稿](devto/abortcontroller-cancellable-tasks.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T09 | ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる | node-esm-commonjs-boundaries | [原稿](articles/node-esm-commonjs-boundaries.md) | [原稿](devto/node-esm-commonjs-boundaries.md) | Node現行v26.8.2と検証版v24.15.0の公式Packages/Modules/ESM | Node v24.15.0で10ケース。type/拡張子/同期ESM require/TLA/dynamic import/拡張子解決/構文検出 | 完成 |
 | T10 | JavaScriptの`using`でリソース解放はどう変わるか | using-resource-disposal | 予定: public/using-resource-disposal.md | 予定: devto/using-resource-disposal.md | 未確認 | 未実施 | 未着手 |
 | T11 | Reactの`key`をindexにすると何が壊れるのか、入力欄で再現した | react-index-key-input-reorder | 予定: public/react-index-key-input-reorder.md | 予定: devto/react-index-key-input-reorder.md | 未確認 | 未実施 | 未着手 |

@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/takahiro-saeki/circle-hub",
+  "revision": "770de5f2989775cfd95f7a9c4529565a2b48d2fd",
+  "path": "packages/api/src/index.ts",
+  "sha256": "0e89c154dcf2694d93e281b0f0dc3d449b06391e64ab16ca3fe6f97ddbd84fed",
+  "observed": "Only export type declarations re-export AppRouter, RouterInputs, RouterOutputs; experiment uses a synthetic registry instead of loading the application server."
+}

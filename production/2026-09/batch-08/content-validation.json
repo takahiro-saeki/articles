@@ -1,0 +1,231 @@
+{
+  "pairs": 6,
+  "canonicalPending": [
+    "T02",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "T02",
+      "jaCharacters": 3533,
+      "enWords": 729,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 5,
+      "nearestExisting": [
+        {
+          "path": "public/literal-union-enum-output.md",
+          "score": 0.128
+        },
+        {
+          "path": "public/type-interface-declaration-merging.md",
+          "score": 0.126
+        },
+        {
+          "path": "public/import-type-bundler-output.md",
+          "score": 0.107
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/type-interface-declaration-merging.md",
+          "score": 0.272
+        },
+        {
+          "path": "devto/literal-union-enum-output.md",
+          "score": 0.266
+        },
+        {
+          "path": "devto/import-type-bundler-output.md",
+          "score": 0.229
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "jaCharacters": 3229,
+      "enWords": 725,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 5,
+      "nearestExisting": [
+        {
+          "path": "public/typescript-satisfies-annotation-assertion.md",
+          "score": 0.126
+        },
+        {
+          "path": "public/import-type-bundler-output.md",
+          "score": 0.123
+        },
+        {
+          "path": "public/literal-union-enum-output.md",
+          "score": 0.113
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/typescript-satisfies-annotation-assertion.md",
+          "score": 0.272
+        },
+        {
+          "path": "devto/import-type-bundler-output.md",
+          "score": 0.253
+        },
+        {
+          "path": "devto/literal-union-enum-output.md",
+          "score": 0.248
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "jaCharacters": 3482,
+      "enWords": 715,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 5,
+      "nearestExisting": [
+        {
+          "path": "public/typescript-satisfies-annotation-assertion.md",
+          "score": 0.128
+        },
+        {
+          "path": "public/import-type-bundler-output.md",
+          "score": 0.121
+        },
+        {
+          "path": "public/type-interface-declaration-merging.md",
+          "score": 0.113
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/typescript-satisfies-annotation-assertion.md",
+          "score": 0.266
+        },
+        {
+          "path": "devto/type-interface-declaration-merging.md",
+          "score": 0.248
+        },
+        {
+          "path": "devto/import-type-bundler-output.md",
+          "score": 0.242
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "jaCharacters": 3529,
+      "enWords": 712,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 5,
+      "nearestExisting": [
+        {
+          "path": "public/type-interface-declaration-merging.md",
+          "score": 0.123
+        },
+        {
+          "path": "public/literal-union-enum-output.md",
+          "score": 0.121
+        },
+        {
+          "path": "public/typescript-satisfies-annotation-assertion.md",
+          "score": 0.107
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/type-interface-declaration-merging.md",
+          "score": 0.253
+        },
+        {
+          "path": "devto/literal-union-enum-output.md",
+          "score": 0.242
+        },
+        {
+          "path": "devto/typescript-satisfies-annotation-assertion.md",
+          "score": 0.229
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "jaCharacters": 3702,
+      "enWords": 759,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "public/literal-union-enum-output.md",
+          "score": 0.082
+        },
+        {
+          "path": "public/abortcontroller-cancellable-tasks.md",
+          "score": 0.077
+        },
+        {
+          "path": "public/import-type-bundler-output.md",
+          "score": 0.07
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/literal-union-enum-output.md",
+          "score": 0.202
+        },
+        {
+          "path": "devto/abortcontroller-cancellable-tasks.md",
+          "score": 0.2
+        },
+        {
+          "path": "devto/typescript-satisfies-annotation-assertion.md",
+          "score": 0.199
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "jaCharacters": 4050,
+      "enWords": 804,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/literal-union-enum-output.md",
+          "score": 0.078
+        },
+        {
+          "path": "public/structured-clone-json-data.md",
+          "score": 0.077
+        },
+        {
+          "path": "public/promise-combinators-partial-failure.md",
+          "score": 0.072
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/node-esm-commonjs-boundaries.md",
+          "score": 0.22
+        },
+        {
+          "path": "devto/promise-combinators-partial-failure.md",
+          "score": 0.213
+        },
+        {
+          "path": "devto/literal-union-enum-output.md",
+          "score": 0.203
+        }
+      ]
+    }
+  ]
+}

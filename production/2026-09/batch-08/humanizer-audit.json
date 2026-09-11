@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T02",
+      "path": "public/typescript-satisfies-annotation-assertion.md",
+      "before_sha256": "4e29e1432c8cf9b682f5a12fff928534b2e41fbd2540b7fcdc68ccfa0391ba81",
+      "after_sha256": "9c603ba59a33c8c409dec8e873b8c1e032c5e99ac43d4abf963c66010195f124",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "推論、欠落、extra key、文脈によるliteralの差を保持。成功した比較入力の範囲に限定した説明を確認。"
+    },
+    {
+      "id": "T02",
+      "path": "devto/typescript-satisfies-annotation-assertion.md",
+      "before_sha256": "600ac99b7c12a25c7a9b7d6f818fa96e78aa6ec1b30d66a3d27bd3115f86ab8f",
+      "after_sha256": "8af90faa694085a7bfe2a4e8c983b1eedb65e9cc687617581eaeb24c55054d15",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "実験の説明を一人称の体験から外す。比較した値と確認した出力は変更しない。日本語の全節に対応。"
+    },
+    {
+      "id": "T04",
+      "path": "public/type-interface-declaration-merging.md",
+      "before_sha256": "e50ef1262ef9b981ba4e8b9ca85e8e93ee0439813fb5afc8a4494cd5a6e38a66",
+      "after_sha256": "6a5b26a0cabd6883b87d13cfa638d3c9447d6fee91314ce491346391326782c2",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "interface拡張時とintersection代入時のエラーの違い、単一モジュール実験という制約を保持。"
+    },
+    {
+      "id": "T04",
+      "path": "devto/type-interface-declaration-merging.md",
+      "before_sha256": "2f11ee2d39019505400fb14d28dfe4ee7eeef6add919dc6d7f4631842caf7500",
+      "after_sha256": "c1b4fec421e855e9ba7d85b8c7321af0a28acc92d999e157c9a26c542eb3d753",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "両制約を満たせないid: neverの説明を平易化。宣言と代入の診断、未計測範囲を保持。"
+    },
+    {
+      "id": "T05",
+      "path": "public/literal-union-enum-output.md",
+      "before_sha256": "120ecdc7d0a7cc15d5f250d600bc6fdb764f9b04a2c31562bc46c270a08465fc",
+      "after_sha256": "adf4f3eba684af3acaac24dd01e2410792c90a6c74ba1ac7da518a268811b46c",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "型と実行時の値という要求、enum出力、const enum設定差、型除去の制約を保持。"
+    },
+    {
+      "id": "T05",
+      "path": "devto/literal-union-enum-output.md",
+      "before_sha256": "b3480a6a22b7bc31ed746a271e9560fe96cd4c943bd41578a5123228eeacd2b7",
+      "after_sha256": "d4e9b0b4dd03b5e03a01464685bcdc4529d399236d2cc8b6b0762935eaeae57a",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "objectから型を導く処理を直接記述。生成物、型診断、Object.isFrozenの観測を保持。"
+    },
+    {
+      "id": "T06",
+      "path": "public/import-type-bundler-output.md",
+      "before_sha256": "fa79ebd4c19e1497799b139d8a0b563f31060431578f342015710c82aa1da247",
+      "after_sha256": "d4c23d564e3207c64f11dd895d23b393d21638a97a27a7ae797c73df4b4b407d",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "2ツールと2設定の表、noEmitOnError、sideEffects未指定、bundle成功と型検査の区別を保持。"
+    },
+    {
+      "id": "T06",
+      "path": "devto/import-type-bundler-output.md",
+      "before_sha256": "e4b3d549e5dd120af9abfae3395997d5c3d02d138abb49e902fec3ab29e17910",
+      "after_sha256": "9cc39828414b62b2682b72d7bc74f739e2cca117e2d1264920434d8db7076688",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "引用符のみ調整。8行の結果、追加の型エラー例、実リポジトリと合成入力の区別を確認。"
+    },
+    {
+      "id": "T07",
+      "path": "public/structured-clone-json-data.md",
+      "before_sha256": "fee7b907cca7a25d3a5cb6eddc013a9f63bc0b96360a24728976bd9ad1575655",
+      "after_sha256": "95dc99582fccde139da291afcef84a0a03274f838bb67e4a99b2a73d3961e050",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "記事の答えという告知を除去。12入力、transfer、getter呼出回数、未計測項目は変更しない。"
+    },
+    {
+      "id": "T07",
+      "path": "devto/structured-clone-json-data.md",
+      "before_sha256": "9bca5e03a45d51eeed520ac7a248125fba95326dff6a7eaf83cd8c6e6d4da0b9",
+      "after_sha256": "e954b1256891e2e9e17858804aec03ff0c77e67d4c70e6895484ad216740b034",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "日本語と同じ説明を簡潔化。class、freeze、getter、JSON位置差を省略しない。"
+    },
+    {
+      "id": "T08",
+      "path": "public/abortcontroller-cancellable-tasks.md",
+      "before_sha256": "0165455a572818cd1771c617888c3e168958d52a58fb5bf608f537d20f426fb2",
+      "after_sha256": "e715d608d505f8e0d60da56abf6ff7511f407845152740a9b669a9aaba6d4ee0",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "中断時と通常完了時のcleanupを直接記述。7条件、タイマー設定値、reason/cause差、制約を保持。"
+    },
+    {
+      "id": "T08",
+      "path": "devto/abortcontroller-cancellable-tasks.md",
+      "before_sha256": "9b7599a415ef7769db8ee81556ef5aec855e419d3a8e2bb11bb533af262750dd",
+      "after_sha256": "e50166b1761a0e8c56b0a71a1a11ca70806f9f7086c9b024174da9084610e38b",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "通常完了時の後始末の意味を維持。日英の7条件とcode、同期ループやサーバーrollbackを未検証とする範囲を確認。"
+    }
+  ]
+}

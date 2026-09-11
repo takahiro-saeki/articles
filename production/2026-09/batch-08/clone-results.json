@@ -1,0 +1,206 @@
+{
+  "environment": {
+    "node": "v24.15.0"
+  },
+  "cases": [
+    {
+      "name": "Date",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "date": true,
+          "text": "2026-09-11T00:00:00.000Z"
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "date": false,
+          "text": "2026-09-11T00:00:00.000Z"
+        }
+      }
+    },
+    {
+      "name": "Map",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "map": true,
+          "entries": [
+            [
+              "ready",
+              2
+            ]
+          ]
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "map": false,
+          "entries": []
+        }
+      }
+    },
+    {
+      "name": "undefined-object",
+      "structuredClone": {
+        "ok": true,
+        "value": true
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": false
+      }
+    },
+    {
+      "name": "undefined-array",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "first": "undefined",
+          "length": 1
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "first": "null",
+          "length": 1
+        }
+      }
+    },
+    {
+      "name": "special-numbers",
+      "structuredClone": {
+        "ok": true,
+        "value": [
+          true,
+          true,
+          true
+        ]
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": [
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "shared-reference",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "shared": true,
+          "original": false
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "shared": false,
+          "original": false
+        }
+      }
+    },
+    {
+      "name": "cycle",
+      "structuredClone": {
+        "ok": true,
+        "value": true
+      },
+      "jsonRoundtrip": {
+        "ok": false,
+        "error": "TypeError"
+      }
+    },
+    {
+      "name": "BigInt",
+      "structuredClone": {
+        "ok": true,
+        "value": "bigint"
+      },
+      "jsonRoundtrip": {
+        "ok": false,
+        "error": "TypeError"
+      }
+    },
+    {
+      "name": "function-property",
+      "structuredClone": {
+        "ok": false,
+        "error": "DataCloneError"
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": false
+      }
+    },
+    {
+      "name": "class-instance",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "instance": false,
+          "method": "undefined",
+          "title": "Ready"
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "instance": false,
+          "method": "undefined",
+          "title": "Ready"
+        }
+      }
+    },
+    {
+      "name": "frozen-object",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "frozen": false,
+          "writable": true
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "frozen": false,
+          "writable": true
+        }
+      }
+    },
+    {
+      "name": "getter",
+      "structuredClone": {
+        "ok": true,
+        "value": {
+          "value": 2,
+          "getter": "undefined"
+        }
+      },
+      "jsonRoundtrip": {
+        "ok": true,
+        "value": {
+          "value": 2,
+          "getter": "undefined"
+        }
+      }
+    }
+  ],
+  "getterReadsAcrossBothCopies": 2,
+  "transfer": {
+    "sourceByteLength": 0,
+    "destination": [
+      1,
+      2,
+      3
+    ]
+  },
+  "example": "true string\n2 {}\ntrue false\nundefined null\ntrue false"
+}

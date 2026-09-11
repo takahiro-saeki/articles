@@ -1,0 +1,6 @@
+{
+  "command": "node scripts/validate-article-stock.mjs --batch=8",
+  "exit": 1,
+  "expectedFailure": true,
+  "reason": "canonical policy must be resolved in catalog; unfinished Qiita drafts require the explicit pending-canonical check and remain excluded from completion"
+}

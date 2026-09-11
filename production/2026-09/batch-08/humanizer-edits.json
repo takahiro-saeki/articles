@@ -1,0 +1,138 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T02",
+      "path": "public/typescript-satisfies-annotation-assertion.md",
+      "edits": [
+        [
+          "`satisfies`の使いどころは、許容する値の種類をまとめて検査しつつ、個別の値を使う箇所で不要な絞り込みを増やしたくない場面です。",
+          "`satisfies`なら許容する値の種類をまとめて検査し、個別の値を使う箇所で余分な絞り込みをせずに済みます。"
+        ]
+      ],
+      "semantic_review": "推論、欠落、extra key、文脈によるliteralの差を保持。成功した比較入力の範囲に限定した説明を確認。"
+    },
+    {
+      "id": "T02",
+      "path": "devto/typescript-satisfies-annotation-assertion.md",
+      "edits": [
+        [
+          "I compared the same object under a type annotation, `satisfies`, and `as`, then inspected emitted declarations and diagnostics.",
+          "The comparison uses the same object under a type annotation, `satisfies`, and `as`, with emitted declarations and diagnostics as evidence."
+        ]
+      ],
+      "semantic_review": "実験の説明を一人称の体験から外す。比較した値と確認した出力は変更しない。日本語の全節に対応。"
+    },
+    {
+      "id": "T04",
+      "path": "public/type-interface-declaration-merging.md",
+      "edits": [
+        [
+          "合成後の型が宣言できたことだけで、使える値があると判断しない方がよさそうです。",
+          "合成後の型を宣言できても、使える値があるとは限りません。"
+        ]
+      ],
+      "semantic_review": "interface拡張時とintersection代入時のエラーの違い、単一モジュール実験という制約を保持。"
+    },
+    {
+      "id": "T04",
+      "path": "devto/type-interface-declaration-merging.md",
+      "edits": [
+        [
+          "Successfully declaring a combined type does not establish that a usable value inhabits it.",
+          "A combined type can be declared even when it has no usable value."
+        ]
+      ],
+      "semantic_review": "両制約を満たせないid: neverの説明を平易化。宣言と代入の診断、未計測範囲を保持。"
+    },
+    {
+      "id": "T05",
+      "path": "public/literal-union-enum-output.md",
+      "edits": [
+        [
+          "`enum`、literal union、`as const`オブジェクトを比較するときは、この2つの要求を分けると判断しやすくなります。",
+          "`enum`、literal union、`as const`オブジェクトは、この2つの要求を分けて比べます。"
+        ]
+      ],
+      "semantic_review": "型と実行時の値という要求、enum出力、const enum設定差、型除去の制約を保持。"
+    },
+    {
+      "id": "T05",
+      "path": "devto/literal-union-enum-output.md",
+      "edits": [
+        [
+          "This keeps named values in `StateValue` and derives their allowed type from the object.",
+          "`StateValue` holds the named values, and the object supplies the allowed value type."
+        ]
+      ],
+      "semantic_review": "objectから型を導く処理を直接記述。生成物、型診断、Object.isFrozenの観測を保持。"
+    },
+    {
+      "id": "T06",
+      "path": "public/import-type-bundler-output.md",
+      "edits": [
+        [
+          "アプリへ設定を導入するときも、型専用の参照と初期化目的の読み込みをそれぞれ確認するのが手順になります。",
+          "アプリへ設定を導入するときも、型専用の参照と初期化目的の読み込みをそれぞれ確認します。"
+        ]
+      ],
+      "semantic_review": "2ツールと2設定の表、noEmitOnError、sideEffects未指定、bundle成功と型検査の区別を保持。"
+    },
+    {
+      "id": "T06",
+      "path": "devto/import-type-bundler-output.md",
+      "edits": [
+        [
+          "In this table, “evaluation” means the log printed `registry evaluated`.",
+          "In this table, \"evaluation\" means the log printed `registry evaluated`."
+        ]
+      ],
+      "semantic_review": "引用符のみ調整。8行の結果、追加の型エラー例、実リポジトリと合成入力の区別を確認。"
+    },
+    {
+      "id": "T07",
+      "path": "public/structured-clone-json-data.md",
+      "edits": [
+        [
+          "この記事の答えは、コピーしたい値の種類だけでなく、コピー後にも保ちたい参照関係まで先に決めることです。",
+          "コピーしたい値の種類と、コピー後にも保ちたい参照関係を先に決めます。"
+        ]
+      ],
+      "semantic_review": "記事の答えという告知を除去。12入力、transfer、getter呼出回数、未計測項目は変更しない。"
+    },
+    {
+      "id": "T07",
+      "path": "devto/structured-clone-json-data.md",
+      "edits": [
+        [
+          "The practical decision is to specify not only which values need copying, but also which reference relationships must survive in the copy.",
+          "Specify which values need copying and which reference relationships the copy must retain."
+        ]
+      ],
+      "semantic_review": "日本語と同じ説明を簡潔化。class、freeze、getter、JSON位置差を省略しない。"
+    },
+    {
+      "id": "T08",
+      "path": "public/abortcontroller-cancellable-tasks.md",
+      "edits": [
+        [
+          "通常完了側でもリスナーを外しているところがポイントです。",
+          "通常完了側でもリスナーを外します。"
+        ]
+      ],
+      "semantic_review": "中断時と通常完了時のcleanupを直接記述。7条件、タイマー設定値、reason/cause差、制約を保持。"
+    },
+    {
+      "id": "T08",
+      "path": "devto/abortcontroller-cancellable-tasks.md",
+      "edits": [
+        [
+          "The normal completion path removes the listener too.",
+          "Normal completion also removes the listener."
+        ]
+      ],
+      "semantic_review": "通常完了時の後始末の意味を維持。日英の7条件とcode、同期ループやサーバーrollbackを未検証とする範囲を確認。"
+    }
+  ]
+}
