@@ -1,8 +1,9 @@
 ---
+devto_id: 4635258
 title: "Organizing personal Plane projects around products rather than working directories"
 tags: productivity, opensource, git
 canonical_url: https://zenn.dev/hirodeath/articles/plane-project-boundaries
-published: false
+published: true
 ---
 
 As personal repositories accumulate, directory names can seem like a convenient way to decide where tasks belong. But treating every worktree for a fix as a separate project scatters the unfinished work for one application.

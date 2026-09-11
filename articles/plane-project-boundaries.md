@@ -3,7 +3,7 @@ title: "個人開発のPlane Projectを、作業ディレクトリではなく�
 emoji: "🗂️"
 type: "tech"
 topics: ["plane", "個人開発", "タスク管理"]
-published: false
+published: true
 ---
 
 個人開発のリポジトリが増えると、タスクの置き場所をディレクトリ名で決めたくなります。ただ、修正用のworktreeまで別プロジェクトとして扱うと、同じアプリの未完了作業が散らばります。
