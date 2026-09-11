@@ -1,0 +1,78 @@
+{
+  "node": "v24.15.0",
+  "wrangler": "4.81.1",
+  "miniflare": "4.20260409.0",
+  "scope": "Local D1; synthetic notes; fake external provider; no HTTP handler, remote bindings, notification delivery, or production rollout",
+  "idempotency": [
+    {
+      "name": "response lost after commit",
+      "notes": 1,
+      "same_body": true,
+      "status": 201,
+      "replayed": true
+    },
+    {
+      "name": "same key with different input",
+      "status": 409,
+      "notes": 1
+    },
+    {
+      "name": "same key for another actor",
+      "notes": 2
+    },
+    {
+      "name": "two concurrent cache misses",
+      "misses": 2,
+      "notes": 1,
+      "same_body": true,
+      "replay_flags": [
+        false,
+        true
+      ]
+    },
+    {
+      "name": "business insert fails",
+      "notes": 0,
+      "saved_results": 0
+    },
+    {
+      "name": "record deleted to simulate retention expiry",
+      "notes": 2
+    }
+  ],
+  "outbox": [
+    {
+      "name": "outbox constraint failure",
+      "notes": 0,
+      "events": 0
+    },
+    {
+      "name": "committed before consumer starts",
+      "notes": 1,
+      "events": 1,
+      "deliveries_after_consumer": 1
+    },
+    {
+      "name": "crash after send before sent flag",
+      "provider_deduplication": false,
+      "attempts": 2,
+      "deliveries": 2,
+      "pending_after_crash": true,
+      "sent_after_retry": true
+    },
+    {
+      "name": "crash after send before sent flag",
+      "provider_deduplication": true,
+      "attempts": 2,
+      "deliveries": 1,
+      "pending_after_crash": true,
+      "sent_after_retry": true
+    }
+  ],
+  "limitations": [
+    "Only successful create-note results are cached",
+    "Actor and validated title are trusted function arguments in this lab",
+    "Outbox consumer is single-worker; no leasing, concurrent consumers, retry scheduler or DLQ implemented",
+    "Fake provider deduplication has no expiry; real provider contracts need separate verification"
+  ]
+}

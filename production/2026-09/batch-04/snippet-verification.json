@@ -1,0 +1,26 @@
+{
+  "articles": [
+    {
+      "slug": "node-esm-commonjs-boundaries",
+      "excerptsMatchedToExecutedSource": 5
+    },
+    {
+      "slug": "d1-offset-cursor-pagination",
+      "excerptsMatchedToExecutedSource": 3
+    },
+    {
+      "slug": "idempotency-key-result-storage",
+      "excerptsMatchedToExecutedSource": 2
+    },
+    {
+      "slug": "outbox-database-notification-boundary",
+      "excerptsMatchedToExecutedSource": 2
+    },
+    {
+      "slug": "durable-objects-d1-coordination",
+      "excerptsMatchedToExecutedSource": 5
+    }
+  ],
+  "pagingTablesMatchRawEvidenceInBothLanguages": true,
+  "scope": "Whitespace-normalized article excerpts match source run by the experiments; performance table values match stored observations, not recomputed benchmarks."
+}

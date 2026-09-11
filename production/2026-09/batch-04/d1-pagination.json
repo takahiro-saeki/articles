@@ -1,0 +1,569 @@
+{
+  "node": "v24.15.0",
+  "wrangler": "4.81.1",
+  "miniflare": "4.20260409.0",
+  "os": "darwin",
+  "arch": "arm64",
+  "cpu": "Apple M4 Max",
+  "compatibilityDateRequested": "2026-09-11",
+  "scope": "Local D1 only; 100000 synthetic rows; no cloud latency or billing measurements",
+  "queries": {
+    "offsetSQL": "SELECT id, created_at FROM notification WHERE user_id = ? ORDER BY created_at DESC, id DESC LIMIT 20 OFFSET ?",
+    "cursorSQL": "SELECT id, created_at FROM notification WHERE user_id = ? AND (created_at, id) < (?, ?) ORDER BY created_at DESC, id DESC LIMIT 20"
+  },
+  "measurement": "4 warmup rounds then 11 measured rounds, alternating query order. Cursor acquisition and result assertions excluded from timings; local proxy overhead included.",
+  "results": [
+    {
+      "offset": 20,
+      "cursor": {
+        "id": 99981,
+        "created_at": 33327
+      },
+      "ids": [
+        99980,
+        99979,
+        99978,
+        99977,
+        99976,
+        99975,
+        99974,
+        99973,
+        99972,
+        99971,
+        99970,
+        99969,
+        99968,
+        99967,
+        99966,
+        99965,
+        99964,
+        99963,
+        99962,
+        99961
+      ],
+      "wall_ms": {
+        "offset": {
+          "min": 0.9629170000000613,
+          "median": 1.4349999999999454,
+          "max": 1.9702500000000782
+        },
+        "cursor": {
+          "min": 0.8478750000000446,
+          "median": 1.2192500000001019,
+          "max": 9.910833000000025
+        }
+      },
+      "raw_wall_ms": {
+        "offset": [
+          1.4349999999999454,
+          1.931791999999973,
+          1.0327080000000706,
+          1.5311249999999745,
+          1.171165999999971,
+          0.9629170000000613,
+          1.2427079999999933,
+          1.4791250000000673,
+          1.9702500000000782,
+          1.4056659999999965,
+          1.4905410000000074
+        ],
+        "cursor": [
+          1.2782079999999496,
+          9.910833000000025,
+          0.9504170000000158,
+          1.011665999999991,
+          0.8657079999999269,
+          0.8478750000000446,
+          1.2192500000001019,
+          1.2307499999999436,
+          1.4123749999999973,
+          1.3030840000000126,
+          1.1267080000000078
+        ]
+      },
+      "last_meta": {
+        "offset": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 40,
+          "rows_written": 0
+        },
+        "cursor": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 23,
+          "rows_written": 0
+        }
+      },
+      "plans": {
+        "offset": [
+          {
+            "id": 7,
+            "parent": 0,
+            "notused": 56,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=?)"
+          }
+        ],
+        "cursor": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 48,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=? AND created_at<?)"
+          }
+        ]
+      }
+    },
+    {
+      "offset": 1000,
+      "cursor": {
+        "id": 99001,
+        "created_at": 33000
+      },
+      "ids": [
+        99000,
+        98999,
+        98998,
+        98997,
+        98996,
+        98995,
+        98994,
+        98993,
+        98992,
+        98991,
+        98990,
+        98989,
+        98988,
+        98987,
+        98986,
+        98985,
+        98984,
+        98983,
+        98982,
+        98981
+      ],
+      "wall_ms": {
+        "offset": {
+          "min": 0.8331670000000031,
+          "median": 1.1127919999998994,
+          "max": 1.7669169999999212
+        },
+        "cursor": {
+          "min": 0.8159170000000131,
+          "median": 0.9897499999999582,
+          "max": 3.264250000000061
+        }
+      },
+      "raw_wall_ms": {
+        "offset": [
+          0.9690840000000662,
+          1.0827919999999267,
+          1.1127919999998994,
+          1.3678340000000162,
+          1.3520000000000891,
+          1.3975000000000364,
+          1.394625000000019,
+          0.8970419999999422,
+          0.8331670000000031,
+          1.0782080000000178,
+          1.7669169999999212
+        ],
+        "cursor": [
+          0.905208000000016,
+          0.90625,
+          0.8159170000000131,
+          0.9897499999999582,
+          1.0128750000000082,
+          3.264250000000061,
+          1.1976249999999027,
+          1.5495829999999842,
+          0.8610419999999976,
+          0.9803329999999733,
+          1.164916000000062
+        ]
+      },
+      "last_meta": {
+        "offset": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 1020,
+          "rows_written": 0
+        },
+        "cursor": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 22,
+          "rows_written": 0
+        }
+      },
+      "plans": {
+        "offset": [
+          {
+            "id": 7,
+            "parent": 0,
+            "notused": 56,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=?)"
+          }
+        ],
+        "cursor": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 48,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=? AND created_at<?)"
+          }
+        ]
+      }
+    },
+    {
+      "offset": 10000,
+      "cursor": {
+        "id": 90001,
+        "created_at": 30000
+      },
+      "ids": [
+        90000,
+        89999,
+        89998,
+        89997,
+        89996,
+        89995,
+        89994,
+        89993,
+        89992,
+        89991,
+        89990,
+        89989,
+        89988,
+        89987,
+        89986,
+        89985,
+        89984,
+        89983,
+        89982,
+        89981
+      ],
+      "wall_ms": {
+        "offset": {
+          "min": 0.9172499999999673,
+          "median": 1.025541999999973,
+          "max": 1.359375
+        },
+        "cursor": {
+          "min": 0.9686669999999822,
+          "median": 1.084374999999909,
+          "max": 1.702666000000022
+        }
+      },
+      "raw_wall_ms": {
+        "offset": [
+          1.359375,
+          0.9875420000000759,
+          1.0605830000000651,
+          1.1996250000000828,
+          1.007708999999977,
+          1.1895829999999705,
+          1.0942499999999882,
+          1.025541999999973,
+          0.971541000000002,
+          0.9172499999999673,
+          0.9776669999999967
+        ],
+        "cursor": [
+          1.405334000000039,
+          1.150082999999995,
+          0.9686669999999822,
+          1.702666000000022,
+          1.1573750000000018,
+          1.0100830000000087,
+          1.2032080000000178,
+          1.084374999999909,
+          1.054416999999944,
+          0.9817920000000413,
+          1.0176249999999527
+        ]
+      },
+      "last_meta": {
+        "offset": {
+          "served_by": "miniflare.db",
+          "duration": 1,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 10020,
+          "rows_written": 0
+        },
+        "cursor": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 22,
+          "rows_written": 0
+        }
+      },
+      "plans": {
+        "offset": [
+          {
+            "id": 7,
+            "parent": 0,
+            "notused": 56,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=?)"
+          }
+        ],
+        "cursor": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 48,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=? AND created_at<?)"
+          }
+        ]
+      }
+    },
+    {
+      "offset": 50000,
+      "cursor": {
+        "id": 50001,
+        "created_at": 16667
+      },
+      "ids": [
+        50000,
+        49999,
+        49998,
+        49997,
+        49996,
+        49995,
+        49994,
+        49993,
+        49992,
+        49991,
+        49990,
+        49989,
+        49988,
+        49987,
+        49986,
+        49985,
+        49984,
+        49983,
+        49982,
+        49981
+      ],
+      "wall_ms": {
+        "offset": {
+          "min": 1.633375000000001,
+          "median": 1.8094579999999496,
+          "max": 2.3429579999999532
+        },
+        "cursor": {
+          "min": 0.828125,
+          "median": 1.1227079999999887,
+          "max": 2.003582999999935
+        }
+      },
+      "raw_wall_ms": {
+        "offset": [
+          1.8094579999999496,
+          1.7414169999999558,
+          2.1447500000000446,
+          2.106667000000016,
+          2.0597080000000005,
+          1.7049160000000256,
+          1.806291999999985,
+          1.7846250000000055,
+          1.633375000000001,
+          2.217999999999961,
+          2.3429579999999532
+        ],
+        "cursor": [
+          0.8812500000000227,
+          0.828125,
+          1.1100419999999076,
+          0.9220839999999271,
+          2.003582999999935,
+          1.2137500000000045,
+          1.1377919999999904,
+          1.1920000000000073,
+          1.227125000000001,
+          0.9258750000000191,
+          1.1227079999999887
+        ]
+      },
+      "last_meta": {
+        "offset": {
+          "served_by": "miniflare.db",
+          "duration": 1,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 50020,
+          "rows_written": 0
+        },
+        "cursor": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 23,
+          "rows_written": 0
+        }
+      },
+      "plans": {
+        "offset": [
+          {
+            "id": 7,
+            "parent": 0,
+            "notused": 56,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=?)"
+          }
+        ],
+        "cursor": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 48,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=? AND created_at<?)"
+          }
+        ]
+      }
+    },
+    {
+      "offset": 99000,
+      "cursor": {
+        "id": 1001,
+        "created_at": 333
+      },
+      "ids": [
+        1000,
+        999,
+        998,
+        997,
+        996,
+        995,
+        994,
+        993,
+        992,
+        991,
+        990,
+        989,
+        988,
+        987,
+        986,
+        985,
+        984,
+        983,
+        982,
+        981
+      ],
+      "wall_ms": {
+        "offset": {
+          "min": 2.5642910000000256,
+          "median": 2.970874999999978,
+          "max": 4.1798749999999245
+        },
+        "cursor": {
+          "min": 0.8432500000000118,
+          "median": 1.136665999999991,
+          "max": 1.3139169999999467
+        }
+      },
+      "raw_wall_ms": {
+        "offset": [
+          3.037666999999942,
+          3.3532089999999926,
+          2.688792000000035,
+          2.970874999999978,
+          3.8591250000000628,
+          4.1798749999999245,
+          2.593499999999949,
+          2.8424999999999727,
+          2.5642910000000256,
+          3.2443329999999833,
+          2.9066249999999627
+        ],
+        "cursor": [
+          0.9340000000000828,
+          1.1446670000000267,
+          0.9833750000000236,
+          0.8432500000000118,
+          1.1399999999999864,
+          0.9997499999999491,
+          1.2664170000000468,
+          1.3139169999999467,
+          1.136665999999991,
+          1.2923749999999927,
+          1.0747920000000022
+        ]
+      },
+      "last_meta": {
+        "offset": {
+          "served_by": "miniflare.db",
+          "duration": 1,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 99020,
+          "rows_written": 0
+        },
+        "cursor": {
+          "served_by": "miniflare.db",
+          "duration": 0,
+          "changes": 0,
+          "last_row_id": 100000,
+          "changed_db": false,
+          "size_after": 6103040,
+          "rows_read": 21,
+          "rows_written": 0
+        }
+      },
+      "plans": {
+        "offset": [
+          {
+            "id": 7,
+            "parent": 0,
+            "notused": 56,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=?)"
+          }
+        ],
+        "cursor": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 48,
+            "detail": "SEARCH notification USING COVERING INDEX idx_feed (user_id=? AND created_at<?)"
+          }
+        ]
+      }
+    }
+  ],
+  "insert_between_pages": {
+    "firstPageLastID": 99981,
+    "offsetNextFirstID": 99981,
+    "cursorNextFirstID": 99980,
+    "offsetDuplicate": true,
+    "cursorDuplicate": false
+  }
+}

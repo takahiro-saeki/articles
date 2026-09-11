@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 /Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T09",
+      "path": "articles/node-esm-commonjs-boundaries.md",
+      "before_sha256": "8e8fa6a654bce3c5629ade403ccd1c078e055bf3fd8f1e4233a749ce72ed88f6",
+      "after_sha256": "a82ad9ab673b57bc11cfc56c011c6f67dd97154da889a66a26e0fe25ca392378",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "判定と読み込みの区分、検証Node版と現行docs版、10ケースの結果、未検証項目を維持。同期インターフェースへの影響を直接表現。"
+    },
+    {
+      "id": "T09",
+      "path": "devto/node-esm-commonjs-boundaries.md",
+      "before_sha256": "16ed850e5991e13d36f5cba2dd0685453b9c91be92136592748783a987b85e92",
+      "after_sha256": "c8f9ce6af303d5e0de7bf20962997248895f29f4e850cd2766e2383a92d407c9",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "判定と読み込みの区分、検証Node版と現行docs版、10ケースの結果、未検証項目を維持。同期インターフェースへの影響を直接表現。"
+    },
+    {
+      "id": "T39",
+      "path": "articles/d1-offset-cursor-pagination.md",
+      "before_sha256": "7fdd5b8966010b623f1e5a5ba7138a5405ddd60bbd8678d18c299b0ce020f284",
+      "after_sha256": "868632d2c641fde7f4805ac94bd326c533723f6c2583882fda8cfb5db433c410",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "10万行、5位置、4/11回、すべての読取り行数/時間/IDと測定制約を維持。最後の過剰な対比を除去。"
+    },
+    {
+      "id": "T39",
+      "path": "devto/d1-offset-cursor-pagination.md",
+      "before_sha256": "77ad13b78486d85c4522008795506eb6a7d2ed47b8db76ec31166ec8cd24b7e0",
+      "after_sha256": "664da14fda1c454eec66fd320546e2e2d4ccc829d65c6aab268161aca666525d",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "10万行、5位置、4/11回、すべての読取り行数/時間/IDと測定制約を維持。最後の過剰な対比を除去。"
+    },
+    {
+      "id": "T40",
+      "path": "articles/durable-objects-d1-coordination.md",
+      "before_sha256": "d49b190f95527086123f5d390e76b74ee02db3775b0ecd8328e1cf98d98e5b63",
+      "after_sha256": "2a654d7fe468ee1afe1110b37ca22a965e6156128730ed988dc560f3b376b772",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "D1/2Objectの実保存と8assertion、同名再取得、新ID空、対象一覧の欠落、静止中のみ一致、全環境版を維持。移行案と未検証範囲を保持し、比喩的な締めを具体化。"
+    },
+    {
+      "id": "T40",
+      "path": "devto/durable-objects-d1-coordination.md",
+      "before_sha256": "3baafbb7dcf266c3bf2a70de55b9edc3a4a94c29db048fa91b99aa0707f2cd6e",
+      "after_sha256": "34a32e495934502f6897e38ecfbf5b61b4f2e96994af34835818447af71d6ecf",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "D1/2Objectの実保存と8assertion、同名再取得、新ID空、対象一覧の欠落、静止中のみ一致、全環境版を維持。移行案と未検証範囲を保持し、比喩的な締めを具体化。"
+    },
+    {
+      "id": "T42",
+      "path": "articles/cloudflare-cron-queues-workflows.md",
+      "before_sha256": "7269551503e2762048d49fb10572dc9a768e055510d46dadff3901867f4b0f77",
+      "after_sha256": "e607449d677bf19b13c4e69b9046b84b30dee95bd20b2f227e06a6cf5e23dc14",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "時刻/メッセージ/ステップの再開単位、at-least-once、ack retry、承認の確認、未導入の区分を維持。末尾の問答形式を除去。"
+    },
+    {
+      "id": "T42",
+      "path": "devto/cloudflare-cron-queues-workflows.md",
+      "before_sha256": "7ce62de61a98e9e6b5e476dc39e88a418a08febebc85d576ad241ff8262d15a9",
+      "after_sha256": "49d5ef282169142d362d13bc55daeba961e22862cbf9885e696a58fd7c899079",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "時刻/メッセージ/ステップの再開単位、at-least-once、ack retry、承認の確認、未導入の区分を維持。末尾の問答形式を除去。"
+    },
+    {
+      "id": "T44",
+      "path": "articles/idempotency-key-result-storage.md",
+      "before_sha256": "31a764132f9f7ad261a03f76e0a62a75040e761f6c619bc15cca2b364a92da13",
+      "after_sha256": "dfb97719bd52273e7da73bac02fbb1ff32cac9f09834f5b11c6db67bc8ae0d8e",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "6ケースの件数/201/409、2同時miss、成功結果のみ保存、TTL手動削除、HTTP未実装を維持。「初めて」という過剰な断言を削除。"
+    },
+    {
+      "id": "T44",
+      "path": "devto/idempotency-key-result-storage.md",
+      "before_sha256": "64facfa72892096eb09b12e4caf333e5e1468663ac52b0d4116a901695e01ad1",
+      "after_sha256": "d1084964eac45d56e97c322e246294e504517b24a9d8f716db2dbef78282bff1",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "6ケースの件数/201/409、2同時miss、成功結果のみ保存、TTL手動削除、HTTP未実装を維持。「初めて」という過剰な断言を削除。"
+    },
+    {
+      "id": "T45",
+      "path": "articles/outbox-database-notification-boundary.md",
+      "before_sha256": "d5894a9aa17fb2bc9802df679e8245d2927ffdfae8479ccf6bddcdb71c3157d3",
+      "after_sha256": "dd94dd5d5ff84bdfd4a0a0516265c7ddafbdfb6d8a03a9a59768b0d31f6b10ba",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "4ケースの0/1/2件、モックでの中断と送信先重複排除、single consumerと未実装機能を維持。提案する観測項目の滞留時間を日英で明確化。"
+    },
+    {
+      "id": "T45",
+      "path": "devto/outbox-database-notification-boundary.md",
+      "before_sha256": "fa8a6434628e71175c969ef9be962d2c5c558eb28f78b94def8f0b99a8b2f97f",
+      "after_sha256": "be803d841c17c8808ea4f5f261623f2fb456929e92a74be653e9b02772189d28",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "4ケースの0/1/2件、モックでの中断と送信先重複排除、single consumerと未実装機能を維持。提案する観測項目の滞留時間を日英で明確化。"
+    }
+  ]
+}

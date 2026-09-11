@@ -1,0 +1,22 @@
+
+ ⛅️ wrangler 4.131.0
+────────────────────
+Generating project types...
+
+interface __BaseEnv_Env {
+	DB: D1Database;
+	ROOMS: DurableObjectNamespace<import("./worker").Room>;
+}
+declare namespace Cloudflare {
+	interface GlobalProps {
+		mainModule: typeof import("./worker");
+		durableNamespaces: "Room";
+	}
+	interface Env extends __BaseEnv_Env {}
+}
+interface Env extends __BaseEnv_Env {}
+
+
+✨ Types written to experiments/article-stock-2026-09/do-partitions/worker-configuration.d.ts
+
+📣 Remember to rerun 'wrangler types' after you change your wrangler.jsonc file.

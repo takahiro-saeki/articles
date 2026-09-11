@@ -1,0 +1,52 @@
+{
+  "node": "v24.15.0",
+  "wrangler": "4.131.0",
+  "miniflare": "5.20260910.0-alpha",
+  "compatibilityDateRequested": "2026-09-11",
+  "scope": "Local D1 and SQLite-backed Durable Objects. Fixed synthetic data, no deployment, no latency or distributed snapshot measurements.",
+  "assertionsPassed": 8,
+  "result": {
+    "red": [
+      {
+        "user_id": "alice"
+      }
+    ],
+    "blue": [
+      {
+        "user_id": "bob"
+      }
+    ],
+    "redFromSameName": [
+      {
+        "user_id": "alice"
+      }
+    ],
+    "newUniqueObject": [],
+    "d1Global": [
+      {
+        "room_id": "blue",
+        "user_id": "bob"
+      },
+      {
+        "room_id": "red",
+        "user_id": "alice"
+      }
+    ],
+    "collectedBoth": [
+      {
+        "room_id": "blue",
+        "user_id": "bob"
+      },
+      {
+        "room_id": "red",
+        "user_id": "alice"
+      }
+    ],
+    "collectedRedOnly": [
+      {
+        "room_id": "red",
+        "user_id": "alice"
+      }
+    ]
+  }
+}

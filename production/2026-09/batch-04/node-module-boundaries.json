@@ -1,0 +1,105 @@
+{
+  "node": "v24.15.0",
+  "scope": "Native Node.js; no bundler, transpiler, custom loader, or NODE_OPTIONS",
+  "files": {
+    "package.json": "{\"type\":\"commonjs\"}",
+    "esm/package.json": "{\"type\":\"module\"}",
+    "esm/require.js": "console.log(require(\"node:path\"));",
+    "esm/legacy.cjs": "console.log(typeof require);",
+    "esm/sync.mjs": "export const value = 42;",
+    "esm/async.mjs": "await Promise.resolve(); export const value = 42;",
+    "esm/no-extension.mjs": "import {value} from \"./sync\"; console.log(value);",
+    "esm/nested/package.json": "{\"type\":\"commonjs\"}",
+    "esm/nested/legacy.js": "console.log(typeof require);",
+    "common/package.json": "{\"type\":\"commonjs\"}",
+    "common/export.js": "export const value = 42;",
+    "common/modern.mjs": "export const value = 42; console.log(value);",
+    "common/require-sync.cjs": "console.log(require(\"../esm/sync.mjs\").value);",
+    "common/require-async.cjs": "require(\"../esm/async.mjs\");",
+    "common/import-async.cjs": "import(\"../esm/async.mjs\").then(m => console.log(typeof require, m.value));",
+    "untyped/package.json": "{}",
+    "untyped/detected.js": "export const value = 42; console.log(value);"
+  },
+  "results": [
+    {
+      "entry": "esm/require.js",
+      "exit": 1,
+      "stdout": "",
+      "error_code": null,
+      "expected": "require is not defined",
+      "typeless_warning": false
+    },
+    {
+      "entry": "common/export.js",
+      "exit": 1,
+      "stdout": "",
+      "error_code": null,
+      "expected": "Unexpected token 'export'",
+      "typeless_warning": false
+    },
+    {
+      "entry": "esm/legacy.cjs",
+      "exit": 0,
+      "stdout": "function",
+      "error_code": null,
+      "expected": "function",
+      "typeless_warning": false
+    },
+    {
+      "entry": "common/modern.mjs",
+      "exit": 0,
+      "stdout": "42",
+      "error_code": null,
+      "expected": "42",
+      "typeless_warning": false
+    },
+    {
+      "entry": "esm/nested/legacy.js",
+      "exit": 0,
+      "stdout": "function",
+      "error_code": null,
+      "expected": "function",
+      "typeless_warning": false
+    },
+    {
+      "entry": "common/require-sync.cjs",
+      "exit": 0,
+      "stdout": "42",
+      "error_code": null,
+      "expected": "42",
+      "typeless_warning": false
+    },
+    {
+      "entry": "common/require-async.cjs",
+      "exit": 1,
+      "stdout": "",
+      "error_code": "ERR_REQUIRE_ASYNC_MODULE",
+      "expected": "ERR_REQUIRE_ASYNC_MODULE",
+      "typeless_warning": false
+    },
+    {
+      "entry": "common/import-async.cjs",
+      "exit": 0,
+      "stdout": "function 42",
+      "error_code": null,
+      "expected": "function 42",
+      "typeless_warning": false
+    },
+    {
+      "entry": "esm/no-extension.mjs",
+      "exit": 1,
+      "stdout": "",
+      "error_code": "ERR_MODULE_NOT_FOUND",
+      "expected": "ERR_MODULE_NOT_FOUND",
+      "typeless_warning": false
+    },
+    {
+      "entry": "untyped/detected.js",
+      "exit": 0,
+      "stdout": "42",
+      "error_code": null,
+      "expected": "42",
+      "typeless_warning": true
+    }
+  ]
+}

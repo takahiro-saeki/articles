@@ -1,0 +1,12 @@
+{
+  "workersTypes": "5.20260911.1",
+  "typescript": "Version 5.9.3",
+  "wrangler": "4.131.0",
+  "generatedEnv": true,
+  "allowJs": true,
+  "checkJs": true,
+  "strict": true,
+  "skipLibCheck": true,
+  "exitCode": 0,
+  "diagnostics": ""
+}

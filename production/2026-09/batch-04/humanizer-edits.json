@@ -1,0 +1,138 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 /Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T09",
+      "path": "articles/node-esm-commonjs-boundaries.md",
+      "edits": [
+        [
+          "ここで警告を消すためだけに`type: module`を追加すると、同じ領域にある従来の`.js`も影響を受けます。",
+          "警告を消そうとして`type: module`を追加すると、同じ領域にある従来の`.js`も影響を受けます。"
+        ]
+      ],
+      "semantic_review": "判定と読み込みの区分、検証Node版と現行docs版、10ケースの結果、未検証項目を維持。同期インターフェースへの影響を直接表現。"
+    },
+    {
+      "id": "T09",
+      "path": "devto/node-esm-commonjs-boundaries.md",
+      "edits": [
+        [
+          "Changing the loading line does not necessarily preserve the caller's synchronous interface.",
+          "The caller may also need an asynchronous interface."
+        ]
+      ],
+      "semantic_review": "判定と読み込みの区分、検証Node版と現行docs版、10ケースの結果、未検証項目を維持。同期インターフェースへの影響を直接表現。"
+    },
+    {
+      "id": "T39",
+      "path": "articles/d1-offset-cursor-pagination.md",
+      "edits": [
+        [
+          "インデックスの有無だけで判断せず、同じ結果を返すことと、次ページへ進むために読む範囲を一緒に確かめられます。",
+          "インデックスを使うかに加えて、返る結果と、次ページへ進むために読む範囲を確かめられます。"
+        ]
+      ],
+      "semantic_review": "10万行、5位置、4/11回、すべての読取り行数/時間/IDと測定制約を維持。最後の過剰な対比を除去。"
+    },
+    {
+      "id": "T39",
+      "path": "devto/d1-offset-cursor-pagination.md",
+      "edits": [
+        [
+          "It lets you check both that the methods return the same records and how much each reads to reach the next page, instead of deciding from index usage alone.",
+          "Alongside index usage, check that the methods return the same records and how much each reads to reach the next page."
+        ]
+      ],
+      "semantic_review": "10万行、5位置、4/11回、すべての読取り行数/時間/IDと測定制約を維持。最後の過剰な対比を除去。"
+    },
+    {
+      "id": "T40",
+      "path": "articles/durable-objects-d1-coordination.md",
+      "edits": [
+        [
+          "先に読み取りと書き込みの経路を棚卸しすると、「SQLiteだから移せる」で見落とす横断処理が見えてきます。",
+          "読み取りと書き込みの経路を棚卸しすると、SQLiteという共通点だけでは分からない横断処理の変更を確認できます。"
+        ]
+      ],
+      "semantic_review": "D1/2Objectの実保存と8assertion、同名再取得、新ID空、対象一覧の欠落、静止中のみ一致、全環境版を維持。移行案と未検証範囲を保持し、比喩的な締めを具体化。"
+    },
+    {
+      "id": "T40",
+      "path": "devto/durable-objects-d1-coordination.md",
+      "edits": [
+        [
+          "Inventorying read and write paths first exposes cross-room operations that “both use SQLite” can obscure.",
+          "Inventory read and write paths to identify which cross-room operations must change, even though both stores use SQLite."
+        ]
+      ],
+      "semantic_review": "D1/2Objectの実保存と8assertion、同名再取得、新ID空、対象一覧の欠落、静止中のみ一致、全環境版を維持。移行案と未検証範囲を保持し、比喩的な締めを具体化。"
+    },
+    {
+      "id": "T42",
+      "path": "articles/cloudflare-cron-queues-workflows.md",
+      "edits": [
+        [
+          "選択の前に「この仕事は何を一単位として再実行するか」を書きます。",
+          "まず、再実行する仕事の単位を書き出します。"
+        ]
+      ],
+      "semantic_review": "時刻/メッセージ/ステップの再開単位、at-least-once、ack retry、承認の確認、未導入の区分を維持。末尾の問答形式を除去。"
+    },
+    {
+      "id": "T42",
+      "path": "devto/cloudflare-cron-queues-workflows.md",
+      "edits": [
+        [
+          "Before selecting a mechanism, write down what one repeatable unit of work means.",
+          "Start by defining the unit of work that can be repeated."
+        ]
+      ],
+      "semantic_review": "時刻/メッセージ/ステップの再開単位、at-least-once、ack retry、承認の確認、未導入の区分を維持。末尾の問答形式を除去。"
+    },
+    {
+      "id": "T44",
+      "path": "articles/idempotency-key-result-storage.md",
+      "edits": [
+        [
+          "それで初めて、そのAPIがどの範囲の二重処理を防げるかを説明できます。",
+          "これらの結果から、そのAPIが防げる二重処理の範囲を説明できます。"
+        ]
+      ],
+      "semantic_review": "6ケースの件数/201/409、2同時miss、成功結果のみ保存、TTL手動削除、HTTP未実装を維持。「初めて」という過剰な断言を削除。"
+    },
+    {
+      "id": "T44",
+      "path": "devto/idempotency-key-result-storage.md",
+      "edits": [
+        [
+          "Those checks establish which duplicate operations the API can actually prevent.",
+          "Use those results to describe which duplicate operations the API prevents."
+        ]
+      ],
+      "semantic_review": "6ケースの件数/201/409、2同時miss、成功結果のみ保存、TTL手動削除、HTTP未実装を維持。「初めて」という過剰な断言を削除。"
+    },
+    {
+      "id": "T45",
+      "path": "articles/outbox-database-notification-boundary.md",
+      "edits": [
+        [
+          "運用するなら、配送できていないイベント数と最古の滞留時刻、失敗理由を確認できるようにします。",
+          "運用では、未配送イベントの件数、最も長い滞留時間、失敗理由を確認できるようにします。"
+        ]
+      ],
+      "semantic_review": "4ケースの0/1/2件、モックでの中断と送信先重複排除、single consumerと未実装機能を維持。提案する観測項目の滞留時間を日英で明確化。"
+    },
+    {
+      "id": "T45",
+      "path": "devto/outbox-database-notification-boundary.md",
+      "edits": [
+        [
+          "An operational implementation should expose pending-event counts, the age of the oldest event, and failure reasons.",
+          "In operation, expose the pending-event count, longest waiting time, and failure reasons."
+        ]
+      ],
+      "semantic_review": "4ケースの0/1/2件、モックでの中断と送信先重複排除、single consumerと未実装機能を維持。提案する観測項目の滞留時間を日英で明確化。"
+    }
+  ]
+}

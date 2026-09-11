@@ -450,7 +450,7 @@
   },
   {
     "id": "T09",
-    "title": "ESMとCommonJSが混ざると、Node.jsはどこで迷うのか",
+    "title": "ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる",
     "original_title": "ESMとCommonJSが混ざると、Node.jsはどこで迷うのか",
     "slug": "node-esm-commonjs-boundaries",
     "angle": "package type、拡張子、dynamic import",
@@ -459,10 +459,10 @@
     "japanese": "articles/node-esm-commonjs-boundaries.md",
     "english": "devto/node-esm-commonjs-boundaries.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 4,
+    "fact_check": "Node現行v26.8.2と検証版v24.15.0の公式Packages/Modules/ESM",
+    "verification": "Node v24.15.0で10ケース。type/拡張子/同期ESM require/TLA/dynamic import/拡張子解決/構文検出",
+    "status": "完成"
   },
   {
     "id": "T10",
@@ -932,7 +932,7 @@
   },
   {
     "id": "T39",
-    "title": "offset paginationが遅くなる境目をD1で測ってみた",
+    "title": "D1の深いOFFSETをカーソルへ変える。読取り行数と途中挿入を比較する",
     "original_title": "offset paginationが遅くなる境目をD1で測ってみた",
     "slug": "d1-offset-cursor-pagination",
     "angle": "offsetとcursorの比較",
@@ -941,26 +941,26 @@
     "japanese": "articles/d1-offset-cursor-pagination.md",
     "english": "devto/d1-offset-cursor-pagination.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 4,
+    "fact_check": "D1公式indexes、SQLite row values、Wrangler APIとローカルD1",
+    "verification": "10万行・5位置、各4 warmup+11計測。配列一致、rows_read、計画、途中挿入重複をassert",
+    "status": "完成"
   },
   {
     "id": "T40",
-    "title": "Durable ObjectsとD1を改めて使い分ける",
+    "title": "Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする",
     "original_title": "Durable ObjectsとD1を改めて使い分ける",
     "slug": "durable-objects-d1-coordination",
-    "angle": "永続DBと単位別の調整役",
+    "angle": "D1とObject別SQLiteへ同じ合成データを保存し、個別取得と横断取得を比較。移行前のクエリ棚卸しへ絞り、既存の出欠競合記事と切り口を分ける",
     "preparation": "B",
     "platform": "Zenn",
     "japanese": "articles/durable-objects-d1-coordination.md",
     "english": "devto/durable-objects-d1-coordination.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 4,
+    "fact_check": "2026-09-11: DO storage/state/namespace/concepts公式と現行Workers型を確認。DO別保存・名前による再取得・横断取得をローカル比較",
+    "verification": "Wrangler 4.131.0/Miniflare 5.20260910.0-alphaで8 assertions、生成Env+Workers types 5.20260911.1/TS 5.9.3 checkJs成功。本番移行・性能・分散snapshotは未検証",
+    "status": "完成"
   },
   {
     "id": "T41",
@@ -980,7 +980,7 @@
   },
   {
     "id": "T42",
-    "title": "Cron Triggers、Queues、Workflowsはどれを選ぶか",
+    "title": "Cron Triggers・Queues・Workflowsを、失敗した後にどこから再開するかで選ぶ",
     "original_title": "Cron Triggers、Queues、Workflowsはどれを選ぶか",
     "slug": "cloudflare-cron-queues-workflows",
     "angle": "定期処理、配送、長時間処理",
@@ -989,10 +989,10 @@
     "japanese": "articles/cloudflare-cron-queues-workflows.md",
     "english": "devto/cloudflare-cron-queues-workflows.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 4,
+    "fact_check": "Cloudflare Cron/Queues配送・ack retry/Workflows待機・実装規則の公式仕様",
+    "verification": "再開単位を時刻/メッセージ/ステップで比較。構成と導入時の検証は提案、未導入",
+    "status": "完成"
   },
   {
     "id": "T43",
@@ -1012,7 +1012,7 @@
   },
   {
     "id": "T44",
-    "title": "Idempotency Keyを付けるだけでは二重処理を防げない",
+    "title": "Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する",
     "original_title": "Idempotency Keyを付けるだけでは二重処理を防げない",
     "slug": "idempotency-key-result-storage",
     "angle": "保存範囲、結果再利用、期限",
@@ -1021,14 +1021,14 @@
     "japanese": "articles/idempotency-key-result-storage.md",
     "english": "devto/idempotency-key-result-storage.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 4,
+    "fact_check": "Stripe idempotent requests、D1 batch公式仕様",
+    "verification": "ローカルD1の6ケース。commit後応答消失、入力相違、actor別、同時miss、rollback、記録削除",
+    "status": "完成"
   },
   {
     "id": "T45",
-    "title": "OutboxパターンでDB更新と通知をどうつなぐか",
+    "title": "OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける",
     "original_title": "OutboxパターンでDB更新と通知をどうつなぐか",
     "slug": "outbox-database-notification-boundary",
     "angle": "再試行と重複防止",
@@ -1037,10 +1037,10 @@
     "japanese": "articles/outbox-database-notification-boundary.md",
     "english": "devto/outbox-database-notification-boundary.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 4,
+    "fact_check": "AWS transactional outbox、D1 batch公式仕様",
+    "verification": "ローカルD1とfake providerで4ケース。意図の同時保存、送信後中断、重複排除あり/なし",
+    "status": "完成"
   },
   {
     "id": "O01",

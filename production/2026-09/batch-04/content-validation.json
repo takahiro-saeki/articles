@@ -1,0 +1,224 @@
+{
+  "pairs": 6,
+  "canonicalPending": [],
+  "eligibleForCompletion": 6,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "T09",
+      "jaCharacters": 3882,
+      "enWords": 891,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 6,
+      "nearestExisting": [
+        {
+          "path": "articles/durable-objects-d1-coordination.md",
+          "score": 0.056
+        },
+        {
+          "path": "public/promise-combinators-partial-failure.md",
+          "score": 0.051
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.048
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/local-image-generation-reproducibility.md",
+          "score": 0.209
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.204
+        },
+        {
+          "path": "devto/durable-objects-d1-coordination.md",
+          "score": 0.201
+        }
+      ]
+    },
+    {
+      "id": "T39",
+      "jaCharacters": 3823,
+      "enWords": 1024,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/d1-composite-index-column-order.md",
+          "score": 0.104
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.072
+        },
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.069
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-composite-index-column-order.md",
+          "score": 0.235
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.215
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "T40",
+      "jaCharacters": 5003,
+      "enWords": 1143,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 5,
+      "nearestExisting": [
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.066
+        },
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.063
+        },
+        {
+          "path": "public/d1-composite-index-column-order.md",
+          "score": 0.062
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.232
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.217
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.217
+        }
+      ]
+    },
+    {
+      "id": "T42",
+      "jaCharacters": 3612,
+      "enWords": 1012,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/cloudflare-cron-local-notification-test.md",
+          "score": 0.037
+        },
+        {
+          "path": "articles/outbox-database-notification-boundary.md",
+          "score": 0.036
+        },
+        {
+          "path": "articles/scheduled-publishing-recovery-boundary.md",
+          "score": 0.036
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.22
+        },
+        {
+          "path": "devto/plane-github-issue-boundary.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "T44",
+      "jaCharacters": 3698,
+      "enWords": 990,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/outbox-database-notification-boundary.md",
+          "score": 0.107
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.088
+        },
+        {
+          "path": "articles/d1-offset-cursor-pagination.md",
+          "score": 0.069
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.281
+        },
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.239
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.219
+        }
+      ]
+    },
+    {
+      "id": "T45",
+      "jaCharacters": 3589,
+      "enWords": 940,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.107
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.084
+        },
+        {
+          "path": "articles/d1-offset-cursor-pagination.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.281
+        },
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/cloudflare-cron-queues-workflows.md",
+          "score": 0.22
+        }
+      ]
+    }
+  ]
+}

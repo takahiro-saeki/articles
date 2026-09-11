@@ -1,6 +1,6 @@
 # 記事制作進捗 2026年9月
 
-完成 17/90件（日本語＋英語の組）。残り 73件。先に書きたい12本は 9/12件完成。
+完成 23/90件（日本語＋英語の組）。残り 67件。先に書きたい12本は 9/12件完成。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -9,6 +9,7 @@
 - バッチ01: P01、P03、T28、O01、O03、O05。完成 6/6件。
 - バッチ02: P02、T01、T20、T31、T36、T37、O07、O10。完成 5/8件。
 - バッチ03: P14、P15、O09、O12、O17、O18。完成 6/6件。
+- バッチ04: T09、T39、T40、T42、T44、T45。完成 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
 - canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
@@ -43,7 +44,7 @@
 | T06 | `import type`を書かないと何が起きるのか | import-type-bundler-output | 予定: public/import-type-bundler-output.md | 予定: devto/import-type-bundler-output.md | 未確認 | 未実施 | 未着手 |
 | T07 | `structuredClone`とJSON往復コピーの違いを実データで比べた | structured-clone-json-data | 予定: public/structured-clone-json-data.md | 予定: devto/structured-clone-json-data.md | 未確認 | 未実施 | 未着手 |
 | T08 | AbortControllerはfetch以外にも使える。キャンセル可能な処理を作ってみた | abortcontroller-cancellable-tasks | 予定: public/abortcontroller-cancellable-tasks.md | 予定: devto/abortcontroller-cancellable-tasks.md | 未確認 | 未実施 | 未着手 |
-| T09 | ESMとCommonJSが混ざると、Node.jsはどこで迷うのか | node-esm-commonjs-boundaries | 予定: articles/node-esm-commonjs-boundaries.md | 予定: devto/node-esm-commonjs-boundaries.md | 未確認 | 未実施 | 未着手 |
+| T09 | ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる | node-esm-commonjs-boundaries | [原稿](articles/node-esm-commonjs-boundaries.md) | [原稿](devto/node-esm-commonjs-boundaries.md) | Node現行v26.8.2と検証版v24.15.0の公式Packages/Modules/ESM | Node v24.15.0で10ケース。type/拡張子/同期ESM require/TLA/dynamic import/拡張子解決/構文検出 | 完成 |
 | T10 | JavaScriptの`using`でリソース解放はどう変わるか | using-resource-disposal | 予定: public/using-resource-disposal.md | 予定: devto/using-resource-disposal.md | 未確認 | 未実施 | 未着手 |
 | T11 | Reactの`key`をindexにすると何が壊れるのか、入力欄で再現した | react-index-key-input-reorder | 予定: public/react-index-key-input-reorder.md | 予定: devto/react-index-key-input-reorder.md | 未確認 | 未実施 | 未着手 |
 | T12 | Strict Modeで`useEffect`が二度動く理由を改めて確認した | strict-mode-effect-cleanup | 予定: public/strict-mode-effect-cleanup.md | 予定: devto/strict-mode-effect-cleanup.md | 未確認 | 未実施 | 未着手 |
@@ -73,13 +74,13 @@
 | T36 | D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する | d1-batch-atomicity-boundary | [原稿](articles/d1-batch-atomicity-boundary.md) | [原稿](devto/d1-batch-atomicity-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | T37 | D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた | d1-composite-index-column-order | [原稿](public/d1-composite-index-column-order.md) | [原稿](devto/d1-composite-index-column-order.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T38 | SQLiteの外部キーはindexを自動作成するのか | sqlite-foreign-key-child-index | 予定: public/sqlite-foreign-key-child-index.md | 予定: devto/sqlite-foreign-key-child-index.md | 未確認 | 未実施 | 未着手 |
-| T39 | offset paginationが遅くなる境目をD1で測ってみた | d1-offset-cursor-pagination | 予定: articles/d1-offset-cursor-pagination.md | 予定: devto/d1-offset-cursor-pagination.md | 未確認 | 未実施 | 未着手 |
-| T40 | Durable ObjectsとD1を改めて使い分ける | durable-objects-d1-coordination | 予定: articles/durable-objects-d1-coordination.md | 予定: devto/durable-objects-d1-coordination.md | 未確認 | 未実施 | 未着手 |
+| T39 | D1の深いOFFSETをカーソルへ変える。読取り行数と途中挿入を比較する | d1-offset-cursor-pagination | [原稿](articles/d1-offset-cursor-pagination.md) | [原稿](devto/d1-offset-cursor-pagination.md) | D1公式indexes、SQLite row values、Wrangler APIとローカルD1 | 10万行・5位置、各4 warmup+11計測。配列一致、rows_read、計画、途中挿入重複をassert | 完成 |
+| T40 | Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする | durable-objects-d1-coordination | [原稿](articles/durable-objects-d1-coordination.md) | [原稿](devto/durable-objects-d1-coordination.md) | 2026-09-11: DO storage/state/namespace/concepts公式と現行Workers型を確認。DO別保存・名前による再取得・横断取得をローカル比較 | Wrangler 4.131.0/Miniflare 5.20260910.0-alphaで8 assertions、生成Env+Workers types 5.20260911.1/TS 5.9.3 checkJs成功。本番移行・性能・分散snapshotは未検証 | 完成 |
 | T41 | Workersの`waitUntil()`はレスポンス後どこまで処理を続けるか | workers-waituntil-failure-lifetime | 予定: public/workers-waituntil-failure-lifetime.md | 予定: devto/workers-waituntil-failure-lifetime.md | 未確認 | 未実施 | 未着手 |
-| T42 | Cron Triggers、Queues、Workflowsはどれを選ぶか | cloudflare-cron-queues-workflows | 予定: articles/cloudflare-cron-queues-workflows.md | 予定: devto/cloudflare-cron-queues-workflows.md | 未確認 | 未実施 | 未着手 |
+| T42 | Cron Triggers・Queues・Workflowsを、失敗した後にどこから再開するかで選ぶ | cloudflare-cron-queues-workflows | [原稿](articles/cloudflare-cron-queues-workflows.md) | [原稿](devto/cloudflare-cron-queues-workflows.md) | Cloudflare Cron/Queues配送・ack retry/Workflows待機・実装規則の公式仕様 | 再開単位を時刻/メッセージ/ステップで比較。構成と導入時の検証は提案、未導入 | 完成 |
 | T43 | Cloudflare Cache APIとブラウザキャッシュを混同しない | cloudflare-cache-api-browser-cache | 予定: public/cloudflare-cache-api-browser-cache.md | 予定: devto/cloudflare-cache-api-browser-cache.md | 未確認 | 未実施 | 未着手 |
-| T44 | Idempotency Keyを付けるだけでは二重処理を防げない | idempotency-key-result-storage | 予定: articles/idempotency-key-result-storage.md | 予定: devto/idempotency-key-result-storage.md | 未確認 | 未実施 | 未着手 |
-| T45 | OutboxパターンでDB更新と通知をどうつなぐか | outbox-database-notification-boundary | 予定: articles/outbox-database-notification-boundary.md | 予定: devto/outbox-database-notification-boundary.md | 未確認 | 未実施 | 未着手 |
+| T44 | Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する | idempotency-key-result-storage | [原稿](articles/idempotency-key-result-storage.md) | [原稿](devto/idempotency-key-result-storage.md) | Stripe idempotent requests、D1 batch公式仕様 | ローカルD1の6ケース。commit後応答消失、入力相違、actor別、同時miss、rollback、記録削除 | 完成 |
+| T45 | OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける | outbox-database-notification-boundary | [原稿](articles/outbox-database-notification-boundary.md) | [原稿](devto/outbox-database-notification-boundary.md) | AWS transactional outbox、D1 batch公式仕様 | ローカルD1とfake providerで4ケース。意図の同時保存、送信後中断、重複排除あり/なし | 完成 |
 | O01 | 38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える | publishing-38-day-audit | [原稿](articles/publishing-38-day-audit.md) | [原稿](devto/publishing-38-day-audit.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
 | O02 | 日本語記事をdev.toへ出すとき、canonical URLをどう管理したか | bilingual-canonical-url-lifecycle | 予定: public/bilingual-canonical-url-lifecycle.md | 予定: devto/bilingual-canonical-url-lifecycle.md | 未確認 | 未実施 | 未着手 |
 | O03 | 予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する | scheduled-publishing-recovery-boundary | [原稿](articles/scheduled-publishing-recovery-boundary.md) | [原稿](devto/scheduled-publishing-recovery-boundary.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
