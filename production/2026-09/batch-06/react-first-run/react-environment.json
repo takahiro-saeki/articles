@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "770de5f2989775cfd95f7a9c4529565a2b48d2fd",
+  "formatterSHA256": "7006cf5c8b0213de30534c0174141d9a35e0e5f5c9a6aecfee4d07edf0df49ec",
+  "versions": {
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "esbuild": "0.27.4"
+  },
+  "node": "v24.15.0",
+  "cli": "0.1.19",
+  "cpu": "Apple M4 Max",
+  "os": "26.6.2",
+  "mode": "production, compiler off, fresh headless browser, no CPU throttling, sync root updates; excludes paint and actual clipboard sharing"
+}

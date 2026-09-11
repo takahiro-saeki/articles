@@ -1,0 +1,302 @@
+{
+  "group": "callback",
+  "react": "19.2.5",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "rounds": 9,
+  "updates": 100,
+  "warmups": 20,
+  "cheapLeaves": 2000,
+  "fixtureSchedules": 1000,
+  "results": {
+    "inlineMemo": [
+      {
+        "ms": 48.60000002384186,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.89999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 50.200000047683716,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 50.299999952316284,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.89999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.300000071525574,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.89999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.60000002384186,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.89999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      }
+    ],
+    "callbackMemo": [
+      {
+        "ms": 0.10000002384185791,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0.09999990463256836,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0.09999990463256836,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0.10000002384185791,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 0,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 5,
+        "output": "17021"
+      }
+    ],
+    "callbackPlain": [
+      {
+        "ms": 48.800000071525574,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.89999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.699999928474426,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.5,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.200000047683716,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.5,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.199999928474426,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.800000071525574,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      }
+    ],
+    "callbackNewProp": [
+      {
+        "ms": 48.799999952316284,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.89999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.39999997615814,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 50.10000002384186,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49.5,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 49,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.799999952316284,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 50.300000071525574,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      },
+      {
+        "ms": 48.799999952316284,
+        "calculations": 100,
+        "children": 100,
+        "outputLength": 5,
+        "output": "17021"
+      }
+    ]
+  },
+  "summary": {
+    "inlineMemo": {
+      "medianMs": 48.9,
+      "minMs": 48.3,
+      "maxMs": 50.3,
+      "calculations": 100,
+      "children": 100
+    },
+    "callbackMemo": {
+      "medianMs": 0,
+      "minMs": 0,
+      "maxMs": 0.1,
+      "calculations": 0,
+      "children": 0
+    },
+    "callbackPlain": {
+      "medianMs": 49,
+      "minMs": 48.5,
+      "maxMs": 49.7,
+      "calculations": 100,
+      "children": 100
+    },
+    "callbackNewProp": {
+      "medianMs": 49,
+      "minMs": 48.8,
+      "maxMs": 50.3,
+      "calculations": 100,
+      "children": 100
+    }
+  }
+}

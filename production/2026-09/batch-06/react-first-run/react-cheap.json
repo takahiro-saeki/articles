@@ -1,0 +1,158 @@
+{
+  "group": "cheap",
+  "react": "19.2.5",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "rounds": 9,
+  "updates": 100,
+  "warmups": 20,
+  "cheapLeaves": 2000,
+  "fixtureSchedules": 1000,
+  "results": {
+    "direct": [
+      {
+        "ms": 32.200000047683716,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 31.799999952316284,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 32.5,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 30.09999990463257,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 29.90000009536743,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 28.899999976158142,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 29.59999990463257,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 29,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 29.199999928474426,
+        "calculations": 200000,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      }
+    ],
+    "memo": [
+      {
+        "ms": 37.300000071525574,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 39.10000002384186,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 38.89999997615814,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 38.60000002384186,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 34.5,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 33.799999952316284,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 33.39999997615814,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 33.40000009536743,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      },
+      {
+        "ms": 34.59999990463257,
+        "calculations": 0,
+        "children": 0,
+        "outputLength": 4000,
+        "output": "43"
+      }
+    ]
+  },
+  "summary": {
+    "direct": {
+      "medianMs": 29.9,
+      "minMs": 28.9,
+      "maxMs": 32.5,
+      "calculations": 200000,
+      "children": 0
+    },
+    "memo": {
+      "medianMs": 34.6,
+      "minMs": 33.4,
+      "maxMs": 39.1,
+      "calculations": 0,
+      "children": 0
+    }
+  }
+}

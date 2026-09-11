@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "id": "P19",
+      "language": "japanese",
+      "kind": "python",
+      "matchesExecutedSource": true
+    },
+    {
+      "id": "P19",
+      "language": "english",
+      "kind": "python",
+      "matchesExecutedSource": true
+    },
+    {
+      "id": "T14",
+      "language": "japanese",
+      "kind": "tsx",
+      "matchesExecutedSource": true
+    },
+    {
+      "id": "T14",
+      "language": "japanese",
+      "kind": "tsx",
+      "matchesExecutedSource": true
+    },
+    {
+      "id": "T14",
+      "language": "english",
+      "kind": "tsx",
+      "matchesExecutedSource": true
+    },
+    {
+      "id": "T14",
+      "language": "english",
+      "kind": "tsx",
+      "matchesExecutedSource": true
+    }
+  ],
+  "timingMedians": {
+    "cheap/direct": "29.7ms",
+    "cheap/memo": "34.5ms",
+    "summary/direct": "48.9ms",
+    "summary/memo": "0.1ms",
+    "summary/unstable": "49.5ms",
+    "callback/inlineMemo": "49.4ms",
+    "callback/callbackMemo": "0.0ms",
+    "callback/callbackPlain": "49.1ms",
+    "callback/callbackNewProp": "49.1ms"
+  },
+  "fullDOMOutputEqualAcrossEveryRound": true,
+  "estimateSnapshotAndRefusalChecks": true,
+  "finalHumanizerHashesMatch": true,
+  "notes": "Final measurements use full DOM text checks; first-run evidence only checked cheap-output length and prefix and is retained separately."
+}

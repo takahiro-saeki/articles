@@ -1,0 +1,56 @@
+{
+  "checkedOn": "2026-09-11",
+  "workspaceSlug": "hiro-work",
+  "mode": "read-only",
+  "items": [
+    {
+      "identifier": "SQN-14",
+      "title": "[Security] v1.0.12普及後にTurnstile旧版互換バイパスを削除する",
+      "parent": null,
+      "group": "completed",
+      "source": "notion",
+      "notes": "Imported from Notion; remove legacy Turnstile bypass after checking app adoption."
+    },
+    {
+      "identifier": "SQN-27",
+      "title": "2026-09-10以降にTurnstile旧版互換バイパスを最終削除する",
+      "parent": "SQN-14",
+      "group": "completed",
+      "source": null,
+      "notes": "Child of SQN-14; evaluate old-version usage on/after 2026-09-10 before final removal."
+    },
+    {
+      "identifier": "SQN-46",
+      "title": "Instagram投稿シリーズを制作・運用する",
+      "parent": null,
+      "group": "started",
+      "source": "notion",
+      "notes": "Series parent, full scope exceeds 8; includes source note Codex chat 2026-09-09."
+    },
+    {
+      "identifier": "SQN-47",
+      "title": "【Instagram #01】招待リンクから団体に参加する方法を制作する",
+      "parent": "SQN-46",
+      "group": "completed",
+      "source": "notion",
+      "notes": "Static carousel of 5 images; source note Codex chat 2026-09-09."
+    },
+    {
+      "identifier": "SQN-48",
+      "title": "【Instagram動画 #01】招待リンクから団体に参加する方法を制作する",
+      "parent": "SQN-46",
+      "group": "completed",
+      "source": "codex",
+      "notes": "Video adaptation references SQN-47; source note Codex chat 2026-09-09; external_source is codex."
+    },
+    {
+      "identifier": "SQN-30",
+      "title": "[Step 1] 体験参加者権限と手動昇格・終了を実装する",
+      "parent": "SQN-29",
+      "group": "started",
+      "source": null,
+      "notes": "Development environment and automated tests; mobile consistency required, production distribution excluded."
+    }
+  ],
+  "notes": "Descriptions read in full; sanitized facts retained without account IDs, Notion source URLs, or test invitation URLs. Done is a retrieved state, not independent proof of publication."
+}

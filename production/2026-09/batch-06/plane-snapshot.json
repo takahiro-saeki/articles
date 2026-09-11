@@ -1,0 +1,412 @@
+{
+  "checkedOn": "2026-09-11",
+  "workspaceSlug": "hiro-work",
+  "mode": "read-only",
+  "project": "SquadNote",
+  "paginationComplete": true,
+  "total": 52,
+  "estimate": {
+    "name": "Work Points",
+    "values": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "description": "調査・設計・実装・テスト・PR・配信・実機確認を含む作業量。1=極小、2=小、3=中、5=半日〜1日、8=1〜3日。8を超える場合は分割する。"
+  },
+  "items": [
+    {
+      "identifier": "SQN-52",
+      "title": "認証開始と失敗を照合できる安全な診断ログを追加する",
+      "group": "completed",
+      "points": 5,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-51",
+      "title": "Google・Appleログインの二重送信を防止する",
+      "group": "completed",
+      "points": 2,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-50",
+      "title": "認証エラー画面に再ログイン導線を追加する",
+      "group": "completed",
+      "points": 3,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-49",
+      "title": "iOS・Androidの複数端末へPush通知を配信できるようにする",
+      "group": "completed",
+      "points": 5,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-48",
+      "title": "【Instagram動画 #01】招待リンクから団体に参加する方法を制作する",
+      "group": "completed",
+      "points": 5,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-47",
+      "title": "【Instagram #01】招待リンクから団体に参加する方法を制作する",
+      "group": "completed",
+      "points": 3,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-46",
+      "title": "Instagram投稿シリーズを制作・運用する",
+      "group": "started",
+      "points": 8,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-45",
+      "title": "Webの日程詳細から主催者をすぐ設定できるようにする",
+      "group": "completed",
+      "points": 3,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-44",
+      "title": "Webの練習日程追加画面を整理して入力しやすくする",
+      "group": "completed",
+      "points": 5,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-43",
+      "title": "dev環境のテストログイン成功後に画面遷移が止まる",
+      "group": "backlog",
+      "points": 3,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-42",
+      "title": "機能紹介の各セクションに実画面を対応表示する",
+      "group": "completed",
+      "points": 5,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-41",
+      "title": "導入事例3団体の一覧レイアウトをDevプレビューで確認できるようにする",
+      "group": "completed",
+      "points": 3,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-40",
+      "title": "トップページの3ステップを動画で案内する",
+      "group": "unstarted",
+      "points": 8,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-39",
+      "title": "Web・iOS・Android別の実利用分析を強化する",
+      "group": "started",
+      "points": 8,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-38",
+      "title": "SquadNoteの機能紹介ページを実装する",
+      "group": "completed",
+      "points": 5,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-37",
+      "title": "国内外の競合サービスと提供機能を調査する",
+      "group": "completed",
+      "points": 5,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-36",
+      "title": "導入事例の一覧・詳細ページ基盤を実装する",
+      "group": "completed",
+      "points": 5,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-35",
+      "title": "公開トップページの情報設計を整理し、現状の改善を反映する",
+      "group": "completed",
+      "points": 5,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-34",
+      "title": "[Step 5] 体験期限とフォローアップを自動化する",
+      "group": "backlog",
+      "points": 8,
+      "priority": "low"
+    },
+    {
+      "identifier": "SQN-33",
+      "title": "[Step 4] 体験参加応募者の進捗管理画面を実装する",
+      "group": "backlog",
+      "points": 8,
+      "priority": "low"
+    },
+    {
+      "identifier": "SQN-32",
+      "title": "[Step 3] 体験参加申請リンクと承認導線を実装する",
+      "group": "backlog",
+      "points": 8,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-31",
+      "title": "[Step 2] 体験参加者と運営の個別メッセージを実装する",
+      "group": "backlog",
+      "points": 8,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-30",
+      "title": "[Step 1] 体験参加者権限と手動昇格・終了を実装する",
+      "group": "started",
+      "points": 8,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-29",
+      "title": "体験参加者を段階的に正式メンバーへ移行できる仕組みを整備する",
+      "group": "backlog",
+      "points": 1,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-28",
+      "title": "Android Push通知用にFirebase / FCM V1を本番構成へ追加する",
+      "group": "completed",
+      "points": 2,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-27",
+      "title": "2026-09-10以降にTurnstile旧版互換バイパスを最終削除する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-26",
+      "title": "次回App Storeリリースで中国語ネイティブ対応と実機検証を完了する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-25",
+      "title": "GROWTH-13 紹介施策と小規模広告を有効化率の基準達成後に検証する",
+      "group": "backlog",
+      "points": 8,
+      "priority": "low"
+    },
+    {
+      "identifier": "SQN-24",
+      "title": "[Phase 3] 重複アカウントのマージ機能",
+      "group": "backlog",
+      "points": 8,
+      "priority": "low"
+    },
+    {
+      "identifier": "SQN-23",
+      "title": "調整さんのCSVから練習日程をインポートできるようにする",
+      "group": "unstarted",
+      "points": 5,
+      "priority": "low"
+    },
+    {
+      "identifier": "SQN-22",
+      "title": "個人開発でLT・登壇できる場所を探す",
+      "group": "cancelled",
+      "points": null,
+      "priority": "low"
+    },
+    {
+      "identifier": "SQN-21",
+      "title": "[Mobile] 日程テンプレートと曜日一括生成を追加する",
+      "group": "backlog",
+      "points": 8,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-20",
+      "title": "[Mobile] 登録済み場所の選択・管理を日程フォームに追加する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-19",
+      "title": "GROWTH-11D Web・iOS・Androidの活動選択と用語プリセットを実装する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-18",
+      "title": "GROWTH-11E 活動別分析ディメンションと成長ダッシュボードを移行する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-17",
+      "title": "[Android][調査] 本番Pushトークンが0件の原因を特定する",
+      "group": "completed",
+      "points": 2,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-16",
+      "title": "GROWTH-12 中国語の利用開始クリティカルパスとストア公開を実機確認する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-15",
+      "title": "GROWTH-11A 活動プロフィール・用語プリセット基盤を段階導入する（Web・iOS・Android）",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-14",
+      "title": "[Security] v1.0.12普及後にTurnstile旧版互換バイパスを削除する",
+      "group": "completed",
+      "points": null,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-13",
+      "title": "[Phase 2.5] モバイル設定画面から Google を連携追加できるようにする",
+      "group": "backlog",
+      "points": 5,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-12",
+      "title": "モバイル用のサイドバーを実装する",
+      "group": "backlog",
+      "points": 3,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-11",
+      "title": "サークルトップの内容を再考する",
+      "group": "completed",
+      "points": 3,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-10",
+      "title": "メール配信基盤をするとしたらどうするか考える",
+      "group": "unstarted",
+      "points": 3,
+      "priority": "medium"
+    },
+    {
+      "identifier": "SQN-9",
+      "title": "GROWTH-22 文化系団体3件へヒアリングし1件の導入実証を行う",
+      "group": "unstarted",
+      "points": 8,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-8",
+      "title": "GROWTH-17 ピックルボール団体3件へヒアリングし1件の導入実証を行う",
+      "group": "unstarted",
+      "points": 8,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-7",
+      "title": "見やすさを意識した配色にする",
+      "group": "completed",
+      "points": null,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-6",
+      "title": "GROWTH-20 管理者向け成長ダッシュボードを実装する",
+      "group": "completed",
+      "points": null,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-5",
+      "title": "GROWTH-11B バドミントン向け利用場面LPを公開して有効化まで計測する",
+      "group": "completed",
+      "points": null,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-4",
+      "title": "GROWTH-15 Search Consoleで旧Android準備中表示を更新し検索基準値を記録する",
+      "group": "completed",
+      "points": null,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-3",
+      "title": "GROWTH-16 35人規模の継続利用団体を導入事例として取材・公開する",
+      "group": "started",
+      "points": 8,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-2",
+      "title": "GROWTH-09B 35秒紹介・90秒導入・主要操作の短尺動画を制作する",
+      "group": "started",
+      "points": 8,
+      "priority": "high"
+    },
+    {
+      "identifier": "SQN-1",
+      "title": "GROWTH-02 1人団体の作成者5名へヒアリングする",
+      "group": "started",
+      "points": 8,
+      "priority": "high"
+    }
+  ],
+  "features": {
+    "modules": 0,
+    "cycles": 0,
+    "dedicatedInitiatives": false
+  },
+  "projects": [
+    {
+      "name": "SLABYRINTH",
+      "identifier": "DRG"
+    },
+    {
+      "name": "Recital Originals 2026",
+      "identifier": "RECITAL"
+    },
+    {
+      "name": "meguri",
+      "identifier": "MEG"
+    },
+    {
+      "name": "SquadNote",
+      "identifier": "SQN"
+    },
+    {
+      "name": "hiro work",
+      "identifier": "HIROW"
+    }
+  ]
+}

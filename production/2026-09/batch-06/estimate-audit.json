@@ -1,0 +1,55 @@
+{
+  "python": "3.14.5",
+  "snapshotDate": "2026-09-11",
+  "totalOpen": {
+    "count": 22,
+    "points": 148
+  },
+  "groups": {
+    "backlog": {
+      "count": 11,
+      "points": 68
+    },
+    "unstarted": {
+      "count": 5,
+      "points": 32
+    },
+    "started": {
+      "count": 6,
+      "points": 48
+    }
+  },
+  "comparisons": {
+    "three_smaller": {
+      "ids": [
+        "SQN-10",
+        "SQN-12",
+        "SQN-13"
+      ],
+      "count": 3,
+      "points": 11
+    },
+    "three_larger": {
+      "ids": [
+        "SQN-9",
+        "SQN-30",
+        "SQN-39"
+      ],
+      "count": 3,
+      "points": 24
+    }
+  },
+  "excludedMissingPoints": 13,
+  "refusalChecks": {
+    "missing": "Missing points: ['SQN-10']",
+    "zero": "Unexpected point scale",
+    "unknown_scale": "Unexpected point scale",
+    "duplicate": "Duplicate work item"
+  },
+  "limits": [
+    "A current inventory, not a cycle history or capacity estimate",
+    "Parent and child scope may overlap; no automatic subtraction",
+    "Existing points may describe original or remaining imported scope",
+    "No velocity or hours inferred; no live mutation"
+  ]
+}

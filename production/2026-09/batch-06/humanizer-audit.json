@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md v2.9.1",
+  "files": [
+    {
+      "id": "P08",
+      "path": "articles/plane-cycle-release-module.md",
+      "before_sha256": "fda7e77d9c24082fa57fa16566a697db6be850e285e8135e75834d141c64863f",
+      "after_sha256": "262b82ef04707226214b91b3f8da3631deb163fd288dad9297f9edeb84c21baf",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "導入案・実記録・未実行の区別を保持。週末の状態を整えるという抽象表現を具体化。数字・コード・出典不変。"
+    },
+    {
+      "id": "P08",
+      "path": "devto/plane-cycle-release-module.md",
+      "before_sha256": "fc92ee93a745cad8741646a64d4f5d387ab44b059a092f79b3e0959b9e9b3204",
+      "after_sha256": "68df47c900c083ad8a05ec23b35fe00926b42871741259e2d92ec14306152a7c",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "The workflow remains hypothetical; actual unfinished mobile checks and the development-only acceptance boundary remain explicit."
+    },
+    {
+      "id": "P10",
+      "path": "articles/plane-initiative-personal-products.md",
+      "before_sha256": "f3780ae71b4b14c0c7013a4fed1d7abe139592566a27d47f249c820a4acfe6de",
+      "after_sha256": "553b4b1c29c8b3c5d071792567a3b8fbc40f2e65b5898237036aa506b00e3d2d",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "共通条件、管理先未確定、機能無効、効果未測定を保持。締めのメタ説明を題材へ戻した。"
+    },
+    {
+      "id": "P10",
+      "path": "devto/plane-initiative-personal-products.md",
+      "before_sha256": "42e5c19269ed2e0f7fdb4e67efe8dd302c0ac08f6c495efcdf6693518c256150",
+      "after_sha256": "a0b50fd13eecb153a2b634f5df031f03038c1b7a76bdf1083672a4b1d27b0c05",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "No adoption or measured efficiency claim added; absent project mappings are not interpreted as absence of all tracking."
+    },
+    {
+      "id": "P17",
+      "path": "articles/plane-codex-todo-consolidation.md",
+      "before_sha256": "80796e144534b26d52c3981dea60631fa4ceb41019d989eadff41fde26ede6ef",
+      "after_sha256": "fe9d14520da9d1b4b93aea46c905cd2bea8594640216b78022dc0fd091ceb6d9",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "冒頭を仮定として明示し、未確認の複数会話体験を作らない。実チケットの成果物・親子・Doneと公開準備の区別を保持。"
+    },
+    {
+      "id": "P17",
+      "path": "devto/plane-codex-todo-consolidation.md",
+      "before_sha256": "7c318488216163e5365e380569faf65bf26dfb97a9f716038bdca7f4af68ceaa",
+      "after_sha256": "6ff54d92742835c8969f7e06b54e4737fef4fe63aee1b2d18a7dcb25260a2eb6",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Opening is explicitly hypothetical. Curly quotes normalized; ticket IDs, deliverables, relationships and inspection scope unchanged."
+    },
+    {
+      "id": "P19",
+      "path": "articles/plane-estimate-capacity-experiment.md",
+      "before_sha256": "92e2984b05b1d57f714547f19ad99fbf1ad684f11c250d4b4f74e88c16e1f311",
+      "after_sha256": "c9a819656ff5d6a51905fbddfaef7d449c73692695e40c4c07152a715b43440f",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "件数とポイント、未設定の扱い、親子重複の限界は不変。数値を評価する視点を具体的な観測へ変更。"
+    },
+    {
+      "id": "P19",
+      "path": "devto/plane-estimate-capacity-experiment.md",
+      "before_sha256": "b293c9b0ce72db12e433faa1318a27b18df41dc1f33aa4d229fd68cde0018439",
+      "after_sha256": "9f1748775bf4497a1db23956241649907979e06497258b18aefb190387fd8b29",
+      "prose_edits": 12,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Removed first-person attribution to the author for agent-run checks. Counts, estimates, alternatives, proposed recording practice, and limits are retained; numeric token order must stay unchanged."
+    },
+    {
+      "id": "T14",
+      "path": "articles/react-memoization-cost.md",
+      "before_sha256": "279fed3b8c3b17c9fe3c772f1215947442c08761a31067e55218eca18d4e2e45",
+      "after_sha256": "12daaac677747f4f715cc187226ca193b7772d29ae8529dd3cbd9d56148b1047",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "メモ化効果を観測した具体的条件へ限定。全測定値、0表示の分解能、実行環境、コードを保持。"
+    },
+    {
+      "id": "T14",
+      "path": "devto/react-memoization-cost.md",
+      "before_sha256": "d217b1973c2c92668254aa7e0cf135e61bb148315150b2bd1ba13a9284970733",
+      "after_sha256": "cfd74e840f4ac9491bd82754c05ff4c1a67d0ada3a3d06df1de5b61e812cb658",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All timing values, fixture sizes, code and measurement boundaries unchanged. No application-wide speed claim."
+    },
+    {
+      "id": "O19",
+      "path": "articles/solo-web-ios-maintenance-scope.md",
+      "before_sha256": "497ec629da3cb094f9526ef04731e71f93e134c1fd9e612aca09f8acd8fd3012",
+      "after_sha256": "977733a3cbe7bd5f605f35de7ecd4782d0c0f20e42c19416e7942d05a8ae7728",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "本番API・distribution・runtime policy・固定版の値を保持。保守時間や配布済み状態を推測しない。"
+    },
+    {
+      "id": "O19",
+      "path": "devto/solo-web-ios-maintenance-scope.md",
+      "before_sha256": "6204cacc40a03a662bac41015da26e0ccb32c3bc1738564378dab191c4bef33b",
+      "after_sha256": "7a0f5a00d0012a4a729c4428a724e9ef05c6bf5b53554d0ea226643f3febd860",
+      "prose_edits": 4,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Straight quotes and concrete wording only. Historical source status remains distinct from deployed or installed versions."
+    }
+  ]
+}

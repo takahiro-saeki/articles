@@ -1,6 +1,6 @@
 # 記事制作進捗 2026年9月
 
-完成 29/90件（日本語＋英語の組）。残り 61件。先に書きたい12本は 9/12件完成。
+完成 35/90件（日本語＋英語の組）。残り 55件。先に書きたい12本は 9/12件完成。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -11,6 +11,7 @@
 - バッチ03: P14、P15、O09、O12、O17、O18。完成 6/6件。
 - バッチ04: T09、T39、T40、T42、T44、T45。完成 6/6件。
 - バッチ05: O13、O15、O16、O20、O21、O22。完成 6/6件。
+- バッチ06: P08、P10、P17、P19、T14、O19。完成 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
 - canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
@@ -24,18 +25,18 @@
 | P05 | Planeのラベルを増やしすぎない。個人開発で残した分類 | plane-label-taxonomy | 予定: public/plane-label-taxonomy.md | 予定: devto/plane-label-taxonomy.md | 未確認 | 未実施 | 未着手 |
 | P06 | PlaneのViewsで「今日やること」だけを全プロジェクトから集める | plane-today-cross-project-view | 予定: public/plane-today-cross-project-view.md | 予定: devto/plane-today-cross-project-view.md | 未確認 | 未実施 | 未着手 |
 | P07 | Plane Query Languageで個人用ダッシュボードを作る | plane-pql-personal-dashboard | 予定: public/plane-pql-personal-dashboard.md | 予定: devto/plane-pql-personal-dashboard.md | 未確認 | 未実施 | 未着手 |
-| P08 | 毎週のCycleとリリース用Moduleを混ぜない運用 | plane-cycle-release-module | 予定: articles/plane-cycle-release-module.md | 予定: devto/plane-cycle-release-module.md | 未確認 | 未実施 | 未着手 |
+| P08 | 週末に終わらなかった作業を、CycleとリリースModuleでどう扱うか | plane-cycle-release-module | [原稿](articles/plane-cycle-release-module.md) | [原稿](devto/plane-cycle-release-module.md) | Plane SQN-30とCycle/Module各0件、circle-hub d116e8aの未完了モバイル確認、公式仕様 | 週締め・Dev受け入れ・配布後の3時点を机上照合。実運用/移動操作なし | 完成 |
 | P09 | Moduleをアプリのバージョン単位で使ってみた | plane-version-module | 予定: public/plane-version-module.md | 予定: devto/plane-version-module.md | 未確認 | 未実施 | 未着手 |
-| P10 | Initiativeで複数の個人プロダクトを俯瞰する | plane-initiative-personal-products | 予定: articles/plane-initiative-personal-products.md | 予定: devto/plane-initiative-personal-products.md | 未確認 | 未実施 | 未着手 |
+| P10 | 個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める | plane-initiative-personal-products | [原稿](articles/plane-initiative-personal-products.md) | [原稿](devto/plane-initiative-personal-products.md) | 個人Plane全5Projectと専用Initiatives無効、SquadNote/Voices Diaryの固定通知仕様と実装 | 管理先の名前を照合。2アプリの共通条件は導入案。専用機能/実機通知の検証なし | 完成 |
 | P11 | PlaneのRecurring Work Itemsで定期保守を忘れない | plane-recurring-maintenance | 予定: public/plane-recurring-maintenance.md | 予定: devto/plane-recurring-maintenance.md | 未確認 | 未実施 | 未着手 |
 | P12 | 思いつきをPlaneへ入れる前に、Intakeを一段挟む | plane-intake-before-backlog | 予定: public/plane-intake-before-backlog.md | 予定: devto/plane-intake-before-backlog.md | 未確認 | 未実施 | 未着手 |
 | P13 | 新しい個人開発を始めるたびに使うPlane Project Template | plane-project-template | 予定: public/plane-project-template.md | 予定: devto/plane-project-template.md | 未確認 | 未実施 | 未着手 |
 | P14 | Plane PagesとWork Itemsのどちらに仕様を書くか | plane-pages-work-item-boundary | [原稿](articles/plane-pages-work-item-boundary.md) | [原稿](devto/plane-pages-work-item-boundary.md) | Plane SQN-29/30、Project Pages 0件、circle-hub 0cda1e8の検証文書と履歴、Plane公式Pages | 実装済みPageではなく導入案。Web確認記録とモバイル未完了を区別 | 完成 |
 | P15 | GitHub IssueとPlaneを二重管理しないための境界 | plane-github-issue-boundary | [原稿](articles/plane-github-issue-boundary.md) | [原稿](devto/plane-github-issue-boundary.md) | Plane GitHub連携とGitHub PR/Issueリンクの公式仕様を2026-09-11に照合 | 同期方向、参照のみ/状態変更、default branchでの終了条件。実同期は未実施 | 完成 |
 | P16 | CodexからPlaneへタスクを起票するとき、本文に何を残すか | plane-work-item-acceptance-evidence | 予定: public/plane-work-item-acceptance-evidence.md | 予定: devto/plane-work-item-acceptance-evidence.md | 未確認 | 未実施 | 未着手 |
-| P17 | 複数のCodexチャットで生まれたTODOをPlaneへ集約する | plane-codex-todo-consolidation | 予定: articles/plane-codex-todo-consolidation.md | 予定: devto/plane-codex-todo-consolidation.md | 未確認 | 未実施 | 未着手 |
+| P17 | CodexチャットのTODOをPlaneへ集約するとき、同じテーマを重複扱いしない | plane-codex-todo-consolidation | [原稿](articles/plane-codex-todo-consolidation.md) | [原稿](devto/plane-codex-todo-consolidation.md) | SQN-14/27/46/47/48/30の説明と親子関係、Instagram e295f5cと制作履歴 | 静止画/動画/親子/後続公開準備を照合。Doneを公開完了と扱わず、起票/統合なし | 完成 |
 | P18 | 止めた個人開発をPlaneでどう閉じるか | plane-close-paused-project | 予定: public/plane-close-paused-project.md | 予定: devto/plane-close-paused-project.md | 未確認 | 未実施 | 未着手 |
-| P19 | 一人開発でもEstimateを付ける意味はあるか | plane-estimate-capacity-experiment | 予定: articles/plane-estimate-capacity-experiment.md | 予定: devto/plane-estimate-capacity-experiment.md | 未確認 | 未実施 | 未着手 |
+| P19 | 一人開発のEstimateは、残り日数より抱えている作業の偏りに使う | plane-estimate-capacity-experiment | [原稿](articles/plane-estimate-capacity-experiment.md) | [原稿](devto/plane-estimate-capacity-experiment.md) | SquadNote非アーカイブ52件と現行Work Points、公式Estimates | Python3.14.5で未完了22件148pt、In Progress6件48pt、3件11対24pt。欠損/0/尺度外/重複4拒否 | 完成 |
 | P20 | Plane Cloudとセルフホストを個人利用の観点で比べる | plane-cloud-self-host-comparison | 予定: articles/plane-cloud-self-host-comparison.md | 予定: devto/plane-cloud-self-host-comparison.md | 未確認 | 未実施 | 未着手 |
 | T01 | Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる | promise-combinators-partial-failure | [原稿](public/promise-combinators-partial-failure.md) | [原稿](devto/promise-combinators-partial-failure.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T02 | TypeScriptの`satisfies`、型注釈、`as`は何が違うのか | typescript-satisfies-annotation-assertion | 予定: public/typescript-satisfies-annotation-assertion.md | 予定: devto/typescript-satisfies-annotation-assertion.md | 未確認 | 未実施 | 未着手 |
@@ -50,7 +51,7 @@
 | T11 | Reactの`key`をindexにすると何が壊れるのか、入力欄で再現した | react-index-key-input-reorder | 予定: public/react-index-key-input-reorder.md | 予定: devto/react-index-key-input-reorder.md | 未確認 | 未実施 | 未着手 |
 | T12 | Strict Modeで`useEffect`が二度動く理由を改めて確認した | strict-mode-effect-cleanup | 予定: public/strict-mode-effect-cleanup.md | 予定: devto/strict-mode-effect-cleanup.md | 未確認 | 未実施 | 未着手 |
 | T13 | controlledとuncontrolled inputをフォーム規模別に比べてみた | controlled-uncontrolled-form-experiment | 予定: public/controlled-uncontrolled-form-experiment.md | 予定: devto/controlled-uncontrolled-form-experiment.md | 未確認 | 未実施 | 未着手 |
-| T14 | `useMemo`と`useCallback`はいつ逆に遅くなるのか | react-memoization-cost | 予定: articles/react-memoization-cost.md | 予定: devto/react-memoization-cost.md | 未確認 | 未実施 | 未着手 |
+| T14 | useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる | react-memoization-cost | [原稿](articles/react-memoization-cost.md) | [原稿](devto/react-memoization-cost.md) | React公式useMemo/useCallback、circle-hub 770de5fの実formatterと呼出元 | React19.2.5 production/CompilerなしChrome152で9ケース×9round、各100更新。安定propsの再計算/DOM一致、paint除外 | 完成 |
 | T15 | `useSyncExternalStore`は何を解決するAPIなのか | use-sync-external-store-ssr | 予定: public/use-sync-external-store-ssr.md | 予定: devto/use-sync-external-store-ssr.md | 未確認 | 未実施 | 未着手 |
 | T16 | Reactのcallback refが返すcleanupを改めて調べた | react-callback-ref-cleanup | 予定: public/react-callback-ref-cleanup.md | 予定: devto/react-callback-ref-cleanup.md | 未確認 | 未実施 | 未着手 |
 | T17 | `useActionState`を普通のフォームstateと比べてみた | use-action-state-form-experiment | 予定: public/use-action-state-form-experiment.md | 予定: devto/use-action-state-form-experiment.md | 未確認 | 未実施 | 未着手 |
@@ -100,7 +101,7 @@
 | O16 | 63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する | trailer-timeline-before-editing | [原稿](articles/trailer-timeline-before-editing.md) | [原稿](devto/trailer-timeline-before-editing.md) | game-jam-lab bf5c7e7/f074703のcapture、README、compose、FFmpeg公式 | 11区間の連続性と実game表示51.5秒、元関数をGodot4.6.2で22assertions、MP4二本のffprobe。再レンダー/全frame目視/効果測定なし | 完成 |
 | O17 | AI生成素材の出典、原本、採否をどう残したか | generated-asset-provenance-decisions | [原稿](articles/generated-asset-provenance-decisions.md) | [原稿](devto/generated-asset-provenance-decisions.md) | game-jam-lab f074703の出典文書・台帳・runtime preload・Git履歴 | 30batch/107候補、原本欠落0、承認35/保留13/却下3/未確認56。未確認3件のコード参照 | 完成 |
 | O18 | ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか | local-image-generation-reproducibility | [原稿](articles/local-image-generation-reproducibility.md) | [原稿](devto/local-image-generation-reproducibility.md) | local-anime-studio 2aeb306のCLI/workflow/モデル台帳/履歴、ComfyUI/PyTorch公式仕様 | 既存34テストとrepo validator成功。実CLIの2経路で記録の有無をassert。GPU未実行 | 完成 |
-| O19 | WebとiOSの2サービスを一人で運用すると、保守タスクはどう増えるか | solo-web-ios-maintenance-scope | 予定: articles/solo-web-ios-maintenance-scope.md | 予定: devto/solo-web-ios-maintenance-scope.md | 未確認 | 未実施 | 未着手 |
+| O19 | 2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする | solo-web-ios-maintenance-scope | [原稿](articles/solo-web-ios-maintenance-scope.md) | [原稿](devto/solo-web-ios-maintenance-scope.md) | circle-hub d116e8aとvoice-training-log 6143bb9、固定設定と通知実装、Expo公式runtime | 20資料のhash、preview配布/API差、runtime方針を静的照合。実配布/実機/保守時間なし | 完成 |
 | O20 | 複数端末Pushの移行は、旧版のログアウトが残る間は終わらない | expo-multi-device-push-rollout | [原稿](articles/expo-multi-device-push-rollout.md) | [原稿](devto/expo-multi-device-push-rollout.md) | circle-hub 0cda1e8とad0a669親の実router、mobile旧/新解除、配信資料、Expo runtime公式 | 実tRPC+in-memory libSQLで旧/新server×全/端末別解除の4ケース、既存8テスト。実機受信/OTA配布なし | 完成 |
 | O21 | 認証エラーのConfigurationを原因と決めつけず、復旧を確認する | auth-incident-recovery-evidence | [原稿](articles/auth-incident-recovery-evidence.md) | [原稿](devto/auth-incident-recovery-evidence.md) | circle-hub d116e8aの3段階Git履歴、認証復旧設計/実装、Auth.js公式Errors | 固定source8ファイル47テスト成功。Auth core0.37.2でPKCE欠落302/InvalidCheckと再開始S256。実OAuth/本番logsなし | 完成 |
 | O22 | ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す | guest-identity-without-placeholder-user | [原稿](articles/guest-identity-without-placeholder-user.md) | [原稿](devto/guest-identity-without-placeholder-user.md) | circle-hub 9aec489の設計/移行/ownership/router/端末保存、WebCrypto公式 | 既存15テスト成功。実乱数/hash、routerはDB/通知モック。token一致・旧鍵失効・公開情報制限。実D1/複数process未検証 | 完成 |

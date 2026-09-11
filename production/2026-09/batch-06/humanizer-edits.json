@@ -1,0 +1,242 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md v2.9.1",
+  "files": [
+    {
+      "id": "P08",
+      "path": "articles/plane-cycle-release-module.md",
+      "edits": [
+        [
+          "週の締めでは、作業の状態をそのまま残して持ち越しを判断します。",
+          "週を締めるときは、未完了の状態を変えずに持ち越しを判断します。"
+        ],
+        [
+          "持ち越しがあること自体より、持ち越す理由と次に確認する対象が分かる記録を残すことが、今回のケースでは必要です。",
+          "このケースでは、持ち越す理由と、次に確認する端末や項目を記録へ残します。"
+        ]
+      ],
+      "semantic_review": "導入案・実記録・未実行の区別を保持。週末の状態を整えるという抽象表現を具体化。数字・コード・出典不変。"
+    },
+    {
+      "id": "P08",
+      "path": "devto/plane-cycle-release-module.md",
+      "edits": [
+        [
+          "That supports keeping one work item and viewing it through a time period and a deliverable.",
+          "Keep one work item and relate it to the relevant period and deliverable."
+        ],
+        [
+          "In this case, useful carryover records need to explain why the work remains and what should be verified next.",
+          "For this case, record why the work remains and which device or behavior needs checking next."
+        ]
+      ],
+      "semantic_review": "The workflow remains hypothetical; actual unfinished mobile checks and the development-only acceptance boundary remain explicit."
+    },
+    {
+      "id": "P10",
+      "path": "articles/plane-initiative-personal-products.md",
+      "edits": [
+        [
+          "先に複数のプロダクトで満たしたい完了条件を書きます。",
+          "複数のプロダクトで何を満たせば終わりか、先に書きます。"
+        ],
+        [
+          "まず共通の完了条件を書けるかを確かめる。それが書けた範囲だけをInitiativeの候補へ入れる、という進め方が、この例では具体化できました。",
+          "この例なら、二つのアプリの通知を追える条件を先に書き、その条件に必要な対象だけをInitiativeの候補にします。"
+        ]
+      ],
+      "semantic_review": "共通条件、管理先未確定、機能無効、効果未測定を保持。締めのメタ説明を題材へ戻した。"
+    },
+    {
+      "id": "P10",
+      "path": "devto/plane-initiative-personal-products.md",
+      "edits": [
+        [
+          "That separates each project's ongoing progress from completion of the cross-project objective.",
+          "Each project's ongoing progress can then be checked separately from completion of the shared objective."
+        ],
+        [
+          "In this case, writing shared acceptance criteria first made it possible to identify a bounded candidate initiative.",
+          "Here, the proposed initiative includes the apps needed to satisfy the notification-tracing criteria."
+        ]
+      ],
+      "semantic_review": "No adoption or measured efficiency claim added; absent project mappings are not interpreted as absence of all tracking."
+    },
+    {
+      "id": "P17",
+      "path": "articles/plane-codex-todo-consolidation.md",
+      "edits": [
+        [
+          "「招待リンクから団体へ参加する方法を紹介する」というTODOが、別の会話にも出てきた。",
+          "「招待リンクから団体へ参加する方法を紹介する」というTODOを、複数の会話で見つけた場合を考えます。"
+        ],
+        [
+          "集約するときに揃えたいのは、会話の件数より、作業の対象と成果物です。",
+          "集約するときは、作業の対象と成果物を照合します。"
+        ],
+        [
+          "会話のTODOを集約する作業は、見つかった文章を全部チケットへ変えることではありません。既存のどの成果物を、どの時点から進めるのかを揃える作業です。",
+          "会話のTODOから、既存のどの成果物を、どの時点から進めるのかを特定します。見つかった文章をすべて新規チケットにする必要はありません。"
+        ]
+      ],
+      "semantic_review": "冒頭を仮定として明示し、未確認の複数会話体験を作らない。実チケットの成果物・親子・Doneと公開準備の区別を保持。"
+    },
+    {
+      "id": "P17",
+      "path": "devto/plane-codex-todo-consolidation.md",
+      "edits": [
+        [
+          "A TODO to explain joining a group through an invitation link appears in another conversation.",
+          "Suppose a TODO to explain joining a group through an invitation link appears in more than one conversation."
+        ],
+        [
+          "“remove the old code”",
+          "\"remove the old code\""
+        ],
+        [
+          "“SquadNote / invitation guidance / vertical video / current flow, subtitles, and visuals agree.”",
+          "\"SquadNote / invitation guidance / vertical video / current flow, subtitles, and visuals agree.\""
+        ]
+      ],
+      "semantic_review": "Opening is explicitly hypothetical. Curly quotes normalized; ticket IDs, deliverables, relationships and inspection scope unchanged."
+    },
+    {
+      "id": "P19",
+      "path": "articles/plane-estimate-capacity-experiment.md",
+      "edits": [
+        [
+          "今回分かったのは、期限の予測精度ではなく、進行中の作業が大きいものへ偏っていることです。",
+          "集計では、進行中の作業が大きいものへ偏っていました。期限の予測精度は検証していません。"
+        ],
+        [
+          "もう一つ目についたのは、In Progressの6件がすべて8ポイントだったことです。",
+          "In Progressの6件は、すべて8ポイントでした。"
+        ]
+      ],
+      "semantic_review": "件数とポイント、未設定の扱い、親子重複の限界は不変。数値を評価する視点を具体的な観測へ変更。"
+    },
+    {
+      "id": "P19",
+      "path": "devto/plane-estimate-capacity-experiment.md",
+      "edits": [
+        [
+          "I read the Work Points stored in Plane for SquadNote, a personal project, and compared equal task counts with their estimates.",
+          "This audit compares equal task counts with the Work Points stored in Plane for SquadNote, a personal project."
+        ],
+        [
+          "and I did not convert the total into days remaining.",
+          "and the total was not converted into days remaining."
+        ],
+        [
+          "On September 11, 2026, I retrieved 52 non-archived work items from the personal workspace and checked that there was no next page.",
+          "On September 11, 2026, the audit retrieved 52 non-archived work items from the personal workspace and verified that there was no next page."
+        ],
+        [
+          "The scale gives me a reason to ask about the size of the next task.",
+          "The scale prompts a check of the next task's size."
+        ],
+        [
+          "Before adding anything up, I checked every item outside the completed and cancelled groups.",
+          "The audit checked every item outside the completed and cancelled groups before adding their estimates."
+        ],
+        [
+          "I did not retrieve cycle histories, additions during a cycle, or estimate revisions.",
+          "The retrieval did not include cycle histories, additions during a cycle, or estimate revisions."
+        ],
+        [
+          "I then modified local copies to contain a missing estimate, zero, an out-of-scale value of 13, and a duplicate ID.",
+          "Further checks used local copies containing a missing estimate, zero, an out-of-scale value of 13, and a duplicate ID."
+        ],
+        [
+          "I selected two groups from the open items without changing their existing values.",
+          "The comparison uses two groups of open items with their existing values unchanged."
+        ],
+        [
+          "Their estimates give me a reason to read the scope again before putting them into the same planning window.",
+          "Their estimates warrant reading the scope again before putting them into the same planning window."
+        ],
+        [
+          "I would check which of those six are being implemented and which are waiting for verification.",
+          "check which of those six are being implemented and which are waiting for verification."
+        ],
+        [
+          "For a new weekly record, I would separately retain the work selected at the start, work added later, completed work, and carryover. If an estimate changes, I would retain its previous value too.",
+          "A new weekly record could separately retain the work selected at the start, work added later, completed work, and carryover. It could also retain the previous value when an estimate changes."
+        ],
+        [
+          "In this snapshot, the six In Progress items are where I would begin that review.",
+          "In this snapshot, the six In Progress items provide a starting point for that review."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution to the author for agent-run checks. Counts, estimates, alternatives, proposed recording practice, and limits are retained; numeric token order must stay unchanged."
+    },
+    {
+      "id": "T14",
+      "path": "articles/react-memoization-cost.md",
+      "edits": [
+        [
+          "メモ化を入れた場所の数より、そこで省けた処理を確認するほうが判断しやすくなります。",
+          "メモ化を入れるかは、そこで省けた処理を確認して判断します。"
+        ],
+        [
+          "この条件を確認せずコールバックだけ囲んでも、今回の重い処理は残ります。",
+          "コールバックだけ囲んでも、この二つのケースでは重い整形処理が残りました。"
+        ]
+      ],
+      "semantic_review": "メモ化効果を観測した具体的条件へ限定。全測定値、0表示の分解能、実行環境、コードを保持。"
+    },
+    {
+      "id": "T14",
+      "path": "devto/react-memoization-cost.md",
+      "edits": [
+        [
+          "Counting the work avoided is more useful than counting how many places use memoization.",
+          "Decide whether to add memoization by checking the work it avoids."
+        ],
+        [
+          "These results help choose where to make those checks.",
+          "The calculation counts identify which updates are worth inspecting."
+        ]
+      ],
+      "semantic_review": "All timing values, fixture sizes, code and measurement boundaries unchanged. No application-wide speed claim."
+    },
+    {
+      "id": "O19",
+      "path": "articles/solo-web-ios-maintenance-scope.md",
+      "edits": [
+        [
+          "二つともExpoを使っているからといって、片方の配布手順をもう片方へそのままコピーするのは避けたいところです。",
+          "両方でExpoを使っていても、配布手順をコピーする前に設定を照合します。"
+        ],
+        [
+          "その範囲でも、共通化する項目とサービスごとに残す項目は分かれます。",
+          "この棚卸しから、共通化できる記録の書式と、サービスごとに確認する設定を分けられます。"
+        ]
+      ],
+      "semantic_review": "本番API・distribution・runtime policy・固定版の値を保持。保守時間や配布済み状態を推測しない。"
+    },
+    {
+      "id": "O19",
+      "path": "devto/solo-web-ios-maintenance-scope.md",
+      "edits": [
+        [
+          "“preview”",
+          "\"preview\""
+        ],
+        [
+          "“fix the login screen”",
+          "\"fix the login screen\""
+        ],
+        [
+          "“notification maintenance”",
+          "\"notification maintenance\""
+        ],
+        [
+          "Even within that scope, some practices can be shared and others remain specific to each service.",
+          "The audit distinguishes a shared recording format from settings that need checking for each service."
+        ]
+      ],
+      "semantic_review": "Straight quotes and concrete wording only. Historical source status remains distinct from deployed or installed versions."
+    }
+  ]
+}

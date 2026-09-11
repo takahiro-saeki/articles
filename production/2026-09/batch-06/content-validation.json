@@ -1,0 +1,224 @@
+{
+  "pairs": 6,
+  "canonicalPending": [],
+  "eligibleForCompletion": 6,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P08",
+      "jaCharacters": 2669,
+      "enWords": 876,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.075
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.062
+        },
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.061
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.263
+        },
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.232
+        }
+      ]
+    },
+    {
+      "id": "P10",
+      "jaCharacters": 3116,
+      "enWords": 915,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/solo-web-ios-maintenance-scope.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.072
+        },
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.26
+        },
+        {
+          "path": "devto/solo-web-ios-maintenance-scope.md",
+          "score": 0.251
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.24
+        }
+      ]
+    },
+    {
+      "id": "P17",
+      "jaCharacters": 2974,
+      "enWords": 889,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.041
+        },
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.039
+        },
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.037
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "P19",
+      "jaCharacters": 3278,
+      "enWords": 1048,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.037
+        },
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.035
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.033
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.208
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.198
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.196
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "jaCharacters": 3876,
+      "enWords": 1124,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/auth-incident-recovery-evidence.md",
+          "score": 0.047
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.044
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.042
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.197
+        },
+        {
+          "path": "devto/auth-incident-recovery-evidence.md",
+          "score": 0.193
+        },
+        {
+          "path": "devto/plane-codex-todo-consolidation.md",
+          "score": 0.192
+        }
+      ]
+    },
+    {
+      "id": "O19",
+      "jaCharacters": 3461,
+      "enWords": 942,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/eas-update-runtime-version-operations.md",
+          "score": 0.057
+        },
+        {
+          "path": "articles/testflight-continuous-release.md",
+          "score": 0.053
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.251
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.232
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.228
+        }
+      ]
+    }
+  ]
+}

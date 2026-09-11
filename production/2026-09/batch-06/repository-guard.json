@@ -1,0 +1,19 @@
+{
+  "baseline": "8a1bfa8",
+  "priorBatchHead": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+  "baselineProtectedFiles": {
+    "count": 137,
+    "excluded": [
+      "ARTICLE_IDEAS_2026-09.md"
+    ],
+    "byteIdentical": true
+  },
+  "priorArticleFiles": {
+    "count": 189,
+    "byteIdentical": true
+  },
+  "humanizerFinalHashes": {
+    "count": 12,
+    "allMatch": true
+  }
+}

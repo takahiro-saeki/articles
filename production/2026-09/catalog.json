@@ -113,7 +113,7 @@
   },
   {
     "id": "P08",
-    "title": "毎週のCycleとリリース用Moduleを混ぜない運用",
+    "title": "週末に終わらなかった作業を、CycleとリリースModuleでどう扱うか",
     "original_title": "毎週のCycleとリリース用Moduleを混ぜない運用",
     "slug": "plane-cycle-release-module",
     "angle": "時間軸と成果物の違い",
@@ -122,10 +122,10 @@
     "japanese": "articles/plane-cycle-release-module.md",
     "english": "devto/plane-cycle-release-module.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 6,
+    "fact_check": "Plane SQN-30とCycle/Module各0件、circle-hub d116e8aの未完了モバイル確認、公式仕様",
+    "verification": "週締め・Dev受け入れ・配布後の3時点を机上照合。実運用/移動操作なし",
+    "status": "完成"
   },
   {
     "id": "P09",
@@ -145,7 +145,7 @@
   },
   {
     "id": "P10",
-    "title": "Initiativeで複数の個人プロダクトを俯瞰する",
+    "title": "個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める",
     "original_title": "Initiativeで複数の個人プロダクトを俯瞰する",
     "slug": "plane-initiative-personal-products",
     "angle": "SquadNote、Voices Diary、ゲーム制作の束ね方",
@@ -154,10 +154,10 @@
     "japanese": "articles/plane-initiative-personal-products.md",
     "english": "devto/plane-initiative-personal-products.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 6,
+    "fact_check": "個人Plane全5Projectと専用Initiatives無効、SquadNote/Voices Diaryの固定通知仕様と実装",
+    "verification": "管理先の名前を照合。2アプリの共通条件は導入案。専用機能/実機通知の検証なし",
+    "status": "完成"
   },
   {
     "id": "P11",
@@ -257,7 +257,7 @@
   },
   {
     "id": "P17",
-    "title": "複数のCodexチャットで生まれたTODOをPlaneへ集約する",
+    "title": "CodexチャットのTODOをPlaneへ集約するとき、同じテーマを重複扱いしない",
     "original_title": "複数のCodexチャットで生まれたTODOをPlaneへ集約する",
     "slug": "plane-codex-todo-consolidation",
     "angle": "会話を作業記録へ変換する手順",
@@ -266,10 +266,10 @@
     "japanese": "articles/plane-codex-todo-consolidation.md",
     "english": "devto/plane-codex-todo-consolidation.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 6,
+    "fact_check": "SQN-14/27/46/47/48/30の説明と親子関係、Instagram e295f5cと制作履歴",
+    "verification": "静止画/動画/親子/後続公開準備を照合。Doneを公開完了と扱わず、起票/統合なし",
+    "status": "完成"
   },
   {
     "id": "P18",
@@ -289,7 +289,7 @@
   },
   {
     "id": "P19",
-    "title": "一人開発でもEstimateを付ける意味はあるか",
+    "title": "一人開発のEstimateは、残り日数より抱えている作業の偏りに使う",
     "original_title": "一人開発でもEstimateを付ける意味はあるか",
     "slug": "plane-estimate-capacity-experiment",
     "angle": "精度より、抱えすぎを見つける用途",
@@ -298,10 +298,10 @@
     "japanese": "articles/plane-estimate-capacity-experiment.md",
     "english": "devto/plane-estimate-capacity-experiment.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 6,
+    "fact_check": "SquadNote非アーカイブ52件と現行Work Points、公式Estimates",
+    "verification": "Python3.14.5で未完了22件148pt、In Progress6件48pt、3件11対24pt。欠損/0/尺度外/重複4拒否",
+    "status": "完成"
   },
   {
     "id": "P20",
@@ -530,7 +530,7 @@
   },
   {
     "id": "T14",
-    "title": "`useMemo`と`useCallback`はいつ逆に遅くなるのか",
+    "title": "useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる",
     "original_title": "`useMemo`と`useCallback`はいつ逆に遅くなるのか",
     "slug": "react-memoization-cost",
     "angle": "計測を含む小さなベンチマーク",
@@ -539,10 +539,10 @@
     "japanese": "articles/react-memoization-cost.md",
     "english": "devto/react-memoization-cost.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 6,
+    "fact_check": "React公式useMemo/useCallback、circle-hub 770de5fの実formatterと呼出元",
+    "verification": "React19.2.5 production/CompilerなしChrome152で9ケース×9round、各100更新。安定propsの再計算/DOM一致、paint除外",
+    "status": "完成"
   },
   {
     "id": "T15",
@@ -1332,7 +1332,7 @@
   },
   {
     "id": "O19",
-    "title": "WebとiOSの2サービスを一人で運用すると、保守タスクはどう増えるか",
+    "title": "2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする",
     "original_title": "WebとiOSの2サービスを一人で運用すると、保守タスクはどう増えるか",
     "slug": "solo-web-ios-maintenance-scope",
     "angle": "SquadNoteとVoices Diary",
@@ -1341,10 +1341,10 @@
     "japanese": "articles/solo-web-ios-maintenance-scope.md",
     "english": "devto/solo-web-ios-maintenance-scope.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 6,
+    "fact_check": "circle-hub d116e8aとvoice-training-log 6143bb9、固定設定と通知実装、Expo公式runtime",
+    "verification": "20資料のhash、preview配布/API差、runtime方針を静的照合。実配布/実機/保守時間なし",
+    "status": "完成"
   },
   {
     "id": "O20",

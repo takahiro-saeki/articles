@@ -1,0 +1,174 @@
+{
+  "checkedOn": "2026-09-11",
+  "sources": {
+    "squadnote": {
+      "repository": "circle-hub-auth-recovery",
+      "commit": "d116e8a343e8d9e7ddd3d1985efe590fa1901868"
+    },
+    "voices": {
+      "repository": "voice-training-log",
+      "commit": "6143bb99873ccf04b134dad4ac6b12c6e7a02d48"
+    },
+    "instagram": {
+      "repository": "circle-hub-sqn-47-instagram-01",
+      "commit": "e295f5cedf9f8989b36c9f308dee4dbd8cf64c3f"
+    }
+  },
+  "configs": {
+    "squadnote": {
+      "version": "1.0.13",
+      "runtimePolicy": "appVersion",
+      "buildProfiles": {
+        "development": {
+          "distribution": "internal",
+          "channel": "development",
+          "apiOrigin": "https://dev.squad-note.com"
+        },
+        "qa": {
+          "distribution": "internal",
+          "channel": "development",
+          "apiOrigin": "https://dev.squad-note.com"
+        },
+        "preview": {
+          "distribution": "internal",
+          "channel": "preview",
+          "apiOrigin": "https://squad-note.com"
+        },
+        "production": {
+          "distribution": null,
+          "channel": "production",
+          "apiOrigin": "https://squad-note.com"
+        }
+      }
+    },
+    "voices": {
+      "version": "1.1.0",
+      "runtimePolicy": "fingerprint",
+      "buildProfiles": {
+        "development": {
+          "distribution": "internal",
+          "channel": null,
+          "apiOrigin": "https://dev.voicesdiary.com"
+        },
+        "preview": {
+          "distribution": "store",
+          "channel": "preview",
+          "apiOrigin": "https://voicesdiary.com"
+        },
+        "production": {
+          "distribution": null,
+          "channel": "production",
+          "apiOrigin": "https://voicesdiary.com"
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "source": "squadnote",
+      "path": "apps/mobile/app.config.ts",
+      "sha256": "77a4478b4b194ad667a1af636b0e8f8b5a886e1dcae28e34fc13328a1ba6c3dd"
+    },
+    {
+      "source": "squadnote",
+      "path": "apps/mobile/eas.json",
+      "sha256": "d2aac44e2dfc10856caec25c589558cc7e788e803ff9e53b3a35058c1acc86cb"
+    },
+    {
+      "source": "voices",
+      "path": "apps/mobile/app.config.ts",
+      "sha256": "15db7d22386b21ab9f7681a11987fe63795202ce00cd6a8fce0e6305d202fec3"
+    },
+    {
+      "source": "voices",
+      "path": "apps/mobile/eas.json",
+      "sha256": "9ba6fb1a40f0ef527621a00adba15a27f031ee061cc83a192b0d56c2bcc80447"
+    },
+    {
+      "source": "voices",
+      "path": "README.md",
+      "sha256": "377a245c16349f00eaf6d4de8c93a359d2299b10a1fdf5d172e5ec2a1ec1bb11"
+    },
+    {
+      "source": "voices",
+      "path": "apps/mobile/src/app/login.tsx",
+      "sha256": "5bc560ad72e92bd07e342803b588f967f0bae307e03adfce5ede8260f85f31f8"
+    },
+    {
+      "source": "voices",
+      "path": "apps/mobile/src/lib/notifications.ts",
+      "sha256": "974fb932b79326c56248a3401765b4bec7b61a463b3af2c9114a35f968205349"
+    },
+    {
+      "source": "voices",
+      "path": "apps/web/src/server/api/routers/notification.ts",
+      "sha256": "75269c2432d10d851572f8c25ffdd152e10b0baaeaf2440b48c90ea8785acc6b"
+    },
+    {
+      "source": "voices",
+      "path": "docs/15-notification-reminders.md",
+      "sha256": "0d1071ac752fb79765c51342aaef96583111d8021df0b65d08b7a1f57b3c1018"
+    },
+    {
+      "source": "voices",
+      "path": "docs/16-retention-social-roadmap.md",
+      "sha256": "3171ec246ac555a1c87bcfd4913b14d226e7ed9ac4e0d066715bdd3db163d4f7"
+    },
+    {
+      "source": "voices",
+      "path": "docs/17-remote-notification-test.md",
+      "sha256": "38ed744dddc033b8553cb2e2fcd5571026fa29d17896ef91f51b3fb03052f7ca"
+    },
+    {
+      "source": "voices",
+      "path": "docs/10-testflight-runbook.md",
+      "sha256": "9a83d3bb0cad1568e849209a1f347a9838c274220f116faa277b7355bd6a0abf"
+    },
+    {
+      "source": "squadnote",
+      "path": "docs/multi-device-push.md",
+      "sha256": "7f8642ef485b4172f11cc3ecffd609b2ba1c1c8751648e1162738ca42af1b51b"
+    },
+    {
+      "source": "squadnote",
+      "path": "apps/web/src/server/api/routers/notification.ts",
+      "sha256": "3f68fa6188326a4dd692afa95ac775f3c31effcc450d7fde2e48c2273ebeb47f"
+    },
+    {
+      "source": "squadnote",
+      "path": "apps/web/src/server/api/lib/notify.ts",
+      "sha256": "36c4344714a5dea3a268e12140253549f2630c94a57630e6b48ca2d10c076e2f"
+    },
+    {
+      "source": "squadnote",
+      "path": "docs/testing/sqn-30-trial-participant-checklist.md",
+      "sha256": "0401c64e22363ee60edc6d05290cc75ea89b7ea6df80161b3cf0f37e2fb2df03"
+    },
+    {
+      "source": "instagram",
+      "path": "docs/marketing/instagram/001-invite-join/README.md",
+      "sha256": "bff73a37716d2d15f45d61db09a49d189b061cc428c576c4041d1436d46ca6fd"
+    },
+    {
+      "source": "instagram",
+      "path": "docs/marketing/instagram/001-invite-join/video/README.md",
+      "sha256": "7350f689746804949954201c23c167092d99c1c918a256d36c999bc94c393a4c"
+    },
+    {
+      "source": "instagram",
+      "path": "docs/marketing/instagram/001-invite-join/video/publication-check.md",
+      "sha256": "85231c5080230fcf694db579b4d069159a26a493b7bd8ef52ad36d6de0b0ac9d"
+    },
+    {
+      "source": "instagram",
+      "path": "docs/marketing/instagram/README.md",
+      "sha256": "f85515a5e6ea7c49ae139120859f31b9413686f13dee2e8c284bf482e8405f68"
+    }
+  ],
+  "limits": [
+    "Static source and configuration inspection only",
+    "No evaluation of production deployments or installed native binaries",
+    "README and historical checklist status are not a current release inventory",
+    "No notification or authentication requests were sent"
+  ]
+}

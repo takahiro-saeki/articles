@@ -36,7 +36,8 @@ function parse(path){
  }
  assert(!fence,`${path}: unclosed fence`);
  assert(!/[—–]/.test(body),`${path}: Humanizer dash audit`);
- assert(!/TODO|TBD|example\.com|zenn\.dev\/xxx/.test(raw),`${path}: unresolved placeholder`);
+ // TODO is also the subject of a finished article; reject unfinished markers, not topic words.
+ assert(!/(?:^|\n)\s*(?:TODO|TBD)\s*(?=[:：]|\n|$)|example\.com|zenn\.dev\/xxx/.test(raw),`${path}: unresolved placeholder`);
  assert(body.trim().length>0);
  return {path,raw,meta,body,code};
 }
