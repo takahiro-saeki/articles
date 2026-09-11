@@ -1,0 +1,300 @@
+{
+  "pairs": 8,
+  "canonicalPending": [
+    "T01",
+    "T31",
+    "T37"
+  ],
+  "eligibleForCompletion": 5,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P02",
+      "jaCharacters": 2763,
+      "enWords": 805,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.047
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.044
+        },
+        {
+          "path": "articles/publishing-38-day-audit.md",
+          "score": 0.024
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.217
+        },
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.204
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.182
+        }
+      ]
+    },
+    {
+      "id": "T01",
+      "jaCharacters": 2744,
+      "enWords": 634,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.056
+        },
+        {
+          "path": "articles/scheduled-publishing-recovery-boundary.md",
+          "score": 0.048
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.042
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.207
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.186
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.177
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "jaCharacters": 3740,
+      "enWords": 934,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.055
+        },
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.052
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.236
+        },
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.2
+        }
+      ]
+    },
+    {
+      "id": "T31",
+      "jaCharacters": 3042,
+      "enWords": 712,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.049
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.042
+        },
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.041
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.191
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.184
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.179
+        }
+      ]
+    },
+    {
+      "id": "T36",
+      "jaCharacters": 3903,
+      "enWords": 974,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 6,
+      "nearestExisting": [
+        {
+          "path": "public/d1-composite-index-column-order.md",
+          "score": 0.066
+        },
+        {
+          "path": "public/promise-combinators-partial-failure.md",
+          "score": 0.056
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.055
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.211
+        },
+        {
+          "path": "devto/promise-combinators-partial-failure.md",
+          "score": 0.207
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.204
+        }
+      ]
+    },
+    {
+      "id": "T37",
+      "jaCharacters": 3431,
+      "enWords": 743,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 8,
+      "nearestExisting": [
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.066
+        },
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.048
+        },
+        {
+          "path": "articles/migrate-node-sqlite-to-d1.md",
+          "score": 0.043
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.198
+        },
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.194
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.183
+        }
+      ]
+    },
+    {
+      "id": "O07",
+      "jaCharacters": 2945,
+      "enWords": 834,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.048
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.236
+        },
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.204
+        }
+      ]
+    },
+    {
+      "id": "O10",
+      "jaCharacters": 3701,
+      "enWords": 874,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/repository-decision-log-evidence.md",
+          "score": 0.056
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.048
+        },
+        {
+          "path": "articles/publishing-38-day-audit.md",
+          "score": 0.048
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/repository-decision-log-evidence.md",
+          "score": 0.21
+        },
+        {
+          "path": "devto/volt-nomad-codex-production.md",
+          "score": 0.196
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.194
+        }
+      ]
+    }
+  ]
+}

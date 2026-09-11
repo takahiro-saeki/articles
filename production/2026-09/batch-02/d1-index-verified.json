@@ -1,0 +1,31 @@
+{
+  "wrangler": "4.81.1",
+  "node": "v24.15.0",
+  "scope": "local D1; plans and result IDs; no latency benchmark",
+  "rows": 10000,
+  "plans": [
+    [
+      "SCAN notification",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ],
+    [
+      "SEARCH notification USING COVERING INDEX idx_user_created (user_id=? AND created_at>?)"
+    ],
+    [
+      "SEARCH notification USING COVERING INDEX idx_created_user (created_at>?)"
+    ]
+  ],
+  "expectedIDs": [
+    9942,
+    9842,
+    9742,
+    9642,
+    9542,
+    9442,
+    9342,
+    9242,
+    9142,
+    9042
+  ],
+  "passed": true
+}

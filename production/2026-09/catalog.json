@@ -17,7 +17,7 @@
   },
   {
     "id": "P02",
-    "title": "PlaneはWorkspaceを分けるべきか、Projectを分けるべきか",
+    "title": "PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める",
     "original_title": "PlaneはWorkspaceを分けるべきか、Projectを分けるべきか",
     "slug": "plane-workspace-access-boundaries",
     "angle": "個人、会社、公開範囲の境界",
@@ -26,10 +26,10 @@
     "japanese": "articles/plane-workspace-access-boundaries.md",
     "english": "devto/plane-workspace-access-boundaries.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
+    "status": "完成"
   },
   {
     "id": "P03",
@@ -321,7 +321,7 @@
   },
   {
     "id": "T01",
-    "title": "`Promise.all`、`allSettled`、`any`、`race`の失敗時の動きを改めて比べてみた",
+    "title": "Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる",
     "original_title": "`Promise.all`、`allSettled`、`any`、`race`の失敗時の動きを改めて比べてみた",
     "slug": "promise-combinators-partial-failure",
     "angle": "成功、失敗、キャンセルの小さな実験",
@@ -330,10 +330,11 @@
     "japanese": "public/promise-combinators-partial-failure.md",
     "english": "devto/promise-combinators-partial-failure.md",
     "priority": 9,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T02",
@@ -625,7 +626,7 @@
   },
   {
     "id": "T20",
-    "title": "Next.jsのServer ActionsとRoute Handlersを改めて使い分ける",
+    "title": "Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ",
     "original_title": "Next.jsのServer ActionsとRoute Handlersを改めて使い分ける",
     "slug": "nextjs-actions-route-handlers-boundary",
     "angle": "外部API、フォーム、再利用、認可",
@@ -634,10 +635,10 @@
     "japanese": "articles/nextjs-actions-route-handlers-boundary.md",
     "english": "devto/nextjs-actions-route-handlers-boundary.md",
     "priority": 8,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
+    "status": "完成"
   },
   {
     "id": "T21",
@@ -801,7 +802,7 @@
   },
   {
     "id": "T31",
-    "title": "Android edge-to-edgeでSafe Areaがずれる理由を改めて調べた",
+    "title": "AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる",
     "original_title": "Android edge-to-edgeでSafe Areaがずれる理由を改めて調べた",
     "slug": "android-edge-to-edge-insets",
     "angle": "OS、navigation bar、insets",
@@ -810,10 +811,11 @@
     "japanese": "public/android-edge-to-edge-insets.md",
     "english": "devto/android-edge-to-edge-insets.md",
     "priority": 4,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T32",
@@ -881,7 +883,7 @@
   },
   {
     "id": "T36",
-    "title": "D1の`batch()`は何を保証し、何を保証しないのか",
+    "title": "D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する",
     "original_title": "D1の`batch()`は何を保証し、何を保証しないのか",
     "slug": "d1-batch-atomicity-boundary",
     "angle": "SQLの原子性とアプリ側分岐",
@@ -890,14 +892,14 @@
     "japanese": "articles/d1-batch-atomicity-boundary.md",
     "english": "devto/d1-batch-atomicity-boundary.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
+    "status": "完成"
   },
   {
     "id": "T37",
-    "title": "D1の複合インデックスは列順で何が変わるのか",
+    "title": "D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた",
     "original_title": "D1の複合インデックスは列順で何が変わるのか",
     "slug": "d1-composite-index-column-order",
     "angle": "EXPLAIN QUERY PLANで比較",
@@ -906,10 +908,11 @@
     "japanese": "public/d1-composite-index-column-order.md",
     "english": "devto/d1-composite-index-column-order.md",
     "priority": 5,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T38",
@@ -1137,7 +1140,7 @@
   },
   {
     "id": "O07",
-    "title": "AIが書いたコードを「動いた」で終わらせない確認手順",
+    "title": "AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む",
     "original_title": "AIが書いたコードを「動いた」で終わらせない確認手順",
     "slug": "ai-code-review-invariants",
     "angle": "diff、テスト、説明、再現",
@@ -1146,10 +1149,10 @@
     "japanese": "articles/ai-code-review-invariants.md",
     "english": "devto/ai-code-review-invariants.md",
     "priority": 10,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
+    "status": "完成"
   },
   {
     "id": "O08",
@@ -1185,7 +1188,7 @@
   },
   {
     "id": "O10",
-    "title": "Game Jam用リポジトリを使い捨てにしない設計",
+    "title": "Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する",
     "original_title": "Game Jam用リポジトリを使い捨てにしない設計",
     "slug": "game-jam-repository-reuse",
     "angle": "game-jam-labのeventsと共通ツール",
@@ -1194,10 +1197,10 @@
     "japanese": "articles/game-jam-repository-reuse.md",
     "english": "devto/game-jam-repository-reuse.md",
     "priority": 11,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 2,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
+    "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
+    "status": "完成"
   },
   {
     "id": "O11",

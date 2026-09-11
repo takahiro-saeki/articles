@@ -1,0 +1,69 @@
+{
+  "node": "v24.15.0",
+  "wrangler": "4.81.1",
+  "miniflare": "4.20260409.0",
+  "compatibilityDateRequested": "2026-09-11",
+  "scope": "Local D1 proxy only, in-memory persistence, synthetic schema; no remote bindings or deployment",
+  "cases": [
+    {
+      "name": "success and sequential visibility",
+      "changes": [
+        1,
+        1,
+        0
+      ],
+      "thirdResult": [
+        {
+          "remaining": 0
+        }
+      ],
+      "state": {
+        "remaining": 0,
+        "orders": [
+          {
+            "id": "order-a",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "unique violation rolls back earlier update",
+      "error": "D1_ERROR: UNIQUE constraint failed: orders.id: SQLITE_CONSTRAINT (extended: SQLITE_CONSTRAINT_PRIMARYKEY)",
+      "state": {
+        "remaining": 1,
+        "orders": [
+          {
+            "id": "duplicate",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "zero affected rows and later JS throw do not roll back",
+      "changes": [
+        0,
+        1
+      ],
+      "postBatchError": "No stock was reserved",
+      "state": {
+        "remaining": 1,
+        "orders": [
+          {
+            "id": "order-b",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "CHECK constraint rejects negative remaining stock",
+      "error": "D1_ERROR: CHECK constraint failed: remaining >= 0: SQLITE_CONSTRAINT (extended: SQLITE_CONSTRAINT_CHECK)",
+      "state": {
+        "remaining": 1,
+        "orders": []
+      }
+    }
+  ]
+}

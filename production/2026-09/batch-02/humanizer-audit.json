@@ -1,0 +1,150 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "humanizer:humanizer v2.9.1",
+  "files": [
+    {
+      "id": "P02",
+      "path": "articles/plane-workspace-access-boundaries.md",
+      "before_sha256": "5bc6cc22638e2a9300dc23eb54bc9cc062afe146bb5fbac9fc0bf2bcd89b68e1",
+      "after_sha256": "ed05518f53088ca48fe33180533d56f3a37214662278ccc51f2379f725b42028",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Workspace versus Project authority, role-name differences, public joining versus Publish, and unperformed role tests preserved."
+    },
+    {
+      "id": "P02",
+      "path": "devto/plane-workspace-access-boundaries.md",
+      "before_sha256": "1adc4096e5de22b60c275c705ffe135c12ecf123b8fb282c9684ad6881206a80",
+      "after_sha256": "36bae36dcc70e6be14beed8025b69a6f0e47362409143f35a1050fdb83177443",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Workspace versus Project authority, role-name differences, public joining versus Publish, and unperformed role tests preserved."
+    },
+    {
+      "id": "T01",
+      "path": "public/promise-combinators-partial-failure.md",
+      "before_sha256": "e1b28a7680a959c355c4b51a23c28ec680aea043f3e7fa0959f5132d783e037a",
+      "after_sha256": "7806328f8ab2c56e83c13c8d0e5b0104edc2a39fb6716e57d64243ecc5f50ffc",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Settlement order, empty input, lack of cancellation, synchronous throw behavior, and controlled rather than timed measurement preserved."
+    },
+    {
+      "id": "T01",
+      "path": "devto/promise-combinators-partial-failure.md",
+      "before_sha256": "ea497f83fda6d246979ecc267504d2e1498833d9e801c3b97a650f4468e86248",
+      "after_sha256": "49da20cf16851f9c75f1a3ad128618d32fd1a9894c78eaac73117ae24b9ba158",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Settlement order, empty input, lack of cancellation, synchronous throw behavior, and controlled rather than timed measurement preserved."
+    },
+    {
+      "id": "T20",
+      "path": "articles/nextjs-actions-route-handlers-boundary.md",
+      "before_sha256": "062b4e04c6fc1a7a0f5007babbee0d127f0221ba1c6c8146dd54dbc0626db4d0",
+      "after_sha256": "c0d5f7dacc47d92ad32c2d00e564ab10edbae6c3b37ab5c46d93b2f90da10f32",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Caller contracts, authentication boundaries, four actual handler checks, local versus current documentation versions, and proposed shared layer preserved."
+    },
+    {
+      "id": "T20",
+      "path": "devto/nextjs-actions-route-handlers-boundary.md",
+      "before_sha256": "253c8962300a7cc785e762548717221259a682413c11a6cfc8d792ea84f4a7a0",
+      "after_sha256": "677db148b5a0865f541d60a4024f6160f35ad52abb8be6d490db72f5e7aec8c5",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Caller contracts, authentication boundaries, four actual handler checks, local versus current documentation versions, and proposed shared layer preserved."
+    },
+    {
+      "id": "T31",
+      "path": "public/android-edge-to-edge-insets.md",
+      "before_sha256": "864a0220425cdd869938cc5c4c3840682f1f124e77ca8a53997a7bb04ccc6055",
+      "after_sha256": "2de1400004307dc9e84df0f032b3e2b6661635b12c7676bb0ce5103aba26b2ba",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Component ownership, dependency versus spacing fix distinction, two static checks, illustrative padding values and absence of device reproduction preserved."
+    },
+    {
+      "id": "T31",
+      "path": "devto/android-edge-to-edge-insets.md",
+      "before_sha256": "70731ad1827d46cb16dd111e0d0a7bb4c4161999971d21c1a1bd283f130f5dc3",
+      "after_sha256": "6727ace03a1a9f88d63ff6621bf2f5a0609420e0d69680bcc960cf17584ecb59",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Component ownership, dependency versus spacing fix distinction, two static checks, illustrative padding values and absence of device reproduction preserved."
+    },
+    {
+      "id": "T36",
+      "path": "articles/d1-batch-atomicity-boundary.md",
+      "before_sha256": "555a4d40fa7ad4e02d9bb7982b3beeec1723e956ad9349bbb9ec6e73dd880cc5",
+      "after_sha256": "0e53ae7892ffb22acb9cfa04dccbe6c1376672eeb84ee97f14cf4cc7e8ad7675",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Four SQL cases, exact row states, zero-change success, CHECK limitation, post-batch throw behavior and local-only scope preserved."
+    },
+    {
+      "id": "T36",
+      "path": "devto/d1-batch-atomicity-boundary.md",
+      "before_sha256": "f3841aace9fb39089154f04345f60780f9a85f5ac260613dfddc25bb46582d89",
+      "after_sha256": "fe21af5e9934a9abda85b90ae0abcfc8ad8e87135d5985ee637c538cef6845a8",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Four SQL cases, exact row states, zero-change success, CHECK limitation, post-batch throw behavior and local-only scope preserved."
+    },
+    {
+      "id": "T37",
+      "path": "public/d1-composite-index-column-order.md",
+      "before_sha256": "1c99eb08a77d15e038b1afb390dcd1dce15a546da5f8c9498d665144f22df467",
+      "after_sha256": "70cf2b0c441fc22c746915e4b926e39af3e3719c8667bcb36bd89f215eb2b014",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Fixture distribution, row counts and exact IDs, search-plan text, unmeasured timing and billing, and unknown SQLite version preserved."
+    },
+    {
+      "id": "T37",
+      "path": "devto/d1-composite-index-column-order.md",
+      "before_sha256": "07e0163e02216c082ea005f53df9650e4caadfd917dd9d74f42e322aaf215ea0",
+      "after_sha256": "c804180f3c6da99da04f293c0a2854c97bfec59aad087f04f91ba95d2a16a69d",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Fixture distribution, row counts and exact IDs, search-plan text, unmeasured timing and billing, and unknown SQLite version preserved."
+    },
+    {
+      "id": "O07",
+      "path": "articles/ai-code-review-invariants.md",
+      "before_sha256": "8a90da863abe1bef7a22a3d8583f4ef9c90b0a6e118104a2dde33894896c193f",
+      "after_sha256": "002aeac3d4f15872b5d7a2f5dd963dd0ede3cb34e1d06deb7fca5b8bfeb61bea",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Chosen invariant, exact mutation, baseline and mutated test totals, real router/libSQL versus HTTP mocks, and no inference of AI authorship preserved."
+    },
+    {
+      "id": "O07",
+      "path": "devto/ai-code-review-invariants.md",
+      "before_sha256": "42ac9c2fae134ba3c7a69670383a3f344b0d46bcdb47084e433b3f85a98c426c",
+      "after_sha256": "d3379fea7669d58764edb33b2b2c733183a7ce692210e0f8b01a8f2e41cdc796",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Chosen invariant, exact mutation, baseline and mutated test totals, real router/libSQL versus HTTP mocks, and no inference of AI authorship preserved."
+    },
+    {
+      "id": "O10",
+      "path": "articles/game-jam-repository-reuse.md",
+      "before_sha256": "c538dbf0e26236b1b6828c762256f678281c1af3feaceba5ff534267f1c6e37e",
+      "after_sha256": "5cf8cc0620266b5380d8ff7b4b6863519cf80948757434d534a56e213a7fd754",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "One committed event, event-scoped sharing, stubbed Godot with real ZIP handling, fixed CI path and unimplemented cross-event proposal preserved."
+    },
+    {
+      "id": "O10",
+      "path": "devto/game-jam-repository-reuse.md",
+      "before_sha256": "7bf1b4328962c931e72a30d2476b0f7b320fa515c18ded1deb7da6b9a79ee332",
+      "after_sha256": "b2cd18991bd4a8494a6ee05a1eb074e589ee76fc1288a57b24029430d97aac43",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "One committed event, event-scoped sharing, stubbed Godot with real ZIP handling, fixed CI path and unimplemented cross-event proposal preserved."
+    }
+  ]
+}

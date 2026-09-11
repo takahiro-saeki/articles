@@ -1,0 +1,16 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const raw=JSON.parse(readFileSync(process.argv[2]??'production/2026-09/batch-02/d1-index-raw.json','utf8'));
+assert(raw.every(x=>x.success));
+const rows=raw.flatMap(x=>x.results);
+assert.equal(rows.find(x=>'fixture_rows' in x).fixture_rows,10000);
+const plans=raw.filter(x=>x.results.some(r=>'detail' in r)).map(x=>x.results.map(r=>r.detail));
+assert.equal(plans.length,3);
+assert(plans[0].some(x=>x==='SCAN notification'));
+assert(plans[0].some(x=>x.includes('TEMP B-TREE')));
+assert(plans[1][0].includes('user_id=? AND created_at>?'));
+assert(plans[2][0].includes('(created_at>?)'));
+const ids=variant=>rows.filter(x=>x.variant===variant&&'id' in x).map(x=>x.id);
+const expected=Array.from({length:10},(_,i)=>9942-i*100);
+assert.deepEqual(ids('user_created'),expected);assert.deepEqual(ids('created_user'),expected);
+console.log(JSON.stringify({wrangler:'4.81.1',node:process.version,scope:'local D1; plans and result IDs; no latency benchmark',rows:10000,plans,expectedIDs:expected,passed:true},null,2));

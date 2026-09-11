@@ -1,21 +1,21 @@
 # 記事制作進捗 2026年9月
 
-完成 6/90件（日本語＋英語の組）。残り 84件。
+完成 11/90件（日本語＋英語の組）。残り 79件。先に書きたい12本は 9/12件完成。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
 台帳の元データは[production/2026-09/catalog.json](production/2026-09/catalog.json)。更新後は `node scripts/article-production-status.mjs` で本表を再生成する。調査根拠、実行結果、内容の重複確認、Humanizer監査は各バッチの記録へ残す。
 
-- 最初のバッチ: P01、O01、T28、O05、P03、O03。
-- 続く優先候補: T31、T37、T20、T01、O07、O10。
+- バッチ01: P01、P03、T28、O01、O03、O05。完成 6/6件。
+- バッチ02: P02、T01、T20、T31、T36、T37、O07、O10。完成 5/8件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- Qiita新規記事の将来のIDは未確定。canonicalの仮設定方法はユーザーへ確認中。URLを推測して作らない。
+- canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | P01 | 個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける | plane-project-boundaries | [原稿](articles/plane-project-boundaries.md) | [原稿](devto/plane-project-boundaries.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
-| P02 | PlaneはWorkspaceを分けるべきか、Projectを分けるべきか | plane-workspace-access-boundaries | 予定: articles/plane-workspace-access-boundaries.md | 予定: devto/plane-workspace-access-boundaries.md | 未確認 | 未実施 | 未着手 |
+| P02 | PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める | plane-workspace-access-boundaries | [原稿](articles/plane-workspace-access-boundaries.md) | [原稿](devto/plane-workspace-access-boundaries.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | P03 | PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ | plane-project-module-cycle-initiative | [原稿](articles/plane-project-module-cycle-initiative.md) | [原稿](devto/plane-project-module-cycle-initiative.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
 | P04 | 複数プロジェクトでステータスを共通化しすぎて困った話 | plane-status-by-deliverable | 予定: public/plane-status-by-deliverable.md | 予定: devto/plane-status-by-deliverable.md | 未確認 | 未実施 | 未着手 |
 | P05 | Planeのラベルを増やしすぎない。個人開発で残した分類 | plane-label-taxonomy | 予定: public/plane-label-taxonomy.md | 予定: devto/plane-label-taxonomy.md | 未確認 | 未実施 | 未着手 |
@@ -34,7 +34,7 @@
 | P18 | 止めた個人開発をPlaneでどう閉じるか | plane-close-paused-project | 予定: public/plane-close-paused-project.md | 予定: devto/plane-close-paused-project.md | 未確認 | 未実施 | 未着手 |
 | P19 | 一人開発でもEstimateを付ける意味はあるか | plane-estimate-capacity-experiment | 予定: articles/plane-estimate-capacity-experiment.md | 予定: devto/plane-estimate-capacity-experiment.md | 未確認 | 未実施 | 未着手 |
 | P20 | Plane Cloudとセルフホストを個人利用の観点で比べる | plane-cloud-self-host-comparison | 予定: articles/plane-cloud-self-host-comparison.md | 予定: devto/plane-cloud-self-host-comparison.md | 未確認 | 未実施 | 未着手 |
-| T01 | `Promise.all`、`allSettled`、`any`、`race`の失敗時の動きを改めて比べてみた | promise-combinators-partial-failure | 予定: public/promise-combinators-partial-failure.md | 予定: devto/promise-combinators-partial-failure.md | 未確認 | 未実施 | 未着手 |
+| T01 | Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる | promise-combinators-partial-failure | [原稿](public/promise-combinators-partial-failure.md) | [原稿](devto/promise-combinators-partial-failure.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T02 | TypeScriptの`satisfies`、型注釈、`as`は何が違うのか | typescript-satisfies-annotation-assertion | 予定: public/typescript-satisfies-annotation-assertion.md | 予定: devto/typescript-satisfies-annotation-assertion.md | 未確認 | 未実施 | 未着手 |
 | T03 | `unknown`と`any`を外部APIレスポンスで比べてみた | unknown-api-runtime-validation | 予定: public/unknown-api-runtime-validation.md | 予定: devto/unknown-api-runtime-validation.md | 未確認 | 未実施 | 未着手 |
 | T04 | `type`と`interface`は結局どう使い分けるか、現在の仕様で整理した | type-interface-declaration-merging | 予定: public/type-interface-declaration-merging.md | 予定: devto/type-interface-declaration-merging.md | 未確認 | 未実施 | 未着手 |
@@ -53,7 +53,7 @@
 | T17 | `useActionState`を普通のフォームstateと比べてみた | use-action-state-form-experiment | 予定: public/use-action-state-form-experiment.md | 予定: devto/use-action-state-form-experiment.md | 未確認 | 未実施 | 未着手 |
 | T18 | Suspenseの境界をどこに置くと画面がちらつかないか | suspense-boundary-fallback-experiment | 予定: articles/suspense-boundary-fallback-experiment.md | 予定: devto/suspense-boundary-fallback-experiment.md | 未確認 | 未実施 | 未着手 |
 | T19 | React Server Componentsでclient境界を増やすとbundleはどう変わるか | rsc-client-boundary-bundle | 予定: articles/rsc-client-boundary-bundle.md | 予定: devto/rsc-client-boundary-bundle.md | 未確認 | 未実施 | 未着手 |
-| T20 | Next.jsのServer ActionsとRoute Handlersを改めて使い分ける | nextjs-actions-route-handlers-boundary | 予定: articles/nextjs-actions-route-handlers-boundary.md | 予定: devto/nextjs-actions-route-handlers-boundary.md | 未確認 | 未実施 | 未着手 |
+| T20 | Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ | nextjs-actions-route-handlers-boundary | [原稿](articles/nextjs-actions-route-handlers-boundary.md) | [原稿](devto/nextjs-actions-route-handlers-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | T21 | Next.jsのキャッシュは今いくつあるのか、実際のレスポンスで整理した | nextjs-cache-response-experiment | 予定: articles/nextjs-cache-response-experiment.md | 予定: devto/nextjs-cache-response-experiment.md | 未確認 | 未実施 | 未着手 |
 | T22 | Next.jsのMiddlewareがProxyになった理由と移行時の注意点 | nextjs-middleware-proxy-migration | 予定: public/nextjs-middleware-proxy-migration.md | 予定: devto/nextjs-middleware-proxy-migration.md | 未確認 | 未実施 | 未着手 |
 | T23 | Edge RuntimeとNode.js Runtimeは何が違うのか | nextjs-edge-node-runtime | 予定: public/nextjs-edge-node-runtime.md | 予定: devto/nextjs-edge-node-runtime.md | 未確認 | 未実施 | 未着手 |
@@ -64,13 +64,13 @@
 | T28 | Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計 | expo-push-token-device-ownership | [原稿](articles/expo-push-token-device-ownership.md) | [原稿](devto/expo-push-token-device-ownership.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
 | T29 | Expo Routerのcold start時に最初のURLはいつ取れるのか | expo-router-initial-url-timing | 予定: public/expo-router-initial-url-timing.md | 予定: devto/expo-router-initial-url-timing.md | 未確認 | 未実施 | 未着手 |
 | T30 | Universal Linksが開かないとき、AASAのどこを見るか | universal-links-aasa-diagnostics | 予定: public/universal-links-aasa-diagnostics.md | 予定: devto/universal-links-aasa-diagnostics.md | 未確認 | 未実施 | 未着手 |
-| T31 | Android edge-to-edgeでSafe Areaがずれる理由を改めて調べた | android-edge-to-edge-insets | 予定: public/android-edge-to-edge-insets.md | 予定: devto/android-edge-to-edge-insets.md | 未確認 | 未実施 | 未着手 |
+| T31 | AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる | android-edge-to-edge-insets | [原稿](public/android-edge-to-edge-insets.md) | [原稿](devto/android-edge-to-edge-insets.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T32 | ExpoのAppStateはbackgroundとinactiveをどう通知するか | expo-appstate-platform-events | 予定: public/expo-appstate-platform-events.md | 予定: devto/expo-appstate-platform-events.md | 未確認 | 未実施 | 未着手 |
 | T33 | EAS Build、Submit、Updateはそれぞれ何を配る仕組みか | eas-build-submit-update-artifacts | 予定: public/eas-build-submit-update-artifacts.md | 予定: devto/eas-build-submit-update-artifacts.md | 未確認 | 未実施 | 未着手 |
 | T34 | EAS Updateのerror recoveryはどこまで戻してくれるのか | eas-update-error-recovery-boundary | 予定: articles/eas-update-error-recovery-boundary.md | 予定: devto/eas-update-error-recovery-boundary.md | 未確認 | 未実施 | 未着手 |
 | T35 | SplashScreenを手動で閉じるときの競合を再現した | expo-splash-screen-startup-race | 予定: public/expo-splash-screen-startup-race.md | 予定: devto/expo-splash-screen-startup-race.md | 未確認 | 未実施 | 未着手 |
-| T36 | D1の`batch()`は何を保証し、何を保証しないのか | d1-batch-atomicity-boundary | 予定: articles/d1-batch-atomicity-boundary.md | 予定: devto/d1-batch-atomicity-boundary.md | 未確認 | 未実施 | 未着手 |
-| T37 | D1の複合インデックスは列順で何が変わるのか | d1-composite-index-column-order | 予定: public/d1-composite-index-column-order.md | 予定: devto/d1-composite-index-column-order.md | 未確認 | 未実施 | 未着手 |
+| T36 | D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する | d1-batch-atomicity-boundary | [原稿](articles/d1-batch-atomicity-boundary.md) | [原稿](devto/d1-batch-atomicity-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
+| T37 | D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた | d1-composite-index-column-order | [原稿](public/d1-composite-index-column-order.md) | [原稿](devto/d1-composite-index-column-order.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T38 | SQLiteの外部キーはindexを自動作成するのか | sqlite-foreign-key-child-index | 予定: public/sqlite-foreign-key-child-index.md | 予定: devto/sqlite-foreign-key-child-index.md | 未確認 | 未実施 | 未着手 |
 | T39 | offset paginationが遅くなる境目をD1で測ってみた | d1-offset-cursor-pagination | 予定: articles/d1-offset-cursor-pagination.md | 予定: devto/d1-offset-cursor-pagination.md | 未確認 | 未実施 | 未着手 |
 | T40 | Durable ObjectsとD1を改めて使い分ける | durable-objects-d1-coordination | 予定: articles/durable-objects-d1-coordination.md | 予定: devto/durable-objects-d1-coordination.md | 未確認 | 未実施 | 未着手 |
@@ -85,10 +85,10 @@
 | O04 | 記事ストックを「本数」ではなく「日数」で管理する | article-stock-coverage-days | 予定: public/article-stock-coverage-days.md | 予定: devto/article-stock-coverage-days.md | 未確認 | 未実施 | 未着手 |
 | O05 | Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法 | repository-decision-log-evidence | [原稿](articles/repository-decision-log-evidence.md) | [原稿](devto/repository-decision-log-evidence.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
 | O06 | 個人用と会社用のGitHubアカウントを混ぜないために入れた防止策 | personal-company-github-identity-guard | 予定: public/personal-company-github-identity-guard.md | 予定: devto/personal-company-github-identity-guard.md | 未確認 | 未実施 | 未着手 |
-| O07 | AIが書いたコードを「動いた」で終わらせない確認手順 | ai-code-review-invariants | 予定: articles/ai-code-review-invariants.md | 予定: devto/ai-code-review-invariants.md | 未確認 | 未実施 | 未着手 |
+| O07 | AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む | ai-code-review-invariants | [原稿](articles/ai-code-review-invariants.md) | [原稿](devto/ai-code-review-invariants.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | O08 | Codexへ長い作業を任せるとき、途中経過をどこへ残すか | long-task-repository-handoff | 予定: public/long-task-repository-handoff.md | 予定: devto/long-task-repository-handoff.md | 未確認 | 未実施 | 未着手 |
 | O09 | 複数のAIチャットから一つの制作記を組み立てた方法 | devlog-primary-source-reconstruction | 予定: articles/devlog-primary-source-reconstruction.md | 予定: devto/devlog-primary-source-reconstruction.md | 未確認 | 未実施 | 未着手 |
-| O10 | Game Jam用リポジトリを使い捨てにしない設計 | game-jam-repository-reuse | 予定: articles/game-jam-repository-reuse.md | 予定: devto/game-jam-repository-reuse.md | 未確認 | 未実施 | 未着手 |
+| O10 | Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する | game-jam-repository-reuse | [原稿](articles/game-jam-repository-reuse.md) | [原稿](devto/game-jam-repository-reuse.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | O11 | 採用しなかったゲームプロトタイプをarchiveへ残す理由 | game-prototype-archive-decisions | 予定: public/game-prototype-archive-decisions.md | 予定: devto/game-prototype-archive-decisions.md | 未確認 | 未実施 | 未着手 |
 | O12 | itch.io提出前にゲーム外で準備したもの全部 | itch-submission-deliverables | 予定: articles/itch-submission-deliverables.md | 予定: devto/itch-submission-deliverables.md | 未確認 | 未実施 | 未着手 |
 | O13 | ブラウザゲームをマウス、タッチ、キーボード、ゲームパッドへ対応した順番 | game-input-support-sequence | 予定: articles/game-input-support-sequence.md | 予定: devto/game-input-support-sequence.md | 未確認 | 未実施 | 未着手 |

@@ -159,12 +159,17 @@
 <!-- production-progress:start -->
 ## 制作状況
 
-完成 6/90件。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
+完成 11/90件。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
 
 - P01: [個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける](articles/plane-project-boundaries.md) / [English](devto/plane-project-boundaries.md)（完成・未公開）
+- P02: [PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める](articles/plane-workspace-access-boundaries.md) / [English](devto/plane-workspace-access-boundaries.md)（完成・未公開）
 - P03: [PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ](articles/plane-project-module-cycle-initiative.md) / [English](devto/plane-project-module-cycle-initiative.md)（完成・未公開）
+- T20: [Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ](articles/nextjs-actions-route-handlers-boundary.md) / [English](devto/nextjs-actions-route-handlers-boundary.md)（完成・未公開）
 - T28: [Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計](articles/expo-push-token-device-ownership.md) / [English](devto/expo-push-token-device-ownership.md)（完成・未公開）
+- T36: [D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する](articles/d1-batch-atomicity-boundary.md) / [English](devto/d1-batch-atomicity-boundary.md)（完成・未公開）
 - O01: [38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える](articles/publishing-38-day-audit.md) / [English](devto/publishing-38-day-audit.md)（完成・未公開）
 - O03: [予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する](articles/scheduled-publishing-recovery-boundary.md) / [English](devto/scheduled-publishing-recovery-boundary.md)（完成・未公開）
 - O05: [Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法](articles/repository-decision-log-evidence.md) / [English](devto/repository-decision-log-evidence.md)（完成・未公開）
+- O07: [AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む](articles/ai-code-review-invariants.md) / [English](devto/ai-code-review-invariants.md)（完成・未公開）
+- O10: [Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する](articles/game-jam-repository-reuse.md) / [English](devto/game-jam-repository-reuse.md)（完成・未公開）
 <!-- production-progress:end -->

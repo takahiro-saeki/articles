@@ -1,0 +1,41 @@
+{
+  "ref": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "node": "v24.15.0",
+  "committedEvents": [
+    "2026-ai-browser-game-jam-4"
+  ],
+  "eventSharedFiles": [
+    "events/2026-ai-browser-game-jam-4/godot/shared/controller_bindings.gd",
+    "events/2026-ai-browser-game-jam-4/godot/shared/controller_bindings.gd.uid",
+    "events/2026-ai-browser-game-jam-4/godot/shared/palette.gd",
+    "events/2026-ai-browser-game-jam-4/godot/shared/palette.gd.uid",
+    "events/2026-ai-browser-game-jam-4/godot/shared/project_charge_audio_settings.gd",
+    "events/2026-ai-browser-game-jam-4/godot/shared/project_charge_audio_settings.gd.uid",
+    "events/2026-ai-browser-game-jam-4/godot/shared/synth.gd",
+    "events/2026-ai-browser-game-jam-4/godot/shared/synth.gd.uid"
+  ],
+  "rootToolsPresent": false,
+  "scope": "Committed tree inspection, bash -n, real export shell with a stubbed Godot executable. Fixture files only; no game export, smoke test, upload, or deployment.",
+  "runs": [
+    {
+      "cwd": "repository root",
+      "target": "events/renamed-fixture-event/godot",
+      "zipEntries": [
+        "index.html",
+        "index.js",
+        "index.pck",
+        "index.wasm"
+      ]
+    },
+    {
+      "cwd": "event godot directory",
+      "target": "events/renamed-fixture-event/godot",
+      "zipEntries": [
+        "index.html",
+        "index.js",
+        "index.pck",
+        "index.wasm"
+      ]
+    }
+  ]
+}

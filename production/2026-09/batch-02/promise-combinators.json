@@ -1,0 +1,94 @@
+{
+  "environment": "v24.15.0",
+  "results": [
+    {
+      "method": "all",
+      "afterFailure": {
+        "status": "rejected",
+        "reason": "B failed"
+      },
+      "completed": [
+        "B",
+        "C",
+        "A"
+      ],
+      "final": {
+        "status": "rejected",
+        "reason": "B failed"
+      }
+    },
+    {
+      "method": "allSettled",
+      "afterFailure": {
+        "status": "pending"
+      },
+      "completed": [
+        "B",
+        "C",
+        "A"
+      ],
+      "final": {
+        "status": "fulfilled",
+        "value": [
+          {
+            "status": "fulfilled",
+            "value": "A result"
+          },
+          {
+            "status": "rejected",
+            "reason": "B failed"
+          },
+          {
+            "status": "fulfilled",
+            "value": "C result"
+          }
+        ]
+      }
+    },
+    {
+      "method": "any",
+      "afterFailure": {
+        "status": "pending"
+      },
+      "completed": [
+        "B",
+        "C",
+        "A"
+      ],
+      "final": {
+        "status": "fulfilled",
+        "value": "C result"
+      }
+    },
+    {
+      "method": "race",
+      "afterFailure": {
+        "status": "rejected",
+        "reason": "B failed"
+      },
+      "completed": [
+        "B",
+        "C",
+        "A"
+      ],
+      "final": {
+        "status": "rejected",
+        "reason": "B failed"
+      }
+    }
+  ],
+  "empty": {
+    "all": [],
+    "allSettled": [],
+    "any": "AggregateError with 0 errors",
+    "race": "pending"
+  },
+  "syncThrow": {
+    "directMap": "throws before combinator",
+    "wrapped": [
+      "fulfilled",
+      "rejected",
+      "fulfilled"
+    ]
+  }
+}

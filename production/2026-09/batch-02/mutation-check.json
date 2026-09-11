@@ -1,0 +1,24 @@
+{
+  "ref": "0cda1e865ad80d1529197729d8d436e96d56edc7",
+  "node": "v24.15.0",
+  "vitest": "4.1.4",
+  "scope": "archived source copy; real router + libSQL; existing external HTTP mocks; original repository not changed",
+  "mutation": "Remove only the userId condition from token deregistration",
+  "baseline": {
+    "exitCode": 0,
+    "passed": 8,
+    "failed": 0,
+    "failures": []
+  },
+  "mutated": {
+    "exitCode": 1,
+    "passed": 7,
+    "failed": 1,
+    "failures": [
+      {
+        "title": "アカウント切替はその端末だけ移管し、旧ユーザーは削除できない",
+        "message": "AssertionError: expected [ { '0': 'user-a', …(6) } ] to deeply equal [ { user_id: 'user-b', …(2) }, …(1) ]\n    at /private/var/folders/9b/42x3hwfs6_379c5r3tdhvk780000gn/T/article-router-mutation-nb2EBZ/apps/web/src/security/push-token-privacy.test.ts:109:26\n    at file:///Users/takahiro_saeki/Documents/GitHub/circle-hub-multi-device-push/node_modules/.pnpm/@vitest+runner@4.1.4/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+      }
+    ]
+  }
+}

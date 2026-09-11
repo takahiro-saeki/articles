@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+const deferred=()=>Promise.withResolvers();
+async function trial(method){
+  const tasks=[deferred(),deferred(),deferred()];const completed=[];
+  const observe=p=>p.then(value=>({status:'fulfilled',value}),e=>({status:'rejected',reason:e.message}));
+  const aggregate=observe(Promise[method](tasks.map(t=>t.promise)));
+  completed.push('B');tasks[1].reject(Error('B failed'));
+  await Promise.resolve();await Promise.resolve();
+  const afterFailure=await Promise.race([aggregate,Promise.resolve({status:'pending'})]);
+  completed.push('C');tasks[2].resolve('C result');
+  await Promise.resolve();await Promise.resolve();
+  completed.push('A');tasks[0].resolve('A result');
+  const final=await aggregate;
+  const inputResults=await Promise.allSettled(tasks.map(t=>t.promise));
+  assert.equal(inputResults[0].status,'fulfilled');assert.equal(inputResults[0].value,'A result');
+  assert.equal(inputResults[1].status,'rejected');assert.equal(inputResults[2].status,'fulfilled');assert.equal(inputResults[2].value,'C result');
+  if(method==='allSettled')final.value=final.value.map(x=>x.status==='fulfilled'?x:{status:x.status,reason:x.reason.message});
+  return {method,afterFailure,completed,final};
+}
+const results=[];
+for(const method of ['all','allSettled','any','race'])results.push(await trial(method));
+assert.deepEqual(results.map(x=>x.afterFailure.status),['rejected','pending','pending','rejected']);
+assert.equal(results[0].final.reason,'B failed');
+assert.equal(results[1].afterFailure.status,'pending');
+assert.deepEqual(results[1].final.value,[{status:'fulfilled',value:'A result'},{status:'rejected',reason:'B failed'},{status:'fulfilled',value:'C result'}]);
+assert.equal(results[2].final.value,'C result');assert.equal(results[3].final.reason,'B failed');
+for(const r of results)assert.deepEqual(r.completed,['B','C','A']);
+assert.deepEqual(await Promise.all([]),[]);assert.deepEqual(await Promise.allSettled([]),[]);
+await assert.rejects(Promise.any([]),error=>error instanceof AggregateError&&error.errors.length===0);
+const emptyRace=await Promise.race([Promise.race([]).then(()=> 'settled',()=> 'settled'),Promise.resolve('pending')]);assert.equal(emptyRace,'pending');
+const functions=[()=>1,()=>{throw Error('sync failure');},()=>3];
+assert.throws(()=>Promise.allSettled(functions.map(fn=>fn())),/sync failure/);
+const wrapped=await Promise.allSettled(functions.map(fn=>Promise.resolve().then(fn)));
+assert.deepEqual(wrapped.map(x=>x.status),['fulfilled','rejected','fulfilled']);
+console.log(JSON.stringify({environment:process.version,results,empty:{all:[],allSettled:[],any:'AggregateError with 0 errors',race:'pending'},syncThrow:{directMap:'throws before combinator',wrapped:wrapped.map(x=>x.status)}},null,2));

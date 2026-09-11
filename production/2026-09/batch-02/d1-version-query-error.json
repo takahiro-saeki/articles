@@ -1,0 +1,6 @@
+
+{
+  "error": {
+    "text": "not authorized to use function: sqlite_version at offset 7: SQLITE_ERROR"
+  }
+}

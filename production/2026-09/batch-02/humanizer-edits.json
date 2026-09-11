@@ -1,0 +1,214 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "humanizer:humanizer v2.9.1",
+  "files": [
+    {
+      "id": "P02",
+      "path": "articles/plane-workspace-access-boundaries.md",
+      "edits": [
+        [
+          "この仕様からの判断は単純です。会社の管理者と共有したくない個人のタスクを、会社WorkspaceのPrivate Projectへ置く設計にはしません。",
+          "会社の管理者と共有したくない個人のタスクなら、会社WorkspaceのPrivate Projectへ置く設計は避けます。"
+        ],
+        [
+          "ユーザーのPlaneを移行した記録ではありません。",
+          "特定のPlane環境を移行した記録ではありません。"
+        ]
+      ],
+      "semantic_review": "Workspace versus Project authority, role-name differences, public joining versus Publish, and unperformed role tests preserved."
+    },
+    {
+      "id": "P02",
+      "path": "devto/plane-workspace-access-boundaries.md",
+      "edits": [
+        [
+          "The design implication is straightforward: personal tasks that should not be shared with company administrators do not belong in a Private Project inside the company Workspace.",
+          "Personal tasks that should not be shared with company administrators do not belong in a Private Project inside the company Workspace."
+        ],
+        [
+          "a record of migrating the owner's Plane setup.",
+          "a record of migrating an existing Plane setup."
+        ]
+      ],
+      "semantic_review": "Workspace versus Project authority, role-name differences, public joining versus Publish, and unperformed role tests preserved."
+    },
+    {
+      "id": "T01",
+      "path": "public/promise-combinators-partial-failure.md",
+      "edits": [
+        [
+          "部分失敗のある処理で選びたいのは、「何が起きた時点で、まとめたPromiseを確定するか」です。",
+          "部分失敗のある処理では、何が起きた時点で集約したPromiseを確定したいかを決めます。"
+        ],
+        [
+          "今回の条件では、全件の結果が必要な処理には",
+          "この比較では、全件の結果が必要な処理には"
+        ]
+      ],
+      "semantic_review": "Settlement order, empty input, lack of cancellation, synchronous throw behavior, and controlled rather than timed measurement preserved."
+    },
+    {
+      "id": "T01",
+      "path": "devto/promise-combinators-partial-failure.md",
+      "edits": [
+        [
+          "For work that can partially fail, the choice is about what event should settle the aggregate Promise.",
+          "When work can partially fail, decide which event should settle the aggregate Promise."
+        ],
+        [
+          "Under the tested conditions, `allSettled` suits collecting every outcome;",
+          "In this comparison, `allSettled` collects every outcome;"
+        ]
+      ],
+      "semantic_review": "Settlement order, empty input, lack of cancellation, synchronous throw behavior, and controlled rather than timed measurement preserved."
+    },
+    {
+      "id": "T20",
+      "path": "articles/nextjs-actions-route-handlers-boundary.md",
+      "edits": [
+        [
+          "ここでは、別のクライアントへ公開するJSONの形式を決めたいわけではありません。画面で行った操作をサーバーへ渡す入口として、Actionを読むと理解しやすくなります。",
+          "このActionは、画面で行った操作をサーバーへ渡す入口です。別のクライアント向けにJSONの形式を定義する必要は、ここではありません。"
+        ]
+      ],
+      "semantic_review": "Caller contracts, authentication boundaries, four actual handler checks, local versus current documentation versions, and proposed shared layer preserved."
+    },
+    {
+      "id": "T20",
+      "path": "devto/nextjs-actions-route-handlers-boundary.md",
+      "edits": [
+        [
+          "The concern is not to define a JSON format for a separate client. Reading the Action as the entry point for a screen operation makes its role clearer.",
+          "This Action is the entry point for a screen operation. It does not need to define a JSON format for a separate client."
+        ]
+      ],
+      "semantic_review": "Caller contracts, authentication boundaries, four actual handler checks, local versus current documentation versions, and proposed shared layer preserved."
+    },
+    {
+      "id": "T31",
+      "path": "public/android-edge-to-edge-insets.md",
+      "edits": [
+        [
+          "今回確認できたのは、認証後の画面と公開画面でInsetsの担当箇所が違うことです。",
+          "認証後の画面と公開画面では、Insetsを適用する箇所が違いました。"
+        ]
+      ],
+      "semantic_review": "Component ownership, dependency versus spacing fix distinction, two static checks, illustrative padding values and absence of device reproduction preserved."
+    },
+    {
+      "id": "T31",
+      "path": "devto/android-edge-to-edge-insets.md",
+      "edits": [
+        [
+          "This inspection established that authenticated and public routes assign inset handling to different components.",
+          "Authenticated and public routes assign inset handling to different components."
+        ]
+      ],
+      "semantic_review": "Component ownership, dependency versus spacing fix distinction, two static checks, illustrative padding values and absence of device reproduction preserved."
+    },
+    {
+      "id": "T36",
+      "path": "articles/d1-batch-atomicity-boundary.md",
+      "edits": [
+        [
+          "持ち帰りたいのは、SQLの失敗と業務上の不成立を分けることです。",
+          "ここで分けて考えるのは、SQLの失敗と業務上の不成立です。"
+        ],
+        [
+          "確認できた境界は、成功して戻ったbatchを、その後の`throw`では取り消せないことです。",
+          "成功して戻ったbatchを、その後の`throw`では取り消せませんでした。"
+        ]
+      ],
+      "semantic_review": "Four SQL cases, exact row states, zero-change success, CHECK limitation, post-batch throw behavior and local-only scope preserved."
+    },
+    {
+      "id": "T36",
+      "path": "devto/d1-batch-atomicity-boundary.md",
+      "edits": [
+        [
+          "The useful distinction is between SQL failure and a business operation that could not be fulfilled.",
+          "SQL failure and an unfulfilled business operation need separate treatment."
+        ],
+        [
+          "The observed boundary is that a later `throw` cannot undo a batch that already returned successfully.",
+          "A later `throw` did not undo the batch that had already returned successfully."
+        ]
+      ],
+      "semantic_review": "Four SQL cases, exact row states, zero-change success, CHECK limitation, post-batch throw behavior and local-only scope preserved."
+    },
+    {
+      "id": "T37",
+      "path": "public/d1-composite-index-column-order.md",
+      "edits": [
+        [
+          "ここではレスポンスタイムを測らず、インデックスのどの範囲を探す計画になるかに絞ります。",
+          "調べたのは、インデックスのどの範囲を探す計画になるかです。レスポンスタイムは測っていません。"
+        ]
+      ],
+      "semantic_review": "Fixture distribution, row counts and exact IDs, search-plan text, unmeasured timing and billing, and unknown SQLite version preserved."
+    },
+    {
+      "id": "T37",
+      "path": "devto/d1-composite-index-column-order.md",
+      "edits": [
+        [
+          "This experiment examines the planned search range, rather than response time.",
+          "The experiment examines the planned search range. It does not measure response time."
+        ]
+      ],
+      "semantic_review": "Fixture distribution, row counts and exact IDs, search-plan text, unmeasured timing and billing, and unknown SQLite version preserved."
+    },
+    {
+      "id": "O07",
+      "path": "articles/ai-code-review-invariants.md",
+      "edits": [
+        [
+          "通るテストの数だけを眺めるより、期待値と実装の関係を追えます。",
+          "失敗した期待値から、実装のどの条件を守っているかを追えます。"
+        ],
+        [
+          "ユーザーがこの手順を以前から運用していた、という体験記でもありません。",
+          "継続運用の効果を報告する体験記ではなく、今回試した確認手順です。"
+        ]
+      ],
+      "semantic_review": "Chosen invariant, exact mutation, baseline and mutated test totals, real router/libSQL versus HTTP mocks, and no inference of AI authorship preserved."
+    },
+    {
+      "id": "O07",
+      "path": "devto/ai-code-review-invariants.md",
+      "edits": [
+        [
+          "This gives you a concrete relationship between an expectation and the implementation, beyond the count of passing tests.",
+          "The failing expectation points to the condition it protects in the implementation."
+        ],
+        [
+          "It is not an account of a workflow the project owner has previously used.",
+          "It describes the procedure tested here, without claiming benefits from continued use."
+        ]
+      ],
+      "semantic_review": "Chosen invariant, exact mutation, baseline and mutated test totals, real router/libSQL versus HTTP mocks, and no inference of AI authorship preserved."
+    },
+    {
+      "id": "O10",
+      "path": "articles/game-jam-repository-reuse.md",
+      "edits": [
+        [
+          "逆に、この段階で全部を汎用化するより、何が固有値かを読み取れることに価値があります。",
+          "全部を汎用化する前に、まず変更が必要な固有値を読み取れるようにします。"
+        ]
+      ],
+      "semantic_review": "One committed event, event-scoped sharing, stubbed Godot with real ZIP handling, fixed CI path and unimplemented cross-event proposal preserved."
+    },
+    {
+      "id": "O10",
+      "path": "devto/game-jam-repository-reuse.md",
+      "edits": [
+        [
+          "At this stage, being able to identify those specific values is useful without first generalizing everything.",
+          "Before generalizing the script, make its game-specific values easy to identify."
+        ]
+      ],
+      "semantic_review": "One committed event, event-scoped sharing, stubbed Godot with real ZIP handling, fixed CI path and unimplemented cross-event proposal preserved."
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+[
+  {
+    "results": [],
+    "success": true,
+    "meta": {
+      "duration": 2
+    }
+  },
+  {
+    "results": [],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [],
+    "success": true,
+    "meta": {
+      "duration": 8
+    }
+  },
+  {
+    "results": [
+      {
+        "fixture_rows": 10000
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 216,
+        "detail": "SCAN notification"
+      },
+      {
+        "id": 14,
+        "parent": 0,
+        "notused": 0,
+        "detail": "USE TEMP B-TREE FOR ORDER BY"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [],
+    "success": true,
+    "meta": {
+      "duration": 7
+    }
+  },
+  {
+    "results": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 48,
+        "detail": "SEARCH notification USING COVERING INDEX idx_user_created (user_id=? AND created_at>?)"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 1
+    }
+  },
+  {
+    "results": [
+      {
+        "variant": "user_created",
+        "matching_rows": 10,
+        "id_sum": 94920
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "variant": "user_created",
+        "id": 9942
+      },
+      {
+        "variant": "user_created",
+        "id": 9842
+      },
+      {
+        "variant": "user_created",
+        "id": 9742
+      },
+      {
+        "variant": "user_created",
+        "id": 9642
+      },
+      {
+        "variant": "user_created",
+        "id": 9542
+      },
+      {
+        "variant": "user_created",
+        "id": 9442
+      },
+      {
+        "variant": "user_created",
+        "id": 9342
+      },
+      {
+        "variant": "user_created",
+        "id": 9242
+      },
+      {
+        "variant": "user_created",
+        "id": 9142
+      },
+      {
+        "variant": "user_created",
+        "id": 9042
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [],
+    "success": true,
+    "meta": {
+      "duration": 6
+    }
+  },
+  {
+    "results": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 196,
+        "detail": "SEARCH notification USING COVERING INDEX idx_created_user (created_at>?)"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "variant": "created_user",
+        "matching_rows": 10,
+        "id_sum": 94920
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "variant": "created_user",
+        "id": 9942
+      },
+      {
+        "variant": "created_user",
+        "id": 9842
+      },
+      {
+        "variant": "created_user",
+        "id": 9742
+      },
+      {
+        "variant": "created_user",
+        "id": 9642
+      },
+      {
+        "variant": "created_user",
+        "id": 9542
+      },
+      {
+        "variant": "created_user",
+        "id": 9442
+      },
+      {
+        "variant": "created_user",
+        "id": 9342
+      },
+      {
+        "variant": "created_user",
+        "id": 9242
+      },
+      {
+        "variant": "created_user",
+        "id": 9142
+      },
+      {
+        "variant": "created_user",
+        "id": 9042
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

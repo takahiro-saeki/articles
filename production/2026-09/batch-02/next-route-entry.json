@@ -1,0 +1,26 @@
+{
+  "ref": "0cda1e865ad80d1529197729d8d436e96d56edc7",
+  "node": "v24.15.0",
+  "next": "15.5.15",
+  "vitest": "4.1.4",
+  "scope": "Direct invocation of archived real POST handler; mocked DB and push; local env fallback; no Next HTTP server, Server Action transport, Cloudflare binding, or external requests",
+  "passed": 4,
+  "tests": [
+    {
+      "title": "missing configuration returns 500 before DB access",
+      "status": "passed"
+    },
+    {
+      "title": "invalid credentials return 401 before DB access: undefined",
+      "status": "passed"
+    },
+    {
+      "title": "invalid credentials return 401 before DB access: Bearer wrong-fixture-secret",
+      "status": "passed"
+    },
+    {
+      "title": "valid credentials reach the mocked empty schedule query",
+      "status": "passed"
+    }
+  ]
+}
