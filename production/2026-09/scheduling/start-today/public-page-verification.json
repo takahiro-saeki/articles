@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-11T23:20:02.658888+00:00",
+  "results": [
+    {
+      "platform": "zenn",
+      "url": "https://zenn.dev/hirodeath/articles/plane-project-boundaries",
+      "status": 200,
+      "final_url": "https://zenn.dev/hirodeath/articles/plane-project-boundaries",
+      "expected_title_present": true,
+      "html_title": "個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける"
+    },
+    {
+      "platform": "devto",
+      "url": "https://dev.to/hirodeath/organizing-personal-plane-projects-around-products-rather-than-working-directories-4en3",
+      "status": 200,
+      "final_url": "https://dev.to/hirodeath/organizing-personal-plane-projects-around-products-rather-than-working-directories-4en3",
+      "expected_title_present": true
+    },
+    {
+      "platform": "devto_api",
+      "url": "https://dev.to/hirodeath/organizing-personal-plane-projects-around-products-rather-than-working-directories-4en3",
+      "status": 200,
+      "final_url": "https://dev.to/api/articles/4635258",
+      "id": 4635258,
+      "title": "Organizing personal Plane projects around products rather than working directories",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/plane-project-boundaries",
+      "published_at": "2026-09-11T23:18:27Z",
+      "body_markdown_matches": true
+    }
+  ]
+}

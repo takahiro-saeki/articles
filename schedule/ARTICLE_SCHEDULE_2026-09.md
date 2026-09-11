@@ -2,7 +2,7 @@
 
 2026-09-12〜2026-12-10、毎日09:00（Asia/Tokyo）を基準に、日本語1本とdev.to英語版1本を公開する。合計90組・180本。日本語の内訳はZenn41本、Qiita49本。GitHub Actionsの開始遅延により、公開が予定時刻より遅れる場合がある。
 
-9月12日の追加指示で開始を今日へ1日前倒しした。初日の1組は手動で直ちに公開し、翌日以降は09:00を基準に実行する。
+9月12日の追加指示で開始を今日へ1日前倒しした。初日のP01は9月12日に公開済み（[日本語](https://zenn.dev/hirodeath/articles/plane-project-boundaries) / [English](https://dev.to/hirodeath/organizing-personal-plane-projects-around-products-rather-than-working-directories-4en3)）。翌日以降の89組は09:00を基準に実行する。
 
 先に書きたい12本を優先順に配置し、残りは制作バッチ順・同バッチ内は候補表順。9月12日のユーザー指示で予約を追加した。既存の38日分の記録は保持している。
 

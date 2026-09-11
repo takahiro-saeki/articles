@@ -1,0 +1,26 @@
+{
+  "run_id": 34657544385,
+  "run_url": "https://github.com/takahiro-saeki/articles/actions/runs/34657544385",
+  "conclusion": "success",
+  "run_head_sha": "c671222e1aec283e0c873d0217378ac6957a5d28",
+  "publication_commit": "bb5133ed52a8383383842d3fa60a2bed36c66f6f",
+  "result": {
+    "date": "2026-09-12",
+    "platform": "zenn",
+    "canonicalUrl": "https://zenn.dev/hirodeath/articles/plane-project-boundaries",
+    "devtoUrl": "https://dev.to/hirodeath/organizing-personal-plane-projects-around-products-rather-than-working-directories-4en3"
+  },
+  "devto_id": 4635258,
+  "dry_run_after_publication": {
+    "today": "2026-09-12",
+    "date": "2026-09-12",
+    "platform": "zenn",
+    "source": "articles/plane-project-boundaries.md",
+    "devto": "devto/plane-project-boundaries.md",
+    "sourceSlug": "plane-project-boundaries",
+    "sourceIsPublished": true,
+    "devtoIsPublished": true
+  },
+  "only_first_pair_metadata_changed": true,
+  "article_bodies_unchanged": true
+}
