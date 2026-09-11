@@ -488,7 +488,7 @@
   },
   {
     "id": "T11",
-    "title": "Reactの`key`をindexにすると何が壊れるのか、入力欄で再現した",
+    "title": "Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する",
     "original_title": "Reactの`key`をindexにすると何が壊れるのか、入力欄で再現した",
     "slug": "react-index-key-input-reorder",
     "angle": "並び替えとstate保持",
@@ -497,14 +497,15 @@
     "japanese": "public/react-index-key-input-reorder.md",
     "english": "devto/react-index-key-input-reorder.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 9,
+    "fact_check": "[一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T12",
-    "title": "Strict Modeで`useEffect`が二度動く理由を改めて確認した",
+    "title": "Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する",
     "original_title": "Strict Modeで`useEffect`が二度動く理由を改めて確認した",
     "slug": "strict-mode-effect-cleanup",
     "angle": "setup、cleanup、開発時挙動",
@@ -513,14 +514,15 @@
     "japanese": "public/strict-mode-effect-cleanup.md",
     "english": "devto/strict-mode-effect-cleanup.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 9,
+    "fact_check": "[一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T13",
-    "title": "controlledとuncontrolled inputをフォーム規模別に比べてみた",
+    "title": "controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する",
     "original_title": "controlledとuncontrolled inputをフォーム規模別に比べてみた",
     "slug": "controlled-uncontrolled-form-experiment",
     "angle": "再描画、初期値、リセット",
@@ -529,10 +531,11 @@
     "japanese": "public/controlled-uncontrolled-form-experiment.md",
     "english": "devto/controlled-uncontrolled-form-experiment.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 9,
+    "fact_check": "[一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T14",
@@ -552,7 +555,7 @@
   },
   {
     "id": "T15",
-    "title": "`useSyncExternalStore`は何を解決するAPIなのか",
+    "title": "useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する",
     "original_title": "`useSyncExternalStore`は何を解決するAPIなのか",
     "slug": "use-sync-external-store-ssr",
     "angle": "外部ストアとSSR",
@@ -561,14 +564,15 @@
     "japanese": "public/use-sync-external-store-ssr.md",
     "english": "devto/use-sync-external-store-ssr.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 9,
+    "fact_check": "[一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T16",
-    "title": "Reactのcallback refが返すcleanupを改めて調べた",
+    "title": "Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる",
     "original_title": "Reactのcallback refが返すcleanupを改めて調べた",
     "slug": "react-callback-ref-cleanup",
     "angle": "React 19系の挙動と型",
@@ -577,14 +581,15 @@
     "japanese": "public/react-callback-ref-cleanup.md",
     "english": "devto/react-callback-ref-cleanup.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 9,
+    "fact_check": "[一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T17",
-    "title": "`useActionState`を普通のフォームstateと比べてみた",
+    "title": "useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する",
     "original_title": "`useActionState`を普通のフォームstateと比べてみた",
     "slug": "use-action-state-form-experiment",
     "angle": "pending、error、Server Action",
@@ -593,10 +598,11 @@
     "japanese": "public/use-action-state-form-experiment.md",
     "english": "devto/use-action-state-form-experiment.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 9,
+    "fact_check": "[一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T18",

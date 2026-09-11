@@ -2,7 +2,7 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
-本文・日英対訳・Humanizerまで検証済み 50/90件（完成 41件、canonical待ち 9件）。本文の検証が残る候補は 40件。canonical未確定の原稿は完成数に含めない。
+本文・日英対訳・Humanizerまで検証済み 56/90件（完成 41件、canonical待ち 15件）。本文の検証が残る候補は 34件。canonical未確定の原稿は完成数に含めない。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -16,8 +16,9 @@
 - バッチ06: P08、P10、P17、P19、T14、O19。完成 6/6件、本文検証済み 6/6件。
 - バッチ07: P20、T18、T19、T21、T34、O25。完成 6/6件、本文検証済み 6/6件。
 - バッチ08: T02、T04、T05、T06、T07、T08。完成 0/6件、本文検証済み 6/6件。
+- バッチ09: T11、T12、T13、T15、T16、T17。完成 0/6件、本文検証済み 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: T01、T02、T04、T05、T06、T07、T08、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: T01、T02、T04、T05、T06、T07、T08、T11、T12、T13、T15、T16、T17、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -52,13 +53,13 @@
 | T08 | AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する | abortcontroller-cancellable-tasks | [原稿](public/abortcontroller-cancellable-tasks.md) | [原稿](devto/abortcontroller-cancellable-tasks.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T09 | ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる | node-esm-commonjs-boundaries | [原稿](articles/node-esm-commonjs-boundaries.md) | [原稿](devto/node-esm-commonjs-boundaries.md) | Node現行v26.8.2と検証版v24.15.0の公式Packages/Modules/ESM | Node v24.15.0で10ケース。type/拡張子/同期ESM require/TLA/dynamic import/拡張子解決/構文検出 | 完成 |
 | T10 | JavaScriptの`using`でリソース解放はどう変わるか | using-resource-disposal | 予定: public/using-resource-disposal.md | 予定: devto/using-resource-disposal.md | 未確認 | 未実施 | 未着手 |
-| T11 | Reactの`key`をindexにすると何が壊れるのか、入力欄で再現した | react-index-key-input-reorder | 予定: public/react-index-key-input-reorder.md | 予定: devto/react-index-key-input-reorder.md | 未確認 | 未実施 | 未着手 |
-| T12 | Strict Modeで`useEffect`が二度動く理由を改めて確認した | strict-mode-effect-cleanup | 予定: public/strict-mode-effect-cleanup.md | 予定: devto/strict-mode-effect-cleanup.md | 未確認 | 未実施 | 未着手 |
-| T13 | controlledとuncontrolled inputをフォーム規模別に比べてみた | controlled-uncontrolled-form-experiment | 予定: public/controlled-uncontrolled-form-experiment.md | 予定: devto/controlled-uncontrolled-form-experiment.md | 未確認 | 未実施 | 未着手 |
+| T11 | Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する | react-index-key-input-reorder | [原稿](public/react-index-key-input-reorder.md) | [原稿](devto/react-index-key-input-reorder.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
+| T12 | Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する | strict-mode-effect-cleanup | [原稿](public/strict-mode-effect-cleanup.md) | [原稿](devto/strict-mode-effect-cleanup.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
+| T13 | controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する | controlled-uncontrolled-form-experiment | [原稿](public/controlled-uncontrolled-form-experiment.md) | [原稿](devto/controlled-uncontrolled-form-experiment.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
 | T14 | useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる | react-memoization-cost | [原稿](articles/react-memoization-cost.md) | [原稿](devto/react-memoization-cost.md) | React公式useMemo/useCallback、circle-hub 770de5fの実formatterと呼出元 | React19.2.5 production/CompilerなしChrome152で9ケース×9round、各100更新。安定propsの再計算/DOM一致、paint除外 | 完成 |
-| T15 | `useSyncExternalStore`は何を解決するAPIなのか | use-sync-external-store-ssr | 予定: public/use-sync-external-store-ssr.md | 予定: devto/use-sync-external-store-ssr.md | 未確認 | 未実施 | 未着手 |
-| T16 | Reactのcallback refが返すcleanupを改めて調べた | react-callback-ref-cleanup | 予定: public/react-callback-ref-cleanup.md | 予定: devto/react-callback-ref-cleanup.md | 未確認 | 未実施 | 未着手 |
-| T17 | `useActionState`を普通のフォームstateと比べてみた | use-action-state-form-experiment | 予定: public/use-action-state-form-experiment.md | 予定: devto/use-action-state-form-experiment.md | 未確認 | 未実施 | 未着手 |
+| T15 | useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する | use-sync-external-store-ssr | [原稿](public/use-sync-external-store-ssr.md) | [原稿](devto/use-sync-external-store-ssr.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
+| T16 | Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる | react-callback-ref-cleanup | [原稿](public/react-callback-ref-cleanup.md) | [原稿](devto/react-callback-ref-cleanup.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
+| T17 | useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する | use-action-state-form-experiment | [原稿](public/use-action-state-form-experiment.md) | [原稿](devto/use-action-state-form-experiment.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
 | T18 | Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる | suspense-boundary-fallback-experiment | [原稿](articles/suspense-boundary-fallback-experiment.md) | [原稿](devto/suspense-boundary-fallback-experiment.md) | React use/Suspense/useTransition公式とproduction React19.2.5 | 実ブラウザ5条件の初回/更新/解決後DOM、入力保持。通信/paint未測定 | 完成 |
 | T19 | Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる | rsc-client-boundary-bundle | [原稿](articles/rsc-client-boundary-bundle.md) | [原稿](devto/rsc-client-boundary-bundle.md) | Next16.3.4公式境界仕様、webpack依存と生成カタログ | 3構成の初回JS/HTML byteとgzip、256行一致、2ボタン操作。時間未測定 | 完成 |
 | T20 | Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ | nextjs-actions-route-handlers-boundary | [原稿](articles/nextjs-actions-route-handlers-boundary.md) | [原稿](devto/nextjs-actions-route-handlers-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |

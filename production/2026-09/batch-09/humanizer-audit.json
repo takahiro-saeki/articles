@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T11",
+      "path": "public/react-index-key-input-reorder.md",
+      "before_sha256": "6cea5945090a5fa7f3abdb6c1666efbbe1ac721fe180d551f56dd2ab82088d8a",
+      "after_sha256": "97d5c8b3edd40e049f473b0192a6619ed1ac513dde2b81ba84e8c3e00ceffa1a",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "実リポジトリのcontrolled実装、再現実験、導入提案を区別。削除後の値とnodeの出自の表、未測定のfocus/IMEを保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T11",
+      "path": "devto/react-index-key-input-reorder.md",
+      "before_sha256": "7c8dbb4f278d9e6227bdbc7403edf04b44d15dbc6eea683e053b6d3018084388",
+      "after_sha256": "615940047b42589f98b3b834405286af9a83c4bb1c6a8f4f25636d1058ed7507",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "実リポジトリのcontrolled実装、再現実験、導入提案を区別。削除後の値とnodeの出自の表、未測定のfocus/IMEを保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T12",
+      "path": "public/strict-mode-effect-cleanup.md",
+      "before_sha256": "1ef5b86f654ac3fb0fe7ca4fd5ddbd472770ca6a4c76fc987cad387831d480b2",
+      "after_sha256": "df4faf8849d96ffea6df1707b0babd280c36b730c59f664cb415453761a5f3a2",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "追加実行のroot条件、5条件のsetup/cleanup、room変更とunmountの残数を保持。故意にcleanupを省いた実験という説明を簡潔化。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T12",
+      "path": "devto/strict-mode-effect-cleanup.md",
+      "before_sha256": "e51694386e3f076642ec3135453e5eab1782635aea647caa29f6a7ac9ddb9cd5",
+      "after_sha256": "d9c42fb1e823147081f4a2b5a077ef19b728a12ad61c877ebd02db9bf27aaad2",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "追加実行のroot条件、5条件のsetup/cleanup、room変更とunmountの残数を保持。故意にcleanupを省いた実験という説明を簡潔化。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T13",
+      "path": "public/controlled-uncontrolled-form-experiment.md",
+      "before_sha256": "b4597e69b66adb465cf9df83d04a91436d177eef9f22f6a8064a8cadbdafc758",
+      "after_sha256": "3e089e7958def4a1b8d8ad7845460cec4106500cfa20d0397506c1761343e032",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "controlledとstate配置を分ける説明を直接記述。固定リスト、9条件、送信値、reset差、呼出回数と時間の区別を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T13",
+      "path": "devto/controlled-uncontrolled-form-experiment.md",
+      "before_sha256": "d01c5063286a125f96b468f82149d62f494d8954583c84a5423ce3083aac8596",
+      "after_sha256": "8c7dd22f6e1be450c61e07c22e220e173028bcb5415bb7e47f006141e6a6b0a2",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "controlledとstate配置を分ける説明を直接記述。固定リスト、9条件、送信値、reset差、呼出回数と時間の区別を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T15",
+      "path": "public/use-sync-external-store-ssr.md",
+      "before_sha256": "666a96aedd1bd42ef0fedde7aff1c34d5764b174565f4619407bb2736febf9f4",
+      "after_sha256": "35674caef82c49ec047f59c683f434d64ebbf360cb7a614a67b75c46077ea086",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "未検証範囲を明記して過大な否定を整理。Object.isの契約、通知と参照、SSRの一致/不一致、getServerSnapshot欠落の観測を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T15",
+      "path": "devto/use-sync-external-store-ssr.md",
+      "before_sha256": "e5161e48308aaf3ed15610e05098c207c16823cdc3a4c546bb9e8b1a8b6f8a05",
+      "after_sha256": "6ce4e0914ac6bb072483549d2f8493a4637c7a0cde5f4d9ed6e9aa85b0ebc5c3",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "未検証範囲を明記して過大な否定を整理。Object.isの契約、通知と参照、SSRの一致/不一致、getServerSnapshot欠落の観測を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T16",
+      "path": "public/react-callback-ref-cleanup.md",
+      "before_sha256": "cfd5ef60489b7bd35bfcce27762891ff98f22c94472e688a0f3eeb0b345d75c6",
+      "after_sha256": "08596369c6f024417f47398974185d12fa2bd2af1fae54bbd00af86de885c196",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "callback参照とnode参照の違いを明記。6条件のログ、observer登録記録の制約、3型検査とTS2322を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T16",
+      "path": "devto/react-callback-ref-cleanup.md",
+      "before_sha256": "11cbaf2bffb53ae2921b1b2d7533f3b3b09473f230ade48f035d844910ff1f42",
+      "after_sha256": "6286572f8bdd5781f31ffc0bc5d478ddacd3446ef7a1befc7b0eec94a005aa3b",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "callback参照とnode参照の違いを明記。6条件のログ、observer登録記録の制約、3型検査とTS2322を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T17",
+      "path": "public/use-action-state-form-experiment.md",
+      "before_sha256": "fc4b2ec5aa17ff84160dd5c62721c96b6493afdd9c8f5ca70c024350f4c2f0e8",
+      "after_sha256": "01fbe471f7b1ebdb1026f11c7888609c8b42e3618a9e381f0746ced950d10633",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "定型的な結論告知を削除。9条件のpending/入力reset/保持修正/throw/queue中間表示を保持。ブラウザー内で確認した範囲に限定。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T17",
+      "path": "devto/use-action-state-form-experiment.md",
+      "before_sha256": "ed6d8e544e93af475a631566ef06c4e3359c9e9ae4e8540fe39ff9bd1b6804e1",
+      "after_sha256": "010aa66c1be2c2bcab7d3d58bb68a9a8cb791110ca4f74a32d2ed670299fce33",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "定型的な結論告知を削除。9条件のpending/入力reset/保持修正/throw/queue中間表示を保持。ブラウザー内で確認した範囲に限定。 日英の節・コード・結果・制約の対応を確認。"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/takahiro-saeki/circle-hub",
+  "revision": "770de5f2989775cfd95f7a9c4529565a2b48d2fd",
+  "files": [
+    {
+      "path": "apps/web/src/app/(app)/organizations/[id]/schedules/new/page.tsx",
+      "sha256": "e09ff3362e0542e63ced5a468e74f26b38b88621d88287b4f26273f097c7f25d"
+    },
+    {
+      "path": "docs/design-system.md",
+      "sha256": "d2c3ba97a3698fd2e019a1ec38e0402d59568f2535ee4840564617c718d639a3"
+    }
+  ],
+  "observed": [
+    "ScheduleRow has no stable row id; rows map uses Card key={idx}.",
+    "Text inputs are controlled by parent rows state; removeRow filters the array, duplicateRow inserts a copy.",
+    "Design system mentions bulk entry as a usability objective but provides no proof of a key-related production incident."
+  ],
+  "historyChecked": {
+    "pathMigrationCommit": "494e96304d616ec2e544125eb8e204bfb4290280",
+    "latestPathCommit": "a136487f8e5ac1e8cc603025d823f3e8444de594"
+  },
+  "scope": "Read fixed Git objects and history only; browser experiments are simplified fixtures, not execution or modification of the application."
+}

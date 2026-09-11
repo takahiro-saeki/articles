@@ -1,0 +1,231 @@
+{
+  "pairs": 6,
+  "canonicalPending": [
+    "T11",
+    "T12",
+    "T13",
+    "T15",
+    "T16",
+    "T17"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "T11",
+      "jaCharacters": 3664,
+      "enWords": 829,
+      "sectionsJA": 3,
+      "sectionsEN": 3,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/controlled-uncontrolled-form-experiment.md",
+          "score": 0.109
+        },
+        {
+          "path": "public/react-callback-ref-cleanup.md",
+          "score": 0.1
+        },
+        {
+          "path": "public/use-action-state-form-experiment.md",
+          "score": 0.096
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/controlled-uncontrolled-form-experiment.md",
+          "score": 0.231
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.218
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "jaCharacters": 2941,
+      "enWords": 667,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/react-callback-ref-cleanup.md",
+          "score": 0.125
+        },
+        {
+          "path": "public/controlled-uncontrolled-form-experiment.md",
+          "score": 0.11
+        },
+        {
+          "path": "public/use-sync-external-store-ssr.md",
+          "score": 0.104
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/react-callback-ref-cleanup.md",
+          "score": 0.268
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.263
+        },
+        {
+          "path": "devto/controlled-uncontrolled-form-experiment.md",
+          "score": 0.231
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "jaCharacters": 3255,
+      "enWords": 756,
+      "sectionsJA": 3,
+      "sectionsEN": 3,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/use-action-state-form-experiment.md",
+          "score": 0.12
+        },
+        {
+          "path": "public/strict-mode-effect-cleanup.md",
+          "score": 0.11
+        },
+        {
+          "path": "public/react-index-key-input-reorder.md",
+          "score": 0.109
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/react-index-key-input-reorder.md",
+          "score": 0.231
+        },
+        {
+          "path": "devto/strict-mode-effect-cleanup.md",
+          "score": 0.231
+        }
+      ]
+    },
+    {
+      "id": "T15",
+      "jaCharacters": 4345,
+      "enWords": 831,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "public/strict-mode-effect-cleanup.md",
+          "score": 0.104
+        },
+        {
+          "path": "public/react-callback-ref-cleanup.md",
+          "score": 0.103
+        },
+        {
+          "path": "public/use-action-state-form-experiment.md",
+          "score": 0.1
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/strict-mode-effect-cleanup.md",
+          "score": 0.263
+        },
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.242
+        },
+        {
+          "path": "devto/react-callback-ref-cleanup.md",
+          "score": 0.233
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "jaCharacters": 4227,
+      "enWords": 793,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/strict-mode-effect-cleanup.md",
+          "score": 0.125
+        },
+        {
+          "path": "public/controlled-uncontrolled-form-experiment.md",
+          "score": 0.103
+        },
+        {
+          "path": "public/use-sync-external-store-ssr.md",
+          "score": 0.103
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/strict-mode-effect-cleanup.md",
+          "score": 0.268
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.233
+        },
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.222
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "jaCharacters": 4763,
+      "enWords": 976,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/controlled-uncontrolled-form-experiment.md",
+          "score": 0.12
+        },
+        {
+          "path": "public/use-sync-external-store-ssr.md",
+          "score": 0.1
+        },
+        {
+          "path": "public/react-callback-ref-cleanup.md",
+          "score": 0.1
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/controlled-uncontrolled-form-experiment.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.242
+        },
+        {
+          "path": "devto/suspense-boundary-fallback-experiment.md",
+          "score": 0.228
+        }
+      ]
+    }
+  ]
+}

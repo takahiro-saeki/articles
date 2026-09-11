@@ -1,0 +1,39 @@
+{
+  "node": "v24.15.0",
+  "typescript": "7.0.2",
+  "reactTypes": "19.3.0",
+  "cases": [
+    {
+      "name": "implicit-map-return",
+      "expected": [
+        2322
+      ],
+      "source": "import React from 'react';\nconst nodes = new Map<string, HTMLDivElement | null>();\nexport const view = <div ref={node => nodes.set('preview', node)} />;",
+      "exit": 1,
+      "diagnostics": "../../../../..<scratch>/main.tsx(3,26): error TS2322: Type '(node: HTMLDivElement | null) => Map<string, HTMLDivElement | null>' is not assignable to type 'Ref<HTMLDivElement> | undefined'.\n  Type '(node: HTMLDivElement | null) => Map<string, HTMLDivElement | null>' is not assignable to type '(instance: HTMLDivElement | null) => void | (() => VoidOrUndefinedOnly)'.\n    Type 'Map<string, HTMLDivElement | null>' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.",
+      "codes": [
+        2322
+      ]
+    },
+    {
+      "name": "cleanup-boolean-return",
+      "expected": [
+        2322
+      ],
+      "source": "import React from 'react';\nconst nodes = new Map<string, HTMLDivElement>();\nexport const view = <div ref={node => {\n  if (!node) return;\n  nodes.set('preview', node);\n  return () => nodes.delete('preview');\n}} />;",
+      "exit": 1,
+      "diagnostics": "../../../../..<scratch>/main.tsx(3,26): error TS2322: Type '(node: HTMLDivElement | null) => (() => boolean) | undefined' is not assignable to type 'Ref<HTMLDivElement> | undefined'.\n  Type '(node: HTMLDivElement | null) => (() => boolean) | undefined' is not assignable to type '(instance: HTMLDivElement | null) => void | (() => VoidOrUndefinedOnly)'.\n    Type '(() => boolean) | undefined' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.\n      Type '() => boolean' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.\n        Type '() => boolean' is not assignable to type '() => VoidOrUndefinedOnly'.\n          Type 'boolean' is not assignable to type 'VoidOrUndefinedOnly'.",
+      "codes": [
+        2322
+      ]
+    },
+    {
+      "name": "cleanup-void-return",
+      "expected": [],
+      "source": "import React from 'react';\nconst nodes = new Map<string, HTMLDivElement>();\nexport const view = <div ref={node => {\n  if (!node) return;\n  nodes.set('preview', node);\n  return () => { nodes.delete('preview'); };\n}} />;",
+      "exit": 0,
+      "diagnostics": "",
+      "codes": []
+    }
+  ]
+}

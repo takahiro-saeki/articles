@@ -1,0 +1,21 @@
+{
+  "node": "v24.15.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "packages": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "esbuild": "0.28.2",
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
+  },
+  "reactCompiler": false,
+  "ssr": {
+    "html": "<output id=\"store-count\">0</output>",
+    "bootstrap": {
+      "count": 0
+    },
+    "missingSnapshotError": "Missing getServerSnapshot, which is required for server-rendered content. Will revert to client rendering."
+  },
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36"
+}

@@ -1,0 +1,154 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T11",
+      "path": "public/react-index-key-input-reorder.md",
+      "edits": [
+        [
+          "このコードを見ただけで、入力値が入れ替わる不具合を運用中に経験したとは言えません。",
+          "このコードからは、運用中に入力値が入れ替わる不具合が起きたかまでは確認できません。"
+        ]
+      ],
+      "semantic_review": "実リポジトリのcontrolled実装、再現実験、導入提案を区別。削除後の値とnodeの出自の表、未測定のfocus/IMEを保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T11",
+      "path": "devto/react-index-key-input-reorder.md",
+      "edits": [
+        [
+          "Reading this code does not establish a real production incident in which input values were mixed up.",
+          "The code alone does not show whether input values ever became mixed up in production."
+        ]
+      ],
+      "semantic_review": "実リポジトリのcontrolled実装、再現実験、導入提案を区別。削除後の値とnodeの出自の表、未測定のfocus/IMEを保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T12",
+      "path": "public/strict-mode-effect-cleanup.md",
+      "edits": [
+        [
+          "「Strict Modeならどこに置いてもEffectは必ず2回」とは覚えない方が、観測したログを読みやすくなります。",
+          "ログを読むときも、Strict Modeの配置を確認してから、Effectが2回動いた理由を調べます。"
+        ],
+        [
+          "これはStrict Modeが購読処理を壊した例ではなく、解除処理を省いた実装を同じ条件で動かした比較です。",
+          "解除処理を省くと何が残るかを、同じ条件で比較しています。"
+        ]
+      ],
+      "semantic_review": "追加実行のroot条件、5条件のsetup/cleanup、room変更とunmountの残数を保持。故意にcleanupを省いた実験という説明を簡潔化。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T12",
+      "path": "devto/strict-mode-effect-cleanup.md",
+      "edits": [
+        [
+          "Treating all Strict Mode placement as an unconditional doubling makes observed logs harder to interpret.",
+          "Check where Strict Mode is placed before interpreting repeated Effect logs."
+        ],
+        [
+          "This is a comparison against an implementation deliberately missing its removal step, rather than evidence that Strict Mode broke a correct subscription.",
+          "The comparison shows what remains when the implementation omits its removal step."
+        ]
+      ],
+      "semantic_review": "追加実行のroot条件、5条件のsetup/cleanup、room変更とunmountの残数を保持。故意にcleanupを省いた実験という説明を簡潔化。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T13",
+      "path": "public/controlled-uncontrolled-form-experiment.md",
+      "edits": [
+        [
+          "ここで確認する答えは、再実行を減らす設計を考えるときに、controlledかどうかとstateの配置を分けることです。",
+          "再実行を減らすには、controlledかどうかに加えて、stateをどこへ置くかを検討します。"
+        ]
+      ],
+      "semantic_review": "controlledとstate配置を分ける説明を直接記述。固定リスト、9条件、送信値、reset差、呼出回数と時間の区別を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T13",
+      "path": "devto/controlled-uncontrolled-form-experiment.md",
+      "edits": [
+        [
+          "The design question is to separate controlled status from state placement when reducing repeated component work.",
+          "Reducing repeated component work requires looking at state placement as well as whether inputs are controlled."
+        ]
+      ],
+      "semantic_review": "controlledとstate配置を分ける説明を直接記述。固定リスト、9条件、送信値、reset差、呼出回数と時間の区別を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T15",
+      "path": "public/use-sync-external-store-ssr.md",
+      "edits": [
+        [
+          "今回の直接変更後の観測では、親の別のstate更新などによる再描画は挟んでいません。同じオブジェクトを変更すると、どんな状況でも永久に画面が更新されない、という主張ではありません。",
+          "直接変更した後は、親の別のstate更新などによる再描画を挟まずに観測しました。別のきっかけで再描画された場合の表示は、この比較では確認していません。"
+        ]
+      ],
+      "semantic_review": "未検証範囲を明記して過大な否定を整理。Object.isの契約、通知と参照、SSRの一致/不一致、getServerSnapshot欠落の観測を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T15",
+      "path": "devto/use-sync-external-store-ssr.md",
+      "edits": [
+        [
+          "No unrelated parent-state update or other rerender was introduced after the mutation in this test. The finding is not that mutating an object prevents the screen from ever updating under all circumstances.",
+          "The test observed the mutation without an unrelated parent-state update or other rerender. It did not check what the display would show after a rerender triggered elsewhere."
+        ]
+      ],
+      "semantic_review": "未検証範囲を明記して過大な否定を整理。Object.isの契約、通知と参照、SSRの一致/不一致、getServerSnapshot欠落の観測を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T16",
+      "path": "public/react-callback-ref-cleanup.md",
+      "edits": [
+        [
+          "同じDOMを維持したことは、再描画前後でnode参照を直接比較して確かめました。callbackの実行回数だけから、DOMが毎回作り直されたと判断する必要はありません。",
+          "再描画前後でnode参照を直接比較し、同じDOMを維持したことを確かめました。callbackの実行回数と、DOMが作り直されたかどうかは分けて調べます。"
+        ]
+      ],
+      "semantic_review": "callback参照とnode参照の違いを明記。6条件のログ、observer登録記録の制約、3型検査とTS2322を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T16",
+      "path": "devto/react-callback-ref-cleanup.md",
+      "edits": [
+        [
+          "The experiment compared node references directly before and after rerender. Callback activity alone does not establish that the DOM node was recreated.",
+          "Direct comparison of node references before and after rerender confirmed that the DOM node stayed the same. Callback activity and DOM replacement are separate observations."
+        ]
+      ],
+      "semantic_review": "callback参照とnode参照の違いを明記。6条件のログ、observer登録記録の制約、3型検査とTS2322を保持。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T17",
+      "path": "public/use-action-state-form-experiment.md",
+      "edits": [
+        [
+          "結論は、Actionの結果を持つstateと、失敗時に残したい入力を分けて設計することです。",
+          "Actionの結果を持つstateと、失敗時に残したい入力は、それぞれ設計が必要です。"
+        ],
+        [
+          "Hookを使っただけでサーバー側の検証や認可が用意される、と読む範囲の実験でもありません。",
+          "サーバー側の検証や認可は、この実験では実装・検証していません。"
+        ]
+      ],
+      "semantic_review": "定型的な結論告知を削除。9条件のpending/入力reset/保持修正/throw/queue中間表示を保持。ブラウザー内で確認した範囲に限定。 日英の節・コード・結果・制約の対応を確認。"
+    },
+    {
+      "id": "T17",
+      "path": "devto/use-action-state-form-experiment.md",
+      "edits": [
+        [
+          "The design decision is to distinguish the state holding an Action result from the input that should remain after a failure.",
+          "The state holding an Action result and the input that should remain after a failure each need a design decision."
+        ],
+        [
+          "They do not establish that using the Hook supplies server-side validation or authorization.",
+          "Server-side validation and authorization were neither implemented nor tested here."
+        ]
+      ],
+      "semantic_review": "定型的な結論告知を削除。9条件のpending/入力reset/保持修正/throw/queue中間表示を保持。ブラウザー内で確認した範囲に限定。 日英の節・コード・結果・制約の対応を確認。"
+    }
+  ]
+}

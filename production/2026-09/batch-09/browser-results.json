@@ -1,0 +1,1892 @@
+{
+  "records": [
+    {
+      "environment": "production",
+      "kind": "keys",
+      "options": {
+        "mode": "uncontrolled",
+        "keyMode": "index"
+      },
+      "result": {
+        "before": [
+          {
+            "id": "A",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ],
+        "after": [
+          {
+            "id": "B",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "C",
+            "value": "edited-B",
+            "original": "B"
+          }
+        ]
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "keys",
+      "options": {
+        "mode": "uncontrolled",
+        "keyMode": "id"
+      },
+      "result": {
+        "before": [
+          {
+            "id": "A",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ],
+        "after": [
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ]
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "keys",
+      "options": {
+        "mode": "local",
+        "keyMode": "index"
+      },
+      "result": {
+        "before": [
+          {
+            "id": "A",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ],
+        "after": [
+          {
+            "id": "B",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "C",
+            "value": "edited-B",
+            "original": "B"
+          }
+        ]
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "keys",
+      "options": {
+        "mode": "local",
+        "keyMode": "id"
+      },
+      "result": {
+        "before": [
+          {
+            "id": "A",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ],
+        "after": [
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ]
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "keys",
+      "options": {
+        "mode": "parent",
+        "keyMode": "index"
+      },
+      "result": {
+        "before": [
+          {
+            "id": "A",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ],
+        "after": [
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "A"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "B"
+          }
+        ]
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "keys",
+      "options": {
+        "mode": "parent",
+        "keyMode": "id"
+      },
+      "result": {
+        "before": [
+          {
+            "id": "A",
+            "value": "Alpha",
+            "original": "A"
+          },
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ],
+        "after": [
+          {
+            "id": "B",
+            "value": "edited-B",
+            "original": "B"
+          },
+          {
+            "id": "C",
+            "value": "Gamma",
+            "original": "C"
+          }
+        ]
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "root",
+        "size": 10
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 10,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 1,
+          "fields": 10,
+          "changes": 1
+        },
+        "submittedCount": 10,
+        "submittedFirst": "edited",
+        "nativeReset": "edited",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "root",
+        "size": 100
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 100,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 1,
+          "fields": 100,
+          "changes": 1
+        },
+        "submittedCount": 100,
+        "submittedFirst": "edited",
+        "nativeReset": "edited",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "root",
+        "size": 500
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 500,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 1,
+          "fields": 500,
+          "changes": 1
+        },
+        "submittedCount": 500,
+        "submittedFirst": "edited",
+        "nativeReset": "edited",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "local",
+        "size": 10
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 10,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 0,
+          "fields": 1,
+          "changes": 1
+        },
+        "submittedCount": 10,
+        "submittedFirst": "edited",
+        "nativeReset": "edited",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "local",
+        "size": 100
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 100,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 0,
+          "fields": 1,
+          "changes": 1
+        },
+        "submittedCount": 100,
+        "submittedFirst": "edited",
+        "nativeReset": "edited",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "local",
+        "size": 500
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 500,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 0,
+          "fields": 1,
+          "changes": 1
+        },
+        "submittedCount": 500,
+        "submittedFirst": "edited",
+        "nativeReset": "edited",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "uncontrolled",
+        "size": 10
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 10,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 0,
+          "fields": 0,
+          "changes": 0
+        },
+        "submittedCount": 10,
+        "submittedFirst": "edited",
+        "nativeReset": "field-0",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "uncontrolled",
+        "size": 100
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 100,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 0,
+          "fields": 0,
+          "changes": 0
+        },
+        "submittedCount": 100,
+        "submittedFirst": "edited",
+        "nativeReset": "field-0",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "forms",
+      "options": {
+        "mode": "uncontrolled",
+        "size": 500
+      },
+      "result": {
+        "initial": {
+          "events": [],
+          "active": 0,
+          "formRenders": 1,
+          "fieldRenders": 500,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "delta": {
+          "form": 0,
+          "fields": 0,
+          "changes": 0
+        },
+        "submittedCount": 500,
+        "submittedFirst": "edited",
+        "nativeReset": "field-0",
+        "explicitReset": "field-0"
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "store",
+      "options": {},
+      "result": {
+        "initial": {
+          "dom": "0",
+          "count": 0,
+          "subscribers": 1,
+          "trace": {
+            "events": [
+              0
+            ],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          }
+        },
+        "mutated": {
+          "dom": "0",
+          "count": 1,
+          "subscribers": 1,
+          "trace": {
+            "events": [
+              0
+            ],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          }
+        },
+        "replaced": {
+          "dom": "2",
+          "count": 2,
+          "subscribers": 1,
+          "trace": {
+            "events": [
+              0,
+              2
+            ],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          }
+        },
+        "subscribersAfterUnmount": 0
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "action",
+      "options": {},
+      "result": {
+        "name": "good",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "good"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "good"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "good"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 1,
+            "message": "saved:good"
+          },
+          "input": ""
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "manual",
+      "options": {},
+      "result": {
+        "name": "good",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "good"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "good"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "good"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 1,
+            "message": "saved:good"
+          },
+          "input": "good"
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "action",
+      "options": {},
+      "result": {
+        "name": "bad",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "bad"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "bad"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "bad"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 0,
+            "message": "invalid"
+          },
+          "input": ""
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "manual",
+      "options": {},
+      "result": {
+        "name": "bad",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "bad"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "bad"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "bad"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 0,
+            "message": "invalid"
+          },
+          "input": "bad"
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "action",
+      "options": {},
+      "result": {
+        "name": "crash",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "crash"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "crash"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "crash"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": [
+              "simulated failure"
+            ]
+          },
+          "error": "simulated failure",
+          "state": null,
+          "input": null
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "manual",
+      "options": {},
+      "result": {
+        "name": "crash",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "crash"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "crash"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "crash"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 0,
+            "message": "simulated failure"
+          },
+          "input": "crash"
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "preserve",
+      "options": {},
+      "result": {
+        "name": "bad",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial",
+                  "input": ""
+                },
+                "name": "bad"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "bad"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial",
+                  "input": ""
+                },
+                "name": "bad"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 0,
+            "message": "invalid",
+            "input": "bad"
+          },
+          "input": "bad"
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "preserve",
+      "options": {},
+      "result": {
+        "name": "good",
+        "pending": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial",
+                  "input": ""
+                },
+                "name": "good"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "pending": "true",
+          "input": "good"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial",
+                  "input": ""
+                },
+                "name": "good"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "error": null,
+          "state": {
+            "count": 1,
+            "message": "saved:good",
+            "input": ""
+          },
+          "input": ""
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "action",
+      "options": {},
+      "result": {
+        "queue": true,
+        "first": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "first"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "state": {
+            "count": 0,
+            "message": "initial"
+          },
+          "pending": "true"
+        },
+        "second": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "first"
+              },
+              {
+                "previous": {
+                  "count": 1,
+                  "message": "saved:first"
+                },
+                "name": "second"
+              }
+            ],
+            "gates": 1,
+            "submitted": null,
+            "errors": []
+          },
+          "state": {
+            "count": 0,
+            "message": "initial"
+          },
+          "pending": "true"
+        },
+        "finished": {
+          "trace": {
+            "events": [],
+            "active": 0,
+            "formRenders": 0,
+            "fieldRenders": 0,
+            "fieldChanges": 0,
+            "calls": [
+              {
+                "previous": {
+                  "count": 0,
+                  "message": "initial"
+                },
+                "name": "first"
+              },
+              {
+                "previous": {
+                  "count": 1,
+                  "message": "saved:first"
+                },
+                "name": "second"
+              }
+            ],
+            "gates": 0,
+            "submitted": null,
+            "errors": []
+          },
+          "state": {
+            "count": 2,
+            "message": "saved:second"
+          },
+          "pending": "false"
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "effects",
+      "options": {
+        "strict": true,
+        "nested": false,
+        "cleanup": true
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "setup:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "emitted": {
+          "events": [
+            "setup:A",
+            "message:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "changed": {
+          "events": [
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "unmounted": {
+          "events": [
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B",
+            "cleanup:B"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "refs",
+      "options": {
+        "strict": true,
+        "stable": true,
+        "legacy": false
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "updated": {
+          "events": [
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": [],
+          "sameNode": true
+        },
+        "unmounted": {
+          "events": [
+            "attach",
+            "cleanup"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "refs",
+      "options": {
+        "strict": true,
+        "stable": false,
+        "legacy": false
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "updated": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": [],
+          "sameNode": true
+        },
+        "unmounted": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach",
+            "cleanup"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "production",
+      "kind": "refs",
+      "options": {
+        "strict": true,
+        "stable": true,
+        "legacy": true
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "updated": {
+          "events": [
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": [],
+          "sameNode": true
+        },
+        "unmounted": {
+          "events": [
+            "attach",
+            "null",
+            "cleanup"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "effects",
+      "options": {
+        "strict": true,
+        "nested": false,
+        "cleanup": true
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "setup:A",
+            "cleanup:A",
+            "setup:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "emitted": {
+          "events": [
+            "setup:A",
+            "cleanup:A",
+            "setup:A",
+            "message:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "changed": {
+          "events": [
+            "setup:A",
+            "cleanup:A",
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "unmounted": {
+          "events": [
+            "setup:A",
+            "cleanup:A",
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B",
+            "cleanup:B"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "effects",
+      "options": {
+        "strict": false,
+        "nested": false,
+        "cleanup": true
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "setup:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "emitted": {
+          "events": [
+            "setup:A",
+            "message:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "changed": {
+          "events": [
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "unmounted": {
+          "events": [
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B",
+            "cleanup:B"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "effects",
+      "options": {
+        "strict": false,
+        "nested": true,
+        "cleanup": true
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "setup:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "emitted": {
+          "events": [
+            "setup:A",
+            "message:A"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "changed": {
+          "events": [
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "unmounted": {
+          "events": [
+            "setup:A",
+            "message:A",
+            "cleanup:A",
+            "setup:B",
+            "cleanup:B"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "effects",
+      "options": {
+        "strict": true,
+        "nested": false,
+        "cleanup": false
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "setup:A",
+            "setup:A"
+          ],
+          "active": 2,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "emitted": {
+          "events": [
+            "setup:A",
+            "setup:A",
+            "message:A",
+            "message:A"
+          ],
+          "active": 2,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "changed": {
+          "events": [
+            "setup:A",
+            "setup:A",
+            "message:A",
+            "message:A",
+            "setup:B"
+          ],
+          "active": 3,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "unmounted": {
+          "events": [
+            "setup:A",
+            "setup:A",
+            "message:A",
+            "message:A",
+            "setup:B"
+          ],
+          "active": 3,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "refs",
+      "options": {
+        "strict": true,
+        "stable": true,
+        "legacy": false
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "updated": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": [],
+          "sameNode": true
+        },
+        "unmounted": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach",
+            "cleanup"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "refs",
+      "options": {
+        "strict": true,
+        "stable": false,
+        "legacy": false
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "updated": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": [],
+          "sameNode": true
+        },
+        "unmounted": {
+          "events": [
+            "attach",
+            "cleanup",
+            "attach",
+            "cleanup",
+            "attach",
+            "cleanup"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "environment": "development",
+      "kind": "refs",
+      "options": {
+        "strict": true,
+        "stable": true,
+        "legacy": true
+      },
+      "result": {
+        "mounted": {
+          "events": [
+            "attach",
+            "null",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        },
+        "updated": {
+          "events": [
+            "attach",
+            "null",
+            "cleanup",
+            "attach"
+          ],
+          "active": 1,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": [],
+          "sameNode": true
+        },
+        "unmounted": {
+          "events": [
+            "attach",
+            "null",
+            "cleanup",
+            "attach",
+            "null",
+            "cleanup"
+          ],
+          "active": 0,
+          "formRenders": 0,
+          "fieldRenders": 0,
+          "fieldChanges": 0,
+          "calls": [],
+          "gates": 0,
+          "submitted": null,
+          "errors": []
+        }
+      }
+    },
+    {
+      "kind": "hydration",
+      "environment": "development",
+      "options": {
+        "mode": "matching"
+      },
+      "result": {
+        "serverSnapshots": [
+          0,
+          0
+        ],
+        "renders": [
+          0,
+          1
+        ],
+        "errors": [],
+        "count": "1",
+        "subscribers": 1
+      }
+    },
+    {
+      "kind": "hydration",
+      "environment": "development",
+      "options": {
+        "mode": "mismatched"
+      },
+      "result": {
+        "serverSnapshots": [
+          2,
+          2
+        ],
+        "renders": [
+          2,
+          1
+        ],
+        "errors": [
+          "Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\nhttps://react.dev/link/hydration-mismatch\n\n  <StoreCounter store={{...}} getServerSnapshot={function getServerSnapshot} rendered={function rendered}>\n    <output id=\"store-count\">\n+     2\n-     0\n"
+        ],
+        "count": "1",
+        "subscribers": 1
+      }
+    }
+  ]
+}
