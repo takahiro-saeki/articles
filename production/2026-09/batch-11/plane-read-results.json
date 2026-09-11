@@ -1,0 +1,2845 @@
+{
+  "checkedOn": "2026-09-11",
+  "workspaceSlug": "hiro-work",
+  "mode": "read-only",
+  "queries": [
+    {
+      "name": "all-open",
+      "pql": "stateGroup IN (openStates())",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 174,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "fixed-date-open",
+      "pql": "stateGroup IN (openStates()) AND dueDate <= \"2026-09-11\"",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 15,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "open-no-date",
+      "pql": "stateGroup IN (openStates()) AND dueDate IS NULL",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 56,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "caller-open",
+      "pql": "assignee = currentUser() AND stateGroup IN (openStates())",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 6,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "today-all-open",
+      "pql": "stateGroup IN (openStates()) AND dueDate <= today()",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 15,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "today-assigned",
+      "pql": "assignee = currentUser() AND stateGroup IN (openStates()) AND dueDate <= today()",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 0,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "open-unassigned",
+      "pql": "stateGroup IN (openStates()) AND hasNoAssignee()",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 168,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "overdue",
+      "pql": "isOverdue()",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 15,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "grouped-priority",
+      "pql": "stateGroup IN (openStates()) AND (priority = \"urgent\" OR priority = \"high\")",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 121,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "ungrouped-priority",
+      "pql": "stateGroup IN (openStates()) AND priority = \"urgent\" OR priority = \"high\"",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 150,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "open-missing-label",
+      "pql": "stateGroup IN (openStates()) AND hasNoLabel()",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 171,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "grouped-breakdown",
+      "pql": "stateGroup IN (openStates()) AND (priority = \"urgent\" OR priority = \"high\")",
+      "group_by": "state__group",
+      "response": {
+        "grouped_by": "state__group",
+        "sub_grouped_by": null,
+        "total_count": 121,
+        "grouped_counts": {
+          "backlog": {
+            "count": 106,
+            "sub_grouped_counts": null
+          },
+          "started": {
+            "count": 9,
+            "sub_grouped_counts": null
+          },
+          "unstarted": {
+            "count": 6,
+            "sub_grouped_counts": null
+          }
+        }
+      }
+    },
+    {
+      "name": "ungrouped-breakdown",
+      "pql": "stateGroup IN (openStates()) AND priority = \"urgent\" OR priority = \"high\"",
+      "group_by": "state__group",
+      "response": {
+        "grouped_by": "state__group",
+        "sub_grouped_by": null,
+        "total_count": 150,
+        "grouped_counts": {
+          "backlog": {
+            "count": 106,
+            "sub_grouped_counts": null
+          },
+          "completed": {
+            "count": 29,
+            "sub_grouped_counts": null
+          },
+          "started": {
+            "count": 9,
+            "sub_grouped_counts": null
+          },
+          "unstarted": {
+            "count": 6,
+            "sub_grouped_counts": null
+          }
+        }
+      }
+    },
+    {
+      "name": "today-unassigned",
+      "pql": "stateGroup IN (openStates()) AND dueDate <= today() AND hasNoAssignee()",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 15,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "invalid-field",
+      "pql": "state__group = \"started\"",
+      "response": {
+        "error": "Filtering on field 'state__group' is not allowed",
+        "failed_pql": "state__group = \"started\""
+      }
+    },
+    {
+      "name": "correct-field",
+      "pql": "stateGroup = \"started\"",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 12,
+        "grouped_counts": {}
+      }
+    },
+    {
+      "name": "priority-in",
+      "pql": "stateGroup IN (openStates()) AND priority IN (\"urgent\", \"high\")",
+      "response": {
+        "grouped_by": null,
+        "sub_grouped_by": null,
+        "total_count": 121,
+        "grouped_counts": {}
+      }
+    }
+  ],
+  "pagination": [
+    {
+      "page": 1,
+      "count": 100,
+      "total_count": 233,
+      "next_cursor": "100:1:0",
+      "next_page_results": true
+    },
+    {
+      "page": 2,
+      "count": 100,
+      "total_count": 233,
+      "next_cursor": "100:2:0",
+      "next_page_results": true
+    },
+    {
+      "page": 3,
+      "count": 33,
+      "total_count": 233,
+      "next_cursor": "100:3:0",
+      "next_page_results": false
+    }
+  ],
+  "items": [
+    {
+      "identifier": "DRG-28",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-27",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-26",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-25",
+      "project": "DRG",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-24",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-23",
+      "project": "DRG",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-22",
+      "project": "DRG",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-21",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-28",
+      "project": "MEG",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-27",
+      "project": "MEG",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-26",
+      "project": "MEG",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-52",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-11",
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-51",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-11",
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-50",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-11",
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-49",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-48",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-47",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-46",
+      "project": "SQN",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-45",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-44",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-25",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-24",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-23",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-22",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-21",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-20",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-19",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-43",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-42",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-41",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-40",
+      "project": "SQN",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-39",
+      "project": "SQN",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-20",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-19",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-18",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-17",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-16",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-15",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-14",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-13",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-12",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-11",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-38",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-37",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-36",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-35",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-34",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-33",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-32",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-31",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-30",
+      "project": "SQN",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-29",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-10",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-9",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-8",
+      "project": "DRG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-7",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-6",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-5",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-4",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-3",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-28",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-27",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-09-10",
+      "dueDate": "2026-09-10",
+      "labels": []
+    },
+    {
+      "identifier": "SQN-26",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "DRG-2",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-118",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-117",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-116",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-115",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-114",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-113",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-112",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-12-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-111",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-110",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-109",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-108",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-107",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-106",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-105",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-104",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-103",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-102",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-101",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-100",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-99",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-98",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-97",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-96",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-95",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-11-22",
+      "dueDate": "2026-11-22",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-94",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-22",
+      "dueDate": "2026-11-23",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-93",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-16",
+      "dueDate": "2026-11-21",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-92",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-16",
+      "dueDate": "2026-11-21",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-91",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-16",
+      "dueDate": "2026-11-21",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-90",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-89",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-88",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-16",
+      "dueDate": "2026-11-16",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-87",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-86",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-85",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-84",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-83",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-82",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-81",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-80",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-79",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-78",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-77",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-76",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-75",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-74",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-73",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-72",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-71",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-70",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-69",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-68",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-67",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-66",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-65",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-64",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-63",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-20",
+      "dueDate": "2026-11-08",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-62",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-26",
+      "dueDate": "2026-10-31",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-61",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-10-26",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-60",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-10-25",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-59",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-10-25",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-58",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-10-25",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-57",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-10-25",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-56",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-55",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-54",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-53",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-52",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-51",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-50",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-49",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-48",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-47",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-46",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-45",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-44",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-43",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-42",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-41",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-18",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-40",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-39",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-38",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-37",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-36",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-35",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-34",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-33",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-32",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-31",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-30",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-29",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-28",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-27",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-26",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-25",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-24",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-23",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-22",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-21",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-20",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-19",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-18",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-17",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-16",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-15",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-14",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-08",
+      "dueDate": "2026-10-05",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-13",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-12",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-11",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-10",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-9",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-8",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-7",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-6",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-5",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-4",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-3",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-2",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "RECITAL-1",
+      "project": "RECITAL",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": "2026-09-03",
+      "dueDate": "2026-09-07",
+      "labels": []
+    },
+    {
+      "identifier": "DRG-1",
+      "project": "DRG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-18",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-17",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-16",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-15",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-14",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-13",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-12",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-11",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-10",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-9",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-8",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-7",
+      "project": "MEG",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-6",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-5",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-4",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-3",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-2",
+      "project": "MEG",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "MEG-1",
+      "project": "MEG",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-25",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-24",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-23",
+      "project": "SQN",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-22",
+      "project": "SQN",
+      "state": "Cancelled",
+      "group": "cancelled",
+      "priority": "low",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-21",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-20",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-19",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-18",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-17",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-16",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-15",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-14",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": "2026-09-10",
+      "labels": []
+    },
+    {
+      "identifier": "SQN-13",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-12",
+      "project": "SQN",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "medium",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-11",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "medium",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-10",
+      "project": "SQN",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "medium",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-9",
+      "project": "SQN",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "high",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-8",
+      "project": "SQN",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "high",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-7",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-6",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-5",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-4",
+      "project": "SQN",
+      "state": "Done",
+      "group": "completed",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-3",
+      "project": "SQN",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-2",
+      "project": "SQN",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "SQN-1",
+      "project": "SQN",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 1,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "HIROW-7",
+      "project": "HIROW",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "none",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "HIROW-6",
+      "project": "HIROW",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "low",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": [
+        "3b9b255a-2554-4625-a038-f8c6ae27745e"
+      ]
+    },
+    {
+      "identifier": "HIROW-5",
+      "project": "HIROW",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "none",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "HIROW-4",
+      "project": "HIROW",
+      "state": "In Progress",
+      "group": "started",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": [
+        "3b9b255a-2554-4625-a038-f8c6ae27745e"
+      ]
+    },
+    {
+      "identifier": "HIROW-3",
+      "project": "HIROW",
+      "state": "Backlog",
+      "group": "backlog",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    },
+    {
+      "identifier": "HIROW-2",
+      "project": "HIROW",
+      "state": "Todo",
+      "group": "unstarted",
+      "priority": "high",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": [
+        "3b9b255a-2554-4625-a038-f8c6ae27745e"
+      ]
+    },
+    {
+      "identifier": "HIROW-1",
+      "project": "HIROW",
+      "state": "Done",
+      "group": "completed",
+      "priority": "urgent",
+      "assigneeCount": 0,
+      "startDate": null,
+      "dueDate": null,
+      "labels": []
+    }
+  ],
+  "squadNote": {
+    "labels": {
+      "results": [],
+      "total_count": 0,
+      "count": 0,
+      "next_cursor": "100:1:0",
+      "prev_cursor": "100:-1:1",
+      "next_page_results": false,
+      "prev_page_results": false
+    },
+    "features": {
+      "epics": false,
+      "modules": false,
+      "cycles": false,
+      "views": true,
+      "pages": true,
+      "intakes": false,
+      "work_item_types": false,
+      "workflows": false,
+      "parallel_cycles": false,
+      "project_updates": false,
+      "manually_start_end_cycles": false,
+      "milestones": false
+    }
+  },
+  "toolLimitations": {
+    "pqlReferenceNoAction": [
+      {
+        "type": "text",
+        "text": "Error: get_pql_reference requires an action. It takes: read."
+      }
+    ],
+    "pqlReferenceWithAction": [
+      {
+        "type": "text",
+        "text": "1 validation error for call[get_pql_reference]\naction\n  Unexpected keyword argument [type=unexpected_keyword_argument, input_value='read', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/unexpected_keyword_argument"
+      }
+    ],
+    "projectTemplateList": {
+      "content": [],
+      "isError": false
+    },
+    "projectTemplateListInterpretation": "Empty content is not evidence of an empty template collection."
+  }
+}

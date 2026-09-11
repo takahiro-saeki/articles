@@ -2,7 +2,7 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
-本文・日英対訳・Humanizerまで検証済み 62/90件（完成 41件、canonical待ち 21件）。本文の検証が残る候補は 28件。canonical未確定の原稿は完成数に含めない。
+本文・日英対訳・Humanizerまで検証済み 68/90件（完成 41件、canonical待ち 27件）。本文の検証が残る候補は 22件。canonical未確定の原稿は完成数に含めない。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -18,8 +18,9 @@
 - バッチ08: T02、T04、T05、T06、T07、T08。完成 0/6件、本文検証済み 6/6件。
 - バッチ09: T11、T12、T13、T15、T16、T17。完成 0/6件、本文検証済み 6/6件。
 - バッチ10: T10、T22、T23、T24、T25、T38。完成 0/6件、本文検証済み 6/6件。
+- バッチ11: P05、P06、P07、P11、P12、P13。完成 0/6件、本文検証済み 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: T01、T02、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T31、T37、T38。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: P05、P06、P07、P11、P12、P13、T01、T02、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T31、T37、T38。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -28,15 +29,15 @@
 | P02 | PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める | plane-workspace-access-boundaries | [原稿](articles/plane-workspace-access-boundaries.md) | [原稿](devto/plane-workspace-access-boundaries.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | P03 | PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ | plane-project-module-cycle-initiative | [原稿](articles/plane-project-module-cycle-initiative.md) | [原稿](devto/plane-project-module-cycle-initiative.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
 | P04 | 複数プロジェクトでステータスを共通化しすぎて困った話 | plane-status-by-deliverable | 予定: public/plane-status-by-deliverable.md | 予定: devto/plane-status-by-deliverable.md | 未確認 | 未実施 | 未着手 |
-| P05 | Planeのラベルを増やしすぎない。個人開発で残した分類 | plane-label-taxonomy | 予定: public/plane-label-taxonomy.md | 予定: devto/plane-label-taxonomy.md | 未確認 | 未実施 | 未着手 |
-| P06 | PlaneのViewsで「今日やること」だけを全プロジェクトから集める | plane-today-cross-project-view | 予定: public/plane-today-cross-project-view.md | 予定: devto/plane-today-cross-project-view.md | 未確認 | 未実施 | 未着手 |
-| P07 | Plane Query Languageで個人用ダッシュボードを作る | plane-pql-personal-dashboard | 予定: public/plane-pql-personal-dashboard.md | 予定: devto/plane-pql-personal-dashboard.md | 未確認 | 未実施 | 未着手 |
+| P05 | Planeのラベルを足す前に、状態と優先度で探せる作業を数える | plane-label-taxonomy | [原稿](public/plane-label-taxonomy.md) | [原稿](devto/plane-label-taxonomy.md) | [一次資料・読取結果確認](production/2026-09/batch-11/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md) | 執筆中 |
+| P06 | Planeの横断Viewが0件でも、今日の作業がないとは限らない | plane-today-cross-project-view | [原稿](public/plane-today-cross-project-view.md) | [原稿](devto/plane-today-cross-project-view.md) | [一次資料・読取結果確認](production/2026-09/batch-11/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md) | 執筆中 |
+| P07 | PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する | plane-pql-personal-dashboard | [原稿](public/plane-pql-personal-dashboard.md) | [原稿](devto/plane-pql-personal-dashboard.md) | [一次資料・読取結果確認](production/2026-09/batch-11/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md) | 執筆中 |
 | P08 | 週末に終わらなかった作業を、CycleとリリースModuleでどう扱うか | plane-cycle-release-module | [原稿](articles/plane-cycle-release-module.md) | [原稿](devto/plane-cycle-release-module.md) | Plane SQN-30とCycle/Module各0件、circle-hub d116e8aの未完了モバイル確認、公式仕様 | 週締め・Dev受け入れ・配布後の3時点を机上照合。実運用/移動操作なし | 完成 |
 | P09 | Moduleをアプリのバージョン単位で使ってみた | plane-version-module | 予定: public/plane-version-module.md | 予定: devto/plane-version-module.md | 未確認 | 未実施 | 未着手 |
 | P10 | 個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める | plane-initiative-personal-products | [原稿](articles/plane-initiative-personal-products.md) | [原稿](devto/plane-initiative-personal-products.md) | 個人Plane全5Projectと専用Initiatives無効、SquadNote/Voices Diaryの固定通知仕様と実装 | 管理先の名前を照合。2アプリの共通条件は導入案。専用機能/実機通知の検証なし | 完成 |
-| P11 | PlaneのRecurring Work Itemsで定期保守を忘れない | plane-recurring-maintenance | 予定: public/plane-recurring-maintenance.md | 予定: devto/plane-recurring-maintenance.md | 未確認 | 未実施 | 未着手 |
-| P12 | 思いつきをPlaneへ入れる前に、Intakeを一段挟む | plane-intake-before-backlog | 予定: public/plane-intake-before-backlog.md | 予定: devto/plane-intake-before-backlog.md | 未確認 | 未実施 | 未着手 |
-| P13 | 新しい個人開発を始めるたびに使うPlane Project Template | plane-project-template | 予定: public/plane-project-template.md | 予定: devto/plane-project-template.md | 未確認 | 未実施 | 未着手 |
+| P11 | Planeの定期作業は、次回の起票と前回の未完了を分けて管理する | plane-recurring-maintenance | [原稿](public/plane-recurring-maintenance.md) | [原稿](devto/plane-recurring-maintenance.md) | [一次資料・読取結果確認](production/2026-09/batch-11/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md) | 執筆中 |
+| P12 | PlaneのIntakeを使う前に、受け入れ判断と作業の状態を分ける | plane-intake-before-backlog | [原稿](public/plane-intake-before-backlog.md) | [原稿](devto/plane-intake-before-backlog.md) | [一次資料・読取結果確認](production/2026-09/batch-11/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md) | 執筆中 |
+| P13 | PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる | plane-project-template | [原稿](public/plane-project-template.md) | [原稿](devto/plane-project-template.md) | [一次資料・読取結果確認](production/2026-09/batch-11/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md) | 執筆中 |
 | P14 | Plane PagesとWork Itemsのどちらに仕様を書くか | plane-pages-work-item-boundary | [原稿](articles/plane-pages-work-item-boundary.md) | [原稿](devto/plane-pages-work-item-boundary.md) | Plane SQN-29/30、Project Pages 0件、circle-hub 0cda1e8の検証文書と履歴、Plane公式Pages | 実装済みPageではなく導入案。Web確認記録とモバイル未完了を区別 | 完成 |
 | P15 | GitHub IssueとPlaneを二重管理しないための境界 | plane-github-issue-boundary | [原稿](articles/plane-github-issue-boundary.md) | [原稿](devto/plane-github-issue-boundary.md) | Plane GitHub連携とGitHub PR/Issueリンクの公式仕様を2026-09-11に照合 | 同期方向、参照のみ/状態変更、default branchでの終了条件。実同期は未実施 | 完成 |
 | P16 | CodexからPlaneへタスクを起票するとき、本文に何を残すか | plane-work-item-acceptance-evidence | 予定: public/plane-work-item-acceptance-evidence.md | 予定: devto/plane-work-item-acceptance-evidence.md | 未確認 | 未実施 | 未着手 |

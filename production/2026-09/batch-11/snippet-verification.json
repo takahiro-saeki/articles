@@ -1,0 +1,103 @@
+{
+  "pqlSnippets": [
+    {
+      "id": "P06",
+      "block": 1,
+      "language": "pql",
+      "query": "assignee = currentUser() AND stateGroup IN (openStates()) AND dueDate <= today()",
+      "sha256": "16412a28beb5f55bad5de180b136f3e711f7637a03f043df2c68b9bfa5400a3b",
+      "result": 0
+    },
+    {
+      "id": "P06",
+      "block": 2,
+      "language": "pql",
+      "query": "stateGroup IN (openStates()) AND dueDate <= today() AND hasNoAssignee()",
+      "sha256": "6d7af7f6bd474263f78d4e064d5d2e13826b12ab2654756117d18cba1ee356cd",
+      "result": 15
+    },
+    {
+      "id": "P06",
+      "block": 3,
+      "language": "pql",
+      "query": "stateGroup IN (openStates()) AND dueDate IS NULL",
+      "sha256": "d6fcf38a15fd61a2fab6207b09df47afe331216e489dd4585fcbfba1d5a5995a",
+      "result": 56
+    },
+    {
+      "id": "P07",
+      "block": 1,
+      "language": "pql",
+      "query": "stateGroup IN (openStates()) AND (priority = \"urgent\" OR priority = \"high\")",
+      "sha256": "17713bcf9e35800bded5facaece8337577ca86602beba866f44efa50d259327d",
+      "result": 121
+    },
+    {
+      "id": "P07",
+      "block": 2,
+      "language": "pql",
+      "query": "stateGroup IN (openStates()) AND priority = \"urgent\" OR priority = \"high\"",
+      "sha256": "ac44200f2f5c476ae66f130210489c65c688cf4ae324144156ebcef82d8a5425",
+      "result": 150
+    },
+    {
+      "id": "P07",
+      "block": 3,
+      "language": "pql",
+      "query": "stateGroup IN (openStates()) AND priority IN (\"urgent\", \"high\")",
+      "sha256": "3bcea44d869e6a79b108c2eab3deffd4c16177c1ad5c50d2529e556517072cac",
+      "result": 121
+    },
+    {
+      "id": "P07",
+      "block": 4,
+      "language": "pql",
+      "query": "isOverdue()",
+      "sha256": "8861a40a5d01a879e05002d288ea74057e6dc46da0ada9f539a304b4c33c366a",
+      "result": 15
+    },
+    {
+      "id": "P07",
+      "block": 5,
+      "language": "pql",
+      "query": "stateGroup IN (openStates()) AND dueDate IS NULL",
+      "sha256": "d6fcf38a15fd61a2fab6207b09df47afe331216e489dd4585fcbfba1d5a5995a",
+      "result": 56
+    },
+    {
+      "id": "P07",
+      "block": 6,
+      "language": "pql",
+      "query": "state__group = \"started\"",
+      "sha256": "739acaec5209b278180af7f046bacf086e6536556eff9c8fb2dd202958fa6cd3",
+      "result": "expected rejection"
+    },
+    {
+      "id": "P07",
+      "block": 7,
+      "language": "pql",
+      "query": "stateGroup = \"started\"",
+      "sha256": "a1d90e1ce93e780cc9ae6c1d968be66ea551440d87770211379fb4a91f1e89e7",
+      "result": 12
+    }
+  ],
+  "liveReadQueries": 17,
+  "snapshotRows": 233,
+  "localBoundaryCases": 7,
+  "manualProposalReview": {
+    "maintenanceFields": 5,
+    "intakeExamples": 4,
+    "initialProjectTasks": 3,
+    "fictionalProjects": 2,
+    "liveSchedulerOrProjectCreations": 0
+  },
+  "guard": {
+    "baseline": "8a1bfa8",
+    "beforeBatch": "5692e28",
+    "baselineFilesUnchanged": 137,
+    "previousArticleFilesUnchanged": 247,
+    "humanizerFinalHashesMatched": 12,
+    "originalIdeaContentUnchanged": true,
+    "exception": "ARTICLE_IDEAS_2026-09.md production progress block only"
+  }
+}

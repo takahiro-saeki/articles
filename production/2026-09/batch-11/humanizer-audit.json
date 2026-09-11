@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "P05",
+      "path": "public/plane-label-taxonomy.md",
+      "before_sha256": "fa32b1809c99572a3125c6e847230b480b5c9c3ec5df2c2fe43048dcf48cffe3",
+      "after_sha256": "76c777b3a119c884042f394eb7c2aacbf85d276bcf07f552e97d2acd6b9146db",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "現在のラベル0件と52件の分類、Git固定資料、将来の2分類候補を区別。技術分類と成果物分類の用途を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P05",
+      "path": "devto/plane-label-taxonomy.md",
+      "before_sha256": "a55999995ca74bacae57403fafba49d1668dbd9c6ddafd20f5cd051cfe88b3f9",
+      "after_sha256": "0b44b12233068bc888b20ef88e87f3d5a662000dc60f38829c2393475e54096d",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "現在のラベル0件と52件の分類、Git固定資料、将来の2分類候補を区別。技術分類と成果物分類の用途を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P06",
+      "path": "public/plane-today-cross-project-view.md",
+      "before_sha256": "1fc36c1eb4f22ba2bc50ac3eb6cbae38ffad5347cbc3116e55475e8e0f1fe8e6",
+      "after_sha256": "e8f9d7614c425e93c594c7504d82306127a53af7a0ac297f8603f2ea1be1f667",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "233件、3ページ、174/6/15/0/15/56件、7入力の境界検査、時刻境界とUI保存の未検証を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P06",
+      "path": "devto/plane-today-cross-project-view.md",
+      "before_sha256": "130144f0473782eb0139222b29b7c10a84ccc45f0283173b7f4f1f5a04e1df28",
+      "after_sha256": "3d4fe00b75d1d7d534b72622786dfcde237b7ac4994179088c31c475807a031b",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "233件、3ページ、174/6/15/0/15/56件、7入力の境界検査、時刻境界とUI保存の未検証を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P07",
+      "path": "public/plane-pql-personal-dashboard.md",
+      "before_sha256": "5a2a8bd814776581ffca0b4967c5a0b0b5f26d99ebdec18dec1490672c0fbbcb",
+      "after_sha256": "25999a852df5df8a3f387ad9f34588f944915e408c4fc2dfb3d861464da11630",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "括弧121/150、Completed29、IN121、期限15/56、誤フィールドの拒否と正しい12件、17クエリを保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P07",
+      "path": "devto/plane-pql-personal-dashboard.md",
+      "before_sha256": "13f6fc6e24dab191be980752a5f59cb20d0c830c715a78ccb4e15d2bf25d833a",
+      "after_sha256": "125f3f8145ad680873f550af04f58cf03e53b6199442a55d3ec5977e0db2edcb",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "括弧121/150、Completed29、IN121、期限15/56、誤フィールドの拒否と正しい12件、17クエリを保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P11",
+      "path": "public/plane-recurring-maintenance.md",
+      "before_sha256": "0a5dd933eea093b31b131633b37ec181c524c6a28002211db0b8927837f4b3d7",
+      "after_sha256": "6be25aa8621a221da207ef0b3d1bd2bbf5604dd12d189af3bd429713e58de31e",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Business表示、予定による新規作成、将来だけの編集、週次提案、v1/v2台帳は合成で実行0回という区別を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P11",
+      "path": "devto/plane-recurring-maintenance.md",
+      "before_sha256": "f1b91a0cb77a3f814607f1bcb387223cdac874fb9e5d115d77d624724ff4aa42",
+      "after_sha256": "7dec5bc65aec28cac5dfae8be98ce45602a4eeca59691599b67d737e337dff89",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Business表示、予定による新規作成、将来だけの編集、週次提案、v1/v2台帳は合成で実行0回という区別を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P12",
+      "path": "public/plane-intake-before-backlog.md",
+      "before_sha256": "6176a6d47d3d3f73d175ae5732d5d4a4c126b4d8ab65ce4f1fcd8fc1f22521a4",
+      "after_sha256": "1d96d12859f6a9fc194dad94898ade947466682daa216ab2e2b83bfe747c5ce0",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Intake無効、4例は設計、Guest手順、Triageと処理状態の区別、公式ページの却下後不一致を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P12",
+      "path": "devto/plane-intake-before-backlog.md",
+      "before_sha256": "ab86e2e619e3dfdd318260881462e82e0e8ff0adfada1e6e52ea94877acc95d5",
+      "after_sha256": "cc351c1fdce40953f5c2bedd9c9f5f3df6230ee7cba77834212b83cfa29204ba",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Intake無効、4例は設計、Guest手順、Triageと処理状態の区別、公式ページの却下後不一致を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P13",
+      "path": "public/plane-project-template.md",
+      "before_sha256": "f1ce20e9c157236c7c27a53edb3fedcb4dcc3112dd4e195ec2f838f3eb36b0f5",
+      "after_sha256": "f7602d8e82fcd749a07844cb09cb59711a2d3d6005f0347fdbd8f740c45ebe4f",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Business、Project/Work Item Templateの範囲、共通3件と架空2例、作成0件、一覧空応答は件数未確認という扱いを保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P13",
+      "path": "devto/plane-project-template.md",
+      "before_sha256": "275321f4609aeb6cc24031243c6b0af4f9d89c97c9aa498e98122cfe694405d2",
+      "after_sha256": "71cd8a0683255a47975ff0e16e2dc72e4d7a2a5b150e1d88c35c712f0f828424",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Business、Project/Work Item Templateの範囲、共通3件と架空2例、作成0件、一覧空応答は件数未確認という扱いを保持。 日英の全節・表・PQL・制約を照合。"
+    }
+  ]
+}

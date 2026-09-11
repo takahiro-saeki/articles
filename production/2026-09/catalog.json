@@ -65,7 +65,7 @@
   },
   {
     "id": "P05",
-    "title": "Planeのラベルを増やしすぎない。個人開発で残した分類",
+    "title": "Planeのラベルを足す前に、状態と優先度で探せる作業を数える",
     "original_title": "Planeのラベルを増やしすぎない。個人開発で残した分類",
     "slug": "plane-label-taxonomy",
     "angle": "技術タグ、作業種別、優先度を混ぜない",
@@ -74,14 +74,15 @@
     "japanese": "public/plane-label-taxonomy.md",
     "english": "devto/plane-label-taxonomy.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 11,
+    "fact_check": "[一次資料・読取結果確認](production/2026-09/batch-11/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P06",
-    "title": "PlaneのViewsで「今日やること」だけを全プロジェクトから集める",
+    "title": "Planeの横断Viewが0件でも、今日の作業がないとは限らない",
     "original_title": "PlaneのViewsで「今日やること」だけを全プロジェクトから集める",
     "slug": "plane-today-cross-project-view",
     "angle": "横断ビューと担当者、期限フィルタ",
@@ -90,14 +91,15 @@
     "japanese": "public/plane-today-cross-project-view.md",
     "english": "devto/plane-today-cross-project-view.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 11,
+    "fact_check": "[一次資料・読取結果確認](production/2026-09/batch-11/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P07",
-    "title": "Plane Query Languageで個人用ダッシュボードを作る",
+    "title": "PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する",
     "original_title": "Plane Query Languageで個人用ダッシュボードを作る",
     "slug": "plane-pql-personal-dashboard",
     "angle": "期限超過、確認待ち、公開待ちの検索例",
@@ -106,10 +108,11 @@
     "japanese": "public/plane-pql-personal-dashboard.md",
     "english": "devto/plane-pql-personal-dashboard.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 11,
+    "fact_check": "[一次資料・読取結果確認](production/2026-09/batch-11/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P08",
@@ -161,7 +164,7 @@
   },
   {
     "id": "P11",
-    "title": "PlaneのRecurring Work Itemsで定期保守を忘れない",
+    "title": "Planeの定期作業は、次回の起票と前回の未完了を分けて管理する",
     "original_title": "PlaneのRecurring Work Itemsで定期保守を忘れない",
     "slug": "plane-recurring-maintenance",
     "angle": "証明書、依存更新、ストア確認、記事公開確認",
@@ -170,14 +173,15 @@
     "japanese": "public/plane-recurring-maintenance.md",
     "english": "devto/plane-recurring-maintenance.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 11,
+    "fact_check": "[一次資料・読取結果確認](production/2026-09/batch-11/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P12",
-    "title": "思いつきをPlaneへ入れる前に、Intakeを一段挟む",
+    "title": "PlaneのIntakeを使う前に、受け入れ判断と作業の状態を分ける",
     "original_title": "思いつきをPlaneへ入れる前に、Intakeを一段挟む",
     "slug": "plane-intake-before-backlog",
     "angle": "アイデアと実行確定タスクを分ける",
@@ -186,14 +190,15 @@
     "japanese": "public/plane-intake-before-backlog.md",
     "english": "devto/plane-intake-before-backlog.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 11,
+    "fact_check": "[一次資料・読取結果確認](production/2026-09/batch-11/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P13",
-    "title": "新しい個人開発を始めるたびに使うPlane Project Template",
+    "title": "PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる",
     "original_title": "新しい個人開発を始めるたびに使うPlane Project Template",
     "slug": "plane-project-template",
     "angle": "状態、ラベル、初期タスクのテンプレート",
@@ -202,10 +207,11 @@
     "japanese": "public/plane-project-template.md",
     "english": "devto/plane-project-template.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 11,
+    "fact_check": "[一次資料・読取結果確認](production/2026-09/batch-11/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-11/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P14",

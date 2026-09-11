@@ -1,0 +1,39 @@
+[
+  {
+    "repository": "takahiro-saeki/circle-hub",
+    "commit": "e295f5cedf9f8989b36c9f308dee4dbd8cf64c3f",
+    "path": "docs/marketing/instagram/001-invite-join/README.md",
+    "sha256": "bff73a37716d2d15f45d61db09a49d189b061cc428c576c4041d1436d46ca6fd",
+    "bytes": 3200,
+    "history": [
+      "e295f5cedf9f8989b36c9f308dee4dbd8cf64c3f 2026-09-11 docs: Instagramの開設と継続投稿を迷わず進められるようにする",
+      "afcf45f842e42150e8f20f89f792c8d3670cf9c7 2026-09-11 docs: 招待参加ガイドを音声付きで確認できるようにする",
+      "560e752811dfab3e393128998b20ef5ee73a9255 2026-09-10 docs: 招待参加ガイドの投稿素材を再利用可能にする"
+    ],
+    "url": "https://github.com/takahiro-saeki/circle-hub/blob/e295f5cedf9f8989b36c9f308dee4dbd8cf64c3f/docs/marketing/instagram/001-invite-join/README.md"
+  },
+  {
+    "repository": "takahiro-saeki/circle-hub",
+    "commit": "e295f5cedf9f8989b36c9f308dee4dbd8cf64c3f",
+    "path": "docs/marketing/instagram/001-invite-join/index.html",
+    "sha256": "97a1400f0df06737be6b43d70f2b3256d46455291c86c34f06f37507ec957f2a",
+    "bytes": 9346,
+    "history": [
+      "560e752811dfab3e393128998b20ef5ee73a9255 2026-09-10 docs: 招待参加ガイドの投稿素材を再利用可能にする"
+    ],
+    "url": "https://github.com/takahiro-saeki/circle-hub/blob/e295f5cedf9f8989b36c9f308dee4dbd8cf64c3f/docs/marketing/instagram/001-invite-join/index.html"
+  },
+  {
+    "repository": "takahiro-saeki/circle-hub",
+    "commit": "770de5f2989775cfd95f7a9c4529565a2b48d2fd",
+    "path": "docs/architecture.md",
+    "sha256": "c67830d97bdab2e86798d322fed549297f63b8fc3334950db5676f8706e31312",
+    "bytes": 9278,
+    "history": [
+      "e28880b2888d829f8c845f19293479f056655ed7 2026-04-16 chore: 残りのCircle Hub表記をSquadNoteに統一",
+      "dd4a0a8697cebbe7d44901eb276e8c8f7a7156e3 2026-03-22 first awesome commit",
+      "0397f2af3bfd7053826c1e389d1c716363c49401 2026-03-21 feat: initial commit"
+    ],
+    "url": "https://github.com/takahiro-saeki/circle-hub/blob/770de5f2989775cfd95f7a9c4529565a2b48d2fd/docs/architecture.md"
+  }
+]

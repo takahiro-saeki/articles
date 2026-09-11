@@ -1,0 +1,231 @@
+{
+  "pairs": 6,
+  "canonicalPending": [
+    "P05",
+    "P06",
+    "P07",
+    "P11",
+    "P12",
+    "P13"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P05",
+      "jaCharacters": 2873,
+      "enWords": 766,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.075
+        },
+        {
+          "path": "public/plane-pql-personal-dashboard.md",
+          "score": 0.073
+        },
+        {
+          "path": "public/plane-project-template.md",
+          "score": 0.067
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.215
+        },
+        {
+          "path": "devto/plane-today-cross-project-view.md",
+          "score": 0.214
+        },
+        {
+          "path": "devto/plane-project-template.md",
+          "score": 0.214
+        }
+      ]
+    },
+    {
+      "id": "P06",
+      "jaCharacters": 2812,
+      "enWords": 749,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "public/plane-pql-personal-dashboard.md",
+          "score": 0.129
+        },
+        {
+          "path": "public/plane-label-taxonomy.md",
+          "score": 0.075
+        },
+        {
+          "path": "public/plane-project-template.md",
+          "score": 0.072
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pql-personal-dashboard.md",
+          "score": 0.264
+        },
+        {
+          "path": "devto/plane-intake-before-backlog.md",
+          "score": 0.222
+        },
+        {
+          "path": "devto/plane-recurring-maintenance.md",
+          "score": 0.217
+        }
+      ]
+    },
+    {
+      "id": "P07",
+      "jaCharacters": 2714,
+      "enWords": 645,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 7,
+      "nearestExisting": [
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.129
+        },
+        {
+          "path": "public/plane-label-taxonomy.md",
+          "score": 0.073
+        },
+        {
+          "path": "public/plane-intake-before-backlog.md",
+          "score": 0.061
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-today-cross-project-view.md",
+          "score": 0.264
+        },
+        {
+          "path": "devto/plane-intake-before-backlog.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/plane-label-taxonomy.md",
+          "score": 0.209
+        }
+      ]
+    },
+    {
+      "id": "P11",
+      "jaCharacters": 2477,
+      "enWords": 737,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/plane-project-template.md",
+          "score": 0.092
+        },
+        {
+          "path": "public/plane-intake-before-backlog.md",
+          "score": 0.069
+        },
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.059
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-template.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/plane-intake-before-backlog.md",
+          "score": 0.244
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.222
+        }
+      ]
+    },
+    {
+      "id": "P12",
+      "jaCharacters": 2610,
+      "enWords": 707,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "public/plane-project-template.md",
+          "score": 0.072
+        },
+        {
+          "path": "public/plane-recurring-maintenance.md",
+          "score": 0.069
+        },
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.067
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-recurring-maintenance.md",
+          "score": 0.244
+        },
+        {
+          "path": "devto/plane-project-template.md",
+          "score": 0.227
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.225
+        }
+      ]
+    },
+    {
+      "id": "P13",
+      "jaCharacters": 2717,
+      "enWords": 772,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "public/plane-recurring-maintenance.md",
+          "score": 0.092
+        },
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.072
+        },
+        {
+          "path": "public/plane-intake-before-backlog.md",
+          "score": 0.072
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-recurring-maintenance.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/plane-intake-before-backlog.md",
+          "score": 0.227
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.221
+        }
+      ]
+    }
+  ]
+}

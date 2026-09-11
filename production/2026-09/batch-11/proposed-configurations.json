@@ -1,0 +1,34 @@
+{
+  "status": "Local design examples only; not Plane API payloads and not applied to Plane",
+  "recurringMaintenance": {
+    "name": "依存更新の候補を確認する",
+    "frequencyProposal": "weekly",
+    "descriptionFields": ["対象リポジトリと基準commit", "確認した公式情報と日付", "対応が必要な変更と根拠", "対応なしの場合の理由", "次の作業へのリンク"],
+    "completionRule": "確認結果を記録する。更新実装や配信の完了とは分ける。",
+    "ledgerExample": [
+      {"occurrence": "2026-09-11", "templateVersion": "v1", "status": "確認待ち", "evidence": "未記録"},
+      {"occurrence": "2026-09-18", "templateVersion": "v2", "status": "未着手", "evidence": "未記録"}
+    ],
+    "observedSchedulerRuns": 0
+  },
+  "intakeDecisions": [
+    {"case": "対象画面・期待結果・再現手順が揃った不具合報告", "proposal": "受け入れ候補", "requiredRecord": "対象と再現手順、受け入れ後の状態"},
+    {"case": "遅いという説明だけで画面と環境が不明", "proposal": "情報待ち・再確認", "requiredRecord": "不足情報と再確認日"},
+    {"case": "既存作業と同じ対象・再現条件・期待結果", "proposal": "重複候補", "requiredRecord": "既存Work Itemと同一範囲と判断した理由"},
+    {"case": "対象Projectでは提供しない機能への要望", "proposal": "見送り候補", "requiredRecord": "対象外と判断した理由"}
+  ],
+  "projectTemplate": {
+    "name": "個人開発の開始確認 v1",
+    "initialTasks": [
+      {"key": "scope", "name": "対象と管理先を確認する", "result": "プロダクト、リポジトリ、担当、参照先を記録する"},
+      {"key": "delivery", "name": "最初に渡す成果物を決める", "result": "配布経路と初回の範囲を記録する"},
+      {"key": "verification", "name": "初回確認の手順を用意する", "result": "実行条件、期待結果、記録先を決める"}
+    ],
+    "perProjectReview": ["name", "identifier", "repository", "lead", "visibility", "dates", "delivery", "state and label identifiers"],
+    "localApplications": [
+      {"fictionalProject": "Web Lab", "identifierProposal": "WEBLAB", "deliveryProposal": "Webプレビュー", "verificationProposal": "URLと主要導線の確認", "initialTaskKeys": ["scope", "delivery", "verification"]},
+      {"fictionalProject": "Game Lab", "identifierProposal": "GAMELAB", "deliveryProposal": "ブラウザー向けゲーム一式", "verificationProposal": "起動と操作の確認", "initialTaskKeys": ["scope", "delivery", "verification"]}
+    ],
+    "createdPlaneProjects": 0
+  }
+}

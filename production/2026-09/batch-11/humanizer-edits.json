@@ -1,0 +1,186 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "P05",
+      "path": "public/plane-label-taxonomy.md",
+      "edits": [
+        [
+          "ここでHTMLやCSSという技術名だけをラベルへ転記すると、アプリ画面の変更と投稿素材の制作が同じ集合に入ります。",
+          "HTMLやCSSをラベルにすると、アプリ画面の変更と投稿素材の制作が同じ集合に入ります。"
+        ],
+        [
+          "まず一つのProjectで少数の実タスクへ適用し、期待したものが入るか、不要なものが入らないかを調べる。この確認を終えてから別Projectへ展開する案にします。",
+          "まず一つのProjectの少数の実タスクで、必要なものが揃い、不要なものが入らないかを確認します。その結果を見て別Projectへの展開を判断する案です。"
+        ]
+      ],
+      "semantic_review": "現在のラベル0件と52件の分類、Git固定資料、将来の2分類候補を区別。技術分類と成果物分類の用途を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P05",
+      "path": "devto/plane-label-taxonomy.md",
+      "edits": [
+        [
+          "Treating labels as categories absent from states, priorities, and assignees helps avoid duplicate dimensions.",
+          "Use labels for categories that states, priorities, and assignees do not already express."
+        ],
+        [
+          "The proposed adoption check is whether a list gathers the intended publishing assets without creating a second way to maintain state or priority.",
+          "Check whether the resulting list gathers the intended publishing assets while leaving state and priority in their existing fields."
+        ]
+      ],
+      "semantic_review": "現在のラベル0件と52件の分類、Git固定資料、将来の2分類候補を区別。技術分類と成果物分類の用途を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P06",
+      "path": "public/plane-today-cross-project-view.md",
+      "edits": [
+        [
+          "空の結果はクエリの故障ではありませんでした。取得した値に対してPythonで条件を計算しても、期限の集合に担当者付きの行はありませんでした。",
+          "Pythonで取得値へ同じ条件を当てても、期限の集合に担当者付きの行はありませんでした。空の結果は保存値と一致しています。"
+        ],
+        [
+          "この56件へ、表示させる目的だけで今日の日付を一括設定する案にはしません。",
+          "この56件を表示させるために、期限へ今日の日付を一括設定することは避けます。"
+        ]
+      ],
+      "semantic_review": "233件、3ページ、174/6/15/0/15/56件、7入力の境界検査、時刻境界とUI保存の未検証を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P06",
+      "path": "devto/plane-today-cross-project-view.md",
+      "edits": [
+        [
+          "The empty result did not indicate a broken query. Independently evaluating the retrieved rows in Python also found no assigned row in the due set.",
+          "Python also found no assigned row in the due set when evaluating the retrieved values. The empty result matched the stored data."
+        ],
+        [
+          "The missing-value views are places to decide ownership and scheduling; they are not today's execution plan.",
+          "Use the missing-value views to decide ownership and scheduling before choosing today's work."
+        ]
+      ],
+      "semantic_review": "233件、3ページ、174/6/15/0/15/56件、7入力の境界検査、時刻境界とUI保存の未検証を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P07",
+      "path": "public/plane-pql-personal-dashboard.md",
+      "edits": [
+        [
+          "「件数が多そうだから正しい」ではなく、入ってはいけない状態があるかを見ています。",
+          "結果に入ってはいけない状態がないかを確認しています。"
+        ],
+        [
+          "保存するのは、期待した集合と照合できた条件",
+          "期待した集合と照合してから保存する"
+        ]
+      ],
+      "semantic_review": "括弧121/150、Completed29、IN121、期限15/56、誤フィールドの拒否と正しい12件、17クエリを保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P07",
+      "path": "devto/plane-pql-personal-dashboard.md",
+      "edits": [
+        [
+          "This checks for forbidden states instead of treating a plausible-looking total as evidence of correctness.",
+          "The check looks for states that should have been excluded."
+        ],
+        [
+          "This is the boundary between the tested API's grouping parameter and its query language.",
+          "The tested API uses different names for grouping and PQL filtering."
+        ]
+      ],
+      "semantic_review": "括弧121/150、Completed29、IN121、期限15/56、誤フィールドの拒否と正しい12件、17クエリを保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P11",
+      "path": "public/plane-recurring-maintenance.md",
+      "edits": [
+        [
+          "ここで最初に決めたいのは頻度より、作成される一回分の完了条件です。",
+          "頻度を選ぶ前に、一回分の完了条件を決めます。"
+        ],
+        [
+          "この例では、次回の説明を改善しても、前回の確認記録は未記録のままです。",
+          "この例では、次回の説明を直しても、前回の確認記録は未記録のまま残ります。"
+        ]
+      ],
+      "semantic_review": "Business表示、予定による新規作成、将来だけの編集、週次提案、v1/v2台帳は合成で実行0回という区別を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P11",
+      "path": "devto/plane-recurring-maintenance.md",
+      "edits": [
+        [
+          "Before choosing frequency, define what completes one instance.",
+          "Define what completes one instance before choosing its frequency."
+        ],
+        [
+          "Those are future adoption steps. This investigation confirmed the documented unit of creation and scope of edits, then prepared a dependency-review description and an unfinished-instance ledger.",
+          "These steps remain for adoption. The work here checked the documented creation and edit behavior and prepared a dependency-review description with an unfinished-instance ledger."
+        ]
+      ],
+      "semantic_review": "Business表示、予定による新規作成、将来だけの編集、週次提案、v1/v2台帳は合成で実行0回という区別を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P12",
+      "path": "public/plane-intake-before-backlog.md",
+      "edits": [
+        [
+          "この4例を通すと、必要なのは採否の印だけでなく、次に動ける理由と参照先だと分かります。",
+          "この4例では、判断の理由と次の参照先を採否と一緒に残す形にしました。"
+        ],
+        [
+          "この不一致は、受け入れ判断と通常の作業状態を別々に見る理由にもなります。",
+          "導入時は、受け入れ判断と通常の作業状態をそれぞれ確認します。"
+        ]
+      ],
+      "semantic_review": "Intake無効、4例は設計、Guest手順、Triageと処理状態の区別、公式ページの却下後不一致を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P12",
+      "path": "devto/plane-intake-before-backlog.md",
+      "edits": [
+        [
+          "The 4 examples require a reason and a next reference as well as a decision label.",
+          "The 4 examples record a reason and a next reference alongside each proposed decision."
+        ],
+        [
+          "That disagreement reinforces the need to inspect the triage decision separately from the ordinary work state.",
+          "During adoption, inspect both the triage decision and the ordinary work state."
+        ]
+      ],
+      "semantic_review": "Intake無効、4例は設計、Guest手順、Triageと処理状態の区別、公式ページの却下後不一致を保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P13",
+      "path": "public/plane-project-template.md",
+      "edits": [
+        [
+          "ここで「3つが最適」と計測したわけではありません。タスクの数を揃えるためではなく、対象、配布、検証という開始時の判断を残すために分けています。",
+          "対象、配布、検証という開始時の判断を残すために分けました。「3つが最適」と計測したわけではありません。"
+        ],
+        [
+          "初回に決めることを共有しつつ、Projectごとの値を確認する余地を残す。今回の設定案では、その境界までを用意しています。",
+          "この案では初回の確認手順を共通にし、Projectごとの値は作成時に決めます。"
+        ]
+      ],
+      "semantic_review": "Business、Project/Work Item Templateの範囲、共通3件と架空2例、作成0件、一覧空応答は件数未確認という扱いを保持。 日英の全節・表・PQL・制約を照合。"
+    },
+    {
+      "id": "P13",
+      "path": "devto/plane-project-template.md",
+      "edits": [
+        [
+          "The separation captures decisions about target, delivery, and verification rather than enforcing a task-count target.",
+          "The tasks capture decisions about target, delivery, and verification."
+        ],
+        [
+          "The proposal reuses initial decisions while leaving project-specific values subject to review.",
+          "The proposal reuses the initial checks; each project still needs its own values."
+        ]
+      ],
+      "semantic_review": "Business、Project/Work Item Templateの範囲、共通3件と架空2例、作成0件、一覧空応答は件数未確認という扱いを保持。 日英の全節・表・PQL・制約を照合。"
+    }
+  ]
+}

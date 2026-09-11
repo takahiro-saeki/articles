@@ -1,0 +1,108 @@
+{
+  "checkedOn": "2026-09-11",
+  "python": "3.14.5",
+  "scope": "non-archived accessible workspace snapshot; local predicates checked against live PQL counts",
+  "projects": {
+    "DRG": 28,
+    "HIROW": 7,
+    "MEG": 28,
+    "RECITAL": 118,
+    "SQN": 52
+  },
+  "views": {
+    "open": 174,
+    "due_by_day": 15,
+    "due_unassigned": 15,
+    "no_due_date": 56,
+    "unassigned": 168
+  },
+  "priorityGroups": {
+    "grouped": {
+      "total": 121,
+      "states": {
+        "backlog": 106,
+        "started": 9,
+        "unstarted": 6
+      }
+    },
+    "ungrouped": {
+      "total": 150,
+      "states": {
+        "backlog": 106,
+        "completed": 29,
+        "started": 9,
+        "unstarted": 6
+      }
+    }
+  },
+  "squadNote": {
+    "items": 52,
+    "labelled": 0,
+    "priorities": {
+      "high": 21,
+      "medium": 25,
+      "low": 6
+    },
+    "states": {
+      "completed": 29,
+      "started": 6,
+      "backlog": 11,
+      "unstarted": 5,
+      "cancelled": 1
+    }
+  },
+  "localBoundaryFixture": {
+    "items": [
+      {
+        "identifier": "CASE-1",
+        "group": "started",
+        "dueDate": "2026-09-10",
+        "assigneeCount": 1
+      },
+      {
+        "identifier": "CASE-2",
+        "group": "unstarted",
+        "dueDate": "2026-09-11",
+        "assigneeCount": 1
+      },
+      {
+        "identifier": "CASE-3",
+        "group": "unstarted",
+        "dueDate": "2026-09-12",
+        "assigneeCount": 1
+      },
+      {
+        "identifier": "CASE-4",
+        "group": "backlog",
+        "dueDate": null,
+        "assigneeCount": 0
+      },
+      {
+        "identifier": "CASE-5",
+        "group": "completed",
+        "dueDate": "2026-09-10",
+        "assigneeCount": 1
+      },
+      {
+        "identifier": "CASE-6",
+        "group": "cancelled",
+        "dueDate": "2026-09-10",
+        "assigneeCount": 1
+      },
+      {
+        "identifier": "CASE-7",
+        "group": "started",
+        "dueDate": "2026-09-11",
+        "assigneeCount": 0
+      }
+    ],
+    "result": {
+      "open": 5,
+      "due_by_day": 3,
+      "due_unassigned": 1,
+      "no_due_date": 1,
+      "unassigned": 2
+    }
+  },
+  "queries": 17
+}

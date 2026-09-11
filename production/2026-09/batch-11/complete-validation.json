@@ -1,0 +1,1484 @@
+{
+  "pairs": 41,
+  "canonicalPending": [],
+  "eligibleForCompletion": 41,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P01",
+      "jaCharacters": 3044,
+      "enWords": 869,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.087
+        },
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.065
+        },
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.06
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.261
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.24
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.24
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "jaCharacters": 2763,
+      "enWords": 805,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.047
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.044
+        },
+        {
+          "path": "public/plane-intake-before-backlog.md",
+          "score": 0.043
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/plane-github-issue-boundary.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.217
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "jaCharacters": 3301,
+      "enWords": 973,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.087
+        },
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.072
+        },
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.062
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.261
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.26
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.253
+        }
+      ]
+    },
+    {
+      "id": "P08",
+      "jaCharacters": 2669,
+      "enWords": 876,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.075
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.062
+        },
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.061
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.263
+        },
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.232
+        }
+      ]
+    },
+    {
+      "id": "P10",
+      "jaCharacters": 3116,
+      "enWords": 915,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/solo-web-ios-maintenance-scope.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.072
+        },
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.26
+        },
+        {
+          "path": "devto/solo-web-ios-maintenance-scope.md",
+          "score": 0.251
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.24
+        }
+      ]
+    },
+    {
+      "id": "P14",
+      "jaCharacters": 3005,
+      "enWords": 1017,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.075
+        },
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.06
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.058
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.263
+        },
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.253
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.24
+        }
+      ]
+    },
+    {
+      "id": "P15",
+      "jaCharacters": 2909,
+      "enWords": 935,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.04
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.039
+        },
+        {
+          "path": "public/plane-recurring-maintenance.md",
+          "score": 0.039
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.238
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/plane-workspace-access-boundaries.md",
+          "score": 0.218
+        }
+      ]
+    },
+    {
+      "id": "P17",
+      "jaCharacters": 2974,
+      "enWords": 889,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/plane-label-taxonomy.md",
+          "score": 0.062
+        },
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.041
+        },
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.039
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "P19",
+      "jaCharacters": 3278,
+      "enWords": 1048,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/plane-label-taxonomy.md",
+          "score": 0.048
+        },
+        {
+          "path": "public/plane-pql-personal-dashboard.md",
+          "score": 0.046
+        },
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.045
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.208
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.198
+        },
+        {
+          "path": "devto/plane-today-cross-project-view.md",
+          "score": 0.197
+        }
+      ]
+    },
+    {
+      "id": "P20",
+      "jaCharacters": 3623,
+      "enWords": 1000,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "public/plane-today-cross-project-view.md",
+          "score": 0.05
+        },
+        {
+          "path": "public/plane-recurring-maintenance.md",
+          "score": 0.044
+        },
+        {
+          "path": "public/plane-project-template.md",
+          "score": 0.043
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/eas-update-error-recovery-boundary.md",
+          "score": 0.214
+        },
+        {
+          "path": "devto/cloudflare-cron-queues-workflows.md",
+          "score": 0.211
+        },
+        {
+          "path": "devto/local-image-generation-reproducibility.md",
+          "score": 0.211
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "jaCharacters": 3882,
+      "enWords": 891,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 6,
+      "nearestExisting": [
+        {
+          "path": "public/using-resource-disposal.md",
+          "score": 0.066
+        },
+        {
+          "path": "public/import-type-bundler-output.md",
+          "score": 0.065
+        },
+        {
+          "path": "public/typescript-satisfies-annotation-assertion.md",
+          "score": 0.064
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/abortcontroller-cancellable-tasks.md",
+          "score": 0.22
+        },
+        {
+          "path": "devto/type-interface-declaration-merging.md",
+          "score": 0.212
+        },
+        {
+          "path": "devto/local-image-generation-reproducibility.md",
+          "score": 0.209
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "jaCharacters": 3876,
+      "enWords": 1124,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/react-index-key-input-reorder.md",
+          "score": 0.075
+        },
+        {
+          "path": "articles/suspense-boundary-fallback-experiment.md",
+          "score": 0.071
+        },
+        {
+          "path": "public/strict-mode-effect-cleanup.md",
+          "score": 0.064
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/suspense-boundary-fallback-experiment.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.209
+        },
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.204
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "jaCharacters": 3605,
+      "enWords": 959,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/use-action-state-form-experiment.md",
+          "score": 0.078
+        },
+        {
+          "path": "public/controlled-uncontrolled-form-experiment.md",
+          "score": 0.071
+        },
+        {
+          "path": "articles/react-memoization-cost.md",
+          "score": 0.071
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/react-memoization-cost.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/nextjs-cache-response-experiment.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "jaCharacters": 3992,
+      "enWords": 958,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.083
+        },
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.079
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.078
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/nextjs-cache-response-experiment.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/next-public-build-runtime-env.md",
+          "score": 0.208
+        },
+        {
+          "path": "devto/react-memoization-cost.md",
+          "score": 0.203
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "jaCharacters": 3740,
+      "enWords": 934,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.066
+        },
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.059
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.236
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.224
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "jaCharacters": 4211,
+      "enWords": 1018,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.107
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.086
+        },
+        {
+          "path": "public/nextjs-edge-node-runtime.md",
+          "score": 0.084
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/next-public-build-runtime-env.md",
+          "score": 0.226
+        },
+        {
+          "path": "devto/rsc-client-boundary-bundle.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/suspense-boundary-fallback-experiment.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "T28",
+      "jaCharacters": 4295,
+      "enWords": 1113,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 7,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.09
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.052
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.275
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.227
+        }
+      ]
+    },
+    {
+      "id": "T34",
+      "jaCharacters": 3479,
+      "enWords": 1019,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "public/import-type-bundler-output.md",
+          "score": 0.047
+        },
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.047
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.044
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "T36",
+      "jaCharacters": 3903,
+      "enWords": 974,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 6,
+      "nearestExisting": [
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.088
+        },
+        {
+          "path": "articles/outbox-database-notification-boundary.md",
+          "score": 0.084
+        },
+        {
+          "path": "articles/d1-offset-cursor-pagination.md",
+          "score": 0.072
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.239
+        },
+        {
+          "path": "devto/durable-objects-d1-coordination.md",
+          "score": 0.232
+        }
+      ]
+    },
+    {
+      "id": "T39",
+      "jaCharacters": 3823,
+      "enWords": 1024,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/d1-composite-index-column-order.md",
+          "score": 0.104
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.072
+        },
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.069
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-composite-index-column-order.md",
+          "score": 0.235
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.215
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "T40",
+      "jaCharacters": 5003,
+      "enWords": 1143,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 5,
+      "nearestExisting": [
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.066
+        },
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.063
+        },
+        {
+          "path": "public/d1-composite-index-column-order.md",
+          "score": 0.062
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.232
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.217
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.217
+        }
+      ]
+    },
+    {
+      "id": "T42",
+      "jaCharacters": 3612,
+      "enWords": 1012,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/cloudflare-cron-local-notification-test.md",
+          "score": 0.037
+        },
+        {
+          "path": "articles/outbox-database-notification-boundary.md",
+          "score": 0.036
+        },
+        {
+          "path": "articles/scheduled-publishing-recovery-boundary.md",
+          "score": 0.036
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.22
+        },
+        {
+          "path": "devto/plane-github-issue-boundary.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "T44",
+      "jaCharacters": 3698,
+      "enWords": 990,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/outbox-database-notification-boundary.md",
+          "score": 0.107
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.088
+        },
+        {
+          "path": "articles/d1-offset-cursor-pagination.md",
+          "score": 0.069
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.281
+        },
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.239
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.219
+        }
+      ]
+    },
+    {
+      "id": "T45",
+      "jaCharacters": 3589,
+      "enWords": 940,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.107
+        },
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.084
+        },
+        {
+          "path": "articles/d1-offset-cursor-pagination.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.281
+        },
+        {
+          "path": "devto/d1-batch-atomicity-boundary.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/cloudflare-cron-queues-workflows.md",
+          "score": 0.22
+        }
+      ]
+    },
+    {
+      "id": "O01",
+      "jaCharacters": 3185,
+      "enWords": 908,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/scheduled-publishing-recovery-boundary.md",
+          "score": 0.081
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.048
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.048
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/eas-update-error-recovery-boundary.md",
+          "score": 0.194
+        },
+        {
+          "path": "devto/plane-recurring-maintenance.md",
+          "score": 0.191
+        }
+      ]
+    },
+    {
+      "id": "O03",
+      "jaCharacters": 3310,
+      "enWords": 960,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/publishing-38-day-audit.md",
+          "score": 0.081
+        },
+        {
+          "path": "articles/outbox-database-notification-boundary.md",
+          "score": 0.052
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.05
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/publishing-38-day-audit.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/eas-update-error-recovery-boundary.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.219
+        }
+      ]
+    },
+    {
+      "id": "O05",
+      "jaCharacters": 3307,
+      "enWords": 894,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/devlog-primary-source-reconstruction.md",
+          "score": 0.068
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.06
+        },
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.058
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.235
+        },
+        {
+          "path": "devto/five-minute-game-development-talk.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.221
+        }
+      ]
+    },
+    {
+      "id": "O07",
+      "jaCharacters": 2945,
+      "enWords": 834,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.082
+        },
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.081
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.236
+        }
+      ]
+    },
+    {
+      "id": "O09",
+      "jaCharacters": 3627,
+      "enWords": 942,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.074
+        },
+        {
+          "path": "articles/repository-decision-log-evidence.md",
+          "score": 0.068
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.237
+        },
+        {
+          "path": "devto/repository-decision-log-evidence.md",
+          "score": 0.235
+        }
+      ]
+    },
+    {
+      "id": "O10",
+      "jaCharacters": 3701,
+      "enWords": 874,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/devlog-primary-source-reconstruction.md",
+          "score": 0.074
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.074
+        },
+        {
+          "path": "articles/itch-submission-deliverables.md",
+          "score": 0.071
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.242
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.227
+        },
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.227
+        }
+      ]
+    },
+    {
+      "id": "O12",
+      "jaCharacters": 3286,
+      "enWords": 999,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.071
+        },
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.065
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.242
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.237
+        }
+      ]
+    },
+    {
+      "id": "O13",
+      "jaCharacters": 3894,
+      "enWords": 890,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/trailer-timeline-before-editing.md",
+          "score": 0.076
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.071
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.222
+        },
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/game-bgm-selection-log.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "O15",
+      "jaCharacters": 3858,
+      "enWords": 886,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/trailer-timeline-before-editing.md",
+          "score": 0.083
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/game-input-support-sequence.md",
+          "score": 0.077
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/trailer-timeline-before-editing.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/game-input-support-sequence.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "O16",
+      "jaCharacters": 3723,
+      "enWords": 920,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.083
+        },
+        {
+          "path": "articles/game-input-support-sequence.md",
+          "score": 0.076
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.07
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/game-bgm-selection-log.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.217
+        },
+        {
+          "path": "devto/game-input-support-sequence.md",
+          "score": 0.214
+        }
+      ]
+    },
+    {
+      "id": "O17",
+      "jaCharacters": 3737,
+      "enWords": 865,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/devlog-primary-source-reconstruction.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/itch-submission-deliverables.md",
+          "score": 0.077
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/game-bgm-selection-log.md",
+          "score": 0.228
+        }
+      ]
+    },
+    {
+      "id": "O18",
+      "jaCharacters": 4061,
+      "enWords": 938,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.05
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.046
+        },
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.045
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.216
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.213
+        },
+        {
+          "path": "devto/plane-cloud-self-host-comparison.md",
+          "score": 0.211
+        }
+      ]
+    },
+    {
+      "id": "O19",
+      "jaCharacters": 3461,
+      "enWords": 942,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-initiative-personal-products.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/eas-update-runtime-version-operations.md",
+          "score": 0.057
+        },
+        {
+          "path": "articles/testflight-continuous-release.md",
+          "score": 0.053
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-initiative-personal-products.md",
+          "score": 0.251
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.232
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.228
+        }
+      ]
+    },
+    {
+      "id": "O20",
+      "jaCharacters": 3130,
+      "enWords": 806,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.09
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.081
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.066
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.275
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/solo-web-ios-maintenance-scope.md",
+          "score": 0.232
+        }
+      ]
+    },
+    {
+      "id": "O21",
+      "jaCharacters": 4138,
+      "enWords": 914,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/guest-identity-without-placeholder-user.md",
+          "score": 0.059
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.058
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.057
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/guest-identity-without-placeholder-user.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.218
+        }
+      ]
+    },
+    {
+      "id": "O22",
+      "jaCharacters": 3996,
+      "enWords": 971,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.059
+        },
+        {
+          "path": "articles/auth-incident-recovery-evidence.md",
+          "score": 0.059
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.057
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/auth-incident-recovery-evidence.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "O25",
+      "jaCharacters": 3441,
+      "enWords": 1089,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.051
+        },
+        {
+          "path": "articles/repository-decision-log-evidence.md",
+          "score": 0.048
+        },
+        {
+          "path": "articles/itch-submission-deliverables.md",
+          "score": 0.048
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/repository-decision-log-evidence.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.222
+        },
+        {
+          "path": "devto/volt-nomad-codex-production.md",
+          "score": 0.218
+        }
+      ]
+    }
+  ]
+}
