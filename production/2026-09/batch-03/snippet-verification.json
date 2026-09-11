@@ -1,0 +1,18 @@
+{
+  "node": "v24.15.0",
+  "devlog_example": {
+    "actual": [
+      720,
+      1440
+    ],
+    "passed": true
+  },
+  "manifest_excerpt": {
+    "matches_fixed_source": true
+  },
+  "python_excerpt": {
+    "syntax_valid": true,
+    "standalone_execution": false,
+    "behavior_covered_by": "local-image-records.py"
+  }
+}

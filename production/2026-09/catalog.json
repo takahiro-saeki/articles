@@ -218,10 +218,10 @@
     "japanese": "articles/plane-pages-work-item-boundary.md",
     "english": "devto/plane-pages-work-item-boundary.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 3,
+    "fact_check": "Plane SQN-29/30、Project Pages 0件、circle-hub 0cda1e8の検証文書と履歴、Plane公式Pages",
+    "verification": "実装済みPageではなく導入案。Web確認記録とモバイル未完了を区別",
+    "status": "完成"
   },
   {
     "id": "P15",
@@ -234,10 +234,10 @@
     "japanese": "articles/plane-github-issue-boundary.md",
     "english": "devto/plane-github-issue-boundary.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 3,
+    "fact_check": "Plane GitHub連携とGitHub PR/Issueリンクの公式仕様を2026-09-11に照合",
+    "verification": "同期方向、参照のみ/状態変更、default branchでの終了条件。実同期は未実施",
+    "status": "完成"
   },
   {
     "id": "P16",
@@ -1172,7 +1172,7 @@
   },
   {
     "id": "O09",
-    "title": "複数のAIチャットから一つの制作記を組み立てた方法",
+    "title": "AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる",
     "original_title": "複数のAIチャットから一つの制作記を組み立てた方法",
     "slug": "devlog-primary-source-reconstruction",
     "angle": "PDF、Git履歴、チャット、一次情報",
@@ -1181,10 +1181,10 @@
     "japanese": "articles/devlog-primary-source-reconstruction.md",
     "english": "devto/devlog-primary-source-reconstruction.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 3,
+    "fact_check": "game-jam-lab f074703の制作記下書き・監査文書・GDScriptを照合",
+    "verification": "実カタログから720順序×2ボス=1440を再計算。Godot監査/通しプレイは未実行",
+    "status": "完成"
   },
   {
     "id": "O10",
@@ -1220,7 +1220,7 @@
   },
   {
     "id": "O12",
-    "title": "itch.io提出前にゲーム外で準備したもの全部",
+    "title": "itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する",
     "original_title": "itch.io提出前にゲーム外で準備したもの全部",
     "slug": "itch-submission-deliverables",
     "angle": "説明文、操作表、AI開示、画像、タグ",
@@ -1229,10 +1229,10 @@
     "japanese": "articles/itch-submission-deliverables.md",
     "english": "devto/itch-submission-deliverables.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 3,
+    "fact_check": "game-jam-lab f074703の提出キット・8画像とitch.io HTML5公式仕様",
+    "verification": "6スクリーンショットはJPEG 1280×720、2coverはPNG 630×500。ヘッダーとfileで照合",
+    "status": "完成"
   },
   {
     "id": "O13",
@@ -1309,10 +1309,10 @@
     "japanese": "articles/generated-asset-provenance-decisions.md",
     "english": "devto/generated-asset-provenance-decisions.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 3,
+    "fact_check": "game-jam-lab f074703の出典文書・台帳・runtime preload・Git履歴",
+    "verification": "30batch/107候補、原本欠落0、承認35/保留13/却下3/未確認56。未確認3件のコード参照",
+    "status": "完成"
   },
   {
     "id": "O18",
@@ -1325,10 +1325,10 @@
     "japanese": "articles/local-image-generation-reproducibility.md",
     "english": "devto/local-image-generation-reproducibility.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 3,
+    "fact_check": "local-anime-studio 2aeb306のCLI/workflow/モデル台帳/履歴、ComfyUI/PyTorch公式仕様",
+    "verification": "既存34テストとrepo validator成功。実CLIの2経路で記録の有無をassert。GPU未実行",
+    "status": "完成"
   },
   {
     "id": "O19",

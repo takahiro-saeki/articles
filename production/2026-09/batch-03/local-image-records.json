@@ -1,0 +1,17 @@
+{
+  "commit": "2aeb306e4baa272afab9a133357eb1e6e141e964",
+  "python": "3.14.5",
+  "server": "fake client; no GPU or network",
+  "without_wait": {
+    "exit": 0,
+    "record_exists": true,
+    "history_record": null,
+    "workflow_and_raw_byte_hash_match": true
+  },
+  "wait_timeout": {
+    "exit": 1,
+    "queue_accepted": true,
+    "record_exists": false
+  },
+  "queue_calls": 2
+}

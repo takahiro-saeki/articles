@@ -1,6 +1,6 @@
 # 記事制作進捗 2026年9月
 
-完成 11/90件（日本語＋英語の組）。残り 79件。先に書きたい12本は 9/12件完成。
+完成 17/90件（日本語＋英語の組）。残り 73件。先に書きたい12本は 9/12件完成。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -8,6 +8,7 @@
 
 - バッチ01: P01、P03、T28、O01、O03、O05。完成 6/6件。
 - バッチ02: P02、T01、T20、T31、T36、T37、O07、O10。完成 5/8件。
+- バッチ03: P14、P15、O09、O12、O17、O18。完成 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
 - canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
@@ -27,8 +28,8 @@
 | P11 | PlaneのRecurring Work Itemsで定期保守を忘れない | plane-recurring-maintenance | 予定: public/plane-recurring-maintenance.md | 予定: devto/plane-recurring-maintenance.md | 未確認 | 未実施 | 未着手 |
 | P12 | 思いつきをPlaneへ入れる前に、Intakeを一段挟む | plane-intake-before-backlog | 予定: public/plane-intake-before-backlog.md | 予定: devto/plane-intake-before-backlog.md | 未確認 | 未実施 | 未着手 |
 | P13 | 新しい個人開発を始めるたびに使うPlane Project Template | plane-project-template | 予定: public/plane-project-template.md | 予定: devto/plane-project-template.md | 未確認 | 未実施 | 未着手 |
-| P14 | Plane PagesとWork Itemsのどちらに仕様を書くか | plane-pages-work-item-boundary | 予定: articles/plane-pages-work-item-boundary.md | 予定: devto/plane-pages-work-item-boundary.md | 未確認 | 未実施 | 未着手 |
-| P15 | GitHub IssueとPlaneを二重管理しないための境界 | plane-github-issue-boundary | 予定: articles/plane-github-issue-boundary.md | 予定: devto/plane-github-issue-boundary.md | 未確認 | 未実施 | 未着手 |
+| P14 | Plane PagesとWork Itemsのどちらに仕様を書くか | plane-pages-work-item-boundary | [原稿](articles/plane-pages-work-item-boundary.md) | [原稿](devto/plane-pages-work-item-boundary.md) | Plane SQN-29/30、Project Pages 0件、circle-hub 0cda1e8の検証文書と履歴、Plane公式Pages | 実装済みPageではなく導入案。Web確認記録とモバイル未完了を区別 | 完成 |
+| P15 | GitHub IssueとPlaneを二重管理しないための境界 | plane-github-issue-boundary | [原稿](articles/plane-github-issue-boundary.md) | [原稿](devto/plane-github-issue-boundary.md) | Plane GitHub連携とGitHub PR/Issueリンクの公式仕様を2026-09-11に照合 | 同期方向、参照のみ/状態変更、default branchでの終了条件。実同期は未実施 | 完成 |
 | P16 | CodexからPlaneへタスクを起票するとき、本文に何を残すか | plane-work-item-acceptance-evidence | 予定: public/plane-work-item-acceptance-evidence.md | 予定: devto/plane-work-item-acceptance-evidence.md | 未確認 | 未実施 | 未着手 |
 | P17 | 複数のCodexチャットで生まれたTODOをPlaneへ集約する | plane-codex-todo-consolidation | 予定: articles/plane-codex-todo-consolidation.md | 予定: devto/plane-codex-todo-consolidation.md | 未確認 | 未実施 | 未着手 |
 | P18 | 止めた個人開発をPlaneでどう閉じるか | plane-close-paused-project | 予定: public/plane-close-paused-project.md | 予定: devto/plane-close-paused-project.md | 未確認 | 未実施 | 未着手 |
@@ -87,16 +88,16 @@
 | O06 | 個人用と会社用のGitHubアカウントを混ぜないために入れた防止策 | personal-company-github-identity-guard | 予定: public/personal-company-github-identity-guard.md | 予定: devto/personal-company-github-identity-guard.md | 未確認 | 未実施 | 未着手 |
 | O07 | AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む | ai-code-review-invariants | [原稿](articles/ai-code-review-invariants.md) | [原稿](devto/ai-code-review-invariants.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | O08 | Codexへ長い作業を任せるとき、途中経過をどこへ残すか | long-task-repository-handoff | 予定: public/long-task-repository-handoff.md | 予定: devto/long-task-repository-handoff.md | 未確認 | 未実施 | 未着手 |
-| O09 | 複数のAIチャットから一つの制作記を組み立てた方法 | devlog-primary-source-reconstruction | 予定: articles/devlog-primary-source-reconstruction.md | 予定: devto/devlog-primary-source-reconstruction.md | 未確認 | 未実施 | 未着手 |
+| O09 | AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる | devlog-primary-source-reconstruction | [原稿](articles/devlog-primary-source-reconstruction.md) | [原稿](devto/devlog-primary-source-reconstruction.md) | game-jam-lab f074703の制作記下書き・監査文書・GDScriptを照合 | 実カタログから720順序×2ボス=1440を再計算。Godot監査/通しプレイは未実行 | 完成 |
 | O10 | Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する | game-jam-repository-reuse | [原稿](articles/game-jam-repository-reuse.md) | [原稿](devto/game-jam-repository-reuse.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | O11 | 採用しなかったゲームプロトタイプをarchiveへ残す理由 | game-prototype-archive-decisions | 予定: public/game-prototype-archive-decisions.md | 予定: devto/game-prototype-archive-decisions.md | 未確認 | 未実施 | 未着手 |
-| O12 | itch.io提出前にゲーム外で準備したもの全部 | itch-submission-deliverables | 予定: articles/itch-submission-deliverables.md | 予定: devto/itch-submission-deliverables.md | 未確認 | 未実施 | 未着手 |
+| O12 | itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する | itch-submission-deliverables | [原稿](articles/itch-submission-deliverables.md) | [原稿](devto/itch-submission-deliverables.md) | game-jam-lab f074703の提出キット・8画像とitch.io HTML5公式仕様 | 6スクリーンショットはJPEG 1280×720、2coverはPNG 630×500。ヘッダーとfileで照合 | 完成 |
 | O13 | ブラウザゲームをマウス、タッチ、キーボード、ゲームパッドへ対応した順番 | game-input-support-sequence | 予定: articles/game-input-support-sequence.md | 予定: devto/game-input-support-sequence.md | 未確認 | 未実施 | 未着手 |
 | O14 | 日英33イベントのゲーム内テキストをまとめて確認する仕組み | bilingual-story-archive-qa | 予定: public/bilingual-story-archive-qa.md | 予定: devto/bilingual-story-archive-qa.md | 未確認 | 未実施 | 未着手 |
 | O15 | ゲーム内BGMを敵ごとに割り当てるまでの選定記録 | game-bgm-selection-log | 予定: articles/game-bgm-selection-log.md | 予定: devto/game-bgm-selection-log.md | 未確認 | 未実施 | 未着手 |
 | O16 | 63秒のゲームトレイラーを作るために先に尺を分けた話 | trailer-timeline-before-editing | 予定: articles/trailer-timeline-before-editing.md | 予定: devto/trailer-timeline-before-editing.md | 未確認 | 未実施 | 未着手 |
-| O17 | AI生成素材の出典、原本、採否をどう残したか | generated-asset-provenance-decisions | 予定: articles/generated-asset-provenance-decisions.md | 予定: devto/generated-asset-provenance-decisions.md | 未確認 | 未実施 | 未着手 |
-| O18 | ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか | local-image-generation-reproducibility | 予定: articles/local-image-generation-reproducibility.md | 予定: devto/local-image-generation-reproducibility.md | 未確認 | 未実施 | 未着手 |
+| O17 | AI生成素材の出典、原本、採否をどう残したか | generated-asset-provenance-decisions | [原稿](articles/generated-asset-provenance-decisions.md) | [原稿](devto/generated-asset-provenance-decisions.md) | game-jam-lab f074703の出典文書・台帳・runtime preload・Git履歴 | 30batch/107候補、原本欠落0、承認35/保留13/却下3/未確認56。未確認3件のコード参照 | 完成 |
+| O18 | ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか | local-image-generation-reproducibility | [原稿](articles/local-image-generation-reproducibility.md) | [原稿](devto/local-image-generation-reproducibility.md) | local-anime-studio 2aeb306のCLI/workflow/モデル台帳/履歴、ComfyUI/PyTorch公式仕様 | 既存34テストとrepo validator成功。実CLIの2経路で記録の有無をassert。GPU未実行 | 完成 |
 | O19 | WebとiOSの2サービスを一人で運用すると、保守タスクはどう増えるか | solo-web-ios-maintenance-scope | 予定: articles/solo-web-ios-maintenance-scope.md | 予定: devto/solo-web-ios-maintenance-scope.md | 未確認 | 未実施 | 未着手 |
 | O20 | Expo通知を一人一Tokenから一人複数端末へ変えた移行記録 | expo-multi-device-push-rollout | 予定: articles/expo-multi-device-push-rollout.md | 予定: devto/expo-multi-device-push-rollout.md | 未確認 | 未実施 | 未着手 |
 | O21 | 本番の認証を壊したとき、どの順番で復旧確認したか | auth-incident-recovery-evidence | 予定: articles/auth-incident-recovery-evidence.md | 予定: devto/auth-incident-recovery-evidence.md | 未確認 | 未実施 | 未着手 |

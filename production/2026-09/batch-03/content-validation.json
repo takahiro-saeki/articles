@@ -1,0 +1,224 @@
+{
+  "pairs": 6,
+  "canonicalPending": [],
+  "eligibleForCompletion": 6,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P14",
+      "jaCharacters": 3005,
+      "enWords": 1017,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.06
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.058
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.043
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-project-module-cycle-initiative.md",
+          "score": 0.253
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.24
+        },
+        {
+          "path": "devto/plane-github-issue-boundary.md",
+          "score": 0.238
+        }
+      ]
+    },
+    {
+      "id": "P15",
+      "jaCharacters": 2909,
+      "enWords": 935,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.04
+        },
+        {
+          "path": "articles/plane-project-module-cycle-initiative.md",
+          "score": 0.039
+        },
+        {
+          "path": "articles/plane-project-boundaries.md",
+          "score": 0.036
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.238
+        },
+        {
+          "path": "devto/plane-workspace-access-boundaries.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/plane-project-boundaries.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "O09",
+      "jaCharacters": 3627,
+      "enWords": 942,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.074
+        },
+        {
+          "path": "articles/repository-decision-log-evidence.md",
+          "score": 0.068
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.237
+        },
+        {
+          "path": "devto/repository-decision-log-evidence.md",
+          "score": 0.235
+        }
+      ]
+    },
+    {
+      "id": "O12",
+      "jaCharacters": 3286,
+      "enWords": 999,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.071
+        },
+        {
+          "path": "articles/devlog-primary-source-reconstruction.md",
+          "score": 0.064
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.242
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.237
+        }
+      ]
+    },
+    {
+      "id": "O17",
+      "jaCharacters": 3737,
+      "enWords": 865,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "articles/devlog-primary-source-reconstruction.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/itch-submission-deliverables.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.074
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.245
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.227
+        }
+      ]
+    },
+    {
+      "id": "O18",
+      "jaCharacters": 4061,
+      "enWords": 938,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.05
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.046
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.044
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.216
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.213
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.206
+        }
+      ]
+    }
+  ]
+}

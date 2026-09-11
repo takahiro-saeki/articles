@@ -1,0 +1,107 @@
+{
+  "commit": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "node": "v24.15.0",
+  "route_combinations": {
+    "stages": 6,
+    "first_boss_options": 2,
+    "orders": 720,
+    "unique_cases": 1440,
+    "scope": "recomputed combinations; Godot audit not executed"
+  },
+  "pngs": [
+    {
+      "path": "submission/screenshots/01-title-screen.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "submission/screenshots/02-gearmaw-combat.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "submission/screenshots/03-five-gear-trees.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "submission/screenshots/04-arch-singularity.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "submission/screenshots/05-artwork-archive.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "submission/screenshots/06-prime-current.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "submission/cover-630x500.png",
+      "format": "PNG",
+      "width": 630,
+      "height": 500
+    },
+    {
+      "path": "submission/cover-630x500-key-art.png",
+      "format": "PNG",
+      "width": 630,
+      "height": 500
+    }
+  ],
+  "manifest": {
+    "batches": 30,
+    "candidates": 107,
+    "unique_ids": true,
+    "missing_files": [],
+    "generation": {
+      "generated": 107
+    },
+    "human_review": {
+      "hold": 13,
+      "approved": 35,
+      "rejected": 3,
+      "unreviewed": 56
+    },
+    "selected": {
+      "id": "final-fallen-machine-seraph-v9-c",
+      "model": "pixen",
+      "seed": null,
+      "codex_status": "recommended",
+      "codex_score": 98,
+      "human_status": "approved",
+      "human_rating": 5,
+      "original": "source/enemy/final-fallen-machine-seraph-v9-c.png",
+      "original_sha256": "d2638a38b85ecb312784d3096254a475fe0672ba5a2c2b222b4ceaed71043667",
+      "runtime_file": "godot/assets/charge_clicker/pixellab/source/enemy/final-fallen-machine-seraph-v9-c-cutout.png",
+      "runtime_sha256": "016e52055d8c9018cd281fae48af1352f3159ff50da70261c9e475b030e0c33e",
+      "preloaded": true
+    },
+    "effects": [
+      {
+        "id": "defeat-vfx-core-fracture-v12-a",
+        "human_review": "unreviewed",
+        "preloaded": true
+      },
+      {
+        "id": "defeat-vfx-voltage-halo-v12-b",
+        "human_review": "unreviewed",
+        "preloaded": true
+      },
+      {
+        "id": "defeat-vfx-machine-shards-v12-c",
+        "human_review": "unreviewed",
+        "preloaded": true
+      }
+    ]
+  }
+}

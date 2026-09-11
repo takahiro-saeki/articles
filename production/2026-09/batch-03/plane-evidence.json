@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-09-11",
+  "access": "read-only personal Plane connector",
+  "project": "SquadNote",
+  "pages": {
+    "total": 0,
+    "returned": 0,
+    "next_page_results": false
+  },
+  "work_items": [
+    {
+      "identifier": "SQN-29",
+      "title": "体験参加者を段階的に正式メンバーへ移行できる仕組みを整備する"
+    },
+    {
+      "identifier": "SQN-30",
+      "title": "[Step 1] 体験参加者権限と手動昇格・終了を実装する"
+    }
+  ],
+  "scope": "Only the two named work items support this article. No Pages were created; no integration or publication settings changed. Development invitation URLs and test-account details are excluded."
+}

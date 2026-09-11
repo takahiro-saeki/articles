@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 /Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "P14",
+      "path": "articles/plane-pages-work-item-boundary.md",
+      "before_sha256": "88abf46021343fbeaaa4aa47457dfe7e72ecb90db8fa8cf0a6b49f2676112f84",
+      "after_sha256": "64c7ca2dd5588f9ce9a82af8a545f4033e9da44b989719fa33cbbb839e4dec74",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "導入案という区分、Pages 0件、SQN-29/30の役割、モバイル確認未完了を維持。段階導入の説明を直接的にした。"
+    },
+    {
+      "id": "P14",
+      "path": "devto/plane-pages-work-item-boundary.md",
+      "before_sha256": "7d21de9f333b78fb176dae0599c6fc52736f0aa38fa2f4467836e5d41950b400",
+      "after_sha256": "cc663b1d109383ca5d3a81b13d883c79dd9fcf8fe25a5a7a4669df59906da7db",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "導入案という区分、Pages 0件、SQN-29/30の役割、モバイル確認未完了を維持。段階導入の説明を直接的にした。"
+    },
+    {
+      "id": "P15",
+      "path": "articles/plane-github-issue-boundary.md",
+      "before_sha256": "48bbe241b151f39ad87ee8d822fcf33f76761b4cd53ddaa98a98febaf661d854",
+      "after_sha256": "4392ee919e82fee223cc6fef5a9ac97ae21428c707d3d2103607717344365d8e",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "編集責任の提案と同期仕様、PR表記、GitHubの終了条件を維持。不要な対比を削除。"
+    },
+    {
+      "id": "P15",
+      "path": "devto/plane-github-issue-boundary.md",
+      "before_sha256": "e21e0a6a0440e2073e928358ce2ab210209d249ccfb84af3aadf5b5ddfe23f77",
+      "after_sha256": "7c04b0a342b3eedace671649ae2026aa03cfcb73307d008aaeb51d50411caf31",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "編集責任の提案と同期仕様、PR表記、GitHubの終了条件を維持。不要な対比を削除。"
+    },
+    {
+      "id": "O09",
+      "path": "articles/devlog-primary-source-reconstruction.md",
+      "before_sha256": "7d7f87adec52ad0c8932871595e66b174079feaf41745817acac05fb56d37c43",
+      "after_sha256": "1c44647d19bd2f504c322f3177bfa3c038836ca433961f7523e2c81a402a8ee8",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "1440は状態遷移ケース数、33は項目検査、今回Godotと通しプレイ未実施を維持。体験を推測しない方針を簡潔化。"
+    },
+    {
+      "id": "O09",
+      "path": "devto/devlog-primary-source-reconstruction.md",
+      "before_sha256": "070ee86eee4485dd99905bf4f38220faad26a228f1e4a3ae7923aff087f60962",
+      "after_sha256": "ca26fe4db8cf5b751e28b8b1de41b30e65419830727f9b5c5ee05bf438aabbb9",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "1440は状態遷移ケース数、33は項目検査、今回Godotと通しプレイ未実施を維持。体験を推測しない方針を簡潔化。"
+    },
+    {
+      "id": "O12",
+      "path": "articles/itch-submission-deliverables.md",
+      "before_sha256": "d5a62214cacf7b513d58def983fa2cea6b4ebfec8bdb05aeed174c818c23cfb3",
+      "after_sha256": "8e5a04125225f41bdd13744711515ebaf3714d1e14a6852e8c29a54d48c7318e",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "6 JPEG/2 PNGと寸法、スマートフォン確認保留、今回未公開を維持。末尾の重複したまとめ文のみ削除。"
+    },
+    {
+      "id": "O12",
+      "path": "devto/itch-submission-deliverables.md",
+      "before_sha256": "0d09bd13175b26007e3f3ae2e3c8de94499c54140bb146b9c87301dfd4f16c2a",
+      "after_sha256": "b28990777b4e8fe5c8dd8e4f4d706fe5eb6f9d19a3c6a53eb53e947f73ef6e84",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "6 JPEG/2 PNGと寸法、スマートフォン確認保留、今回未公開を維持。末尾の重複したまとめ文のみ削除。"
+    },
+    {
+      "id": "O17",
+      "path": "articles/generated-asset-provenance-decisions.md",
+      "before_sha256": "3e518c62ab367a88b4273edfe623d0ddf152d7b88c1948fc750cbfb83c7c912c",
+      "after_sha256": "e40f343c2de0b6c2d5a50884c7e0f773fa9bd21ee2d34d6e8e8928eb25e0c704",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "30/107件と全status数、レビュー評価と測定の違い、未承認記録の3 preload、派生利用先は提案であることを維持。末尾を差し替え手順へ戻した。"
+    },
+    {
+      "id": "O17",
+      "path": "devto/generated-asset-provenance-decisions.md",
+      "before_sha256": "2445ebc864f16fb5d55f534f3ae1adb8f4677ac40d9e14d433874d2b40d4d3dd",
+      "after_sha256": "28062e96cb6bbe8cd4eb55c52232b5988d46f53d582de37ac4b6549117531608",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "30/107件と全status数、レビュー評価と測定の違い、未承認記録の3 preload、派生利用先は提案であることを維持。末尾を差し替え手順へ戻した。"
+    },
+    {
+      "id": "O18",
+      "path": "articles/local-image-generation-reproducibility.md",
+      "before_sha256": "7f682c9e8203fb8e8f446ef68cfed63b5ac435c9e247bd17a0611defc217f9dd",
+      "after_sha256": "0dfe4ec3ab14c389ebbc88b4ff6a06b9cc32f8c2ad548be9a05a0a7576a0f3d4",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "workflow設定、34テストと2モック経路、timeoutで記録なし、GPU未実施、保存段階は未実装という区分を維持。過剰な締めを短縮。"
+    },
+    {
+      "id": "O18",
+      "path": "devto/local-image-generation-reproducibility.md",
+      "before_sha256": "01481f52055743cedb0424dcc84bee0f2e21ec0466928afccbad933da726b96e",
+      "after_sha256": "fbdd5cb46a0cc7ee5f4e96d16d373b8caefb867297efd0262bd7e57cebc928c4",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "workflow設定、34テストと2モック経路、timeoutで記録なし、GPU未実施、保存段階は未実装という区分を維持。過剰な締めを短縮。"
+    }
+  ]
+}

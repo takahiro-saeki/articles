@@ -1,0 +1,34 @@
+[
+  {
+    "path": "submission/screenshots/01-title-screen.png",
+    "result": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1280x720, components 3"
+  },
+  {
+    "path": "submission/screenshots/02-gearmaw-combat.png",
+    "result": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1280x720, components 3"
+  },
+  {
+    "path": "submission/screenshots/03-five-gear-trees.png",
+    "result": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1280x720, components 3"
+  },
+  {
+    "path": "submission/screenshots/04-arch-singularity.png",
+    "result": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1280x720, components 3"
+  },
+  {
+    "path": "submission/screenshots/05-artwork-archive.png",
+    "result": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1280x720, components 3"
+  },
+  {
+    "path": "submission/screenshots/06-prime-current.png",
+    "result": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1280x720, components 3"
+  },
+  {
+    "path": "submission/cover-630x500.png",
+    "result": "PNG image data, 630 x 500, 8-bit/color RGB, non-interlaced"
+  },
+  {
+    "path": "submission/cover-630x500-key-art.png",
+    "result": "PNG image data, 630 x 500, 8-bit/color RGB, non-interlaced"
+  }
+]

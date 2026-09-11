@@ -1,0 +1,61 @@
+{
+  "devices": [
+    {
+      "type": "mps"
+    }
+  ]
+}
+{
+  "devices": [
+    {
+      "type": "cpu"
+    }
+  ]
+}
+ComfyUI did not report an MPS device
+{
+  "prompt_id": "prompt-1"
+}
+Wrote reproducibility record: /var/folders/9b/42x3hwfs6_379c5r3tdhvk780000gn/T/tmpspdz8kfu/records/run.json
+[web] 127.0.0.1 "POST /api/jobs HTTP/1.1" 202 -
+[web] 127.0.0.1 "GET / HTTP/1.1" 200 -
+[web] 127.0.0.1 "GET /api/config HTTP/1.1" 403 -
+test_check_runtime_prints_system_stats (test_cli.CliTests.test_check_runtime_prints_system_stats) ... ok
+test_check_runtime_rejects_non_mps_device (test_cli.CliTests.test_check_runtime_rejects_non_mps_device) ... ok
+test_record_contains_workflow_and_runtime (test_cli.CliTests.test_record_contains_workflow_and_runtime) ... ok
+test_web_action_uses_local_default_port (test_cli.CliTests.test_web_action_uses_local_default_port) ... ok
+test_get_history_uses_prompt_id (test_comfyui.ComfyUIClientTests.test_get_history_uses_prompt_id) ... ok
+test_get_media_uses_encoded_view_parameters (test_comfyui.ComfyUIClientTests.test_get_media_uses_encoded_view_parameters) ... ok
+test_get_system_stats_uses_runtime_endpoint (test_comfyui.ComfyUIClientTests.test_get_system_stats_uses_runtime_endpoint) ... ok
+test_non_object_json_is_rejected (test_comfyui.ComfyUIClientTests.test_non_object_json_is_rejected) ... ok
+test_queue_prompt_posts_workflow (test_comfyui.ComfyUIClientTests.test_queue_prompt_posts_workflow) ... ok
+test_uses_only_comfyui_core_nodes (test_image_workflow.FirstImageWorkflowTests.test_uses_only_comfyui_core_nodes) ... ok
+test_uses_pinned_checkpoint_filename (test_image_workflow.FirstImageWorkflowTests.test_uses_pinned_checkpoint_filename) ... ok
+test_uses_reproducible_portrait_baseline (test_image_workflow.FirstImageWorkflowTests.test_uses_reproducible_portrait_baseline) ... ok
+test_feet_stay_planted_while_knees_absorb_the_shift (test_pose_control.PoseControlTests.test_feet_stay_planted_while_knees_absorb_the_shift) ... ok
+test_hips_sway_and_shoulders_turn (test_pose_control.PoseControlTests.test_hips_sway_and_shoulders_turn) ... ok
+test_motion_strength_is_bounded_and_tunable (test_pose_control.PoseControlTests.test_motion_strength_is_bounded_and_tunable) ... ok
+test_renderer_writes_valid_png_sequence (test_pose_control.PoseControlTests.test_renderer_writes_valid_png_sequence) ... ok
+test_sequence_closes_seamlessly (test_pose_control.PoseControlTests.test_sequence_closes_seamlessly) ... ok
+test_external_inputs_use_relative_comfyui_paths (test_video_workflow.WanFunControlWorkflowTests.test_external_inputs_use_relative_comfyui_paths) ... ok
+test_prompt_discourages_isolated_unbalanced_motion (test_video_workflow.WanFunControlWorkflowTests.test_prompt_discourages_isolated_unbalanced_motion) ... ok
+test_uses_only_comfyui_core_nodes (test_video_workflow.WanFunControlWorkflowTests.test_uses_only_comfyui_core_nodes) ... ok
+test_uses_pinned_model_filenames (test_video_workflow.WanFunControlWorkflowTests.test_uses_pinned_model_filenames) ... ok
+test_uses_reproducible_five_second_portrait_settings (test_video_workflow.WanFunControlWorkflowTests.test_uses_reproducible_five_second_portrait_settings) ... ok
+test_batch_reuses_seed_sequence_and_writes_records (test_webui.GenerationManagerTests.test_batch_reuses_seed_sequence_and_writes_records) ... ok
+test_records_are_inferred_beneath_comfyui_output (test_webui.GenerationManagerTests.test_records_are_inferred_beneath_comfyui_output) ... ok
+test_rejects_record_directory_inside_repository (test_webui.GenerationManagerTests.test_rejects_record_directory_inside_repository) ... ok
+test_api_accepts_a_generation_job (test_webui.WebUIServerTests.test_api_accepts_a_generation_job) ... ok
+test_home_has_security_headers_and_generation_form (test_webui.WebUIServerTests.test_home_has_security_headers_and_generation_form) ... ok
+test_rejects_non_local_host_header (test_webui.WebUIServerTests.test_rejects_non_local_host_header) ... ok
+test_media_proxy_rejects_traversal_and_non_images (test_webui.WebUIValidationTests.test_media_proxy_rejects_traversal_and_non_images) ... ok
+test_renderer_changes_only_generation_inputs (test_webui.WebUIValidationTests.test_renderer_changes_only_generation_inputs) ... ok
+test_request_rejects_a_seed_sequence_overflow (test_webui.WebUIValidationTests.test_request_rejects_a_seed_sequence_overflow) ... ok
+test_request_rejects_more_than_twenty_five_images (test_webui.WebUIValidationTests.test_request_rejects_more_than_twenty_five_images) ... ok
+test_request_supports_three_prompts_with_five_images_each (test_webui.WebUIValidationTests.test_request_supports_three_prompts_with_five_images_each) ... ok
+test_web_mode_accepts_loopback_comfyui_only (test_webui.WebUIValidationTests.test_web_mode_accepts_loopback_comfyui_only) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 1.549s
+
+OK

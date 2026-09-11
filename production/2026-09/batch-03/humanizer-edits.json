@@ -1,0 +1,138 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 /Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "P14",
+      "path": "articles/plane-pages-work-item-boundary.md",
+      "edits": [
+        [
+          "導入するなら、親チケットをすべて一度に移す必要はありません。",
+          "導入時は、一つの親チケットから分け方を試せます。"
+        ]
+      ],
+      "semantic_review": "導入案という区分、Pages 0件、SQN-29/30の役割、モバイル確認未完了を維持。段階導入の説明を直接的にした。"
+    },
+    {
+      "id": "P14",
+      "path": "devto/plane-pages-work-item-boundary.md",
+      "edits": [
+        [
+          "You do not need to migrate every parent ticket at once.",
+          "Start by trying the split with one parent ticket."
+        ]
+      ],
+      "semantic_review": "導入案という区分、Pages 0件、SQN-29/30の役割、モバイル確認未完了を維持。段階導入の説明を直接的にした。"
+    },
+    {
+      "id": "P15",
+      "path": "articles/plane-github-issue-boundary.md",
+      "edits": [
+        [
+          "先に決めたいのは「どちらを使うか」より、同じ情報をどこで編集するかです。",
+          "同じ情報をどこで編集するかを、先に決めます。"
+        ]
+      ],
+      "semantic_review": "編集責任の提案と同期仕様、PR表記、GitHubの終了条件を維持。不要な対比を削除。"
+    },
+    {
+      "id": "P15",
+      "path": "devto/plane-github-issue-boundary.md",
+      "edits": [
+        [
+          "Decide where each piece of information is edited before deciding which tool should contain everything.",
+          "First decide where each piece of information is edited."
+        ]
+      ],
+      "semantic_review": "編集責任の提案と同期仕様、PR表記、GitHubの終了条件を維持。不要な対比を削除。"
+    },
+    {
+      "id": "O09",
+      "path": "articles/devlog-primary-source-reconstruction.md",
+      "edits": [
+        [
+          "その際、資料に残っていない気持ちや手作業まで一人称で足さないようにします。",
+          "資料に記録されていない感想や手作業は、一人称の体験として補いません。"
+        ]
+      ],
+      "semantic_review": "1440は状態遷移ケース数、33は項目検査、今回Godotと通しプレイ未実施を維持。体験を推測しない方針を簡潔化。"
+    },
+    {
+      "id": "O09",
+      "path": "devto/devlog-primary-source-reconstruction.md",
+      "edits": [
+        [
+          "Do not add first-person feelings or manual activities that the evidence does not contain.",
+          "Keep undocumented feelings and manual activities out of the first-person account."
+        ]
+      ],
+      "semantic_review": "1440は状態遷移ケース数、33は項目検査、今回Godotと通しプレイ未実施を維持。体験を推測しない方針を簡潔化。"
+    },
+    {
+      "id": "O12",
+      "path": "articles/itch-submission-deliverables.md",
+      "edits": [
+        [
+          "ゲーム外の成果物にも、その確認が必要です。",
+          ""
+        ]
+      ],
+      "semantic_review": "6 JPEG/2 PNGと寸法、スマートフォン確認保留、今回未公開を維持。末尾の重複したまとめ文のみ削除。"
+    },
+    {
+      "id": "O12",
+      "path": "devto/itch-submission-deliverables.md",
+      "edits": [
+        [
+          " Deliverables outside the game need that comparison too.",
+          ""
+        ]
+      ],
+      "semantic_review": "6 JPEG/2 PNGと寸法、スマートフォン確認保留、今回未公開を維持。末尾の重複したまとめ文のみ削除。"
+    },
+    {
+      "id": "O17",
+      "path": "articles/generated-asset-provenance-decisions.md",
+      "edits": [
+        [
+          "そのうえで素材を差し替えるときに三つを照合すると、画像の保存だけでは追えなかった関係が残ります。",
+          "素材を差し替えるときは、その記録から原本と利用先の関係を確かめます。"
+        ]
+      ],
+      "semantic_review": "30/107件と全status数、レビュー評価と測定の違い、未承認記録の3 preload、派生利用先は提案であることを維持。末尾を差し替え手順へ戻した。"
+    },
+    {
+      "id": "O17",
+      "path": "devto/generated-asset-provenance-decisions.md",
+      "edits": [
+        [
+          "Cross-checking those records during replacement preserves relationships that saving the images alone cannot capture.",
+          "When replacing an asset, use those records to check the relationship between its original and its usage."
+        ]
+      ],
+      "semantic_review": "30/107件と全status数、レビュー評価と測定の違い、未承認記録の3 preload、派生利用先は提案であることを維持。末尾を差し替え手順へ戻した。"
+    },
+    {
+      "id": "O18",
+      "path": "articles/local-image-generation-reproducibility.md",
+      "edits": [
+        [
+          "画像を再現する実験へ進む前に、試行の条件と終了状態を残せているかを確認する。その順番なら、失敗した生成を調べる材料も揃えられます。",
+          "画像の再現実験を始める前に、失敗した試行も含めて条件と終了状態が残るかを確かめます。"
+        ]
+      ],
+      "semantic_review": "workflow設定、34テストと2モック経路、timeoutで記録なし、GPU未実施、保存段階は未実装という区分を維持。過剰な締めを短縮。"
+    },
+    {
+      "id": "O18",
+      "path": "devto/local-image-generation-reproducibility.md",
+      "edits": [
+        [
+          "Before attempting image-reproduction experiments, check whether the system preserves each attempt's conditions and final observed state. That also provides material for investigating failed generation attempts.",
+          "Before attempting image-reproduction experiments, check that conditions and final observed states are preserved for failed attempts as well."
+        ]
+      ],
+      "semantic_review": "workflow設定、34テストと2モック経路、timeoutで記録なし、GPU未実施、保存段階は未実装という区分を維持。過剰な締めを短縮。"
+    }
+  ]
+}
