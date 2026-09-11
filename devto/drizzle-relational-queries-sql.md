@@ -10,7 +10,7 @@ published: false
 
 I run the backends of two side projects on Drizzle + Cloudflare D1, and I realized I had never actually checked what SQL the relational queries API (`db.query.xxx.findMany({ with: ... })`) produces.
 
-Is it a JOIN? Or does it quietly turn into N+1 queries? I wired up a logger and measured it, and the answer was neither. Drizzle compiles the whole thing into a single SQL statement built from correlated subqueries and `json_group_array`. No matter how deep you nest relations, the query count stays at one.
+Is it a JOIN? Or does it quietly turn into N+1 queries? I wired up a logger and measured it, and the answer was neither. Drizzle compiled each case into one SQL statement built from correlated subqueries and `json_group_array`. Even the two-level relation in my test stayed at one query.
 
 This post walks through the actual SQL, pasted as measured.
 
@@ -142,7 +142,7 @@ This one is the straightforward JOIN you would expect. But a JOIN duplicates the
 
 ## Why this design is convenient on D1
 
-The "one query no matter how deep" property pays off in environments where round trips are expensive.
+Keeping the tested relations to one query helps in environments where round trips are expensive.
 
 D1 receives queries from a Worker through a binding, so query count translates directly into latency. If relational queries were N+1, a member list screen with 20 people would cost 21 round trips. In practice it is always one. I think this is part of why the D1 + Drizzle combination has felt smooth in production.
 
@@ -152,9 +152,9 @@ A few things to keep in mind:
 - These are correlated subqueries, so indexes on the join keys (`membership.userId` and `membership.orgId` in this example) still matter
 - The generated SQL is hard to read, so pair any slow-query investigation with `EXPLAIN QUERY PLAN`
 
-## Closing
+## What changed after checking the SQL
 
-My assumption that `with` was syntactic sugar for a JOIN was wrong. It is closer to a compiler that emits a single JSON-building SQL statement.
+My assumption that `with` was syntactic sugar for a JOIN was wrong. In these tests, it behaved more like a compiler that emitted one JSON-building SQL statement.
 
 A single logger is all it takes to peek inside an ORM. If there is a part of your stack you are using on a "probably fine" basis, measuring it is worth the ten minutes. It was for me.
 
