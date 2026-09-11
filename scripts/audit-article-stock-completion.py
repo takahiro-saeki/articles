@@ -3,8 +3,10 @@ import hashlib,json,pathlib,re,subprocess
 from datetime import datetime
 from zoneinfo import ZoneInfo
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-OUT=ROOT/'production/2026-09/completion-audit'
-OUT.mkdir(exist_ok=True)
+PLAN_PATH=ROOT/'production/2026-09/scheduling/approved-plan.json'
+PLAN=json.loads(PLAN_PATH.read_text()) if PLAN_PATH.exists() else None
+OUT=ROOT/('production/2026-09/scheduling/completion-audit' if PLAN else 'production/2026-09/completion-audit')
+OUT.mkdir(parents=True,exist_ok=True)
 read=lambda p:json.loads((ROOT/p).read_text())
 sha=lambda value:hashlib.sha256(value.encode() if isinstance(value,str) else value).hexdigest()
 def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT,text=True)
@@ -91,8 +93,11 @@ for batch in sorted({x['batch'] for x in cat}):
  batches.append({'batch':batch,'pairs':len(group),'ids':[x['id'] for x in group],'commit':next(iter(first_commits)),'review':str(review),'humanizer_records':len(files)})
 assert len(audit_files)==180
 base=[p for p in git('ls-tree','-r','--name-only','8a1bfa8').splitlines() if p!='ARTICLE_IDEAS_2026-09.md']
+integration_base=PLAN['integration_base_commit'] if PLAN else '8a1bfa8'
+authorized_changes=['README.md','schedule/publishing-schedule.json','scripts/publish-scheduled.mjs'] if PLAN else []
 for p in base:
- expected_bytes=subprocess.check_output(['git','show','8a1bfa8:'+p],cwd=ROOT)
+ if p in authorized_changes:continue
+ expected_bytes=subprocess.check_output(['git','show',integration_base+':'+p],cwd=ROOT)
  assert (ROOT/p).read_bytes()==expected_bytes,p
 assert len(base)==137
 for name in ['articles/attendance-waitlist-concurrency-control.md','devto/attendance-waitlist-concurrency-control.md','public/drizzle-relational-queries-sql.md','devto/drizzle-relational-queries-sql.md']:
@@ -103,6 +108,6 @@ assert run('git','diff','--check').returncode==0
 inventory=[{'id':x['id'],'title':x['title'],'slug':x['slug'],'japanese':x['japanese'],'english':x['english'],'canonical_url':None,'state':'本文検証済み・公開予定URL未確定','evidence':f"production/2026-09/batch-{x['batch']:02}/"} for x in pending]
 save('canonical-pending.json',inventory)
 save('article-evidence.json',article_evidence)
-report={'audited_on':datetime.now(ZoneInfo('Asia/Tokyo')).date().isoformat(),'base_commit':git('rev-parse','HEAD').strip(),'working_tree_drafts_included':True,'remote_ref':git('rev-parse','origin/codex/article-stock-2026-09').strip(),'candidate_pairs':90,'article_files':180,'categories':{'Plane':20,'technical':45,'other':25},'preparation_counts':{prep:sum(x['preparation']==prep for x in cat) for prep in ['A','B','C']},'complete':sum(x['status']=='完成' for x in cat),'canonical_pending':len(pending),'all_requirements_complete':not pending,'first_12_in_first_two_batches':True,'humanizer_final_hashes_matching':len(audit_files),'humanizer_reverse_edit_replay_files':len(replayed),'humanizer_original_audit_only_files':attested,'protected_baseline_files_unchanged':len(base),'original_candidate_table_unchanged':True,'all_90_metadata_and_pair_checks_pass':True,'code_fences_per_language':sum(x['codeBlocks'] for x in validation['articles']),'same_section_counts':True,'zenn_list_exit_code':zenn.returncode,'diff_check_exit_code':0,'batch_commits':batches,'limitations':['Structural parity and hashes do not themselves prove translation quality or factual accuracy; per-article saved semantic and source reviews remain the evidence for those requirements.','Some edits have no reversible plan or remove prose without a unique insertion point. Their original audits attest the protected invariants; this audit still verifies current final hashes. These files are listed separately.','Experiments are not rerun by this inventory audit; the per-batch records retain their original date and stated scope.','Unresolved canonical URLs prevent full completion under the original instructions.']}
+report={'audited_on':datetime.now(ZoneInfo('Asia/Tokyo')).date().isoformat(),'base_commit':git('rev-parse','HEAD').strip(),'working_tree_drafts_included':True,'remote_ref':git('rev-parse','origin/codex/article-stock-2026-09').strip(),'candidate_pairs':90,'article_files':180,'categories':{'Plane':20,'technical':45,'other':25},'preparation_counts':{prep:sum(x['preparation']==prep for x in cat) for prep in ['A','B','C']},'complete':sum(x['status']=='完成' for x in cat),'canonical_pending':len(pending),'all_requirements_complete':not pending,'first_12_in_first_two_batches':True,'humanizer_final_hashes_matching':len(audit_files),'humanizer_reverse_edit_replay_files':len(replayed),'humanizer_original_audit_only_files':attested,'protected_baseline_files_unchanged':len(base)-len(authorized_changes),'baseline_comparison_commit':integration_base,'authorized_existing_file_changes':authorized_changes,'canonical_deferred_with_approval':sum(x.get('canonical_status')=='公開時に設定' for x in cat),'approval_record':str(PLAN_PATH.relative_to(ROOT)) if PLAN else None,'original_candidate_table_unchanged':True,'all_90_metadata_and_pair_checks_pass':True,'code_fences_per_language':sum(x['codeBlocks'] for x in validation['articles']),'same_section_counts':True,'zenn_list_exit_code':zenn.returncode,'diff_check_exit_code':0,'batch_commits':batches,'limitations':['Structural parity and hashes do not themselves prove translation quality or factual accuracy; per-article saved semantic and source reviews remain the evidence for those requirements.','Some edits have no reversible plan or remove prose without a unique insertion point. Their original audits attest the protected invariants; this audit still verifies current final hashes. These files are listed separately.','Experiments are not rerun by this inventory audit; the per-batch records retain their original date and stated scope.','Qiita canonical URLs may remain null in completed drafts under the 2026-09-12 user approval; the scheduled publisher must resolve them before publishing English articles. This audit does not itself activate GitHub scheduling.' if PLAN else 'Unresolved canonical URLs prevent full completion under the original instructions.']}
 save('audit.json',report)
 print(json.dumps({k:v for k,v in report.items() if k not in ['batch_commits','humanizer_original_audit_only_files','limitations']},ensure_ascii=False,indent=2))

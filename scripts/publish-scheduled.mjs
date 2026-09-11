@@ -25,8 +25,11 @@ function splitMarkdown(raw) {
 }
 
 function field(frontmatter, name) {
-  return frontmatter.match(new RegExp(`^${name}:\\s*(.*)$`, "m"))?.[1]
-    ?.replace(/^["']|["']$/g, "");
+  const value = frontmatter.match(new RegExp(`^${name}:[ \\t]*(.*)$`, "m"))?.[1]?.trim();
+  // Quoted fields in this repository use JSON string syntax, including \u escapes.
+  if (value?.startsWith('"')) return JSON.parse(value);
+  if (value?.startsWith("'") && value.endsWith("'")) return value.slice(1, -1).replace(/''/g, "'");
+  return value;
 }
 
 function setField(raw, name, value) {

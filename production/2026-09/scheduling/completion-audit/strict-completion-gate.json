@@ -1,0 +1,6 @@
+{
+  "command": "node scripts/validate-article-stock.mjs --all",
+  "exit_code": 0,
+  "canonical_pending_ids": [],
+  "stderr": ""
+}

@@ -1,0 +1,740 @@
+{
+  "node": "v24.15.0",
+  "mode": "actual CLI dry-runs plus in-memory filesystem and fetch mocks; no real publishing requests",
+  "start": "2026-09-13",
+  "end": "2026-12-11",
+  "pairs": 90,
+  "priority12First": true,
+  "dryRunNoWritesOrApiCalls": 90,
+  "payloadParity": 90,
+  "alreadyPublishedNoOp": 90,
+  "qiitaResponseCanonical": 49,
+  "zennSlugCanonical": 41,
+  "qiitaFailureStopsEnglish": true,
+  "devtoFailureRetriesWithSavedJapaneseId": true,
+  "unreservedDatesNoOp": true,
+  "unicodeTitleRegression": "pass",
+  "diskDraftHashesUnchanged": 180,
+  "results": [
+    {
+      "id": "P01",
+      "date": "2026-09-13",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O01",
+      "date": "2026-09-14",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T28",
+      "date": "2026-09-15",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T31",
+      "date": "2026-09-16",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T37",
+      "date": "2026-09-17",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O05",
+      "date": "2026-09-18",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P03",
+      "date": "2026-09-19",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T20",
+      "date": "2026-09-20",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T01",
+      "date": "2026-09-21",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O07",
+      "date": "2026-09-22",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O10",
+      "date": "2026-09-23",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O03",
+      "date": "2026-09-24",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P02",
+      "date": "2026-09-25",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T36",
+      "date": "2026-09-26",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P14",
+      "date": "2026-09-27",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P15",
+      "date": "2026-09-28",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O09",
+      "date": "2026-09-29",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O12",
+      "date": "2026-09-30",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O17",
+      "date": "2026-10-01",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O18",
+      "date": "2026-10-02",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T09",
+      "date": "2026-10-03",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T39",
+      "date": "2026-10-04",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T40",
+      "date": "2026-10-05",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T42",
+      "date": "2026-10-06",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T44",
+      "date": "2026-10-07",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T45",
+      "date": "2026-10-08",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O13",
+      "date": "2026-10-09",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O15",
+      "date": "2026-10-10",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O16",
+      "date": "2026-10-11",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O20",
+      "date": "2026-10-12",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O21",
+      "date": "2026-10-13",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O22",
+      "date": "2026-10-14",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P08",
+      "date": "2026-10-15",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P10",
+      "date": "2026-10-16",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P17",
+      "date": "2026-10-17",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P19",
+      "date": "2026-10-18",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T14",
+      "date": "2026-10-19",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O19",
+      "date": "2026-10-20",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P20",
+      "date": "2026-10-21",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T18",
+      "date": "2026-10-22",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T19",
+      "date": "2026-10-23",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T21",
+      "date": "2026-10-24",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T34",
+      "date": "2026-10-25",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O25",
+      "date": "2026-10-26",
+      "platform": "zenn",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T02",
+      "date": "2026-10-27",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T04",
+      "date": "2026-10-28",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T05",
+      "date": "2026-10-29",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T06",
+      "date": "2026-10-30",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T07",
+      "date": "2026-10-31",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T08",
+      "date": "2026-11-01",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T11",
+      "date": "2026-11-02",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T12",
+      "date": "2026-11-03",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T13",
+      "date": "2026-11-04",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T15",
+      "date": "2026-11-05",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T16",
+      "date": "2026-11-06",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T17",
+      "date": "2026-11-07",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T10",
+      "date": "2026-11-08",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T22",
+      "date": "2026-11-09",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T23",
+      "date": "2026-11-10",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T24",
+      "date": "2026-11-11",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T25",
+      "date": "2026-11-12",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T38",
+      "date": "2026-11-13",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P05",
+      "date": "2026-11-14",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P06",
+      "date": "2026-11-15",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P07",
+      "date": "2026-11-16",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P11",
+      "date": "2026-11-17",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P12",
+      "date": "2026-11-18",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P13",
+      "date": "2026-11-19",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O02",
+      "date": "2026-11-20",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O04",
+      "date": "2026-11-21",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O06",
+      "date": "2026-11-22",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O08",
+      "date": "2026-11-23",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O11",
+      "date": "2026-11-24",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O14",
+      "date": "2026-11-25",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P04",
+      "date": "2026-11-26",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P09",
+      "date": "2026-11-27",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P16",
+      "date": "2026-11-28",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "P18",
+      "date": "2026-11-29",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O23",
+      "date": "2026-11-30",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "O24",
+      "date": "2026-12-01",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T03",
+      "date": "2026-12-02",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T26",
+      "date": "2026-12-03",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T27",
+      "date": "2026-12-04",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T30",
+      "date": "2026-12-05",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T33",
+      "date": "2026-12-06",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T29",
+      "date": "2026-12-07",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T32",
+      "date": "2026-12-08",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T35",
+      "date": "2026-12-09",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T41",
+      "date": "2026-12-10",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    },
+    {
+      "id": "T43",
+      "date": "2026-12-11",
+      "platform": "qiita",
+      "cliDryRun": "pass",
+      "payloadTitleBodyTagsCanonical": "pass",
+      "secondRunSkipped": "pass"
+    }
+  ]
+}
