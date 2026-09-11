@@ -1,0 +1,38 @@
+[
+  {
+    "runtime": "B",
+    "buildId": "vOZRGGsFQnqO2gDGjtpp0",
+    "static": {
+      "server": "server-build-A",
+      "public": "public-build-A"
+    },
+    "dynamic": {
+      "server": "server-runtime-B",
+      "public": "public-build-A"
+    },
+    "client": {
+      "direct": "public-build-A",
+      "dynamic": null,
+      "alias": "public-build-A",
+      "server": null
+    }
+  },
+  {
+    "runtime": "C",
+    "buildId": "vOZRGGsFQnqO2gDGjtpp0",
+    "static": {
+      "server": "server-build-A",
+      "public": "public-build-A"
+    },
+    "dynamic": {
+      "server": "server-runtime-C",
+      "public": "public-build-A"
+    },
+    "client": {
+      "direct": "public-build-A",
+      "dynamic": null,
+      "alias": "public-build-A",
+      "server": null
+    }
+  }
+]

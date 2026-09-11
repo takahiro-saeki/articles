@@ -1,0 +1,20 @@
+[
+  {
+    "runtime": "B",
+    "buildId": "1J1kmgOTy3dvMMKruVHFr",
+    "static": {
+      "server": "server-build-A",
+      "public": "public-build-A"
+    },
+    "dynamic": {
+      "server": "server-runtime-B",
+      "public": "public-build-A"
+    },
+    "client": {
+      "direct": "public-build-A",
+      "dynamic": null,
+      "alias": "public-build-A",
+      "server": null
+    }
+  }
+]

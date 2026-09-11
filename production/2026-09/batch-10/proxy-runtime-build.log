@@ -1,0 +1,10 @@
+▲ Next.js 16.3.4 (webpack)
+✓ Running next.config.mjs took 5ms
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Route segment config is not allowed in Proxy file at "./proxy.js". Proxy always runs on Node.js runtime. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+    at ignore-listed frames {
+  type: 'Error'
+}

@@ -1,0 +1,7 @@
+{
+  "name": "article-next-batch10",
+  "private": true,
+  "scripts": { "build": "next build --webpack" },
+  "dependencies": { "next": "16.3.4", "react": "19.3.0", "react-dom": "19.3.0" },
+  "devDependencies": { "@next/codemod": "16.3.4" }
+}

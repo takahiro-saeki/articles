@@ -1,0 +1,102 @@
+{
+  "environment": {
+    "node": "v24.15.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "transformed": false
+  },
+  "records": [
+    {
+      "name": "normal",
+      "events": [
+        "open:A",
+        "open:B",
+        "body",
+        "close:B",
+        "close:A"
+      ]
+    },
+    {
+      "name": "return",
+      "events": [
+        "open:A",
+        "close:A",
+        "returned:done"
+      ]
+    },
+    {
+      "name": "body-throws",
+      "events": [
+        "open:A",
+        "close:A",
+        "caught"
+      ]
+    },
+    {
+      "name": "acquisition-throws",
+      "events": [
+        "open:A",
+        "open:B failed",
+        "close:A",
+        "caught"
+      ]
+    },
+    {
+      "name": "body-and-cleanups-throw",
+      "events": [
+        "open:A",
+        "open:B",
+        "close:B",
+        "close:A"
+      ],
+      "error": {
+        "name": "SuppressedError",
+        "error": {
+          "name": "Error",
+          "message": "close failed:A"
+        },
+        "suppressed": {
+          "name": "SuppressedError",
+          "error": {
+            "name": "Error",
+            "message": "close failed:B"
+          },
+          "suppressed": {
+            "name": "Error",
+            "message": "body failed"
+          }
+        }
+      }
+    },
+    {
+      "name": "await-using",
+      "events": [
+        "body",
+        "close start:B",
+        "close end:B",
+        "close start:A",
+        "close end:A",
+        "after work"
+      ]
+    },
+    {
+      "name": "using-only-async-dispose",
+      "events": [],
+      "error": {
+        "name": "TypeError",
+        "message": "Symbol(Symbol.dispose) is not a function"
+      }
+    },
+    {
+      "name": "nullish",
+      "events": [
+        "body"
+      ]
+    },
+    {
+      "name": "temporary-directory",
+      "existedInside": true,
+      "existsAfterThrow": false
+    }
+  ]
+}

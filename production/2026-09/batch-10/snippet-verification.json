@@ -1,0 +1,119 @@
+{
+  "articleSnippets": [
+    {
+      "id": "T10",
+      "block": 1,
+      "language": "js",
+      "sha256": "ec2f88b980c5b8803485fae754bf65c4a9e942e771d0d6397432a73ae52bb006",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T10",
+      "block": 2,
+      "language": "js",
+      "sha256": "0ae898ab93718631ebcbefc3d7b2ecd2238f7c0140de6515d7ced769aa764e9c",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T22",
+      "block": 1,
+      "language": "js",
+      "sha256": "bf6f97787cb256b4b7bd23248d65eaf11c1d8231a0b982eaa6b765380ac42ee1",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T23",
+      "block": 1,
+      "language": "js",
+      "sha256": "d4b5198f0d7355d428eaa7b96a07876860de0e674287984646daafec6368301a",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T23",
+      "block": 2,
+      "language": "js",
+      "sha256": "d5006f168ef6d06fd68f243073773aa681498efee1b83d75fcde57dad24cb24a",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T23",
+      "block": 3,
+      "language": "js",
+      "sha256": "0b042ec75a11d486d6f6bba197664c5a46731ee838e893756553b29ea210f64d",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T24",
+      "block": 1,
+      "language": "jsx",
+      "sha256": "c7104ca8367642fe974a1bff6abd670772a3bcc1a7173c77c66e3d6774c6a33e",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T24",
+      "block": 2,
+      "language": "jsx",
+      "sha256": "4c95ccec3250196da3628923273259e0fdfb2b14ce418cf5ef43941ca9607af2",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T24",
+      "block": 3,
+      "language": "jsx",
+      "sha256": "522217006a9d3f9838831d93ba308a1003e775cbed7bfc2c4bd4673980480e85",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T25",
+      "block": 1,
+      "language": "jsx",
+      "sha256": "cc911614a4d42bc630e23658bd256ceb67570bd3a9a43309ab1f27172b143cf9",
+      "verification": "exact full executed fixture file or codemod output"
+    },
+    {
+      "id": "T38",
+      "block": 1,
+      "language": "sql",
+      "sha256": "7f796a616e3b4f74d87e6b5738093f6bf67e6cdd152a1d4bcc4ef1601501f631",
+      "verification": "same SQL statements as executed SQLite fixture, whitespace and terminal semicolons normalized"
+    },
+    {
+      "id": "T38",
+      "block": 2,
+      "language": "sql",
+      "sha256": "86da96eadd0aaba6210c1584303acdad7d9e96824f0edb3b2868e6ddd166f591",
+      "verification": "same SQL statements as executed SQLite fixture, whitespace and terminal semicolons normalized"
+    },
+    {
+      "id": "T38",
+      "block": 3,
+      "language": "sql",
+      "sha256": "097287657c9a5d91680d45ecb319d6457b470e0e884c0f4d8d284c18fab889ae",
+      "verification": "same SQL statements as executed SQLite fixture, whitespace and terminal semicolons normalized"
+    },
+    {
+      "id": "T38",
+      "block": 4,
+      "language": "sql",
+      "sha256": "647011086197894de000e734adb8ad1a852de75089166ddd9fcff1a3c9f749d8",
+      "verification": "same SQL statements as executed SQLite fixture, whitespace and terminal semicolons normalized"
+    }
+  ],
+  "usingCases": 9,
+  "executedUsingArticleExamples": 2,
+  "sqliteCases": 4,
+  "proxyHttpCases": 7,
+  "runtimeApiCases": 6,
+  "proxyInvalidRuntimeCase": 1,
+  "sameBuildEnvironments": 2,
+  "browserImages": 5,
+  "guard": {
+    "baseline": "8a1bfa8",
+    "beforeBatch": "597e7cf",
+    "baselineFilesUnchanged": 137,
+    "previousArticleFilesUnchanged": 235,
+    "humanizerFinalHashesMatched": 12,
+    "originalIdeaContentUnchanged": true,
+    "exception": "ARTICLE_IDEAS_2026-09.md production progress block only"
+  }
+}

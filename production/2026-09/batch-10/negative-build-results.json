@@ -1,0 +1,23 @@
+[
+  {
+    "name": "proxy-runtime",
+    "exit": 1,
+    "source": "import { NextResponse } from 'next/server';\nexport function proxy(request) {\n  const response = NextResponse.next();\n  response.headers.set('x-article-proxy', request.nextUrl.pathname);\n  return response;\n}\nexport const config = { matcher: ['/protected/:path*'] };\n\nexport const runtime = 'edge';\n",
+    "log": "proxy-runtime-build.log"
+  },
+  {
+    "name": "edge-file",
+    "exit": 1,
+    "source": "import { readFixture } from '../../../lib/node-file';\nexport const runtime = 'edge';\nexport async function GET() { return Response.json({ text: await readFixture() }); }\n",
+    "log": "edge-file-build.log"
+  },
+  {
+    "name": "edge-eval",
+    "exit": 0,
+    "source": "export const runtime = 'edge';\nexport function GET() { return Response.json({ value: eval('1 + 2') }); }\n",
+    "log": "edge-eval-build.log",
+    "runtimeStatus": 500,
+    "response": "Internal Server Error",
+    "serverLog": "edge-eval-server.log"
+  }
+]

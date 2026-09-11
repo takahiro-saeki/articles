@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/_next/static/chunks/app/env/client/page-b63d10236a08f7f3.js",
+    "sha256": "3b7f75d957228b39fcab4aeea1c299fbfc1ddb55bc724af8a1b6954e11df21a1",
+    "excerpt": "ar u=n(4122),i=n(5570),s=n(4577);function r(){let[e,l]=(0,i.useState)(null);return(0,i.useEffect)(()=>{s.env,l({direct:\"public-build-A\",dynamic:s.env.NEXT_PUBLIC_ARTICLE_LABEL??null,alias:\"public-build-A\",server:s.env.ARTICLE_SERVER_LABEL??null})},[]),(0,u.jsx)(\"pre\",{id:\"env-result\",children:JSON.stringify(e)})}},5200:(e,l,n)=>{Promise.resolve().then(n.bind(n,1499))}},e=>{e.O(0,[585,808,358],()=>e(e.s=5200)),_N_E=e.O()}]);"
+  }
+]

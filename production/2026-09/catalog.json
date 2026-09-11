@@ -472,7 +472,7 @@
   },
   {
     "id": "T10",
-    "title": "JavaScriptの`using`でリソース解放はどう変わるか",
+    "title": "JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する",
     "original_title": "JavaScriptの`using`でリソース解放はどう変わるか",
     "slug": "using-resource-disposal",
     "angle": "Symbol.disposeと対応環境",
@@ -481,10 +481,11 @@
     "japanese": "public/using-resource-disposal.md",
     "english": "devto/using-resource-disposal.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 10,
+    "fact_check": "[一次資料・実行結果確認](production/2026-09/batch-10/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T11",
@@ -670,7 +671,7 @@
   },
   {
     "id": "T22",
-    "title": "Next.jsのMiddlewareがProxyになった理由と移行時の注意点",
+    "title": "Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する",
     "original_title": "Next.jsのMiddlewareがProxyになった理由と移行時の注意点",
     "slug": "nextjs-middleware-proxy-migration",
     "angle": "命名、runtime、matcher",
@@ -679,14 +680,15 @@
     "japanese": "public/nextjs-middleware-proxy-migration.md",
     "english": "devto/nextjs-middleware-proxy-migration.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 10,
+    "fact_check": "[一次資料・実行結果確認](production/2026-09/batch-10/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T23",
-    "title": "Edge RuntimeとNode.js Runtimeは何が違うのか",
+    "title": "Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する",
     "original_title": "Edge RuntimeとNode.js Runtimeは何が違うのか",
     "slug": "nextjs-edge-node-runtime",
     "angle": "API、接続、ライブラリ互換性",
@@ -695,14 +697,15 @@
     "japanese": "public/nextjs-edge-node-runtime.md",
     "english": "devto/nextjs-edge-node-runtime.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 10,
+    "fact_check": "[一次資料・実行結果確認](production/2026-09/batch-10/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T24",
-    "title": "Next.jsの環境変数はいつブラウザへ埋め込まれるのか",
+    "title": "NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する",
     "original_title": "Next.jsの環境変数はいつブラウザへ埋め込まれるのか",
     "slug": "next-public-build-runtime-env",
     "angle": "build時と実行時、NEXT_PUBLIC",
@@ -711,14 +714,15 @@
     "japanese": "public/next-public-build-runtime-env.md",
     "english": "devto/next-public-build-runtime-env.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 10,
+    "fact_check": "[一次資料・実行結果確認](production/2026-09/batch-10/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T25",
-    "title": "`<Image>`は普通の`img`と何が違うのか、生成HTMLと通信を見てみた",
+    "title": "Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる",
     "original_title": "`<Image>`は普通の`img`と何が違うのか、生成HTMLと通信を見てみた",
     "slug": "next-image-html-network",
     "angle": "srcset、遅延読込、最適化",
@@ -727,10 +731,11 @@
     "japanese": "public/next-image-html-network.md",
     "english": "devto/next-image-html-network.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 10,
+    "fact_check": "[一次資料・実行結果確認](production/2026-09/batch-10/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T26",
@@ -928,7 +933,7 @@
   },
   {
     "id": "T38",
-    "title": "SQLiteの外部キーはindexを自動作成するのか",
+    "title": "SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する",
     "original_title": "SQLiteの外部キーはindexを自動作成するのか",
     "slug": "sqlite-foreign-key-child-index",
     "angle": "親子削除と検索計画",
@@ -937,10 +942,11 @@
     "japanese": "public/sqlite-foreign-key-child-index.md",
     "english": "devto/sqlite-foreign-key-child-index.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 10,
+    "fact_check": "[一次資料・実行結果確認](production/2026-09/batch-10/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md)",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T39",

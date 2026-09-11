@@ -1,0 +1,231 @@
+{
+  "pairs": 6,
+  "canonicalPending": [
+    "T10",
+    "T22",
+    "T23",
+    "T24",
+    "T25",
+    "T38"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "T10",
+      "jaCharacters": 3984,
+      "enWords": 794,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/structured-clone-json-data.md",
+          "score": 0.084
+        },
+        {
+          "path": "public/abortcontroller-cancellable-tasks.md",
+          "score": 0.081
+        },
+        {
+          "path": "public/nextjs-edge-node-runtime.md",
+          "score": 0.078
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/abortcontroller-cancellable-tasks.md",
+          "score": 0.22
+        },
+        {
+          "path": "devto/use-action-state-form-experiment.md",
+          "score": 0.209
+        },
+        {
+          "path": "devto/node-esm-commonjs-boundaries.md",
+          "score": 0.2
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "jaCharacters": 3047,
+      "enWords": 568,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/nextjs-edge-node-runtime.md",
+          "score": 0.126
+        },
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.109
+        },
+        {
+          "path": "public/next-image-html-network.md",
+          "score": 0.099
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/nextjs-edge-node-runtime.md",
+          "score": 0.238
+        },
+        {
+          "path": "devto/next-public-build-runtime-env.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/nextjs-cache-response-experiment.md",
+          "score": 0.197
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "jaCharacters": 3580,
+      "enWords": 697,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.126
+        },
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.102
+        },
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.084
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/nextjs-middleware-proxy-migration.md",
+          "score": 0.238
+        },
+        {
+          "path": "devto/next-public-build-runtime-env.md",
+          "score": 0.213
+        },
+        {
+          "path": "devto/use-sync-external-store-ssr.md",
+          "score": 0.203
+        }
+      ]
+    },
+    {
+      "id": "T24",
+      "jaCharacters": 4201,
+      "enWords": 743,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 3,
+      "nearestExisting": [
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.109
+        },
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.107
+        },
+        {
+          "path": "public/nextjs-edge-node-runtime.md",
+          "score": 0.102
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/nextjs-cache-response-experiment.md",
+          "score": 0.226
+        },
+        {
+          "path": "devto/nextjs-middleware-proxy-migration.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/nextjs-edge-node-runtime.md",
+          "score": 0.213
+        }
+      ]
+    },
+    {
+      "id": "T25",
+      "jaCharacters": 3617,
+      "enWords": 782,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.101
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.099
+        },
+        {
+          "path": "public/nextjs-edge-node-runtime.md",
+          "score": 0.084
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/next-public-build-runtime-env.md",
+          "score": 0.207
+        },
+        {
+          "path": "devto/nextjs-middleware-proxy-migration.md",
+          "score": 0.191
+        },
+        {
+          "path": "devto/nextjs-edge-node-runtime.md",
+          "score": 0.184
+        }
+      ]
+    },
+    {
+      "id": "T38",
+      "jaCharacters": 3154,
+      "enWords": 737,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 4,
+      "nearestExisting": [
+        {
+          "path": "public/d1-composite-index-column-order.md",
+          "score": 0.079
+        },
+        {
+          "path": "articles/d1-offset-cursor-pagination.md",
+          "score": 0.065
+        },
+        {
+          "path": "public/nextjs-middleware-proxy-migration.md",
+          "score": 0.063
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/d1-composite-index-column-order.md",
+          "score": 0.205
+        },
+        {
+          "path": "devto/idempotency-key-result-storage.md",
+          "score": 0.189
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.188
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "path": "experiments/article-stock-2026-09/using-order-example.mjs",
+    "stdout": "{\"value\":\"done\",\"events\":[\"open:A\",\"open:B\",\"body\",\"close:B\",\"close:A\"]}",
+    "exit": 0
+  },
+  {
+    "path": "experiments/article-stock-2026-09/using-directory-example.mjs",
+    "stdout": "inside: true\ncaught: work failed\nafter: false",
+    "exit": 0
+  }
+]

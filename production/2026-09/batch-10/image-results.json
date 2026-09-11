@@ -1,0 +1,201 @@
+{
+  "input": {
+    "width": 1600,
+    "height": 1000,
+    "bytes": 494961,
+    "sha256": "b6cdb4100ee988f5da227a48915a95633d15a5665b149a310b11ff2f66843253"
+  },
+  "beforeScroll": {
+    "viewport": 1280,
+    "dpr": 1,
+    "images": [
+      {
+        "id": "plain",
+        "src": "/plain.png",
+        "srcset": null,
+        "sizes": null,
+        "loading": null,
+        "currentSrc": "http://127.0.0.1:63202/plain.png",
+        "renderedWidth": 640,
+        "naturalWidth": 1600,
+        "complete": true
+      },
+      {
+        "id": "fixed",
+        "src": "/_next/image?url=%2Ffixed.png&w=640&q=75",
+        "srcset": "/_next/image?url=%2Ffixed.png&w=384&q=75 1x, /_next/image?url=%2Ffixed.png&w=640&q=75 2x",
+        "sizes": null,
+        "loading": "lazy",
+        "currentSrc": "http://127.0.0.1:63202/_next/image?url=%2Ffixed.png&w=384&q=75",
+        "renderedWidth": 640,
+        "naturalWidth": 384,
+        "complete": true
+      },
+      {
+        "id": "responsive",
+        "src": "/_next/image?url=%2Fresponsive.png&w=3840&q=75",
+        "srcset": "/_next/image?url=%2Fresponsive.png&w=384&q=75 384w, /_next/image?url=%2Fresponsive.png&w=640&q=75 640w, /_next/image?url=%2Fresponsive.png&w=750&q=75 750w, /_next/image?url=%2Fresponsive.png&w=828&q=75 828w, /_next/image?url=%2Fresponsive.png&w=1080&q=75 1080w, /_next/image?url=%2Fresponsive.png&w=1200&q=75 1200w, /_next/image?url=%2Fresponsive.png&w=1920&q=75 1920w, /_next/image?url=%2Fresponsive.png&w=2048&q=75 2048w, /_next/image?url=%2Fresponsive.png&w=3840&q=75 3840w",
+        "sizes": "50vw",
+        "loading": "lazy",
+        "currentSrc": "http://127.0.0.1:63202/_next/image?url=%2Fresponsive.png&w=640&q=75",
+        "renderedWidth": 640,
+        "naturalWidth": 640,
+        "complete": true
+      },
+      {
+        "id": "lazy-plain",
+        "src": "/lazy-plain.png",
+        "srcset": null,
+        "sizes": null,
+        "loading": "lazy",
+        "currentSrc": "",
+        "renderedWidth": 320,
+        "naturalWidth": 0,
+        "complete": false
+      },
+      {
+        "id": "lazy-next",
+        "src": "/_next/image?url=%2Flazy-next.png&w=640&q=75",
+        "srcset": "/_next/image?url=%2Flazy-next.png&w=384&q=75 1x, /_next/image?url=%2Flazy-next.png&w=640&q=75 2x",
+        "sizes": null,
+        "loading": "lazy",
+        "currentSrc": "",
+        "renderedWidth": 320,
+        "naturalWidth": 0,
+        "complete": false
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:63202/_next/image?url=%2Ffixed.png&w=384&q=75",
+        "transferSize": 1226,
+        "encodedBodySize": 926
+      },
+      {
+        "name": "http://127.0.0.1:63202/_next/image?url=%2Fresponsive.png&w=640&q=75",
+        "transferSize": 2142,
+        "encodedBodySize": 1842
+      }
+    ]
+  },
+  "afterScroll": {
+    "viewport": 1280,
+    "dpr": 1,
+    "images": [
+      {
+        "id": "plain",
+        "src": "/plain.png",
+        "srcset": null,
+        "sizes": null,
+        "loading": null,
+        "currentSrc": "http://127.0.0.1:63202/plain.png",
+        "renderedWidth": 640,
+        "naturalWidth": 1600,
+        "complete": true
+      },
+      {
+        "id": "fixed",
+        "src": "/_next/image?url=%2Ffixed.png&w=640&q=75",
+        "srcset": "/_next/image?url=%2Ffixed.png&w=384&q=75 1x, /_next/image?url=%2Ffixed.png&w=640&q=75 2x",
+        "sizes": null,
+        "loading": "lazy",
+        "currentSrc": "http://127.0.0.1:63202/_next/image?url=%2Ffixed.png&w=384&q=75",
+        "renderedWidth": 640,
+        "naturalWidth": 384,
+        "complete": true
+      },
+      {
+        "id": "responsive",
+        "src": "/_next/image?url=%2Fresponsive.png&w=3840&q=75",
+        "srcset": "/_next/image?url=%2Fresponsive.png&w=384&q=75 384w, /_next/image?url=%2Fresponsive.png&w=640&q=75 640w, /_next/image?url=%2Fresponsive.png&w=750&q=75 750w, /_next/image?url=%2Fresponsive.png&w=828&q=75 828w, /_next/image?url=%2Fresponsive.png&w=1080&q=75 1080w, /_next/image?url=%2Fresponsive.png&w=1200&q=75 1200w, /_next/image?url=%2Fresponsive.png&w=1920&q=75 1920w, /_next/image?url=%2Fresponsive.png&w=2048&q=75 2048w, /_next/image?url=%2Fresponsive.png&w=3840&q=75 3840w",
+        "sizes": "50vw",
+        "loading": "lazy",
+        "currentSrc": "http://127.0.0.1:63202/_next/image?url=%2Fresponsive.png&w=640&q=75",
+        "renderedWidth": 640,
+        "naturalWidth": 640,
+        "complete": true
+      },
+      {
+        "id": "lazy-plain",
+        "src": "/lazy-plain.png",
+        "srcset": null,
+        "sizes": null,
+        "loading": "lazy",
+        "currentSrc": "http://127.0.0.1:63202/lazy-plain.png",
+        "renderedWidth": 320,
+        "naturalWidth": 1600,
+        "complete": true
+      },
+      {
+        "id": "lazy-next",
+        "src": "/_next/image?url=%2Flazy-next.png&w=640&q=75",
+        "srcset": "/_next/image?url=%2Flazy-next.png&w=384&q=75 1x, /_next/image?url=%2Flazy-next.png&w=640&q=75 2x",
+        "sizes": null,
+        "loading": "lazy",
+        "currentSrc": "http://127.0.0.1:63202/_next/image?url=%2Flazy-next.png&w=384&q=75",
+        "renderedWidth": 320,
+        "naturalWidth": 384,
+        "complete": true
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:63202/_next/image?url=%2Ffixed.png&w=384&q=75",
+        "transferSize": 1226,
+        "encodedBodySize": 926
+      },
+      {
+        "name": "http://127.0.0.1:63202/_next/image?url=%2Fresponsive.png&w=640&q=75",
+        "transferSize": 2142,
+        "encodedBodySize": 1842
+      },
+      {
+        "name": "http://127.0.0.1:63202/lazy-plain.png",
+        "transferSize": 495261,
+        "encodedBodySize": 494961
+      },
+      {
+        "name": "http://127.0.0.1:63202/_next/image?url=%2Flazy-next.png&w=384&q=75",
+        "transferSize": 1226,
+        "encodedBodySize": 926
+      }
+    ]
+  },
+  "responses": [
+    {
+      "id": "plain",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 494961,
+      "sha256": "b6cdb4100ee988f5da227a48915a95633d15a5665b149a310b11ff2f66843253"
+    },
+    {
+      "id": "fixed",
+      "status": 200,
+      "contentType": "image/webp",
+      "bodyBytes": 926,
+      "sha256": "2692501aab9b8d1f8f5d927bafcb0d76736df18660516596a42ccac23a114d82"
+    },
+    {
+      "id": "responsive",
+      "status": 200,
+      "contentType": "image/webp",
+      "bodyBytes": 1842,
+      "sha256": "9d6d9cf574b9e5e42bfe714cb0c63526f245876f3d37a3b71e274b854bfd5811"
+    },
+    {
+      "id": "lazy-plain",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 494961,
+      "sha256": "b6cdb4100ee988f5da227a48915a95633d15a5665b149a310b11ff2f66843253"
+    },
+    {
+      "id": "lazy-next",
+      "status": 200,
+      "contentType": "image/webp",
+      "bodyBytes": 926,
+      "sha256": "2692501aab9b8d1f8f5d927bafcb0d76736df18660516596a42ccac23a114d82"
+    }
+  ]
+}

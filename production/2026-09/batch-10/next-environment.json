@@ -1,0 +1,14 @@
+{
+  "versions": {
+    "next": "16.3.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "@next/codemod": "16.3.4"
+  },
+  "node": "v24.15.0",
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "build": "production webpack",
+  "cacheComponents": false,
+  "reactCompiler": false,
+  "scope": "loopback next start, synthetic values and images, no cloud deployment"
+}

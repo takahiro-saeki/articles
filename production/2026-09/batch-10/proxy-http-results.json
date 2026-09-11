@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/protected",
+    "method": "GET",
+    "status": 200,
+    "proxyHeader": "/protected"
+  },
+  {
+    "path": "/protected/a/b",
+    "method": "GET",
+    "status": 200,
+    "proxyHeader": "/protected/a/b"
+  },
+  {
+    "path": "/protected?x=1",
+    "method": "GET",
+    "status": 200,
+    "proxyHeader": "/protected"
+  },
+  {
+    "path": "/protectedness",
+    "method": "GET",
+    "status": 404,
+    "proxyHeader": null
+  },
+  {
+    "path": "/",
+    "method": "GET",
+    "status": 200,
+    "proxyHeader": null
+  },
+  {
+    "path": "/plain.png",
+    "method": "GET",
+    "status": 200,
+    "proxyHeader": null
+  },
+  {
+    "path": "/protected",
+    "method": "POST",
+    "status": 405,
+    "proxyHeader": "/protected"
+  }
+]

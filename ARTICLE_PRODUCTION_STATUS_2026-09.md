@@ -2,7 +2,7 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
-本文・日英対訳・Humanizerまで検証済み 56/90件（完成 41件、canonical待ち 15件）。本文の検証が残る候補は 34件。canonical未確定の原稿は完成数に含めない。
+本文・日英対訳・Humanizerまで検証済み 62/90件（完成 41件、canonical待ち 21件）。本文の検証が残る候補は 28件。canonical未確定の原稿は完成数に含めない。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -17,8 +17,9 @@
 - バッチ07: P20、T18、T19、T21、T34、O25。完成 6/6件、本文検証済み 6/6件。
 - バッチ08: T02、T04、T05、T06、T07、T08。完成 0/6件、本文検証済み 6/6件。
 - バッチ09: T11、T12、T13、T15、T16、T17。完成 0/6件、本文検証済み 6/6件。
+- バッチ10: T10、T22、T23、T24、T25、T38。完成 0/6件、本文検証済み 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: T01、T02、T04、T05、T06、T07、T08、T11、T12、T13、T15、T16、T17、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: T01、T02、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T31、T37、T38。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -52,7 +53,7 @@
 | T07 | structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる | structured-clone-json-data | [原稿](public/structured-clone-json-data.md) | [原稿](devto/structured-clone-json-data.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T08 | AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する | abortcontroller-cancellable-tasks | [原稿](public/abortcontroller-cancellable-tasks.md) | [原稿](devto/abortcontroller-cancellable-tasks.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T09 | ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる | node-esm-commonjs-boundaries | [原稿](articles/node-esm-commonjs-boundaries.md) | [原稿](devto/node-esm-commonjs-boundaries.md) | Node現行v26.8.2と検証版v24.15.0の公式Packages/Modules/ESM | Node v24.15.0で10ケース。type/拡張子/同期ESM require/TLA/dynamic import/拡張子解決/構文検出 | 完成 |
-| T10 | JavaScriptの`using`でリソース解放はどう変わるか | using-resource-disposal | 予定: public/using-resource-disposal.md | 予定: devto/using-resource-disposal.md | 未確認 | 未実施 | 未着手 |
+| T10 | JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する | using-resource-disposal | [原稿](public/using-resource-disposal.md) | [原稿](devto/using-resource-disposal.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
 | T11 | Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する | react-index-key-input-reorder | [原稿](public/react-index-key-input-reorder.md) | [原稿](devto/react-index-key-input-reorder.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
 | T12 | Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する | strict-mode-effect-cleanup | [原稿](public/strict-mode-effect-cleanup.md) | [原稿](devto/strict-mode-effect-cleanup.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
 | T13 | controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する | controlled-uncontrolled-form-experiment | [原稿](public/controlled-uncontrolled-form-experiment.md) | [原稿](devto/controlled-uncontrolled-form-experiment.md) | [一次資料・ブラウザ実験確認](production/2026-09/batch-09/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-09/review.md) | 執筆中 |
@@ -64,10 +65,10 @@
 | T19 | Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる | rsc-client-boundary-bundle | [原稿](articles/rsc-client-boundary-bundle.md) | [原稿](devto/rsc-client-boundary-bundle.md) | Next16.3.4公式境界仕様、webpack依存と生成カタログ | 3構成の初回JS/HTML byteとgzip、256行一致、2ボタン操作。時間未測定 | 完成 |
 | T20 | Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ | nextjs-actions-route-handlers-boundary | [原稿](articles/nextjs-actions-route-handlers-boundary.md) | [原稿](devto/nextjs-actions-route-handlers-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | T21 | Next.js 16のキャッシュを、レスポンスと取得回数で見分ける | nextjs-cache-response-experiment | [原稿](articles/nextjs-cache-response-experiment.md) | [原稿](devto/nextjs-cache-response-experiment.md) | Next16.3.4 cacheComponents=falseと現行従来モデル/connection/router公式 | 3 route各GET3回とbuildカウント、browser戻る/refresh/新規Link。TTL未実験 | 完成 |
-| T22 | Next.jsのMiddlewareがProxyになった理由と移行時の注意点 | nextjs-middleware-proxy-migration | 予定: public/nextjs-middleware-proxy-migration.md | 予定: devto/nextjs-middleware-proxy-migration.md | 未確認 | 未実施 | 未着手 |
-| T23 | Edge RuntimeとNode.js Runtimeは何が違うのか | nextjs-edge-node-runtime | 予定: public/nextjs-edge-node-runtime.md | 予定: devto/nextjs-edge-node-runtime.md | 未確認 | 未実施 | 未着手 |
-| T24 | Next.jsの環境変数はいつブラウザへ埋め込まれるのか | next-public-build-runtime-env | 予定: public/next-public-build-runtime-env.md | 予定: devto/next-public-build-runtime-env.md | 未確認 | 未実施 | 未着手 |
-| T25 | `<Image>`は普通の`img`と何が違うのか、生成HTMLと通信を見てみた | next-image-html-network | 予定: public/next-image-html-network.md | 予定: devto/next-image-html-network.md | 未確認 | 未実施 | 未着手 |
+| T22 | Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する | nextjs-middleware-proxy-migration | [原稿](public/nextjs-middleware-proxy-migration.md) | [原稿](devto/nextjs-middleware-proxy-migration.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
+| T23 | Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する | nextjs-edge-node-runtime | [原稿](public/nextjs-edge-node-runtime.md) | [原稿](devto/nextjs-edge-node-runtime.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
+| T24 | NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する | next-public-build-runtime-env | [原稿](public/next-public-build-runtime-env.md) | [原稿](devto/next-public-build-runtime-env.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
+| T25 | Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる | next-image-html-network | [原稿](public/next-image-html-network.md) | [原稿](devto/next-image-html-network.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
 | T26 | Expo SecureStoreとAsyncStorageを改めて使い分ける | expo-securestore-asyncstorage-boundary | 予定: public/expo-securestore-asyncstorage-boundary.md | 予定: devto/expo-securestore-asyncstorage-boundary.md | 未確認 | 未実施 | 未着手 |
 | T27 | Expo Push Token、FCM Token、APNs Tokenの関係を整理した | expo-fcm-apns-token-routing | 予定: public/expo-fcm-apns-token-routing.md | 予定: devto/expo-fcm-apns-token-routing.md | 未確認 | 未実施 | 未着手 |
 | T28 | Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計 | expo-push-token-device-ownership | [原稿](articles/expo-push-token-device-ownership.md) | [原稿](devto/expo-push-token-device-ownership.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
@@ -80,7 +81,7 @@
 | T35 | SplashScreenを手動で閉じるときの競合を再現した | expo-splash-screen-startup-race | 予定: public/expo-splash-screen-startup-race.md | 予定: devto/expo-splash-screen-startup-race.md | 未確認 | 未実施 | 未着手 |
 | T36 | D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する | d1-batch-atomicity-boundary | [原稿](articles/d1-batch-atomicity-boundary.md) | [原稿](devto/d1-batch-atomicity-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | T37 | D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた | d1-composite-index-column-order | [原稿](public/d1-composite-index-column-order.md) | [原稿](devto/d1-composite-index-column-order.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
-| T38 | SQLiteの外部キーはindexを自動作成するのか | sqlite-foreign-key-child-index | 予定: public/sqlite-foreign-key-child-index.md | 予定: devto/sqlite-foreign-key-child-index.md | 未確認 | 未実施 | 未着手 |
+| T38 | SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する | sqlite-foreign-key-child-index | [原稿](public/sqlite-foreign-key-child-index.md) | [原稿](devto/sqlite-foreign-key-child-index.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
 | T39 | D1の深いOFFSETをカーソルへ変える。読取り行数と途中挿入を比較する | d1-offset-cursor-pagination | [原稿](articles/d1-offset-cursor-pagination.md) | [原稿](devto/d1-offset-cursor-pagination.md) | D1公式indexes、SQLite row values、Wrangler APIとローカルD1 | 10万行・5位置、各4 warmup+11計測。配列一致、rows_read、計画、途中挿入重複をassert | 完成 |
 | T40 | Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする | durable-objects-d1-coordination | [原稿](articles/durable-objects-d1-coordination.md) | [原稿](devto/durable-objects-d1-coordination.md) | 2026-09-11: DO storage/state/namespace/concepts公式と現行Workers型を確認。DO別保存・名前による再取得・横断取得をローカル比較 | Wrangler 4.131.0/Miniflare 5.20260910.0-alphaで8 assertions、生成Env+Workers types 5.20260911.1/TS 5.9.3 checkJs成功。本番移行・性能・分散snapshotは未検証 | 完成 |
 | T41 | Workersの`waitUntil()`はレスポンス後どこまで処理を続けるか | workers-waituntil-failure-lifetime | 予定: public/workers-waituntil-failure-lifetime.md | 予定: devto/workers-waituntil-failure-lifetime.md | 未確認 | 未実施 | 未着手 |

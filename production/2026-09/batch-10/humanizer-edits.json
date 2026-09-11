@@ -1,0 +1,202 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T10",
+      "path": "public/using-resource-disposal.md",
+      "edits": [
+        [
+          "見るべきなのは「usingを書いたか」だけでなく、何がdisposeメソッドを持ち、どのスコープで寿命を終えるかです。",
+          "使う前に、どのオブジェクトがdisposeメソッドを持ち、どのスコープを抜けると解放されるかを確認します。"
+        ]
+      ],
+      "semantic_review": "9条件の順序、SuppressedErrorの連鎖、同期/非同期の違い、一時ディレクトリの実在確認を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T10",
+      "path": "devto/using-resource-disposal.md",
+      "edits": [
+        [
+          "The useful check is not just whether a declaration uses `using`, but which object supplies disposal and which scope defines its lifetime.",
+          "Before using it, check which object supplies disposal and which scope exit triggers cleanup."
+        ]
+      ],
+      "semantic_review": "9条件の順序、SuppressedErrorの連鎖、同期/非同期の違い、一時ディレクトリの実在確認を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T22",
+      "path": "public/nextjs-middleware-proxy-migration.md",
+      "edits": [
+        [
+          "codemodが既存のアプリ設計まで正しいと判定した、という扱いはしません。",
+          "変換後も、アプリに必要な挙動を確認します。"
+        ]
+      ],
+      "semantic_review": "codemodで実際に変化したファイルと関数、7HTTP条件、Proxy runtime指定のbuild失敗を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T22",
+      "path": "devto/nextjs-middleware-proxy-migration.md",
+      "edits": [
+        [
+          "A successful codemod is not a judgment that an application's design is correct.",
+          "Application behavior still needs checking after the transformation."
+        ]
+      ],
+      "semantic_review": "codemodで実際に変化したファイルと関数、7HTTP条件、Proxy runtime指定のbuild失敗を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T23",
+      "path": "public/nextjs-edge-node-runtime.md",
+      "edits": [
+        [
+          "ルート内で使うAPIだけでなく、import先が使うAPIも比較する必要があります。",
+          "ルートと、そのimport先が使うAPIを確認します。"
+        ]
+      ],
+      "semantic_review": "現行のEdge非推奨、6条件のbuild/HTTP結果、evalの実行時500、未計測範囲を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T23",
+      "path": "devto/nextjs-edge-node-runtime.md",
+      "edits": [
+        [
+          "The APIs used by imported dependencies matter as well as those visible in the route itself.",
+          "Check the APIs used by the route and its imported dependencies."
+        ]
+      ],
+      "semantic_review": "現行のEdge非推奨、6条件のbuild/HTTP結果、evalの実行時500、未計測範囲を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T24",
+      "path": "public/next-public-build-runtime-env.md",
+      "edits": [
+        [
+          "どちらも`process.env`で読めますが、いつ値を決めるかが違います。",
+          "同じ`process.env`でも、値が決まる時点を確認する必要があります。"
+        ]
+      ],
+      "semantic_review": "同一BUILD_IDのB/C、静的/動的server、別名参照の実測と生成literalを保持。公式例との差を消さない。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T24",
+      "path": "devto/next-public-build-runtime-env.md",
+      "edits": [
+        [
+          "Both use `process.env`, but they determine their values at different times.",
+          "With `process.env`, the time at which a value is determined matters."
+        ]
+      ],
+      "semantic_review": "同一BUILD_IDのB/C、静的/動的server、別名参照の実測と生成literalを保持。公式例との差を消さない。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T25",
+      "path": "public/next-image-html-network.md",
+      "edits": [
+        [
+          "生成されたimg属性、ブラウザーが選んだURL、そのURLのレスポンスを分けて確認します。",
+          "img属性から候補を調べ、ブラウザーが選んだURLと、そのレスポンスを確認します。"
+        ]
+      ],
+      "semantic_review": "viewport/DPR、srcset候補、currentSrc、再GET本文byteとResource Timing、lazy前後の結果を保持。英語の数値前後の空白を補正。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T25",
+      "path": "devto/next-image-html-network.md",
+      "edits": [
+        [
+          "The `src` emitted by Image did not, by itself, reveal the width actually downloaded. In this test, an image whose `src` pointed to width3840 had a browser `currentSrc` pointing to width640.",
+          "The `src` emitted by Image did not, by itself, reveal the width actually downloaded. In this test, an image whose `src` pointed to width 3840 had a browser `currentSrc` pointing to width 640."
+        ],
+        [
+          "The source is a1600×1000 PNG. Identical pixels were saved under different filenames to avoid sharing the same URL cache between images. It is a regular color pattern for testing, not an input representative of photographic compression.",
+          "The source is a 1600×1000 PNG. Identical pixels were saved under different filenames to avoid sharing the same URL cache between images. It is a regular color pattern for testing, not an input representative of photographic compression."
+        ],
+        [
+          "The first3 images have a CSS width of50vw and height auto. Their width attribute is320, but CSS changes their display width with the viewport. The other2 images sit farther down the page for a lazy-loading comparison.",
+          "The first 3 images have a CSS width of 50vw and height auto. Their width attribute is 320, but CSS changes their display width with the viewport. The other 2 images sit farther down the page for a lazy-loading comparison."
+        ],
+        [
+          "The tested viewport was1280×720 with devicePixelRatio1. All3 upper images had a measured display width of640.",
+          "The tested viewport was 1280×720 with devicePixelRatio 1. All 3 upper images had a measured display width of 640."
+        ],
+        [
+          "| Ordinary img | Absent | Absent | Original1600 |",
+          "| Ordinary img | Absent | Absent | Original 1600 |"
+        ],
+        [
+          "| Image without sizes | Absent |384 as1x,640 as2x |384 |",
+          "| Image without sizes | Absent | 384 as 1x, 640 as 2x | 384 |"
+        ],
+        [
+          "| Image with sizes |50vw | Candidates from384w through3840w |640 |",
+          "| Image with sizes | 50vw | Candidates from 384w through 3840w | 640 |"
+        ],
+        [
+          "Without sizes, Image generated density candidates based on the supplied width. Even though CSS expanded the display width to640, this input selected the384-wide candidate.",
+          "Without sizes, Image generated density candidates based on the supplied width. Even though CSS expanded the display width to 640, this input selected the 384-wide candidate."
+        ],
+        [
+          "This test covers DPR1 and one viewport size. It does not establish that other widths, DPR values, or browsers choose the same candidates.",
+          "This test covers DPR 1 and one viewport size. It does not establish that other widths, DPR values, or browsers choose the same candidates."
+        ],
+        [
+          "| Ordinary img, source PNG | image/png |494961 |",
+          "| Ordinary img, source PNG | image/png | 494961 |"
+        ],
+        [
+          "| No sizes, width384 | image/webp |926 |",
+          "| No sizes, width 384 | image/webp | 926 |"
+        ],
+        [
+          "| With sizes, width640 | image/webp |1842 |",
+          "| With sizes, width 640 | image/webp | 1842 |"
+        ],
+        [
+          "These are HTTP response-body sizes, not total traffic including request/response headers or perceived loading speed. Browser Resource Timing also recorded encodedBodySize values of926 and1842 for the two optimized images.",
+          "These are HTTP response-body sizes, not total traffic including request/response headers or perceived loading speed. Browser Resource Timing also recorded encodedBodySize values of 926 and 1842 for the two optimized images."
+        ],
+        [
+          "This synthetic PNG compresses easily, so the differences are not photographic compression ratios. Image quality, LCP, and optimization-server CPU time were not measured. A smaller384-wide response is not automatically the appropriate choice; its relationship to display width matters too.",
+          "This synthetic PNG compresses easily, so the differences are not photographic compression ratios. Image quality, LCP, and optimization-server CPU time were not measured. A smaller 384-wide response is not automatically the appropriate choice; its relationship to display width matters too."
+        ],
+        [
+          "A blank block with height10000 separated the lower pair from the upper images. The ordinary img explicitly used `loading=\"lazy\"`; Image had no loading prop.",
+          "A blank block with height 10000 separated the lower pair from the upper images. The ordinary img explicitly used `loading=\"lazy\"`; Image had no loading prop."
+        ],
+        [
+          "Initially, both had naturalWidth0 and an empty currentSrc. After scrolling to their section and waiting, both loaded. The img generated by Image also had `loading=\"lazy\"`.",
+          "Initially, both had naturalWidth 0 and an empty currentSrc. After scrolling to their section and waiting, both loaded. The img generated by Image also had `loading=\"lazy\"`."
+        ],
+        [
+          "The tests ran on September11,2026, with Next.js16.3.4, installed React and React DOM19.3.0, Node.js24.15.0, macOS arm64, and Headless Chrome152. They used a webpack production build and local next start. External images, custom loaders, unoptimized, preload, and CDNs were not compared. The [pattern generator and runner](https://github.com/takahiro-saeki/articles/blob/codex/article-stock-2026-09/experiments/article-stock-2026-09/run-next-batch10.py) and [attribute, URL, and response records](https://github.com/takahiro-saeki/articles/blob/codex/article-stock-2026-09/production/2026-09/batch-10/image-results.json) are available.",
+          "The tests ran on September 11, 2026, with Next.js 16.3.4, installed React and React DOM 19.3.0, Node.js 24.15.0, macOS arm64, and Headless Chrome 152. They used a webpack production build and local next start. External images, custom loaders, unoptimized, preload, and CDNs were not compared. The [pattern generator and runner](https://github.com/takahiro-saeki/articles/blob/codex/article-stock-2026-09/experiments/article-stock-2026-09/run-next-batch10.py) and [attribute, URL, and response records](https://github.com/takahiro-saeki/articles/blob/codex/article-stock-2026-09/production/2026-09/batch-10/image-results.json) are available."
+        ]
+      ],
+      "semantic_review": "viewport/DPR、srcset候補、currentSrc、再GET本文byteとResource Timing、lazy前後の結果を保持。英語の数値前後の空白を補正。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T38",
+      "path": "public/sqlite-foreign-key-child-index.md",
+      "edits": [
+        [
+          "indexが存在することは、接続で制約検査が有効である証拠にはなりません。",
+          "index一覧とは別に、その接続のforeign_keys設定を確認します。"
+        ]
+      ],
+      "semantic_review": "index自動作成の有無、親子の区別、DELETEの実計画、4条件、未計測の性能を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T38",
+      "path": "devto/sqlite-foreign-key-child-index.md",
+      "edits": [
+        [
+          "Having an index does not prove that the connection enforces the constraint.",
+          "Check the connection's foreign_keys setting separately from its index list."
+        ]
+      ],
+      "semantic_review": "index自動作成の有無、親子の区別、DELETEの実計画、4条件、未計測の性能を保持。 日英の全節・表・コード・制約の対応を確認。"
+    }
+  ]
+}

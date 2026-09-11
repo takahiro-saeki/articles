@@ -1,0 +1,50 @@
+▲ Next.js 16.3.4 (webpack)
+✓ Running next.config.mjs took 5ms
+
+  Creating an optimized production build ...
+Failed to compile.
+
+node:fs/promises
+Module build failed: UnhandledSchemeError: Reading from "node:fs/promises" is not handled by plugins (Unhandled scheme).
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "node:" URIs.
+    at /Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:408401
+    at Hook.eval [as callAsync] (eval at create (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:14:9222), <anonymous>:6:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:14:6376)
+    at Object.processResource (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:408326)
+    at processResource (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:5306)
+    at iteratePitchingLoaders (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4665)
+    at runLoaders (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8588)
+    at NormalModule._doBuild (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:408188)
+    at NormalModule.build (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:410201)
+    at /Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:82494
+
+Import trace for requested module:
+node:fs/promises
+./lib/node-file.js
+./app/runtime/negative/route.js
+../../../../../../../../Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fruntime%2Fnegative%2Froute&page=%2Fruntime%2Fnegative%2Froute&pagePath=private-next-app-dir%2Fruntime%2Fnegative%2Froute.js&appDir=%2Fprivate%2Fvar%2Ffolders%2F9b%2F42x3hwfs6_379c5r3tdhvk780000gn%2FT%2Farticle-next-batch10-zhahilw0%2Fedge-file%2Fapp&appPaths=%2Fruntime%2Fnegative%2Froute&allNormalizedAppPaths=%2F_not-found&allNormalizedAppPaths=%2F_global-error&allNormalizedAppPaths=%2Fenv%2Fclient&allNormalizedAppPaths=%2Fenv%2Fdynamic&allNormalizedAppPaths=%2Fenv%2Fstatic&allNormalizedAppPaths=%2Fimages&allNormalizedAppPaths=%2F&allNormalizedAppPaths=%2Fprotected%2F%5B%5B...path%5D%5D&allNormalizedAppPaths=%2Fruntime%2Fedge&allNormalizedAppPaths=%2Fruntime%2Feval&allNormalizedAppPaths=%2Fruntime%2Ffile&allNormalizedAppPaths=%2Fruntime%2Fnegative&allNormalizedAppPaths=%2Fruntime%2Fnode&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!./app/runtime/negative/route.js?__next_edge_ssr_entry__
+
+node:path
+Module build failed: UnhandledSchemeError: Reading from "node:path" is not handled by plugins (Unhandled scheme).
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "node:" URIs.
+    at /Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:408401
+    at Hook.eval [as callAsync] (eval at create (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:14:9222), <anonymous>:6:1)
+    at Object.processResource (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:408326)
+    at processResource (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:5306)
+    at iteratePitchingLoaders (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4665)
+    at runLoaders (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8588)
+    at NormalModule._doBuild (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:408188)
+    at NormalModule.build (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:410201)
+    at /Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:82494
+    at NormalModule.needBuild (/Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/compiled/webpack/bundle5.js:29:414151)
+
+Import trace for requested module:
+node:path
+./lib/node-file.js
+./app/runtime/negative/route.js
+../../../../../../../../Users/takahiro_saeki/Documents/GitHub/articles/experiments/article-stock-2026-09/next-batch10/node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fruntime%2Fnegative%2Froute&page=%2Fruntime%2Fnegative%2Froute&pagePath=private-next-app-dir%2Fruntime%2Fnegative%2Froute.js&appDir=%2Fprivate%2Fvar%2Ffolders%2F9b%2F42x3hwfs6_379c5r3tdhvk780000gn%2FT%2Farticle-next-batch10-zhahilw0%2Fedge-file%2Fapp&appPaths=%2Fruntime%2Fnegative%2Froute&allNormalizedAppPaths=%2F_not-found&allNormalizedAppPaths=%2F_global-error&allNormalizedAppPaths=%2Fenv%2Fclient&allNormalizedAppPaths=%2Fenv%2Fdynamic&allNormalizedAppPaths=%2Fenv%2Fstatic&allNormalizedAppPaths=%2Fimages&allNormalizedAppPaths=%2F&allNormalizedAppPaths=%2Fprotected%2F%5B%5B...path%5D%5D&allNormalizedAppPaths=%2Fruntime%2Fedge&allNormalizedAppPaths=%2Fruntime%2Feval&allNormalizedAppPaths=%2Fruntime%2Ffile&allNormalizedAppPaths=%2Fruntime%2Fnegative&allNormalizedAppPaths=%2Fruntime%2Fnode&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!./app/runtime/negative/route.js?__next_edge_ssr_entry__
+
+
+> Build failed because of webpack errors

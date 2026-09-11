@@ -1,0 +1,25 @@
+▲ Next.js 16.3.4
+- Local:         http://127.0.0.1:63382
+- Network:       http://127.0.0.1:63382
+✓ Ready in 59ms
+✓ Running next.config.mjs took 5ms
+⨯ EvalError: Code generation from strings disallowed for this context
+    at GET (.next/server/app/runtime/negative/route.js:1:332)
+    at aC.do (.next/server/edge-chunks/757.js:15:15344)
+    at <unknown> (.next/server/edge-chunks/757.js:15:19851)
+    at <unknown> (.next/server/edge-chunks/757.js:1:65441)
+    at <unknown> (.next/server/edge-chunks/757.js:1:65674)
+    at e.with (.next/server/edge-chunks/757.js:1:8259)
+    at i.with (.next/server/edge-chunks/757.js:1:2527)
+    at i.startActiveSpan (.next/server/edge-chunks/757.js:1:17438)
+    at e.startActiveSpan (.next/server/edge-chunks/757.js:1:17971)
+⨯ EvalError: Code generation from strings disallowed for this context
+    at GET (.next/server/app/runtime/negative/route.js:1:332)
+    at aC.do (.next/server/edge-chunks/757.js:15:15344)
+    at <unknown> (.next/server/edge-chunks/757.js:15:19851)
+    at <unknown> (.next/server/edge-chunks/757.js:1:65441)
+    at <unknown> (.next/server/edge-chunks/757.js:1:65674)
+    at e.with (.next/server/edge-chunks/757.js:1:8259)
+    at i.with (.next/server/edge-chunks/757.js:1:2527)
+    at i.startActiveSpan (.next/server/edge-chunks/757.js:1:17438)
+    at e.startActiveSpan (.next/server/edge-chunks/757.js:1:17971)

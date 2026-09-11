@@ -1,0 +1,6 @@
+{
+  "version": "16.3.4",
+  "exit": 0,
+  "before": "import { NextResponse } from 'next/server';\nexport function middleware(request) {\n  const response = NextResponse.next();\n  response.headers.set('x-article-proxy', request.nextUrl.pathname);\n  return response;\n}\nexport const config = { matcher: ['/protected/:path*'] };\n",
+  "after": "import { NextResponse } from 'next/server';\nexport function proxy(request) {\n  const response = NextResponse.next();\n  response.headers.set('x-article-proxy', request.nextUrl.pathname);\n  return response;\n}\nexport const config = { matcher: ['/protected/:path*'] };\n"
+}

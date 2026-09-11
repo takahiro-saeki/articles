@@ -1,0 +1,7 @@
+Positive production build passed
+HTTP, runtime, image, and environment B probes passed
+Same build under environment C passed
+Runtime restriction case: proxy-runtime 1 None
+Runtime restriction case: edge-file 1 None
+Runtime restriction case: edge-eval 0 500
+Next batch 10 experiments passed

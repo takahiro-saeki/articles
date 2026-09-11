@@ -1,0 +1,9 @@
+- generic [active] [ref=f2e1]:
+  - main [ref=f2e2]:
+    - img "Plain test pattern" [ref=f2e3]
+    - img "Fixed candidates" [ref=f2e4]
+    - img "Responsive candidates" [ref=f2e5]
+    - generic [ref=f2e7]:
+      - img "Native lazy test" [ref=f2e8]
+      - img "Next lazy test" [ref=f2e9]
+  - alert [ref=f2e10]

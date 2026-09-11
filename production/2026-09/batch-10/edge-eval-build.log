@@ -1,0 +1,36 @@
+▲ Next.js 16.3.4 (webpack)
+✓ Running next.config.mjs took 4ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1875ms
+  Running TypeScript ...
+  Finished TypeScript in 1ms ...
+  Collecting page data using 13 workers ...
+  Generating static pages using 13 workers (0/10) ...
+  Generating static pages using 13 workers (2/10)
+  Generating static pages using 13 workers (4/10)
+  Generating static pages using 13 workers (7/10)
+✓ Generating static pages using 13 workers (10/10) in 78ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /env/client
+├ ƒ /env/dynamic
+├ ○ /env/static
+├ ○ /images
+├ ƒ /protected/[[...path]]
+├ ƒ /runtime/edge
+├ ƒ /runtime/eval
+├ ƒ /runtime/file
+├ ƒ /runtime/negative
+└ ƒ /runtime/node
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+⚠ The Edge Runtime is deprecated. You can use the "nodejs" runtime instead. Learn more: https://nextjs.org/docs/messages/edge-runtime-deprecated
+⚠ Using edge runtime on a page currently disables static generation for that page

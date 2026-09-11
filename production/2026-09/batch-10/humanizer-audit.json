@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T10",
+      "path": "public/using-resource-disposal.md",
+      "before_sha256": "387a5c38f8af80f79601306b1037c3233e4056ecd6952dd2476ccd559925db48",
+      "after_sha256": "53a3f87cabd30603c5d51d62bb5df6b472a367f4df8043926277404b2848af0f",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "9条件の順序、SuppressedErrorの連鎖、同期/非同期の違い、一時ディレクトリの実在確認を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T10",
+      "path": "devto/using-resource-disposal.md",
+      "before_sha256": "9f0f96d683704539f229d90a8783f2495ea49276b26a4d324c3957d3dcc67c4d",
+      "after_sha256": "1a525dc6f05c2b961841b611b381c692d32a1a87495b34edd4236f72fe3a146c",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "9条件の順序、SuppressedErrorの連鎖、同期/非同期の違い、一時ディレクトリの実在確認を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T22",
+      "path": "public/nextjs-middleware-proxy-migration.md",
+      "before_sha256": "9d4aba1c1806ab5bc207d5c4d7db082d5eabaa90c8e3658bea1b3f55dfe2ae63",
+      "after_sha256": "689f2b5b8f2ab77bb57a4bd6f327a45768c72738a8870c84c04470484945e635",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "codemodで実際に変化したファイルと関数、7HTTP条件、Proxy runtime指定のbuild失敗を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T22",
+      "path": "devto/nextjs-middleware-proxy-migration.md",
+      "before_sha256": "6101300b3cac859bfd571d75d713fa6d36aa4584882bb490dcb5dc55c955f180",
+      "after_sha256": "f16f5886529e9662b7a276edfd3d179df4e36ecd5decccf237055891901b9827",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "codemodで実際に変化したファイルと関数、7HTTP条件、Proxy runtime指定のbuild失敗を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T23",
+      "path": "public/nextjs-edge-node-runtime.md",
+      "before_sha256": "0a7cfa1cdae5804436c7b8097135bae2f7105a2c769ec5bfd7bae055f281abdc",
+      "after_sha256": "b3b9ae0d9839a5f4d4ac9b9d2a7db4835dc95cb2c04efd45b1cc9f533b744a22",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "現行のEdge非推奨、6条件のbuild/HTTP結果、evalの実行時500、未計測範囲を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T23",
+      "path": "devto/nextjs-edge-node-runtime.md",
+      "before_sha256": "c871950791a7352631501a2c49477937236ffb8a1e4c19998ba184d709513331",
+      "after_sha256": "39bb59c2d3715fb911f1fb3df84d31e763c0f3de7d34b45823dad81df5631a8a",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "現行のEdge非推奨、6条件のbuild/HTTP結果、evalの実行時500、未計測範囲を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T24",
+      "path": "public/next-public-build-runtime-env.md",
+      "before_sha256": "ddbfbde46e231c48288b59ca61dd8e0038179460b10f0a95429264a4e84ef73c",
+      "after_sha256": "5ff0488bda610181e881361ec05735e18558fc2fdda7448be1cdf0a6392792d0",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "同一BUILD_IDのB/C、静的/動的server、別名参照の実測と生成literalを保持。公式例との差を消さない。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T24",
+      "path": "devto/next-public-build-runtime-env.md",
+      "before_sha256": "9ff4a5c3cd417c45ebc6f6b904e090595405eeb84431b801e80c389a013ed36d",
+      "after_sha256": "f64d1b428995b9598e222720e68cf0f652186d849cf18498ca8d4a85ebeecfe7",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "同一BUILD_IDのB/C、静的/動的server、別名参照の実測と生成literalを保持。公式例との差を消さない。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T25",
+      "path": "public/next-image-html-network.md",
+      "before_sha256": "39d2b0bbd4cbc27c24ce7fe46ecaed443840f66abf095c48c28a4b039acfda48",
+      "after_sha256": "78961f991d6bffe409b5e20426c9c3e14388f262eb95fd2ad6c764070f1b6269",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "viewport/DPR、srcset候補、currentSrc、再GET本文byteとResource Timing、lazy前後の結果を保持。英語の数値前後の空白を補正。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T25",
+      "path": "devto/next-image-html-network.md",
+      "before_sha256": "ba5085d584a36bdf57c7ddeeeec1bc87d1645acfb9b8493b38f166549f34e21b",
+      "after_sha256": "2c4db6a6d8f38e881120d8a3577cc733fb8df40fb74c7aa41042ba62bfcedd40",
+      "prose_edits": 17,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "viewport/DPR、srcset候補、currentSrc、再GET本文byteとResource Timing、lazy前後の結果を保持。英語の数値前後の空白を補正。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T38",
+      "path": "public/sqlite-foreign-key-child-index.md",
+      "before_sha256": "921ab8a5b288ad4a498d755d4916722fe4361b18d2bdfbe2334c42f8e96ac121",
+      "after_sha256": "42507d5c01d9d29e17064e1389ef428f942d325f5e8d394631122007c58cd2ff",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "index自動作成の有無、親子の区別、DELETEの実計画、4条件、未計測の性能を保持。 日英の全節・表・コード・制約の対応を確認。"
+    },
+    {
+      "id": "T38",
+      "path": "devto/sqlite-foreign-key-child-index.md",
+      "before_sha256": "2f9f35194bd227fbdbcd3e991155ce7ac0cf870996a8fe3991d98cb0fef862c5",
+      "after_sha256": "46127957005dfd797d745abe74f76ad10b44ea60de40ab78af696d40616541d5",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "index自動作成の有無、親子の区別、DELETEの実計画、4条件、未計測の性能を保持。 日英の全節・表・コード・制約の対応を確認。"
+    }
+  ]
+}
