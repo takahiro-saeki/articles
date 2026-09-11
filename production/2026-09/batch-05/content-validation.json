@@ -1,0 +1,224 @@
+{
+  "pairs": 6,
+  "canonicalPending": [],
+  "eligibleForCompletion": 6,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "O13",
+      "jaCharacters": 3894,
+      "enWords": 890,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.077
+        },
+        {
+          "path": "articles/trailer-timeline-before-editing.md",
+          "score": 0.076
+        },
+        {
+          "path": "articles/game-jam-repository-reuse.md",
+          "score": 0.071
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/game-jam-repository-reuse.md",
+          "score": 0.222
+        },
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/game-bgm-selection-log.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "O15",
+      "jaCharacters": 3858,
+      "enWords": 886,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/trailer-timeline-before-editing.md",
+          "score": 0.083
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.078
+        },
+        {
+          "path": "articles/game-input-support-sequence.md",
+          "score": 0.077
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/generated-asset-provenance-decisions.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/trailer-timeline-before-editing.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/game-input-support-sequence.md",
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "id": "O16",
+      "jaCharacters": 3723,
+      "enWords": 920,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/game-bgm-selection-log.md",
+          "score": 0.083
+        },
+        {
+          "path": "articles/game-input-support-sequence.md",
+          "score": 0.076
+        },
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.07
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/game-bgm-selection-log.md",
+          "score": 0.221
+        },
+        {
+          "path": "devto/itch-submission-deliverables.md",
+          "score": 0.217
+        },
+        {
+          "path": "devto/game-input-support-sequence.md",
+          "score": 0.214
+        }
+      ]
+    },
+    {
+      "id": "O20",
+      "jaCharacters": 3130,
+      "enWords": 806,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-push-token-device-ownership.md",
+          "score": 0.09
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.081
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.066
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.275
+        },
+        {
+          "path": "devto/ai-code-review-invariants.md",
+          "score": 0.243
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.228
+        }
+      ]
+    },
+    {
+      "id": "O21",
+      "jaCharacters": 4138,
+      "enWords": 914,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/guest-identity-without-placeholder-user.md",
+          "score": 0.059
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.058
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.055
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/guest-identity-without-placeholder-user.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.218
+        }
+      ]
+    },
+    {
+      "id": "O22",
+      "jaCharacters": 3996,
+      "enWords": 971,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.059
+        },
+        {
+          "path": "articles/auth-incident-recovery-evidence.md",
+          "score": 0.059
+        },
+        {
+          "path": "articles/ai-code-review-invariants.md",
+          "score": 0.057
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/auth-incident-recovery-evidence.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.216
+        }
+      ]
+    }
+  ]
+}

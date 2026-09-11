@@ -1,0 +1,138 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 /Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "O13",
+      "path": "articles/game-input-support-sequence.md",
+      "edits": [
+        [
+          "そうすると、コードで確認した一回と、人が端末で確認する一回を混同せずに済みます。",
+          "対応表には、コードで確認した結果と、人が端末で確認した結果を別々に残します。"
+        ]
+      ],
+      "semantic_review": "入力経路の静的確認、10イベント、0.45ラッチ、再割当3観点と実機未検証を維持。最後の抽象的な利点を具体的な記録方法へ変更。"
+    },
+    {
+      "id": "O13",
+      "path": "devto/game-input-support-sequence.md",
+      "edits": [
+        [
+          "That makes it possible to distinguish an action verified in code from one a person has verified on a device.",
+          "Record code-level checks separately from actions a person has verified on a device."
+        ]
+      ],
+      "semantic_review": "入力経路の静的確認、10イベント、0.45ラッチ、再割当3観点と実機未検証を維持。最後の抽象的な利点を具体的な記録方法へ変更。"
+    },
+    {
+      "id": "O15",
+      "path": "articles/game-bgm-selection-log.md",
+      "edits": [
+        [
+          "曲数だけを更新するより、再生先と未確認の作業を追えます。",
+          "再生先と未確認の作業も、この記録から追えます。"
+        ]
+      ],
+      "semantic_review": "18スロット/17 BGM/ジングル込み18/保存19、全duration、歴史的採用理由と今回のprobeを維持。聴感・LUFS未確認も保持。過剰な対比を除去。"
+    },
+    {
+      "id": "O15",
+      "path": "devto/game-bgm-selection-log.md",
+      "edits": [
+        [
+          "That preserves both the playback destination and the work still awaiting confirmation.",
+          "The record then identifies the playback destination and any checks still pending."
+        ]
+      ],
+      "semantic_review": "18スロット/17 BGM/ジングル込み18/保存19、全duration、歴史的採用理由と今回のprobeを維持。聴感・LUFS未確認も保持。過剰な対比を除去。"
+    },
+    {
+      "id": "O16",
+      "path": "articles/trailer-timeline-before-editing.md",
+      "edits": [
+        [
+          "指定した時間を、確認済みの動画の時間へそのまま置き換えないことが、短いトレイラーでも必要でした。",
+          "コードの指定値と完成ファイルの時間は、別の確認結果として残します。"
+        ]
+      ],
+      "semantic_review": "旧新の順番、63/60と63.033333/60.000000、51.5/3.5/5、11区間22assertion、code表示と全frame目視の区分を維持。締めの一般論を短縮。"
+    },
+    {
+      "id": "O16",
+      "path": "devto/trailer-timeline-before-editing.md",
+      "edits": [
+        [
+          "Even a short trailer needs a distinction between a configured time and the duration verified in the output.",
+          "Keep the configured times alongside the durations verified in the output."
+        ]
+      ],
+      "semantic_review": "旧新の順番、63/60と63.033333/60.000000、51.5/3.5/5、11区間22assertion、code表示と全frame目視の区分を維持。締めの一般論を短縮。"
+    },
+    {
+      "id": "O20",
+      "path": "articles/expo-multi-device-push-rollout.md",
+      "edits": [
+        [
+          "移行の完了条件は「サーバーのテストが通った」だけでは足りません。残っている呼び出し元、更新の適用、消えた登録の再作成、実受信の確認まで、別の証拠で埋めていく必要があります。",
+          "移行の完了記録には、サーバーのテスト結果に加え、残っている呼び出し元、更新の適用、消えた登録の再作成、実受信の確認を添えます。"
+        ]
+      ],
+      "semantic_review": "旧新server×全/端末別解除の4ケース、既存8と合計12、再登録の順番、未チェック実機欄、配布なしを維持。重複した締めを一文へ統合。"
+    },
+    {
+      "id": "O20",
+      "path": "devto/expo-multi-device-push-rollout.md",
+      "edits": [
+        [
+          "A passing server test is one part of rollout completion. Remaining callers, update application, recreation of deleted registrations, and actual receipt each need their own evidence.",
+          "A completion record should include the server test results, remaining callers, update application, recreated registrations, and actual receipt checks."
+        ]
+      ],
+      "semantic_review": "旧新server×全/端末別解除の4ケース、既存8と合計12、再登録の順番、未チェック実機欄、配布なしを維持。重複した締めを一文へ統合。"
+    },
+    {
+      "id": "O21",
+      "path": "articles/auth-incident-recovery-evidence.md",
+      "edits": [
+        [
+          "画面のエラー名から原因を一つに決める前に、次の調査へ使える証拠を残せます。",
+          "原因が未確定の段階では、再試行できる条件と、追加で調べる項目を記録します。"
+        ]
+      ],
+      "semantic_review": "302/Configuration/InvalidCheck、実版47テスト、CSRF skip fixture、診断cookie非認証、実本番未確認を維持。曖昧な利点を具体的な行動へ変更。"
+    },
+    {
+      "id": "O21",
+      "path": "devto/auth-incident-recovery-evidence.md",
+      "edits": [
+        [
+          "That leaves evidence for the next investigation before assigning a cause from the displayed error name.",
+          "While the cause remains uncertain, record the conditions for retry and the questions requiring further investigation."
+        ]
+      ],
+      "semantic_review": "302/Configuration/InvalidCheck、実版47テスト、CSRF skip fixture、診断cookie非認証、実本番未確認を維持。曖昧な利点を具体的な行動へ変更。"
+    },
+    {
+      "id": "O22",
+      "path": "articles/guest-identity-without-placeholder-user.md",
+      "edits": [
+        [
+          "この記事の答えは、本人を識別する仕組みと、回答を操作できる仕組みを分けることです。",
+          "本人の識別と、回答に対する操作権を分けて設計します。"
+        ]
+      ],
+      "semantic_review": "32byte/43文字、15テスト、100件保存、DBモック、hash失効、明示claim、未実装機能を維持。答えを予告する定型文を本文の主張に変更。"
+    },
+    {
+      "id": "O22",
+      "path": "devto/guest-identity-without-placeholder-user.md",
+      "edits": [
+        [
+          "The distinction is between identifying a person and permitting an operation on a response.",
+          "A response token grants control of a record; identifying a person requires separate evidence."
+        ]
+      ],
+      "semantic_review": "32byte/43文字、15テスト、100件保存、DBモック、hash失効、明示claim、未実装機能を維持。答えを予告する定型文を本文の主張に変更。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "label": "push",
+    "repository": "circle-hub-multi-device-push",
+    "commit": "0cda1e865ad80d1529197729d8d436e96d56edc7",
+    "versions": {
+      "node": "v24.15.0",
+      "vitest": "4.1.4",
+      "next": "15.5.15",
+      "next-auth": "5.0.0-beta.25",
+      "@auth/core": "0.37.2"
+    },
+    "exitCode": 0,
+    "tests": 12,
+    "passed": 12,
+    "failed": 0,
+    "success": true,
+    "selectedFiles": [
+      "src/security/push-token-privacy.test.ts",
+      "src/security/article-push-rollout.test.ts"
+    ]
+  },
+  {
+    "label": "auth",
+    "repository": "circle-hub-auth-recovery",
+    "commit": "d116e8a343e8d9e7ddd3d1985efe590fa1901868",
+    "versions": {
+      "node": "v24.15.0",
+      "vitest": "4.1.4",
+      "next": "15.5.15",
+      "next-auth": "5.0.0-beta.25",
+      "@auth/core": "0.37.2"
+    },
+    "exitCode": 0,
+    "tests": 47,
+    "passed": 47,
+    "failed": 0,
+    "success": true,
+    "selectedFiles": [
+      "src/server/auth/auth-core-recovery.test.ts",
+      "src/server/auth/diagnostics.test.ts",
+      "src/server/auth/diagnostic-route.test.ts",
+      "src/server/auth/diagnostic-notification.test.ts",
+      "src/server/auth/redirect.test.ts",
+      "src/app/sign-in/submission-guard.test.ts",
+      "src/app/sign-in/oauth-actions.test.ts",
+      "src/app/sign-in/error/error-copy.test.ts"
+    ]
+  },
+  {
+    "label": "guest",
+    "repository": "circle-hub-growth-06-guest-identity",
+    "commit": "9aec48963842dcaf16ce49c80317366509ab1b8f",
+    "versions": {
+      "node": "v24.15.0",
+      "vitest": "4.1.4",
+      "next": "15.5.15",
+      "next-auth": "5.0.0-beta.25",
+      "@auth/core": "0.37.2"
+    },
+    "exitCode": 0,
+    "tests": 15,
+    "passed": 15,
+    "failed": 0,
+    "success": true,
+    "selectedFiles": [
+      "src/server/api/lib/guest-response-ownership.test.ts",
+      "src/server/api/routers/guest-response-security.test.ts",
+      "src/lib/guest-response-store.test.ts"
+    ]
+  }
+]

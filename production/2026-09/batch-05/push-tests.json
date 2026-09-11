@@ -1,0 +1,193 @@
+{
+  "numTotalTestSuites": 4,
+  "numPassedTestSuites": 4,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 12,
+  "numPassedTests": 12,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1789108702035,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "old/new server and logout-caller compatibility matrix"
+          ],
+          "fullName": "old/new server and logout-caller compatibility matrix old server + all logout",
+          "status": "passed",
+          "title": "old server + all logout",
+          "duration": 687.6023749999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "old/new server and logout-caller compatibility matrix"
+          ],
+          "fullName": "old/new server and logout-caller compatibility matrix old server + device logout",
+          "status": "passed",
+          "title": "old server + device logout",
+          "duration": 1621.440958,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "old/new server and logout-caller compatibility matrix"
+          ],
+          "fullName": "old/new server and logout-caller compatibility matrix new server + all logout",
+          "status": "passed",
+          "title": "new server + all logout",
+          "duration": 1408.2259169999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "old/new server and logout-caller compatibility matrix"
+          ],
+          "fullName": "old/new server and logout-caller compatibility matrix new server + device logout",
+          "status": "passed",
+          "title": "new server + device logout",
+          "duration": 1339.6099169999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108702454,
+      "endTime": 1789108707511.6099,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/security/article-push-rollout.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） iOSとAndroid、同じOSの複数端末を保持する",
+          "status": "passed",
+          "title": "iOSとAndroid、同じOSの複数端末を保持する",
+          "duration": 877.1037500000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） 重複・並行登録でも同じトークンは1件でidも維持する",
+          "status": "passed",
+          "title": "重複・並行登録でも同じトークンは1件でidも維持する",
+          "duration": 911.997333,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） 片方のログアウトは他端末に影響しない",
+          "status": "passed",
+          "title": "片方のログアウトは他端末に影響しない",
+          "duration": 1485.723834,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） アカウント切替はその端末だけ移管し、旧ユーザーは削除できない",
+          "status": "passed",
+          "title": "アカウント切替はその端末だけ移管し、旧ユーザーは削除できない",
+          "duration": 1284.6411250000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） 未認証での登録・解除を拒否する",
+          "status": "passed",
+          "title": "未認証での登録・解除を拒否する",
+          "duration": 318.8292080000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） 登録済み全端末へ1件ずつ送信し、Androidにチャンネルを付ける",
+          "status": "passed",
+          "title": "登録済み全端末へ1件ずつ送信し、Androidにチャンネルを付ける",
+          "duration": 1110.3814579999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） 通知OFFなら全端末への送信を抑止する",
+          "status": "passed",
+          "title": "通知OFFなら全端末への送信を抑止する",
+          "duration": 902.4654580000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "複数端末のPush登録・送信・解除（実SQLと実ルーター）"
+          ],
+          "fullName": "複数端末のPush登録・送信・解除（実SQLと実ルーター） 無効な端末だけ削除し、残りの端末は引き続き送信対象にする",
+          "status": "passed",
+          "title": "無効な端末だけ削除し、残りの端末は引き続き送信対象にする",
+          "duration": 568.1942080000008,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108702458,
+      "endTime": 1789108709918.194,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/security/push-token-privacy.test.ts"
+    }
+  ]
+}

@@ -159,7 +159,7 @@
 <!-- production-progress:start -->
 ## 制作状況
 
-完成 23/90件。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
+完成 29/90件。詳細は[制作進捗表](ARTICLE_PRODUCTION_STATUS_2026-09.md)を参照。候補表の仮タイトルは保持し、調査で修正した完成タイトルは進捗表へ記録する。
 
 - P01: [個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける](articles/plane-project-boundaries.md) / [English](devto/plane-project-boundaries.md)（完成・未公開）
 - P02: [PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める](articles/plane-workspace-access-boundaries.md) / [English](devto/plane-workspace-access-boundaries.md)（完成・未公開）
@@ -182,6 +182,12 @@
 - O09: [AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる](articles/devlog-primary-source-reconstruction.md) / [English](devto/devlog-primary-source-reconstruction.md)（完成・未公開）
 - O10: [Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する](articles/game-jam-repository-reuse.md) / [English](devto/game-jam-repository-reuse.md)（完成・未公開）
 - O12: [itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する](articles/itch-submission-deliverables.md) / [English](devto/itch-submission-deliverables.md)（完成・未公開）
+- O13: [マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える](articles/game-input-support-sequence.md) / [English](devto/game-input-support-sequence.md)（完成・未公開）
+- O15: [ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する](articles/game-bgm-selection-log.md) / [English](devto/game-bgm-selection-log.md)（完成・未公開）
+- O16: [63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する](articles/trailer-timeline-before-editing.md) / [English](devto/trailer-timeline-before-editing.md)（完成・未公開）
 - O17: [AI生成素材の出典、原本、採否をどう残したか](articles/generated-asset-provenance-decisions.md) / [English](devto/generated-asset-provenance-decisions.md)（完成・未公開）
 - O18: [ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか](articles/local-image-generation-reproducibility.md) / [English](devto/local-image-generation-reproducibility.md)（完成・未公開）
+- O20: [複数端末Pushの移行は、旧版のログアウトが残る間は終わらない](articles/expo-multi-device-push-rollout.md) / [English](devto/expo-multi-device-push-rollout.md)（完成・未公開）
+- O21: [認証エラーのConfigurationを原因と決めつけず、復旧を確認する](articles/auth-incident-recovery-evidence.md) / [English](devto/auth-incident-recovery-evidence.md)（完成・未公開）
+- O22: [ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す](articles/guest-identity-without-placeholder-user.md) / [English](devto/guest-identity-without-placeholder-user.md)（完成・未公開）
 <!-- production-progress:end -->

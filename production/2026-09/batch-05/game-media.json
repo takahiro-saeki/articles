@@ -1,0 +1,510 @@
+{
+  "commit": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "ffprobe": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers",
+  "bgmSlots": 18,
+  "uniqueBgmFiles": 17,
+  "uniqueRuntimeFilesIncludingJingle": 18,
+  "storedAudioFiles": 19,
+  "unreferencedAudioFiles": [
+    "godot/assets/audio/project_charge/subterranean_hunt.ogg"
+  ],
+  "encounterMappings": {
+    "gearmaw": "hunt",
+    "vaultback": "vaultback",
+    "pyre_wyrm": "pyre_wyrm",
+    "relay_hydra": "relay_hydra",
+    "swarm_matriarch": "swarm_matriarch",
+    "phase_mantis": "phase_mantis",
+    "grid_leech": "grid_leech",
+    "thermal_titan": "boss",
+    "arch_singularity": "singularity",
+    "prime_current_form_1": "prime_current_form_1",
+    "prime_current_form_2": "prime_current_form_2",
+    "prime_current_form_3": "prime_current_form_3"
+  },
+  "streams": {
+    "title": "assets/audio/project_charge/awakening_below.mp3",
+    "map": "assets/audio/project_charge/six_core_descent.mp3",
+    "hunt": "assets/audio/project_charge/piston_hunt_loop.ogg",
+    "vaultback": "assets/audio/project_charge/blue_vault_pulse.ogg",
+    "pyre_wyrm": "assets/audio/project_charge/redline_molt.ogg",
+    "relay_hydra": "assets/audio/project_charge/cascade_trinity.ogg",
+    "swarm_matriarch": "assets/audio/project_charge/hive_command_lattice.ogg",
+    "phase_mantis": "assets/audio/project_charge/critical_parallax.ogg",
+    "grid_leech": "assets/audio/project_charge/siphon_breakpoint.ogg",
+    "boss": "assets/audio/project_charge/forge_of_breakpoints.ogg",
+    "singularity": "assets/audio/project_charge/arch_singularity.ogg",
+    "ending_normal": "assets/audio/project_charge/core_of_dawn.ogg",
+    "ending_world": "assets/audio/project_charge/arch_singularity.ogg",
+    "ending_true": "assets/audio/project_charge/the_current_remembers.mp3",
+    "prime_current_form_1": "assets/audio/project_charge/prime_current_crownless_protocol.mp3",
+    "prime_current_form_2": "assets/audio/project_charge/prime_current_null_cathedral.mp3",
+    "prime_current_form_3": "assets/audio/project_charge/prime_current_fallen_seraph.mp3",
+    "artwork_gallery": "assets/audio/project_charge/recovered_memory_archive.mp3"
+  },
+  "media": [
+    {
+      "path": "godot/assets/audio/project_charge/arch_singularity.ogg",
+      "sha256": "fe3b8a5f657d157ea1ce64f00a96e130650d7c5bc335e8ee37689b3964e95368",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "130.880000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/awakening_below.mp3",
+      "sha256": "243eae889f0577fccdf56626ccb33f30321bda684d1c143fa85f1faa0c57b715",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "178.600167"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/blue_vault_pulse.ogg",
+      "sha256": "30e20ad4f07d6ac5fdcb68e98ce47d044c6e7340d6718ea95245dca420f07b25",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "180.040000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/cascade_trinity.ogg",
+      "sha256": "3a53794f14842b3fcd8ebfc1cc846dac46bf335ece66624ae7420d7de5abfbd8",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.880000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/core_of_dawn.ogg",
+      "sha256": "df678182606a8050b18cc92dd32cfdc1849fd441c56f5a6e6434f490dba517b5",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "139.800000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/critical_parallax.ogg",
+      "sha256": "d3fde50a715902b54a6b7770aa29d91df55a2fba36f4cc1f3cda0ab73df56099",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.800000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/forge_of_breakpoints.ogg",
+      "sha256": "469b869ddf5fe87fea987e41078dfd86b07fc22f1d9704955874f1ea065f1e63",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "139.320000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/hive_command_lattice.ogg",
+      "sha256": "b41b37a152266c665de8ae90f9db9a7e6c6eb389dc4a111bd86f12344e392669",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.800000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/nomad_victory_signal.mp3",
+      "sha256": "5e64672ae5edd4d2c7ae4501edd9ac1f40c454cc9c90cb857c34e611672429aa",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        },
+        {
+          "codec_name": "mjpeg",
+          "codec_type": "video",
+          "width": 360,
+          "height": 360,
+          "r_frame_rate": "90000/1"
+        }
+      ],
+      "format": {
+        "duration": "12.973500"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/piston_hunt_loop.ogg",
+      "sha256": "78400038399a1d2d455601795181b3055a2547ec7a706d11b2d22b0671d9567f",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "174.000000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/prime_current_crownless_protocol.mp3",
+      "sha256": "8c9678e21b1e4590eb34d385c93d46312a92808cea3377fa8263feceb6c38289",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "173.520979"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/prime_current_fallen_seraph.mp3",
+      "sha256": "7f1cdb410a7c770070cd2907d1a9b1da13a3f66da96a3fbd4469646424ef3676",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "178.600167"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/prime_current_null_cathedral.mp3",
+      "sha256": "ad77fb3d06b3523c7861a627442c3e7ed05d0668dde10a006ee14dcb226a13d9",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "212.600167"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/recovered_memory_archive.mp3",
+      "sha256": "32371f17b1ef0a1e039da8b3789629bbda3a514c2cfe5891bbd22e9d59246a7c",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "219.280167"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/redline_molt.ogg",
+      "sha256": "1a1423446535c6f1f6493769e140d2d80dcf8153d54ced9f177d13685f2b00aa",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.920000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/siphon_breakpoint.ogg",
+      "sha256": "5b75db7e00c781516758bbe9968239e7c7badca02ac8ce016b9c75023996a17b",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.840000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/six_core_descent.mp3",
+      "sha256": "d26276fc9871b8f19d8980ab79dd03832c36b3041454340196f682bb344768d0",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.600167"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/subterranean_hunt.ogg",
+      "sha256": "7092878977af5c2ece2ad3663710b862c06f71a2f103770678ceac6a31db7d0f",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "138.120000"
+      }
+    },
+    {
+      "path": "godot/assets/audio/project_charge/the_current_remembers.mp3",
+      "sha256": "1813187ebec30e54c58f96ebcfbd2be7e1ed9930387db01fad5316799193c6a5",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "179.600167"
+      }
+    },
+    {
+      "path": "submission/trailer/volt-nomad-official-trailer.mp4",
+      "sha256": "ae6e68a16fc2fc3ffa2bb0c30828472bb9e4fdf7a4d6030f6a50d8c0d708892d",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "63.033333"
+      }
+    },
+    {
+      "path": "submission/trailer/volt-nomad-official-trailer-v2.mp4",
+      "sha256": "9d3d01a617873aad38d608a74bdaca70a73f567c59524c534dd2f8b4f92dd6ca",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "60.000000"
+      }
+    }
+  ],
+  "trailer": {
+    "oldSourceDuration": 63.0,
+    "beats": [
+      {
+        "start": 0.0,
+        "end": 4.5,
+        "id": "hunt_intro"
+      },
+      {
+        "start": 4.5,
+        "end": 10.0,
+        "id": "hunt_growth"
+      },
+      {
+        "start": 10.0,
+        "end": 16.0,
+        "id": "tree"
+      },
+      {
+        "start": 16.0,
+        "end": 21.0,
+        "id": "map"
+      },
+      {
+        "start": 21.0,
+        "end": 27.0,
+        "id": "hunt_alt"
+      },
+      {
+        "start": 27.0,
+        "end": 34.0,
+        "id": "world_engine"
+      },
+      {
+        "start": 34.0,
+        "end": 40.0,
+        "id": "prime_one"
+      },
+      {
+        "start": 40.0,
+        "end": 47.0,
+        "id": "prime_three"
+      },
+      {
+        "start": 47.0,
+        "end": 51.5,
+        "id": "collapse"
+      },
+      {
+        "start": 51.5,
+        "end": 55.0,
+        "id": "prime_art"
+      },
+      {
+        "start": 55.0,
+        "end": 60.0,
+        "id": "final"
+      }
+    ],
+    "totalSeconds": 60,
+    "gameNodeVisibleSeconds": 51.5,
+    "scope": "Sum of scripted intervals and ffprobe metadata. Not an unscripted playthrough or frame-by-frame visual review."
+  },
+  "scope": "Read-only extraction from Git. No playback, loudness measurement, media conversion, generation, or upload."
+}

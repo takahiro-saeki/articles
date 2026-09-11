@@ -1,0 +1,11 @@
+{
+  "commit": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "godot": "4.6.2.stable.official.71f334935",
+  "sourceFunction": "func beat_index_at(time: float) -> int:\n\tfor index in range(beats.size()):\n\t\tif time < float(beats[index].end):\n\t\t\treturn index\n\treturn beats.size() - 1",
+  "result": {
+    "assertions": 22,
+    "boundaries": 10,
+    "passed": true
+  },
+  "scope": "Unchanged extracted function, actual boundary values, headless Godot. No video rendering."
+}

@@ -77,7 +77,7 @@ for(const x of selected){
   }
  }
  assert(!('published_at' in ja.meta)&&!('published_at' in en.meta),`${x.id}: scheduled metadata`);
- const executable=blocks=>blocks.filter(c=>['sql','ts','tsx','js','jsx','javascript','typescript','python','py','json','bash','sh'].includes(c.lang));
+ const executable=blocks=>blocks.filter(c=>['sql','ts','tsx','js','jsx','javascript','typescript','python','py','json','bash','sh','gdscript'].includes(c.lang));
  for(const article of [ja,en])for(const block of article.code.filter(c=>c.lang==='json'))JSON.parse(block.code);
  assert.deepEqual(executable(ja.code),executable(en.code),`${x.id}: executable translation mismatch`);
  const jaLinks=[...ja.body.matchAll(/\]\((https?:\/\/[^)]+)\)/g)].map(m=>m[1]).sort();
@@ -86,4 +86,4 @@ for(const x of selected){
  const nearest=article=>{const isEnglish=article.path.startsWith('devto/'),g=grams(article.body);return comparison.filter(e=>e.path!==article.path&&e.path.startsWith('devto/')===isEnglish).map(e=>({path:e.path,score:Number(similarity(g,e.grams).toFixed(3))})).sort((a,b)=>b.score-a.score).slice(0,3);};
  result.push({id:x.id,jaCharacters:ja.body.length,enWords:en.body.trim().split(/\s+/).length,sectionsJA:(ja.body.match(/^## /gm)??[]).length,sectionsEN:(en.body.match(/^## /gm)??[]).length,codeBlocks:ja.code.length,nearestExisting:nearest(ja),nearestEnglish:nearest(en)});
 }
-console.log(JSON.stringify({pairs:selected.length,canonicalPending:pendingCanonical,eligibleForCompletion:selected.length-pendingCanonical.length,checks:'frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions',articles:result},null,2));
+console.log(JSON.stringify({pairs:selected.length,canonicalPending:pendingCanonical,eligibleForCompletion:selected.length-pendingCanonical.length,checks:'frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions',articles:result},null,2));

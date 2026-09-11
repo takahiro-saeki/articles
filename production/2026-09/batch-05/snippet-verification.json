@@ -1,0 +1,37 @@
+{
+  "articles": [
+    {
+      "slug": "game-input-support-sequence",
+      "blocksPerLanguage": 1,
+      "sourceMatch": true,
+      "executionScope": "Extracted function run in Godot with synthetic events"
+    },
+    {
+      "slug": "game-bgm-selection-log",
+      "blocksPerLanguage": 1,
+      "sourceMatch": true,
+      "executionScope": "Static source match only; audio playback not run"
+    },
+    {
+      "slug": "trailer-timeline-before-editing",
+      "blocksPerLanguage": 1,
+      "sourceMatch": true,
+      "executionScope": "Extracted function run in Godot at interval boundaries"
+    },
+    {
+      "slug": "auth-incident-recovery-evidence",
+      "blocksPerLanguage": 1,
+      "sourceMatch": true,
+      "executionScope": "Actual module covered by rerun unit tests"
+    },
+    {
+      "slug": "guest-identity-without-placeholder-user",
+      "blocksPerLanguage": 1,
+      "sourceMatch": true,
+      "executionScope": "Method-chain fragment matches actual router; rerun tests mock DB"
+    }
+  ],
+  "mediaNumbersMatchStoredEvidence": true,
+  "circleTestCountsVerified": true,
+  "note": "Push article has a translated text diagram, no executable snippet; its four-way matrix is asserted in push-rollout.test.ts."
+}

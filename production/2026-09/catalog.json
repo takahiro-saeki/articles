@@ -1236,7 +1236,7 @@
   },
   {
     "id": "O13",
-    "title": "ブラウザゲームをマウス、タッチ、キーボード、ゲームパッドへ対応した順番",
+    "title": "マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える",
     "original_title": "ブラウザゲームをマウス、タッチ、キーボード、ゲームパッドへ対応した順番",
     "slug": "game-input-support-sequence",
     "angle": "VOLT NOMADの入力実装",
@@ -1245,10 +1245,10 @@
     "japanese": "articles/game-input-support-sequence.md",
     "english": "devto/game-input-support-sequence.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 5,
+    "fact_check": "game-jam-lab f074703の入力経路、8/1共通gamepad履歴、Godot InputEvent公式",
+    "verification": "Godot4.6.2 headlessで元binding classと抽出motion関数を実行。10イベントと再割当3観点。実ブラウザ/実機未検証",
+    "status": "完成"
   },
   {
     "id": "O14",
@@ -1268,7 +1268,7 @@
   },
   {
     "id": "O15",
-    "title": "ゲーム内BGMを敵ごとに割り当てるまでの選定記録",
+    "title": "ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する",
     "original_title": "ゲーム内BGMを敵ごとに割り当てるまでの選定記録",
     "slug": "game-bgm-selection-log",
     "angle": "Suno候補と音量、ループ確認",
@@ -1277,14 +1277,14 @@
     "japanese": "articles/game-bgm-selection-log.md",
     "english": "devto/game-bgm-selection-log.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 5,
+    "fact_check": "game-jam-lab f074703のSuno選定ブリーフ、BGMStreams/EncounterBGMKeys、関連Git履歴",
+    "verification": "19音声ファイルのffprobe。BGM18slot/17file、jingle込み18file、未参照旧地図曲1。聴感/ラウドネス未測定",
+    "status": "完成"
   },
   {
     "id": "O16",
-    "title": "63秒のゲームトレイラーを作るために先に尺を分けた話",
+    "title": "63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する",
     "original_title": "63秒のゲームトレイラーを作るために先に尺を分けた話",
     "slug": "trailer-timeline-before-editing",
     "angle": "submission/trailerの制作資料",
@@ -1293,10 +1293,10 @@
     "japanese": "articles/trailer-timeline-before-editing.md",
     "english": "devto/trailer-timeline-before-editing.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 5,
+    "fact_check": "game-jam-lab bf5c7e7/f074703のcapture、README、compose、FFmpeg公式",
+    "verification": "11区間の連続性と実game表示51.5秒、元関数をGodot4.6.2で22assertions、MP4二本のffprobe。再レンダー/全frame目視/効果測定なし",
+    "status": "完成"
   },
   {
     "id": "O17",
@@ -1348,7 +1348,7 @@
   },
   {
     "id": "O20",
-    "title": "Expo通知を一人一Tokenから一人複数端末へ変えた移行記録",
+    "title": "複数端末Pushの移行は、旧版のログアウトが残る間は終わらない",
     "original_title": "Expo通知を一人一Tokenから一人複数端末へ変えた移行記録",
     "slug": "expo-multi-device-push-rollout",
     "angle": "circle-hub-multi-device-push",
@@ -1357,14 +1357,14 @@
     "japanese": "articles/expo-multi-device-push-rollout.md",
     "english": "devto/expo-multi-device-push-rollout.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 5,
+    "fact_check": "circle-hub 0cda1e8とad0a669親の実router、mobile旧/新解除、配信資料、Expo runtime公式",
+    "verification": "実tRPC+in-memory libSQLで旧/新server×全/端末別解除の4ケース、既存8テスト。実機受信/OTA配布なし",
+    "status": "完成"
   },
   {
     "id": "O21",
-    "title": "本番の認証を壊したとき、どの順番で復旧確認したか",
+    "title": "認証エラーのConfigurationを原因と決めつけず、復旧を確認する",
     "original_title": "本番の認証を壊したとき、どの順番で復旧確認したか",
     "slug": "auth-incident-recovery-evidence",
     "angle": "circle-hub-auth-recovery",
@@ -1373,14 +1373,14 @@
     "japanese": "articles/auth-incident-recovery-evidence.md",
     "english": "devto/auth-incident-recovery-evidence.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 5,
+    "fact_check": "circle-hub d116e8aの3段階Git履歴、認証復旧設計/実装、Auth.js公式Errors",
+    "verification": "固定source8ファイル47テスト成功。Auth core0.37.2でPKCE欠落302/InvalidCheckと再開始S256。実OAuth/本番logsなし",
+    "status": "完成"
   },
   {
     "id": "O22",
-    "title": "ログイン前ユーザーを「仮ユーザー」にしないゲスト識別設計",
+    "title": "ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す",
     "original_title": "ログイン前ユーザーを「仮ユーザー」にしないゲスト識別設計",
     "slug": "guest-identity-without-placeholder-user",
     "angle": "circle-hub-growth-06-guest-identity",
@@ -1389,10 +1389,10 @@
     "japanese": "articles/guest-identity-without-placeholder-user.md",
     "english": "devto/guest-identity-without-placeholder-user.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 5,
+    "fact_check": "circle-hub 9aec489の設計/移行/ownership/router/端末保存、WebCrypto公式",
+    "verification": "既存15テスト成功。実乱数/hash、routerはDB/通知モック。token一致・旧鍵失効・公開情報制限。実D1/複数process未検証",
+    "status": "完成"
   },
   {
     "id": "O23",

@@ -1,0 +1,96 @@
+{
+  "commit": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "godot": "4.6.2.stable.official.71f334935",
+  "scope": "Headless Godot with the unchanged controller class and extracted motion function. Synthetic events; no browser or physical-device test.",
+  "sourceFunction": "func controller_motion_direction(event: InputEventJoypadMotion) -> Vector2i:\n\tvar direction := Vector2i.ZERO\n\tif event.axis == JOY_AXIS_LEFT_X:\n\t\tif absf(event.axis_value) < 0.45:\n\t\t\tcontroller_axis_latch.x = 0\n\t\telif controller_axis_latch.x == 0:\n\t\t\tcontroller_axis_latch.x = 1 if event.axis_value > 0.0 else -1\n\t\t\tdirection.x = controller_axis_latch.x\n\telif event.axis == JOY_AXIS_LEFT_Y:\n\t\tif absf(event.axis_value) < 0.45:\n\t\t\tcontroller_axis_latch.y = 0\n\t\telif controller_axis_latch.y == 0:\n\t\t\tcontroller_axis_latch.y = 1 if event.axis_value > 0.0 else -1\n\t\t\tdirection.y = controller_axis_latch.y\n\treturn direction\n",
+  "result": {
+    "motionEvents": [
+      {
+        "axis": "x",
+        "direction": [
+          0,
+          0
+        ],
+        "value": 0.2
+      },
+      {
+        "axis": "x",
+        "direction": [
+          1,
+          0
+        ],
+        "value": 0.7
+      },
+      {
+        "axis": "x",
+        "direction": [
+          0,
+          0
+        ],
+        "value": 0.8
+      },
+      {
+        "axis": "x",
+        "direction": [
+          0,
+          0
+        ],
+        "value": -0.8
+      },
+      {
+        "axis": "x",
+        "direction": [
+          0,
+          0
+        ],
+        "value": 0.1
+      },
+      {
+        "axis": "x",
+        "direction": [
+          -1,
+          0
+        ],
+        "value": -0.8
+      },
+      {
+        "axis": "y",
+        "direction": [
+          0,
+          1
+        ],
+        "value": 0.8
+      },
+      {
+        "axis": "y",
+        "direction": [
+          0,
+          0
+        ],
+        "value": 0.9
+      },
+      {
+        "axis": "x",
+        "direction": [
+          0,
+          0
+        ],
+        "value": 0.0
+      },
+      {
+        "axis": "x",
+        "direction": [
+          1,
+          0
+        ],
+        "value": 0.8
+      }
+    ],
+    "rebindChecks": [
+      "conflicting buttons swap",
+      "unsupported button and unknown action rejected without change",
+      "keyboard mapping survives joypad replacement"
+    ],
+    "settingsWritten": false
+  }
+}

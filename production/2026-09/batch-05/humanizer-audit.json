@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 /Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "O13",
+      "path": "articles/game-input-support-sequence.md",
+      "before_sha256": "b51b0387a147e20eb5c802224c183100714430b8d2663c9d67c09a359475a3c4",
+      "after_sha256": "3d7171405f506dcee9037f8e67ce0d7df26ad8e6f629455d9c4a5ac46469e9a9",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "入力経路の静的確認、10イベント、0.45ラッチ、再割当3観点と実機未検証を維持。最後の抽象的な利点を具体的な記録方法へ変更。"
+    },
+    {
+      "id": "O13",
+      "path": "devto/game-input-support-sequence.md",
+      "before_sha256": "937e877c2ec4afd81469aff4aa0fe820067f591c0ab419cfac31f33e62079f93",
+      "after_sha256": "b3c9d150866efa813196bc7b6d915b405cf0404a99762f8e2baecc005f2b6f48",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "入力経路の静的確認、10イベント、0.45ラッチ、再割当3観点と実機未検証を維持。最後の抽象的な利点を具体的な記録方法へ変更。"
+    },
+    {
+      "id": "O15",
+      "path": "articles/game-bgm-selection-log.md",
+      "before_sha256": "cdf239efced09e20049ace4ccdc761aa227462e0b6c8c070680b1ab6e8b82b2b",
+      "after_sha256": "9f69037be2a41623e4e233601a65403253d07ba79852dc2fe5702a5e8937bb96",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "18スロット/17 BGM/ジングル込み18/保存19、全duration、歴史的採用理由と今回のprobeを維持。聴感・LUFS未確認も保持。過剰な対比を除去。"
+    },
+    {
+      "id": "O15",
+      "path": "devto/game-bgm-selection-log.md",
+      "before_sha256": "434ed95136e334850e1189eb54a6967f81bbc1e21ae0297f8bd0128ee297134e",
+      "after_sha256": "3a62495311f199b16df84bb172a94285333af3df29e6685a706a3a83434b3fc5",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "18スロット/17 BGM/ジングル込み18/保存19、全duration、歴史的採用理由と今回のprobeを維持。聴感・LUFS未確認も保持。過剰な対比を除去。"
+    },
+    {
+      "id": "O16",
+      "path": "articles/trailer-timeline-before-editing.md",
+      "before_sha256": "668735c5d8d28f79173ae48138b5ae38df701600ab0e770beee93ad0d6576dac",
+      "after_sha256": "c4c9a8063298e8fe6230d317ac7b9269629fa2fbee60023adf55396543740809",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "旧新の順番、63/60と63.033333/60.000000、51.5/3.5/5、11区間22assertion、code表示と全frame目視の区分を維持。締めの一般論を短縮。"
+    },
+    {
+      "id": "O16",
+      "path": "devto/trailer-timeline-before-editing.md",
+      "before_sha256": "205c84bf16b423b0bd74b1a9eb46b5fbb46f357b13de7c1e5a93bd27b9ffb3f1",
+      "after_sha256": "838ea7720ed6fad1e0fa7478bc4d30e5ce3761a69a8a88af090cc47781c3209d",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "旧新の順番、63/60と63.033333/60.000000、51.5/3.5/5、11区間22assertion、code表示と全frame目視の区分を維持。締めの一般論を短縮。"
+    },
+    {
+      "id": "O20",
+      "path": "articles/expo-multi-device-push-rollout.md",
+      "before_sha256": "23d3710e71feb7da57654d73c271fef8f46d3f5a1579a511b5cb94fe035aefde",
+      "after_sha256": "3de081fa985f220cbdd108596b487aa756794f44019d6a5a813f2cd095e065e6",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "旧新server×全/端末別解除の4ケース、既存8と合計12、再登録の順番、未チェック実機欄、配布なしを維持。重複した締めを一文へ統合。"
+    },
+    {
+      "id": "O20",
+      "path": "devto/expo-multi-device-push-rollout.md",
+      "before_sha256": "d10817d33fe7a2bb25df180b5fed3f8163ba7f5c0882536cb5aec0dd88672b97",
+      "after_sha256": "cc1bf61feecf49deaeaebb529d838e92f93dc37c25cff22f728da61927ce692c",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "旧新server×全/端末別解除の4ケース、既存8と合計12、再登録の順番、未チェック実機欄、配布なしを維持。重複した締めを一文へ統合。"
+    },
+    {
+      "id": "O21",
+      "path": "articles/auth-incident-recovery-evidence.md",
+      "before_sha256": "7d9c828cf64ea65d07855958e4bee9724fe9e96b77b9b365088edff3cec90740",
+      "after_sha256": "66325b385e3efa27170f104a674ebf402f5d41bca00c313f684174532c202f78",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "302/Configuration/InvalidCheck、実版47テスト、CSRF skip fixture、診断cookie非認証、実本番未確認を維持。曖昧な利点を具体的な行動へ変更。"
+    },
+    {
+      "id": "O21",
+      "path": "devto/auth-incident-recovery-evidence.md",
+      "before_sha256": "f2e3d0e34d4f4f2a0b5dcac54edfab3ea8b4a2ee90662ee14e1a351189f72ce8",
+      "after_sha256": "604727ff2a27621934cf6ce4b29a2a977565f67dd6d68f37a4dd517730949d36",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "302/Configuration/InvalidCheck、実版47テスト、CSRF skip fixture、診断cookie非認証、実本番未確認を維持。曖昧な利点を具体的な行動へ変更。"
+    },
+    {
+      "id": "O22",
+      "path": "articles/guest-identity-without-placeholder-user.md",
+      "before_sha256": "f528d591019f7a3fbc8e643aa961c103bf7bbf16a7c5ee6d3ceb63f16a04e01a",
+      "after_sha256": "b99f9bf342d9b955c4637ff8367ae2d9418d5f8b6c34f5256f4a879b72392dac",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "32byte/43文字、15テスト、100件保存、DBモック、hash失効、明示claim、未実装機能を維持。答えを予告する定型文を本文の主張に変更。"
+    },
+    {
+      "id": "O22",
+      "path": "devto/guest-identity-without-placeholder-user.md",
+      "before_sha256": "364cd47c929ac5b6512129b2c4b960aec83b05a0abf4d640061cd3f09e27bb8c",
+      "after_sha256": "068dcbe1c4ccaafcdc6f962bd8297d21c2f5aae7ac9a5a5fd37a0d839500b197",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "32byte/43文字、15テスト、100件保存、DBモック、hash失効、明示claim、未実装機能を維持。答えを予告する定型文を本文の主張に変更。"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 記事制作進捗 2026年9月
 
-完成 23/90件（日本語＋英語の組）。残り 67件。先に書きたい12本は 9/12件完成。
+完成 29/90件（日本語＋英語の組）。残り 61件。先に書きたい12本は 9/12件完成。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -10,6 +10,7 @@
 - バッチ02: P02、T01、T20、T31、T36、T37、O07、O10。完成 5/8件。
 - バッチ03: P14、P15、O09、O12、O17、O18。完成 6/6件。
 - バッチ04: T09、T39、T40、T42、T44、T45。完成 6/6件。
+- バッチ05: O13、O15、O16、O20、O21、O22。完成 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
 - canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
@@ -93,16 +94,16 @@
 | O10 | Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する | game-jam-repository-reuse | [原稿](articles/game-jam-repository-reuse.md) | [原稿](devto/game-jam-repository-reuse.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | O11 | 採用しなかったゲームプロトタイプをarchiveへ残す理由 | game-prototype-archive-decisions | 予定: public/game-prototype-archive-decisions.md | 予定: devto/game-prototype-archive-decisions.md | 未確認 | 未実施 | 未着手 |
 | O12 | itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する | itch-submission-deliverables | [原稿](articles/itch-submission-deliverables.md) | [原稿](devto/itch-submission-deliverables.md) | game-jam-lab f074703の提出キット・8画像とitch.io HTML5公式仕様 | 6スクリーンショットはJPEG 1280×720、2coverはPNG 630×500。ヘッダーとfileで照合 | 完成 |
-| O13 | ブラウザゲームをマウス、タッチ、キーボード、ゲームパッドへ対応した順番 | game-input-support-sequence | 予定: articles/game-input-support-sequence.md | 予定: devto/game-input-support-sequence.md | 未確認 | 未実施 | 未着手 |
+| O13 | マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える | game-input-support-sequence | [原稿](articles/game-input-support-sequence.md) | [原稿](devto/game-input-support-sequence.md) | game-jam-lab f074703の入力経路、8/1共通gamepad履歴、Godot InputEvent公式 | Godot4.6.2 headlessで元binding classと抽出motion関数を実行。10イベントと再割当3観点。実ブラウザ/実機未検証 | 完成 |
 | O14 | 日英33イベントのゲーム内テキストをまとめて確認する仕組み | bilingual-story-archive-qa | 予定: public/bilingual-story-archive-qa.md | 予定: devto/bilingual-story-archive-qa.md | 未確認 | 未実施 | 未着手 |
-| O15 | ゲーム内BGMを敵ごとに割り当てるまでの選定記録 | game-bgm-selection-log | 予定: articles/game-bgm-selection-log.md | 予定: devto/game-bgm-selection-log.md | 未確認 | 未実施 | 未着手 |
-| O16 | 63秒のゲームトレイラーを作るために先に尺を分けた話 | trailer-timeline-before-editing | 予定: articles/trailer-timeline-before-editing.md | 予定: devto/trailer-timeline-before-editing.md | 未確認 | 未実施 | 未着手 |
+| O15 | ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する | game-bgm-selection-log | [原稿](articles/game-bgm-selection-log.md) | [原稿](devto/game-bgm-selection-log.md) | game-jam-lab f074703のSuno選定ブリーフ、BGMStreams/EncounterBGMKeys、関連Git履歴 | 19音声ファイルのffprobe。BGM18slot/17file、jingle込み18file、未参照旧地図曲1。聴感/ラウドネス未測定 | 完成 |
+| O16 | 63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する | trailer-timeline-before-editing | [原稿](articles/trailer-timeline-before-editing.md) | [原稿](devto/trailer-timeline-before-editing.md) | game-jam-lab bf5c7e7/f074703のcapture、README、compose、FFmpeg公式 | 11区間の連続性と実game表示51.5秒、元関数をGodot4.6.2で22assertions、MP4二本のffprobe。再レンダー/全frame目視/効果測定なし | 完成 |
 | O17 | AI生成素材の出典、原本、採否をどう残したか | generated-asset-provenance-decisions | [原稿](articles/generated-asset-provenance-decisions.md) | [原稿](devto/generated-asset-provenance-decisions.md) | game-jam-lab f074703の出典文書・台帳・runtime preload・Git履歴 | 30batch/107候補、原本欠落0、承認35/保留13/却下3/未確認56。未確認3件のコード参照 | 完成 |
 | O18 | ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか | local-image-generation-reproducibility | [原稿](articles/local-image-generation-reproducibility.md) | [原稿](devto/local-image-generation-reproducibility.md) | local-anime-studio 2aeb306のCLI/workflow/モデル台帳/履歴、ComfyUI/PyTorch公式仕様 | 既存34テストとrepo validator成功。実CLIの2経路で記録の有無をassert。GPU未実行 | 完成 |
 | O19 | WebとiOSの2サービスを一人で運用すると、保守タスクはどう増えるか | solo-web-ios-maintenance-scope | 予定: articles/solo-web-ios-maintenance-scope.md | 予定: devto/solo-web-ios-maintenance-scope.md | 未確認 | 未実施 | 未着手 |
-| O20 | Expo通知を一人一Tokenから一人複数端末へ変えた移行記録 | expo-multi-device-push-rollout | 予定: articles/expo-multi-device-push-rollout.md | 予定: devto/expo-multi-device-push-rollout.md | 未確認 | 未実施 | 未着手 |
-| O21 | 本番の認証を壊したとき、どの順番で復旧確認したか | auth-incident-recovery-evidence | 予定: articles/auth-incident-recovery-evidence.md | 予定: devto/auth-incident-recovery-evidence.md | 未確認 | 未実施 | 未着手 |
-| O22 | ログイン前ユーザーを「仮ユーザー」にしないゲスト識別設計 | guest-identity-without-placeholder-user | 予定: articles/guest-identity-without-placeholder-user.md | 予定: devto/guest-identity-without-placeholder-user.md | 未確認 | 未実施 | 未着手 |
+| O20 | 複数端末Pushの移行は、旧版のログアウトが残る間は終わらない | expo-multi-device-push-rollout | [原稿](articles/expo-multi-device-push-rollout.md) | [原稿](devto/expo-multi-device-push-rollout.md) | circle-hub 0cda1e8とad0a669親の実router、mobile旧/新解除、配信資料、Expo runtime公式 | 実tRPC+in-memory libSQLで旧/新server×全/端末別解除の4ケース、既存8テスト。実機受信/OTA配布なし | 完成 |
+| O21 | 認証エラーのConfigurationを原因と決めつけず、復旧を確認する | auth-incident-recovery-evidence | [原稿](articles/auth-incident-recovery-evidence.md) | [原稿](devto/auth-incident-recovery-evidence.md) | circle-hub d116e8aの3段階Git履歴、認証復旧設計/実装、Auth.js公式Errors | 固定source8ファイル47テスト成功。Auth core0.37.2でPKCE欠落302/InvalidCheckと再開始S256。実OAuth/本番logsなし | 完成 |
+| O22 | ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す | guest-identity-without-placeholder-user | [原稿](articles/guest-identity-without-placeholder-user.md) | [原稿](devto/guest-identity-without-placeholder-user.md) | circle-hub 9aec489の設計/移行/ownership/router/端末保存、WebCrypto公式 | 既存15テスト成功。実乱数/hash、routerはDB/通知モック。token一致・旧鍵失効・公開情報制限。実D1/複数process未検証 | 完成 |
 | O23 | 外部の日程データを取り込むとき、再実行可能にした設計 | repeatable-schedule-import | 予定: public/repeatable-schedule-import.md | 予定: devto/repeatable-schedule-import.md | 未確認 | 未実施 | 未着手 |
 | O24 | Web Audio APIで音に反応するダッシュボードを作った | web-audio-reactive-dashboard | 予定: public/web-audio-reactive-dashboard.md | 予定: devto/web-audio-reactive-dashboard.md | 未確認 | 未実施 | 未着手 |
 | O25 | 5分LTへ技術と制作秘話を詰め込みすぎない構成の決め方 | five-minute-game-development-talk | 予定: articles/five-minute-game-development-talk.md | 予定: devto/five-minute-game-development-talk.md | 未確認 | 未実施 | 未着手 |

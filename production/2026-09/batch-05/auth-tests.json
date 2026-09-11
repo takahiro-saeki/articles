@@ -1,0 +1,667 @@
+{
+  "numTotalTestSuites": 17,
+  "numPassedTestSuites": 17,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 47,
+  "numPassedTests": 47,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1789108710753,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "OAuth server actions"
+          ],
+          "fullName": "OAuth server actions starts google with a safe callback and preserves locale",
+          "status": "passed",
+          "title": "starts google with a safe callback and preserves locale",
+          "duration": 10.614374999999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth server actions"
+          ],
+          "fullName": "OAuth server actions starts apple with a safe callback and preserves locale",
+          "status": "passed",
+          "title": "starts apple with a safe callback and preserves locale",
+          "duration": 0.7050839999999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth server actions"
+          ],
+          "fullName": "OAuth server actions rejects an arbitrary provider without invoking Auth.js",
+          "status": "passed",
+          "title": "rejects an arbitrary provider without invoking Auth.js",
+          "duration": 0.6283750000000055,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth server actions"
+          ],
+          "fullName": "OAuth server actions normalizes an untrusted callback on the server",
+          "status": "passed",
+          "title": "normalizes an untrusted callback on the server",
+          "duration": 0.4349590000000205,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth server actions"
+          ],
+          "fullName": "OAuth server actions redirects through the same action when JavaScript is disabled",
+          "status": "passed",
+          "title": "redirects through the same action when JavaScript is disabled",
+          "duration": 0.35754199999999514,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth server actions"
+          ],
+          "fullName": "OAuth server actions leaves failed JS submissions retryable and routes native POST failures to recovery",
+          "status": "passed",
+          "title": "leaves failed JS submissions retryable and routes native POST failures to recovery",
+          "duration": 0.41958300000001714,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710928,
+      "endTime": 1789108710941.4197,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/app/sign-in/oauth-actions.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "OAuth submission guard"
+          ],
+          "fullName": "OAuth submission guard blocks immediate repeated and cross-provider submits before React renders",
+          "status": "passed",
+          "title": "blocks immediate repeated and cross-provider submits before React renders",
+          "duration": 0.8002080000000262,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth submission guard"
+          ],
+          "fullName": "OAuth submission guard allows retry after a network failure or bfcache restoration",
+          "status": "passed",
+          "title": "allows retry after a network failure or bfcache restoration",
+          "duration": 0.08033299999999599,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "OAuth submission guard"
+          ],
+          "fullName": "OAuth submission guard does not share pending state between component instances",
+          "status": "passed",
+          "title": "does not share pending state between component instances",
+          "duration": 0.05662499999999682,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710913,
+      "endTime": 1789108710914.0803,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/app/sign-in/submission-guard.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "installed Auth.js recovery behavior"
+          ],
+          "fullName": "installed Auth.js recovery behavior rejects a missing PKCE cookie and redirects to the recovery screen",
+          "status": "passed",
+          "title": "rejects a missing PKCE cookie and redirects to the recovery screen",
+          "duration": 4.3089999999999975,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "installed Auth.js recovery behavior"
+          ],
+          "fullName": "installed Auth.js recovery behavior a new sign-in creates a fresh PKCE cookie and an S256 authorization request",
+          "status": "passed",
+          "title": "a new sign-in creates a fresh PKCE cookie and an S256 authorization request",
+          "duration": 5.1417920000000095,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710980,
+      "endTime": 1789108710990.1418,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/server/auth/auth-core-recovery.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "authentication diagnostics notification"
+          ],
+          "fullName": "authentication diagnostics notification includes safe IDs and the actual callback path in a separate Discord field",
+          "status": "passed",
+          "title": "includes safe IDs and the actual callback path in a separate Discord field",
+          "duration": 16.459208999999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "authentication diagnostics notification"
+          ],
+          "fullName": "authentication diagnostics notification keeps every request in logs while suppressing repeated Discord alerts",
+          "status": "passed",
+          "title": "keeps every request in logs while suppressing repeated Discord alerts",
+          "duration": 0.48945800000001327,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "authentication diagnostics notification"
+          ],
+          "fullName": "authentication diagnostics notification does not fail the login response when the logger throws",
+          "status": "passed",
+          "title": "does not fail the login response when the logger throws",
+          "duration": 0.6502499999999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "authentication diagnostics notification"
+          ],
+          "fullName": "authentication diagnostics notification alerts again after 60 seconds even if identical failures continue",
+          "status": "passed",
+          "title": "alerts again after 60 seconds even if identical failures continue",
+          "duration": 0.34095800000000054,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710924,
+      "endTime": 1789108710942.341,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/server/auth/diagnostic-notification.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Auth route diagnostics"
+          ],
+          "fullName": "Auth route diagnostics preserves Auth.js response cookies and adds an independent diagnostic marker",
+          "status": "passed",
+          "title": "preserves Auth.js response cookies and adds an independent diagnostic marker",
+          "duration": 4.319542000000013,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "Auth route diagnostics"
+          ],
+          "fullName": "Auth route diagnostics tracks Apple POST callbacks and does not change the Auth.js error response",
+          "status": "passed",
+          "title": "tracks Apple POST callbacks and does not change the Auth.js error response",
+          "duration": 2.059042000000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710958,
+      "endTime": 1789108710964.059,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/server/auth/diagnostic-route.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics correlates start and callback without exposing the marker value",
+          "status": "passed",
+          "title": "correlates start and callback without exposing the marker value",
+          "duration": 10.681208999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics makes PKCE expiration distinguishable for up to 30 minutes",
+          "status": "passed",
+          "title": "makes PKCE expiration distinguishable for up to 30 minutes",
+          "duration": 0.3334999999999866,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics does not claim correlation for absent, malformed, future, or mismatched markers",
+          "status": "passed",
+          "title": "does not claim correlation for absent, malformed, future, or mismatched markers",
+          "duration": 0.3893329999999935,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics uses only host-bound temporary HttpOnly diagnostic cookies for Apple POST correlation",
+          "status": "passed",
+          "title": "uses only host-bound temporary HttpOnly diagnostic cookies for Apple POST correlation",
+          "duration": 0.14441699999997581,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics retains only the presence of the exact Auth.js cookie names",
+          "status": "passed",
+          "title": "retains only the presence of the exact Auth.js cookie names",
+          "duration": 0.15037499999999682,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics does not include raw URL, query, UA, IP, cookie, or authorization data",
+          "status": "passed",
+          "title": "does not include raw URL, query, UA, IP, cookie, or authorization data",
+          "duration": 0.4850829999999746,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics keeps concurrent requests and their async work isolated",
+          "status": "passed",
+          "title": "keeps concurrent requests and their async work isolated",
+          "duration": 0.1980000000000075,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "safe auth diagnostics"
+          ],
+          "fullName": "safe auth diagnostics does not turn logging failure into authentication failure",
+          "status": "passed",
+          "title": "does not turn logging failure into authentication failure",
+          "duration": 0.6837920000000111,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710914,
+      "endTime": 1789108710926.6838,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/server/auth/diagnostics.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "authentication redirects"
+          ],
+          "fullName": "authentication redirects 招待画面の相対パスをログイン後も維持する",
+          "status": "passed",
+          "title": "招待画面の相対パスをログイン後も維持する",
+          "duration": 0.878374999999977,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "authentication redirects"
+          ],
+          "fullName": "authentication redirects 同一オリジンの絶対URLを許可する",
+          "status": "passed",
+          "title": "同一オリジンの絶対URLを許可する",
+          "duration": 0.08891700000000924,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "authentication redirects"
+          ],
+          "fullName": "authentication redirects 外部URLとプロトコル相対URLを拒否する",
+          "status": "passed",
+          "title": "外部URLとプロトコル相対URLを拒否する",
+          "duration": 0.10379199999999855,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "authentication redirects"
+          ],
+          "fullName": "authentication redirects モバイル認証コールバックの絶対URLを内部パスへ正規化する",
+          "status": "passed",
+          "title": "モバイル認証コールバックの絶対URLを内部パスへ正規化する",
+          "duration": 0.05704200000002402,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 同じサイトの招待先と言語を維持する",
+          "status": "passed",
+          "title": "同じサイトの招待先と言語を維持する",
+          "duration": 0.3058330000000069,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: undefined",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: undefined",
+          "duration": 0.08908400000001393,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: https://evil.example/a",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: https://evil.example/a",
+          "duration": 0.07820800000001782,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: //evil.example/a",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: //evil.example/a",
+          "duration": 0.05666699999997604,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /\\evil.example",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /\\evil.example",
+          "duration": 0.06379200000000651,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /%2f%2fevil.example",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /%2f%2fevil.example",
+          "duration": 0.0674590000000137,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /sign-in",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /sign-in",
+          "duration": 0.047000000000025466,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /sign-in/error",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /sign-in/error",
+          "duration": 0.04266699999999446,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /api/auth/callback/google?code=old",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /api/auth/callback/google?code=old",
+          "duration": 0.03683300000000145,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /foo/../sign-in/error",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /foo/../sign-in/error",
+          "duration": 0.034000000000020236,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /%73ign-in",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /%73ign-in",
+          "duration": 0.034166999999996506,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /bad%",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /bad%",
+          "duration": 0.03658300000000736,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects 危険な戻り先や循環を拒否: /\n/evil.example",
+          "status": "passed",
+          "title": "危険な戻り先や循環を拒否: /\n/evil.example",
+          "duration": 0.027667000000008102,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth error recovery redirects"
+          ],
+          "fullName": "auth error recovery redirects backslashを含む通常のAuth redirectも外部へ出さない",
+          "status": "passed",
+          "title": "backslashを含む通常のAuth redirectも外部へ出さない",
+          "duration": 0.04979099999999903,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710914,
+      "endTime": 1789108710916.0498,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/server/auth/redirect.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "auth recovery copy"
+          ],
+          "fullName": "auth recovery copy jaで再試行方法を表示し、内部エラーは漏らさない",
+          "status": "passed",
+          "title": "jaで再試行方法を表示し、内部エラーは漏らさない",
+          "duration": 0.7519169999999917,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth recovery copy"
+          ],
+          "fullName": "auth recovery copy enで再試行方法を表示し、内部エラーは漏らさない",
+          "status": "passed",
+          "title": "enで再試行方法を表示し、内部エラーは漏らさない",
+          "duration": 0.09574999999998113,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth recovery copy"
+          ],
+          "fullName": "auth recovery copy zhで再試行方法を表示し、内部エラーは漏らさない",
+          "status": "passed",
+          "title": "zhで再試行方法を表示し、内部エラーは漏らさない",
+          "duration": 0.147625000000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "auth recovery copy"
+          ],
+          "fullName": "auth recovery copy 障害時の画面は認証・DBを呼び出さない",
+          "status": "passed",
+          "title": "障害時の画面は認証・DBを呼び出さない",
+          "duration": 0.3049159999999915,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1789108710923,
+      "endTime": 1789108710924.305,
+      "status": "passed",
+      "message": "",
+      "name": "apps/web/src/app/sign-in/error/error-copy.test.ts"
+    }
+  ]
+}
