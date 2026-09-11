@@ -1,0 +1,116 @@
+{
+  "node": "v24.15.0",
+  "typescript": "7.0.2",
+  "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+  "compiler_options": "strict, ES2022, noEmit, types=[]",
+  "compile": [
+    {
+      "name": "any",
+      "diagnostics": []
+    },
+    {
+      "name": "unknown",
+      "diagnostics": [
+        {
+          "code": 18046,
+          "message": "'value' is of type 'unknown'."
+        }
+      ]
+    },
+    {
+      "name": "asserted",
+      "diagnostics": []
+    }
+  ],
+  "runtime_unsafe": [
+    {
+      "name": "any",
+      "error": "TypeError"
+    },
+    {
+      "name": "asserted",
+      "error": "TypeError"
+    }
+  ],
+  "guard": [
+    {
+      "name": "normal",
+      "accepted": true,
+      "statuses": [
+        "ok",
+        "error"
+      ]
+    },
+    {
+      "name": "empty",
+      "accepted": true,
+      "statuses": []
+    },
+    {
+      "name": "data-object",
+      "accepted": false,
+      "error": "Expected a data array"
+    },
+    {
+      "name": "number-status",
+      "accepted": false,
+      "error": "Unexpected ticket status"
+    },
+    {
+      "name": "null-ticket",
+      "accepted": false,
+      "error": "Expected a ticket object"
+    },
+    {
+      "name": "null-body",
+      "accepted": false,
+      "error": "Expected a data array"
+    }
+  ],
+  "actual_sender": [
+    {
+      "name": "ok",
+      "status": 200,
+      "log_count": 0,
+      "deleted_token_count": 0,
+      "returned": "fulfilled"
+    },
+    {
+      "name": "unregistered",
+      "status": 200,
+      "log_count": 1,
+      "deleted_token_count": 1,
+      "returned": "fulfilled"
+    },
+    {
+      "name": "data-object",
+      "status": 200,
+      "log_count": 0,
+      "deleted_token_count": 0,
+      "returned": "fulfilled"
+    },
+    {
+      "name": "number-status",
+      "status": 200,
+      "log_count": 0,
+      "deleted_token_count": 0,
+      "returned": "fulfilled"
+    },
+    {
+      "name": "null-body",
+      "status": 200,
+      "log_count": 1,
+      "deleted_token_count": 0,
+      "returned": "fulfilled"
+    },
+    {
+      "name": "http-error",
+      "status": 503,
+      "log_count": 1,
+      "deleted_token_count": 0,
+      "returned": "fulfilled"
+    }
+  ],
+  "external_requests_sent": 0,
+  "database_used": false
+}

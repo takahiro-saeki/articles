@@ -1,0 +1,157 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "audit": "Draft to audit to final. Replaced staged contrasts, generic explanatory endings and redundant announcements with concrete observations. Checked for fabricated first-person experience and preserved all limitations.",
+  "files": [
+    {
+      "id": "T03",
+      "path": "public/unknown-api-runtime-validation.md",
+      "edits": [
+        [
+          "型の確認と実行時の確認を分けると、例外で止まるケースだけでなく、不正な応答を黙って読み飛ばすケースも見えてきます。",
+          "コンパイル結果に加えて実行時のログも比較すると、不正な応答を読み飛ばすケースがありました。"
+        ],
+        [
+          "型が狭まったことと、業務上の整合性が取れたことは同じではありません。",
+          "型を狭めた後も、処理に必要な件数や対応関係は確認します。"
+        ]
+      ],
+      "semantic_review": "Preserved compile cases and TS18046, two TypeErrors, six actual sender outcomes and six new guard cases. Status-only projection is not full Expo validation; no external notification or DB write."
+    },
+    {
+      "id": "T03",
+      "path": "devto/unknown-api-runtime-validation.md",
+      "edits": [
+        [
+          "Separating compilation from runtime checks reveals both exceptions and malformed responses that the code silently skips.",
+          "Comparing compiler results with runtime logs also found malformed responses that the code silently skipped."
+        ],
+        [
+          "A narrowed type does not establish application-level consistency.",
+          "After narrowing the type, check the counts and relationships required by the operation."
+        ]
+      ],
+      "semantic_review": "All Japanese sections, table values, code and limits retained; fulfilled Promise not response validity; actual function dependencies substituted."
+    },
+    {
+      "id": "T26",
+      "path": "public/expo-securestore-asyncstorage-boundary.md",
+      "edits": [
+        [
+          "名前が似た保存APIへ置き換えるだけでは、この復旧動作は決まりません。",
+          "保存APIを置き換える際にも、復旧時の動作は別に設計します。"
+        ],
+        [
+          "保存APIの選定表だけで、それらの確認が済んだことにはしません。",
+          "それらの端末依存の動作は、対象環境での確認が残っています。"
+        ]
+      ],
+      "semantic_review": "Current docs and pinned SDK ranges distinct, no AsyncStorage direct dependency, confidentiality versus recovery, three substituted read cases and no native tests retained."
+    },
+    {
+      "id": "T26",
+      "path": "devto/expo-securestore-asyncstorage-boundary.md",
+      "edits": [
+        [
+          "Replacing one similarly named storage API with another does not define these recovery behaviors.",
+          "When replacing a storage API, design the recovery behavior separately."
+        ],
+        [
+          "A storage selection table does not complete those checks.",
+          "Those device-dependent outcomes still need checks in the intended environment."
+        ]
+      ],
+      "semantic_review": "Full Japanese content preserved, 2048 historical figure not global limit, platform persistence caveats, no plaintext fallback, no actual migration or biometric test."
+    },
+    {
+      "id": "T27",
+      "path": "public/expo-fcm-apns-token-routing.md",
+      "edits": [
+        [
+          "どの経路を実装したかを、取得側と送信側の両方で確認します。",
+          "取得側と送信側を読み、両方が同じ経路を使っているかを確認します。"
+        ],
+        [
+          "既存コードがどのサービスを使う設計なのかと、実際に通知が届くことを分けた確認です。",
+          "実際の到達確認は、ここで特定した経路で別途行う必要があります。"
+        ]
+      ],
+      "semantic_review": "Issuer/accepting API paths, iOS Firebase alternative, old dependency versus current docs, three compiler cases and no token acquisition/delivery retained."
+    },
+    {
+      "id": "T27",
+      "path": "devto/expo-fcm-apns-token-routing.md",
+      "edits": [
+        [
+          "Verify the selected path at both the token acquisition code and the server that sends notifications.",
+          "Read the acquisition code and the sending server to check that they use the same path."
+        ],
+        [
+          "Identifying the service the code is designed to use is separate from demonstrating actual delivery.",
+          "Actual delivery still needs to be tested through the identified path."
+        ]
+      ],
+      "semantic_review": "All Japanese tables, route diagram and code preserved. Namespace typing not token authenticity; ticket/receipt distinction and no sends retained."
+    },
+    {
+      "id": "T30",
+      "path": "public/universal-links-aasa-diagnostics.md",
+      "edits": [
+        [
+          "開発版の設定と照合すると、JSONを取得できたことだけでは見えない不一致がありました。",
+          "開発版の設定と照合して初めて、対象のアプリ識別子が含まれていないと分かりました。"
+        ],
+        [
+          "取得したJSON、設定上のappID、対象URLを一組にして比較することで、次に設定・配信・実機のどこを確認すべきかを絞りました。",
+          "取得したJSON、設定上のappID、対象URLを照合し、開発版の識別子が応答に含まれないことを確認しました。署名済みビルドと端末側の検証が次に残ります。"
+        ]
+      ],
+      "semantic_review": "Two origins 200 JSON same 125 bytes/hash/cache header, configured dev ID missing; ten limited checker conditions; no swcutil, signed entitlements, Apple CDN or device check."
+    },
+    {
+      "id": "T30",
+      "path": "devto/universal-links-aasa-diagnostics.md",
+      "edits": [
+        [
+          "Comparing them with the development app configuration exposed a mismatch that a successful JSON download alone would miss.",
+          "Comparison with the development app configuration showed that its application identifier was missing."
+        ],
+        [
+          "Comparing the downloaded JSON, configured app ID, and target URL together narrowed which configuration, delivery, or device check should come next.",
+          "Comparing the downloaded JSON, configured app ID, and target URL established that the response did not list the development identifier. Signed-build and device verification remain."
+        ]
+      ],
+      "semantic_review": "Full Japanese evidence retained, prefix checker not Apple engine, unsupported modern format not invalid, cache header not device TTL, no configuration fix."
+    },
+    {
+      "id": "T33",
+      "path": "public/eas-build-submit-update-artifacts.md",
+      "edits": [
+        [
+          "「配布できた」と記録する前に、今回できた成果物と、その受け取り先を確認します。",
+          "「配布できた」と記録する前に、何を作り、どこへ渡したかを確認します。"
+        ],
+        [
+          "生成・提出・更新を実行したという体験談としては扱わないでください。",
+          "実際の配布結果を記録するには、対象の工程と成果物を使った確認が残っています。"
+        ]
+      ],
+      "semantic_review": "Build/Submit/Update artifacts, iOS review versus Android track and releaseStatus, actual script lacks auto-submit, native config requires new binary, no EAS command execution retained."
+    },
+    {
+      "id": "T33",
+      "path": "devto/eas-build-submit-update-artifacts.md",
+      "edits": [
+        [
+          "Before recording something as distributed, identify the resulting artifact and its recipient.",
+          "Before recording a distribution result, identify what was created and where it was sent."
+        ],
+        [
+          "It is not an account of running generation, submission, or update operations.",
+          "Actual distribution records still require verification of the relevant operation and artifact."
+        ]
+      ],
+      "semantic_review": "Complete Japanese content retained, docs and fixed config observations distinct, no measured build/upload/delivery timings or prior release state inferred."
+    }
+  ]
+}

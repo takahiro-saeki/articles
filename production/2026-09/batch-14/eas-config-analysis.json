@@ -1,0 +1,70 @@
+{
+  "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+  "source_expo_range": "~54.0.33",
+  "source_update_range": "~29.0.12",
+  "scripts": {
+    "build:dev": "eas build --profile development --platform ios",
+    "build:preview": "eas build --profile preview --platform ios",
+    "build:prod": "eas build --profile production --platform ios",
+    "build:dev:android": "eas build --profile development --platform android",
+    "build:preview:android": "eas build --profile preview --platform android",
+    "update:production": "APP_ENV=production EXPO_PUBLIC_API_URL=https://squad-note.com eas update --channel production --environment production",
+    "update:preview": "APP_ENV=production EXPO_PUBLIC_API_URL=https://squad-note.com eas update --channel preview --environment preview"
+  },
+  "build_profile_summary": {
+    "development": {
+      "channel": "development",
+      "distribution": "internal",
+      "autoIncrement": false
+    },
+    "preview": {
+      "channel": "preview",
+      "distribution": "internal",
+      "autoIncrement": false
+    },
+    "production": {
+      "channel": "production",
+      "distribution": null,
+      "autoIncrement": true
+    }
+  },
+  "configured_apps": {
+    "production": {
+      "bundleIdentifier": "com.squadnote.app",
+      "associatedDomains": [
+        "applinks:squad-note.com"
+      ],
+      "version": "1.0.11",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "plugins": [
+        "expo-router",
+        "expo-secure-store",
+        "expo-apple-authentication",
+        "expo-splash-screen",
+        "expo-image-picker",
+        "./plugins/with-android-lint-suppress.js"
+      ]
+    },
+    "development": {
+      "bundleIdentifier": "com.squadnote.app.dev",
+      "associatedDomains": [
+        "applinks:dev.squad-note.com"
+      ],
+      "version": "1.0.11",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "plugins": [
+        "expo-router",
+        "expo-secure-store",
+        "expo-apple-authentication",
+        "expo-splash-screen",
+        "expo-image-picker",
+        "./plugins/with-android-lint-suppress.js"
+      ]
+    }
+  },
+  "commands_executed": []
+}

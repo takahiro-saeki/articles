@@ -1,0 +1,25 @@
+{
+  "pairs": 5,
+  "executable_blocks": 5,
+  "static_json_blocks": 2,
+  "text_blocks": 1,
+  "printed_unsafe_runtime_error": "TypeError",
+  "unknown_diagnostic": 18046,
+  "guard_cases": 6,
+  "storage_cases": 3,
+  "routing_cases": 3,
+  "aasa_comparison_cases": 10,
+  "actual_sender_cases": 6,
+  "printed_curl_previously_executed": true,
+  "source_hashes": 10,
+  "humanizer_prose_edits": 34,
+  "guard": {
+    "baseline": "8a1bfa8",
+    "before_batch": "6b6632c",
+    "baseline_files_unchanged": 137,
+    "previous_article_files_unchanged": 283,
+    "original_ideas_unchanged": true,
+    "fixed_git_sources": 10,
+    "final_humanizer_hashes": 10
+  }
+}

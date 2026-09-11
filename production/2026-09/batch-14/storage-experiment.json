@@ -1,0 +1,21 @@
+{
+  "node": "v24.15.0",
+  "proposal_cases": [
+    {
+      "kind": "value",
+      "calls": 1
+    },
+    {
+      "kind": "missing",
+      "calls": 1
+    },
+    {
+      "kind": "unavailable",
+      "calls": 1
+    }
+  ],
+  "actual_getToken_rejects_native_error": true,
+  "native_storage_tested": false,
+  "async_storage_dependency_present": false,
+  "source_secure_store_range": "~15.0.3"
+}

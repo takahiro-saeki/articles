@@ -1,0 +1,98 @@
+{
+  "node": "v24.15.0",
+  "macos": "26.6.2",
+  "source_commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+  "configured_apps": {
+    "production": {
+      "bundleIdentifier": "com.squadnote.app",
+      "associatedDomains": [
+        "applinks:squad-note.com"
+      ],
+      "version": "1.0.11",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "plugins": [
+        "expo-router",
+        "expo-secure-store",
+        "expo-apple-authentication",
+        "expo-splash-screen",
+        "expo-image-picker",
+        "./plugins/with-android-lint-suppress.js"
+      ]
+    },
+    "development": {
+      "bundleIdentifier": "com.squadnote.app.dev",
+      "associatedDomains": [
+        "applinks:dev.squad-note.com"
+      ],
+      "version": "1.0.11",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "plugins": [
+        "expo-router",
+        "expo-secure-store",
+        "expo-apple-authentication",
+        "expo-splash-screen",
+        "expo-image-picker",
+        "./plugins/with-android-lint-suppress.js"
+      ]
+    }
+  },
+  "expected_app_ids": {
+    "production": "3VDD942S97.com.squadnote.app",
+    "development": "3VDD942S97.com.squadnote.app.dev"
+  },
+  "origin_bodies_equal": true,
+  "checks": [
+    {
+      "name": "production-invite",
+      "observed": "listed-prefix"
+    },
+    {
+      "name": "development-bundle",
+      "observed": "app-id-mismatch"
+    },
+    {
+      "name": "settings",
+      "observed": "path-not-listed"
+    },
+    {
+      "name": "redirect",
+      "observed": "redirect"
+    },
+    {
+      "name": "html-content-type",
+      "observed": "content-type"
+    },
+    {
+      "name": "invalid-json",
+      "observed": "invalid-json"
+    },
+    {
+      "name": "modern-components",
+      "observed": "unsupported-format"
+    },
+    {
+      "name": "case-change",
+      "observed": "path-not-listed"
+    },
+    {
+      "name": "query-and-fragment",
+      "observed": "listed-prefix"
+    },
+    {
+      "name": "missing-slash",
+      "observed": "path-not-listed"
+    }
+  ],
+  "checker_scope": "Only positive legacy prefix rules ending in /*; not Apple OS verification",
+  "swcutil": {
+    "executed": false,
+    "reason": "swcutil requires root; sudo -n reported a password is required. No privileged verification or password prompt performed."
+  },
+  "signed_entitlements_checked": false,
+  "ios_device_checked": false,
+  "apple_cdn_checked": false
+}

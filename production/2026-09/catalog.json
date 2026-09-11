@@ -365,7 +365,7 @@
   },
   {
     "id": "T03",
-    "title": "`unknown`と`any`を外部APIレスポンスで比べてみた",
+    "title": "unknownを付けるだけではAPI応答を検証できない。anyと型アサーションを比較する",
     "original_title": "`unknown`と`any`を外部APIレスポンスで比べてみた",
     "slug": "unknown-api-runtime-validation",
     "angle": "narrowingと実行時検証",
@@ -374,10 +374,11 @@
     "japanese": "public/unknown-api-runtime-validation.md",
     "english": "devto/unknown-api-runtime-validation.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 14,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-14/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T04",
@@ -749,7 +750,7 @@
   },
   {
     "id": "T26",
-    "title": "Expo SecureStoreとAsyncStorageを改めて使い分ける",
+    "title": "Expo SecureStoreとAsyncStorageを、秘密情報と復旧方法から使い分ける",
     "original_title": "Expo SecureStoreとAsyncStorageを改めて使い分ける",
     "slug": "expo-securestore-asyncstorage-boundary",
     "angle": "トークン、設定、容量、端末移行",
@@ -758,14 +759,15 @@
     "japanese": "public/expo-securestore-asyncstorage-boundary.md",
     "english": "devto/expo-securestore-asyncstorage-boundary.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 14,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-14/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T27",
-    "title": "Expo Push Token、FCM Token、APNs Tokenの関係を整理した",
+    "title": "Expo Push Token・FCM Token・APNs Tokenは、送信先のAPIから区別する",
     "original_title": "Expo Push Token、FCM Token、APNs Tokenの関係を整理した",
     "slug": "expo-fcm-apns-token-routing",
     "angle": "誰が発行し、どこへ送るか",
@@ -774,10 +776,11 @@
     "japanese": "public/expo-fcm-apns-token-routing.md",
     "english": "devto/expo-fcm-apns-token-routing.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 14,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-14/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T28",
@@ -813,7 +816,7 @@
   },
   {
     "id": "T30",
-    "title": "Universal Linksが開かないとき、AASAのどこを見るか",
+    "title": "Universal LinksのAASAは200だけでは足りない。開発版のappIDとパスを照合する",
     "original_title": "Universal Linksが開かないとき、AASAのどこを見るか",
     "slug": "universal-links-aasa-diagnostics",
     "angle": "content-type、paths、cache",
@@ -822,10 +825,11 @@
     "japanese": "public/universal-links-aasa-diagnostics.md",
     "english": "devto/universal-links-aasa-diagnostics.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 14,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-14/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T31",
@@ -862,7 +866,7 @@
   },
   {
     "id": "T33",
-    "title": "EAS Build、Submit、Updateはそれぞれ何を配る仕組みか",
+    "title": "EAS Build・Submit・Updateの違いを、成功後にできるものから確認する",
     "original_title": "EAS Build、Submit、Updateはそれぞれ何を配る仕組みか",
     "slug": "eas-build-submit-update-artifacts",
     "angle": "native binaryとJS bundle",
@@ -871,10 +875,11 @@
     "japanese": "public/eas-build-submit-update-artifacts.md",
     "english": "devto/eas-build-submit-update-artifacts.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 14,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-14/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "T34",

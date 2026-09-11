@@ -1,0 +1,82 @@
+[
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/web/src/server/api/lib/expo-push.ts",
+    "bytes": 3842,
+    "sha256": "614f582fec9a6cbcac05775eaa878e6a126fc6c4bb21e19376bf86eef40947ff",
+    "last_change": "a0d5d49dd627055f4ae6a5f4e967cfd8fd7218c2 fix(web): Push通知がCloudflare Workersで届かないバグ修正"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/src/lib/guest-response-store.ts",
+    "bytes": 1875,
+    "sha256": "23906a10c468c221877a7dbb81525d0b64eec9aca376641140d1712d5c02cb30",
+    "last_change": "9aec48963842dcaf16ce49c80317366509ab1b8f feat: 未ログイン回答を後から安全に管理できるようにする"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/src/lib/auth.ts",
+    "bytes": 929,
+    "sha256": "70843654643a3596cbe41b00cc60e107ac4c43788db542e5b62c042908c7c35b",
+    "last_change": "55f83d801199b3a3aded88cd1d9600ff87ed0e32 feat: Expoプロジェクト初期化 + モバイル用JWT認証基盤"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/src/lib/i18n.ts",
+    "bytes": 3206,
+    "sha256": "4d2f5979c31995ac4482a8963e57c32eebe413409a8fd8faac3f852c193eafe0",
+    "last_change": "b4d4230c2d4ff194c670fde98e11cac9b2940c7a feat(mobile): 中国語コミュニティでも使い始められるよう簡体字UIを追加"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/src/lib/push-notifications.ts",
+    "bytes": 4982,
+    "sha256": "3804be4379ce30053b00caac551fbf882733632b4f021548ba6a28be5d40c88c",
+    "last_change": "5cce6876563b375f73500a01a70372f4ae0fdfee fix(mobile): cold start 時に通知タップでスプラッシュが固まる事象を修正"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/app.config.ts",
+    "bytes": 4557,
+    "sha256": "4a32f9ef5622e3aefacc9a75a951ab56abd5b81a92eebb25f9813df603f8a633",
+    "last_change": "dbe819fe40d9cc943c483f9b05050e3d0568c91b fix(mobile): 本番OTAがdev環境へ接続しないよう配信設定を固定"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/web/src/app/.well-known/apple-app-site-association/route.ts",
+    "bytes": 1058,
+    "sha256": "c37c780204b8cca093d4a80d07f89b352f3c656fbe7cef21f9a678e024b8f869",
+    "last_change": "e452f2c6f67907c20a359c6e0aaa6a5dd335a030 feat: Universal Links を有効化（squad-note.com からアプリを開く）"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/eas.json",
+    "bytes": 1137,
+    "sha256": "d8188f5f2d73c46a0774a2231c99b9018be19232f8cbc4e8a54bf3870c53c278",
+    "last_change": "a17550fdc6cdce74686db803addea37646a745f2 feat(mobile): EAS Update を導入して JS のみの変更を審査なしで配信可能にする"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "apps/mobile/package.json",
+    "bytes": 2373,
+    "sha256": "97ff4bc959bb12786ef7fe28d997889ae39c61549fd261149558f981b49eab6e",
+    "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+  },
+  {
+    "repository": "circle-hub-growth-07-schedule-import",
+    "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+    "path": "docs/growth/README.md",
+    "bytes": 7113,
+    "sha256": "730a9ac54702fa3fdd073b81175201865556fc8c81b7cc6f3e5c4ccd761a480a",
+    "last_change": "a34608c611ded6549c1176a7977e68e1bc62a8db docs: 成長施策の実装状況を次の作業判断へ反映する"
+  }
+]

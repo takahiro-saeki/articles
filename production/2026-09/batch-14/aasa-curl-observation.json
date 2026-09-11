@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-09-11T13:11:50.506347+00:00",
+  "command": [
+    "curl",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "aasa.headers",
+    "--output",
+    "aasa.json",
+    "https://squad-note.com/.well-known/apple-app-site-association"
+  ],
+  "curl_version": "curl 8.7.1 (x86_64-apple-darwin25.0) libcurl/8.7.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.12 nghttp2/1.68.1",
+  "headers": "HTTP/2 200 \ndate: Fri, 11 Sep 2026 13:11:50 GMT\ncontent-type: application/json\ncache-control: s-maxage=31536000\nvary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\nx-nextjs-cache: MISS\nx-opennext: 1\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=azJqwZ0nBzVQ0hsCZazm0GlvPRXBIIobyBZ9OzL5uSsLfl1bD3QV2ccds7Ikdw6t4LMmcYJSXBdiTwFfrbOhPZQmelKY%2BA6%2B46tt6cUtCZKJfA9DvAVUBrxdFV97ofNDg1mrdnmx%2B2HHMUxcXQ%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\nserver: cloudflare\ncf-ray: a396eba7a8d6d861-NRT\nalt-svc: h3=\":443\"; ma=86400\n\n",
+  "body": {
+    "applinks": {
+      "apps": [],
+      "details": [
+        {
+          "appID": "3VDD942S97.com.squadnote.app",
+          "paths": [
+            "/organizations/*",
+            "/s/*",
+            "/invite/*"
+          ]
+        }
+      ]
+    }
+  },
+  "bytes": 125,
+  "sha256": "a8ee0e83f3fba8c16cc2c15aad48622537b80e0bd7119ba8bf42eb279ee4fd52"
+}

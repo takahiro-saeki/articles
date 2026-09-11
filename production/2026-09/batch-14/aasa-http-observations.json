@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-09-11T12:54:57.672411+00:00",
+  "method": "GET, redirects disabled, no authentication, one user agent per host",
+  "results": [
+    {
+      "url": "https://squad-note.com/.well-known/apple-app-site-association",
+      "status": 200,
+      "headers": {
+        "Date": "Fri, 11 Sep 2026 12:54:56 GMT",
+        "Content-Type": "application/json",
+        "Cache-Control": "s-maxage=31536000"
+      },
+      "sha256": "a8ee0e83f3fba8c16cc2c15aad48622537b80e0bd7119ba8bf42eb279ee4fd52",
+      "bytes": 125,
+      "body": {
+        "applinks": {
+          "apps": [],
+          "details": [
+            {
+              "appID": "3VDD942S97.com.squadnote.app",
+              "paths": [
+                "/organizations/*",
+                "/s/*",
+                "/invite/*"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://dev.squad-note.com/.well-known/apple-app-site-association",
+      "status": 200,
+      "headers": {
+        "Date": "Fri, 11 Sep 2026 12:54:57 GMT",
+        "Content-Type": "application/json",
+        "Cache-Control": "s-maxage=31536000"
+      },
+      "sha256": "a8ee0e83f3fba8c16cc2c15aad48622537b80e0bd7119ba8bf42eb279ee4fd52",
+      "bytes": 125,
+      "body": {
+        "applinks": {
+          "apps": [],
+          "details": [
+            {
+              "appID": "3VDD942S97.com.squadnote.app",
+              "paths": [
+                "/organizations/*",
+                "/s/*",
+                "/invite/*"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

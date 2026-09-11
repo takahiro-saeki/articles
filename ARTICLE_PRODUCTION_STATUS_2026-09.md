@@ -2,7 +2,7 @@
 
 完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
-本文・日英対訳・Humanizerまで検証済み 80/90件（完成 41件、canonical待ち 39件）。本文の検証が残る候補は 10件。canonical未確定の原稿は完成数に含めない。
+本文・日英対訳・Humanizerまで検証済み 85/90件（完成 41件、canonical待ち 44件）。本文の検証が残る候補は 5件。canonical未確定の原稿は完成数に含めない。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -21,8 +21,9 @@
 - バッチ11: P05、P06、P07、P11、P12、P13。完成 0/6件、本文検証済み 6/6件。
 - バッチ12: O02、O04、O06、O08、O11、O14。完成 0/6件、本文検証済み 6/6件。
 - バッチ13: P04、P09、P16、P18、O23、O24。完成 0/6件、本文検証済み 6/6件。
+- バッチ14: T03、T26、T27、T30、T33。完成 0/5件、本文検証済み 5/5件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
-- canonical待ちの執筆済み原稿: P04、P05、P06、P07、P09、P11、P12、P13、P16、P18、T01、T02、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T31、T37、T38、O02、O04、O06、O08、O11、O14、O23、O24。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
+- canonical待ちの執筆済み原稿: P04、P05、P06、P07、P09、P11、P12、P13、P16、P18、T01、T02、T03、T04、T05、T06、T07、T08、T10、T11、T12、T13、T15、T16、T17、T22、T23、T24、T25、T26、T27、T30、T31、T33、T37、T38、O02、O04、O06、O08、O11、O14、O23、O24。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
 
 | ID | タイトル | slug | 日本語版 | 英語版 | 事実確認 | 検証 | 状態 |
@@ -49,7 +50,7 @@
 | P20 | Plane Cloudとセルフホストを、復元時に引き受ける作業から比べる | plane-cloud-self-host-comparison | [原稿](articles/plane-cloud-self-host-comparison.md) | [原稿](devto/plane-cloud-self-host-comparison.md) | Plane公式料金/Edition/backup仕様、preview 2f895b8のCompose/restore.sh | 公式CLIを未変更で4模擬失敗条件。実DB/volume復元なし | 完成 |
 | T01 | Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる | promise-combinators-partial-failure | [原稿](public/promise-combinators-partial-failure.md) | [原稿](devto/promise-combinators-partial-failure.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T02 | TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる | typescript-satisfies-annotation-assertion | [原稿](public/typescript-satisfies-annotation-assertion.md) | [原稿](devto/typescript-satisfies-annotation-assertion.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
-| T03 | `unknown`と`any`を外部APIレスポンスで比べてみた | unknown-api-runtime-validation | 予定: public/unknown-api-runtime-validation.md | 予定: devto/unknown-api-runtime-validation.md | 未確認 | 未実施 | 未着手 |
+| T03 | unknownを付けるだけではAPI応答を検証できない。anyと型アサーションを比較する | unknown-api-runtime-validation | [原稿](public/unknown-api-runtime-validation.md) | [原稿](devto/unknown-api-runtime-validation.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T04 | typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける | type-interface-declaration-merging | [原稿](public/type-interface-declaration-merging.md) | [原稿](devto/type-interface-declaration-merging.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T05 | enumをliteral unionへ変える前に、生成されるJavaScriptを確認する | literal-union-enum-output | [原稿](public/literal-union-enum-output.md) | [原稿](devto/literal-union-enum-output.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
 | T06 | import typeを省くと何が残るか。tscとesbuildで副作用まで比較する | import-type-bundler-output | [原稿](public/import-type-bundler-output.md) | [原稿](devto/import-type-bundler-output.md) | [一次資料・実験確認](production/2026-09/batch-08/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-08/review.md) | 執筆中 |
@@ -72,14 +73,14 @@
 | T23 | Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する | nextjs-edge-node-runtime | [原稿](public/nextjs-edge-node-runtime.md) | [原稿](devto/nextjs-edge-node-runtime.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
 | T24 | NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する | next-public-build-runtime-env | [原稿](public/next-public-build-runtime-env.md) | [原稿](devto/next-public-build-runtime-env.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
 | T25 | Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる | next-image-html-network | [原稿](public/next-image-html-network.md) | [原稿](devto/next-image-html-network.md) | [一次資料・実行結果確認](production/2026-09/batch-10/review.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-10/review.md) | 執筆中 |
-| T26 | Expo SecureStoreとAsyncStorageを改めて使い分ける | expo-securestore-asyncstorage-boundary | 予定: public/expo-securestore-asyncstorage-boundary.md | 予定: devto/expo-securestore-asyncstorage-boundary.md | 未確認 | 未実施 | 未着手 |
-| T27 | Expo Push Token、FCM Token、APNs Tokenの関係を整理した | expo-fcm-apns-token-routing | 予定: public/expo-fcm-apns-token-routing.md | 予定: devto/expo-fcm-apns-token-routing.md | 未確認 | 未実施 | 未着手 |
+| T26 | Expo SecureStoreとAsyncStorageを、秘密情報と復旧方法から使い分ける | expo-securestore-asyncstorage-boundary | [原稿](public/expo-securestore-asyncstorage-boundary.md) | [原稿](devto/expo-securestore-asyncstorage-boundary.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
+| T27 | Expo Push Token・FCM Token・APNs Tokenは、送信先のAPIから区別する | expo-fcm-apns-token-routing | [原稿](public/expo-fcm-apns-token-routing.md) | [原稿](devto/expo-fcm-apns-token-routing.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T28 | Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計 | expo-push-token-device-ownership | [原稿](articles/expo-push-token-device-ownership.md) | [原稿](devto/expo-push-token-device-ownership.md) | [一次資料確認](production/2026-09/batch-01/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md) | 完成 |
 | T29 | Expo Routerのcold start時に最初のURLはいつ取れるのか | expo-router-initial-url-timing | 予定: public/expo-router-initial-url-timing.md | 予定: devto/expo-router-initial-url-timing.md | 未確認 | 未実施 | 未着手 |
-| T30 | Universal Linksが開かないとき、AASAのどこを見るか | universal-links-aasa-diagnostics | 予定: public/universal-links-aasa-diagnostics.md | 予定: devto/universal-links-aasa-diagnostics.md | 未確認 | 未実施 | 未着手 |
+| T30 | Universal LinksのAASAは200だけでは足りない。開発版のappIDとパスを照合する | universal-links-aasa-diagnostics | [原稿](public/universal-links-aasa-diagnostics.md) | [原稿](devto/universal-links-aasa-diagnostics.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T31 | AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる | android-edge-to-edge-insets | [原稿](public/android-edge-to-edge-insets.md) | [原稿](devto/android-edge-to-edge-insets.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T32 | ExpoのAppStateはbackgroundとinactiveをどう通知するか | expo-appstate-platform-events | 予定: public/expo-appstate-platform-events.md | 予定: devto/expo-appstate-platform-events.md | 未確認 | 未実施 | 未着手 |
-| T33 | EAS Build、Submit、Updateはそれぞれ何を配る仕組みか | eas-build-submit-update-artifacts | 予定: public/eas-build-submit-update-artifacts.md | 予定: devto/eas-build-submit-update-artifacts.md | 未確認 | 未実施 | 未着手 |
+| T33 | EAS Build・Submit・Updateの違いを、成功後にできるものから確認する | eas-build-submit-update-artifacts | [原稿](public/eas-build-submit-update-artifacts.md) | [原稿](devto/eas-build-submit-update-artifacts.md) | [一次資料・実験確認](production/2026-09/batch-14/review.md) | [本文・日英・Humanizer検証済み](production/2026-09/batch-14/review.md)・canonical未確定 | 執筆中 |
 | T34 | EAS Updateのerror recoveryは何を戻すか。iOSの復旧処理を7条件で確認する | eas-update-error-recovery-boundary | [原稿](articles/eas-update-error-recovery-boundary.md) | [原稿](devto/eas-update-error-recovery-boundary.md) | expo-updates29.0.18、公式45c60e1とSwift本体byte一致、現行Expo公式 | 元Swift本体をmacOSで7条件実行。周辺を代役、実機/DB選択なし。過去成功と今回表示の分岐差 | 完成 |
 | T35 | SplashScreenを手動で閉じるときの競合を再現した | expo-splash-screen-startup-race | 予定: public/expo-splash-screen-startup-race.md | 予定: devto/expo-splash-screen-startup-race.md | 未確認 | 未実施 | 未着手 |
 | T36 | D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する | d1-batch-atomicity-boundary | [原稿](articles/d1-batch-atomicity-boundary.md) | [原稿](devto/d1-batch-atomicity-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |

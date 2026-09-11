@@ -1,0 +1,194 @@
+{
+  "pairs": 5,
+  "canonicalPending": [
+    "T03",
+    "T26",
+    "T27",
+    "T30",
+    "T33"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "T03",
+      "jaCharacters": 3363,
+      "enWords": 808,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/expo-fcm-apns-token-routing.md",
+          "score": 0.068
+        },
+        {
+          "path": "public/typescript-satisfies-annotation-assertion.md",
+          "score": 0.066
+        },
+        {
+          "path": "public/literal-union-enum-output.md",
+          "score": 0.059
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/typescript-satisfies-annotation-assertion.md",
+          "score": 0.198
+        },
+        {
+          "path": "devto/expo-securestore-asyncstorage-boundary.md",
+          "score": 0.197
+        },
+        {
+          "path": "devto/expo-fcm-apns-token-routing.md",
+          "score": 0.195
+        }
+      ]
+    },
+    {
+      "id": "T26",
+      "jaCharacters": 2978,
+      "enWords": 747,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/expo-fcm-apns-token-routing.md",
+          "score": 0.084
+        },
+        {
+          "path": "public/eas-build-submit-update-artifacts.md",
+          "score": 0.075
+        },
+        {
+          "path": "public/unknown-api-runtime-validation.md",
+          "score": 0.057
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-fcm-apns-token-routing.md",
+          "score": 0.235
+        },
+        {
+          "path": "devto/eas-build-submit-update-artifacts.md",
+          "score": 0.234
+        },
+        {
+          "path": "devto/repeatable-schedule-import.md",
+          "score": 0.213
+        }
+      ]
+    },
+    {
+      "id": "T27",
+      "jaCharacters": 3196,
+      "enWords": 741,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/expo-securestore-asyncstorage-boundary.md",
+          "score": 0.084
+        },
+        {
+          "path": "public/unknown-api-runtime-validation.md",
+          "score": 0.068
+        },
+        {
+          "path": "public/eas-build-submit-update-artifacts.md",
+          "score": 0.068
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-securestore-asyncstorage-boundary.md",
+          "score": 0.235
+        },
+        {
+          "path": "devto/eas-build-submit-update-artifacts.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.21
+        }
+      ]
+    },
+    {
+      "id": "T30",
+      "jaCharacters": 3435,
+      "enWords": 797,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/expo-router-invite-universal-links.md",
+          "score": 0.072
+        },
+        {
+          "path": "public/expo-fcm-apns-token-routing.md",
+          "score": 0.064
+        },
+        {
+          "path": "public/eas-build-submit-update-artifacts.md",
+          "score": 0.063
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/eas-build-submit-update-artifacts.md",
+          "score": 0.208
+        },
+        {
+          "path": "devto/repeatable-schedule-import.md",
+          "score": 0.199
+        },
+        {
+          "path": "devto/expo-fcm-apns-token-routing.md",
+          "score": 0.192
+        }
+      ]
+    },
+    {
+      "id": "T33",
+      "jaCharacters": 3296,
+      "enWords": 791,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/plane-version-module.md",
+          "score": 0.086
+        },
+        {
+          "path": "public/expo-securestore-asyncstorage-boundary.md",
+          "score": 0.075
+        },
+        {
+          "path": "articles/testflight-continuous-release.md",
+          "score": 0.072
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-version-module.md",
+          "score": 0.252
+        },
+        {
+          "path": "devto/solo-web-ios-maintenance-scope.md",
+          "score": 0.248
+        },
+        {
+          "path": "devto/expo-securestore-asyncstorage-boundary.md",
+          "score": 0.234
+        }
+      ]
+    }
+  ]
+}

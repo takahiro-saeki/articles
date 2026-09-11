@@ -1,0 +1,51 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T03",
+      "path": "devto/unknown-api-runtime-validation.md",
+      "before_sha256": "4ea0aac18d5c2dcf4cb6bef22a7d38184180d4a658a37fbe2ddd1ef4e57eb268",
+      "after_sha256": "37edf039a2f201b0dbafe0ddb2f93befd378be1dc49c5ec8aeb588429f26e3eb",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T26",
+      "path": "devto/expo-securestore-asyncstorage-boundary.md",
+      "before_sha256": "cea26197a9f5865f47e3e466dd8912c6cc89c693b0eef90ffc8a2092aeeab1a6",
+      "after_sha256": "2d774b88959c004d74814c37d8394c0599008ede2d500cd1416c11dfdefcc2a0",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T27",
+      "path": "devto/expo-fcm-apns-token-routing.md",
+      "before_sha256": "ee796c199817a410373750ed51392f216b7d8f096ba1e0ac03a2d27e87eacc33",
+      "after_sha256": "0a5e165044288af20d6f5bab6f2280e6bd50cdaa46185c3a44330808ca141a54",
+      "prose_edits": 3,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T30",
+      "path": "devto/universal-links-aasa-diagnostics.md",
+      "before_sha256": "18c1e05f79b146294732d2b246c0a87e7a8c129e171c4b73cb1d572e086aba0e",
+      "after_sha256": "b502fc0d418ce138faffafb9a6dcbd0bca4bf56c05fda6815fafec05154a3af1",
+      "prose_edits": 5,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T33",
+      "path": "devto/eas-build-submit-update-artifacts.md",
+      "before_sha256": "7bc9b27f148bd22594f35bf318dc6db14f309717802139794f6b50c6635dfa89",
+      "after_sha256": "5a0fd512e705d0f9f995ff8167d6075af51d07081ff819a7f93da2a3afb32fb0",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    }
+  ]
+}

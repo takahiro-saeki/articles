@@ -1,0 +1,97 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "T03",
+      "path": "devto/unknown-api-runtime-validation.md",
+      "edits": [
+        [
+          "I compared any, unknown, and type assertions using a push sender from a personal project.",
+          "This comparison uses a push sender from a personal project to test any, unknown, and type assertions."
+        ],
+        [
+          "I used the retrieved function unchanged, substituting local implementations for fetch, the database, and logging.",
+          "The retrieved function ran unchanged, with local substitutes for fetch, the database, and logging."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T26",
+      "path": "devto/expo-securestore-asyncstorage-boundary.md",
+      "edits": [
+        [
+          "I checked official documentation on September 11, 2026.",
+          "The official documentation was checked on September 11, 2026."
+        ],
+        [
+          "I would not choose it for storing raw authentication tokens.",
+          "Raw authentication tokens need a store that provides the required confidentiality."
+        ],
+        [
+          "With Node.js 24.15.0, I supplied stores that returned a value, returned null, or threw.",
+          "The Node.js 24.15.0 tests used stores that returned a value, returned null, or threw."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T27",
+      "path": "devto/expo-fcm-apns-token-routing.md",
+      "edits": [
+        [
+          "I checked the [official Expo Notifications documentation]",
+          "The [official Expo Notifications documentation]"
+        ],
+        [
+          "on September 11, 2026. Its latest page recommends",
+          "was checked on September 11, 2026. Its latest page recommends"
+        ],
+        [
+          "I read circle-hub at fixed commit `a34608c`.",
+          "The source inspected here is circle-hub at fixed commit `a34608c`."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T30",
+      "path": "devto/universal-links-aasa-diagnostics.md",
+      "edits": [
+        [
+          "When I fetched production and development AASA files, both returned 200, but both bodies defined the production app.",
+          "The production and development AASA requests both returned 200, but both bodies defined the production app."
+        ],
+        [
+          "I read the [app configuration]",
+          "The [app configuration]"
+        ],
+        [
+          "at circle-hub commit `a34608c`. Evaluating",
+          "was read at circle-hub commit `a34608c`. Evaluating"
+        ],
+        [
+          "I did not inspect the signed entitlements of an installed app, so it does not establish the cause of a failure on a particular device.",
+          "The signed entitlements of an installed app were not inspected, so this does not establish the cause of a failure on a particular device."
+        ],
+        [
+          "Locally, I tested a small comparison function supporting only the positive prefix patterns in this file.",
+          "The local test used a small comparison function supporting only the positive prefix patterns in this file."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    },
+    {
+      "id": "T33",
+      "path": "devto/eas-build-submit-update-artifacts.md",
+      "edits": [
+        [
+          "I checked current official documentation on September 11, 2026, and compared it with the [mobile scripts]",
+          "Current official documentation was checked on September 11, 2026, and compared with the [mobile scripts]"
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments; preserved the observed results, source dates, scope and Japanese content."
+    }
+  ]
+}

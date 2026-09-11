@@ -1,0 +1,31 @@
+{
+  "typescript": "7.0.2",
+  "cases": [
+    {
+      "name": "expo-routing",
+      "diagnostics": []
+    },
+    {
+      "name": "apns-to-expo",
+      "diagnostics": [
+        {
+          "code": 2322,
+          "message": "Type '\"apns\"' is not assignable to type '\"expo\"'."
+        }
+      ]
+    },
+    {
+      "name": "fcm-to-expo",
+      "diagnostics": [
+        {
+          "code": 2322,
+          "message": "Type '\"fcm\"' is not assignable to type '\"expo\"'."
+        }
+      ]
+    }
+  ],
+  "real_token_obtained": false,
+  "notifications_sent": 0,
+  "source_client_method": "getExpoPushTokenAsync",
+  "source_server_endpoint": "https://exp.host/--/api/v2/push/send"
+}
