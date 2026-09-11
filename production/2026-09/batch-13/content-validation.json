@@ -1,0 +1,231 @@
+{
+  "pairs": 6,
+  "canonicalPending": [
+    "P04",
+    "P09",
+    "P16",
+    "P18",
+    "O23",
+    "O24"
+  ],
+  "eligibleForCompletion": 0,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P04",
+      "jaCharacters": 2757,
+      "enWords": 843,
+      "sectionsJA": 4,
+      "sectionsEN": 4,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/plane-work-item-acceptance-evidence.md",
+          "score": 0.087
+        },
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.079
+        },
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.077
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-work-item-acceptance-evidence.md",
+          "score": 0.266
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.26
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.255
+        }
+      ]
+    },
+    {
+      "id": "P09",
+      "jaCharacters": 2967,
+      "enWords": 830,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/plane-close-paused-project.md",
+          "score": 0.069
+        },
+        {
+          "path": "articles/testflight-continuous-release.md",
+          "score": 0.06
+        },
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.06
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-close-paused-project.md",
+          "score": 0.227
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.223
+        },
+        {
+          "path": "devto/solo-web-ios-maintenance-scope.md",
+          "score": 0.223
+        }
+      ]
+    },
+    {
+      "id": "P16",
+      "jaCharacters": 3075,
+      "enWords": 962,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/plane-pages-work-item-boundary.md",
+          "score": 0.088
+        },
+        {
+          "path": "public/plane-status-by-deliverable.md",
+          "score": 0.087
+        },
+        {
+          "path": "articles/plane-cycle-release-module.md",
+          "score": 0.072
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.302
+        },
+        {
+          "path": "devto/plane-status-by-deliverable.md",
+          "score": 0.266
+        },
+        {
+          "path": "devto/plane-cycle-release-module.md",
+          "score": 0.261
+        }
+      ]
+    },
+    {
+      "id": "P18",
+      "jaCharacters": 2827,
+      "enWords": 827,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "public/plane-version-module.md",
+          "score": 0.069
+        },
+        {
+          "path": "public/plane-work-item-acceptance-evidence.md",
+          "score": 0.062
+        },
+        {
+          "path": "public/plane-status-by-deliverable.md",
+          "score": 0.059
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/plane-work-item-acceptance-evidence.md",
+          "score": 0.239
+        },
+        {
+          "path": "devto/plane-pages-work-item-boundary.md",
+          "score": 0.238
+        },
+        {
+          "path": "devto/plane-intake-before-backlog.md",
+          "score": 0.236
+        }
+      ]
+    },
+    {
+      "id": "O23",
+      "jaCharacters": 4006,
+      "enWords": 1148,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/plane-close-paused-project.md",
+          "score": 0.048
+        },
+        {
+          "path": "public/react-index-key-input-reorder.md",
+          "score": 0.046
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.041
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-push-token-device-ownership.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/auth-incident-recovery-evidence.md",
+          "score": 0.218
+        },
+        {
+          "path": "devto/cloudflare-cron-queues-workflows.md",
+          "score": 0.214
+        }
+      ]
+    },
+    {
+      "id": "O24",
+      "jaCharacters": 4097,
+      "enWords": 1192,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "public/controlled-uncontrolled-form-experiment.md",
+          "score": 0.036
+        },
+        {
+          "path": "public/react-callback-ref-cleanup.md",
+          "score": 0.036
+        },
+        {
+          "path": "public/next-public-build-runtime-env.md",
+          "score": 0.036
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/repeatable-schedule-import.md",
+          "score": 0.182
+        },
+        {
+          "path": "devto/react-memoization-cost.md",
+          "score": 0.178
+        },
+        {
+          "path": "devto/trailer-timeline-before-editing.md",
+          "score": 0.171
+        }
+      ]
+    }
+  ]
+}

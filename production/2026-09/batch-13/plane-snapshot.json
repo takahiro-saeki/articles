@@ -1,0 +1,152 @@
+{
+  "read_on": "2026-09-11",
+  "workspace": "hiro-work",
+  "source": "Read-only plane_personal MCP; no mutations",
+  "states": [
+    {
+      "identifier": "DRG",
+      "count": 5,
+      "next_page_results": false,
+      "states": [
+        {
+          "id": "15cbd0da-f891-4153-b35c-cb9f5861b864",
+          "name": "Backlog",
+          "group": "backlog",
+          "default": true
+        },
+        {
+          "id": "3d7d903d-c735-4749-a6d2-222005b17eac",
+          "name": "Todo",
+          "group": "unstarted",
+          "default": false
+        },
+        {
+          "id": "2092abe7-94d7-4e0d-926a-f1e01de416e3",
+          "name": "In Progress",
+          "group": "started",
+          "default": false
+        },
+        {
+          "id": "b6e40a7d-1335-4560-a956-46b9b704e3fb",
+          "name": "Done",
+          "group": "completed",
+          "default": false
+        },
+        {
+          "id": "6829d923-b4d4-486a-8a49-f1532f2bd91b",
+          "name": "Cancelled",
+          "group": "cancelled",
+          "default": false
+        }
+      ]
+    },
+    {
+      "identifier": "RECITAL",
+      "count": 5,
+      "next_page_results": false,
+      "states": [
+        {
+          "id": "b8e2c2d4-bb75-4feb-8260-3afba0fde1ce",
+          "name": "Backlog",
+          "group": "backlog",
+          "default": true
+        },
+        {
+          "id": "046401f4-66e8-42b9-900d-00781015d32b",
+          "name": "Todo",
+          "group": "unstarted",
+          "default": false
+        },
+        {
+          "id": "54fccfb9-3b97-4f08-b7d2-056d7e761e06",
+          "name": "In Progress",
+          "group": "started",
+          "default": false
+        },
+        {
+          "id": "cd02e2db-1544-4941-bae7-c9c0febe9c8b",
+          "name": "Done",
+          "group": "completed",
+          "default": false
+        },
+        {
+          "id": "6393a5fd-78d2-41f0-9eba-2cf00a424a8c",
+          "name": "Cancelled",
+          "group": "cancelled",
+          "default": false
+        }
+      ]
+    },
+    {
+      "identifier": "SQN",
+      "count": 5,
+      "next_page_results": false,
+      "states": [
+        {
+          "id": "2ccb3c5a-e580-45c5-b7d3-4329c5710245",
+          "name": "Backlog",
+          "group": "backlog",
+          "default": true
+        },
+        {
+          "id": "0f8dc1fc-e264-411e-90a4-7efdcdc7a6c3",
+          "name": "Todo",
+          "group": "unstarted",
+          "default": false
+        },
+        {
+          "id": "728ce93c-ca95-4a83-ab72-820eae38890c",
+          "name": "In Progress",
+          "group": "started",
+          "default": false
+        },
+        {
+          "id": "ce72c818-a239-42f9-91b9-b27fe135cb84",
+          "name": "Done",
+          "group": "completed",
+          "default": false
+        },
+        {
+          "id": "8e339445-6f93-4335-810b-9203a1b4291c",
+          "name": "Cancelled",
+          "group": "cancelled",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "squadnote": {
+    "active_modules": {
+      "count": 0,
+      "next_page_results": false
+    },
+    "archived_modules": {
+      "count": 0,
+      "next_page_results": false
+    },
+    "archived_work_items": {
+      "count": 0,
+      "next_page_results": false
+    }
+  },
+  "cancelled_query": {
+    "pql": "stateGroup = \"cancelled\"",
+    "next_page_results": false,
+    "items": [
+      {
+        "identifier": "SQN-22",
+        "title": "個人開発でLT・登壇できる場所を探す",
+        "state": "Cancelled",
+        "group": "cancelled",
+        "description_observation": "Only Notion migration metadata and a note that the original page had no body; no current cancellation reason found. Private migration link omitted."
+      }
+    ]
+  },
+  "work_item": {
+    "identifier": "SQN-30",
+    "title": "[Step 1] 体験参加者権限と手動昇格・終了を実装する",
+    "group": "started",
+    "description": "目的\n体験参加者を通常メンバーとして扱わず、必要最小限の情報と機能だけを安全に利用できるようにする。\n実装範囲\n正式メンバー用と体験参加者用の招待URLを分離し、権限はサーバーに保存された招待種別から決定する。参加者側に権限を選択させず、URLパラメータの改ざんでも権限を変更できない。\n既存の招待URLは旧・正式メンバー招待URLとして互換性を維持し、管理者が確認後に明示的に無効化できる段階移行とする。\n体験参加者本人と管理者に「体験参加中」であることを明示する。\n体験参加者は団体の基本情報、体験参加者向けに公開された練習、出欠回答、自分向けの既存連絡だけを利用できる。\nメンバー一覧、出席者の個人情報、内部向け予定・お知らせ・資料、団体管理にはアクセスできない。\n管理者は体験参加者を正式メンバーへ変更できる。\n管理者は体験参加を終了できる。終了時はアカウント自体を削除せず、団体との参加関係を終了する。\n画面表示だけでなくAPI側でも権限を検証する。\n受け入れ条件\nWeb・iOS・Androidで権限差が一貫している。\n既存招待URLが移行前は従来どおり利用でき、新方式への切り替え後にのみ無効化できる。\n既存の正式メンバーの権限と利用フローに回帰がない。\n権限制御、招待URL互換、昇格、終了の自動テストがある。\n開発環境と自動テストまでで停止し、本番DB・本番Web・ストアには反映しない。\nスコープ外\n新しい個別メッセージ、応募者管理、自動期限処理、本番リリースは後続Stepで扱う。",
+    "repository_reference_in_description": false
+  }
+}

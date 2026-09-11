@@ -1,0 +1,130 @@
+{
+  "checked_on": "2026-09-11",
+  "sources": [
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "packages/schedule-text-parser/src/index.ts",
+      "sha256": "9c0ccdf2d3cecf7f09777a91a4ec9114825ff49e86d36e9144463cc21ef5410b",
+      "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "packages/schedule-text-parser/package.json",
+      "sha256": "879ed5a31e1f4ca4aca73641250a33aa63cce0f9ce566b875288359aaff669aa",
+      "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/web/src/lib/schedule-text-parser.test.ts",
+      "sha256": "6630d04b56900bb9f4722bc313434bba887afb87af876a88833c7c9f16739c2a",
+      "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "docs/growth/README.md",
+      "sha256": "730a9ac54702fa3fdd073b81175201865556fc8c81b7cc6f3e5c4ccd761a480a",
+      "last_change": "a34608c611ded6549c1176a7977e68e1bc62a8db docs: 成長施策の実装状況を次の作業判断へ反映する"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/web/src/app/(app)/organizations/[id]/schedules/new/_components/paste-schedule-import-dialog.tsx",
+      "sha256": "247efbe41fa43aaa61cb7b84f0986bdc19874aa96157323ddf33b499dc4c0335",
+      "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/mobile/src/components/paste-schedule-importer.tsx",
+      "sha256": "5a5456236a7ecd808618ab3eed35655ca7f57a801fe9e4f09f2ae0db3425fb0b",
+      "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/web/src/app/(app)/organizations/[id]/schedules/new/page.tsx",
+      "sha256": "29d104adf00ca30e9f24111c27c2362ab660b567d9ef3a34981fdb89c0fbfa98",
+      "last_change": "68bcd9522a87b34445aac511f403fc9f7be84145 feat: 既存日程を再入力せず移行できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/web/src/server/api/routers/schedule.ts",
+      "sha256": "8e4603d2f9f86fb87e30fd48e07a06c8eb08a9176c99faef747af900fb29999c",
+      "last_change": "5f3dba7bbc61bc68f382f93fd9e2bae79922f8e9 feat: 日程登録の勢いを止めずにメンバーへ共有できるようにする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/mobile/app.config.ts",
+      "sha256": "4a32f9ef5622e3aefacc9a75a951ab56abd5b81a92eebb25f9813df603f8a633",
+      "last_change": "dbe819fe40d9cc943c483f9b05050e3d0568c91b fix(mobile): 本番OTAがdev環境へ接続しないよう配信設定を固定"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+      "path": "apps/mobile/eas.json",
+      "sha256": "d8188f5f2d73c46a0774a2231c99b9018be19232f8cbc4e8a54bf3870c53c278",
+      "last_change": "a17550fdc6cdce74686db803addea37646a745f2 feat(mobile): EAS Update を導入して JS のみの変更を審査なしで配信可能にする"
+    },
+    {
+      "repo": "circle-hub-growth-07-schedule-import",
+      "commit": "0cda1e865ad80d1529197729d8d436e96d56edc7",
+      "path": "docs/testing/sqn-30-trial-participant-checklist.md",
+      "sha256": "0401c64e22363ee60edc6d05290cc75ea89b7ea6df80161b3cf0f37e2fb2df03",
+      "last_change": "12cbb78de5fdf2e7751b6c9f181cde88de3821c9 体験参加者を安全に招待できる権限制御を追加"
+    },
+    {
+      "repo": "beautiful-dashboard-for-bga",
+      "commit": "6f69cac1fe792436fced3a5215633e850262db59",
+      "path": "src/audio/AudioAnalysis.ts",
+      "sha256": "18c298dfbb38daf9b7741dd7ec7e5db0f559117431e973c4b100077c07eca88f",
+      "last_change": "45770eab3dd9f18939f35af8bf7b1362e2770b59 first commit"
+    },
+    {
+      "repo": "beautiful-dashboard-for-bga",
+      "commit": "6f69cac1fe792436fced3a5215633e850262db59",
+      "path": "src/hooks/useAudioEngine.ts",
+      "sha256": "a7429a9b690ecf787ab41ca9c7332944d88a2626d330073984ab0596e1d0399b",
+      "last_change": "45770eab3dd9f18939f35af8bf7b1362e2770b59 first commit"
+    },
+    {
+      "repo": "beautiful-dashboard-for-bga",
+      "commit": "6f69cac1fe792436fced3a5215633e850262db59",
+      "path": "src/hooks/useAnimationFrame.ts",
+      "sha256": "b3fd733e4f3dcddcd0056df8ec112ebac29d87f3bf3bbdf176a983a6bc54dcb9",
+      "last_change": "45770eab3dd9f18939f35af8bf7b1362e2770b59 first commit"
+    },
+    {
+      "repo": "beautiful-dashboard-for-bga",
+      "commit": "6f69cac1fe792436fced3a5215633e850262db59",
+      "path": "README.md",
+      "sha256": "e6a90ad8770a14f06618b6a1691f6d4638fd4942e27982298942f6558107d3c1",
+      "last_change": "6f69cac1fe792436fced3a5215633e850262db59 Add README with live demo URL, screenshot, and space-themed design"
+    },
+    {
+      "repo": "beautiful-dashboard-for-bga",
+      "commit": "6f69cac1fe792436fced3a5215633e850262db59",
+      "path": "package-lock.json",
+      "sha256": "8f64d159ac4970ed1179788cc228a5dbbb4bf20a2f39b610b1ef0281f061c9db",
+      "last_change": "45770eab3dd9f18939f35af8bf7b1362e2770b59 first commit"
+    }
+  ],
+  "version_fields": {
+    "version": "1.0.11",
+    "ios_build_number": "2",
+    "android_version_code": 1,
+    "eas_version_source": "remote",
+    "production_auto_increment": true
+  },
+  "ticket_evidence": {
+    "commit": "0cda1e865ad80d1529197729d8d436e96d56edc7",
+    "web_checked": true,
+    "mobile_unchecked": true,
+    "note": "Document observations only; no app rerun. Accounts and invitation information omitted."
+  }
+}

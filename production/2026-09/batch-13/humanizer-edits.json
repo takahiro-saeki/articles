@@ -1,0 +1,187 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "audit": "Draft to audit to final. Removed repeated announcements, staged conclusions, heavy contrasts and redundant emphasis. No new facts, experiences, numbers or citations; prose only.",
+  "files": [
+    {
+      "id": "P04",
+      "path": "public/plane-status-by-deliverable.md",
+      "edits": [
+        [
+          "状態を共通化して問題が起きたという過去の体験は確認できませんでした。この記事では、取得した設定と、確認待ちを追加する場合の判断を扱います。",
+          "状態の共通化で問題が起きたという記録は見つからなかったため、取得した設定を使い、確認待ちを追加するならどう分類するかを考えます。"
+        ],
+        [
+          "名前を変えても未完了のグループに置く必要があります。",
+          "表示名にかかわらず未完了のグループへ置きます。"
+        ]
+      ],
+      "semantic_review": "Three project lists, five groups, distinct IDs, SQN-30 started and document-only evidence retained; local classification is not Plane analytics; additions are proposals."
+    },
+    {
+      "id": "P04",
+      "path": "devto/plane-status-by-deliverable.md",
+      "edits": [
+        [
+          "The evidence did not establish a past incident caused by making their states uniform. This article covers the configuration that was retrieved and a proposal for representing work awaiting verification.",
+          "I found no record of a past incident caused by uniform states, so the article uses the retrieved configuration to examine how a verification state could be classified."
+        ],
+        [
+          "A different reviewer does not by itself require another state.",
+          "Changing the reviewer alone need not add another state."
+        ]
+      ],
+      "semantic_review": "All sections and tables retain Japanese meaning; sampled projects are not a workspace-wide survey; classification experiment and proposed policy remain distinct."
+    },
+    {
+      "id": "P09",
+      "path": "public/plane-version-module.md",
+      "edits": [
+        [
+          "Moduleの名前だけを検証対象の証拠にしない、という話です。",
+          "Module名だけでは、検証した配布物を特定できません。"
+        ],
+        [
+          "この時点で完成したリリース表を作ると、配布物の欄を推測で埋めることになります。",
+          "配布物が未確認のまま、リリース表を完成扱いにはできません。"
+        ]
+      ],
+      "semantic_review": "Both module lists empty, fixed Git version fields versus unqueried remote artifacts, proposed record with nulls and not_run preserved."
+    },
+    {
+      "id": "P09",
+      "path": "devto/plane-version-module.md",
+      "edits": [
+        [
+          "Membership, however, does not establish that someone verified the artifact for that version. Membership describes planned scope; a verification result describes an actual tested target.",
+          "Module membership identifies planned scope. To establish which artifact was tested, it needs a separate verification result."
+        ],
+        [
+          "Writing a completed release report at this stage would require guessing artifact fields.",
+          "The release report cannot be marked complete while its artifact fields remain unverified."
+        ]
+      ],
+      "semantic_review": "Full translation retains remote version caveat, hypothetical rebuild and deferral, all identifiers and source links; no live build or Module mutation claimed."
+    },
+    {
+      "id": "P16",
+      "path": "public/plane-work-item-acceptance-evidence.md",
+      "edits": [
+        [
+          "特に停止位置が具体的です。「実装してください」だけでは、完成の意味が開発環境の確認なのか、本番で利用できることなのか決まりません。この本文はそこを明示しています。",
+          "この本文は、開発環境で止めると明記しています。「実装してください」だけでは、開発環境の確認と本番での利用開始のどちらを求めているか決まりません。"
+        ],
+        [
+          "この分け方なら、次の担当者に渡すのは「もう一度全部確認する作業」でも「終わったことにする指示」でもなく、既存の根拠と、まだ答えのない受け入れ条件です。",
+          "次の担当者には、既存の根拠と、まだ答えのない受け入れ条件を渡します。確認済みの範囲を保ちながら、残りの作業を選ぶためです。"
+        ]
+      ],
+      "semantic_review": "Acceptance versus evidence, no repository reference in retrieved ticket, fixed document history and mobile unchecked, explicit stop point retained. No app rerun or ticket write."
+    },
+    {
+      "id": "P16",
+      "path": "devto/plane-work-item-acceptance-evidence.md",
+      "edits": [
+        [
+          "The stopping point is particularly specific. \"Implement this\" alone does not establish whether completion means verification in development or availability in production. This description makes that boundary explicit.",
+          "The description explicitly stops the work in development. \"Implement this\" alone would leave it unclear whether completion means development verification or production availability."
+        ],
+        [
+          "This gives the next person existing evidence and acceptance criteria that still lack an answer, without requiring every completed check to be repeated or treating unfinished work as complete.",
+          "The handoff contains existing evidence and acceptance criteria that still lack an answer. The next person can use those records to select the remaining work."
+        ]
+      ],
+      "semantic_review": "All Japanese sections and criterion/evidence rows retained, proposal not special Codex parser format, document observation not newly executed success."
+    },
+    {
+      "id": "P18",
+      "path": "public/plane-close-paused-project.md",
+      "edits": [
+        [
+          "この二つの読み取りは、「Cancelledにある」と「アーカイブへ移っている」が同じ意味でないことを示しています。",
+          "読み取り結果では、Cancelledの作業があってもアーカイブ済みの一覧は空でした。"
+        ],
+        [
+          "アーカイブ先に履歴があることと、将来それを見つけられることは別に確かめます。",
+          "履歴の保存に加えて、後からその保存先へたどれるかも確かめます。"
+        ]
+      ],
+      "semantic_review": "One cancellation, zero archived SQN work items, missing reason not filled, single work item not whole product, fictional closure template and unperformed shutdown preserved."
+    },
+    {
+      "id": "P18",
+      "path": "devto/plane-close-paused-project.md",
+      "edits": [
+        [
+          "Together, these reads show that being in Cancelled and being archived are different conditions.",
+          "The reads found cancelled work while the archived list remained empty."
+        ],
+        [
+          "Having history in an archive and being able to locate that history later deserve separate checks.",
+          "Check both that the history is preserved and that someone can find its location later."
+        ]
+      ],
+      "semantic_review": "All scope limits and counts retained; project search behavior supported by official docs; no actual archive restore service shutdown claimed."
+    },
+    {
+      "id": "O23",
+      "path": "public/repeatable-schedule-import.md",
+      "edits": [
+        [
+          "答えは、解析が成功することと、保存を何度実行しても同じ状態になることは別、というものです。",
+          "解析に成功しても、保存を再実行した結果まで同じとは限りません。"
+        ],
+        [
+          "ここで必要なのは「解析が不安定」という説明ではなく、解析の入力に基準日も含まれるという理解です。",
+          "結果を比べる際は、基準日も解析の入力に含めて考えます。"
+        ]
+      ],
+      "semantic_review": "Eight actual-code cases, year reference dates, duplicated input, form replacement, six/13/seven fault-injected mock rows, no D1/network test and unimplemented improvements retained."
+    },
+    {
+      "id": "O23",
+      "path": "devto/repeatable-schedule-import.md",
+      "edits": [
+        [
+          "The finding is that successful parsing and repeatable persistence are separate properties.",
+          "Successful parsing does not establish that repeated persistence produces the same state."
+        ],
+        [
+          "The issue is therefore not unexplained instability: the reference date is also an input to parsing.",
+          "Comparisons need to include the reference date as an input to parsing."
+        ]
+      ],
+      "semantic_review": "Full Japanese content retained including all eight boundaries and exact executable example; partial persistence is a substituted database observation, not a D1 failure measurement."
+    },
+    {
+      "id": "O24",
+      "path": "public/web-audio-reactive-dashboard.md",
+      "edits": [
+        [
+          "同じ倍率で動かしたい部分には、同じ尺度の値を渡す必要があります。",
+          "動きを同じ比率で変えたいときは、値の尺度も揃えます。"
+        ],
+        [
+          "これはBPM推定の検証ではありません。履歴と待機期間の単位が呼び出し回数であり、ミリ秒ではない点を確認しています。",
+          "この試験で確認したのは、履歴と待機期間がミリ秒ではなく呼び出し回数で決まる動作です。BPM推定は検証していません。"
+        ]
+      ],
+      "semantic_review": "Four actual offline browser cases and exact numerical results/settings retained; first frequency read and mock mode caveat; upper half unused in band sum; no mic/full app/FPS test."
+    },
+    {
+      "id": "O24",
+      "path": "devto/web-audio-reactive-dashboard.md",
+      "edits": [
+        [
+          "Elements intended to respond by the same ratio need values on the same scale.",
+          "To change movements by the same ratio, keep the input values on the same scale."
+        ],
+        [
+          "This was not a BPM estimation test. It checks behavior whose history and cooldown use call counts, not milliseconds.",
+          "The test checks a history and cooldown measured in calls rather than milliseconds. It does not validate BPM estimation."
+        ]
+      ],
+      "semantic_review": "All Japanese experiment tables, ranges, code and limitations retained; offline graph differs from application source, no subjective audio or performance claims added."
+    }
+  ]
+}

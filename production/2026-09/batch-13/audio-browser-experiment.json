@@ -1,0 +1,92 @@
+{
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "method": "OfflineAudioContext, synthetic sine, no audible destination or microphone access",
+  "cases": [
+    {
+      "sample_rate": 48000,
+      "input_frequency": 468.75,
+      "input_amplitude": 0,
+      "time_fft": 4096,
+      "frequency_fft": 2048,
+      "frequency_bins": 1024,
+      "rms": 0,
+      "peak": 0,
+      "peak_bin": null,
+      "peak_bin_hz": null,
+      "maximum_byte": 0,
+      "bands": {
+        "subBass": 0,
+        "bass": 0,
+        "lowMid": 0,
+        "mid": 0,
+        "highMid": 0,
+        "high": 0
+      }
+    },
+    {
+      "sample_rate": 48000,
+      "input_frequency": 468.75,
+      "input_amplitude": 0.25,
+      "time_fft": 4096,
+      "frequency_fft": 2048,
+      "frequency_bins": 1024,
+      "rms": 0.17677669283346986,
+      "peak": 0.25,
+      "peak_bin": 20,
+      "peak_bin_hz": 468.75,
+      "maximum_byte": 211,
+      "bands": {
+        "subBass": 0,
+        "bass": 0,
+        "lowMid": 0.12198879551820728,
+        "mid": 0,
+        "highMid": 0,
+        "high": 0
+      }
+    },
+    {
+      "sample_rate": 48000,
+      "input_frequency": 468.75,
+      "input_amplitude": 0.5,
+      "time_fft": 4096,
+      "frequency_fft": 2048,
+      "frequency_bins": 1024,
+      "rms": 0.3535533856669397,
+      "peak": 0.5,
+      "peak_bin": 20,
+      "peak_bin_hz": 468.75,
+      "maximum_byte": 232,
+      "bands": {
+        "subBass": 0,
+        "bass": 0,
+        "lowMid": 0.13725490196078433,
+        "mid": 0,
+        "highMid": 0,
+        "high": 0
+      }
+    },
+    {
+      "sample_rate": 44100,
+      "input_frequency": 468.75,
+      "input_amplitude": 0.5,
+      "time_fft": 4096,
+      "frequency_fft": 2048,
+      "frequency_bins": 1024,
+      "rms": 0.35359963047404647,
+      "peak": 0.5,
+      "peak_bin": 22,
+      "peak_bin_hz": 473.73046875,
+      "maximum_byte": 232,
+      "bands": {
+        "subBass": 0,
+        "bass": 0,
+        "lowMid": 0.14397759103641455,
+        "mid": 0,
+        "highMid": 0,
+        "high": 0
+      }
+    }
+  ],
+  "verified_on": "2026-09-11",
+  "checks": "silence; RMS against sine expectation; sample-rate peak bins; byte scaling differs from amplitude scaling; FFT dimensions"
+}

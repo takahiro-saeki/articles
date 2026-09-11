@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
+  "files": [
+    {
+      "id": "P04",
+      "path": "public/plane-status-by-deliverable.md",
+      "before_sha256": "e364533bff0e9b6283544de775ad7c4b5b212a49372e88fde2f81bca4146bd4b",
+      "after_sha256": "a5e1409ff39d1f48217f19863f81903923bf338658f48b88d088d64a83001570",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Three project lists, five groups, distinct IDs, SQN-30 started and document-only evidence retained; local classification is not Plane analytics; additions are proposals."
+    },
+    {
+      "id": "P04",
+      "path": "devto/plane-status-by-deliverable.md",
+      "before_sha256": "768dd0e5e6df3fadb952bff847cf5b60fa1e9187f3e831b8bfa1d27f02e1a3fb",
+      "after_sha256": "3f628cd4350ccbfc852daa15e285de1095629ed1132e5ce96e34bad399c1e1cb",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All sections and tables retain Japanese meaning; sampled projects are not a workspace-wide survey; classification experiment and proposed policy remain distinct."
+    },
+    {
+      "id": "P09",
+      "path": "public/plane-version-module.md",
+      "before_sha256": "e698c6564126b1f8876a7e0365f16561ff7ee488fc1fc322a8633ef479ec7e66",
+      "after_sha256": "efff11fbdc97d5aadeaff11149471453727c0c313a2971bf8d40e0f99d55264b",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Both module lists empty, fixed Git version fields versus unqueried remote artifacts, proposed record with nulls and not_run preserved."
+    },
+    {
+      "id": "P09",
+      "path": "devto/plane-version-module.md",
+      "before_sha256": "dd93fa703cabd84391b3a8f53000306ad13692f4567e6b8e7cd90a33b9db9c40",
+      "after_sha256": "fb18fe9e15b9bb7186f0c9f4fd4c0723fcec228f4590891e354f516027bd4724",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Full translation retains remote version caveat, hypothetical rebuild and deferral, all identifiers and source links; no live build or Module mutation claimed."
+    },
+    {
+      "id": "P16",
+      "path": "public/plane-work-item-acceptance-evidence.md",
+      "before_sha256": "e2afc9ace6b46cb86e81e24e33382227a9593a9f2597f2be9f13f9279d141749",
+      "after_sha256": "e84fbabc298eac5d107b74b8f1553c9fbe300c0e78b74b39e474926c927d3ab2",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Acceptance versus evidence, no repository reference in retrieved ticket, fixed document history and mobile unchecked, explicit stop point retained. No app rerun or ticket write."
+    },
+    {
+      "id": "P16",
+      "path": "devto/plane-work-item-acceptance-evidence.md",
+      "before_sha256": "fbdcf08a39a72fa47e68d113dcf0d6fbcceeab765de8f43700005b03a8a340cd",
+      "after_sha256": "100fae6a02a9406fe259a7f4e36f3f5e681400387550cc95458f06abaa60edba",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All Japanese sections and criterion/evidence rows retained, proposal not special Codex parser format, document observation not newly executed success."
+    },
+    {
+      "id": "P18",
+      "path": "public/plane-close-paused-project.md",
+      "before_sha256": "5cdff6f83449819acac65e039b70528dd0ab7e5c3da6c5a048769b2af6b9a658",
+      "after_sha256": "6c4b57bdcc08f209cf65c3df5cadd44885decda5870546dcf718b29f5a6b58ad",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "One cancellation, zero archived SQN work items, missing reason not filled, single work item not whole product, fictional closure template and unperformed shutdown preserved."
+    },
+    {
+      "id": "P18",
+      "path": "devto/plane-close-paused-project.md",
+      "before_sha256": "32f7efca6e5e9c15d826f6d6ccfffce04a9f166cbed7a32bb1c158cb96369381",
+      "after_sha256": "cce227ccf5210c5059f73d68a1eacfb35dda508880f403333d941dee0b9f9df0",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All scope limits and counts retained; project search behavior supported by official docs; no actual archive restore service shutdown claimed."
+    },
+    {
+      "id": "O23",
+      "path": "public/repeatable-schedule-import.md",
+      "before_sha256": "d540fa88200f4aeaf39dc9ccde0ff0960faceaba2203cb883c76b0afa014c28d",
+      "after_sha256": "0cfb1203a2f99c3ee6f9f4a5e0e221670b468d01c8a1ed53d0ed7e5ab70e7753",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Eight actual-code cases, year reference dates, duplicated input, form replacement, six/13/seven fault-injected mock rows, no D1/network test and unimplemented improvements retained."
+    },
+    {
+      "id": "O23",
+      "path": "devto/repeatable-schedule-import.md",
+      "before_sha256": "17dbea7719681db7d6be799dcf5dad6dff63fe77b079a81d895e6f7dbd7a2f9c",
+      "after_sha256": "41e154e62d993df80cc0ad2145cc944788174a5215e86cf34d40112de9e352fe",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Full Japanese content retained including all eight boundaries and exact executable example; partial persistence is a substituted database observation, not a D1 failure measurement."
+    },
+    {
+      "id": "O24",
+      "path": "public/web-audio-reactive-dashboard.md",
+      "before_sha256": "99551aaafe65e680d529f7f1b51c2ecbfadf0d1abe7ad5637db6db87423ca32b",
+      "after_sha256": "c89a64aba528658593b13e51ca59bcdbcd8ad8d87032a9edf11dc30a833e9ac9",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Four actual offline browser cases and exact numerical results/settings retained; first frequency read and mock mode caveat; upper half unused in band sum; no mic/full app/FPS test."
+    },
+    {
+      "id": "O24",
+      "path": "devto/web-audio-reactive-dashboard.md",
+      "before_sha256": "21e22655bc89b309f438ab675c692912a43f3f1d440c86969c1db9a015b46596",
+      "after_sha256": "23bd171cda32724812f93ff84c837cb57bb4c5c7d6254d35913c919d7509b8b2",
+      "prose_edits": 2,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All Japanese experiment tables, ranges, code and limitations retained; offline graph differs from application source, no subjective audio or performance claims added."
+    }
+  ]
+}

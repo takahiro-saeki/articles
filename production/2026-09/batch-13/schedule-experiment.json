@@ -1,0 +1,116 @@
+{
+  "node": "v24.15.0",
+  "time_zone": "Asia/Tokyo",
+  "commit": "a34608c611ded6549c1176a7977e68e1bc62a8db",
+  "checks": [
+    {
+      "name": "same input and baseDate are deterministic",
+      "observed": {
+        "schedules": [
+          {
+            "lineNumber": 1,
+            "source": "2026/9/12 19:00-21:00 A",
+            "date": "2026-09-12",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "location": "A",
+            "warnings": []
+          }
+        ],
+        "errors": [],
+        "nonEmptyLineCount": 1
+      }
+    },
+    {
+      "name": "duplicate lines are retained",
+      "observed": {
+        "schedules": 2,
+        "errors": 0
+      }
+    },
+    {
+      "name": "inferred year changes across reference dates",
+      "observed": [
+        "2026-09-10",
+        "2027-09-10"
+      ]
+    },
+    {
+      "name": "full-width text normalizes",
+      "observed": {
+        "schedules": [
+          {
+            "lineNumber": 1,
+            "source": "9月12日  18:30〜21:00 A",
+            "date": "2026-09-12",
+            "startTime": "18:30",
+            "endTime": "21:00",
+            "location": "A",
+            "warnings": [
+              "year_inferred"
+            ]
+          }
+        ],
+        "errors": [],
+        "nonEmptyLineCount": 1
+      }
+    },
+    {
+      "name": "invalid line and missing location stay distinguishable",
+      "observed": {
+        "schedules": [
+          {
+            "lineNumber": 3,
+            "source": "2026/9/13 10:00-11:00",
+            "date": "2026-09-13",
+            "startTime": "10:00",
+            "endTime": "11:00",
+            "location": "",
+            "warnings": [
+              "location_missing"
+            ]
+          }
+        ],
+        "errors": [
+          {
+            "source": "2026/2/30 10:00-11:00 A",
+            "lineNumber": 1,
+            "code": "invalid_date"
+          },
+          {
+            "source": "2026/9/12 21:00-19:00 B",
+            "lineNumber": 2,
+            "code": "invalid_time_range"
+          }
+        ],
+        "nonEmptyLineCount": 3
+      }
+    },
+    {
+      "name": "successful rows are capped at fifty",
+      "observed": {
+        "schedules": 50,
+        "errors": [
+          "limit_exceeded"
+        ]
+      }
+    },
+    {
+      "name": "actual web import handler replaces form rows",
+      "observed": {
+        "rows": 1,
+        "manual_row_preserved": false
+      }
+    },
+    {
+      "name": "actual createBulk loop with in-memory insert failure and retry",
+      "observed": {
+        "after_failure": 6,
+        "after_retry": 13,
+        "distinct_dates": 7,
+        "real_database": false,
+        "real_network": false
+      }
+    }
+  ]
+}

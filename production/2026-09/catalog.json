@@ -49,7 +49,7 @@
   },
   {
     "id": "P04",
-    "title": "複数プロジェクトでステータスを共通化しすぎて困った話",
+    "title": "Planeの「確認待ち」をどのグループへ置くか。3プロジェクトの状態を点検する",
     "original_title": "複数プロジェクトでステータスを共通化しすぎて困った話",
     "slug": "plane-status-by-deliverable",
     "angle": "Todo、進行中、確認待ち、公開待ちの設計",
@@ -58,10 +58,11 @@
     "japanese": "public/plane-status-by-deliverable.md",
     "english": "devto/plane-status-by-deliverable.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 13,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-13/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-13/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P05",
@@ -132,7 +133,7 @@
   },
   {
     "id": "P09",
-    "title": "Moduleをアプリのバージョン単位で使ってみた",
+    "title": "PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく",
     "original_title": "Moduleをアプリのバージョン単位で使ってみた",
     "slug": "plane-version-module",
     "angle": "TestFlight、Web、ゲーム公開をまとめる",
@@ -141,10 +142,11 @@
     "japanese": "public/plane-version-module.md",
     "english": "devto/plane-version-module.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 13,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-13/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-13/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P10",
@@ -247,7 +249,7 @@
   },
   {
     "id": "P16",
-    "title": "CodexからPlaneへタスクを起票するとき、本文に何を残すか",
+    "title": "Codexへ渡すPlaneの本文には、完了条件と確認結果を別々に残す",
     "original_title": "CodexからPlaneへタスクを起票するとき、本文に何を残すか",
     "slug": "plane-work-item-acceptance-evidence",
     "angle": "完了条件、根拠、対象リポジトリの書き方",
@@ -256,10 +258,11 @@
     "japanese": "public/plane-work-item-acceptance-evidence.md",
     "english": "devto/plane-work-item-acceptance-evidence.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 13,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-13/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-13/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P17",
@@ -279,7 +282,7 @@
   },
   {
     "id": "P18",
-    "title": "止めた個人開発をPlaneでどう閉じるか",
+    "title": "Planeで個人開発を止めるとき、CancelledとArchiveに何を残すか",
     "original_title": "止めた個人開発をPlaneでどう閉じるか",
     "slug": "plane-close-paused-project",
     "angle": "Cancel、Archive、Iceboxの使い分け",
@@ -288,10 +291,11 @@
     "japanese": "public/plane-close-paused-project.md",
     "english": "devto/plane-close-paused-project.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 13,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-13/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-13/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "P19",
@@ -1426,7 +1430,7 @@
   },
   {
     "id": "O23",
-    "title": "外部の日程データを取り込むとき、再実行可能にした設計",
+    "title": "日程の貼り付け取込を再実行すると何が起きるか。実コードで境界を調べる",
     "original_title": "外部の日程データを取り込むとき、再実行可能にした設計",
     "slug": "repeatable-schedule-import",
     "angle": "circle-hub-growth-07-schedule-import",
@@ -1435,14 +1439,15 @@
     "japanese": "public/repeatable-schedule-import.md",
     "english": "devto/repeatable-schedule-import.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 13,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-13/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-13/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O24",
-    "title": "Web Audio APIで音に反応するダッシュボードを作った",
+    "title": "Web Audioで画面を音に反応させる。RMSと周波数ビンを実コードで確かめる",
     "original_title": "Web Audio APIで音に反応するダッシュボードを作った",
     "slug": "web-audio-reactive-dashboard",
     "angle": "beautiful-dashboard-for-bga",
@@ -1451,10 +1456,11 @@
     "japanese": "public/web-audio-reactive-dashboard.md",
     "english": "devto/web-audio-reactive-dashboard.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 13,
+    "fact_check": "[一次資料・実験確認](production/2026-09/batch-13/review.md)",
+    "verification": "[本文・日英・Humanizer検証済み](production/2026-09/batch-13/review.md)・canonical未確定",
+    "status": "執筆中",
+    "canonical_status": "URL未確定"
   },
   {
     "id": "O25",

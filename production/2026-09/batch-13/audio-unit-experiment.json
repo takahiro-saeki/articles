@@ -1,0 +1,38 @@
+{
+  "node": "v24.15.0",
+  "commit": "6f69cac1fe792436fced3a5215633e850262db59",
+  "versions": {
+    "react": "19.2.4",
+    "vite": "7.3.1",
+    "typescript": "5.9.3"
+  },
+  "upper_bin_700_bands": {
+    "subBass": 0,
+    "bass": 0,
+    "lowMid": 0,
+    "mid": 0,
+    "highMid": 0,
+    "high": 0
+  },
+  "full_bytes_bands": {
+    "subBass": 1,
+    "bass": 1,
+    "lowMid": 1,
+    "mid": 1,
+    "highMid": 1,
+    "high": 1
+  },
+  "beat_first_spike": true,
+  "following_eight_calls": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "silence_rms": 0,
+  "empty_rms_is_nan": true
+}
