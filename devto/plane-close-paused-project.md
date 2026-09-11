@@ -7,13 +7,13 @@ canonical_url: null
 
 Hiding abandoned work from a list does not preserve why it was abandoned. In Plane, recording the cancellation decision separately from the archive operation keeps evidence available for a later reconsideration.
 
-I read cancelled work items in a personal workspace and SquadNote's archived work item list. The result established the cancellation of individual work, not the shutdown of an entire product. This article uses those observations to examine what a closure record should contain.
+The research inspected cancelled work items in a personal workspace and SquadNote's archived work item list. The result established the cancellation of individual work, not the shutdown of an entire product. This article uses those observations to examine what a closure record should contain.
 
 ## The cancellation reason could not be recovered from the state
 
-On September 11, 2026, I queried work items with `stateGroup = "cancelled"`. The response contained 1 item and no next page: SQN-22, "Find places to give a lightning talk or presentation about personal development." Its state was Cancelled.
+A query for work items with `stateGroup = "cancelled"` ran on September 11, 2026. The response contained 1 item and no next page: SQN-22, "Find places to give a lightning talk or presentation about personal development." Its state was Cancelled.
 
-The description contained Notion migration metadata and a note that the original page had no body. I found neither the current cancellation reason nor a condition for reconsideration. The migrated source state of todo does not establish when or why the work was cancelled.
+The description contained Notion migration metadata and a note that the original page had no body. Neither the current cancellation reason nor a condition for reconsideration was found. The migrated source state of todo does not establish when or why the work was cancelled.
 
 SquadNote's archived work item list contained 0 entries and no next page. The reads found cancelled work while the archived list remained empty.
 
@@ -34,7 +34,7 @@ Those distinctions support the following proposed decisions.
 
 This table is a proposal, not a record of actions performed. Changing unfinished, paused work to Done or Cancelled merely to hide it gives the closure a meaning that does not match the work.
 
-If an "Icebox" is desired, that name was absent from the SQN state list that I read. A custom state with that name would need a definition for retaining deferred candidates. It should not be presented as a built-in state already present in this project.
+If an "Icebox" is desired, that name was absent from the retrieved SQN state list. A custom state with that name would need a definition for retaining deferred candidates. It should not be presented as a built-in state already present in this project.
 
 ## Leave a brief decision record before closing the work
 
@@ -74,6 +74,6 @@ Preserve the project name and storage location in the closure record so it remai
 
 ## This review left the missing reason unresolved
 
-The reads established 1 cancelled item and 0 archived work items in SquadNote. I did not attempt archiving, restoring, or stopping related services. There is no result here demonstrating that those operations were completed in the inspected environment.
+The reads established 1 cancelled item and 0 archived work items in SquadNote. Archiving, restoring, and stopping related services were not attempted. There is no result here demonstrating that those operations were completed in the inspected environment.
 
 An immediate improvement for future cancellations is to record the reason and reconsideration condition before changing the state to Cancelled. Archiving can then be selected when the recorded decision should remain available but the work no longer belongs in everyday lists.

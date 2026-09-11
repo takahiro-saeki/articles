@@ -7,11 +7,11 @@ canonical_url: null
 
 Before adding a state called "Ready for verification" in Plane, decide whether the work is complete. If verification belongs to its acceptance criteria, changing the display name should still leave it in an unfinished group.
 
-I read the state configurations of three personal projects covering a game, a concert, and an app, then compared their names and groups. I found no record of a past incident caused by uniform states, so the article uses the retrieved configuration to examine how a verification state could be classified.
+The state configurations of three personal projects covering a game, a concert, and an app were compared by name and group. No record of a past incident caused by uniform states was found in this research, so the article uses the retrieved configuration to examine how a verification state could be classified.
 
 ## The three projects currently have the same configuration
 
-On September 11, 2026, I retrieved the States lists for DRG, RECITAL, and SQN in the personal workspace. Each response indicated that there was no next page. I compared the name, group, and default flag. This was not a survey of every project in the workspace.
+The States lists for DRG, RECITAL, and SQN in the personal workspace were retrieved on September 11, 2026. Each response indicated that there was no next page. The comparison covers the name, group, and default flag. It does not cover every project in the workspace.
 
 | Display name | group | Default state |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ On September 11, 2026, I retrieved the States lists for DRG, RECITAL, and SQN in
 
 Each project had 5 states with the combinations shown above. Their state IDs differed across projects, however. A Done ID retrieved from SQN is not an ID to reuse in an update to DRG.
 
-None of these three lists contained states named "Ready for verification" or "Ready to publish." The following configuration is a proposal. I did not change any project settings.
+None of these three lists contained states named "Ready for verification" or "Ready to publish." The following configuration is a proposal. No project settings were changed.
 
 ## Inspect the group before relying on the name
 
@@ -45,7 +45,7 @@ These are proposed operating rules. Plane does not require every publication que
 
 SQN-30 covers trial participant permissions, manual promotion, and ending trial membership. Its retrieved description requires consistent behavior across Web, iOS, and Android, and explicitly excludes production deployment. Its Plane state was In Progress.
 
-The [verification document at a fixed commit](https://github.com/takahiro-saeki/circle-hub/blob/0cda1e865ad80d1529197729d8d436e96d56edc7/docs/testing/sqn-30-trial-participant-checklist.md) contains completed Web checks and an unchecked mobile device verification item. For this article, I compared the document with the ticket; I did not rerun the app checks.
+The [verification document at a fixed commit](https://github.com/takahiro-saeki/circle-hub/blob/0cda1e865ad80d1529197729d8d436e96d56edc7/docs/testing/sqn-30-trial-participant-checklist.md) contains completed Web checks and an unchecked mobile device verification item. The research for this article compared the document with the ticket without rerunning the app checks.
 
 Under those criteria, a separate verification state could identify the outstanding mobile work. Waiting for production distribution would add a requirement that this work item does not contain.
 

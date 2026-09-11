@@ -76,3 +76,11 @@ O23は実コードの貼り付け経路と再実行を扱い、既存D1原子性
 - 公開抑止はQiita ignorePublish=true/id=null、dev.to published=false。予約表・既存公開記事・workflowは無変更。
 
 6組は本文検証済みとして進捗へ反映し、canonicalが解決するまで完成数へ加えない。
+
+## 2026-09-12: 全90組照合後の英語表現修正
+
+全体照合で、このバッチの英語6本に、今回の調査や実験を著者本人が行ったと読める一人称が残っていることを確認した。P04・P09・P16・P18・O23・O24の20箇所を、取得した記録や試験を主語にする表現へ直した。日本語の原稿、事実、数値、出典、コード、未確認範囲は変えていない。
+
+初回監査はhumanizer-audit-pass1.jsonへ保存し、追加の推敲と監査をhumanizer-followup-edits.json、humanizer-audit-pass2.jsonへ記録した。humanizer-audit.jsonは両段階をつないだ最終hashと計44箇所を持つ。初回のsnippet-verification.jsonは9月11日の24箇所の記録として保持する。
+
+[全体照合](../completion-audit/README.md)で、日英のコード・出典・節数の対応と、新しい最終hashを確認した。今回の変更は本文の主語に限るため、音声やDB代替層の実験をやり直した実績にはしていない。完成数とcanonical待ちの扱いは変わらない。

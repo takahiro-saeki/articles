@@ -7,7 +7,7 @@ canonical_url: null
 
 Successfully importing pasted schedules does not establish that repeating the input is safe. Parsing, applying results to a form, and retrying persistence can each produce different outcomes.
 
-I read SquadNote's implementation at a fixed commit and ran its parser, Web form application function, and persistence function locally. Successful parsing does not establish that repeated persistence produces the same state. In particular, omitted years and partial failures are not solved merely by removing duplicate lines.
+The research used SquadNote's implementation at a fixed commit and executed its parser, Web form application function, and persistence function locally. Successful parsing does not establish that repeated persistence produces the same state. In particular, omitted years and partial failures are not solved merely by removing duplicate lines.
 
 ## The inspected feature fills form fields from pasted text
 
@@ -57,7 +57,7 @@ Results matched when both the input and baseDate were held constant. Comparisons
 
 The `importParsedSchedules` function in the [Web form](https://github.com/takahiro-saeki/circle-hub/blob/a34608c611ded6549c1176a7977e68e1bc62a8db/apps/web/src/app/%28app%29/organizations/%5Bid%5D/schedules/new/page.tsx) passes an array built from the parsed schedules to `setRows`. It does not concatenate it with existing rows.
 
-I extracted the actual function and replaced only the state update destination with an in-memory array. After starting with a manually entered row and applying the same single parsed schedule twice, the final row count was 1. The manual row was no longer present.
+The test extracted the actual function and replaced only the state update destination with an in-memory array. After starting with a manually entered row and applying the same single parsed schedule twice, the final row count was 1. The manual row was no longer present.
 
 That result does not demonstrate deduplication of persisted schedules. It demonstrates replacement of form contents. Reanalyzing and applying the result after manually correcting a date can therefore discard that correction.
 
@@ -67,7 +67,7 @@ The retrieved UI code clears an old analysis result when the pasted text changes
 
 The `createBulk` function in the [persistence router](https://github.com/takahiro-saeki/circle-hub/blob/a34608c611ded6549c1176a7977e68e1bc62a8db/apps/web/src/server/api/routers/schedule.ts) assigns a new UUID to every row and inserts rows sequentially in chunks of 6. The inspected function has no import request identifier or branch that reconciles previously successful rows.
 
-I extracted that function body and replaced external dependencies, including authorization checks and database writes, with substitutes. The test submitted 7 rows, failed only the second insert, and then submitted the same 7 rows again.
+The test extracted that function body and replaced external dependencies, including authorization checks and database writes, with substitutes. The test submitted 7 rows, failed only the second insert, and then submitted the same 7 rows again.
 
 | Point in the test | Rows retained in memory | Distinct dates |
 | --- | ---: | ---: |

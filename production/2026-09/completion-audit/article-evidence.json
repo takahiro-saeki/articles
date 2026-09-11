@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "P01",
+    "title": "個人開発のPlane Projectを、作業ディレクトリではなくプロダクトで分ける",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 1,
+    "review": "production/2026-09/batch-01/review.md",
+    "review_row": "| P01 | 作業コピーではなく継続して保守するプロダクトへ所属させる | 個人Planeの全5 Projectをread-only取得。circle-hubの通知仕様、dungeon-rogueliteのREADMEとチケット文書、Git履歴を照合 | 全個人開発のPlane移行、生産性の改善量 |",
+    "files": [
+      {
+        "path": "articles/plane-project-boundaries.md",
+        "sha256": "300b461b7738bd506912d823c645a2d7219b0f66891587313f2f811773f95d94",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-project-boundaries.md",
+        "sha256": "7c15e7df1767a3a7cb86986d7c3467110f0f09ab029c279d8f52cd652510ecc6",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P03",
+    "title": "PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 1,
+    "review": "production/2026-09/batch-01/review.md",
+    "review_row": "| P03 | 成果物・期間・横断目的のどれを判断するかで整理単位を選ぶ | Plane公式Projects/Cycles/Modules/Initiatives、個人Workspaceの無効状態、SQNの非アーカイブModule/Cycle各0件 | Module/Cycle/Initiativeを使った運用効果。配置例は今後の設計案 |",
+    "files": [
+      {
+        "path": "articles/plane-project-module-cycle-initiative.md",
+        "sha256": "edeb96c88db4af086c077e8a12250c6ba9feced356e0f9e64fc25d227333cb54",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-project-module-cycle-initiative.md",
+        "sha256": "c1c73af2e89566bc9602cf008d19e94d1fbc8e1c7556817348c6dec7fa0719b2",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T28",
+    "title": "Push Tokenはユーザー単位では足りない。登録と解除を端末単位にする設計",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 1,
+    "review": "production/2026-09/batch-01/review.md",
+    "review_row": "| T28 | 複数端末では登録と解除の対象範囲も変える | circle-hub ad0a669efb92e595aaf8d09d597d42b7b9d569f2、0cda1e865ad80d1529197729d8d436e96d56edc7のschema、router、sender、DevicePushSession、仕様と既存テストを確認 | 本番D1性能、配信済み状態、実端末受信、receipt取得。実機チェック欄は未完了 |",
+    "files": [
+      {
+        "path": "articles/expo-push-token-device-ownership.md",
+        "sha256": "4f7abdb276f4eb40c8df8626f63009ade918deb9527037c06b4bf630857e880e",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-push-token-device-ownership.md",
+        "sha256": "835ebc2306b18dbb429eb2e0a22489bace10975bac6b077ec5c9bf594d51b66f",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O01",
+    "title": "38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 1,
+    "review": "production/2026-09/batch-01/review.md",
+    "review_row": "| O01 | 予定、日本語、英語、canonicalを一組で照合する | articles 8a1bfa8、予約38件と76原稿、Git履歴、GitHub workflow runsをread-only取得 | 09:00公開達成、読者反応の増加、全ページの現時点の表示 |",
+    "files": [
+      {
+        "path": "articles/publishing-38-day-audit.md",
+        "sha256": "d712fecc8fa4c18fa189dd32ecb7f381b7f2822f17b7b5a4651315b514b2240f",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/publishing-38-day-audit.md",
+        "sha256": "32871c3a88f61b3be110fbcc6ce352d24b5efd8710e6c473ad07f5ed8dda5b6b",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O03",
+    "title": "予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 1,
+    "review": "production/2026-09/batch-01/review.md",
+    "review_row": "| O03 | 保存済みIDによる更新と、受付後の応答消失を分ける | articles 8a1bfa8の実投稿スクリプトをVMで6ケース実行。ファイル/APIはモック | 実サービスでの重複事故、障害発生率、Zenn反映、実workflowの待機 |",
+    "files": [
+      {
+        "path": "articles/scheduled-publishing-recovery-boundary.md",
+        "sha256": "1de30a04ea9853d2ff7807b3271a9dd9daab8123d0cfe12da0025cf164d8d4c8",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/scheduled-publishing-recovery-boundary.md",
+        "sha256": "e4b0413b7b32a9497c63c3566e1d36feee19455c93232b19bad407bf4276a4f1",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O05",
+    "title": "Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 1,
+    "review": "production/2026-09/batch-01/review.md",
+    "review_row": "| O05 | 決定、実装、検証条件を同じGit時点で読み分ける | game-jam-lab f074703848586828b6a5acc0e465ccdd2c0d5244の制作計画、polish plan、RC監査とGit履歴 | ゲーム自動プレイの再実行。時間は既存監査からの引用。新形式の決定ログは提案 |",
+    "files": [
+      {
+        "path": "articles/repository-decision-log-evidence.md",
+        "sha256": "6b8218f257f20c985f4694caa945083950a117c5e8db6a6366d7d67470554a84",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/repository-decision-log-evidence.md",
+        "sha256": "ae1f0fd227db367bf4b1ac582bf66f011be3aa23696d2d5d4e64718533de3a73",
+        "creation_commit": "5a69493a28c9971e95243054cb95da68fef227ef",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P02",
+    "title": "PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見せる範囲から決める",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| P02 | Projectを分ける前に、そのWorkspaceの管理者へ見せてよいかを決める | Plane公式Workspace/Project/roles/Publishの4ページを照合 | 現行rolesと旧概要にロール名・参加と内容閲覧の説明差あり。差を本文へ明記。会社Workspaceへアクセスせず、権限別の実機確認も未実施 |",
+    "files": [
+      {
+        "path": "articles/plane-workspace-access-boundaries.md",
+        "sha256": "ed05518f53088ca48fe33180533d56f3a37214662278ccc51f2379f725b42028",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-workspace-access-boundaries.md",
+        "sha256": "36bae36dcc70e6be14beed8025b69a6f0e47362409143f35a1050fdb83177443",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T01",
+    "title": "Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| T01 | 集約Promiseが確定する条件を選び、同期throw・空入力・キャンセルとは分ける | B失敗→C成功→A成功、4メソッド、全入力の最終状態、空配列、同期throwをNodeでassert | 実通信、時間計測、キャンセル実装は対象外 |",
+    "files": [
+      {
+        "path": "public/promise-combinators-partial-failure.md",
+        "sha256": "7806328f8ab2c56e83c13c8d0e5b0104edc2a39fb6716e57d64243ecc5f50ffc",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/promise-combinators-partial-failure.md",
+        "sha256": "49da20cf16851f9c75f1a3ad128618d32fd1a9894c78eaac73117ae24b9ba158",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T20",
+    "title": "Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| T20 | UI操作の入口か、別の呼び出し元へ約束するHTTP仕様かで選ぶ | 実際のlinked-accountsのformとmorning-reminderのPOST。実関数に対する4ケース成功 | Next HTTPサーバー、Actionの通信、Cloudflare binding、通知送信は未検証。共有業務層は提案 |",
+    "files": [
+      {
+        "path": "articles/nextjs-actions-route-handlers-boundary.md",
+        "sha256": "c0d5f7dacc47d92ad32c2d00e564ab10edbae6c3b37ab5c46d93b2f90da10f32",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/nextjs-actions-route-handlers-boundary.md",
+        "sha256": "677db148b5a0865f541d60a4024f6160f35ad52abb8be6d490db72f5e7aec8c5",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T31",
+    "title": "AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| T31 | 対象ルートでInsetsを適用するコンポーネントを特定する | root/認証後/public layout、Header/BottomNavを追跡。既存静的テスト2件成功 | Fabric hotfixは依存とQA設定の変更でありpadding修正ではない。実機余白やクラッシュの再現は未実施 |",
+    "files": [
+      {
+        "path": "public/android-edge-to-edge-insets.md",
+        "sha256": "2de1400004307dc9e84df0f032b3e2b6661635b12c7676bb0ce5103aba26b2ba",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/android-edge-to-edge-insets.md",
+        "sha256": "6727ace03a1a9f88d63ff6621bf2f5a0609420e0d69680bcc960cf17584ecb59",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T36",
+    "title": "D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| T36 | 更新0件はSQL失敗にならず、成功したbatchの後でthrowしても取り消せない | D1ローカルproxyで4ケース。正常順序、重複IDによるrollback、changes 0/1、CHECK違反をassert | 合成スキーマ。行の不存在などCHECKだけで防げない条件を明記。本番・外部送信・並行要求は未検証 |",
+    "files": [
+      {
+        "path": "articles/d1-batch-atomicity-boundary.md",
+        "sha256": "0e53ae7892ffb22acb9cfa04dccbe6c1376672eeb84ee97f14cf4cc7e8ad7675",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/d1-batch-atomicity-boundary.md",
+        "sha256": "fe21af5e9934a9abda85b90ae0abcfc8ad8e87135d5985ee637c538cef6845a8",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T37",
+    "title": "D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| T37 | 同じSELECTで列順と検索計画を比べ、返る行も揃える | ローカルD1に10,000行。indexなし/等価先頭/範囲先頭。返るID10件と順序をassert | 時間・読取り課金・本番分布は測定していない。sqlite_version()は拒否され内部版不明 |",
+    "files": [
+      {
+        "path": "public/d1-composite-index-column-order.md",
+        "sha256": "70cf2b0c441fc22c746915e4b926e39af3e3719c8667bcb36bd89f215eb2b014",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/d1-composite-index-column-order.md",
+        "sha256": "c804180f3c6da99da04f293c0a2854c97bfec59aad087f04f91ba95d2a16a69d",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O07",
+    "title": "AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| O07 | 一つの条件を意図的に壊して、その反例をテストが検出するか見る | 固定コミットの実ルーター/libSQLテスト。元8成功、条件削除後7成功1失敗 | 故障は一時コピーのみ。HTTPは既存モック。対象差分のAI著作やユーザーの運用経験を推測しない |",
+    "files": [
+      {
+        "path": "articles/ai-code-review-invariants.md",
+        "sha256": "002aeac3d4f15872b5d7a2f5dd963dd0ede3cb34e1d06deb7fca5b8bfeb61bea",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/ai-code-review-invariants.md",
+        "sha256": "d3379fea7669d58764edb33b2b2c733183a7ce692210e0f8b01a8f2e41cdc796",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O10",
+    "title": "Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 2,
+    "review": "production/2026-09/batch-02/review.md",
+    "review_row": "| O10 | イベントの保存単位と、テスト・書き出しが対象にするゲームを揃える | 固定コミットのtreeとexport script。bash -n、実シェル＋Godotスタブで起動場所2種類とZIP直下4ファイルを確認 | Git追跡イベントは1件。共通コードはイベント内。ゲームの実exportはしていない。全イベントCI/共通SDKは未実装 |",
+    "files": [
+      {
+        "path": "articles/game-jam-repository-reuse.md",
+        "sha256": "5cf8cc0620266b5380d8ff7b4b6863519cf80948757434d534a56e213a7fd754",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/game-jam-repository-reuse.md",
+        "sha256": "b2cd18991bd4a8494a6ee05a1eb074e589ee76fc1288a57b24029430d97aac43",
+        "creation_commit": "dc0fccc504c205b4316ec0d9a9f99ee377d3c9c2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P14",
+    "title": "Plane PagesとWork Itemsのどちらに仕様を書くか",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 3,
+    "review": "production/2026-09/batch-03/review.md",
+    "review_row": "| P14 | 複数実装で使う共通ルールはPage、今回の完了条件はWork Itemに残す | 個人PlaneのSquadNote Project Pages 0件、SQN-29/30の説明、Gitの検証文書と追加履歴、Plane公式Pages | Pageは作成しておらず導入案。Web確認記録とモバイル未完了を区別。アプリを再テストしていない |",
+    "files": [
+      {
+        "path": "articles/plane-pages-work-item-boundary.md",
+        "sha256": "64c7ca2dd5588f9ce9a82af8a545f4033e9da44b989719fa33cbbb839e4dec74",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-pages-work-item-boundary.md",
+        "sha256": "cc663b1d109383ca5d3a81b13d883c79dd9fcf8fe25a5a7a4669df59906da7db",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P15",
+    "title": "GitHub IssueとPlaneを二重管理しないための境界",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 3,
+    "review": "production/2026-09/batch-03/review.md",
+    "review_row": "| P15 | 同じ欄の編集場所を先に決め、PR参照と状態変更も分ける | Plane公式の同期方向・参照形式と、GitHub公式のdefault branchでの終了キーワード条件 | 実環境の同期や競合、遅延は未検証。連携設定も変更していない |",
+    "files": [
+      {
+        "path": "articles/plane-github-issue-boundary.md",
+        "sha256": "4392ee919e82fee223cc6fef5a9ac97ae21428c707d3d2103607717344365d8e",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-github-issue-boundary.md",
+        "sha256": "7c04b0a342b3eedace671649ae2026aa03cfcb73307d008aaeb51d50411caf31",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O09",
+    "title": "AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 3,
+    "review": "production/2026-09/batch-03/review.md",
+    "review_row": "| O09 | 制作記の数字には、テストが実際に数えた単位と対象外を添える | 実カタログの6ステージと2ボスから720順序/1440ケースを再計算。監査GDScriptのメソッド呼出しと残項目を読む | Godot監査・人手通しプレイ・公開ページ確認は再実行していない。チャット全件やPDFの照合はしていない |",
+    "files": [
+      {
+        "path": "articles/devlog-primary-source-reconstruction.md",
+        "sha256": "1c44647d19bd2f504c322f3177bfa3c038836ca433961f7523e2c81a402a8ee8",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/devlog-primary-source-reconstruction.md",
+        "sha256": "ca26fe4db8cf5b751e28b8b1de41b30e65419830727f9b5c5ee05bf438aabbb9",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O12",
+    "title": "itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 3,
+    "review": "production/2026-09/batch-03/review.md",
+    "review_row": "| O12 | 提出説明を、ファイルの実体と端末確認の結果に合わせる | キット記載の6スクリーンショットと2coverをGitから読み、形式・寸法をヘッダー解析とfileで照合 | スクリーンショットは拡張子png/実体JPEG。アップロード失敗との因果は未確認。画像修正、実機プレイ、提出は未実施 |",
+    "files": [
+      {
+        "path": "articles/itch-submission-deliverables.md",
+        "sha256": "8e5a04125225f41bdd13744711515ebaf3714d1e14a6852e8c29a54d48c7318e",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/itch-submission-deliverables.md",
+        "sha256": "b28990777b4e8fe5c8dd8e4f4d706fe5eb6f9d19a3c6a53eb53e947f73ef6e84",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O17",
+    "title": "AI生成素材の出典、原本、採否をどう残したか",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 3,
+    "review": "production/2026-09/batch-03/review.md",
+    "review_row": "| O17 | 生成、判断、利用を分け、候補IDから原本と利用先をたどる | 30batch/107候補、ID重複0、原本欠落0。人の承認35/保留13/却下3/未確認56。未確認3件のpreload。採用例の原本/cutoutのハッシュ差 | 107枚の目視評価や再生成は未実施。未記録の承認を「誰も見ていない」としない。候補ごとの派生利用先構造は提案 |",
+    "files": [
+      {
+        "path": "articles/generated-asset-provenance-decisions.md",
+        "sha256": "e40f343c2de0b6c2d5a50884c7e0f773fa9bd21ee2d34d6e8e8928eb25e0c704",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/generated-asset-provenance-decisions.md",
+        "sha256": "28062e96cb6bbe8cd4eb55c52232b5988d46f53d582de37ac4b6549117531608",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O18",
+    "title": "ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 3,
+    "review": "production/2026-09/batch-03/review.md",
+    "review_row": "| O18 | workflow本体、モデル識別、環境、最後に確認できた処理段階を残す | 固定コードの既存34テスト、repo validator。実CLIにfake clientを入れ、待機なしでは記録あり、受付後timeoutでは記録なしをassert | GPU/ComfyUI実通信/モデル再取得/重みハッシュ/ピクセル一致は未検証。段階ごとの保存とモデル台帳の自動添付は未実装 |",
+    "files": [
+      {
+        "path": "articles/local-image-generation-reproducibility.md",
+        "sha256": "0dfe4ec3ab14c389ebbc88b4ff6a06b9cc32f8c2ad548be9a05a0a7576a0f3d4",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/local-image-generation-reproducibility.md",
+        "sha256": "fbdd5cb46a0cc7ee5f4e96d16d373b8caefb867297efd0262bd7e57cebc928c4",
+        "creation_commit": "b5360c389f1a0160357cebbdca53c6dd6a877e06",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T09",
+    "title": "ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 4,
+    "review": "production/2026-09/batch-04/review.md",
+    "review_row": "| T09 | ファイルのESM/CJS判定と、相手を読む方法を分けて確認する | Node v24.15.0の独立プロセス10ケース。type、拡張子、内側package、同期ESM require、TLA、dynamic import、相対拡張子、構文検出 | 現行資料v26.8.2は実行版と区別。bundler、TS変換、custom loader、構文検出の性能は未検証 |",
+    "files": [
+      {
+        "path": "articles/node-esm-commonjs-boundaries.md",
+        "sha256": "a82ad9ab673b57bc11cfc56c011c6f67dd97154da889a66a26e0fe25ca392378",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/node-esm-commonjs-boundaries.md",
+        "sha256": "c8f9ce6af303d5e0de7bf20962997248895f29f4e850cd2766e2383a92d407c9",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T39",
+    "title": "D1の深いOFFSETをカーソルへ変える。読取り行数と途中挿入を比較する",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 4,
+    "review": "production/2026-09/batch-04/review.md",
+    "review_row": "| T39 | 次ページ方式の移行では、返る配列と読み取る範囲を同時に比べる | ローカルD1の10万行、5位置で同じ20件をassert。rows_read、同じcovering index、各4 warmup+11計測、途中挿入によるOFFSETの重複 | 本番遅延・請求・普遍的な切替件数は示さない。カーソル準備は計測外。変更は先頭1件挿入のみ |",
+    "files": [
+      {
+        "path": "articles/d1-offset-cursor-pagination.md",
+        "sha256": "868632d2c641fde7f4805ac94bd326c533723f6c2583882fda8cfb5db433c410",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/d1-offset-cursor-pagination.md",
+        "sha256": "664da14fda1c454eec66fd320546e2e2d4ccc829d65c6aab268161aca666525d",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T40",
+    "title": "Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 4,
+    "review": "production/2026-09/batch-04/review.md",
+    "review_row": "| T40 | Object別保存へ移す前に、横断クエリと集約経路を棚卸しする | D1一つとSQLite-backed DO二つへ合成データを保存。同名再取得、新ID空、個別取得、明示した対象からの集約を8 assertionsで確認。生成EnvとcheckJs | リモート移行・性能・WebSocket・障害復旧・同時更新時の全体snapshotは未検証。D1 projectionは提案 |",
+    "files": [
+      {
+        "path": "articles/durable-objects-d1-coordination.md",
+        "sha256": "2a654d7fe468ee1afe1110b37ca22a965e6156128730ed988dc560f3b376b772",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/durable-objects-d1-coordination.md",
+        "sha256": "34a32e495934502f6897e38ecfbf5b61b4f2e96994af34835818447af71d6ecf",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T42",
+    "title": "Cron Triggers・Queues・Workflowsを、失敗した後にどこから再開するかで選ぶ",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 4,
+    "review": "production/2026-09/batch-04/review.md",
+    "review_row": "| T42 | 再開単位を時刻起動、メッセージ、処理ステップに分けて選ぶ | Cron/Queues/Workflowsの現行公式資料。UTC、at-least-once、個別ack/retryと自動ack、step再試行、イベント待ちを照合 | 構成は導入案。トリガー、consumer、DLQ、Workflowは作成・実行していない。導入試験も提案 |",
+    "files": [
+      {
+        "path": "articles/cloudflare-cron-queues-workflows.md",
+        "sha256": "e607449d677bf19b13c4e69b9046b84b30dee95bd20b2f227e06a6cf5e23dc14",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/cloudflare-cron-queues-workflows.md",
+        "sha256": "49d5ef282169142d362d13bc55daeba961e22862cbf9885e696a58fd7c899079",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T44",
+    "title": "Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 4,
+    "review": "production/2026-09/batch-04/review.md",
+    "review_row": "| T44 | 再送を同じ結果へ戻すには、キーの範囲・入力比較・原子的な結果保存が必要 | ローカルD1で6ケース。応答消失、入力相違、別actor、2同時miss、note制約失敗による全rollback、結果削除後の再作成 | 信頼済みactor引数、成功結果のみ保存。HTTP/auth/TTL自動削除は未実装。外部送信は対象外 |",
+    "files": [
+      {
+        "path": "articles/idempotency-key-result-storage.md",
+        "sha256": "dfb97719bd52273e7da73bac02fbb1ff32cac9f09834f5b11c6db67bc8ae0d8e",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/idempotency-key-result-storage.md",
+        "sha256": "d1084964eac45d56e97c322e246294e504517b24a9d8f716db2dbef78282bff1",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T45",
+    "title": "OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける",
+    "preparation": "B",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 4,
+    "review": "production/2026-09/batch-04/review.md",
+    "review_row": "| T45 | Outboxの意図保存と、送信先での重複排除を分けて検証する | ローカルD1とfake providerで4ケース。outbox制約失敗、commit後の配送、送信後中断の重複排除なし/あり | 例外による中断、プロセスkillや永続化再起動はなし。単一consumer。lease、retry運用、DLQ未実装 |",
+    "files": [
+      {
+        "path": "articles/outbox-database-notification-boundary.md",
+        "sha256": "dd94dd5d5ff84bdfd4a0a0516265c7ddafbdfb6d8a03a9a59768b0d31f6b10ba",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/outbox-database-notification-boundary.md",
+        "sha256": "be803d841c17c8808ea4f5f261623f2fb456929e92a74be653e9b02772189d28",
+        "creation_commit": "a91eb447d9ccd5dfadaa95d944104f865c4a00c4",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O13",
+    "title": "マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 5,
+    "review": "production/2026-09/batch-05/review.md",
+    "review_row": "| O13 | 入力対応は画面と一押しの意味を決めて確認する | 固定ソースの画面分岐、入力種別、共通binding履歴。元クラスと抽出したmotion関数をGodotで実行し、10イベント・再割当3観点を確認 | ブラウザ、タッチ由来mouseイベント、実gamepad接続、全画面の入力、操作感は未検証。追加順を捏造しない |",
+    "files": [
+      {
+        "path": "articles/game-input-support-sequence.md",
+        "sha256": "3d7171405f506dcee9037f8e67ce0d7df26ad8e6f629455d9c4a5ac46469e9a9",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/game-input-support-sequence.md",
+        "sha256": "b3c9d150866efa813196bc7b6d915b405cf0404a99762f8e2baecc005f2b6f48",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O15",
+    "title": "ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 5,
+    "review": "production/2026-09/batch-05/review.md",
+    "review_row": "| O15 | 採用記録を曲名からキー・実ファイルへ追い、数えた単位を残す | BGM18スロット/17異なるファイル、ジングル込み18、保管19。全ファイル存在、SHA-256、ffprobe。選択関数・loop指定を読む | 過去のSuno候補尺と採用理由は文書記録。今回は聴感、LUFS、シームレス接続、生成APIを確認していない |",
+    "files": [
+      {
+        "path": "articles/game-bgm-selection-log.md",
+        "sha256": "9f69037be2a41623e4e233601a65403253d07ba79852dc2fe5702a5e8937bb96",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/game-bgm-selection-log.md",
+        "sha256": "3a62495311f199b16df84bb172a94285333af3df29e6685a706a3a83434b3fc5",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O16",
+    "title": "63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 5,
+    "review": "production/2026-09/batch-05/review.md",
+    "review_row": "| O16 | 伝える順序を区間表へ置き、指定尺と完成動画を別に確かめる | V1/V2ソース、11区間の連続性、game表示予定51.5秒。区間関数の22assertions。Git内MP4の63.033333/60.000000秒とcodec等 | 映像を再レンダーしていない。全frame目視、聴き比べ、視聴効果、duration差の原因特定はなし |",
+    "files": [
+      {
+        "path": "articles/trailer-timeline-before-editing.md",
+        "sha256": "c4c9a8063298e8fe6230d317ac7b9269629fa2fbee60023adf55396543740809",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/trailer-timeline-before-editing.md",
+        "sha256": "838ea7720ed6fad1e0fa7478bc4d30e5ce3761a69a8a88af090cc47781c3209d",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O20",
+    "title": "複数端末Pushの移行は、旧版のログアウトが残る間は終わらない",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 5,
+    "review": "production/2026-09/batch-05/review.md",
+    "review_row": "| O20 | 旧server/旧logout/適用済みclient/再登録を分けて移行を確認する | 変更前後の実tRPCとin-memory libSQLで4組合せ。既存8件と合わせ12テスト成功 | clientのAPI選択を模したテスト。実端末、OTA配布・適用、Expo以降の配送はなし。仕様書の実機欄は未チェック |",
+    "files": [
+      {
+        "path": "articles/expo-multi-device-push-rollout.md",
+        "sha256": "3de081fa985f220cbdd108596b487aa756794f44019d6a5a813f2cd095e065e6",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-multi-device-push-rollout.md",
+        "sha256": "cc1bf61feecf49deaeaebb529d838e92f93dc37c25cff22f728da61927ce692c",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O21",
+    "title": "認証エラーのConfigurationを原因と決めつけず、復旧を確認する",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 5,
+    "review": "production/2026-09/batch-05/review.md",
+    "review_row": "| O21 | Configurationという表面の分類から原因を断定せず、再試行と診断を検証する | 固定source8ファイル47テスト。実Auth coreのPKCE欠落→302/Configuration/InvalidCheck、再開始S256。ガード・戻り先・診断分離・秘密非出力 | 実OAuthプロバイダ、本番ログ、実ブラウザはなし。開始fixtureは内部CSRF skipを使う。診断markerは認証根拠でない |",
+    "files": [
+      {
+        "path": "articles/auth-incident-recovery-evidence.md",
+        "sha256": "66325b385e3efa27170f104a674ebf402f5d41bca00c313f684174532c202f78",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/auth-incident-recovery-evidence.md",
+        "sha256": "604727ff2a27621934cf6ce4b29a2a977565f67dd6d68f37a4dd517730949d36",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O22",
+    "title": "ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 5,
+    "review": "production/2026-09/batch-05/review.md",
+    "review_row": "| O22 | 本人の識別と、回答一件の操作権を分け、明示してアカウントへ移す | 3ファイル15テスト。実乱数/hash、実routerをDB/通知mockで呼出し。失敗時・claim・公開情報の境界、Web保存を確認 | D1のSQL条件評価、複数process競合、SecureStore実機、XSS全体監査なし。名簿や別端末同期は将来機能 |",
+    "files": [
+      {
+        "path": "articles/guest-identity-without-placeholder-user.md",
+        "sha256": "b99f9bf342d9b955c4637ff8367ae2d9418d5f8b6c34f5256f4a879b72392dac",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/guest-identity-without-placeholder-user.md",
+        "sha256": "068dcbe1c4ccaafcdc6f962bd8297d21c2f5aae7ac9a5a5fd37a0d839500b197",
+        "creation_commit": "3956586fc1aa0dc3f61b5e137827fd2d77de95d5",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P08",
+    "title": "週末に終わらなかった作業を、CycleとリリースModuleでどう扱うか",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 6,
+    "review": "production/2026-09/batch-06/review.md",
+    "review_row": "| P08 | 週の終了、Devの受け入れ、配布の完了を別に判断する | Plane SQN-30の対象範囲とIn Progress、Cycle/Module各0件。固定Git文書のWeb確認済み・モバイル未完了。3時点の運用案を照合 | 実Cycle移動、Module作成、2週間の運用効果、今回の実機操作 |",
+    "files": [
+      {
+        "path": "articles/plane-cycle-release-module.md",
+        "sha256": "262b82ef04707226214b91b3f8da3631deb163fd288dad9297f9edeb84c21baf",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-cycle-release-module.md",
+        "sha256": "68df47c900c083ad8a05ec23b35fe00926b42871741259e2d92ec14306152a7c",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P10",
+    "title": "個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 6,
+    "review": "production/2026-09/batch-06/review.md",
+    "review_row": "| P10 | 全プロダクトを束ねる前に、共通の完了条件と管理先を決める | 全5Project、専用Initiatives無効。SquadNote/Voices Diaryの通知の対象と実装差 | 専用機能のUI・集計式、管理先不明のProject作成、実通知、効率向上 |",
+    "files": [
+      {
+        "path": "articles/plane-initiative-personal-products.md",
+        "sha256": "553b4b1c29c8b3c5d071792567a3b8fbc40f2e65b5898237036aa506b00e3d2d",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-initiative-personal-products.md",
+        "sha256": "a0b50fd13eecb153a2b634f5df031f03038c1b7a76bdf1083672a4b1d27b0c05",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P17",
+    "title": "CodexチャットのTODOをPlaneへ集約するとき、同じテーマを重複扱いしない",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 6,
+    "review": "production/2026-09/batch-06/review.md",
+    "review_row": "| P17 | 同じテーマのTODOを成果物・親子・対象版で照合する | SQN-14/27の親子、46/47/48の親・静止画・動画、説明欄の出典日付、Gitの制作履歴と後続公開準備 | 会話全文の自動抽出、重複チケットの削除/統合、公開完了の判定 |",
+    "files": [
+      {
+        "path": "articles/plane-codex-todo-consolidation.md",
+        "sha256": "fe9d14520da9d1b4b93aea46c905cd2bea8594640216b78022dc0fd091ceb6d9",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-codex-todo-consolidation.md",
+        "sha256": "6ff54d92742835c8969f7e06b54e4737fef4fe63aee1b2d18a7dcb25260a2eb6",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P19",
+    "title": "一人開発のEstimateは、残り日数より抱えている作業の偏りに使う",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 6,
+    "review": "production/2026-09/batch-06/review.md",
+    "review_row": "| P19 | ポイントは作業の偏りを読む材料にする。欠損と重複を先に確認する | 非アーカイブ52件、未完了22件148pt、In Progress6件すべて8pt。同じ3件の11/24pt比較。ローカル入力の欠損・0・尺度外・重複で4拒否 | 期間のthroughput、工数換算、親子の独立残作業量、現在値から過去の週を復元すること |",
+    "files": [
+      {
+        "path": "articles/plane-estimate-capacity-experiment.md",
+        "sha256": "c9a819656ff5d6a51905fbddfaef7d449c73692695e40c4c07152a715b43440f",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-estimate-capacity-experiment.md",
+        "sha256": "9f1748775bf4497a1db23956241649907979e06497258b18aefb190387fd8b29",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T14",
+    "title": "useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 6,
+    "review": "production/2026-09/batch-06/review.md",
+    "review_row": "| T14 | メモ化の採否は省ける再計算と更新コストで判断する | 実formatter、React production/Compilerなしで9ケース×9round。各20warmup後100同期更新。計算回数と全DOM文字列の一致 | paint、ユーザー入力からの遅延、実ユーザー規模、コピー実操作、Compiler有効時、スマホ性能 |",
+    "files": [
+      {
+        "path": "articles/react-memoization-cost.md",
+        "sha256": "12daaac677747f4f715cc187226ca193b7772d29ae8529dd3cbd9d56148b1047",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/react-memoization-cost.md",
+        "sha256": "cfd74e840f4ac9491bd82754c05ff4c1a67d0ada3a3d06df1de5b61e812cb658",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O19",
+    "title": "2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 6,
+    "review": "production/2026-09/batch-06/review.md",
+    "review_row": "| O19 | 2サービスの保守を配布経路と確認先で棚卸しする | 固定20資料のhash、preview internal/store差・本番API、appVersion/fingerprint差、通知と認証の変更 | 現在のストア版、配信済みのOTA、実機OAuth/通知、保守時間の増加率 |",
+    "files": [
+      {
+        "path": "articles/solo-web-ios-maintenance-scope.md",
+        "sha256": "977733a3cbe7bd5f605f35de7ecd4782d0c0f20e42c19416e7942d05a8ae7728",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/solo-web-ios-maintenance-scope.md",
+        "sha256": "7a0f5a00d0012a4a729c4428a724e9ef05c6bf5b53554d0ea226643f3febd860",
+        "creation_commit": "d9911bf83e008b9daea79a26a5273fa2a4abcd1f",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P20",
+    "title": "Plane Cloudとセルフホストを、復元時に引き受ける作業から比べる",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 7,
+    "review": "production/2026-09/batch-07/review.md",
+    "review_row": "| P20 | セルフホストの比較に復元結果の確認作業を入れる | 公式料金・Edition、固定Composeの13 service定義、未変更restore.shへ4条件を模擬入力 | Plane本体起動、実DB/添付/volume復元、CloudのSLA、保守時間・総費用 |",
+    "files": [
+      {
+        "path": "articles/plane-cloud-self-host-comparison.md",
+        "sha256": "4e19a98cbd6342ad165b16e3450e5ea6b337018bd437494f521e04879a187b87",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-cloud-self-host-comparison.md",
+        "sha256": "70682466f88c6a05c6175bf4f390fbd22629e39fb5d0e62e84b7fc5a5a282df4",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T18",
+    "title": "Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 7,
+    "review": "production/2026-09/batch-07/review.md",
+    "review_row": "| T18 | 初回と再取得を分け、境界位置・Transition・keyで残す画面を決める | production Reactの5条件で初回/更新中/解決後DOM、全条件の入力保持 | 実通信、サーバーstreaming、paint、ちらつき時間、実ユーザーのUX |",
+    "files": [
+      {
+        "path": "articles/suspense-boundary-fallback-experiment.md",
+        "sha256": "99c2e4e3343ddd024079d4f622d7573dab4058affc55007e68f4173b5a6012c5",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/suspense-boundary-fallback-experiment.md",
+        "sha256": "7be877f67ed8cca900f0f7e0526aaf957064baa554fcb9b598b78766c87dd787",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T19",
+    "title": "Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 7,
+    "review": "production/2026-09/batch-07/review.md",
+    "review_row": "| T19 | 境界数よりclient importへ入る依存を測る | 同じ画面の3構成、256行一致、2ボタン操作、初回JS/HTML非圧縮と個別gzip | lazy import後の全JS、実transfer size、hydration時間、入力遅延、CDN |",
+    "files": [
+      {
+        "path": "articles/rsc-client-boundary-bundle.md",
+        "sha256": "b5ab59c73a0660456fe05ddceeeae735ea51dbd086aee383c870783d107b57b2",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/rsc-client-boundary-bundle.md",
+        "sha256": "caa983185242290a1b5b6db425dd5693f497ea2f5dc545aa568bfc27d4662784",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T21",
+    "title": "Next.js 16のキャッシュを、レスポンスと取得回数で見分ける",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 7,
+    "review": "production/2026-09/batch-07/review.md",
+    "review_row": "| T21 | 値だけでなく取得元の回数と操作を記録して再利用を区別する | build中の取得、3 route各GET3回、HITヘッダー、browser戻る/refresh/新規Link | Cache Components有効時、TTL、再検証、分散キャッシュ、認証/POST/AbortSignal |",
+    "files": [
+      {
+        "path": "articles/nextjs-cache-response-experiment.md",
+        "sha256": "5d7655679dcb0dd920490027084ca0c35358aeb1771d2facf857ba27d2fc9eef",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/nextjs-cache-response-experiment.md",
+        "sha256": "52bb7d03c037e74c5d7ce82b79b10ca63f3e2a4a07db297f1f76dceee87199eb",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T34",
+    "title": "EAS Updateのerror recoveryは何を戻すか。iOSの復旧処理を7条件で確認する",
+    "preparation": "C",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 7,
+    "review": "production/2026-09/batch-07/review.md",
+    "review_row": "| T34 | データの巻き戻しと起動候補の選択を区別する | 公式とbyte一致するSwift本体をmacOSで7条件実行、taskログとdelegate呼出 | iOS実機、RN bridge、update DB選択、embeddedの選択、配信、本番復旧、10秒の監視解除実測 |",
+    "files": [
+      {
+        "path": "articles/eas-update-error-recovery-boundary.md",
+        "sha256": "958393ee0b4b133227830ec55936c90cd23f13f1071d43c1a7acdc3e67916a34",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/eas-update-error-recovery-boundary.md",
+        "sha256": "7606d503ceb6d64b807601a21980b242a240a42feccbcd7e8fe91936a77f665d",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O25",
+    "title": "VOLT NOMADのLT資料を5分へ絞る。制作工程より、残す判断を先に決める",
+    "preparation": "A",
+    "platform": "Zenn",
+    "status": "完成",
+    "batch": 7,
+    "review": "production/2026-09/batch-07/review.md",
+    "review_row": "| O25 | 聞き手に残す判断に沿って持ち時間を配る | 実在する9/10/11枚の資料、構成メモ、Gitの53件再計算、270+30秒の提案 | 実際に使った最終版、登壇の反応、読み上げ時間、AIの生産性向上の定量効果 |",
+    "files": [
+      {
+        "path": "articles/five-minute-game-development-talk.md",
+        "sha256": "e525cab8a2cf615e9cd03a309bd4f0026343584292c99a665deff5a8b2f44ac7",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/five-minute-game-development-talk.md",
+        "sha256": "9789ddc80e390c69fe4f9c6e023584b0dd0e27eb7c41627cf38a561e889b6ec2",
+        "creation_commit": "bfee37e7fa9a8e36a0a504d3d738a393ba08f8c6",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T02",
+    "title": "TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 8,
+    "review": "production/2026-09/batch-08/review.md",
+    "review_row": "| T02 | 設定値を検査して各プロパティの型を使うならsatisfies。型注釈・asと検出範囲は同一でない | 8 compilerケース。宣言出力、メンバー操作、必須キー欠落、literalの文脈、余分なキーを比較 | 外部データのruntime検査にはならない。診断番号は固定したcompilerの値 |",
+    "files": [
+      {
+        "path": "public/typescript-satisfies-annotation-assertion.md",
+        "sha256": "9c603ba59a33c8c409dec8e873b8c1e032c5e99ac43d4abf963c66010195f124",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/typescript-satisfies-annotation-assertion.md",
+        "sha256": "8af90faa694085a7bfe2a4e8c983b1eedb65e9cc687617581eaeb24c55054d15",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T04",
+    "title": "typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 8,
+    "review": "production/2026-09/batch-08/review.md",
+    "review_row": "| T04 | 宣言統合を拡張契約にするかを先に決める。競合はextendsとintersectionで診断箇所が違う | 7 compilerケース。interface統合、alias重複、競合、never、構造的代入 | 単一モジュール実験。実ライブラリのaugmentationや型検査速度は未検証 |",
+    "files": [
+      {
+        "path": "public/type-interface-declaration-merging.md",
+        "sha256": "6a5b26a0cabd6883b87d13cfa638d3c9447d6fee91314ce491346391326782c2",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/type-interface-declaration-merging.md",
+        "sha256": "c1b4fec421e855e9ba7d85b8c7321af0a28acc92d999e157c9a26c542eb3d753",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T05",
+    "title": "enumをliteral unionへ変える前に、生成されるJavaScriptを確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 8,
+    "review": "production/2026-09/batch-08/review.md",
+    "review_row": "| T05 | 型だけ必要か、実行時の名前付き値・逆引きも必要かを分ける | 7 compilerケース。enum出力、const enumのisolatedModules差、erasableSyntaxOnly、Node直接実行 | 同じファイル内の利用。ambient const enum、配布先version差、bundleサイズや速度は未測定 |",
+    "files": [
+      {
+        "path": "public/literal-union-enum-output.md",
+        "sha256": "adf4f3eba684af3acaac24dd01e2410792c90a6c74ba1ac7da518a268811b46c",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/literal-union-enum-output.md",
+        "sha256": "d4e9b0b4dd03b5e03a01464685bcdc4529d399236d2cc8b6b0762935eaeae57a",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T06",
+    "title": "import typeを省くと何が残るか。tscとesbuildで副作用まで比較する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 8,
+    "review": "production/2026-09/batch-08/review.md",
+    "review_row": "| T06 | importの型指定、依存先評価、型検査成功を分けて確認する | 8 import条件と型エラー対照1件。tscとesbuildの生成物・実行ログを比較 | ローカル2ファイル、sideEffects宣言なし。実アプリのbundleを測っていない |",
+    "files": [
+      {
+        "path": "public/import-type-bundler-output.md",
+        "sha256": "d4c23d564e3207c64f11dd895d23b393d21638a97a27a7ae797c73df4b4b407d",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/import-type-bundler-output.md",
+        "sha256": "9cc39828414b62b2682b72d7bc74f739e2cca117e2d1264920434d8db7076688",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T07",
+    "title": "structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 8,
+    "review": "production/2026-09/batch-08/review.md",
+    "review_row": "| T07 | コピー対象の型と、維持する参照関係を決める | 12入力とtransfer。値・型・所有キー・参照・記述子・例外をassert | 合成データ。JSONの独自replacer/reviver/toJSONなし。ブラウザオブジェクト、性能、メモリ量は未測定 |",
+    "files": [
+      {
+        "path": "public/structured-clone-json-data.md",
+        "sha256": "95dc99582fccde139da291afcef84a0a03274f838bb67e4a99b2a73d3961e050",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/structured-clone-json-data.md",
+        "sha256": "e954b1256891e2e9e17858804aec03ff0c77e67d4c70e6895484ad216740b034",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T08",
+    "title": "AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 8,
+    "review": "production/2026-09/batch-08/review.md",
+    "review_row": "| T08 | 中断に反応する処理側で待機解除と通常完了時の後始末まで実装する | 7条件。reason同一性、リスナー数、signalなし処理の完了、Nodeタイマーcauseをassert | 同一プロセスの協調的待機。CPUループの強制停止、サーバーのrollbackは未検証 |",
+    "files": [
+      {
+        "path": "public/abortcontroller-cancellable-tasks.md",
+        "sha256": "e715d608d505f8e0d60da56abf6ff7511f407845152740a9b669a9aaba6d4ee0",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/abortcontroller-cancellable-tasks.md",
+        "sha256": "e50166b1761a0e8c56b0a71a1a11ca70806f9f7086c9b024174da9084610e38b",
+        "creation_commit": "d75d8a366ccff2838bb56aa6d9c43a875a48fd83",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T11",
+    "title": "Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 9,
+    "review": "production/2026-09/batch-09/review.md",
+    "review_row": "| T11 | keyの問題は表示値と行の同一性を分けて調べる | 6条件。先頭削除後、index版のDOM・行stateは値がずれ、親state版は値が正しくてもnodeは別行から再利用された | 本番不具合の体験ではない。focus、IME、DatePickerは未測定。既存画面へのID追加は提案 |",
+    "files": [
+      {
+        "path": "public/react-index-key-input-reorder.md",
+        "sha256": "97d5c8b3edd40e049f473b0192a6619ed1ac513dde2b81ba84e8c3e00ceffa1a",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/react-index-key-input-reorder.md",
+        "sha256": "615940047b42589f98b3b834405286af9a83c4bb1c6a8f4f25636d1058ed7507",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T12",
+    "title": "Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 9,
+    "review": "production/2026-09/batch-09/review.md",
+    "review_row": "| T12 | setup回数だけでなく、cleanupと最後に残る購読を確認する | 5条件。開発root Strict Modeの正常版はsetup/cleanup/setup。cleanupなしは登録数2→3→3 | ローカルSetのhandler。実通信・決済・メール送信へ一般化しない |",
+    "files": [
+      {
+        "path": "public/strict-mode-effect-cleanup.md",
+        "sha256": "df4faf8849d96ffea6df1707b0babd280c36b730c59f664cb415453761a5f3a2",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/strict-mode-effect-cleanup.md",
+        "sha256": "d9c42fb1e823147081f4a2b5a077ef19b728a12ad61c877ebd02db9bf27aaad2",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T13",
+    "title": "controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 9,
+    "review": "production/2026-09/batch-09/review.md",
+    "review_row": "| T13 | controlledの選択とstate配置を分けて設計する | 9条件。10・100・500項目で親管理は全欄、個別stateは1欄、DOM保持は0欄の追加呼び出し。FormDataとresetも比較 | 固定した独立入力のリスト。呼び出し回数であり速度・FPS・メモリではない |",
+    "files": [
+      {
+        "path": "public/controlled-uncontrolled-form-experiment.md",
+        "sha256": "3e089e7958def4a1b8d8ad7845460cec4106500cfa20d0397506c1761343e032",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/controlled-uncontrolled-form-experiment.md",
+        "sha256": "8c7dd22f6e1be450c61e07c22e220e173028bcb5415bb7e47f006141e6a6b0a2",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T15",
+    "title": "useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 9,
+    "review": "production/2026-09/batch-09/review.md",
+    "review_row": "| T15 | 通知に加えてsnapshotの参照とSSR初期値を揃える | store比較1、hydration比較2。直接変更ではstore=1、DOM=0。新snapshotでは2。SSR初期値不一致は最終表示だけでは見落とす | tearing、streaming SSR、常に新snapshotを返すループは未実行 |",
+    "files": [
+      {
+        "path": "public/use-sync-external-store-ssr.md",
+        "sha256": "35674caef82c49ec047f59c683f434d64ebbf360cb7a614a67b75c46077ea086",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/use-sync-external-store-ssr.md",
+        "sha256": "6ce4e0914ac6bb072483549d2f8493a4637c7a0cde5f4d9ed6e9aa85b0ebc5c3",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T16",
+    "title": "Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 9,
+    "review": "production/2026-09/batch-09/review.md",
+    "review_row": "| T16 | DOM nodeとref callbackの同一性を別々に確認する | ブラウザー6条件、型3条件。同じnodeでも新callbackならcleanup/attach。Map・booleanの暗黙戻り値はTS2322 | observer数は実験側の登録記録。内部リソース量やstate更新ループは測定しない |",
+    "files": [
+      {
+        "path": "public/react-callback-ref-cleanup.md",
+        "sha256": "08596369c6f024417f47398974185d12fa2bd2af1fae54bbd00af86de885c196",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/react-callback-ref-cleanup.md",
+        "sha256": "6286572f8bdd5781f31ffc0bc5d478ddacd3446ef7a1befc7b0eec94a005aa3b",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T17",
+    "title": "useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 9,
+    "review": "production/2026-09/batch-09/review.md",
+    "review_row": "| T17 | Actionの結果と失敗時に残す入力をそれぞれ設計する | 9条件。invalidをreturnしてもinputはreset。入力を結果へ含める修正を確認。queueの次のpreviousと中間DOMも比較 | クライアント関数と手動Promise。Server Function、permalink、認証・永続化・通信時間は未検証 |",
+    "files": [
+      {
+        "path": "public/use-action-state-form-experiment.md",
+        "sha256": "01fbe471f7b1ebdb1026f11c7888609c8b42e3618a9e381f0746ced950d10633",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/use-action-state-form-experiment.md",
+        "sha256": "010aa66c1be2c2bcab7d3d58bb68a9a8cb791110ca4f74a32d2ed670299fce33",
+        "creation_commit": "597e7cf0dd1ef33084796da9038a1a291556ab08",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T10",
+    "title": "JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 10,
+    "review": "production/2026-09/batch-10/review.md",
+    "review_row": "| T10 | disposeを持つ値と解放されるスコープを確認する | 9条件。逆順の解放、return・throw、SuppressedErrorの連鎖、await using、一時ディレクトリ削除。掲載用の2例も別途実行 | 非同期fixtureの待機はPromise.resolve。実通信、別Node版、ブラウザー、強制終了は未検証 |",
+    "files": [
+      {
+        "path": "public/using-resource-disposal.md",
+        "sha256": "53a3f87cabd30603c5d51d62bb5df6b472a367f4df8043926277404b2848af0f",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/using-resource-disposal.md",
+        "sha256": "1a525dc6f05c2b961841b611b381c692d32a1a87495b34edd4236f72fe3a146c",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T22",
+    "title": "Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 10,
+    "review": "production/2026-09/batch-10/review.md",
+    "review_row": "| T22 | codemod後にmatcherの対象とruntimeを確認する | ファイル・関数名の変換、7 HTTP条件。Proxyへruntime指定を追加するとbuild exit 1 | 最小fixtureの変換。実認証、redirect、全URL、prefetch、クラウド移行ではない |",
+    "files": [
+      {
+        "path": "public/nextjs-middleware-proxy-migration.md",
+        "sha256": "689f2b5b8f2ab77bb57a4bd6f327a45768c72738a8870c84c04470484945e635",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/nextjs-middleware-proxy-migration.md",
+        "sha256": "f16f5886529e9662b7a276edfd3d179df4e36ecd5decccf237055891901b9827",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T23",
+    "title": "Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 10,
+    "review": "production/2026-09/batch-10/review.md",
+    "review_row": "| T23 | APIの互換性はbuild後のHTTP実行まで確認する | Web API、ファイルAPI、evalをNode/Edgeで比較。Edgeのevalはbuild exit 0、HTTP 500 | 現行版のEdge非推奨を明記。cold start、配置、速度、DB、他社Workersは比較しない |",
+    "files": [
+      {
+        "path": "public/nextjs-edge-node-runtime.md",
+        "sha256": "b3b9ae0d9839a5f4d4ac9b9d2a7db4835dc95cb2c04efd45b1cc9f533b744a22",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/nextjs-edge-node-runtime.md",
+        "sha256": "39bb59c2d3715fb911f1fb3df84d31e763c0f3de7d34b45823dad81df5631a8a",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T24",
+    "title": "NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 10,
+    "review": "production/2026-09/batch-10/review.md",
+    "review_row": "| T24 | 同じbuildを配るなら値が決まる時点と渡す場所を分ける | 同じBUILD_IDをB/Cで起動。静的server値はbuild時、動的server値は起動時。公開値と別名のliteralも照合 | 別名参照はこの版・ソースの観測。内部最適化の担当箇所は未特定。実行時設定APIは提案で未実装 |",
+    "files": [
+      {
+        "path": "public/next-public-build-runtime-env.md",
+        "sha256": "5ff0488bda610181e881361ec05735e18558fc2fdda7448be1cdf0a6392792d0",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/next-public-build-runtime-env.md",
+        "sha256": "f64d1b428995b9598e222720e68cf0f652186d849cf18498ca8d4a85ebeecfe7",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T25",
+    "title": "Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 10,
+    "review": "production/2026-09/batch-10/review.md",
+    "review_row": "| T25 | img属性・currentSrc・レスポンスを別々に確認する | 同じ合成PNG、CSS幅640。sizesなしは幅384、50vw指定は640を取得。lazy前後と本文byte数も記録 | DPR 1、viewport 1280×720のみ。写真の圧縮率、画質、LCP、CPU、CDNは未測定 |",
+    "files": [
+      {
+        "path": "public/next-image-html-network.md",
+        "sha256": "78961f991d6bffe409b5e20426c9c3e14388f262eb95fd2ad6c764070f1b6269",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/next-image-html-network.md",
+        "sha256": "2c4db6a6d8f38e881120d8a3577cc733fb8df40fb74c7aa41042ba62bfcedd40",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T38",
+    "title": "SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 10,
+    "review": "production/2026-09/batch-10/review.md",
+    "review_row": "| T38 | 外部キーの有効状態と子を探すindexを別々に確認する | 4条件。FKだけでは子indexなし。親DELETEの子側計画が明示indexでSCANからSEARCHへ変化 | ローカルSQLiteの合成データ。処理時間、リモートD1、ORM migrationは未検証 |",
+    "files": [
+      {
+        "path": "public/sqlite-foreign-key-child-index.md",
+        "sha256": "42507d5c01d9d29e17064e1389ef428f942d325f5e8d394631122007c58cd2ff",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/sqlite-foreign-key-child-index.md",
+        "sha256": "46127957005dfd797d745abe74f76ad10b44ea60de40ab78af696d40616541d5",
+        "creation_commit": "5692e286f4d7cf853ae751fe25ae76cb5baec7aa",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P05",
+    "title": "Planeのラベルを足す前に、状態と優先度で探せる作業を数える",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 11,
+    "review": "production/2026-09/batch-11/review.md",
+    "review_row": "| P05 | ラベル追加前に既存の状態・優先度で探せる範囲を確認する | SquadNoteのラベル一覧0件、Work Item 52件の全labelsが空。状態・優先度を集計し、固定Gitの技術構成と制作資料を読む | ラベルを減らした実体験ではない。kind:bug/contentは提案。検索時間や採用効果は未測定 |",
+    "files": [
+      {
+        "path": "public/plane-label-taxonomy.md",
+        "sha256": "76c777b3a119c884042f394eb7c2aacbf85d276bcf07f552e97d2acd6b9146db",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-label-taxonomy.md",
+        "sha256": "0b44b12233068bc888b20ef88e87f3d5a662000dc60f38829c2393475e54096d",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P06",
+    "title": "Planeの横断Viewが0件でも、今日の作業がないとは限らない",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 11,
+    "review": "production/2026-09/batch-11/review.md",
+    "review_row": "| P06 | 今日のViewと未設定の確認先を分ける | 未完了174、期限が今日以前15、担当者付きの期限集合0、未担当の期限集合15、期限なし56。実データ集計とローカル7境界入力 | View保存はしていない。currentUserはAPI実行者。日付変更時のタイムゾーンは未検証 |",
+    "files": [
+      {
+        "path": "public/plane-today-cross-project-view.md",
+        "sha256": "e8f9d7614c425e93c594c7504d82306127a53af7a0ac297f8603f2ea1be1f667",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-today-cross-project-view.md",
+        "sha256": "3d4fe00b75d1d7d534b72622786dfcde237b7ac4994179088c31c475807a031b",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P07",
+    "title": "PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 11,
+    "review": "production/2026-09/batch-11/review.md",
+    "review_row": "| P07 | 括弧とフィールド名を確認し、状態別に照合してから保存する | 括弧あり121、なし150、増加はCompleted29。INも121。state__groupの条件は拒否、stateGroupへ直すと12 | PQLの全構文の網羅ではない。View・ダッシュボード保存は未実施。未登録の待ち状態を推測しない |",
+    "files": [
+      {
+        "path": "public/plane-pql-personal-dashboard.md",
+        "sha256": "25999a852df5df8a3f387ad9f34588f944915e408c4fc2dfb3d861464da11630",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-pql-personal-dashboard.md",
+        "sha256": "125f3f8145ad680873f550af04f58cf03e53b6199442a55d3ec5977e0db2edcb",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P11",
+    "title": "Planeの定期作業は、次回の起票と前回の未完了を分けて管理する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 11,
+    "review": "production/2026-09/batch-11/review.md",
+    "review_row": "| P11 | 次回の起票と前回の未完了を別々に管理する | 公式の新規インスタンス・将来分への編集という仕様を確認。依存確認の5項目とv1/v2の台帳例を作る | 予定起票の実行0回。台帳は合成例で、Plane実行結果ではない。Business表示を明記 |",
+    "files": [
+      {
+        "path": "public/plane-recurring-maintenance.md",
+        "sha256": "6be25aa8621a221da207ef0b3d1bd2bbf5604dd12d189af3bd429713e58de31e",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-recurring-maintenance.md",
+        "sha256": "7dec5bc65aec28cac5dfae8be98ce45602a4eeca59691599b67d737e337dff89",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P12",
+    "title": "PlaneのIntakeを使う前に、受け入れ判断と作業の状態を分ける",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 11,
+    "review": "production/2026-09/batch-11/review.md",
+    "review_row": "| P12 | Intakeの受け入れ判断とProjectの作業状態を分ける | SquadNoteのintakes=false。公式の受付経路と4つのローカル判断例を確認 | 入力・判断・通知・Snoozeの操作なし。却下後の状態について公式2ページが不一致で、実挙動は未確認 |",
+    "files": [
+      {
+        "path": "public/plane-intake-before-backlog.md",
+        "sha256": "1d96d12859f6a9fc194dad94898ade947466682daa216ab2e2b83bfe747c5ce0",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-intake-before-backlog.md",
+        "sha256": "cc351c1fdce40953f5c2bedd9c9f5f3df6230ee7cba77834212b83cfa29204ba",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P13",
+    "title": "PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 11,
+    "review": "production/2026-09/batch-11/review.md",
+    "review_row": "| P13 | 共通の開始手順とProjectごとの値を分ける | 公式のProject Templateの範囲を確認し、3初期タスクを架空2Projectへ適用する設定案を点検 | Plane Project作成0件。テンプレート一覧は空応答で、登録0件とは判断しない。Business表示を明記 |",
+    "files": [
+      {
+        "path": "public/plane-project-template.md",
+        "sha256": "f7602d8e82fcd749a07844cb09cb59711a2d3d6005f0347fdbd8f740c45ebe4f",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-project-template.md",
+        "sha256": "71cd8a0683255a47975ff0e16e2dc72e4d7a2a5b150e1d88c35c712f0f828424",
+        "creation_commit": "6fe464919b7fba46d27395668d39d1e44b7f6964",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O02",
+    "title": "日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 12,
+    "review": "production/2026-09/batch-12/review.md",
+    "review_row": "| O02 | canonicalの確定元を媒体と入口ごとに区別する | 固定Gitの実スクリプトを6モック条件で実行。Qiita応答URLの伝達、失敗時の停止、単体入口の文字列nullを確認 | 実APIの受け入れ、ページ表示、SEO効果、投稿スクリプトの修正 |",
+    "files": [
+      {
+        "path": "public/bilingual-canonical-url-lifecycle.md",
+        "sha256": "5b21e709d6632cc20610621872ff61274522e2bb65532cdba2e4aedb3c1488e1",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/bilingual-canonical-url-lifecycle.md",
+        "sha256": "85956bd5db4e608e41392a0b7b8d10d2104451cfd483c57cdef0c31f153eb981",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O04",
+    "title": "記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 12,
+    "review": "production/2026-09/batch-12/review.md",
+    "review_row": "| O04 | 日英の組を、媒体別の公開枠へ割り当てて日数を出す | 6fe4649の68/41/27/22と136原稿を再集計。仮の4条件は41/20/0/1日。既存予約38行、9月11日以降0行 | 新規予約、投稿成功、記事の鮮度やシリーズ順、執筆速度 |",
+    "files": [
+      {
+        "path": "public/article-stock-coverage-days.md",
+        "sha256": "9b79c594e24bc055c7bac69cd13e65c18045e608247accc9798e3283691c999b",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/article-stock-coverage-days.md",
+        "sha256": "6ee96ce219ff731e2448fc2ea1a41c779ea63b8dd6949749289e64cc269eb106",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O06",
+    "title": "GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 12,
+    "review": "production/2026-09/batch-12/review.md",
+    "review_row": "| O06 | hookが拒否しない結果と、認証確認成功を区別する | インストール済みhookを無変更で6モック条件。読み取り専用チェックは一致だけexit 0、残りexit 1 | 実pushでの拒否試験、hook登録の確認、全表記の網羅、SSHの認証確認、hookの修正 |",
+    "files": [
+      {
+        "path": "public/personal-company-github-identity-guard.md",
+        "sha256": "1685a29869d2575f06df4ab06b4fd3ef46e46a9d6195bdd1c936c41d578e902d",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/personal-company-github-identity-guard.md",
+        "sha256": "bdf27f478865fc9011476dab1a9a1ec9ec59e9b89743a3798c8180baeef510aa",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O08",
+    "title": "Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 12,
+    "review": "production/2026-09/batch-12/review.md",
+    "review_row": "| O08 | 進捗件数を基準commitと根拠から復元して再開する | 実台帳から件数を復元。新しい引き継ぎ形式の例に根拠6ファイル。正常・版違い・誤件数・欠落・内容変化の5条件 | Codex別セッションでの完走、再開時間の短縮、外部ジョブの生存確認 |",
+    "files": [
+      {
+        "path": "public/long-task-repository-handoff.md",
+        "sha256": "5b3b90152faa7927ba389ee636b52aaca4423bf42568e6c77362d6b9ee030bbc",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/long-task-repository-handoff.md",
+        "sha256": "b10d2f7ec9f8daa8d70047d7de7552a78419a9d83fa87bb1a5db31b406f1f05a",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O11",
+    "title": "ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 12,
+    "review": "production/2026-09/batch-12/review.md",
+    "review_row": "| O11 | archiveの保存実体と現行の起動対象を別々に見る | 5198488のR100移動14件を前後とf074703でbyte照合。現行main.gdと古いルートREADMEのずれを確認 | 旧試作の再起動、PCKや配布サイズ、各案の不採用理由の推測 |",
+    "files": [
+      {
+        "path": "public/game-prototype-archive-decisions.md",
+        "sha256": "7d369cd57c8a279993d9a7659dd03efa37f9997194fdb275e688ae4a6ee32dd3",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/game-prototype-archive-decisions.md",
+        "sha256": "c3f9735318cb884b019da38d1db7dddc436ba6f0149a9074996cefb9a07be027",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "O14",
+    "title": "日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 12,
+    "review": "production/2026-09/batch-12/review.md",
+    "review_row": "| O14 | 校正表のイベント数だけで全文抽出を判定しない | Godot実データと33イベント・101会話行の全項目をイベントごとに照合。3必須値/重複変異、意味を変えない改行で100行になる抽出漏れを再現 | 全ゲームの起動、Web release export、全画面確認、翻訳の意味の自動判定、実ブラウザでのセーブ不変 |",
+    "files": [
+      {
+        "path": "public/bilingual-story-archive-qa.md",
+        "sha256": "dd66956373334f387112a3406ebc8589ff3413d68e6eecce697136bce80238ef",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/bilingual-story-archive-qa.md",
+        "sha256": "bddc0f04459a3ad1bc78cc719cadb2e27b3e22c2708759d17f4798555d3d7de9",
+        "creation_commit": "246b3c7bbb0e8266c79c81da1f37583a3f9c0026",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "P04",
+    "title": "Planeの「確認待ち」をどのグループへ置くか。3プロジェクトの状態を点検する",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 13,
+    "review": "production/2026-09/batch-13/review.md",
+    "review_row": "| P04 | 状態の表示名を付ける前に、完了条件とgroupを照合する | DRG・RECITAL・SQNは各5状態で組み合わせ一致、IDは15個すべて別。実在するSQN-30の範囲と固定文書。掲載分類例の正常・group変更 | 設定の変更、共通化で困ったという過去の体験、Plane画面の集計値や滞留時間 |",
+    "files": [
+      {
+        "path": "public/plane-status-by-deliverable.md",
+        "sha256": "a5e1409ff39d1f48217f19863f81903923bf338658f48b88d088d64a83001570",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-status-by-deliverable.md",
+        "sha256": "7c4ac70fede2339c9a2648f262a2e977ea797468358bb53e7a19117e3f849b96",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": false
+      }
+    ]
+  },
+  {
+    "id": "P09",
+    "title": "PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 13,
+    "review": "production/2026-09/batch-13/review.md",
+    "review_row": "| P09 | バージョン名のModuleと、確認した配布物の識別情報を分ける | SQNの通常・アーカイブModule各0。固定アプリ設定のversionとローカルビルド番号、EASのremote設定。提案JSONは未実行とnullを保持 | Module作成、EAS履歴・実配布物の番号、ストア提出、リリース成功 |",
+    "files": [
+      {
+        "path": "public/plane-version-module.md",
+        "sha256": "efff11fbdc97d5aadeaff11149471453727c0c313a2971bf8d40e0f99d55264b",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-version-module.md",
+        "sha256": "aa8cfb38d9530ae83687a8b9bae042d8f064093b2da45d148597352b9befaf23",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": false
+      }
+    ]
+  },
+  {
+    "id": "P16",
+    "title": "Codexへ渡すPlaneの本文には、完了条件と確認結果を別々に残す",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 13,
+    "review": "production/2026-09/batch-13/review.md",
+    "review_row": "| P16 | 受け入れ条件と結果を対応させ、固定根拠へ戻れる本文を作る | SQN-30の範囲・停止位置、本文にリポジトリ参照なし、Git文書のWeb記録とモバイル実機未チェック | チケット更新、記録されたアプリ検証の再実行、Doneへの変更 |",
+    "files": [
+      {
+        "path": "public/plane-work-item-acceptance-evidence.md",
+        "sha256": "e84fbabc298eac5d107b74b8f1553c9fbe300c0e78b74b39e474926c927d3ab2",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-work-item-acceptance-evidence.md",
+        "sha256": "4dedbde8a98722c9a684df4c57555854491ccea7de48c13ff72f5bacbc0bfe60",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": false
+      }
+    ]
+  },
+  {
+    "id": "P18",
+    "title": "Planeで個人開発を止めるとき、CancelledとArchiveに何を残すか",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 13,
+    "review": "production/2026-09/batch-13/review.md",
+    "review_row": "| P18 | 取りやめの判断とアーカイブを分け、理由を捏造しない | cancelledクエリはSQN-22の1件。理由は本文から不明、SQNのアーカイブ済みWork Itemは0。停止していない他の範囲まで推定しない | Archive・復元の実操作、プロジェクト全体の終了、サービスや予約処理の停止 |",
+    "files": [
+      {
+        "path": "public/plane-close-paused-project.md",
+        "sha256": "6c4b57bdcc08f209cf65c3df5cadd44885decda5870546dcf718b29f5a6b58ad",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/plane-close-paused-project.md",
+        "sha256": "90d74f7d96c41301a4766716cc314a7bf6780e8cead47243a87b741e3bebce3e",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": false
+      }
+    ]
+  },
+  {
+    "id": "O23",
+    "title": "日程の貼り付け取込を再実行すると何が起きるか。実コードで境界を調べる",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 13,
+    "review": "production/2026-09/batch-13/review.md",
+    "review_row": "| O23 | 解析、フォーム反映、保存の再試行で再実行の意味が違う | 実コードによる8ケース。年補完の変化、2重行の保持、フォーム置換、保存途中失敗の代替DBで6行→再試行後13行・日付7種 | 実D1、ネットワーク断、実アプリの再送、CSV同期、元コードへの修正 |",
+    "files": [
+      {
+        "path": "public/repeatable-schedule-import.md",
+        "sha256": "0cfb1203a2f99c3ee6f9f4a5e0e221670b468d01c8a1ed53d0ed7e5ab70e7753",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/repeatable-schedule-import.md",
+        "sha256": "8e9c003e01b76a5bfdc647ae7a36e7885d76e3e9c80d8cd7582d20f7cb58f478",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": false
+      }
+    ]
+  },
+  {
+    "id": "O24",
+    "title": "Web Audioで画面を音に反応させる。RMSと周波数ビンを実コードで確かめる",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 13,
+    "review": "production/2026-09/batch-13/review.md",
+    "review_row": "| O24 | RMS、peak、周波数バイトを同じ尺度の音量と呼ばない | 実解析関数と実ブラウザOfflineAudioContextの4ケース。RMS比、211→232、ビン20/22、帯域集計の上半分不使用、8回のビート抑制 | マイク許可、ファイル再生、入力切替、全アプリ起動、FPS・長時間負荷・BPM精度 |",
+    "files": [
+      {
+        "path": "public/web-audio-reactive-dashboard.md",
+        "sha256": "c89a64aba528658593b13e51ca59bcdbcd8ad8d87032a9edf11dc30a833e9ac9",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/web-audio-reactive-dashboard.md",
+        "sha256": "e9aa36bb2ae660a8c3441d8b7360221e839e85d90c67ceddb3f029403f53615d",
+        "creation_commit": "6b6632c96670ef62a349300869303649af202191",
+        "unchanged_from_creation": false
+      }
+    ]
+  },
+  {
+    "id": "T03",
+    "title": "unknownを付けるだけではAPI応答を検証できない。anyと型アサーションを比較する",
+    "preparation": "A",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 14,
+    "review": "production/2026-09/batch-14/review.md",
+    "review_row": "| T03 | unknownは利用前の検査を促す型で、JSONの形を実行時に調べるのは検査コード | any・unknown・asのコンパイル差、TypeError、実Push関数の代替依存による6応答、提案statusガード6入力 | 完全なExpo応答検証、実送信、実DB、元コードの修正 |",
+    "files": [
+      {
+        "path": "public/unknown-api-runtime-validation.md",
+        "sha256": "9d1f37680c261d2929f0e5dd5764fda19b725773c0e9e79413a4702fc32a31d5",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/unknown-api-runtime-validation.md",
+        "sha256": "37edf039a2f201b0dbafe0ddb2f93befd378be1dc49c5ec8aeb588429f26e3eb",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T26",
+    "title": "Expo SecureStoreとAsyncStorageを、秘密情報と復旧方法から使い分ける",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 14,
+    "review": "production/2026-09/batch-14/review.md",
+    "review_row": "| T26 | 保存時の機密性と、読めなくなったときの復旧を別々に決める | 現在の公式仕様と固定SDKの違い、実getTokenの例外伝播、提案ラッパーのvalue/missing/unavailable | ネイティブ暗号化、生体認証、移行、再インストール、容量の実測 |",
+    "files": [
+      {
+        "path": "public/expo-securestore-asyncstorage-boundary.md",
+        "sha256": "0571211a611b434d64a9f5949be42396dcbe51562503c1227896b202a1b46491",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-securestore-asyncstorage-boundary.md",
+        "sha256": "2d774b88959c004d74814c37d8394c0599008ede2d500cd1416c11dfdefcc2a0",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T27",
+    "title": "Expo Push Token・FCM Token・APNs Tokenは、送信先のAPIから区別する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 14,
+    "review": "production/2026-09/batch-14/review.md",
+    "review_row": "| T27 | トークンを受け付けるサービスと、取得APIを対応させる | Expo・FCM・APNsの公式経路、iOSのFirebase登録経路、固定クライアントとサーバー、宛先型3ケース | 実トークン取得、資格情報変更、送信・配送・端末表示 |",
+    "files": [
+      {
+        "path": "public/expo-fcm-apns-token-routing.md",
+        "sha256": "bdfc1be08bdbb76c5dfaca64d8832b8e44fc5af688e9474e1150d3c9d3c38964",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-fcm-apns-token-routing.md",
+        "sha256": "0a5e165044288af20d6f5bab6f2280e6bd50cdaa46185c3a44330808ca141a54",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T30",
+    "title": "Universal LinksのAASAは200だけでは足りない。開発版のappIDとパスを照合する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 14,
+    "review": "production/2026-09/batch-14/review.md",
+    "review_row": "| T30 | HTTP 200の後に、設定上のアプリ識別子と対象パスを照合する | 本番・開発AASAの匿名GET、両方125バイトで同一、開発ID欠落、固定設定評価、限定チェッカー10条件、掲載curlの実行 | 署名済みentitlements、Apple CDN、実機、swcutil、設定修正 |",
+    "files": [
+      {
+        "path": "public/universal-links-aasa-diagnostics.md",
+        "sha256": "bd7a2f98ea096e0c3ef1383fcf28631572ba93029a75b7ff206c40db30c55d0d",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/universal-links-aasa-diagnostics.md",
+        "sha256": "b502fc0d418ce138faffafb9a6dcbd0bca4bf56c05fda6815fafec05154a3af1",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T33",
+    "title": "EAS Build・Submit・Updateの違いを、成功後にできるものから確認する",
+    "preparation": "B",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 14,
+    "review": "production/2026-09/batch-14/review.md",
+    "review_row": "| T33 | Build・Submit・Updateの成功を、できたものとストアや端末の後続状態に分ける | 現在の公式仕様、固定scriptsとeas.json、アプリ設定の評価、掲載JSONの一致 | EASコマンド、ビルド・アップロード・更新配信、費用・時間・到達率 |",
+    "files": [
+      {
+        "path": "public/eas-build-submit-update-artifacts.md",
+        "sha256": "14c2eac0126e257e3975f164b6a55ba9faa860e704962cfb386374bf73dc05a6",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/eas-build-submit-update-artifacts.md",
+        "sha256": "5a0fd512e705d0f9f995ff8167d6075af51d07081ff819a7f93da2a3afb32fb0",
+        "creation_commit": "2799b01e7c2215113447f2dfd083dc1826dc3bc8",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T29",
+    "title": "Expo Routerの初期URLとurlイベントを、同じ到着待ちとして扱わない",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 15,
+    "review": "production/2026-09/batch-15/review.md",
+    "review_row": "| T29 | 初期URLの結果と、起動後のurlイベントを別に記録する | Router 6.0.24の実JSで同期iOS取得、Androidの取得・150 msタイマーの順序、reject、初期Promiseの再利用、別のruntimeイベント。ReleaseアプリのURLなし起動2回 | Androidの実時間計測、ネイティブのリンク配送、元アプリのURL取りこぼし |",
+    "files": [
+      {
+        "path": "public/expo-router-initial-url-timing.md",
+        "sha256": "bd6c981f582dbf744f6918cd5662fc784b40db95829f2ef3ef0edcdbb33a6653",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-router-initial-url-timing.md",
+        "sha256": "d814db95ba794fb1b77d1f38f7823d2107f9cb28522052f49e39c8a7d2401be6",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T32",
+    "title": "AppStateのinactiveとbackgroundを、同じ復帰イベントとして扱わない",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 15,
+    "review": "production/2026-09/batch-15/review.md",
+    "review_row": "| T32 | changeの状態とAndroidのfocus・blurを別に扱う | RN 0.81.5の実JSへ6条件を入力、nativeのOS別対応付け、実badge effectの代替API呼び出し。iOSで起動時inactiveとbackgroundを観測 | 完全な前面復帰の一巡、Android通知ドロワーの実機操作、実バッジ、重複処理制御の導入 |",
+    "files": [
+      {
+        "path": "public/expo-appstate-platform-events.md",
+        "sha256": "97cfc423b92b8e52fa71ec55daa7a89731c90670ceef1fb1524872b0b461eeae",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-appstate-platform-events.md",
+        "sha256": "adae94cdce2d5cea992e0ed5423798104599ceb0afcd604711d382ad10c76236",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T35",
+    "title": "SplashScreenを閉じる条件を、フォント読み込みから画面の準備完了へ広げる",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 15,
+    "review": "production/2026-09/batch-15/review.md",
+    "review_row": "| T35 | hideの条件に最初に表示する内容の準備を含める | iOS Releaseをビルドし、earlyとcoordinatedの2起動でfont/auth/layout/hideの順序を比較。preventの結果は両方true | 画面の目視・フレーム測定、白画面の時間、Android、元アプリへの修正適用 |",
+    "files": [
+      {
+        "path": "public/expo-splash-screen-startup-race.md",
+        "sha256": "021ad2c0527b5d45f343fd27a07f48fec3a986299c3d0fed31e31426ca6fabfd",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/expo-splash-screen-startup-race.md",
+        "sha256": "8cbececf50937186db5b1525b08ca8fa76fd4b7005efe83a35b42559c9ec799d",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T41",
+    "title": "WorkersのwaitUntilで202を返した後、失敗と完了はどこで確認するか",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 15,
+    "review": "production/2026-09/batch-15/review.md",
+    "review_row": "| T41 | 202と後続処理の成功を別々に観測する | local workerdでawaitとwaitUntil、独立した失敗、catchによる失敗記録、35秒の代替依存、掲載コードの実行 | Cloudflare本番の30秒制限再現、切断、Queue、実通知、記録の配送保証 |",
+    "files": [
+      {
+        "path": "public/workers-waituntil-failure-lifetime.md",
+        "sha256": "b8018e721f3504a37b957d8c293967ef8ed8776be3e91656048890a05f563164",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/workers-waituntil-failure-lifetime.md",
+        "sha256": "8db9b9d10f1997ea1d1206d4eb17916b609a3569d5481f17745e40f62f1dabf5",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      }
+    ]
+  },
+  {
+    "id": "T43",
+    "title": "Workersのキャッシュを消しても応答が変わらない。ブラウザ側の保存と分けて確認する",
+    "preparation": "C",
+    "platform": "Qiita",
+    "status": "執筆中",
+    "batch": 15,
+    "review": "production/2026-09/batch-15/review.md",
+    "review_row": "| T43 | 削除結果とともにWorker到達回数を見る | local workerdと実Chromiumの4保存条件、削除とreload、put/matchの3ヘッダー、CacheStorage、掲載コード | Cloudflareの各拠点、Tiered Cache、期限切れ、追い出し、実サービスの設定変更 |",
+    "files": [
+      {
+        "path": "public/cloudflare-cache-api-browser-cache.md",
+        "sha256": "5c5027f92240d0e82ece96a49b3cef6792b5ccfcd42c177a4f058677395540f2",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      },
+      {
+        "path": "devto/cloudflare-cache-api-browser-cache.md",
+        "sha256": "65d0c797fa0ca028ab0f3bab352fb587046e585e4cb28eb83bbc3d1df46cf79b",
+        "creation_commit": "52094e13ac85b657608badaacff73f9f35d099a2",
+        "unchanged_from_creation": true
+      }
+    ]
+  }
+]

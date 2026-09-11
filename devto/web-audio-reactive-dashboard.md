@@ -7,7 +7,7 @@ canonical_url: null
 
 An audio-reactive dashboard needs different values depending on whether an element should respond to overall signal amplitude or to a particular frequency range. Treating RMS and frequency bytes as interchangeable "volume" makes those movements difficult to tune.
 
-I read the analysis code in the personal project beautiful-dashboard-for-bga and tested it with synthetic audio. Doubling the input amplitude doubled RMS, while the maximum frequency byte changed from 211 to 232. To change movements by the same ratio, keep the input values on the same scale.
+The analysis code from the personal project beautiful-dashboard-for-bga was tested with synthetic audio. Doubling the input amplitude doubled RMS, while the maximum frequency byte changed from 211 to 232. To change movements by the same ratio, keep the input values on the same scale.
 
 ## First distinguish mock animation from input audio
 

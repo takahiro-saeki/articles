@@ -7,7 +7,7 @@ canonical_url: null
 
 "Use consistent permissions across Web, iOS, and Android" is an acceptance criterion. "Verified on Web; mobile device checks remain" is a result. Keeping these separate in a Plane description handed to Codex makes the required behavior and the remaining work distinguishable.
 
-I compared the actual SQN-30 description with a verification document in its repository. I did not create or update a ticket. The existing records provide a concrete example of what a work description needs when it is handed to an implementation agent.
+The actual SQN-30 description was compared with a verification document in its repository. No ticket was created or updated. The existing records provide a concrete example of what a work description needs when it is handed to an implementation agent.
 
 ## The description already defines scope and a stopping point
 
@@ -30,7 +30,7 @@ The retrieved description did not contain a repository URL or a reference to a f
 
 ## Match each criterion to the record that addresses it
 
-I read the [verification document at a fixed commit](https://github.com/takahiro-saeki/circle-hub/blob/0cda1e865ad80d1529197729d8d436e96d56edc7/docs/testing/sqn-30-trial-participant-checklist.md). Its addition appears in history at `12cbb78`; the version referenced here is `0cda1e8`. The existence of the history and the verification results recorded in the document are separate evidence.
+The inspected source is the [verification document at a fixed commit](https://github.com/takahiro-saeki/circle-hub/blob/0cda1e865ad80d1529197729d8d436e96d56edc7/docs/testing/sqn-30-trial-participant-checklist.md). Its addition appears in history at `12cbb78`; the version referenced here is `0cda1e8`. The existence of the history and the verification results recorded in the document are separate evidence.
 
 The document contains completed Web checks, while the mobile device verification item remains unchecked. The ticket was also In Progress when retrieved.
 
@@ -79,7 +79,7 @@ When results are added later, identify the target commit, environment, checks pe
 
 ## Make the same evidence reachable from the description
 
-[Plane's Work Item documentation](https://docs.plane.so/core-concepts/issues/overview) describes attaching external URLs through Links. One approach is to keep a brief result in the description and attach a fixed reference to detailed verification records. I did not add such a link during this research.
+[Plane's Work Item documentation](https://docs.plane.so/core-concepts/issues/overview) describes attaching external URLs through Links. One approach is to keep a brief result in the description and attach a fixed reference to detailed verification records. No such link was added during this research.
 
 A repository's home page alone does little to identify the verification target. In this case, the document path and commit identify the relevant record. If the starting commit and the tested commit differ, label their roles separately.
 

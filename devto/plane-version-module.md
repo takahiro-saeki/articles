@@ -11,7 +11,7 @@ If a Plane Module represents a release, use its name for the intended deliverabl
 
 ## Modules are not in use in this project yet
 
-On September 11, 2026, I read SquadNote's Module lists. Both the ordinary list and the archived list returned 0 entries with no next page. The structure in this article is a proposal. I did not create Modules, run builds, or submit anything to a store.
+SquadNote's Module lists were retrieved on September 11, 2026. Both the ordinary list and the archived list returned 0 entries with no next page. The structure in this article is a proposal. No Modules were created, builds run, or store submissions made.
 
 [Plane's Module documentation](https://docs.plane.so/core-concepts/modules) describes grouping work items around features or milestones and allows a work item to belong to multiple Modules. The same work can appear in both a feature Module and a release Module.
 
@@ -19,7 +19,7 @@ Module membership identifies planned scope. To establish which artifact was test
 
 ## Git contains several different version fields
 
-The example uses circle-hub at fixed commit `a34608c`. I read its [app configuration](https://github.com/takahiro-saeki/circle-hub/blob/a34608c611ded6549c1176a7977e68e1bc62a8db/apps/mobile/app.config.ts) and [EAS configuration](https://github.com/takahiro-saeki/circle-hub/blob/a34608c611ded6549c1176a7977e68e1bc62a8db/apps/mobile/eas.json). These values belong to that repository snapshot. This is not a table of the currently distributed app.
+The example uses circle-hub at fixed commit `a34608c`. The inspected sources were its [app configuration](https://github.com/takahiro-saeki/circle-hub/blob/a34608c611ded6549c1176a7977e68e1bc62a8db/apps/mobile/app.config.ts) and [EAS configuration](https://github.com/takahiro-saeki/circle-hub/blob/a34608c611ded6549c1176a7977e68e1bc62a8db/apps/mobile/eas.json). These values belong to that repository snapshot. This is not a table of the currently distributed app.
 
 | Field | Value found in Git | What it establishes |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ The example uses circle-hub at fixed commit `a34608c`. I read its [app configura
 
 [Expo's version management documentation](https://docs.expo.dev/build-reference/app-versions/) explains that the remote source manages build versions through EAS and does not update the local configuration when those versions increment. The 2 and 1 in this table therefore cannot be copied into a report as the latest submitted build numbers.
 
-I did not retrieve the EAS build history for this article. The distributed artifacts' numbers remain unverified. Finding a value in Git and identifying the external artifact that needs testing are separate steps.
+EAS build history was not retrieved for this article. The distributed artifacts' numbers remain unverified. Finding a value in Git and identifying the external artifact that needs testing are separate steps.
 
 ## Give the Module and the verification record different jobs
 
@@ -76,6 +76,6 @@ If Android is deferred to the next release, record the scope change and remainin
 
 ## What this review established
 
-The verified findings are that both Module lists were empty, that the fixed Git snapshot contained the listed configuration values, and that the official documentation describes remote version management. I did not test the UI after creating a Module, retrieve actual build numbers, or perform distribution checks.
+The verified findings are that both Module lists were empty, that the fixed Git snapshot contained the listed configuration values, and that the official documentation describes remote version management. The research did not include testing the UI after Module creation, retrieving actual build numbers, or checking distribution.
 
 The release report cannot be marked complete while its artifact fields remain unverified. An initial Module can instead separate the plan from the result, then require target identifiers to be checked when someone records verification.

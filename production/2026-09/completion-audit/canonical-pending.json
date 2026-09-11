@@ -1,0 +1,492 @@
+[
+  {
+    "id": "P04",
+    "title": "Planeの「確認待ち」をどのグループへ置くか。3プロジェクトの状態を点検する",
+    "slug": "plane-status-by-deliverable",
+    "japanese": "public/plane-status-by-deliverable.md",
+    "english": "devto/plane-status-by-deliverable.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-13/"
+  },
+  {
+    "id": "P05",
+    "title": "Planeのラベルを足す前に、状態と優先度で探せる作業を数える",
+    "slug": "plane-label-taxonomy",
+    "japanese": "public/plane-label-taxonomy.md",
+    "english": "devto/plane-label-taxonomy.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-11/"
+  },
+  {
+    "id": "P06",
+    "title": "Planeの横断Viewが0件でも、今日の作業がないとは限らない",
+    "slug": "plane-today-cross-project-view",
+    "japanese": "public/plane-today-cross-project-view.md",
+    "english": "devto/plane-today-cross-project-view.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-11/"
+  },
+  {
+    "id": "P07",
+    "title": "PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する",
+    "slug": "plane-pql-personal-dashboard",
+    "japanese": "public/plane-pql-personal-dashboard.md",
+    "english": "devto/plane-pql-personal-dashboard.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-11/"
+  },
+  {
+    "id": "P09",
+    "title": "PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく",
+    "slug": "plane-version-module",
+    "japanese": "public/plane-version-module.md",
+    "english": "devto/plane-version-module.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-13/"
+  },
+  {
+    "id": "P11",
+    "title": "Planeの定期作業は、次回の起票と前回の未完了を分けて管理する",
+    "slug": "plane-recurring-maintenance",
+    "japanese": "public/plane-recurring-maintenance.md",
+    "english": "devto/plane-recurring-maintenance.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-11/"
+  },
+  {
+    "id": "P12",
+    "title": "PlaneのIntakeを使う前に、受け入れ判断と作業の状態を分ける",
+    "slug": "plane-intake-before-backlog",
+    "japanese": "public/plane-intake-before-backlog.md",
+    "english": "devto/plane-intake-before-backlog.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-11/"
+  },
+  {
+    "id": "P13",
+    "title": "PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる",
+    "slug": "plane-project-template",
+    "japanese": "public/plane-project-template.md",
+    "english": "devto/plane-project-template.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-11/"
+  },
+  {
+    "id": "P16",
+    "title": "Codexへ渡すPlaneの本文には、完了条件と確認結果を別々に残す",
+    "slug": "plane-work-item-acceptance-evidence",
+    "japanese": "public/plane-work-item-acceptance-evidence.md",
+    "english": "devto/plane-work-item-acceptance-evidence.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-13/"
+  },
+  {
+    "id": "P18",
+    "title": "Planeで個人開発を止めるとき、CancelledとArchiveに何を残すか",
+    "slug": "plane-close-paused-project",
+    "japanese": "public/plane-close-paused-project.md",
+    "english": "devto/plane-close-paused-project.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-13/"
+  },
+  {
+    "id": "T01",
+    "title": "Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる",
+    "slug": "promise-combinators-partial-failure",
+    "japanese": "public/promise-combinators-partial-failure.md",
+    "english": "devto/promise-combinators-partial-failure.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-02/"
+  },
+  {
+    "id": "T02",
+    "title": "TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる",
+    "slug": "typescript-satisfies-annotation-assertion",
+    "japanese": "public/typescript-satisfies-annotation-assertion.md",
+    "english": "devto/typescript-satisfies-annotation-assertion.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-08/"
+  },
+  {
+    "id": "T03",
+    "title": "unknownを付けるだけではAPI応答を検証できない。anyと型アサーションを比較する",
+    "slug": "unknown-api-runtime-validation",
+    "japanese": "public/unknown-api-runtime-validation.md",
+    "english": "devto/unknown-api-runtime-validation.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-14/"
+  },
+  {
+    "id": "T04",
+    "title": "typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける",
+    "slug": "type-interface-declaration-merging",
+    "japanese": "public/type-interface-declaration-merging.md",
+    "english": "devto/type-interface-declaration-merging.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-08/"
+  },
+  {
+    "id": "T05",
+    "title": "enumをliteral unionへ変える前に、生成されるJavaScriptを確認する",
+    "slug": "literal-union-enum-output",
+    "japanese": "public/literal-union-enum-output.md",
+    "english": "devto/literal-union-enum-output.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-08/"
+  },
+  {
+    "id": "T06",
+    "title": "import typeを省くと何が残るか。tscとesbuildで副作用まで比較する",
+    "slug": "import-type-bundler-output",
+    "japanese": "public/import-type-bundler-output.md",
+    "english": "devto/import-type-bundler-output.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-08/"
+  },
+  {
+    "id": "T07",
+    "title": "structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる",
+    "slug": "structured-clone-json-data",
+    "japanese": "public/structured-clone-json-data.md",
+    "english": "devto/structured-clone-json-data.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-08/"
+  },
+  {
+    "id": "T08",
+    "title": "AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する",
+    "slug": "abortcontroller-cancellable-tasks",
+    "japanese": "public/abortcontroller-cancellable-tasks.md",
+    "english": "devto/abortcontroller-cancellable-tasks.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-08/"
+  },
+  {
+    "id": "T10",
+    "title": "JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する",
+    "slug": "using-resource-disposal",
+    "japanese": "public/using-resource-disposal.md",
+    "english": "devto/using-resource-disposal.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-10/"
+  },
+  {
+    "id": "T11",
+    "title": "Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する",
+    "slug": "react-index-key-input-reorder",
+    "japanese": "public/react-index-key-input-reorder.md",
+    "english": "devto/react-index-key-input-reorder.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-09/"
+  },
+  {
+    "id": "T12",
+    "title": "Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する",
+    "slug": "strict-mode-effect-cleanup",
+    "japanese": "public/strict-mode-effect-cleanup.md",
+    "english": "devto/strict-mode-effect-cleanup.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-09/"
+  },
+  {
+    "id": "T13",
+    "title": "controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する",
+    "slug": "controlled-uncontrolled-form-experiment",
+    "japanese": "public/controlled-uncontrolled-form-experiment.md",
+    "english": "devto/controlled-uncontrolled-form-experiment.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-09/"
+  },
+  {
+    "id": "T15",
+    "title": "useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する",
+    "slug": "use-sync-external-store-ssr",
+    "japanese": "public/use-sync-external-store-ssr.md",
+    "english": "devto/use-sync-external-store-ssr.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-09/"
+  },
+  {
+    "id": "T16",
+    "title": "Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる",
+    "slug": "react-callback-ref-cleanup",
+    "japanese": "public/react-callback-ref-cleanup.md",
+    "english": "devto/react-callback-ref-cleanup.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-09/"
+  },
+  {
+    "id": "T17",
+    "title": "useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する",
+    "slug": "use-action-state-form-experiment",
+    "japanese": "public/use-action-state-form-experiment.md",
+    "english": "devto/use-action-state-form-experiment.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-09/"
+  },
+  {
+    "id": "T22",
+    "title": "Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する",
+    "slug": "nextjs-middleware-proxy-migration",
+    "japanese": "public/nextjs-middleware-proxy-migration.md",
+    "english": "devto/nextjs-middleware-proxy-migration.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-10/"
+  },
+  {
+    "id": "T23",
+    "title": "Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する",
+    "slug": "nextjs-edge-node-runtime",
+    "japanese": "public/nextjs-edge-node-runtime.md",
+    "english": "devto/nextjs-edge-node-runtime.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-10/"
+  },
+  {
+    "id": "T24",
+    "title": "NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する",
+    "slug": "next-public-build-runtime-env",
+    "japanese": "public/next-public-build-runtime-env.md",
+    "english": "devto/next-public-build-runtime-env.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-10/"
+  },
+  {
+    "id": "T25",
+    "title": "Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる",
+    "slug": "next-image-html-network",
+    "japanese": "public/next-image-html-network.md",
+    "english": "devto/next-image-html-network.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-10/"
+  },
+  {
+    "id": "T26",
+    "title": "Expo SecureStoreとAsyncStorageを、秘密情報と復旧方法から使い分ける",
+    "slug": "expo-securestore-asyncstorage-boundary",
+    "japanese": "public/expo-securestore-asyncstorage-boundary.md",
+    "english": "devto/expo-securestore-asyncstorage-boundary.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-14/"
+  },
+  {
+    "id": "T27",
+    "title": "Expo Push Token・FCM Token・APNs Tokenは、送信先のAPIから区別する",
+    "slug": "expo-fcm-apns-token-routing",
+    "japanese": "public/expo-fcm-apns-token-routing.md",
+    "english": "devto/expo-fcm-apns-token-routing.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-14/"
+  },
+  {
+    "id": "T29",
+    "title": "Expo Routerの初期URLとurlイベントを、同じ到着待ちとして扱わない",
+    "slug": "expo-router-initial-url-timing",
+    "japanese": "public/expo-router-initial-url-timing.md",
+    "english": "devto/expo-router-initial-url-timing.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-15/"
+  },
+  {
+    "id": "T30",
+    "title": "Universal LinksのAASAは200だけでは足りない。開発版のappIDとパスを照合する",
+    "slug": "universal-links-aasa-diagnostics",
+    "japanese": "public/universal-links-aasa-diagnostics.md",
+    "english": "devto/universal-links-aasa-diagnostics.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-14/"
+  },
+  {
+    "id": "T31",
+    "title": "AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる",
+    "slug": "android-edge-to-edge-insets",
+    "japanese": "public/android-edge-to-edge-insets.md",
+    "english": "devto/android-edge-to-edge-insets.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-02/"
+  },
+  {
+    "id": "T32",
+    "title": "AppStateのinactiveとbackgroundを、同じ復帰イベントとして扱わない",
+    "slug": "expo-appstate-platform-events",
+    "japanese": "public/expo-appstate-platform-events.md",
+    "english": "devto/expo-appstate-platform-events.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-15/"
+  },
+  {
+    "id": "T33",
+    "title": "EAS Build・Submit・Updateの違いを、成功後にできるものから確認する",
+    "slug": "eas-build-submit-update-artifacts",
+    "japanese": "public/eas-build-submit-update-artifacts.md",
+    "english": "devto/eas-build-submit-update-artifacts.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-14/"
+  },
+  {
+    "id": "T35",
+    "title": "SplashScreenを閉じる条件を、フォント読み込みから画面の準備完了へ広げる",
+    "slug": "expo-splash-screen-startup-race",
+    "japanese": "public/expo-splash-screen-startup-race.md",
+    "english": "devto/expo-splash-screen-startup-race.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-15/"
+  },
+  {
+    "id": "T37",
+    "title": "D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた",
+    "slug": "d1-composite-index-column-order",
+    "japanese": "public/d1-composite-index-column-order.md",
+    "english": "devto/d1-composite-index-column-order.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-02/"
+  },
+  {
+    "id": "T38",
+    "title": "SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する",
+    "slug": "sqlite-foreign-key-child-index",
+    "japanese": "public/sqlite-foreign-key-child-index.md",
+    "english": "devto/sqlite-foreign-key-child-index.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-10/"
+  },
+  {
+    "id": "T41",
+    "title": "WorkersのwaitUntilで202を返した後、失敗と完了はどこで確認するか",
+    "slug": "workers-waituntil-failure-lifetime",
+    "japanese": "public/workers-waituntil-failure-lifetime.md",
+    "english": "devto/workers-waituntil-failure-lifetime.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-15/"
+  },
+  {
+    "id": "T43",
+    "title": "Workersのキャッシュを消しても応答が変わらない。ブラウザ側の保存と分けて確認する",
+    "slug": "cloudflare-cache-api-browser-cache",
+    "japanese": "public/cloudflare-cache-api-browser-cache.md",
+    "english": "devto/cloudflare-cache-api-browser-cache.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-15/"
+  },
+  {
+    "id": "O02",
+    "title": "日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う",
+    "slug": "bilingual-canonical-url-lifecycle",
+    "japanese": "public/bilingual-canonical-url-lifecycle.md",
+    "english": "devto/bilingual-canonical-url-lifecycle.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-12/"
+  },
+  {
+    "id": "O04",
+    "title": "記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える",
+    "slug": "article-stock-coverage-days",
+    "japanese": "public/article-stock-coverage-days.md",
+    "english": "devto/article-stock-coverage-days.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-12/"
+  },
+  {
+    "id": "O06",
+    "title": "GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける",
+    "slug": "personal-company-github-identity-guard",
+    "japanese": "public/personal-company-github-identity-guard.md",
+    "english": "devto/personal-company-github-identity-guard.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-12/"
+  },
+  {
+    "id": "O08",
+    "title": "Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す",
+    "slug": "long-task-repository-handoff",
+    "japanese": "public/long-task-repository-handoff.md",
+    "english": "devto/long-task-repository-handoff.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-12/"
+  },
+  {
+    "id": "O11",
+    "title": "ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する",
+    "slug": "game-prototype-archive-decisions",
+    "japanese": "public/game-prototype-archive-decisions.md",
+    "english": "devto/game-prototype-archive-decisions.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-12/"
+  },
+  {
+    "id": "O14",
+    "title": "日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける",
+    "slug": "bilingual-story-archive-qa",
+    "japanese": "public/bilingual-story-archive-qa.md",
+    "english": "devto/bilingual-story-archive-qa.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-12/"
+  },
+  {
+    "id": "O23",
+    "title": "日程の貼り付け取込を再実行すると何が起きるか。実コードで境界を調べる",
+    "slug": "repeatable-schedule-import",
+    "japanese": "public/repeatable-schedule-import.md",
+    "english": "devto/repeatable-schedule-import.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-13/"
+  },
+  {
+    "id": "O24",
+    "title": "Web Audioで画面を音に反応させる。RMSと周波数ビンを実コードで確かめる",
+    "slug": "web-audio-reactive-dashboard",
+    "japanese": "public/web-audio-reactive-dashboard.md",
+    "english": "devto/web-audio-reactive-dashboard.md",
+    "canonical_url": null,
+    "state": "本文検証済み・公開予定URL未確定",
+    "evidence": "production/2026-09/batch-13/"
+  }
+]

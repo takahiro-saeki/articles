@@ -1,5 +1,5 @@
 {
-  "reviewed_on": "2026-09-12",
+  "reviewed_on": "2026-09-11",
   "skill": "/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md",
   "files": [
     {
@@ -15,10 +15,10 @@
       "id": "P04",
       "path": "devto/plane-status-by-deliverable.md",
       "before_sha256": "768dd0e5e6df3fadb952bff847cf5b60fa1e9187f3e831b8bfa1d27f02e1a3fb",
-      "after_sha256": "7c4ac70fede2339c9a2648f262a2e977ea797468358bb53e7a19117e3f849b96",
-      "prose_edits": 6,
+      "after_sha256": "3f628cd4350ccbfc852daa15e285de1095629ed1132e5ce96e34bad399c1e1cb",
+      "prose_edits": 2,
       "frontmatter_code_links_numeric_tokens_unchanged": true,
-      "semantic_review": "All sections and tables retain Japanese meaning; sampled projects are not a workspace-wide survey; classification experiment and proposed policy remain distinct. Follow-up 2026-09-12: Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+      "semantic_review": "All sections and tables retain Japanese meaning; sampled projects are not a workspace-wide survey; classification experiment and proposed policy remain distinct."
     },
     {
       "id": "P09",
@@ -33,10 +33,10 @@
       "id": "P09",
       "path": "devto/plane-version-module.md",
       "before_sha256": "dd93fa703cabd84391b3a8f53000306ad13692f4567e6b8e7cd90a33b9db9c40",
-      "after_sha256": "aa8cfb38d9530ae83687a8b9bae042d8f064093b2da45d148597352b9befaf23",
-      "prose_edits": 6,
+      "after_sha256": "fb18fe9e15b9bb7186f0c9f4fd4c0723fcec228f4590891e354f516027bd4724",
+      "prose_edits": 2,
       "frontmatter_code_links_numeric_tokens_unchanged": true,
-      "semantic_review": "Full translation retains remote version caveat, hypothetical rebuild and deferral, all identifiers and source links; no live build or Module mutation claimed. Follow-up 2026-09-12: Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+      "semantic_review": "Full translation retains remote version caveat, hypothetical rebuild and deferral, all identifiers and source links; no live build or Module mutation claimed."
     },
     {
       "id": "P16",
@@ -51,10 +51,10 @@
       "id": "P16",
       "path": "devto/plane-work-item-acceptance-evidence.md",
       "before_sha256": "fbdcf08a39a72fa47e68d113dcf0d6fbcceeab765de8f43700005b03a8a340cd",
-      "after_sha256": "4dedbde8a98722c9a684df4c57555854491ccea7de48c13ff72f5bacbc0bfe60",
-      "prose_edits": 5,
+      "after_sha256": "100fae6a02a9406fe259a7f4e36f3f5e681400387550cc95458f06abaa60edba",
+      "prose_edits": 2,
       "frontmatter_code_links_numeric_tokens_unchanged": true,
-      "semantic_review": "All Japanese sections and criterion/evidence rows retained, proposal not special Codex parser format, document observation not newly executed success. Follow-up 2026-09-12: Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+      "semantic_review": "All Japanese sections and criterion/evidence rows retained, proposal not special Codex parser format, document observation not newly executed success."
     },
     {
       "id": "P18",
@@ -69,10 +69,10 @@
       "id": "P18",
       "path": "devto/plane-close-paused-project.md",
       "before_sha256": "32f7efca6e5e9c15d826f6d6ccfffce04a9f166cbed7a32bb1c158cb96369381",
-      "after_sha256": "90d74f7d96c41301a4766716cc314a7bf6780e8cead47243a87b741e3bebce3e",
-      "prose_edits": 7,
+      "after_sha256": "cce227ccf5210c5059f73d68a1eacfb35dda508880f403333d941dee0b9f9df0",
+      "prose_edits": 2,
       "frontmatter_code_links_numeric_tokens_unchanged": true,
-      "semantic_review": "All scope limits and counts retained; project search behavior supported by official docs; no actual archive restore service shutdown claimed. Follow-up 2026-09-12: Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+      "semantic_review": "All scope limits and counts retained; project search behavior supported by official docs; no actual archive restore service shutdown claimed."
     },
     {
       "id": "O23",
@@ -87,10 +87,10 @@
       "id": "O23",
       "path": "devto/repeatable-schedule-import.md",
       "before_sha256": "17dbea7719681db7d6be799dcf5dad6dff63fe77b079a81d895e6f7dbd7a2f9c",
-      "after_sha256": "8e9c003e01b76a5bfdc647ae7a36e7885d76e3e9c80d8cd7582d20f7cb58f478",
-      "prose_edits": 5,
+      "after_sha256": "41e154e62d993df80cc0ad2145cc944788174a5215e86cf34d40112de9e352fe",
+      "prose_edits": 2,
       "frontmatter_code_links_numeric_tokens_unchanged": true,
-      "semantic_review": "Full Japanese content retained including all eight boundaries and exact executable example; partial persistence is a substituted database observation, not a D1 failure measurement. Follow-up 2026-09-12: Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+      "semantic_review": "Full Japanese content retained including all eight boundaries and exact executable example; partial persistence is a substituted database observation, not a D1 failure measurement."
     },
     {
       "id": "O24",
@@ -105,14 +105,10 @@
       "id": "O24",
       "path": "devto/web-audio-reactive-dashboard.md",
       "before_sha256": "21e22655bc89b309f438ab675c692912a43f3f1d440c86969c1db9a015b46596",
-      "after_sha256": "e9aa36bb2ae660a8c3441d8b7360221e839e85d90c67ceddb3f029403f53615d",
-      "prose_edits": 3,
+      "after_sha256": "23bd171cda32724812f93ff84c837cb57bb4c5c7d6254d35913c919d7509b8b2",
+      "prose_edits": 2,
       "frontmatter_code_links_numeric_tokens_unchanged": true,
-      "semantic_review": "All Japanese experiment tables, ranges, code and limitations retained; offline graph differs from application source, no subjective audio or performance claims added. Follow-up 2026-09-12: Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+      "semantic_review": "All Japanese experiment tables, ranges, code and limitations retained; offline graph differs from application source, no subjective audio or performance claims added."
     }
-  ],
-  "passes": [
-    "humanizer-audit-pass1.json",
-    "humanizer-audit-pass2.json"
   ]
 }

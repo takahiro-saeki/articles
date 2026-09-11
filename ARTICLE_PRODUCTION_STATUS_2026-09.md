@@ -6,6 +6,8 @@
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
+[全90組の照合と残っている条件](production/2026-09/completion-audit/README.md)に、要件ごとの根拠とcanonical待ちの一覧を保存。
+
 台帳の元データは[production/2026-09/catalog.json](production/2026-09/catalog.json)。更新後は `node scripts/article-production-status.mjs` で本表を再生成する。調査根拠、実行結果、内容の重複確認、Humanizer監査は各バッチの記録へ残す。
 
 - バッチ01: P01、P03、T28、O01、O03、O05。完成 6/6件、本文検証済み 6/6件。

@@ -1,0 +1,128 @@
+{
+  "reviewed_on": "2026-09-12",
+  "skill": "humanizer:humanizer v2.9.1",
+  "files": [
+    {
+      "id": "P04",
+      "path": "devto/plane-status-by-deliverable.md",
+      "edits": [
+        [
+          "I read the state configurations of three personal projects covering a game, a concert, and an app, then compared their names and groups. I found no record of a past incident caused by uniform states, so the article uses the retrieved configuration to examine how a verification state could be classified.",
+          "The state configurations of three personal projects covering a game, a concert, and an app were compared by name and group. No record of a past incident caused by uniform states was found in this research, so the article uses the retrieved configuration to examine how a verification state could be classified."
+        ],
+        [
+          "On September 11, 2026, I retrieved the States lists for DRG, RECITAL, and SQN in the personal workspace. Each response indicated that there was no next page. I compared the name, group, and default flag. This was not a survey of every project in the workspace.",
+          "The States lists for DRG, RECITAL, and SQN in the personal workspace were retrieved on September 11, 2026. Each response indicated that there was no next page. The comparison covers the name, group, and default flag. It does not cover every project in the workspace."
+        ],
+        [
+          "I did not change any project settings.",
+          "No project settings were changed."
+        ],
+        [
+          "For this article, I compared the document with the ticket; I did not rerun the app checks.",
+          "The research for this article compared the document with the ticket without rerunning the app checks."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+    },
+    {
+      "id": "P09",
+      "path": "devto/plane-version-module.md",
+      "edits": [
+        [
+          "On September 11, 2026, I read SquadNote's Module lists. Both the ordinary list and the archived list returned 0 entries with no next page. The structure in this article is a proposal. I did not create Modules, run builds, or submit anything to a store.",
+          "SquadNote's Module lists were retrieved on September 11, 2026. Both the ordinary list and the archived list returned 0 entries with no next page. The structure in this article is a proposal. No Modules were created, builds run, or store submissions made."
+        ],
+        [
+          "I read its [app configuration]",
+          "The inspected sources were its [app configuration]"
+        ],
+        [
+          "I did not retrieve the EAS build history for this article.",
+          "EAS build history was not retrieved for this article."
+        ],
+        [
+          "I did not test the UI after creating a Module, retrieve actual build numbers, or perform distribution checks.",
+          "The research did not include testing the UI after Module creation, retrieving actual build numbers, or checking distribution."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+    },
+    {
+      "id": "P16",
+      "path": "devto/plane-work-item-acceptance-evidence.md",
+      "edits": [
+        [
+          "I compared the actual SQN-30 description with a verification document in its repository. I did not create or update a ticket.",
+          "The actual SQN-30 description was compared with a verification document in its repository. No ticket was created or updated."
+        ],
+        [
+          "I read the [verification document at a fixed commit]",
+          "The inspected source is the [verification document at a fixed commit]"
+        ],
+        [
+          "I did not add such a link during this research.",
+          "No such link was added during this research."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+    },
+    {
+      "id": "P18",
+      "path": "devto/plane-close-paused-project.md",
+      "edits": [
+        [
+          "I read cancelled work items in a personal workspace and SquadNote's archived work item list.",
+          "The research inspected cancelled work items in a personal workspace and SquadNote's archived work item list."
+        ],
+        [
+          "On September 11, 2026, I queried work items with `stateGroup = \"cancelled\"`.",
+          "A query for work items with `stateGroup = \"cancelled\"` ran on September 11, 2026."
+        ],
+        [
+          "I found neither the current cancellation reason nor a condition for reconsideration.",
+          "Neither the current cancellation reason nor a condition for reconsideration was found."
+        ],
+        [
+          "that name was absent from the SQN state list that I read.",
+          "that name was absent from the retrieved SQN state list."
+        ],
+        [
+          "I did not attempt archiving, restoring, or stopping related services.",
+          "Archiving, restoring, and stopping related services were not attempted."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+    },
+    {
+      "id": "O23",
+      "path": "devto/repeatable-schedule-import.md",
+      "edits": [
+        [
+          "I read SquadNote's implementation at a fixed commit and ran its parser, Web form application function, and persistence function locally.",
+          "The research used SquadNote's implementation at a fixed commit and executed its parser, Web form application function, and persistence function locally."
+        ],
+        [
+          "I extracted the actual function and replaced only the state update destination with an in-memory array.",
+          "The test extracted the actual function and replaced only the state update destination with an in-memory array."
+        ],
+        [
+          "I extracted that function body and replaced external dependencies, including authorization checks and database writes, with substitutes.",
+          "The test extracted that function body and replaced external dependencies, including authorization checks and database writes, with substitutes."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+    },
+    {
+      "id": "O24",
+      "path": "devto/web-audio-reactive-dashboard.md",
+      "edits": [
+        [
+          "I read the analysis code in the personal project beautiful-dashboard-for-bga and tested it with synthetic audio.",
+          "The analysis code from the personal project beautiful-dashboard-for-bga was tested with synthetic audio."
+        ]
+      ],
+      "semantic_review": "Removed first-person attribution of research and experiments to the author. Full Japanese-English comparison, original values, fixed sources, actual implementation versus proposals, and unverified behavior remain unchanged."
+    }
+  ]
+}
