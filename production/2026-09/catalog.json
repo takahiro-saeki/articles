@@ -14,7 +14,7 @@
     "fact_check": "[一次資料確認](production/2026-09/batch-01/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-13"
+    "scheduled_date": "2026-09-12"
   },
   {
     "id": "P02",
@@ -31,7 +31,7 @@
     "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-25"
+    "scheduled_date": "2026-09-24"
   },
   {
     "id": "P03",
@@ -48,7 +48,7 @@
     "fact_check": "[一次資料確認](production/2026-09/batch-01/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-19"
+    "scheduled_date": "2026-09-18"
   },
   {
     "id": "P04",
@@ -68,7 +68,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-26"
+    "scheduled_date": "2026-11-25"
   },
   {
     "id": "P05",
@@ -88,7 +88,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-14"
+    "scheduled_date": "2026-11-13"
   },
   {
     "id": "P06",
@@ -108,7 +108,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-15"
+    "scheduled_date": "2026-11-14"
   },
   {
     "id": "P07",
@@ -128,7 +128,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-16"
+    "scheduled_date": "2026-11-15"
   },
   {
     "id": "P08",
@@ -145,7 +145,7 @@
     "fact_check": "Plane SQN-30とCycle/Module各0件、circle-hub d116e8aの未完了モバイル確認、公式仕様",
     "verification": "週締め・Dev受け入れ・配布後の3時点を机上照合。実運用/移動操作なし",
     "status": "完成",
-    "scheduled_date": "2026-10-15"
+    "scheduled_date": "2026-10-14"
   },
   {
     "id": "P09",
@@ -165,7 +165,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-27"
+    "scheduled_date": "2026-11-26"
   },
   {
     "id": "P10",
@@ -182,7 +182,7 @@
     "fact_check": "個人Plane全5Projectと専用Initiatives無効、SquadNote/Voices Diaryの固定通知仕様と実装",
     "verification": "管理先の名前を照合。2アプリの共通条件は導入案。専用機能/実機通知の検証なし",
     "status": "完成",
-    "scheduled_date": "2026-10-16"
+    "scheduled_date": "2026-10-15"
   },
   {
     "id": "P11",
@@ -202,7 +202,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-17"
+    "scheduled_date": "2026-11-16"
   },
   {
     "id": "P12",
@@ -222,7 +222,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-18"
+    "scheduled_date": "2026-11-17"
   },
   {
     "id": "P13",
@@ -242,7 +242,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-19"
+    "scheduled_date": "2026-11-18"
   },
   {
     "id": "P14",
@@ -259,7 +259,7 @@
     "fact_check": "Plane SQN-29/30、Project Pages 0件、circle-hub 0cda1e8の検証文書と履歴、Plane公式Pages",
     "verification": "実装済みPageではなく導入案。Web確認記録とモバイル未完了を区別",
     "status": "完成",
-    "scheduled_date": "2026-09-27"
+    "scheduled_date": "2026-09-26"
   },
   {
     "id": "P15",
@@ -276,7 +276,7 @@
     "fact_check": "Plane GitHub連携とGitHub PR/Issueリンクの公式仕様を2026-09-11に照合",
     "verification": "同期方向、参照のみ/状態変更、default branchでの終了条件。実同期は未実施",
     "status": "完成",
-    "scheduled_date": "2026-09-28"
+    "scheduled_date": "2026-09-27"
   },
   {
     "id": "P16",
@@ -296,7 +296,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-28"
+    "scheduled_date": "2026-11-27"
   },
   {
     "id": "P17",
@@ -313,7 +313,7 @@
     "fact_check": "SQN-14/27/46/47/48/30の説明と親子関係、Instagram e295f5cと制作履歴",
     "verification": "静止画/動画/親子/後続公開準備を照合。Doneを公開完了と扱わず、起票/統合なし",
     "status": "完成",
-    "scheduled_date": "2026-10-17"
+    "scheduled_date": "2026-10-16"
   },
   {
     "id": "P18",
@@ -333,7 +333,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-29"
+    "scheduled_date": "2026-11-28"
   },
   {
     "id": "P19",
@@ -350,7 +350,7 @@
     "fact_check": "SquadNote非アーカイブ52件と現行Work Points、公式Estimates",
     "verification": "Python3.14.5で未完了22件148pt、In Progress6件48pt、3件11対24pt。欠損/0/尺度外/重複4拒否",
     "status": "完成",
-    "scheduled_date": "2026-10-18"
+    "scheduled_date": "2026-10-17"
   },
   {
     "id": "P20",
@@ -367,7 +367,7 @@
     "fact_check": "Plane公式料金/Edition/backup仕様、preview 2f895b8のCompose/restore.sh",
     "verification": "公式CLIを未変更で4模擬失敗条件。実DB/volume復元なし",
     "status": "完成",
-    "scheduled_date": "2026-10-21"
+    "scheduled_date": "2026-10-20"
   },
   {
     "id": "T01",
@@ -387,7 +387,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-09-21"
+    "scheduled_date": "2026-09-20"
   },
   {
     "id": "T02",
@@ -407,7 +407,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-10-27"
+    "scheduled_date": "2026-10-26"
   },
   {
     "id": "T03",
@@ -427,7 +427,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-02"
+    "scheduled_date": "2026-12-01"
   },
   {
     "id": "T04",
@@ -447,7 +447,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-10-28"
+    "scheduled_date": "2026-10-27"
   },
   {
     "id": "T05",
@@ -467,7 +467,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-10-29"
+    "scheduled_date": "2026-10-28"
   },
   {
     "id": "T06",
@@ -487,7 +487,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-10-30"
+    "scheduled_date": "2026-10-29"
   },
   {
     "id": "T07",
@@ -507,7 +507,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-10-31"
+    "scheduled_date": "2026-10-30"
   },
   {
     "id": "T08",
@@ -527,7 +527,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-01"
+    "scheduled_date": "2026-10-31"
   },
   {
     "id": "T09",
@@ -544,7 +544,7 @@
     "fact_check": "Node現行v26.8.2と検証版v24.15.0の公式Packages/Modules/ESM",
     "verification": "Node v24.15.0で10ケース。type/拡張子/同期ESM require/TLA/dynamic import/拡張子解決/構文検出",
     "status": "完成",
-    "scheduled_date": "2026-10-03"
+    "scheduled_date": "2026-10-02"
   },
   {
     "id": "T10",
@@ -564,7 +564,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-08"
+    "scheduled_date": "2026-11-07"
   },
   {
     "id": "T11",
@@ -584,7 +584,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-02"
+    "scheduled_date": "2026-11-01"
   },
   {
     "id": "T12",
@@ -604,7 +604,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-03"
+    "scheduled_date": "2026-11-02"
   },
   {
     "id": "T13",
@@ -624,7 +624,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-04"
+    "scheduled_date": "2026-11-03"
   },
   {
     "id": "T14",
@@ -641,7 +641,7 @@
     "fact_check": "React公式useMemo/useCallback、circle-hub 770de5fの実formatterと呼出元",
     "verification": "React19.2.5 production/CompilerなしChrome152で9ケース×9round、各100更新。安定propsの再計算/DOM一致、paint除外",
     "status": "完成",
-    "scheduled_date": "2026-10-19"
+    "scheduled_date": "2026-10-18"
   },
   {
     "id": "T15",
@@ -661,7 +661,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-05"
+    "scheduled_date": "2026-11-04"
   },
   {
     "id": "T16",
@@ -681,7 +681,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-06"
+    "scheduled_date": "2026-11-05"
   },
   {
     "id": "T17",
@@ -701,7 +701,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-07"
+    "scheduled_date": "2026-11-06"
   },
   {
     "id": "T18",
@@ -718,7 +718,7 @@
     "fact_check": "React use/Suspense/useTransition公式とproduction React19.2.5",
     "verification": "実ブラウザ5条件の初回/更新/解決後DOM、入力保持。通信/paint未測定",
     "status": "完成",
-    "scheduled_date": "2026-10-22"
+    "scheduled_date": "2026-10-21"
   },
   {
     "id": "T19",
@@ -735,7 +735,7 @@
     "fact_check": "Next16.3.4公式境界仕様、webpack依存と生成カタログ",
     "verification": "3構成の初回JS/HTML byteとgzip、256行一致、2ボタン操作。時間未測定",
     "status": "完成",
-    "scheduled_date": "2026-10-23"
+    "scheduled_date": "2026-10-22"
   },
   {
     "id": "T20",
@@ -752,7 +752,7 @@
     "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-20"
+    "scheduled_date": "2026-09-19"
   },
   {
     "id": "T21",
@@ -769,7 +769,7 @@
     "fact_check": "Next16.3.4 cacheComponents=falseと現行従来モデル/connection/router公式",
     "verification": "3 route各GET3回とbuildカウント、browser戻る/refresh/新規Link。TTL未実験",
     "status": "完成",
-    "scheduled_date": "2026-10-24"
+    "scheduled_date": "2026-10-23"
   },
   {
     "id": "T22",
@@ -789,7 +789,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-09"
+    "scheduled_date": "2026-11-08"
   },
   {
     "id": "T23",
@@ -809,7 +809,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-10"
+    "scheduled_date": "2026-11-09"
   },
   {
     "id": "T24",
@@ -829,7 +829,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-11"
+    "scheduled_date": "2026-11-10"
   },
   {
     "id": "T25",
@@ -849,7 +849,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-12"
+    "scheduled_date": "2026-11-11"
   },
   {
     "id": "T26",
@@ -869,7 +869,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-03"
+    "scheduled_date": "2026-12-02"
   },
   {
     "id": "T27",
@@ -889,7 +889,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-04"
+    "scheduled_date": "2026-12-03"
   },
   {
     "id": "T28",
@@ -906,7 +906,7 @@
     "fact_check": "[一次資料確認](production/2026-09/batch-01/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-15"
+    "scheduled_date": "2026-09-14"
   },
   {
     "id": "T29",
@@ -926,7 +926,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-07"
+    "scheduled_date": "2026-12-06"
   },
   {
     "id": "T30",
@@ -946,7 +946,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-05"
+    "scheduled_date": "2026-12-04"
   },
   {
     "id": "T31",
@@ -966,7 +966,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-09-16"
+    "scheduled_date": "2026-09-15"
   },
   {
     "id": "T32",
@@ -986,7 +986,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-08"
+    "scheduled_date": "2026-12-07"
   },
   {
     "id": "T33",
@@ -1006,7 +1006,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-06"
+    "scheduled_date": "2026-12-05"
   },
   {
     "id": "T34",
@@ -1023,7 +1023,7 @@
     "fact_check": "expo-updates29.0.18、公式45c60e1とSwift本体byte一致、現行Expo公式",
     "verification": "元Swift本体をmacOSで7条件実行。周辺を代役、実機/DB選択なし。過去成功と今回表示の分岐差",
     "status": "完成",
-    "scheduled_date": "2026-10-25"
+    "scheduled_date": "2026-10-24"
   },
   {
     "id": "T35",
@@ -1043,7 +1043,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-09"
+    "scheduled_date": "2026-12-08"
   },
   {
     "id": "T36",
@@ -1060,7 +1060,7 @@
     "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-26"
+    "scheduled_date": "2026-09-25"
   },
   {
     "id": "T37",
@@ -1080,7 +1080,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-09-17"
+    "scheduled_date": "2026-09-16"
   },
   {
     "id": "T38",
@@ -1100,7 +1100,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-13"
+    "scheduled_date": "2026-11-12"
   },
   {
     "id": "T39",
@@ -1117,7 +1117,7 @@
     "fact_check": "D1公式indexes、SQLite row values、Wrangler APIとローカルD1",
     "verification": "10万行・5位置、各4 warmup+11計測。配列一致、rows_read、計画、途中挿入重複をassert",
     "status": "完成",
-    "scheduled_date": "2026-10-04"
+    "scheduled_date": "2026-10-03"
   },
   {
     "id": "T40",
@@ -1134,7 +1134,7 @@
     "fact_check": "2026-09-11: DO storage/state/namespace/concepts公式と現行Workers型を確認。DO別保存・名前による再取得・横断取得をローカル比較",
     "verification": "Wrangler 4.131.0/Miniflare 5.20260910.0-alphaで8 assertions、生成Env+Workers types 5.20260911.1/TS 5.9.3 checkJs成功。本番移行・性能・分散snapshotは未検証",
     "status": "完成",
-    "scheduled_date": "2026-10-05"
+    "scheduled_date": "2026-10-04"
   },
   {
     "id": "T41",
@@ -1154,7 +1154,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-10"
+    "scheduled_date": "2026-12-09"
   },
   {
     "id": "T42",
@@ -1171,7 +1171,7 @@
     "fact_check": "Cloudflare Cron/Queues配送・ack retry/Workflows待機・実装規則の公式仕様",
     "verification": "再開単位を時刻/メッセージ/ステップで比較。構成と導入時の検証は提案、未導入",
     "status": "完成",
-    "scheduled_date": "2026-10-06"
+    "scheduled_date": "2026-10-05"
   },
   {
     "id": "T43",
@@ -1191,7 +1191,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-11"
+    "scheduled_date": "2026-12-10"
   },
   {
     "id": "T44",
@@ -1208,7 +1208,7 @@
     "fact_check": "Stripe idempotent requests、D1 batch公式仕様",
     "verification": "ローカルD1の6ケース。commit後応答消失、入力相違、actor別、同時miss、rollback、記録削除",
     "status": "完成",
-    "scheduled_date": "2026-10-07"
+    "scheduled_date": "2026-10-06"
   },
   {
     "id": "T45",
@@ -1225,7 +1225,7 @@
     "fact_check": "AWS transactional outbox、D1 batch公式仕様",
     "verification": "ローカルD1とfake providerで4ケース。意図の同時保存、送信後中断、重複排除あり/なし",
     "status": "完成",
-    "scheduled_date": "2026-10-08"
+    "scheduled_date": "2026-10-07"
   },
   {
     "id": "O01",
@@ -1242,7 +1242,7 @@
     "fact_check": "[一次資料確認](production/2026-09/batch-01/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-14"
+    "scheduled_date": "2026-09-13"
   },
   {
     "id": "O02",
@@ -1262,7 +1262,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-20"
+    "scheduled_date": "2026-11-19"
   },
   {
     "id": "O03",
@@ -1279,7 +1279,7 @@
     "fact_check": "[一次資料確認](production/2026-09/batch-01/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-24"
+    "scheduled_date": "2026-09-23"
   },
   {
     "id": "O04",
@@ -1299,7 +1299,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-21"
+    "scheduled_date": "2026-11-20"
   },
   {
     "id": "O05",
@@ -1316,7 +1316,7 @@
     "fact_check": "[一次資料確認](production/2026-09/batch-01/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-01/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-18"
+    "scheduled_date": "2026-09-17"
   },
   {
     "id": "O06",
@@ -1336,7 +1336,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-22"
+    "scheduled_date": "2026-11-21"
   },
   {
     "id": "O07",
@@ -1353,7 +1353,7 @@
     "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-22"
+    "scheduled_date": "2026-09-21"
   },
   {
     "id": "O08",
@@ -1373,7 +1373,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-23"
+    "scheduled_date": "2026-11-22"
   },
   {
     "id": "O09",
@@ -1390,7 +1390,7 @@
     "fact_check": "game-jam-lab f074703の制作記下書き・監査文書・GDScriptを照合",
     "verification": "実カタログから720順序×2ボス=1440を再計算。Godot監査/通しプレイは未実行",
     "status": "完成",
-    "scheduled_date": "2026-09-29"
+    "scheduled_date": "2026-09-28"
   },
   {
     "id": "O10",
@@ -1407,7 +1407,7 @@
     "fact_check": "[一次資料・実験確認](production/2026-09/batch-02/REVIEW.md)",
     "verification": "[検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md)",
     "status": "完成",
-    "scheduled_date": "2026-09-23"
+    "scheduled_date": "2026-09-22"
   },
   {
     "id": "O11",
@@ -1427,7 +1427,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-24"
+    "scheduled_date": "2026-11-23"
   },
   {
     "id": "O12",
@@ -1444,7 +1444,7 @@
     "fact_check": "game-jam-lab f074703の提出キット・8画像とitch.io HTML5公式仕様",
     "verification": "6スクリーンショットはJPEG 1280×720、2coverはPNG 630×500。ヘッダーとfileで照合",
     "status": "完成",
-    "scheduled_date": "2026-09-30"
+    "scheduled_date": "2026-09-29"
   },
   {
     "id": "O13",
@@ -1461,7 +1461,7 @@
     "fact_check": "game-jam-lab f074703の入力経路、8/1共通gamepad履歴、Godot InputEvent公式",
     "verification": "Godot4.6.2 headlessで元binding classと抽出motion関数を実行。10イベントと再割当3観点。実ブラウザ/実機未検証",
     "status": "完成",
-    "scheduled_date": "2026-10-09"
+    "scheduled_date": "2026-10-08"
   },
   {
     "id": "O14",
@@ -1481,7 +1481,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-25"
+    "scheduled_date": "2026-11-24"
   },
   {
     "id": "O15",
@@ -1498,7 +1498,7 @@
     "fact_check": "game-jam-lab f074703のSuno選定ブリーフ、BGMStreams/EncounterBGMKeys、関連Git履歴",
     "verification": "19音声ファイルのffprobe。BGM18slot/17file、jingle込み18file、未参照旧地図曲1。聴感/ラウドネス未測定",
     "status": "完成",
-    "scheduled_date": "2026-10-10"
+    "scheduled_date": "2026-10-09"
   },
   {
     "id": "O16",
@@ -1515,7 +1515,7 @@
     "fact_check": "game-jam-lab bf5c7e7/f074703のcapture、README、compose、FFmpeg公式",
     "verification": "11区間の連続性と実game表示51.5秒、元関数をGodot4.6.2で22assertions、MP4二本のffprobe。再レンダー/全frame目視/効果測定なし",
     "status": "完成",
-    "scheduled_date": "2026-10-11"
+    "scheduled_date": "2026-10-10"
   },
   {
     "id": "O17",
@@ -1532,7 +1532,7 @@
     "fact_check": "game-jam-lab f074703の出典文書・台帳・runtime preload・Git履歴",
     "verification": "30batch/107候補、原本欠落0、承認35/保留13/却下3/未確認56。未確認3件のコード参照",
     "status": "完成",
-    "scheduled_date": "2026-10-01"
+    "scheduled_date": "2026-09-30"
   },
   {
     "id": "O18",
@@ -1549,7 +1549,7 @@
     "fact_check": "local-anime-studio 2aeb306のCLI/workflow/モデル台帳/履歴、ComfyUI/PyTorch公式仕様",
     "verification": "既存34テストとrepo validator成功。実CLIの2経路で記録の有無をassert。GPU未実行",
     "status": "完成",
-    "scheduled_date": "2026-10-02"
+    "scheduled_date": "2026-10-01"
   },
   {
     "id": "O19",
@@ -1566,7 +1566,7 @@
     "fact_check": "circle-hub d116e8aとvoice-training-log 6143bb9、固定設定と通知実装、Expo公式runtime",
     "verification": "20資料のhash、preview配布/API差、runtime方針を静的照合。実配布/実機/保守時間なし",
     "status": "完成",
-    "scheduled_date": "2026-10-20"
+    "scheduled_date": "2026-10-19"
   },
   {
     "id": "O20",
@@ -1583,7 +1583,7 @@
     "fact_check": "circle-hub 0cda1e8とad0a669親の実router、mobile旧/新解除、配信資料、Expo runtime公式",
     "verification": "実tRPC+in-memory libSQLで旧/新server×全/端末別解除の4ケース、既存8テスト。実機受信/OTA配布なし",
     "status": "完成",
-    "scheduled_date": "2026-10-12"
+    "scheduled_date": "2026-10-11"
   },
   {
     "id": "O21",
@@ -1600,7 +1600,7 @@
     "fact_check": "circle-hub d116e8aの3段階Git履歴、認証復旧設計/実装、Auth.js公式Errors",
     "verification": "固定source8ファイル47テスト成功。Auth core0.37.2でPKCE欠落302/InvalidCheckと再開始S256。実OAuth/本番logsなし",
     "status": "完成",
-    "scheduled_date": "2026-10-13"
+    "scheduled_date": "2026-10-12"
   },
   {
     "id": "O22",
@@ -1617,7 +1617,7 @@
     "fact_check": "circle-hub 9aec489の設計/移行/ownership/router/端末保存、WebCrypto公式",
     "verification": "既存15テスト成功。実乱数/hash、routerはDB/通知モック。token一致・旧鍵失効・公開情報制限。実D1/複数process未検証",
     "status": "完成",
-    "scheduled_date": "2026-10-14"
+    "scheduled_date": "2026-10-13"
   },
   {
     "id": "O23",
@@ -1637,7 +1637,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-11-30"
+    "scheduled_date": "2026-11-29"
   },
   {
     "id": "O24",
@@ -1657,7 +1657,7 @@
     "canonical_status": "公開時に設定",
     "canonical_policy": "resolve-on-publication",
     "canonical_url": null,
-    "scheduled_date": "2026-12-01"
+    "scheduled_date": "2026-11-30"
   },
   {
     "id": "O25",
@@ -1674,6 +1674,6 @@
     "fact_check": "実在LT9/10/11枚、構成メモ、game-jam-lab f074703/5198488と公開ページ",
     "verification": "原稿本文照合、期間/パス指定53commits再計算、270+30秒。登壇/読み上げ結果未確認",
     "status": "完成",
-    "scheduled_date": "2026-10-26"
+    "scheduled_date": "2026-10-25"
   }
 ]

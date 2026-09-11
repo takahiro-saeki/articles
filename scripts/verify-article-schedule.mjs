@@ -9,6 +9,7 @@ import vm from 'node:vm';
 const require=createRequire(import.meta.url);
 const yaml=require('js-yaml');
 const out='production/2026-09/scheduling';
+const reportDir=process.argv.find(arg=>arg.startsWith('--output='))?.slice(9)??out;
 const plan=JSON.parse(readFileSync(`${out}/approved-plan.json`,'utf8'));
 const catalog=JSON.parse(readFileSync('production/2026-09/catalog.json','utf8'));
 const script=readFileSync('scripts/publish-scheduled.mjs','utf8');
@@ -94,7 +95,8 @@ for(const platform of ['qiita','zenn']){
  if(platform==='qiita')assert.equal(retry.calls[0].method,'PATCH');
  assert.equal(retry.calls.at(-1).method,'POST');
 }
-for(const date of ['2026-09-12','2026-12-12']){
+const adjacentDate=(date,days)=>new Date(Date.parse(date+'T00:00:00Z')+days*86400000).toISOString().slice(0,10);
+for(const date of [adjacentDate(plan.start_date,-1),adjacentDate(plan.end_date,1)]){
  const none=await simulate({date});assert.equal(none.error,null);assert.equal(none.calls.length,0);assert.equal(none.writes.length,0);
 }
 // Demonstrate why quoted strings must be decoded before API submission.
@@ -104,7 +106,7 @@ assert.notEqual(escaped.replace(/^["']|["']$/g,''),parse(fixtures.get(escapedPat
 assert.equal(JSON.parse(escaped),parse(fixtures.get(escapedPath)).meta.title);
 const diskAfter=Object.fromEntries(allPaths.map(p=>[p,sha(readFileSync(p))]));
 assert.deepEqual(diskAfter,diskBefore,'all 180 disk drafts unchanged');
-mkdirSync(out,{recursive:true});
+mkdirSync(reportDir,{recursive:true});
 const report={node:process.version,mode:'actual CLI dry-runs plus in-memory filesystem and fetch mocks; no real publishing requests',start:plan.start_date,end:plan.end_date,pairs:results.length,priority12First:true,dryRunNoWritesOrApiCalls:90,payloadParity:90,alreadyPublishedNoOp:90,qiitaResponseCanonical:49,zennSlugCanonical:41,qiitaFailureStopsEnglish:true,devtoFailureRetriesWithSavedJapaneseId:true,unreservedDatesNoOp:true,unicodeTitleRegression:'pass',diskDraftHashesUnchanged:allPaths.length,results};
-writeFileSync(`${out}/publisher-verification.json`,JSON.stringify(report,null,2)+'\n');
+writeFileSync(`${reportDir}/publisher-verification.json`,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({...report,results:undefined},null,2));

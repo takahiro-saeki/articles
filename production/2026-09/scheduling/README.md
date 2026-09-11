@@ -2,7 +2,9 @@
 
 2026-09-12のユーザー指示で、Qiita向け49組のcanonicalを公開時に設定する運用と90日分の予約が承認された。全90組・180原稿が下書きとして完成。承認内容、日付、順序は[approved-plan.json](approved-plan.json)に保存した。
 
-2026-09-13〜2026-12-11、毎日09:00（Asia/Tokyo）を基準に日英1組ずつ。日本語はZenn41本とQiita49本。優先12本を先頭に、その後は制作バッチ順・同バッチ内は候補表順とした。[日別一覧](../../../schedule/ARTICLE_SCHEDULE_2026-09.md)と[予約データ](../../../schedule/publishing-schedule.json)を参照。既存の38日分は内容を保持している。
+2026-09-12〜2026-12-10、毎日09:00（Asia/Tokyo）を基準に日英1組ずつ。日本語はZenn41本とQiita49本。優先12本を先頭に、その後は制作バッチ順・同バッチ内は候補表順とした。[日別一覧](../../../schedule/ARTICLE_SCHEDULE_2026-09.md)と[予約データ](../../../schedule/publishing-schedule.json)を参照。既存の38日分は内容を保持している。
+
+9月12日の追加指示で開始を1日前倒しした。初日の1組は手動で直ちに公開する。[日付変更と初日の公開記録](start-today/README.md)を参照。以下の登録前検証とGitHubのdry-runは、変更前の予定を検証した記録として保持する。
 
 ## 登録前の検証
 
@@ -37,4 +39,4 @@ node scripts/validate-article-stock.mjs --all
 - [9月16日・Qiitaのdry-run](https://github.com/takahiro-saeki/articles/actions/runs/34656635434): 成功。T31の日英原稿を選択し、公開フラグはfalse、メタデータcommitはスキップ。
 - [main反映時の既存Qiita workflow](https://github.com/takahiro-saeki/articles/actions/runs/34656612978): 成功。反映後も全180候補のGit blobは検証済み下書きと一致。
 
-[GitHub Actions確認結果](github-actions-verification.json)に実行ID、対象日、対象ファイル、結果を保存した。予約された未来日の本公開はまだ実行していない。
+[GitHub Actions確認結果](github-actions-verification.json)に実行ID、対象日、対象ファイル、結果を保存した。これらは開始日前倒しと初日の本公開より前の確認実行である。

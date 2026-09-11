@@ -51,7 +51,7 @@ frontmatterの `published: false` なら下書き投稿。投稿後は `devto_id
 
 ## 90日分の予約投稿（2026年9月〜12月）
 
-2026年9月13日〜12月11日、毎日09:00（日本時間）を基準に、日本語1本とdev.to英語版1本の計90組を公開する。GitHub Actionsの実行開始が遅れる場合がある。
+2026年9月12日〜12月10日、毎日09:00（日本時間）を基準に、日本語1本とdev.to英語版1本の計90組を公開する。GitHub Actionsの実行開始が遅れる場合がある。初日の9月12日分はユーザー指示で手動公開し、翌日以降は予約処理で公開する。
 
 - [日付・タイトルの一覧](schedule/ARTICLE_SCHEDULE_2026-09.md)
 - [予約データ](schedule/publishing-schedule.json)
@@ -63,7 +63,7 @@ frontmatterの `published: false` なら下書き投稿。投稿後は `devto_id
 公開せずに特定日の選択結果を確認するには、次を実行する。
 
 ```bash
-node scripts/publish-scheduled.mjs --date=2026-09-13 --dry-run
+node scripts/publish-scheduled.mjs --date=2026-09-12 --dry-run
 ```
 
 失敗日の再試行はGitHub Actionsの `Publish scheduled article` を対象日で手動実行する。確認時は `dry_run: true`、公開を再試行するときは `dry_run: false`。公開済みのIDは再利用される。API成功後に応答やメタデータ保存が失われた場合は、二重投稿を避けるため公開先を先に確認する。
