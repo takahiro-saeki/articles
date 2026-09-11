@@ -1,0 +1,138 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 (/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md)",
+  "files": [
+    {
+      "id": "T18",
+      "path": "articles/suspense-boundary-fallback-experiment.md",
+      "edits": [
+        [
+          "持ち帰りたい判断は、**待機中も使いたい画面を境界の外へ置き、同じ対象の再取得では表示済み結果を残すか決める**ことです。",
+          "**待機中も使いたい画面を境界の外へ置き、同じ対象の再取得では表示済み結果を残すか決めます**。"
+        ]
+      ],
+      "semantic_review": "境界、Transition、keyの5条件とDOM結果を保持。定型的な主題宣言を直接の文へ。"
+    },
+    {
+      "id": "T18",
+      "path": "devto/suspense-boundary-fallback-experiment.md",
+      "edits": [
+        [
+          "The decision to take away is to **put controls that must remain available outside the boundary, then decide whether a refresh of the same content should retain its previous result**.",
+          "**Put controls that must remain available outside the boundary, then decide whether a refresh of the same content should retain its previous result**."
+        ]
+      ],
+      "semantic_review": "Full five-case results and initial/update distinction retained; removed formulaic lead-in."
+    },
+    {
+      "id": "T19",
+      "path": "articles/rsc-client-boundary-bundle.md",
+      "edits": [
+        [
+          "ここでHTMLの列が効きます。",
+          "HTMLの増加も確認が必要です。"
+        ]
+      ],
+      "semantic_review": "数値と圧縮範囲、JSからRSC/HTMLへの移動を保持。曖昧な接続を具体化。"
+    },
+    {
+      "id": "T19",
+      "path": "devto/rsc-client-boundary-bundle.md",
+      "edits": [
+        [
+          "The HTML columns explain the other side.",
+          "The HTML increase also needs checking."
+        ]
+      ],
+      "semantic_review": "All byte counts, version distinction, measurement scope, and behavior parity retained."
+    },
+    {
+      "id": "T21",
+      "path": "articles/nextjs-cache-response-experiment.md",
+      "edits": [
+        [
+          "答えは、画面の値に加えて、**取得元へ届いた回数と、どの操作でその回数が増えたかを記録する**ことです。",
+          "画面の値に加えて、**取得元へ届いた回数と、どの操作でその回数が増えたかを記録します**。"
+        ]
+      ],
+      "semantic_review": "4層の区別、3回HTTPとbrowser操作の結果、Cache Components無効という範囲を保持。"
+    },
+    {
+      "id": "T21",
+      "path": "devto/nextjs-cache-response-experiment.md",
+      "edits": [
+        [
+          "These observations do not establish the defaults for every Next.js application or behavior with Cache Components enabled.",
+          "The observations apply to this configuration; they do not establish every Next.js application's defaults or behavior with Cache Components enabled."
+        ]
+      ],
+      "semantic_review": "Clarifies existing scope without adding any claim or changing results."
+    },
+    {
+      "id": "T34",
+      "path": "articles/eas-update-error-recovery-boundary.md",
+      "edits": [
+        [
+          "判断の中心は、**error recoveryを端末データまで巻き戻す仕組みとして扱わず、どの起動候補を試せる状態なのかを確認する**ことです。",
+          "**error recoveryを端末データまで巻き戻す仕組みとして扱わず、どの起動候補を試せる状態なのかを確認します**。"
+        ]
+      ],
+      "semantic_review": "公式説明と特定版分岐の差、7条件、代役と未実機検証、タイマーの限界を保持。"
+    },
+    {
+      "id": "T34",
+      "path": "devto/eas-update-error-recovery-boundary.md",
+      "edits": [
+        [
+          "The decision is to **identify which launch candidates remain available, rather than treating error recovery as a rollback of device data**.",
+          "**Identify which launch candidates remain available, rather than treating error recovery as a rollback of device data**."
+        ]
+      ],
+      "semantic_review": "Preserves source/doc distinction, seven results, explicit test doubles and timer limitation."
+    },
+    {
+      "id": "P20",
+      "path": "articles/plane-cloud-self-host-comparison.md",
+      "edits": [
+        [
+          "セルフホストを選ぶ根拠にしたいのは、コンテナを起動できたことに加え、自分が必要な状態まで戻せると確認したことです。",
+          "セルフホストを選ぶ前に、コンテナの起動に加え、必要な状態まで復元できることを確認します。"
+        ]
+      ],
+      "semantic_review": "Cloud/CE/Commercial比較、4模擬条件、成功文言の限界と未実DB復元を保持。抽象的な締めを手順へ。"
+    },
+    {
+      "id": "P20",
+      "path": "devto/plane-cloud-self-host-comparison.md",
+      "edits": [
+        [
+          "The useful evidence is that the required state can be recovered, in addition to successfully starting containers.",
+          "Before choosing self-hosting, verify both container startup and recovery to the required state."
+        ]
+      ],
+      "semantic_review": "Preserves the same decision requirement without claiming a completed real restoration."
+    },
+    {
+      "id": "O25",
+      "path": "articles/five-minute-game-development-talk.md",
+      "edits": [
+        [
+          "5分版を作る工程は、資料を短くした時点で終わらず、残した例を時間内に説明できると確認するところまで続きます。",
+          "資料を短くした後は、残した例を5分以内に説明できるか確かめます。"
+        ]
+      ],
+      "semantic_review": "9/10/11枚、53commitsの条件、270+30秒は保持。未実測の構成案という区分を保ち過剰な締めを短縮。"
+    },
+    {
+      "id": "O25",
+      "path": "devto/five-minute-game-development-talk.md",
+      "edits": [
+        [
+          "Editing a five-minute talk continues beyond shortening the deck until the retained examples can be explained within the available time.",
+          "After shortening the deck, check that the retained examples can be explained within the five-minute limit."
+        ]
+      ],
+      "semantic_review": "Retains the proposed timing budget and explicitly unverified delivery, with a shorter closing sentence."
+    }
+  ]
+}

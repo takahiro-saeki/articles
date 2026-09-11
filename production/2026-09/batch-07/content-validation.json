@@ -1,0 +1,224 @@
+{
+  "pairs": 6,
+  "canonicalPending": [],
+  "eligibleForCompletion": 6,
+  "checks": "frontmatter, flags, tags, canonical (pending IDs explicitly excluded), fences, executable snippets including TSX/Python/GDScript and JSON, JSON syntax, links, Japanese and English titles, similarity screening against baseline and new drafts, no schedule additions",
+  "articles": [
+    {
+      "id": "P20",
+      "jaCharacters": 3623,
+      "enWords": 1000,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/d1-batch-atomicity-boundary.md",
+          "score": 0.042
+        },
+        {
+          "path": "articles/nextjs-actions-route-handlers-boundary.md",
+          "score": 0.041
+        },
+        {
+          "path": "articles/idempotency-key-result-storage.md",
+          "score": 0.041
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/eas-update-error-recovery-boundary.md",
+          "score": 0.214
+        },
+        {
+          "path": "devto/cloudflare-cron-queues-workflows.md",
+          "score": 0.211
+        },
+        {
+          "path": "devto/local-image-generation-reproducibility.md",
+          "score": 0.211
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "jaCharacters": 3605,
+      "enWords": 959,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/react-memoization-cost.md",
+          "score": 0.071
+        },
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.068
+        },
+        {
+          "path": "articles/rsc-client-boundary-bundle.md",
+          "score": 0.053
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/react-memoization-cost.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/nextjs-cache-response-experiment.md",
+          "score": 0.216
+        },
+        {
+          "path": "devto/eas-update-error-recovery-boundary.md",
+          "score": 0.21
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "jaCharacters": 3992,
+      "enWords": 958,
+      "sectionsJA": 5,
+      "sectionsEN": 5,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/nextjs-cache-response-experiment.md",
+          "score": 0.083
+        },
+        {
+          "path": "articles/react-memoization-cost.md",
+          "score": 0.054
+        },
+        {
+          "path": "articles/suspense-boundary-fallback-experiment.md",
+          "score": 0.053
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/nextjs-cache-response-experiment.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/react-memoization-cost.md",
+          "score": 0.203
+        },
+        {
+          "path": "devto/suspense-boundary-fallback-experiment.md",
+          "score": 0.2
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "jaCharacters": 4211,
+      "enWords": 1018,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 2,
+      "nearestExisting": [
+        {
+          "path": "articles/rsc-client-boundary-bundle.md",
+          "score": 0.083
+        },
+        {
+          "path": "articles/suspense-boundary-fallback-experiment.md",
+          "score": 0.068
+        },
+        {
+          "path": "articles/react-memoization-cost.md",
+          "score": 0.059
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/rsc-client-boundary-bundle.md",
+          "score": 0.224
+        },
+        {
+          "path": "devto/suspense-boundary-fallback-experiment.md",
+          "score": 0.216
+        },
+        {
+          "path": "devto/react-memoization-cost.md",
+          "score": 0.203
+        }
+      ]
+    },
+    {
+      "id": "T34",
+      "jaCharacters": 3479,
+      "enWords": 1019,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 0,
+      "nearestExisting": [
+        {
+          "path": "articles/expo-multi-device-push-rollout.md",
+          "score": 0.047
+        },
+        {
+          "path": "articles/scheduled-publishing-recovery-boundary.md",
+          "score": 0.042
+        },
+        {
+          "path": "articles/node-esm-commonjs-boundaries.md",
+          "score": 0.04
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/expo-multi-device-push-rollout.md",
+          "score": 0.228
+        },
+        {
+          "path": "devto/scheduled-publishing-recovery-boundary.md",
+          "score": 0.219
+        },
+        {
+          "path": "devto/outbox-database-notification-boundary.md",
+          "score": 0.216
+        }
+      ]
+    },
+    {
+      "id": "O25",
+      "jaCharacters": 3441,
+      "enWords": 1089,
+      "sectionsJA": 6,
+      "sectionsEN": 6,
+      "codeBlocks": 1,
+      "nearestExisting": [
+        {
+          "path": "articles/generated-asset-provenance-decisions.md",
+          "score": 0.051
+        },
+        {
+          "path": "articles/repository-decision-log-evidence.md",
+          "score": 0.048
+        },
+        {
+          "path": "articles/itch-submission-deliverables.md",
+          "score": 0.048
+        }
+      ],
+      "nearestEnglish": [
+        {
+          "path": "devto/repository-decision-log-evidence.md",
+          "score": 0.225
+        },
+        {
+          "path": "devto/devlog-primary-source-reconstruction.md",
+          "score": 0.222
+        },
+        {
+          "path": "devto/volt-nomad-codex-production.md",
+          "score": 0.218
+        }
+      ]
+    }
+  ]
+}

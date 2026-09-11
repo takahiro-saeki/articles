@@ -1,0 +1,166 @@
+{
+  "versions": {
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "esbuild": "0.27.4"
+  },
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "records": [
+    {
+      "mode": "broad-urgent",
+      "initial": {
+        "shell": false,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": null
+      },
+      "loaded": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "idle",
+        "input": "typed"
+      },
+      "suspended": {
+        "shell": false,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": "typed"
+      },
+      "resolved": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 1",
+        "pending": "idle",
+        "input": "typed"
+      }
+    },
+    {
+      "mode": "narrow-urgent",
+      "initial": {
+        "shell": true,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": "draft"
+      },
+      "loaded": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "idle",
+        "input": "typed"
+      },
+      "suspended": {
+        "shell": true,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": "typed"
+      },
+      "resolved": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 1",
+        "pending": "idle",
+        "input": "typed"
+      }
+    },
+    {
+      "mode": "broad-transition",
+      "initial": {
+        "shell": false,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": null
+      },
+      "loaded": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "idle",
+        "input": "typed"
+      },
+      "suspended": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "pending",
+        "input": "typed"
+      },
+      "resolved": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 1",
+        "pending": "idle",
+        "input": "typed"
+      }
+    },
+    {
+      "mode": "narrow-transition",
+      "initial": {
+        "shell": true,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": "draft"
+      },
+      "loaded": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "idle",
+        "input": "typed"
+      },
+      "suspended": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "pending",
+        "input": "typed"
+      },
+      "resolved": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 1",
+        "pending": "idle",
+        "input": "typed"
+      }
+    },
+    {
+      "mode": "narrow-transition-key",
+      "initial": {
+        "shell": true,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": "draft"
+      },
+      "loaded": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 0",
+        "pending": "idle",
+        "input": "typed"
+      },
+      "suspended": {
+        "shell": true,
+        "fallback": true,
+        "result": null,
+        "pending": "idle",
+        "input": "typed"
+      },
+      "resolved": {
+        "shell": true,
+        "fallback": false,
+        "result": "Result 1",
+        "pending": "idle",
+        "input": "typed"
+      }
+    }
+  ],
+  "scope": "production React, manual stable Promise gates via use, DOM visibility and preserved input; no network or frame-duration benchmark; no custom throw-promise cache"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "./components/router-probe.jsx",
+    "size": 641,
+    "chunks": null
+  },
+  {
+    "name": "./components/frame.jsx",
+    "size": 928,
+    "chunks": null
+  },
+  {
+    "name": "./components/counter-a.jsx",
+    "size": 413,
+    "chunks": null
+  },
+  {
+    "name": "./components/counter-b.jsx",
+    "size": 413,
+    "chunks": null
+  },
+  {
+    "name": "./components/broad.jsx",
+    "size": 972,
+    "chunks": null
+  },
+  {
+    "name": "./components/catalog.jsx",
+    "size": 329,
+    "chunks": null
+  },
+  {
+    "name": "./data/generated-catalog.js",
+    "size": 31548,
+    "chunks": null
+  }
+]

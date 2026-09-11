@@ -1,0 +1,17 @@
+{
+  "versions": {
+    "next": "16.3.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "node": "v24.15.0",
+  "cli": "0.1.19",
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "build": "production webpack",
+  "cacheComponents": false,
+  "reactCompiler": false,
+  "prefetch": false,
+  "scope": "loopback Node runtime, no CDN, no service worker, generated public catalog, initial HTML script assets; gzip is local recompression, not measured network transfer",
+  "bundledReact": "19.3.0-canary-cbb046ab-20260731",
+  "bundledReactVerification": "node require(next/dist/compiled/react).version and react-dom same version; webpack includes next/dist/compiled/react modules"
+}

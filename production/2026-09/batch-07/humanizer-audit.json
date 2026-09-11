@@ -1,0 +1,114 @@
+{
+  "reviewed_on": "2026-09-11",
+  "skill": "Humanizer v2.9.1 (/Users/takahiro_saeki/.agents/skills/humanizer/SKILL.md)",
+  "files": [
+    {
+      "id": "T18",
+      "path": "articles/suspense-boundary-fallback-experiment.md",
+      "before_sha256": "d793dba7d128a1b65877295f567cc0e03d3582fb1bbbb15ac78329ad9bffd69b",
+      "after_sha256": "99c2e4e3343ddd024079d4f622d7573dab4058affc55007e68f4173b5a6012c5",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "境界、Transition、keyの5条件とDOM結果を保持。定型的な主題宣言を直接の文へ。"
+    },
+    {
+      "id": "T18",
+      "path": "devto/suspense-boundary-fallback-experiment.md",
+      "before_sha256": "65054230d0db509ac1bef0435da3e9552917d9cbfd7b108a2dbc207184757852",
+      "after_sha256": "7be877f67ed8cca900f0f7e0526aaf957064baa554fcb9b598b78766c87dd787",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Full five-case results and initial/update distinction retained; removed formulaic lead-in."
+    },
+    {
+      "id": "T19",
+      "path": "articles/rsc-client-boundary-bundle.md",
+      "before_sha256": "585def71026dddd71a5027e00813a5d8782ce46f42300f7dfed1aa293ba07757",
+      "after_sha256": "b5ab59c73a0660456fe05ddceeeae735ea51dbd086aee383c870783d107b57b2",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "数値と圧縮範囲、JSからRSC/HTMLへの移動を保持。曖昧な接続を具体化。"
+    },
+    {
+      "id": "T19",
+      "path": "devto/rsc-client-boundary-bundle.md",
+      "before_sha256": "205794521b4331880c706da86647edb104b20e88955634dc316c07acd07aaae4",
+      "after_sha256": "caa983185242290a1b5b6db425dd5693f497ea2f5dc545aa568bfc27d4662784",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "All byte counts, version distinction, measurement scope, and behavior parity retained."
+    },
+    {
+      "id": "T21",
+      "path": "articles/nextjs-cache-response-experiment.md",
+      "before_sha256": "30d2c784044526704f0fe3f985e18b36776471629c948e1a7ea2d9f78039611d",
+      "after_sha256": "5d7655679dcb0dd920490027084ca0c35358aeb1771d2facf857ba27d2fc9eef",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "4層の区別、3回HTTPとbrowser操作の結果、Cache Components無効という範囲を保持。"
+    },
+    {
+      "id": "T21",
+      "path": "devto/nextjs-cache-response-experiment.md",
+      "before_sha256": "fcbc8a0fb103ecebfe0f8856143c68d9ad586811d5c12d96a9dc57fe8b8165c3",
+      "after_sha256": "52bb7d03c037e74c5d7ce82b79b10ca63f3e2a4a07db297f1f76dceee87199eb",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Clarifies existing scope without adding any claim or changing results."
+    },
+    {
+      "id": "T34",
+      "path": "articles/eas-update-error-recovery-boundary.md",
+      "before_sha256": "1138e54cb77df1cf8ee9aec82affd136d7aa21b04e25c69fd1157d1fae8df51c",
+      "after_sha256": "958393ee0b4b133227830ec55936c90cd23f13f1071d43c1a7acdc3e67916a34",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "公式説明と特定版分岐の差、7条件、代役と未実機検証、タイマーの限界を保持。"
+    },
+    {
+      "id": "T34",
+      "path": "devto/eas-update-error-recovery-boundary.md",
+      "before_sha256": "6159c4725465398e9ffe70d65b9cb0037944e1f166d078fc0a0f7addf84c2406",
+      "after_sha256": "7606d503ceb6d64b807601a21980b242a240a42feccbcd7e8fe91936a77f665d",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Preserves source/doc distinction, seven results, explicit test doubles and timer limitation."
+    },
+    {
+      "id": "P20",
+      "path": "articles/plane-cloud-self-host-comparison.md",
+      "before_sha256": "d0cd95ad7bd6c38393ffadd10175b00395a53dd830191161c5301695453cc139",
+      "after_sha256": "4e19a98cbd6342ad165b16e3450e5ea6b337018bd437494f521e04879a187b87",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Cloud/CE/Commercial比較、4模擬条件、成功文言の限界と未実DB復元を保持。抽象的な締めを手順へ。"
+    },
+    {
+      "id": "P20",
+      "path": "devto/plane-cloud-self-host-comparison.md",
+      "before_sha256": "fa0cf312522684fe1e4956caf1d850b8984c149e6803239fbcf2620b4256f708",
+      "after_sha256": "70682466f88c6a05c6175bf4f390fbd22629e39fb5d0e62e84b7fc5a5a282df4",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Preserves the same decision requirement without claiming a completed real restoration."
+    },
+    {
+      "id": "O25",
+      "path": "articles/five-minute-game-development-talk.md",
+      "before_sha256": "c353a2f0f5b06ea41a92d4d151f77fdf72193fc248b2843a7ccc7b2c601ca57d",
+      "after_sha256": "e525cab8a2cf615e9cd03a309bd4f0026343584292c99a665deff5a8b2f44ac7",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "9/10/11枚、53commitsの条件、270+30秒は保持。未実測の構成案という区分を保ち過剰な締めを短縮。"
+    },
+    {
+      "id": "O25",
+      "path": "devto/five-minute-game-development-talk.md",
+      "before_sha256": "d4887bdb7b532a20c04dd8ed0b4072ca8400e47f600cd3477df537fcb5922106",
+      "after_sha256": "9789ddc80e390c69fe4f9c6e023584b0dd0e27eb7c41627cf38a561e889b6ec2",
+      "prose_edits": 1,
+      "frontmatter_code_links_numeric_tokens_unchanged": true,
+      "semantic_review": "Retains the proposed timing budget and explicitly unverified delivery, with a shorter closing sentence."
+    }
+  ]
+}

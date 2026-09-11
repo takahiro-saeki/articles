@@ -1,0 +1,43 @@
+{
+  "source": "volt-nomad-lightning-talk-draft.pptx",
+  "sha256": "30cfafc4a11d923add44df7a250ff7d3058fb0a2f2e232b46d0118a29e8a97ac",
+  "slides": [
+    {
+      "file": "ppt/slides/slide1.xml",
+      "text": "VOLT NOMAD / LIGHTNING TALK\nAIとGame Jamで、\nゲームを完成させた\nVOLT NOMAD 制作記\n2026.08.27"
+    },
+    {
+      "file": "ppt/slides/slide2.xml",
+      "text": "ABOUT ME\nWebエンジニアが、ゲームを作っています\n自己紹介の氏名などは省略"
+    },
+    {
+      "file": "ppt/slides/slide3.xml",
+      "text": "TODAY'S TALK\n今日は、Webの話をしません。\nゲームが「完成するまで」の話です。\n企画、実装、素材づくり、テスト、そして締切。\nAIを使っても、最後に必要だったものを振り返ります。\n03"
+    },
+    {
+      "file": "ppt/slides/slide4.xml",
+      "text": "THE GAME\nVOLT NOMADは、地底を進む増分型ボスラッシュ\n04\n●\nクリックで攻撃＋CHARGE\n攻撃そのものが、強化のための資源になる\n●\n5つのギアツリー\n手動攻撃から、自動兵器中心のビルドへ\n●\n6体から3体を選ぶ\n短いエンディングの先に、完全ルートも用意\ntsgamestudio.itch.io/volt-nomad"
+    },
+    {
+      "file": "ppt/slides/slide5.xml",
+      "text": "WHY A GAME JAM\n締切がなければ、たぶん完成しなかった\n05\nAI Browser Game Jam 4  /  Theme: CHARGE!\n8/1\n3案でスタート\nまず動くものを作る\n8/9\nVOLT NOMADへ\n1本に絞って磨く\n8/15\nGame Jam締切\n公開できる形にする\nテーマ・締切・公開先が決まると、制作が前に進む。"
+    },
+    {
+      "file": "ppt/slides/slide6.xml",
+      "text": "PRODUCTION PROCESS\n最初からVOLT NOMADだったわけではない\n06\nCHARGEBACK\nZERO PERCENT CITY\nCAPACITOR DEFENSE\n3案を作る → 捨てる → 遊び続けたい1案に絞る\n動いたかではなく、もう一度遊びたいかで判断"
+    },
+    {
+      "file": "ppt/slides/slide7.xml",
+      "text": "CODEX WORKFLOW\nCodexは、制作ラインそのものだった\n07\n01\n企画\n02\nGodot実装\n03\nテスト\n04\nバランス調整\n05\n提出準備\n人間：遊ぶ・違和感を返す・採用／破棄を決める\n53\n制作期間中のコミット\n1,440\n自動検証したルート"
+    },
+    {
+      "file": "ppt/slides/slide8.xml",
+      "text": "ASSET PIPELINE\nPixelLabとSunoも、生成より「選ぶ」が大事だった\n08\n生成 → 比較 → 採用 → 実装\n92\nPixelLabの候補素材\n18\nゲーム内のオリジナル曲\n一発で正解を出すのではなく、\n候補を並べ、遊びながら選び直す。\n短すぎる曲や、ゲーム内で読みにくい素材は捨てて再生成。"
+    },
+    {
+      "file": "ppt/slides/slide9.xml",
+      "text": "TAKEAWAY\nAIで速くなり、\nGame Jamで終わらせた。\nGAME JAM\n締切と公開先\nAI TOOLS\n制作速度と選択肢\nHUMAN\n遊ぶ・捨てる・決める\n次にゲームを作るなら、まずイベントへエントリーする。\n09"
+    }
+  ],
+  "scope": "本文を読んだ後、記事と無関係な自己紹介の個人情報を省略した抜粋"
+}

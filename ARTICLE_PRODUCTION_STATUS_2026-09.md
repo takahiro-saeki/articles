@@ -1,6 +1,6 @@
 # 記事制作進捗 2026年9月
 
-完成 35/90件（日本語＋英語の組）。残り 55件。先に書きたい12本は 9/12件完成。
+完成 41/90件（日本語＋英語の組）。残り 49件。先に書きたい12本は 9/12件完成。
 
 「完成」は未公開の記事ストックとしての完成を指す。公開・予約は行わない。状態は未着手、調査中、執筆中、検証済み、完成。
 
@@ -12,6 +12,7 @@
 - バッチ04: T09、T39、T40、T42、T44、T45。完成 6/6件。
 - バッチ05: O13、O15、O16、O20、O21、O22。完成 6/6件。
 - バッチ06: P08、P10、P17、P19、T14、O19。完成 6/6件。
+- バッチ07: P20、T18、T19、T21、T34、O25。完成 6/6件。
 - 作業ブランチ: `codex/article-stock-2026-09`。mainへのpushで動く既存の公開workflowを起動しない。
 - canonical待ちの執筆済み原稿: T01、T31、T37。Qiita新規記事の将来のIDは未確定。仮設定方法はユーザーへ確認中。URLを推測せず、未解決の原稿は完成に数えない。
 - 既存の出欠同時更新記事とDrizzle記事は今回の90件に含めず、書き直さない。
@@ -37,7 +38,7 @@
 | P17 | CodexチャットのTODOをPlaneへ集約するとき、同じテーマを重複扱いしない | plane-codex-todo-consolidation | [原稿](articles/plane-codex-todo-consolidation.md) | [原稿](devto/plane-codex-todo-consolidation.md) | SQN-14/27/46/47/48/30の説明と親子関係、Instagram e295f5cと制作履歴 | 静止画/動画/親子/後続公開準備を照合。Doneを公開完了と扱わず、起票/統合なし | 完成 |
 | P18 | 止めた個人開発をPlaneでどう閉じるか | plane-close-paused-project | 予定: public/plane-close-paused-project.md | 予定: devto/plane-close-paused-project.md | 未確認 | 未実施 | 未着手 |
 | P19 | 一人開発のEstimateは、残り日数より抱えている作業の偏りに使う | plane-estimate-capacity-experiment | [原稿](articles/plane-estimate-capacity-experiment.md) | [原稿](devto/plane-estimate-capacity-experiment.md) | SquadNote非アーカイブ52件と現行Work Points、公式Estimates | Python3.14.5で未完了22件148pt、In Progress6件48pt、3件11対24pt。欠損/0/尺度外/重複4拒否 | 完成 |
-| P20 | Plane Cloudとセルフホストを個人利用の観点で比べる | plane-cloud-self-host-comparison | 予定: articles/plane-cloud-self-host-comparison.md | 予定: devto/plane-cloud-self-host-comparison.md | 未確認 | 未実施 | 未着手 |
+| P20 | Plane Cloudとセルフホストを、復元時に引き受ける作業から比べる | plane-cloud-self-host-comparison | [原稿](articles/plane-cloud-self-host-comparison.md) | [原稿](devto/plane-cloud-self-host-comparison.md) | Plane公式料金/Edition/backup仕様、preview 2f895b8のCompose/restore.sh | 公式CLIを未変更で4模擬失敗条件。実DB/volume復元なし | 完成 |
 | T01 | Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる | promise-combinators-partial-failure | [原稿](public/promise-combinators-partial-failure.md) | [原稿](devto/promise-combinators-partial-failure.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T02 | TypeScriptの`satisfies`、型注釈、`as`は何が違うのか | typescript-satisfies-annotation-assertion | 予定: public/typescript-satisfies-annotation-assertion.md | 予定: devto/typescript-satisfies-annotation-assertion.md | 未確認 | 未実施 | 未着手 |
 | T03 | `unknown`と`any`を外部APIレスポンスで比べてみた | unknown-api-runtime-validation | 予定: public/unknown-api-runtime-validation.md | 予定: devto/unknown-api-runtime-validation.md | 未確認 | 未実施 | 未着手 |
@@ -55,10 +56,10 @@
 | T15 | `useSyncExternalStore`は何を解決するAPIなのか | use-sync-external-store-ssr | 予定: public/use-sync-external-store-ssr.md | 予定: devto/use-sync-external-store-ssr.md | 未確認 | 未実施 | 未着手 |
 | T16 | Reactのcallback refが返すcleanupを改めて調べた | react-callback-ref-cleanup | 予定: public/react-callback-ref-cleanup.md | 予定: devto/react-callback-ref-cleanup.md | 未確認 | 未実施 | 未着手 |
 | T17 | `useActionState`を普通のフォームstateと比べてみた | use-action-state-form-experiment | 予定: public/use-action-state-form-experiment.md | 予定: devto/use-action-state-form-experiment.md | 未確認 | 未実施 | 未着手 |
-| T18 | Suspenseの境界をどこに置くと画面がちらつかないか | suspense-boundary-fallback-experiment | 予定: articles/suspense-boundary-fallback-experiment.md | 予定: devto/suspense-boundary-fallback-experiment.md | 未確認 | 未実施 | 未着手 |
-| T19 | React Server Componentsでclient境界を増やすとbundleはどう変わるか | rsc-client-boundary-bundle | 予定: articles/rsc-client-boundary-bundle.md | 予定: devto/rsc-client-boundary-bundle.md | 未確認 | 未実施 | 未着手 |
+| T18 | Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる | suspense-boundary-fallback-experiment | [原稿](articles/suspense-boundary-fallback-experiment.md) | [原稿](devto/suspense-boundary-fallback-experiment.md) | React use/Suspense/useTransition公式とproduction React19.2.5 | 実ブラウザ5条件の初回/更新/解決後DOM、入力保持。通信/paint未測定 | 完成 |
+| T19 | Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる | rsc-client-boundary-bundle | [原稿](articles/rsc-client-boundary-bundle.md) | [原稿](devto/rsc-client-boundary-bundle.md) | Next16.3.4公式境界仕様、webpack依存と生成カタログ | 3構成の初回JS/HTML byteとgzip、256行一致、2ボタン操作。時間未測定 | 完成 |
 | T20 | Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ | nextjs-actions-route-handlers-boundary | [原稿](articles/nextjs-actions-route-handlers-boundary.md) | [原稿](devto/nextjs-actions-route-handlers-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
-| T21 | Next.jsのキャッシュは今いくつあるのか、実際のレスポンスで整理した | nextjs-cache-response-experiment | 予定: articles/nextjs-cache-response-experiment.md | 予定: devto/nextjs-cache-response-experiment.md | 未確認 | 未実施 | 未着手 |
+| T21 | Next.js 16のキャッシュを、レスポンスと取得回数で見分ける | nextjs-cache-response-experiment | [原稿](articles/nextjs-cache-response-experiment.md) | [原稿](devto/nextjs-cache-response-experiment.md) | Next16.3.4 cacheComponents=falseと現行従来モデル/connection/router公式 | 3 route各GET3回とbuildカウント、browser戻る/refresh/新規Link。TTL未実験 | 完成 |
 | T22 | Next.jsのMiddlewareがProxyになった理由と移行時の注意点 | nextjs-middleware-proxy-migration | 予定: public/nextjs-middleware-proxy-migration.md | 予定: devto/nextjs-middleware-proxy-migration.md | 未確認 | 未実施 | 未着手 |
 | T23 | Edge RuntimeとNode.js Runtimeは何が違うのか | nextjs-edge-node-runtime | 予定: public/nextjs-edge-node-runtime.md | 予定: devto/nextjs-edge-node-runtime.md | 未確認 | 未実施 | 未着手 |
 | T24 | Next.jsの環境変数はいつブラウザへ埋め込まれるのか | next-public-build-runtime-env | 予定: public/next-public-build-runtime-env.md | 予定: devto/next-public-build-runtime-env.md | 未確認 | 未実施 | 未着手 |
@@ -71,7 +72,7 @@
 | T31 | AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる | android-edge-to-edge-insets | [原稿](public/android-edge-to-edge-insets.md) | [原稿](devto/android-edge-to-edge-insets.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
 | T32 | ExpoのAppStateはbackgroundとinactiveをどう通知するか | expo-appstate-platform-events | 予定: public/expo-appstate-platform-events.md | 予定: devto/expo-appstate-platform-events.md | 未確認 | 未実施 | 未着手 |
 | T33 | EAS Build、Submit、Updateはそれぞれ何を配る仕組みか | eas-build-submit-update-artifacts | 予定: public/eas-build-submit-update-artifacts.md | 予定: devto/eas-build-submit-update-artifacts.md | 未確認 | 未実施 | 未着手 |
-| T34 | EAS Updateのerror recoveryはどこまで戻してくれるのか | eas-update-error-recovery-boundary | 予定: articles/eas-update-error-recovery-boundary.md | 予定: devto/eas-update-error-recovery-boundary.md | 未確認 | 未実施 | 未着手 |
+| T34 | EAS Updateのerror recoveryは何を戻すか。iOSの復旧処理を7条件で確認する | eas-update-error-recovery-boundary | [原稿](articles/eas-update-error-recovery-boundary.md) | [原稿](devto/eas-update-error-recovery-boundary.md) | expo-updates29.0.18、公式45c60e1とSwift本体byte一致、現行Expo公式 | 元Swift本体をmacOSで7条件実行。周辺を代役、実機/DB選択なし。過去成功と今回表示の分岐差 | 完成 |
 | T35 | SplashScreenを手動で閉じるときの競合を再現した | expo-splash-screen-startup-race | 予定: public/expo-splash-screen-startup-race.md | 予定: devto/expo-splash-screen-startup-race.md | 未確認 | 未実施 | 未着手 |
 | T36 | D1のbatchで更新0件は失敗にならない。ロールバックされる条件を実験する | d1-batch-atomicity-boundary | [原稿](articles/d1-batch-atomicity-boundary.md) | [原稿](devto/d1-batch-atomicity-boundary.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [検証・日英照合・Humanizer済み](production/2026-09/batch-02/REVIEW.md) | 完成 |
 | T37 | D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた | d1-composite-index-column-order | [原稿](public/d1-composite-index-column-order.md) | [原稿](devto/d1-composite-index-column-order.md) | [一次資料・実験確認](production/2026-09/batch-02/REVIEW.md) | [本文・日英・Humanizer検証済み／canonical待ち](production/2026-09/batch-02/REVIEW.md) | 執筆中 |
@@ -107,4 +108,4 @@
 | O22 | ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す | guest-identity-without-placeholder-user | [原稿](articles/guest-identity-without-placeholder-user.md) | [原稿](devto/guest-identity-without-placeholder-user.md) | circle-hub 9aec489の設計/移行/ownership/router/端末保存、WebCrypto公式 | 既存15テスト成功。実乱数/hash、routerはDB/通知モック。token一致・旧鍵失効・公開情報制限。実D1/複数process未検証 | 完成 |
 | O23 | 外部の日程データを取り込むとき、再実行可能にした設計 | repeatable-schedule-import | 予定: public/repeatable-schedule-import.md | 予定: devto/repeatable-schedule-import.md | 未確認 | 未実施 | 未着手 |
 | O24 | Web Audio APIで音に反応するダッシュボードを作った | web-audio-reactive-dashboard | 予定: public/web-audio-reactive-dashboard.md | 予定: devto/web-audio-reactive-dashboard.md | 未確認 | 未実施 | 未着手 |
-| O25 | 5分LTへ技術と制作秘話を詰め込みすぎない構成の決め方 | five-minute-game-development-talk | 予定: articles/five-minute-game-development-talk.md | 予定: devto/five-minute-game-development-talk.md | 未確認 | 未実施 | 未着手 |
+| O25 | VOLT NOMADのLT資料を5分へ絞る。制作工程より、残す判断を先に決める | five-minute-game-development-talk | [原稿](articles/five-minute-game-development-talk.md) | [原稿](devto/five-minute-game-development-talk.md) | 実在LT9/10/11枚、構成メモ、game-jam-lab f074703/5198488と公開ページ | 原稿本文照合、期間/パス指定53commits再計算、270+30秒。登壇/読み上げ結果未確認 | 完成 |

@@ -1,0 +1,37 @@
+[
+  {
+    "source": "volt-nomad-lightning-talk-revised.pptx",
+    "sha256": "bd2e76f8f633db8dd27242a2c180620323b14fbb6a797c768b3221819852d874",
+    "slideCount": 10,
+    "topicHeaders": [
+      "VOLT NOMAD / LIGHTNING TALK",
+      "今日は、ゲーム開発の話をします。",
+      "ABOUT ME",
+      "TODAY'S TALK",
+      "THE GAME",
+      "WHY A GAME JAM",
+      "PRODUCTION PROCESS",
+      "CODEX WORKFLOW",
+      "ASSET PIPELINE",
+      "TAKEAWAY"
+    ]
+  },
+  {
+    "source": "volt-nomad-lightning-talk-portfolio.pptx",
+    "sha256": "d3f512eb6bc7d58d134c6538c53e99b931cba4c69988115309ba61570c584452",
+    "slideCount": 11,
+    "topicHeaders": [
+      "VOLT NOMAD / LIGHTNING TALK",
+      "自己紹介（個人情報は監査記録から省略）",
+      "PERSONAL PROJECTS",
+      "今日は、ゲーム開発の話をします。",
+      "TODAY'S TALK",
+      "THE GAME",
+      "WHY A GAME JAM",
+      "PRODUCTION PROCESS",
+      "CODEX WORKFLOW",
+      "ASSET PIPELINE",
+      "TAKEAWAY"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "url": "https://raw.githubusercontent.com/makeplane/plane/2f895b82dad839c730c36a5c0cbc046f1e5d6b56/deployments/cli/community/restore.sh",
+  "sha256": "916d813af9271d50d0fa05c057c9df2025a2ff15d9af3028b055605052e5ee1e",
+  "commit": "2f895b82dad839c730c36a5c0cbc046f1e5d6b56",
+  "scope": "exact official shell script with fake Docker commands; CLI branching only, not database or file restoration",
+  "cases": [
+    {
+      "case": "all-archives",
+      "exitCode": 0,
+      "attempts": [
+        "pgdata",
+        "rabbitmq_data",
+        "redisdata",
+        "uploads"
+      ],
+      "successMessage": true,
+      "output": "--------------------------------------------\n ____  _                          ///////// \n|  _ \\| | __ _ _ __   ___         ///////// \n| |_) | |/ _` | '_ \\ / _ \\   /////    ///// \n|  __/| | (_| | | | |  __/   /////    ///// \n|_|   |_|\\__,_|_| |_|\\___|        ////      \n                                  ////      \n--------------------------------------------\nProject management tool from the future\n--------------------------------------------\nFound <scratch>/backup/pgdata.tar.gz\n.....Restoring plane-app_pgdata\n.....Successfully restored volume plane-app_pgdata from pgdata.tar.gz\n\nFound <scratch>/backup/rabbitmq_data.tar.gz\n.....Restoring plane-app_rabbitmq_data\n.....Successfully restored volume plane-app_rabbitmq_data from rabbitmq_data.tar.gz\n\nFound <scratch>/backup/redisdata.tar.gz\n.....Restoring plane-app_redisdata\n.....Successfully restored volume plane-app_redisdata from redisdata.tar.gz\n\nFound <scratch>/backup/uploads.tar.gz\n.....Restoring plane-app_uploads\n.....Successfully restored volume plane-app_uploads from uploads.tar.gz\n\n\nRestore completed successfully.\n\n",
+      "stderr": ""
+    },
+    {
+      "case": "missing-archive",
+      "exitCode": 0,
+      "attempts": [
+        "pgdata",
+        "rabbitmq_data",
+        "redisdata"
+      ],
+      "successMessage": true,
+      "output": "--------------------------------------------\n ____  _                          ///////// \n|  _ \\| | __ _ _ __   ___         ///////// \n| |_) | |/ _` | '_ \\ / _ \\   /////    ///// \n|  __/| | (_| | | | |  __/   /////    ///// \n|_|   |_|\\__,_|_| |_|\\___|        ////      \n                                  ////      \n--------------------------------------------\nProject management tool from the future\n--------------------------------------------\nFound <scratch>/backup/pgdata.tar.gz\n.....Restoring plane-app_pgdata\n.....Successfully restored volume plane-app_pgdata from pgdata.tar.gz\n\nFound <scratch>/backup/rabbitmq_data.tar.gz\n.....Restoring plane-app_rabbitmq_data\n.....Successfully restored volume plane-app_rabbitmq_data from rabbitmq_data.tar.gz\n\nFound <scratch>/backup/redisdata.tar.gz\n.....Restoring plane-app_redisdata\n.....Successfully restored volume plane-app_redisdata from redisdata.tar.gz\n\n\nRestore completed successfully.\n\n",
+      "stderr": ""
+    },
+    {
+      "case": "missing-volume",
+      "exitCode": 0,
+      "attempts": [
+        "pgdata",
+        "rabbitmq_data",
+        "redisdata"
+      ],
+      "successMessage": true,
+      "output": "--------------------------------------------\n ____  _                          ///////// \n|  _ \\| | __ _ _ __   ___         ///////// \n| |_) | |/ _` | '_ \\ / _ \\   /////    ///// \n|  __/| | (_| | | | |  __/   /////    ///// \n|_|   |_|\\__,_|_| |_|\\___|        ////      \n                                  ////      \n--------------------------------------------\nProject management tool from the future\n--------------------------------------------\nFound <scratch>/backup/pgdata.tar.gz\n.....Restoring plane-app_pgdata\n.....Successfully restored volume plane-app_pgdata from pgdata.tar.gz\n\nFound <scratch>/backup/rabbitmq_data.tar.gz\n.....Restoring plane-app_rabbitmq_data\n.....Successfully restored volume plane-app_rabbitmq_data from rabbitmq_data.tar.gz\n\nFound <scratch>/backup/redisdata.tar.gz\n.....Restoring plane-app_redisdata\n.....Successfully restored volume plane-app_redisdata from redisdata.tar.gz\n\nFound <scratch>/backup/uploads.tar.gz\nSkipping: No volume found with name plane-app_uploads\n\nRestore completed successfully.\n\n",
+      "stderr": ""
+    },
+    {
+      "case": "restore-error",
+      "exitCode": 0,
+      "attempts": [
+        "pgdata",
+        "rabbitmq_data",
+        "redisdata",
+        "uploads"
+      ],
+      "successMessage": true,
+      "output": "--------------------------------------------\n ____  _                          ///////// \n|  _ \\| | __ _ _ __   ___         ///////// \n| |_) | |/ _` | '_ \\ / _ \\   /////    ///// \n|  __/| | (_| | | | |  __/   /////    ///// \n|_|   |_|\\__,_|_| |_|\\___|        ////      \n                                  ////      \n--------------------------------------------\nProject management tool from the future\n--------------------------------------------\nFound <scratch>/backup/pgdata.tar.gz\n.....Restoring plane-app_pgdata\n.....Successfully restored volume plane-app_pgdata from pgdata.tar.gz\n\nFound <scratch>/backup/rabbitmq_data.tar.gz\n.....Restoring plane-app_rabbitmq_data\n.....Successfully restored volume plane-app_rabbitmq_data from rabbitmq_data.tar.gz\n\nFound <scratch>/backup/redisdata.tar.gz\n.....Restoring plane-app_redisdata\n.....Successfully restored volume plane-app_redisdata from redisdata.tar.gz\n\nFound <scratch>/backup/uploads.tar.gz\n.....Restoring plane-app_uploads\nError: Failed to restore volume plane-app_uploads from uploads.tar.gz\n\n\nRestore completed successfully.\n\n",
+      "stderr": ""
+    }
+  ]
+}

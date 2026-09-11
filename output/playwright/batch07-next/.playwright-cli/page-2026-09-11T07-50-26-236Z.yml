@@ -1,0 +1,9 @@
+- generic [active] [ref=f4e1]:
+  - alert [ref=f4e8]: Router probe
+  - main [ref=f4e9]:
+    - heading "Router probe" [level=1] [ref=f4e10]
+    - generic [ref=f4e11]: "{\"key\":\"router\",\"count\":1}"
+    - navigation [ref=f4e12]:
+      - link "Home" [ref=f4e13] [cursor=pointer]:
+        - /url: /
+      - button "Refresh" [ref=f4e14]

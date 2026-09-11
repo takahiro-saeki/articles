@@ -1,0 +1,89 @@
+{
+  "sourceCommit": "2f895b82dad839c730c36a5c0cbc046f1e5d6b56",
+  "sha256": "ce2dc6829df5a31c482f8a29ad339ef4a26a9cc213e201ad6823d5e0f93f832b",
+  "services": {
+    "web": {
+      "image": "makeplane/plane-frontend:${APP_RELEASE:-stable}",
+      "volumes": []
+    },
+    "space": {
+      "image": "makeplane/plane-space:${APP_RELEASE:-stable}",
+      "volumes": []
+    },
+    "admin": {
+      "image": "makeplane/plane-admin:${APP_RELEASE:-stable}",
+      "volumes": []
+    },
+    "live": {
+      "image": "makeplane/plane-live:${APP_RELEASE:-stable}",
+      "volumes": []
+    },
+    "api": {
+      "image": "makeplane/plane-backend:${APP_RELEASE:-stable}",
+      "volumes": [
+        "logs_api:/code/plane/logs"
+      ]
+    },
+    "worker": {
+      "image": "makeplane/plane-backend:${APP_RELEASE:-stable}",
+      "volumes": [
+        "logs_worker:/code/plane/logs"
+      ]
+    },
+    "beat-worker": {
+      "image": "makeplane/plane-backend:${APP_RELEASE:-stable}",
+      "volumes": [
+        "logs_beat-worker:/code/plane/logs"
+      ]
+    },
+    "migrator": {
+      "image": "makeplane/plane-backend:${APP_RELEASE:-stable}",
+      "volumes": [
+        "logs_migrator:/code/plane/logs"
+      ]
+    },
+    "plane-db": {
+      "image": "postgres:15.7-alpine",
+      "volumes": [
+        "pgdata:/var/lib/postgresql/data"
+      ]
+    },
+    "plane-redis": {
+      "image": "valkey/valkey:7.2.11-alpine",
+      "volumes": [
+        "redisdata:/data"
+      ]
+    },
+    "plane-mq": {
+      "image": "rabbitmq:3.13.6-management-alpine",
+      "volumes": [
+        "rabbitmq_data:/var/lib/rabbitmq"
+      ]
+    },
+    "plane-minio": {
+      "image": "minio/minio:latest",
+      "volumes": [
+        "uploads:/export"
+      ]
+    },
+    "proxy": {
+      "image": "makeplane/plane-proxy:${APP_RELEASE:-stable}",
+      "volumes": [
+        "proxy_config:/config",
+        "proxy_data:/data"
+      ]
+    }
+  },
+  "volumes": [
+    "pgdata",
+    "redisdata",
+    "uploads",
+    "logs_api",
+    "logs_worker",
+    "logs_beat-worker",
+    "logs_migrator",
+    "rabbitmq_data",
+    "proxy_config",
+    "proxy_data"
+  ]
+}

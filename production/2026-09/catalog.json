@@ -305,7 +305,7 @@
   },
   {
     "id": "P20",
-    "title": "Plane Cloudとセルフホストを個人利用の観点で比べる",
+    "title": "Plane Cloudとセルフホストを、復元時に引き受ける作業から比べる",
     "original_title": "Plane Cloudとセルフホストを個人利用の観点で比べる",
     "slug": "plane-cloud-self-host-comparison",
     "angle": "保守、バックアップ、更新、費用",
@@ -314,10 +314,10 @@
     "japanese": "articles/plane-cloud-self-host-comparison.md",
     "english": "devto/plane-cloud-self-host-comparison.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 7,
+    "fact_check": "Plane公式料金/Edition/backup仕様、preview 2f895b8のCompose/restore.sh",
+    "verification": "公式CLIを未変更で4模擬失敗条件。実DB/volume復元なし",
+    "status": "完成"
   },
   {
     "id": "T01",
@@ -594,7 +594,7 @@
   },
   {
     "id": "T18",
-    "title": "Suspenseの境界をどこに置くと画面がちらつかないか",
+    "title": "Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる",
     "original_title": "Suspenseの境界をどこに置くと画面がちらつかないか",
     "slug": "suspense-boundary-fallback-experiment",
     "angle": "streamingとfallbackの粒度",
@@ -603,14 +603,14 @@
     "japanese": "articles/suspense-boundary-fallback-experiment.md",
     "english": "devto/suspense-boundary-fallback-experiment.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 7,
+    "fact_check": "React use/Suspense/useTransition公式とproduction React19.2.5",
+    "verification": "実ブラウザ5条件の初回/更新/解決後DOM、入力保持。通信/paint未測定",
+    "status": "完成"
   },
   {
     "id": "T19",
-    "title": "React Server Componentsでclient境界を増やすとbundleはどう変わるか",
+    "title": "Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる",
     "original_title": "React Server Componentsでclient境界を増やすとbundleはどう変わるか",
     "slug": "rsc-client-boundary-bundle",
     "angle": "bundle analyzerによる比較",
@@ -619,10 +619,10 @@
     "japanese": "articles/rsc-client-boundary-bundle.md",
     "english": "devto/rsc-client-boundary-bundle.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 7,
+    "fact_check": "Next16.3.4公式境界仕様、webpack依存と生成カタログ",
+    "verification": "3構成の初回JS/HTML byteとgzip、256行一致、2ボタン操作。時間未測定",
+    "status": "完成"
   },
   {
     "id": "T20",
@@ -642,7 +642,7 @@
   },
   {
     "id": "T21",
-    "title": "Next.jsのキャッシュは今いくつあるのか、実際のレスポンスで整理した",
+    "title": "Next.js 16のキャッシュを、レスポンスと取得回数で見分ける",
     "original_title": "Next.jsのキャッシュは今いくつあるのか、実際のレスポンスで整理した",
     "slug": "nextjs-cache-response-experiment",
     "angle": "request、data、route、router",
@@ -651,10 +651,10 @@
     "japanese": "articles/nextjs-cache-response-experiment.md",
     "english": "devto/nextjs-cache-response-experiment.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 7,
+    "fact_check": "Next16.3.4 cacheComponents=falseと現行従来モデル/connection/router公式",
+    "verification": "3 route各GET3回とbuildカウント、browser戻る/refresh/新規Link。TTL未実験",
+    "status": "完成"
   },
   {
     "id": "T22",
@@ -851,7 +851,7 @@
   },
   {
     "id": "T34",
-    "title": "EAS Updateのerror recoveryはどこまで戻してくれるのか",
+    "title": "EAS Updateのerror recoveryは何を戻すか。iOSの復旧処理を7条件で確認する",
     "original_title": "EAS Updateのerror recoveryはどこまで戻してくれるのか",
     "slug": "eas-update-error-recovery-boundary",
     "angle": "起動失敗、rollback、embedded update",
@@ -860,10 +860,10 @@
     "japanese": "articles/eas-update-error-recovery-boundary.md",
     "english": "devto/eas-update-error-recovery-boundary.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 7,
+    "fact_check": "expo-updates29.0.18、公式45c60e1とSwift本体byte一致、現行Expo公式",
+    "verification": "元Swift本体をmacOSで7条件実行。周辺を代役、実機/DB選択なし。過去成功と今回表示の分岐差",
+    "status": "完成"
   },
   {
     "id": "T35",
@@ -1428,7 +1428,7 @@
   },
   {
     "id": "O25",
-    "title": "5分LTへ技術と制作秘話を詰め込みすぎない構成の決め方",
+    "title": "VOLT NOMADのLT資料を5分へ絞る。制作工程より、残す判断を先に決める",
     "original_title": "5分LTへ技術と制作秘話を詰め込みすぎない構成の決め方",
     "slug": "five-minute-game-development-talk",
     "angle": "VOLT NOMAD登壇資料",
@@ -1437,9 +1437,9 @@
     "japanese": "articles/five-minute-game-development-talk.md",
     "english": "devto/five-minute-game-development-talk.md",
     "priority": null,
-    "batch": null,
-    "fact_check": "未確認",
-    "verification": "未実施",
-    "status": "未着手"
+    "batch": 7,
+    "fact_check": "実在LT9/10/11枚、構成メモ、game-jam-lab f074703/5198488と公開ページ",
+    "verification": "原稿本文照合、期間/パス指定53commits再計算、270+30秒。登壇/読み上げ結果未確認",
+    "status": "完成"
   }
 ]

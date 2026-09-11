@@ -1,0 +1,38 @@
+{
+  "articleSnippets": [
+    {
+      "id": "T18",
+      "blocks": 2,
+      "match": "exact executed source"
+    },
+    {
+      "id": "T19",
+      "blocks": 2,
+      "match": "exact executed source"
+    },
+    {
+      "id": "T21",
+      "blocks": 2,
+      "match": "exact executed source"
+    },
+    {
+      "id": "O25",
+      "blocks": 1,
+      "match": "article code executed, compared to proposal record"
+    }
+  ],
+  "suspenseCases": 5,
+  "nextBundleVariants": 3,
+  "nextCacheHTTPResponses": 9,
+  "nextRouterSteps": 4,
+  "planeCLICases": 4,
+  "expoSwiftCases": 7,
+  "guard": {
+    "baselineFilesUnchanged": 137,
+    "previousArticleFilesUnchanged": 199,
+    "humanizerFinalHashesMatched": 12,
+    "baseline": "8a1bfa8",
+    "beforeBatch": "d9911bf",
+    "exception": "ARTICLE_IDEAS_2026-09.md production progress section"
+  }
+}

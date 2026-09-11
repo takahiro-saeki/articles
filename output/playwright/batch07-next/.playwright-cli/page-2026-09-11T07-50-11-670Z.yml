@@ -1,0 +1,6 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - heading "Local article experiments" [level=1] [ref=e3]
+    - link "Router probe" [ref=e4] [cursor=pointer]:
+      - /url: /cache/router
+  - alert [ref=e5]

@@ -1,0 +1,32 @@
+{
+  "commit": "f074703848586828b6a5acc0e465ccdd2c0d5244",
+  "files": {
+    "README.md": {
+      "sha256": "e7900df1bdf1932589734d3c6053859d743f95ebbf304309edbf5e58c5a6ca8e",
+      "bytes": 12809
+    },
+    "docs/DEVLOG_DRAFT.md": {
+      "sha256": "6a4410f82ad441a1af8bf8d0f50b56d32084c3a693e4ea6e8cc1de7d53582e61",
+      "bytes": 2499
+    },
+    "docs/ASSET_PROVENANCE.md": {
+      "sha256": "041b9a70cbf38b09059a515866702846927c5f014e5838fe06422c840828e709",
+      "bytes": 18298
+    },
+    "tools/art-review/data/review-manifest.json": {
+      "sha256": "2577a4bc5df5364b8d9f34ce501bca4aef33f0312b4c36ef4de05d9a132cbf8c",
+      "bytes": 278618
+    }
+  },
+  "retirementCommit": "51984887e2b2be66c1330a3ade8d82a9392532b6",
+  "countedWindow": "2026-08-01T00:00:00+09:00 through 2026-08-12T23:59:59+09:00",
+  "commits": 53,
+  "proposedSegmentsSeconds": [
+    25,
+    45,
+    75,
+    75,
+    50
+  ],
+  "proposedBufferSeconds": 30
+}
