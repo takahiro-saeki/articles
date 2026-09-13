@@ -3,7 +3,7 @@ title: "38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と�
 emoji: "📚"
 type: "tech"
 topics: ["qiita", "zenn", "devto", "githubactions", "個人開発"]
-published: false
+published: true
 ---
 
 予約表に38行あることと、38日間予定どおり公開できたことは同じではありません。日本語原稿だけ公開されている日、英語版の投稿に失敗した日、再実行で復旧した日があっても、予約表の行数は変わらないためです。

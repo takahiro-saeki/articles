@@ -1,8 +1,9 @@
 ---
+devto_id: 4641615
 title: "Auditing 38 days of Qiita, Zenn, and dev.to records: scheduled does not mean published on time"
 tags: writing, githubactions, productivity, javascript
 canonical_url: https://zenn.dev/hirodeath/articles/publishing-38-day-audit
-published: false
+published: true
 ---
 
 A schedule containing 38 rows does not prove that publication happened as planned for 38 days. Its row count stays the same if only the Japanese article is published, the English post fails, or a rerun recovers the pair later.
