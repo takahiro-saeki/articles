@@ -1,8 +1,9 @@
 ---
+devto_id: 4646242
 title: "A push token per user is not enough: device-scoped registration and logout"
 tags: expo, reactnative, database, typescript
 canonical_url: https://zenn.dev/hirodeath/articles/expo-push-token-device-ownership
-published: false
+published: true
 ---
 
 Delivering notifications to someone using two phones requires more than changing the recipient into an array. Registering the second phone must preserve the first, and logout must deregister only the device performing it.

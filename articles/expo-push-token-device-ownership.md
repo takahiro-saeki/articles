@@ -3,7 +3,7 @@ title: "Push Tokenはユーザー単位では足りない。登録と解除を�
 emoji: "📱"
 type: "tech"
 topics: ["expo", "reactnative", "database", "typescript"]
-published: false
+published: true
 ---
 
 スマートフォンを二台使うユーザーに通知を届けるには、送信先を配列に変えるだけでは足りません。二台目を登録するときに一台目を消さず、ログアウトでも操作した端末だけを解除する必要があります。
