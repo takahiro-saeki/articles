@@ -1,8 +1,9 @@
 ---
+devto_id: 4654374
 title: "Tracing Android safe-area spacing to the components that apply insets"
 tags: android, reactnative, expo
-canonical_url:
-published: false
+canonical_url: https://qiita.com/hiro123/items/d12f32ce2d2ae999126f
+published: true
 ---
 
 Before changing bottom spacing, find which components consume `insets.bottom`. A parent `SafeAreaView` and a child's `paddingBottom` can avoid the same area, potentially adding extra space even when the library reports correct values.

@@ -5,11 +5,11 @@ tags:
   - ReactNative
   - Expo
 private: false
-updated_at: null
-id: null
+updated_at: '2026-09-15T11:03:32+09:00'
+id: d12f32ce2d2ae999126f
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 画面下の余白を直す前に、`insets.bottom`を誰が使っているかを確認します。親の`SafeAreaView`と子の`paddingBottom`が同じ領域を避けているなら、ライブラリの値が正しくても余白が余分に付く可能性があります。
