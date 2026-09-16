@@ -6,11 +6,11 @@ tags:
   - SQLite
   - SQL
 private: false
-updated_at: null
-id: null
+updated_at: '2026-09-16T10:54:42+09:00'
+id: 0ed80ed871c972ead808
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `WHERE user_id = ? AND created_at >= ?`で通知を検索する場合、`(user_id, created_at)`と`(created_at, user_id)`は同じ働きにはなりません。

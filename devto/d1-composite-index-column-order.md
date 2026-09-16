@@ -1,8 +1,9 @@
 ---
+devto_id: 4662880
 title: "What reversing a D1 composite index changes in the query plan"
 tags: cloudflare, database, sqlite, sql
-canonical_url:
-published: false
+canonical_url: https://qiita.com/hiro123/items/0ed80ed871c972ead808
+published: true
 ---
 
 For a notification query using `WHERE user_id = ? AND created_at >= ?`, indexes on `(user_id, created_at)` and `(created_at, user_id)` do not behave identically.
