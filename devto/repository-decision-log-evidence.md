@@ -1,8 +1,9 @@
 ---
+devto_id: 4671333
 title: "Keeping Codex decisions in the repository and checking them against implementation evidence"
 tags: ai, git, documentation, gamedev
 canonical_url: https://zenn.dev/hirodeath/articles/repository-decision-log-evidence
-published: false
+published: true
 ---
 
 During a long production effort, finding an old proposal is only part of the problem. You also need to know whether it was adopted, remains a target, or was superseded.
