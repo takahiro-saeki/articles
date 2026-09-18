@@ -3,7 +3,7 @@ title: "PlaneのProject・Module・Cycle・Initiativeを、完了させたいも
 emoji: "📋"
 type: "tech"
 topics: ["plane", "個人開発", "プロジェクト管理"]
-published: false
+published: true
 ---
 
 Planeの整理単位を階層として全部使おうとすると、一人で一つの機能を作るだけでも入れ物が増えます。選ぶときの基準は、「いま何の完了を確認したいか」に置くと分かりやすくなります。

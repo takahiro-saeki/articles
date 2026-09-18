@@ -1,8 +1,9 @@
 ---
+devto_id: 4680417
 title: "Choosing Plane Projects, Modules, Cycles, and Initiatives by what needs to be finished"
 tags: productivity, opensource, planning
 canonical_url: https://zenn.dev/hirodeath/articles/plane-project-module-cycle-initiative
-published: false
+published: true
 ---
 
 Trying to use every organizational level in Plane creates extra containers even when one person is building one feature. A more useful selection rule is to ask what kind of completion you need to check.
