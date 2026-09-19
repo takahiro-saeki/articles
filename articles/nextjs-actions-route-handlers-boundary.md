@@ -3,7 +3,7 @@ title: "Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約�
 emoji: "🚪"
 type: "tech"
 topics: ["nextjs", "react", "typescript", "設計"]
-published: false
+published: true
 ---
 
 Next.jsでサーバー側の更新処理を書くとき、Server ActionにもRoute Handlerにも同じ業務処理を置けそうに見えます。違いを「フォームならAction、APIならRoute」と暗記するだけでは、モバイルアプリやCronからも呼びたくなったときに迷います。

@@ -1,6 +1,7 @@
 ---
+devto_id: 4689753
 title: "Choose Next.js Server Actions or Route Handlers by the contract with the caller"
-published: false
+published: true
 description: "A real account-linking form and a cron endpoint illustrate where UI actions end, HTTP contracts begin, and authorization must still happen."
 tags: nextjs, react, typescript, webdev
 canonical_url: https://zenn.dev/hirodeath/articles/nextjs-actions-route-handlers-boundary
