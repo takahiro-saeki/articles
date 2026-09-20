@@ -5,11 +5,11 @@ tags:
   - TypeScript
   - Node.js
 private: false
-updated_at: null
-id: null
+updated_at: '2026-09-20T10:53:34+09:00'
+id: bd155c9db34eecf50223
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 部分失敗のある処理では、何が起きた時点で集約したPromiseを確定したいかを決めます。`Promise.all`を`allSettled`へ変えても、処理の開始数やキャンセル方法までは変わりません。

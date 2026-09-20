@@ -1,8 +1,9 @@
 ---
+devto_id: 4697086
 title: "Comparing Promise.all, allSettled, any, and race when failure arrives first"
 tags: javascript, typescript, node, testing
-canonical_url:
-published: false
+canonical_url: https://qiita.com/hiro123/items/bd155c9db34eecf50223
+published: true
 ---
 
 When work can partially fail, decide which event should settle the aggregate Promise. Replacing `Promise.all` with `allSettled` does not change how many operations start or how they can be cancelled.
