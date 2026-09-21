@@ -3,7 +3,7 @@ title: "AIが書いたコードを「動いた」で終わらせない。条件�
 emoji: "🧪"
 type: "tech"
 topics: ["ai", "testing", "vitest", "個人開発"]
-published: false
+published: true
 ---
 
 AIから差分とテストを受け取り、テストがすべて通った。そこで困るのは、そのテストが何を守っているかを、自分の言葉で説明できないときです。

@@ -1,6 +1,7 @@
 ---
+devto_id: 4702558
 title: "Reviewing AI-generated code by breaking one invariant and reading the failing test"
-published: false
+published: true
 description: "A controlled mutation of a real notification router shows what its tests protect, and what their passing result cannot prove."
 tags: ai, testing, javascript, programming
 canonical_url: https://zenn.dev/hirodeath/articles/ai-code-review-invariants
