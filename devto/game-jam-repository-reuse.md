@@ -1,6 +1,7 @@
 ---
+devto_id: 4711361
 title: "Reusing a game jam repository starts with event boundaries and explicit export targets"
-published: false
+published: true
 description: "Inspecting a Godot jam repository shows which export conventions can carry forward and which game-specific settings still need a deliberate choice."
 tags: gamedev, godot, githubactions, programming
 canonical_url: https://zenn.dev/hirodeath/articles/game-jam-repository-reuse

@@ -3,7 +3,7 @@ title: "Game Jamのリポジトリを次回も使う。イベントの境界と�
 emoji: "🎮"
 type: "tech"
 topics: ["godot", "gamedev", "githubactions", "個人開発"]
-published: false
+published: true
 ---
 
 Game Jamが終わった後に残したいのは、ゲームのソースだけではありません。提出用ZIPの作り方、使った書き出しプリセット、テストの起動方法も、次のイベントで読み直せると助かります。
