@@ -1,8 +1,9 @@
 ---
+devto_id: 4720347
 title: "When retrying scheduled publication avoids duplicates, and when a lost response breaks it"
 tags: githubactions, javascript, writing, testing
 canonical_url: https://zenn.dev/hirodeath/articles/scheduled-publishing-recovery-boundary
-published: false
+published: true
 ---
 
 Whether it is safe to rerun a failed publishing command depends on where it failed. Retrying before an external service creates the article can attempt a new publication. Retrying after creation, when only the response was lost, can create another article.

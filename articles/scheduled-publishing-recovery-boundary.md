@@ -3,7 +3,7 @@ title: "予約投稿の再実行で重複を防げる範囲。保存済みIDと�
 emoji: "🔁"
 type: "tech"
 topics: ["githubactions", "qiita", "devto", "javascript", "運用"]
-published: false
+published: true
 ---
 
 投稿スクリプトが失敗したとき、同じコマンドをもう一度実行してよいかは、失敗した場所によって変わります。外部サービスに記事が作られる前なら新規投稿を試せますが、作成後に応答だけ失われた場合は、もう一度記事を作る可能性があります。
