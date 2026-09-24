@@ -3,7 +3,7 @@ title: "PlaneはWorkspaceとProjectのどちらで分けるか。管理者に見
 emoji: "🔐"
 type: "idea"
 topics: ["plane", "タスク管理", "個人開発", "設計"]
-published: false
+published: true
 ---
 
 個人開発と会社の仕事を、一つのPlaneに入れたくなることがあります。画面を切り替えずに済み、今日の作業をまとめて見られるからです。

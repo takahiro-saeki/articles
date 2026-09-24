@@ -1,6 +1,7 @@
 ---
+devto_id: 4728668
 title: "Split Plane Workspaces or Projects based on who may administer the data"
-published: false
+published: true
 description: "Private projects restrict participation, but workspace administrators remain a separate consideration when separating personal and company work."
 tags: productivity, projectmanagement, opensource, devtools
 canonical_url: https://zenn.dev/hirodeath/articles/plane-workspace-access-boundaries
