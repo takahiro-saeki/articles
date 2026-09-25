@@ -1,6 +1,7 @@
 ---
+devto_id: 4737573
 title: "Zero updated rows do not fail a D1 batch: testing the rollback boundary"
-published: false
+published: true
 description: "A local D1 experiment separates SQL errors, zero-row updates, and JavaScript exceptions after a batch has completed."
 tags: cloudflare, sql, database, javascript
 canonical_url: https://zenn.dev/hirodeath/articles/d1-batch-atomicity-boundary

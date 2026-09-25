@@ -3,7 +3,7 @@ title: "D1のbatchで更新0件は失敗にならない。ロールバックさ�
 emoji: "🗃️"
 type: "tech"
 topics: ["cloudflare", "d1", "sql", "database"]
-published: false
+published: true
 ---
 
 在庫を減らしてから注文を保存する処理を、D1の`batch()`に入れたとします。在庫不足ならUPDATEが0件になるように書けば、注文も保存されないでしょうか。
