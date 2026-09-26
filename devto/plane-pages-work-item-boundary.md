@@ -1,6 +1,7 @@
 ---
+devto_id: 4746158
 title: "What belongs in a Plane Page, and what belongs in a Work Item?"
-published: false
+published: true
 tags: [plane, productivity, architecture, documentation]
 canonical_url: https://zenn.dev/hirodeath/articles/plane-pages-work-item-boundary
 ---

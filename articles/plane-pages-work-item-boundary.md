@@ -3,7 +3,7 @@ title: "Plane PagesとWork Itemsのどちらに仕様を書くか"
 emoji: "📄"
 type: "idea"
 topics: ["plane", "タスク管理", "個人開発", "設計"]
-published: false
+published: true
 ---
 
 仕様を詳しく書くほど、Work Itemの説明が長くなります。背景、将来の構想、今回の受け入れ条件、確認結果まで並ぶと、実装担当者が「今回はどこまでやるのか」を探す必要が出てきます。
