@@ -3,7 +3,7 @@ title: "GitHub IssueとPlaneを二重管理しないための境界"
 emoji: "🔗"
 type: "idea"
 topics: ["plane", "github", "タスク管理", "個人開発"]
-published: false
+published: true
 ---
 
 Planeで作業を管理していても、コードはGitHubのPRでレビューします。そこで同じ作業のGitHub Issueも作ると、説明、担当者、完了状態を二か所で更新することになります。

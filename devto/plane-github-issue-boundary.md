@@ -1,6 +1,7 @@
 ---
+devto_id: 4753382
 title: "Where to draw the boundary between GitHub Issues and Plane"
-published: false
+published: true
 tags: [plane, github, productivity, architecture]
 canonical_url: https://zenn.dev/hirodeath/articles/plane-github-issue-boundary
 ---
