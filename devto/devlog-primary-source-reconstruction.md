@@ -1,6 +1,7 @@
 ---
+devto_id: 4758986
 title: "Before turning AI chats into a devlog, verify the numbers and completion claims"
-published: false
+published: true
 tags: [ai, gamedev, documentation, testing]
 canonical_url: https://zenn.dev/hirodeath/articles/devlog-primary-source-reconstruction
 ---
