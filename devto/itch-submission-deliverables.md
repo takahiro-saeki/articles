@@ -1,6 +1,7 @@
 ---
+devto_id: 4767979
 title: "Beyond the game build: checking itch.io submission copy and image files"
-published: false
+published: true
 tags: [gamedev, indie, godot, documentation]
 canonical_url: https://zenn.dev/hirodeath/articles/itch-submission-deliverables
 ---
