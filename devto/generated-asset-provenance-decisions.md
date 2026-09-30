@@ -1,6 +1,7 @@
 ---
+devto_id: 4774740
 title: "Recording generated-asset provenance, originals, and selection decisions"
-published: false
+published: true
 tags: [ai, gamedev, documentation, tooling]
 canonical_url: https://zenn.dev/hirodeath/articles/generated-asset-provenance-decisions
 ---
