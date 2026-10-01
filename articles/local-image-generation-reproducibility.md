@@ -3,7 +3,7 @@ title: "ローカル画像生成を再現可能にするため、モデル本体
 emoji: "🧪"
 type: "tech"
 topics: ["画像生成", "comfyui", "python", "個人開発"]
-published: false
+published: true
 ---
 
 ローカルにモデルを置けば、画像生成の条件も手元で管理できます。ただ、後から残った画像とモデル名だけを見ても、どのworkflowを、どの設定と実行環境で動かしたのかは分かりません。

@@ -1,6 +1,7 @@
 ---
+devto_id: 4780190
 title: "Reproducing local image generation takes more than saving model weights"
-published: false
+published: true
 tags: [ai, python, testing, tooling]
 canonical_url: https://zenn.dev/hirodeath/articles/local-image-generation-reproducibility
 ---
