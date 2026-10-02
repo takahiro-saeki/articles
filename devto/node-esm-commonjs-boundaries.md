@@ -1,6 +1,7 @@
 ---
+devto_id: 4785124
 title: "Debugging mixed ESM and CommonJS: separate module classification from loading"
-published: false
+published: true
 tags: [node, javascript, debugging, testing]
 canonical_url: https://zenn.dev/hirodeath/articles/node-esm-commonjs-boundaries
 ---
