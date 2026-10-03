@@ -3,7 +3,7 @@ title: "D1の深いOFFSETをカーソルへ変える。読取り行数と途中�
 emoji: "📚"
 type: "tech"
 topics: ["cloudflare", "d1", "sqlite", "sql"]
-published: false
+published: true
 ---
 
 一覧の次ページを`LIMIT 20 OFFSET ...`で取得すると、SQLは短く書けます。ただ、後ろのページへ進むほど、返さずに読み飛ばす行が増えます。インデックスを使っているというだけでは、その読み飛ばしはなくなりません。

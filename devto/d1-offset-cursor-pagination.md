@@ -1,6 +1,7 @@
 ---
+devto_id: 4789800
 title: "Replacing deep OFFSET pagination in D1: rows read and inserts between pages"
-published: false
+published: true
 tags: [cloudflare, sql, database, performance]
 canonical_url: https://zenn.dev/hirodeath/articles/d1-offset-cursor-pagination
 ---
