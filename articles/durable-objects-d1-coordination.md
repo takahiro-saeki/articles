@@ -3,7 +3,7 @@ title: "Durable Objectsへデータを分ける前に、D1の横断クエリを�
 emoji: "🏠"
 type: "tech"
 topics: ["cloudflare", "durableobjects", "d1", "設計"]
-published: false
+published: true
 ---
 
 ルームごとの状態をDurable Objectsへ移すとき、保存用のSQLが似ているからといって、D1のクエリをそのまま移せるとは限りません。各ObjectのSQLiteは、そのObject専用のストレージです。一つのD1に置いていた全ルームのデータを分けると、全体取得の経路も変わります。

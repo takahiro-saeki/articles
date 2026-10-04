@@ -1,6 +1,7 @@
 ---
+devto_id: 4794156
 title: "Inventory cross-room queries before moving D1 data into Durable Objects"
-published: false
+published: true
 tags: [cloudflare, architecture, database, distributed]
 canonical_url: https://zenn.dev/hirodeath/articles/durable-objects-d1-coordination
 ---
