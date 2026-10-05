@@ -1,6 +1,7 @@
 ---
+devto_id: 4798801
 title: "Choosing Cron Triggers, Queues, or Workflows by where recovery should resume"
-published: false
+published: true
 tags: [cloudflare, architecture, distributed, backend]
 canonical_url: https://zenn.dev/hirodeath/articles/cloudflare-cron-queues-workflows
 ---

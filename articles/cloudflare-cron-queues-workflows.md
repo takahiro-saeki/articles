@@ -3,7 +3,7 @@ title: "Cron Triggers・Queues・Workflowsを、失敗した後にどこから�
 emoji: "🔁"
 type: "tech"
 topics: ["cloudflare", "workers", "queues", "workflows"]
-published: false
+published: true
 ---
 
 毎朝の集計、外部APIへの送信、確認を待ってからの次工程。どれもバックグラウンド処理ですが、同じ仕組みへ詰め込むと、失敗時に何をやり直すかが曖昧になります。
