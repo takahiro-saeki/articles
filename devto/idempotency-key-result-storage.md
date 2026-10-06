@@ -1,6 +1,7 @@
 ---
+devto_id: 4804226
 title: "An idempotency key needs stored results: testing retries and concurrent requests"
-published: false
+published: true
 tags: [api, cloudflare, database, testing]
 canonical_url: https://zenn.dev/hirodeath/articles/idempotency-key-result-storage
 ---

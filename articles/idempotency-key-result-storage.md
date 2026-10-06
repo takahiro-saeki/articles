@@ -3,7 +3,7 @@ title: "Idempotency Keyを付けるだけでは二重処理を防げない。結
 emoji: "🔑"
 type: "tech"
 topics: ["api", "cloudflare", "d1", "設計"]
-published: false
+published: true
 ---
 
 作成APIの応答が返らなかったとき、クライアントには「作成前に失敗した」のか「作成済みだが応答を失った」のか分かりません。そこで同じ要求を再送すると、二つ目のデータができる可能性があります。
