@@ -1,6 +1,7 @@
 ---
+devto_id: 4809644
 title: "An outbox preserves notification intent; delivery deduplication is a separate boundary"
-published: false
+published: true
 tags: [cloudflare, database, distributed, testing]
 canonical_url: https://zenn.dev/hirodeath/articles/outbox-database-notification-boundary
 ---
