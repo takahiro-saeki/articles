@@ -82,6 +82,9 @@ jobs:
         env:
           PUBLICATION_DATE: ${{ steps.date.outputs.value }}
         run: node scripts/publish-scheduled.mjs "--date=$PUBLICATION_DATE" --defer-zenn
+      - name: Refresh the production ledger from public verification
+        if: always() && inputs.dry_run != true && steps.prepare.outcome == 'success'
+        run: node scripts/article-production-status.mjs
       - name: Save IDs and public verification even after partial failure
         if: always() && inputs.dry_run != true
         run: bash .github/scripts/commit-publication.sh

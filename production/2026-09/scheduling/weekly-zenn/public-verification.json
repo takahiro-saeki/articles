@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-08T00:50:29.925098+00:00",
+  "workflow_run": "https://github.com/takahiro-saeki/articles/actions/runs/37709473529",
+  "workflow_conclusion": "success",
+  "workflow_verified_state": {
+    "platform": "qiita",
+    "status": "verified",
+    "canonical_url": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+    "published_at": "2026-10-08T09:46:13+09:00",
+    "devto_id": 4785124,
+    "devto_url": "https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072",
+    "verified_at": "2026-10-08T00:46:12.977Z"
+  },
+  "browser_verification": {
+    "qiita": {
+      "url": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+      "readable_while_logged_out": true,
+      "published_date_visible": "2026-10-08",
+      "title_matches": true
+    },
+    "devto": {
+      "url": "https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072",
+      "readable_while_logged_out": true,
+      "published_date_visible": "2026-10-02",
+      "edited_date_visible": "2026-10-08",
+      "originally_published_at_link": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+      "title_matches": true
+    }
+  },
+  "devto_id_preserved": true,
+  "local_http_limits": "Qiita/dev.to API and dev.to HTML returned 403 Forbidden Bots from local urllib. Body/canonical API comparison succeeded in GitHub Actions; anonymous browser pages independently confirmed publication and the Qiita canonical link."
+}

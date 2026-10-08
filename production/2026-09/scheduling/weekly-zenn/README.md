@@ -21,8 +21,14 @@ Zennのデプロイ履歴に投稿数上限による除外があり、10/2・10/
 
 ## 配信
 
-main反映・予約再開・今日の実公開は作業中。確認後にここへ実行IDと公開URLを記録する。
+- mainへ反映済み: `2ecfa9a86a214cbb086f2bbc6ec4d9a3ce04f35f`。予約workflowをactiveへ戻した。
+- [本番dry-run 37709367533](https://github.com/takahiro-saeki/articles/actions/runs/37709367533): 成功、10/8の対象がQiitaのT09であることを確認。
+- [公開実行37709473529](https://github.com/takahiro-saeki/articles/actions/runs/37709473529): 成功、公開メタデータのコミット `4dda99c98aa24b5e80e6daaa53f77fc8075183ef`。
+- 10/8 09:46 JST: [Node.js日本語版](https://qiita.com/hiro123/items/77dffa5c9da6166e66a6)をQiitaへ公開。[英語版](https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072)はID 4785124を維持してcanonicalを更新。
+- workflow内で公開APIの本文・canonicalと公開ページを確認し、ログアウト状態のブラウザでも両方の本文と英語版のQiita出典リンクを確認。[確認記録](public-verification.json)。ローカルurllibでのAPI取得は403 Forbidden Botsのため、API照合はworkflow側の結果を根拠とする。
+- 未公開4本のうち1本を回復。残る3本は10/9・10/10・10/11のQiita予約。変更後の未公開日本語は67本（Zenn9・Qiita58）。英語は26本公開済み、未公開64本。
+- 将来のZenn9本は予約と模擬検証までで、実公開は10/17以降。
 
 ## Wiki
 
-plane_personalのhiro-work（cf203a06-7d77-4b65-b020-4ef4f6e6857b）へ接続確認。7 Projectの一覧にarticlesの対応先はなく、汎用hiro work Projectにも対応ページを確認できなかった。新しいProjectや別Projectの機能ページは作成していない。仕様の正本は [spec.md](../../../../../docs/features/scheduled-publishing/spec.md)、同期用の要約は同ディレクトリのplane-summary.htmlに保存する。
+plane_personalのhiro-work（cf203a06-7d77-4b65-b020-4ef4f6e6857b）へ接続確認。7 Projectの一覧にarticlesの対応先はなく、汎用hiro work Projectにも対応ページを確認できなかった。新しいProjectや別Projectの機能ページは作成していない。仕様の正本は [spec.md](../../../../docs/features/scheduled-publishing/spec.md)、同期用の要約は同ディレクトリのplane-summary.htmlに保存する。

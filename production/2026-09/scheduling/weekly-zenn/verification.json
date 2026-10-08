@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T00:43:49.329Z",
+  "checked_at": "2026-10-08T00:50:31.569Z",
   "base_commit": "c393e18960b3712b655e01a646aea44aafeb2efb",
   "pairs": 90,
   "unchangedBodies": 180,
@@ -8,7 +8,7 @@
   "zennSaturdays": 9,
   "qiitaDays": 59,
   "migratedArticles": 13,
-  "canonicalMigrationPending": 4,
+  "canonicalMigrationPending": 3,
   "firstZenn": "2026-10-17",
   "end": "2026-12-14",
   "checks": [

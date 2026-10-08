@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-git add articles public devto schedule/publication-state.json
+git add articles public devto schedule/publication-state.json ARTICLE_IDEAS_2026-09.md ARTICLE_PRODUCTION_STATUS_2026-09.md
 if git diff --cached --quiet; then exit 0; fi
 git config user.name 'github-actions[bot]'
 git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

@@ -19,7 +19,7 @@
 2. Zennは土曜・初回10/17以降・同日未公開・前回実公開から24時間以上を確認してpublished:trueを準備し、先にGitへpushする。週1本は予約日の7日間隔と土曜限定で守る。24時間は追加の制限であり、Zennが公表する具体的な上限件数を意味しない。
 3. Zennの認証なし公開ページのstatus、title、path、publishedAtを確認する。403や下書きプレビューは成功としない。Qiitaは日本語を作成し、IDを保存してから公開APIの本文・タイトル・private:falseと公開ページを照合する。
 4. 日本語を確認した後、英語を公開する。既存IDがあればGETで本文・タイトル・canonicalを照合し、違う場合はPUTで同じIDを更新する。新しい英語版だけPOSTする。
-5. 英語の公開APIと実ページを確認し、`schedule/publication-state.json`へverifiedを記録する。frontmatterだけで成功扱いにしない。
+5. 英語の公開APIと実ページを確認し、`schedule/publication-state.json`へverifiedを記録する。frontmatterだけで成功扱いにしない。確認状態から制作進捗表と候補一覧の公開確認欄も再生成する。
 6. 部分失敗時も受信済みIDと状態をGitへ保存する。日英のAPI成功が、Git保存まで原子的に保証されるわけではない。
 
 ## 失敗と再試行
@@ -34,8 +34,8 @@ API成功後に応答自体を失った場合はIDが保存できないため、
 
 ## 検証と配信
 
-- 実装: 作業ブランチに実装。main反映後に移行記録へコミットを記載する。
+- 実装: main反映済み（2ecfa9a）。公開メタデータは4dda99c。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
-- 配信: 反映後に今日のQiita記事と既存英語版更新を実ページ・APIで確認する。将来のZenn公開は未実行。
+- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。将来のZenn公開は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。
 - 検証結果・実公開URL: [移行記録](../../../production/2026-09/scheduling/weekly-zenn/README.md)。

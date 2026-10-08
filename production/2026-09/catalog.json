@@ -604,12 +604,12 @@
     "status": "完成",
     "scheduled_date": "2026-10-08",
     "canonical_policy": "resolve-on-publication",
-    "canonical_status": "公開時に設定",
-    "canonical_url": null,
-    "canonical_migration_pending": true,
+    "canonical_status": "公開済み",
+    "canonical_url": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+    "canonical_migration_pending": false,
     "previous_platform": "Zenn",
     "previous_scheduled_date": "2026-10-02",
-    "publication_status": "再予約（英語は公開済み）"
+    "publication_status": "公開確認済み（2026-10-08）"
   },
   {
     "id": "T10",

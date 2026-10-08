@@ -189,7 +189,7 @@
 - T06: [import typeを省くと何が残るか。tscとesbuildで副作用まで比較する](public/import-type-bundler-output.md) / [English](devto/import-type-bundler-output.md)（制作完成・Qiita・予定2026-10-26・予約済み）
 - T07: [structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる](public/structured-clone-json-data.md) / [English](devto/structured-clone-json-data.md)（制作完成・Qiita・予定2026-10-27・予約済み）
 - T08: [AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する](public/abortcontroller-cancellable-tasks.md) / [English](devto/abortcontroller-cancellable-tasks.md)（制作完成・Qiita・予定2026-10-28・予約済み）
-- T09: [ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる](public/node-esm-commonjs-boundaries.md) / [English](devto/node-esm-commonjs-boundaries.md)（制作完成・Qiita・予定2026-10-08・再予約（英語は公開済み））
+- T09: [ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる](public/node-esm-commonjs-boundaries.md) / [English](devto/node-esm-commonjs-boundaries.md)（制作完成・Qiita・予定2026-10-08・公開確認済み（2026-10-08））
 - T10: [JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する](public/using-resource-disposal.md) / [English](devto/using-resource-disposal.md)（制作完成・Qiita・予定2026-11-05・予約済み）
 - T11: [Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する](public/react-index-key-input-reorder.md) / [English](devto/react-index-key-input-reorder.md)（制作完成・Qiita・予定2026-10-29・予約済み）
 - T12: [Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する](public/strict-mode-effect-cleanup.md) / [English](devto/strict-mode-effect-cleanup.md)（制作完成・Qiita・予定2026-10-30・予約済み）
