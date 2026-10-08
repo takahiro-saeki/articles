@@ -3,7 +3,7 @@ title: "Editing a VOLT NOMAD talk to five minutes: allocate time to decisions"
 published: false
 description: "A review of real game-development slides turns a broad production story into a timed proposal without inventing a successful presentation."
 tags: [gamedev, speaking, ai, productivity]
-canonical_url: "https://zenn.dev/hirodeath/articles/five-minute-game-development-talk"
+canonical_url: null
 ---
 
 A game-development talk can easily grow to include planning, rejected ideas, generated code, artwork, music, tests, and submission preparation. The initial VOLT NOMAD lightning-talk deck had material for all of them.

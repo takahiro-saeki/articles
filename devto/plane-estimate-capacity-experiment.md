@@ -3,7 +3,7 @@ title: "Using estimates to spot overloaded solo projects before predicting dates
 published: false
 description: "A read-only audit of Plane Work Points compares task counts, missing estimates, and overlapping parent scope."
 tags: [plane, productivity, python, webdev]
-canonical_url: "https://zenn.dev/hirodeath/articles/plane-estimate-capacity-experiment"
+canonical_url: null
 ---
 
 Planning to work on three tasks this week says little about their size. Exploring an email delivery service and implementing a feature across several devices can both count as one task.

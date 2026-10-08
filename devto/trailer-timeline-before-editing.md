@@ -2,7 +2,7 @@
 title: "From 63 seconds to 60: checking a game trailer against its timeline and video files"
 published: false
 tags: [gamedev, godot, ffmpeg, video]
-canonical_url: https://zenn.dev/hirodeath/articles/trailer-timeline-before-editing
+canonical_url: null
 ---
 
 Even a short game trailer fills up quickly with a title, combat, upgrades, bosses, and a destination to play. Removing a few seconds at the end does not change what viewers encounter first.

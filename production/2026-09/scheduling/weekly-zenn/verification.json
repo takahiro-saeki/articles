@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-08T00:43:49.329Z",
+  "base_commit": "c393e18960b3712b655e01a646aea44aafeb2efb",
+  "pairs": 90,
+  "unchangedBodies": 180,
+  "historicalEntriesPreserved": 38,
+  "futurePairs": 68,
+  "zennSaturdays": 9,
+  "qiitaDays": 59,
+  "migratedArticles": 13,
+  "canonicalMigrationPending": 4,
+  "firstZenn": "2026-10-17",
+  "end": "2026-12-14",
+  "checks": [
+    "90 actual publisher dry runs without writes or API calls",
+    "frontmatter",
+    "canonical URLs",
+    "dev.to tags <= 4",
+    "Markdown fences",
+    "duplicate titles and bodies",
+    "180 article bodies and titles unchanged",
+    "unique dates and article paths",
+    "weekly Saturday Zenn and daily Japanese schedule"
+  ]
+}

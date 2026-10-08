@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-08",
+  "base_commit": "c393e18960b3712b655e01a646aea44aafeb2efb",
+  "remaining_pairs": 68,
+  "remaining_zenn": 9,
+  "remaining_qiita": 59,
+  "first_zenn": "2026-10-17",
+  "end_date": "2026-12-14",
+  "changes": [
+    {
+      "id": "T09",
+      "slug": "node-esm-commonjs-boundaries",
+      "old_source": "articles/node-esm-commonjs-boundaries.md",
+      "new_source": "public/node-esm-commonjs-boundaries.md",
+      "old_date": "2026-10-02",
+      "english_already_published": true,
+      "body_sha256": "f00d62a5946517b45c83b81f1ca4d3596f75456d360b25642f8a3ceb8182ff78",
+      "new_date": "2026-10-08"
+    },
+    {
+      "id": "T40",
+      "slug": "durable-objects-d1-coordination",
+      "old_source": "articles/durable-objects-d1-coordination.md",
+      "new_source": "public/durable-objects-d1-coordination.md",
+      "old_date": "2026-10-04",
+      "english_already_published": true,
+      "body_sha256": "75fe2298ec2f2043ff66b5f3c37048d264a089a52c9dc651bb56b03805f21975",
+      "new_date": "2026-10-09"
+    },
+    {
+      "id": "T44",
+      "slug": "idempotency-key-result-storage",
+      "old_source": "articles/idempotency-key-result-storage.md",
+      "new_source": "public/idempotency-key-result-storage.md",
+      "old_date": "2026-10-06",
+      "english_already_published": true,
+      "body_sha256": "453e5dbdc03b35356ef7075a774eab821e2416793a0195fe9e3d424dcbfb0d6d",
+      "new_date": "2026-10-10"
+    },
+    {
+      "id": "T45",
+      "slug": "outbox-database-notification-boundary",
+      "old_source": "articles/outbox-database-notification-boundary.md",
+      "new_source": "public/outbox-database-notification-boundary.md",
+      "old_date": "2026-10-07",
+      "english_already_published": true,
+      "body_sha256": "32d2342a75dcd844644b70a3ac047ae454265a9c420f797e0bc91e273f927aa1",
+      "new_date": "2026-10-11"
+    },
+    {
+      "id": "O13",
+      "slug": "game-input-support-sequence",
+      "old_source": "articles/game-input-support-sequence.md",
+      "new_source": "public/game-input-support-sequence.md",
+      "old_date": "2026-10-08",
+      "english_already_published": false,
+      "body_sha256": "3902dd04cf5e4687cc9bf24f7ca860822f9a08c4de8eaa7f17e7b6ebd224c328",
+      "new_date": "2026-10-12"
+    },
+    {
+      "id": "O15",
+      "slug": "game-bgm-selection-log",
+      "old_source": "articles/game-bgm-selection-log.md",
+      "new_source": "public/game-bgm-selection-log.md",
+      "old_date": "2026-10-09",
+      "english_already_published": false,
+      "body_sha256": "e9076a9891fd84c926cc0190256acf52b2b832d7b7eb6560ddf8a5417df310ed",
+      "new_date": "2026-10-13"
+    },
+    {
+      "id": "O16",
+      "slug": "trailer-timeline-before-editing",
+      "old_source": "articles/trailer-timeline-before-editing.md",
+      "new_source": "public/trailer-timeline-before-editing.md",
+      "old_date": "2026-10-10",
+      "english_already_published": false,
+      "body_sha256": "6d3f89078ee05c5e00b2daf55bfbd04b1a6cfafd5c3cefce767813221926510a",
+      "new_date": "2026-10-14"
+    },
+    {
+      "id": "O21",
+      "slug": "auth-incident-recovery-evidence",
+      "old_source": "articles/auth-incident-recovery-evidence.md",
+      "new_source": "public/auth-incident-recovery-evidence.md",
+      "old_date": "2026-10-12",
+      "english_already_published": false,
+      "body_sha256": "7ba49978346e3c3f9576647f91ad9417a618320d7db5a7313c16cb3bb4a85aa9",
+      "new_date": "2026-10-15"
+    },
+    {
+      "id": "P17",
+      "slug": "plane-codex-todo-consolidation",
+      "old_source": "articles/plane-codex-todo-consolidation.md",
+      "new_source": "public/plane-codex-todo-consolidation.md",
+      "old_date": "2026-10-16",
+      "english_already_published": false,
+      "body_sha256": "6be53194efd405e1e6d373f583fff57a050fd7b66536c6a67cfae08973e266bc",
+      "new_date": "2026-10-16"
+    },
+    {
+      "id": "P19",
+      "slug": "plane-estimate-capacity-experiment",
+      "old_source": "articles/plane-estimate-capacity-experiment.md",
+      "new_source": "public/plane-estimate-capacity-experiment.md",
+      "old_date": "2026-10-17",
+      "english_already_published": false,
+      "body_sha256": "99130d63be7fdbbfcab1eb6d9a6dac507fec564fc1f32007b9d4626bcafdb4d9",
+      "new_date": "2026-10-18"
+    },
+    {
+      "id": "T14",
+      "slug": "react-memoization-cost",
+      "old_source": "articles/react-memoization-cost.md",
+      "new_source": "public/react-memoization-cost.md",
+      "old_date": "2026-10-18",
+      "english_already_published": false,
+      "body_sha256": "94c98fe064ddeef3a374eafe378d5fd7fedcc0cd3b15351ba842e200dc835960",
+      "new_date": "2026-10-19"
+    },
+    {
+      "id": "T18",
+      "slug": "suspense-boundary-fallback-experiment",
+      "old_source": "articles/suspense-boundary-fallback-experiment.md",
+      "new_source": "public/suspense-boundary-fallback-experiment.md",
+      "old_date": "2026-10-21",
+      "english_already_published": false,
+      "body_sha256": "194d23a0132893ab5439208e10c6e621591f30ecb60361d409f8baa8f6af651c",
+      "new_date": "2026-10-20"
+    },
+    {
+      "id": "O25",
+      "slug": "five-minute-game-development-talk",
+      "old_source": "articles/five-minute-game-development-talk.md",
+      "new_source": "public/five-minute-game-development-talk.md",
+      "old_date": "2026-10-25",
+      "english_already_published": false,
+      "body_sha256": "5b8713ad0876d46407be524c1900b9c56b6acd7ea353c0017cfe8c1bedf8bb9e",
+      "new_date": "2026-10-21"
+    }
+  ]
+}

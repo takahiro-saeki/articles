@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test scripts/publish-scheduled.test.mjs",
+    "verify:schedule": "node scripts/verify-article-schedule.mjs"
   },
   "keywords": [],
   "author": "",

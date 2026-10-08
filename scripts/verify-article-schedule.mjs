@@ -1,112 +1,95 @@
-// Exercise the production publisher against all approved drafts without network access.
+// Current schedule and migration audit. No network calls or publication.
 import assert from 'node:assert/strict';
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import { basename } from 'node:path';
-import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
-import vm from 'node:vm';
-const require=createRequire(import.meta.url);
-const yaml=require('js-yaml');
-const out='production/2026-09/scheduling';
-const reportDir=process.argv.find(arg=>arg.startsWith('--output='))?.slice(9)??out;
-const plan=JSON.parse(readFileSync(`${out}/approved-plan.json`,'utf8'));
-const catalog=JSON.parse(readFileSync('production/2026-09/catalog.json','utf8'));
-const script=readFileSync('scripts/publish-scheduled.mjs','utf8');
-const source=script.replace(/^import .*;\n/gm,'');
-assert.equal((script.match(/^import /gm)??[]).length,2);
-const sha=s=>createHash('sha256').update(s).digest('hex');
-const parse=s=>{const m=s.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);assert(m);return {meta:yaml.load(m[1]),body:m[2].trim()};};
-const allPaths=catalog.flatMap(x=>[x.japanese,x.english]);
-const diskBefore=Object.fromEntries(allPaths.map(p=>[p,sha(readFileSync(p))]));
-const fixtures=new Map([
- ['schedule/publishing-schedule.json',readFileSync('schedule/publishing-schedule.json','utf8')],
- ...allPaths.map(p=>[p,readFileSync(p,'utf8')])
-]);
-const priorities=catalog.filter(x=>x.priority!=null).sort((a,b)=>a.priority-b.priority);
-assert.deepEqual(plan.entries.slice(0,12).map(x=>x.source),priorities.map(x=>x.japanese));
-
-async function simulate(entry,{files=new Map(fixtures),dryRun=false,failQiita=false,failDevto=false}={}){
- const calls=[],writes=[],logs=[];const stopped=Symbol('exit');let error=null;
- const itemId='0123456789abcdef0123';
- const qiitaUrl=`https://qiita.com/local_test_fixture/items/${itemId}`;
- const context={
-  basename,
-  process:{argv:['node','script',`--date=${entry.date}`,...(dryRun?['--dry-run']:[])],env:{QIITA_TOKEN:'local-mock-only',DEVTO_API_KEY:'local-mock-only'},exit(code=0){assert.equal(code,0);throw stopped;}},
-  console:{log(value){logs.push(value);}},
-  readFileSync(path){assert(files.has(path),path);return files.get(path);},
-  writeFileSync(path,value){assert([entry.source,entry.devto].includes(path));writes.push(path);files.set(path,value);},
-  async fetch(url,options){
-   const payload=JSON.parse(options.body);calls.push({url,method:options.method,payload});
-   if(url.startsWith('https://qiita.com/api/v2/items')){
-    if(failQiita)return {ok:false,status:422,text:async()=>'mock failure'};
-    return {ok:true,json:async()=>({id:itemId,url:qiitaUrl,updated_at:'2026-09-13T00:00:00Z'})};
-   }
-   assert.match(url,/^https:\/\/dev\.to\/api\/articles(?:\/123)?$/);
-   if(failDevto)return {ok:false,status:503,text:async()=>'mock failure'};
-   return {ok:true,json:async()=>({id:123,url:'https://dev.to/local_test_fixture/article'})};
+import { runPublisher } from './publish-scheduled.mjs';
+const yaml = createRequire(import.meta.url)('js-yaml');
+const json = p => JSON.parse(readFileSync(p, 'utf8'));
+const catalog = json('production/2026-09/catalog.json');
+const plan = json('production/2026-09/scheduling/approved-plan.json');
+const schedule = json('schedule/publishing-schedule.json');
+const policy = json('schedule/publishing-policy.json');
+const migration = json('production/2026-09/scheduling/weekly-zenn/migration.json');
+const oldCatalog = JSON.parse(execFileSync('git', ['show', `${migration.base_commit}:production/2026-09/catalog.json`], { encoding: 'utf8' }));
+const oldSchedule = JSON.parse(execFileSync('git', ['show', `${migration.base_commit}:schedule/publishing-schedule.json`], { encoding: 'utf8' }));
+const raw = p => readFileSync(p, 'utf8');
+function parse(text) {
+  const m = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/); assert(m);
+  let fence = null;
+  for (const line of m[2].split('\n')) {
+    const f = line.match(/^ {0,3}(`{3,}|~{3,})(.*)$/);
+    if (!fence && f) fence = f[1];
+    else if (fence && f && f[1][0] === fence[0] && f[1].length >= fence.length && !f[2].trim()) fence = null;
   }
- };
- try{await vm.runInNewContext(`(async()=>{${source}\n})()`,context);}catch(e){if(e!==stopped)error=e.message;}
- return {calls,writes,files,logs,error,qiitaUrl};
+  assert.equal(fence, null, 'unclosed Markdown fence');
+  return { meta: yaml.load(m[1]), body: m[2] };
 }
-
-const results=[];
-for(const entry of plan.entries){
- const item=catalog.find(x=>x.japanese===entry.source);assert(item);
- // Invoke the actual CLI, in addition to the in-memory execution below.
- const dry=JSON.parse(execFileSync(process.execPath,['scripts/publish-scheduled.mjs',`--date=${entry.date}`,'--dry-run'],{encoding:'utf8'}));
- assert.equal(dry.source,entry.source);assert.equal(dry.devto,entry.devto);
- assert.equal(dry.today,entry.date);assert.equal(dry.platform,entry.platform);
- assert.equal(dry.sourceIsPublished,false);assert.equal(dry.devtoIsPublished,false);
- const simulatedDry=await simulate(entry,{dryRun:true});
- assert.equal(simulatedDry.error,null);assert.equal(simulatedDry.calls.length,0);assert.equal(simulatedDry.writes.length,0);
- const r=await simulate(entry);assert.equal(r.error,null,`${item.id}: ${r.error}`);
- const ja=parse(fixtures.get(entry.source)),en=parse(fixtures.get(entry.devto));
- if(entry.platform==='qiita'){
-  assert.equal(r.calls.length,2);
-  const call=r.calls[0];assert.equal(call.method,'POST');
-  assert.deepEqual(call.payload,{title:ja.meta.title,body:ja.body,private:ja.meta.private,tags:ja.meta.tags.map(name=>({name}))});
-  assert.equal(parse(r.files.get(entry.source)).meta.id,'0123456789abcdef0123');
-  assert.equal(parse(r.files.get(entry.source)).meta.ignorePublish,false);
- }else{
-  assert.equal(r.calls.length,1);assert.equal(parse(r.files.get(entry.source)).meta.published,true);
- }
- const canonical=entry.platform==='qiita'?r.qiitaUrl:`https://zenn.dev/hirodeath/articles/${item.slug}`;
- const devto=r.calls.at(-1);assert.equal(devto.method,'POST');
- const tags=Array.isArray(en.meta.tags)?en.meta.tags:en.meta.tags.split(',').map(t=>t.trim());
- assert.deepEqual(devto.payload.article,{title:en.meta.title,body_markdown:en.body,published:true,canonical_url:canonical,tags});
- const finalEnglish=parse(r.files.get(entry.devto));
- assert.equal(finalEnglish.meta.canonical_url,canonical);assert.equal(finalEnglish.meta.published,true);
- assert.equal(finalEnglish.meta.devto_id,123);
- assert.equal(parse(r.files.get(entry.source)).body,ja.body);assert.equal(finalEnglish.body,en.body);
- const replay=await simulate(entry,{files:r.files});
- assert.equal(replay.error,null);assert.equal(replay.calls.length,0);assert.equal(replay.writes.length,0);
- results.push({id:item.id,date:entry.date,platform:entry.platform,cliDryRun:'pass',payloadTitleBodyTagsCanonical:'pass',secondRunSkipped:'pass'});
+assert.equal(catalog.length, 90); assert.equal(plan.entries.length, 90);
+assert.deepEqual(schedule, [...oldSchedule.filter(x => x.date < plan.start_date), ...plan.entries]);
+for (const key of ['date', 'source', 'devto']) assert.equal(new Set(schedule.map(x => x[key])).size, 128, key);
+const future = schedule.filter(x => x.date >= policy.effective_from);
+assert.equal(future.length, 68);
+for (let n = 0; n < future.length; n++) {
+  assert.equal(future[n].date, new Date(Date.parse(policy.effective_from + 'T00:00:00Z') + n * 86400000).toISOString().slice(0, 10));
+  const zenn = future[n].date >= policy.zenn_first_date && new Date(future[n].date).getUTCDay() === 6;
+  assert.equal(future[n].platform, zenn ? 'zenn' : 'qiita');
 }
-
-const firstQiita=plan.entries.find(x=>x.platform==='qiita');
-const rejected=await simulate(firstQiita,{failQiita:true});
-assert.match(rejected.error,/Qiita API 422/);assert.equal(rejected.calls.length,1);assert.equal(rejected.writes.length,0);
-for(const platform of ['qiita','zenn']){
- const entry=plan.entries.find(x=>x.platform===platform);
- const interrupted=await simulate(entry,{failDevto:true});assert.match(interrupted.error,/dev.to API 503/);
- const retry=await simulate(entry,{files:interrupted.files});assert.equal(retry.error,null);
- if(platform==='qiita')assert.equal(retry.calls[0].method,'PATCH');
- assert.equal(retry.calls.at(-1).method,'POST');
+const titleSet = new Set(), bodySet = new Set();
+const norm = s => s.toLowerCase().replace(/[\s\p{P}\p{S}]/gu, '');
+for (const dir of ['articles', 'public', 'devto']) for (const file of readdirSync(dir).filter(x => x.endsWith('.md'))) {
+  const text = raw(`${dir}/${file}`), parts = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!parts) continue;
+  const p = { meta: { title: parts[1].match(/^title:\s*(.*)$/m)?.[1]?.replace(/^["']|["']$/g, '') ?? '' }, body: parts[2] };
+  const key = `${dir === 'devto' ? 'en' : 'ja'}:${norm(p.meta.title)}`;
+  assert(!titleSet.has(key), `duplicate title: ${file}`); titleSet.add(key);
+  const bodyKey = `${dir === 'devto' ? 'en' : 'ja'}:${norm(p.body)}`;
+  assert(!bodySet.has(bodyKey), `duplicate body: ${file}`); bodySet.add(bodyKey);
 }
-const adjacentDate=(date,days)=>new Date(Date.parse(date+'T00:00:00Z')+days*86400000).toISOString().slice(0,10);
-for(const date of [adjacentDate(plan.start_date,-1),adjacentDate(plan.end_date,1)]){
- const none=await simulate({date});assert.equal(none.error,null);assert.equal(none.calls.length,0);assert.equal(none.writes.length,0);
+let bodyMatches = 0, migrationPending = 0;
+for (const x of catalog) {
+  const before = oldCatalog.find(v => v.id === x.id); assert(before);
+  const entry = plan.entries.find(v => v.source === x.japanese);
+  assert.deepEqual(entry, { date: x.scheduled_date, platform: x.platform.toLowerCase(), source: x.japanese, devto: x.english });
+  for (const lang of ['japanese', 'english']) {
+    const a = parse(raw(x[lang]));
+    const b = parse(execFileSync('git', ['show', `${migration.base_commit}:${before[lang]}`], { encoding: 'utf8' }));
+    assert.equal(a.body, b.body, `${x.id} ${lang}: claims/code/figures/links must not change`);
+    assert.equal(a.meta.title, b.meta.title); bodyMatches++;
+  }
+  const ja = parse(raw(x.japanese)).meta, en = parse(raw(x.english)).meta;
+  assert.equal(ja.title, x.title);
+  assert.equal(typeof en.published, 'boolean');
+  const tags = Array.isArray(en.tags) ? en.tags : en.tags.split(',').map(t => t.trim());
+  assert(tags.length >= 1 && tags.length <= 4 && tags.every(t => /^[a-z0-9]+$/.test(t)));
+  if (en.published) assert(Number.isInteger(en.devto_id)); else assert(!en.devto_id);
+  if (x.platform === 'Zenn') {
+    for (const k of ['title', 'emoji', 'type', 'topics', 'published']) assert(k in ja);
+    assert.equal(typeof ja.published, 'boolean'); assert(ja.topics.length >= 1 && ja.topics.length <= 5);
+    assert.equal(en.canonical_url, `https://zenn.dev/hirodeath/articles/${x.slug}`);
+    if (x.scheduled_date >= policy.effective_from && !ja.published) assert.equal(en.published, false);
+  } else {
+    for (const k of ['title', 'tags', 'private', 'updated_at', 'id', 'organization_url_name', 'slide', 'ignorePublish']) assert(k in ja);
+    assert.equal(ja.private, false); assert(ja.tags.length >= 1 && ja.tags.length <= 5);
+    if (ja.id) {
+      assert.match(ja.id, /^[a-f0-9]{20}$/); assert.equal(ja.ignorePublish, false);
+      assert.equal(en.canonical_url, `https://qiita.com/hiro123/items/${ja.id}`);
+    } else {
+      assert.equal(ja.ignorePublish, true);
+      if (x.canonical_migration_pending && en.published) {
+        assert(migration.changes.some(v => v.id === x.id && v.english_already_published));
+        assert.equal(en.canonical_url, `https://zenn.dev/hirodeath/articles/${x.slug}`); migrationPending++;
+      } else { assert.equal(en.published, false); assert.equal(en.canonical_url, null); }
+    }
+  }
+  let selection;
+  await runPublisher({ args: [`--date=${x.scheduled_date}`, '--dry-run'], log: v => { selection = JSON.parse(v); }, fetch: () => { throw new Error('network in dry run'); }, write: () => { throw new Error('write in dry run'); } });
+  assert.equal(selection.source, x.japanese); assert.equal(selection.devto, x.english);
 }
-// Demonstrate why quoted strings must be decoded before API submission.
-const escapedPath='devto/bilingual-canonical-url-lifecycle.md';
-const escaped=fixtures.get(escapedPath).match(/^title: (.*)$/m)[1];
-assert.notEqual(escaped.replace(/^["']|["']$/g,''),parse(fixtures.get(escapedPath)).meta.title);
-assert.equal(JSON.parse(escaped),parse(fixtures.get(escapedPath)).meta.title);
-const diskAfter=Object.fromEntries(allPaths.map(p=>[p,sha(readFileSync(p))]));
-assert.deepEqual(diskAfter,diskBefore,'all 180 disk drafts unchanged');
-mkdirSync(reportDir,{recursive:true});
-const report={node:process.version,mode:'actual CLI dry-runs plus in-memory filesystem and fetch mocks; no real publishing requests',start:plan.start_date,end:plan.end_date,pairs:results.length,priority12First:true,dryRunNoWritesOrApiCalls:90,payloadParity:90,alreadyPublishedNoOp:90,qiitaResponseCanonical:49,zennSlugCanonical:41,qiitaFailureStopsEnglish:true,devtoFailureRetriesWithSavedJapaneseId:true,unreservedDatesNoOp:true,unicodeTitleRegression:'pass',diskDraftHashesUnchanged:allPaths.length,results};
-writeFileSync(`${reportDir}/publisher-verification.json`,JSON.stringify(report,null,2)+'\n');
-console.log(JSON.stringify({...report,results:undefined},null,2));
+const report = { checked_at: new Date().toISOString(), base_commit: migration.base_commit, pairs: 90, unchangedBodies: bodyMatches,
+  historicalEntriesPreserved: 38, futurePairs: future.length, zennSaturdays: future.filter(x => x.platform === 'zenn').length,
+  qiitaDays: future.filter(x => x.platform === 'qiita').length, migratedArticles: migration.changes.length, canonicalMigrationPending: migrationPending,
+  firstZenn: policy.zenn_first_date, end: plan.end_date, checks: ['90 actual publisher dry runs without writes or API calls', 'frontmatter', 'canonical URLs', 'dev.to tags <= 4', 'Markdown fences', 'duplicate titles and bodies', '180 article bodies and titles unchanged', 'unique dates and article paths', 'weekly Saturday Zenn and daily Japanese schedule'] };
+const output = process.argv.find(x => x.startsWith('--output='))?.slice(9);
+if (output) writeFileSync(output, JSON.stringify(report, null, 2) + '\n');
+console.log(JSON.stringify(report, null, 2));

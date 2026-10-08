@@ -1,9 +1,16 @@
 ---
 title: "VOLT NOMADのLT資料を5分へ絞る。制作工程より、残す判断を先に決める"
-emoji: "🎤"
-type: "idea"
-topics: ["lt", "個人開発", "gamedev", "ai"]
-published: false
+tags:
+  - lt
+  - 個人開発
+  - gamedev
+  - ai
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
 ---
 
 ゲーム制作の話をしようとすると、企画、没案、コード生成、素材、音楽、テスト、公開準備まで話したくなります。VOLT NOMADのLT初稿にも、それらを説明できる材料が揃っていました。

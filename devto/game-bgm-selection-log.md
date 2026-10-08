@@ -2,7 +2,7 @@
 title: "Audit a game soundtrack by selection records, playback slots, and actual files"
 published: false
 tags: [gamedev, godot, audio, ai]
-canonical_url: https://zenn.dev/hirodeath/articles/game-bgm-selection-log
+canonical_url: null
 ---
 
 Soundtrack candidates, selected compositions, stored files, and playback assignments gradually diverge. Replacing map music can leave the old file in storage, while two scenes may share one recording. “There are 18 tracks” does not explain what was counted.

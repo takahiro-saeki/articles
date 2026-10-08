@@ -1,0 +1,15 @@
+{
+  "effective_from": "2026-10-08",
+  "timezone": "Asia/Tokyo",
+  "target_time": "09:00",
+  "zenn_first_date": "2026-10-17",
+  "zenn_weekday": 6,
+  "zenn_minimum_interval_hours": 24,
+  "last_observed_zenn_publication": {
+    "slug": "cloudflare-cron-queues-workflows",
+    "published_at": "2026-10-06T12:29:03.955+09:00"
+  },
+  "qiita_username": "hiro123",
+  "zenn_username": "hirodeath",
+  "devto_username": "hirodeath"
+}

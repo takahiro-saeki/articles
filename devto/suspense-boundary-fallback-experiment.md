@@ -3,7 +3,7 @@ title: "What stays visible when a Suspense boundary moves: five loading cases"
 published: false
 description: "A production React experiment separates initial loading, urgent updates, transitions, and boundary resets."
 tags: [react, typescript, frontend, webdev]
-canonical_url: "https://zenn.dev/hirodeath/articles/suspense-boundary-fallback-experiment"
+canonical_url: null
 ---
 
 A search request makes the heading and input disappear along with the results. Moving `Suspense` around the results can change that behavior. Keeping previously displayed results also depends on how the update is scheduled.

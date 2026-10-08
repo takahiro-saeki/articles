@@ -2,7 +2,7 @@
 title: "Define one input action per screen across mouse, touch, and gamepad controls"
 published: false
 tags: [godot, gamedev, testing, input]
-canonical_url: https://zenn.dev/hirodeath/articles/game-input-support-sequence
+canonical_url: null
 ---
 
 Pushing a stick right should move the selection once. Treat every event received while the stick remains tilted as “next,” and the selection keeps jumping. Charging an attack, meanwhile, needs both the press and the release.

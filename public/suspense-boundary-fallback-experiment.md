@@ -1,9 +1,15 @@
 ---
 title: "Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる"
-emoji: "🪟"
-type: "tech"
-topics: ["react", "typescript", "frontend"]
-published: false
+tags:
+  - react
+  - typescript
+  - frontend
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
 ---
 
 検索結果を読み込むたびに、見出しと入力欄まで消える。結果部分へ`Suspense`を移すと、この消え方は変えられます。ただし、すでに表示した結果を残すには、更新の優先度も関係します。

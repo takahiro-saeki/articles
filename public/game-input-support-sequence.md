@@ -1,9 +1,16 @@
 ---
 title: "マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える"
-emoji: "🎮"
-type: "tech"
-topics: ["godot", "ゲーム開発", "入力", "テスト"]
-published: false
+tags:
+  - godot
+  - ゲーム開発
+  - 入力
+  - テスト
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
 ---
 
 スティックを右へ倒すと、選択を一つ動かしたい。押し続けている間に届くイベントを全部「次へ」にすると、選択が飛び続けます。一方、攻撃の長押しでは、押した瞬間と離した瞬間の両方が必要です。

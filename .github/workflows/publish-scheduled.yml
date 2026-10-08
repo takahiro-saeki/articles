@@ -2,8 +2,8 @@ name: Publish scheduled article
 
 on:
   schedule:
-    # GitHub Actions cron is prone to long delays around the start of an hour.
-    # Start at 08:55 JST, wait until 09:00 JST, then retry at 09:10 JST.
+    # 08:55 JST (wait until 09:00), with a second attempt at 09:10 JST.
+    # GitHub may start scheduled workflows later than these target times.
     - cron: "55 23 * * *"
     - cron: "10 0 * * *"
   workflow_dispatch:
@@ -27,57 +27,61 @@ concurrency:
 
 jobs:
   publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      REQUESTED_DATE: ${{ inputs.date }}
+      DRY_RUN: ${{ inputs.dry_run }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Wait until 09:00 JST
-        if: github.event_name == 'schedule'
+      - name: Test publication boundaries
+        run: node --test scripts/publish-scheduled.test.mjs
+      - name: Select date and wait until 09:00 JST
+        id: date
         run: |
-          publish_date=$(TZ=Asia/Tokyo date +%F)
-          publish_epoch=$(date -u -d "${publish_date} 00:00:00" +%s)
-          current_epoch=$(date -u +%s)
-          if (( current_epoch < publish_epoch )); then
-            wait_seconds=$((publish_epoch - current_epoch))
-            echo "Waiting ${wait_seconds} seconds until 09:00 JST"
-            sleep "${wait_seconds}"
+          publish_date=${REQUESTED_DATE:-$(TZ=Asia/Tokyo date +%F)}
+          if [[ ! "$publish_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then exit 1; fi
+          echo "value=$publish_date" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = schedule ]; then
+            publish_epoch=$(date -u -d "${publish_date} 00:00:00" +%s)
+            current_epoch=$(date -u +%s)
+            if (( current_epoch < publish_epoch )); then sleep "$((publish_epoch-current_epoch))"; fi
           fi
-
-      - name: Publish today's Japanese and English articles
+      - name: Prepare Zenn deployment or preview selection
+        id: prepare
         env:
+          PUBLICATION_DATE: ${{ steps.date.outputs.value }}
+        run: |
+          args=("--date=$PUBLICATION_DATE" --prepare)
+          if [ "$DRY_RUN" = true ]; then args+=(--dry-run); fi
+          node scripts/publish-scheduled.mjs "${args[@]}"
+      - name: Push Zenn request before checking the public page
+        if: inputs.dry_run != true
+        run: bash .github/scripts/commit-publication.sh
+      - name: Publish and verify Japanese and English public pages
+        id: publish
+        if: inputs.dry_run != true
+        env:
+          PUBLICATION_DATE: ${{ steps.date.outputs.value }}
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
         run: |
-          args=()
-          if [ -n "${{ inputs.date }}" ]; then args+=("--date=${{ inputs.date }}"); fi
-          if [ "${{ inputs.dry_run }}" = "true" ]; then args+=("--dry-run"); fi
-          max_attempts=3
-          for attempt in $(seq 1 "${max_attempts}"); do
-            if node scripts/publish-scheduled.mjs "${args[@]}"; then
-              exit 0
-            fi
-            if (( attempt == max_attempts )); then
-              echo "Publishing failed after ${max_attempts} attempts"
-              exit 1
-            fi
-            wait_seconds=$((attempt * 30))
-            echo "Publishing attempt ${attempt} failed; retrying in ${wait_seconds} seconds"
-            sleep "${wait_seconds}"
+          for attempt in 1 2 3; do
+            if node scripts/publish-scheduled.mjs "--date=$PUBLICATION_DATE"; then exit 0; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep "$((attempt*30))"
           done
-
-      - name: Commit publication metadata
+      - name: Withdraw an unconfirmed Zenn request after failure
+        if: failure() && steps.publish.outcome == 'failure'
+        env:
+          PUBLICATION_DATE: ${{ steps.date.outputs.value }}
+        run: node scripts/publish-scheduled.mjs "--date=$PUBLICATION_DATE" --defer-zenn
+      - name: Save IDs and public verification even after partial failure
         if: always() && inputs.dry_run != true
-        run: |
-          if git diff --quiet; then exit 0; fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add articles public devto
-          git commit -m "Publish scheduled article"
-          git push
+        run: bash .github/scripts/commit-publication.sh

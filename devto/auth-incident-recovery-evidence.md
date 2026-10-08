@@ -2,7 +2,7 @@
 title: "Verify authentication recovery before treating Configuration as the root cause"
 published: false
 tags: [authentication, nextjs, testing, debugging]
-canonical_url: https://zenn.dev/hirodeath/articles/auth-incident-recovery-evidence
+canonical_url: null
 ---
 
 A return URL containing `error=Configuration` suggests a configuration mistake. Yet the inspected Auth.js version also produces that destination when a PKCE cookie is missing. The user-facing classification does not identify the cause by itself.

@@ -1,9 +1,16 @@
 ---
 title: "認証エラーのConfigurationを原因と決めつけず、復旧を確認する"
-emoji: "🔐"
-type: "tech"
-topics: ["nextauth", "認証", "テスト", "運用"]
-published: false
+tags:
+  - nextauth
+  - 認証
+  - テスト
+  - 運用
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
 ---
 
 ログイン後の戻り先に`error=Configuration`が付いていると、設定値の間違いを疑いたくなります。ところが、今回確認したAuth.jsではPKCE Cookieの欠落もその表示へつながりました。画面へ出る分類だけでは、発生原因を特定できません。
