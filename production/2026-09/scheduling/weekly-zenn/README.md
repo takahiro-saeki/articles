@@ -37,4 +37,10 @@ Zennのデプロイ履歴に投稿数上限による除外があり、10/2・10/
 
 ## Wiki
 
-plane_personalのhiro-work（cf203a06-7d77-4b65-b020-4ef4f6e6857b）へ接続確認。7 Projectの一覧にarticlesの対応先はなく、汎用hiro work Projectにも対応ページを確認できなかった。新しいProjectや別Projectの機能ページは作成していない。仕様の正本は [spec.md](../../../../docs/features/scheduled-publishing/spec.md)、同期用の要約は同ディレクトリのplane-summary.htmlに保存する。
+2026-10-08の追加依頼で、plane_personalのhiro-work（cf203a06-7d77-4b65-b020-4ef4f6e6857b）に [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/) を作成した。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)と機能実装Wikiを保存・読み戻し確認済み。全体運用はART-1、10/9〜12/14の残り67組はART-2〜ART-68に公開日付きで登録し、全67件の期日・タイトル・親チケット・完了条件をAPIで再照合した。Zenn9本は土曜日、Qiita58本はその他の日付に配置されている。
+
+毎日09:30・13:30 JSTに公開確認・遅延回復・Plane更新を行う、このチャットの定期実行「記事公開の点検・回復」を12/15まで有効化。保存された設定のACTIVE状態、時刻、対象チャットを確認済み。PCとCodexアプリの起動が必要であり、初回の定期点検は未到来。GitHub Actionsによる投稿とは別の点検として扱う。
+
+dev.toは10/8更新のT09と10/7公開のOutboxについて、認証なしブラウザで本文を再確認。T09の参照先は実公開済みのQiita URLと一致した。Outboxを含むT40/T44/T45のcanonicalは、10/9〜11の日本語Qiita公開後に既存英語IDで更新する。
+
+仕様の正本は [spec.md](../../../../docs/features/scheduled-publishing/spec.md)。Planeへの同期本文は同ディレクトリのplane-summary.html、Project・Pages・全67件の対応はplane-tracking.jsonに保存する。

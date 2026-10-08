@@ -1,5 +1,16 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>articlesに対応するPlane Projectが未確定のため、この本文は未同期。</p>
-<p>2026-10-08の指示によりZennは毎週土曜1本、次回10/17。その他の日はQiita。未公開4本を10/8〜10/11にQiitaで順次回復する。今後の68本はZenn9・Qiita59、最終予定日は12/14。</p>
-<p>日本語の実公開確認後にdev.toを公開・更新する。既存英語版はIDを維持してcanonicalを更新する。失敗時も受信済みIDを保持し、失敗したZennを解決するまで次のZenn記事を開始しない。</p>
-<p>正本: <a href="https://github.com/takahiro-saeki/articles/blob/main/docs/features/scheduled-publishing/spec.md">Gitの運用仕様</a>。実装・検証・配信の確定結果は同仕様と移行記録で確認する。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-08。</p>
+<h2>公開スケジュール</h2>
+<p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、次回は10/17。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
+<p>90本の日英原稿は完成済み。10/8のT09公開後、日本語の残りは67本（Zenn9、Qiita58）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>Zennの予定: 10/17、10/24、10/31、11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/6で、10/10に追加しない。</p>
+<h2>日次運用</h2>
+<ol><li>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</li><li>続いてdev.toを公開する。既存英語版はIDを維持し、日本語の実URLへcanonicalを更新する。</li><li>Gitのpublication-state.jsonに両言語のURL、ID、verifiedを保存する。原稿完成・公開フラグ・Actionsの緑表示だけでは公開完了としない。</li><li>このチャットの定期実行「記事公開の点検・回復」が毎日09:30・13:30 JSTに当日分と未解決分を点検する。両言語とcanonicalの照合後にPlaneの対応チケットをDoneにし、確認日時・公開URL・runを残す。異常と回復、全件完了を通知する。</li></ol>
+<h2>遅延・失敗時</h2>
+<p>同じ記事のrunが実行中なら重複dispatchしない。未開始・失敗時は公開先と保存済みIDを確認して既存workflowを対象予約日で再実行する。API成功とID保存が不明なまま新規作成を繰り返さない。未来日の先行公開、Zennの土曜以外の新規公開、週1本制限の解除は行わない。</p>
+<p>Zennの投稿数上限や状態不明で回復できなければ、失敗を残して後続への影響を報告する。GitHub Actionsには予約の遅延があり、09:00ちょうどの公開は保証できない。追加の定期点検はPCとCodexアプリの起動が必要。自動投稿自体はGitHub Actionsで実行される。点検は12/15の最終確認まで設定した。</p>
+<h2>実装・検証・公開状態</h2>
+<ul><li>実装: mainに週次Zenn・Qiita配分、公開確認、既存ID再利用、部分失敗時の保存、最新main checkoutを反映済み。</li><li>検証: publisher 12ケース、90組dry-run、180本文とタイトル不変、frontmatter・canonical・タグ・fence・重複・日程の照合が成功。</li><li>配信: 予約workflowはactive。<a href="https://github.com/takahiro-saeki/articles/actions/runs/37710179409">10/8の公開確認run</a>が成功。将来日の公開は未実行。</li></ul>
+<p>10/8に<a href="https://qiita.com/hiro123/items/77dffa5c9da6166e66a6">T09日本語</a>の公開と、<a href="https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072">T09英語</a>のcanonical更新を確認。英語は10/2初回公開、10/8更新。10/7公開のOutbox英語もログアウト状態で本文を確認した。T40/T44/T45の英語は既に公開済みだが、日本語Qiita公開とcanonical更新は10/9・10/10・10/11の予定。</p>
+<h2>正本と関連チケット</h2>
+<p><a href="https://github.com/takahiro-saeki/articles/blob/main/docs/features/scheduled-publishing/spec.md">Gitの機能仕様</a> / <a href="https://github.com/takahiro-saeki/articles/blob/main/schedule/publication-state.json">実公開確認記録</a> / <a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/weekly-zenn/README.md">検証・移行記録</a> / <a href="https://app.plane.so/hiro-work/browse/ART-1/">ART-1: 全90組の公開運用</a>。</p>

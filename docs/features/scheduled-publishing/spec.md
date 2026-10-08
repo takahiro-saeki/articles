@@ -5,7 +5,7 @@
 - 最終確認日: 2026-10-08
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
-- Plane: hiro-work接続を確認したが、articlesに対応するProjectが存在せず未同期。新しいProjectは作成していない。
+- Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
 
 ## 現在の設定
 
@@ -32,7 +32,22 @@
 
 API成功後に応答自体を失った場合はIDが保存できないため、再試行前に公開先を調べる必要がある。Git push失敗時にもrun logと保存済みメタデータを確認する。ZennのHTML構造変更やGitHubの予約遅延は失敗要因として残る。週1本でもZenn側の公開を保証するものではない。
 
-## 検証と配信
+## Planeと日次点検
+
+全体の運用は [ART-1: 90本の日英記事を予定日どおり公開し、両言語の実公開を確認する](https://app.plane.so/hiro-work/browse/ART-1/) で管理する。10/8のT09公開後に残る67本（Zenn9・Qiita58）を、ART-2〜ART-68へ1組1チケットで登録した。各チケットの開始日・期日はGitの公開予定日と一致する。原稿は完成済みだが、公開チケットはTodo。日英の実公開URL、canonical、確認日時、Actions runを根拠に残した後でDoneにする。全体チケットは全90組の実公開を確認してから完了する。
+
+個別のID・slug・期日とPlaneページの対応は [plane-tracking.json](plane-tracking.json) に保存する。予約の正本は引き続きGitで、Planeは運用の一覧と記録に使う。予定変更時は両方を更新する。ポイント管理はこのProjectで未設定のため、Work Pointsは新設しない。
+
+このチャットの定期実行「記事公開の点検・回復」（automation ID: `automation`）を毎日09:30・13:30 JST、12/15の最終確認まで有効化した。GitHub Actionsによる公開とは別に、当日と期限超過の未完了記事を確認する。
+
+- 実行中のrunがある場合は重複起動しない。
+- 未開始・失敗時は公開先と既存IDを確認し、対象の予約日で既存workflowを1回再実行する。過去のQiita未公開や英語・canonicalだけの失敗も既存IDを使って回復する。
+- 未来日の先行公開、土曜以外のZenn新規公開、週1本制限の解除はしない。回復できない場合は失敗と後続への影響を記録・通知する。
+- 通常成功や変化なしでは通知せず、新たな未公開、回復、ユーザー対応が必要な事項、全90組の完了を通知する。
+
+GitHub Actionsの予約実行には遅延があるため09:00は目標時刻である。追加した定期点検はローカル実行で、PCとCodexアプリの起動が必要（[公式の実行条件](https://learn.chatgpt.com/docs/automations?surface=app)）。投稿自体はGitHub Actionsで動く。定期点検の設定保存とactive状態は確認済みだが、初回の定期点検はまだ到来していない。
+
+## 検証と配信（実施記録）
 
 - 実装: main反映済み（初回2ecfa9a、結果反映2a88b12、待機ジョブのcheckout修正1827ba3）。再実行37710179409でメタデータ保存まで確認。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
