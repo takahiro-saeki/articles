@@ -3,5 +3,15 @@
     "slug": "cloudflare-cron-queues-workflows",
     "published_at": "2026-10-06T12:29:03.955+09:00"
   },
-  "articles": {}
+  "articles": {
+    "node-esm-commonjs-boundaries": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+      "published_at": "2026-10-08T09:46:13+09:00",
+      "devto_id": 4785124,
+      "devto_url": "https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072",
+      "verified_at": "2026-10-08T00:46:12.977Z"
+    }
+  }
 }

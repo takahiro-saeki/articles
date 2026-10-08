@@ -3,7 +3,7 @@ devto_id: 4785124
 title: "Debugging mixed ESM and CommonJS: separate module classification from loading"
 published: true
 tags: [node, javascript, debugging, testing]
-canonical_url: https://zenn.dev/hirodeath/articles/node-esm-commonjs-boundaries
+canonical_url: https://qiita.com/hiro123/items/77dffa5c9da6166e66a6
 ---
 
 You see `require is not defined`, replace it with an import, and then encounter a syntax error in another file. When ESM and CommonJS coexist, changing syntax alone can make the original cause difficult to follow.

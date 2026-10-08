@@ -6,11 +6,11 @@ tags:
   - esm
   - commonjs
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-08T09:46:13+09:00"
+id: 77dffa5c9da6166e66a6
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Node.jsで`require is not defined`を見て`import`へ直したら、今度は別のファイルで構文エラーになる。ESMとCommonJSが混在すると、構文の修正だけでは原因を追いにくくなります。
