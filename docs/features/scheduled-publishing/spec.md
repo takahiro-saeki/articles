@@ -34,7 +34,7 @@ API成功後に応答自体を失った場合はIDが保存できないため、
 
 ## 検証と配信
 
-- 実装: main反映済み（2ecfa9a）。公開メタデータは4dda99c。
+- 実装: main反映済み（初回2ecfa9a、結果反映2a88b12、待機ジョブのcheckout修正1827ba3）。再実行37710179409でメタデータ保存まで確認。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
 - 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。将来のZenn公開は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。

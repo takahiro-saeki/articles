@@ -28,5 +28,14 @@
     }
   },
   "devto_id_preserved": true,
-  "local_http_limits": "Qiita/dev.to API and dev.to HTML returned 403 Forbidden Bots from local urllib. Body/canonical API comparison succeeded in GitHub Actions; anonymous browser pages independently confirmed publication and the Qiita canonical link."
+  "local_http_limits": "Qiita/dev.to API and dev.to HTML returned 403 Forbidden Bots from local urllib. Body/canonical API comparison succeeded in GitHub Actions; anonymous browser pages independently confirmed publication and the Qiita canonical link.",
+  "successful_replay": {
+    "run": "https://github.com/takahiro-saeki/articles/actions/runs/37710179409",
+    "conclusion": "success",
+    "verified_at": "2026-10-08T00:54:47.854Z",
+    "qiita_id_preserved": true,
+    "devto_id_preserved": true,
+    "metadata_push": "success",
+    "production_ledger_refresh": "success"
+  }
 }

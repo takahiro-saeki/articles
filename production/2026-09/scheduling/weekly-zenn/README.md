@@ -33,6 +33,8 @@ Zennのデプロイ履歴に投稿数上限による除外があり、10/2・10/
 
 [37709929642](https://github.com/takahiro-saeki/articles/actions/runs/37709929642)では同じQiita/dev.to IDで公開確認が成功し、新規投稿は発生しなかった。ただし先行するQiita同期のコミットに対して、待機中の予約ジョブが古いイベントSHAをcheckoutしており、確認時刻の保存pushがnon-fast-forwardで失敗した。両workflowを同じconcurrency groupにするだけでなく、実行開始時の最新ブランチを明示してcheckoutするよう修正した。
 
+修正コミット `1827ba317b658fc8e23cce33506ab8cf6521b526` をmainへ反映後、[再実行37710179409](https://github.com/takahiro-saeki/articles/actions/runs/37710179409)が公開確認・進捗表再生成・メタデータpushまで成功。同じQiita ID 77dffa5c9da6166e66a6とdev.to ID 4785124を維持した。予約workflowはactiveを確認済み。
+
 ## Wiki
 
 plane_personalのhiro-work（cf203a06-7d77-4b65-b020-4ef4f6e6857b）へ接続確認。7 Projectの一覧にarticlesの対応先はなく、汎用hiro work Projectにも対応ページを確認できなかった。新しいProjectや別Projectの機能ページは作成していない。仕様の正本は [spec.md](../../../../docs/features/scheduled-publishing/spec.md)、同期用の要約は同ディレクトリのplane-summary.htmlに保存する。
