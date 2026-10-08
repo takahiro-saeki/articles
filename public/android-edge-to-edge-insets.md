@@ -1,15 +1,17 @@
 ---
-title: "AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる"
+title: AndroidのSafe Areaがずれたら、Insetsを適用しているコンポーネントから調べる
 tags:
   - Android
-  - ReactNative
-  - Expo
+  - reactnative
+  - expo
 private: false
-updated_at: '2026-09-15T11:03:32+09:00'
+updated_at: '2026-10-08T09:45:11+09:00'
 id: d12f32ce2d2ae999126f
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 画面下の余白を直す前に、`insets.bottom`を誰が使っているかを確認します。親の`SafeAreaView`と子の`paddingBottom`が同じ領域を避けているなら、ライブラリの値が正しくても余白が余分に付く可能性があります。

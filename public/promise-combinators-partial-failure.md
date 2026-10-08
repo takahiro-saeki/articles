@@ -1,15 +1,17 @@
 ---
-title: "Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる"
+title: Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる
 tags:
   - JavaScript
   - TypeScript
   - Node.js
 private: false
-updated_at: '2026-09-20T10:53:34+09:00'
+updated_at: '2026-10-08T09:45:11+09:00'
 id: bd155c9db34eecf50223
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 部分失敗のある処理では、何が起きた時点で集約したPromiseを確定したいかを決めます。`Promise.all`を`allSettled`へ変えても、処理の開始数やキャンセル方法までは変わりません。

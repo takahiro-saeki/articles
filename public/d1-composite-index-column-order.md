@@ -1,16 +1,18 @@
 ---
-title: "D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた"
+title: D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた
 tags:
-  - Cloudflare
+  - cloudflare
   - D1
   - SQLite
   - SQL
 private: false
-updated_at: '2026-09-16T10:54:42+09:00'
+updated_at: '2026-10-08T09:45:11+09:00'
 id: 0ed80ed871c972ead808
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 `WHERE user_id = ? AND created_at >= ?`で通知を検索する場合、`(user_id, created_at)`と`(created_at, user_id)`は同じ働きにはなりません。
