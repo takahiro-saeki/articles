@@ -24,7 +24,7 @@
 
 ## 失敗と再試行
 
-通常のQiita同期workflowと予約投稿workflowは同じconcurrency groupで直列化し、同時のメタデータ保存を避ける。
+通常のQiita同期workflowと予約投稿workflowは同じconcurrency groupで直列化し、同時のメタデータ保存を避ける。checkoutは起動イベントのSHAではなく実行開始時の最新ブランチを取得し、待機中に先行workflowが保存したメタデータを含める。
 
 同じworkflow内で最大3回、30秒・60秒待って再試行する。失敗はActions上のfailureとなる。Zennの公開要求中に403/404が継続する場合はpublished:falseへ戻し、平日の他記事のpushで再び公開要求されることを防ぐ。解除前にもう一度実ページを読み、公開済みになっていれば非公開へ戻さない。通信障害や503など公開状態を確定できないときはフラグを変えず、未確認として失敗を残す。
 
