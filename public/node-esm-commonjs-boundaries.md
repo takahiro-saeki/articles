@@ -1,16 +1,18 @@
 ---
-title: "ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる"
+title: ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる
 tags:
-  - nodejs
-  - javascript
+  - Node.js
+  - JavaScript
   - esm
-  - commonjs
+  - CommonJS
 private: false
-updated_at: "2026-10-08T09:46:13+09:00"
+updated_at: '2026-10-08T09:51:44+09:00'
 id: 77dffa5c9da6166e66a6
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Node.jsで`require is not defined`を見て`import`へ直したら、今度は別のファイルで構文エラーになる。ESMとCommonJSが混在すると、構文の修正だけでは原因を追いにくくなります。
