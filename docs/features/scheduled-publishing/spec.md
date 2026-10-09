@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-08
+- 最終確認日: 2026-10-09
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -45,7 +45,7 @@ API成功後に応答自体を失った場合はIDが保存できないため、
 - 未来日の先行公開、土曜以外のZenn新規公開、週1本制限の解除はしない。回復できない場合は失敗と後続への影響を記録・通知する。
 - 通常成功や変化なしでは通知せず、新たな未公開、回復、ユーザー対応が必要な事項、全90組の完了を通知する。
 
-GitHub Actionsの予約実行には遅延があるため09:00は目標時刻である。追加した定期点検はローカル実行で、PCとCodexアプリの起動が必要（[公式の実行条件](https://learn.chatgpt.com/docs/automations?surface=app)）。投稿自体はGitHub Actionsで動く。定期点検の設定保存とactive状態は確認済みだが、初回の定期点検はまだ到来していない。
+GitHub Actionsの予約実行には遅延があるため09:00は目標時刻である。追加した定期点検はローカル実行で、PCとCodexアプリの起動が必要（[公式の実行条件](https://learn.chatgpt.com/docs/automations?surface=app)）。投稿自体はGitHub Actionsで動く。定期点検は10/8の18:37・22:35 JST、10/9の18:35 JSTに実行と公開照合を確認した。設定上の点検時刻と実際の確認時刻は区別して記録する。
 
 ## 検証と配信（実施記録）
 
@@ -54,3 +54,11 @@ GitHub Actionsの予約実行には遅延があるため09:00は目標時刻で�
 - 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。将来のZenn公開は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。
 - 検証結果・実公開URL: [移行記録](../../../production/2026-09/scheduling/weekly-zenn/README.md)。
+
+### 2026-10-09の公開確認
+
+T40「Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする」は、[Qiita](https://qiita.com/hiro123/items/31e50190423c94e787f6)で12:18:54 JSTに公開された。09:00目標から3時間18分54秒遅れた。[既存英語版](https://dev.to/hirodeath/inventory-cross-room-queries-before-moving-d1-data-into-durable-objects-3oh3)はID `4794156`、10/4の初回公開日時を維持し、10/9 12:18:56 JSTにcanonicalを上記Qiita URLへ更新した。英語の新規投稿ではない。
+
+[公開run 37878689199](https://github.com/takahiro-saeki/articles/actions/runs/37878689199)と[再確認run 37891443141](https://github.com/takahiro-saeki/articles/actions/runs/37891443141)はいずれも成功。18:35 JSTの点検で、main `e10d90c`の日英原稿と公開APIの本文・タイトル・著者が一致し、認証なし実ページがHTTP 200であること、英語canonicalの一致を再確認した。10/8のT09も再照合済み。詳細は[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-09.json)に保存した。
+
+[ART-2](https://app.plane.so/hiro-work/browse/ART-2/)をDoneにし、ART-1と運用Wikiへ根拠を反映した。10/8以降の本日までの対象2組に未完了はない。点検からの追加dispatch・再投稿は行っていない。日本語の残りは66本（Zenn9・Qiita57）。T44/T45は10/10・10/11の予定を維持し、先行公開しない。
