@@ -12,6 +12,15 @@
       "devto_id": 4785124,
       "devto_url": "https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072",
       "verified_at": "2026-10-08T00:54:47.854Z"
+    },
+    "durable-objects-d1-coordination": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/31e50190423c94e787f6",
+      "published_at": "2026-10-09T12:18:54+09:00",
+      "devto_id": 4794156,
+      "devto_url": "https://dev.to/hirodeath/inventory-cross-room-queries-before-moving-d1-data-into-durable-objects-3oh3",
+      "verified_at": "2026-10-09T03:18:53.976Z"
     }
   }
 }

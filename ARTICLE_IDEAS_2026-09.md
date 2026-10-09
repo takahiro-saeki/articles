@@ -220,7 +220,7 @@
 - T37: [D1の複合インデックスを逆順にすると何が変わるか、検索計画で比べた](public/d1-composite-index-column-order.md) / [English](devto/d1-composite-index-column-order.md)（制作完成・Qiita・予定2026-09-16・公開確認済み（2026-10-08））
 - T38: [SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する](public/sqlite-foreign-key-child-index.md) / [English](devto/sqlite-foreign-key-child-index.md)（制作完成・Qiita・予定2026-11-11・予約済み）
 - T39: [D1の深いOFFSETをカーソルへ変える。読取り行数と途中挿入を比較する](articles/d1-offset-cursor-pagination.md) / [English](devto/d1-offset-cursor-pagination.md)（制作完成・Zenn・予定2026-10-03・公開確認済み（2026-10-08））
-- T40: [Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする](public/durable-objects-d1-coordination.md) / [English](devto/durable-objects-d1-coordination.md)（制作完成・Qiita・予定2026-10-09・再予約（英語は公開済み））
+- T40: [Durable Objectsへデータを分ける前に、D1の横断クエリを棚卸しする](public/durable-objects-d1-coordination.md) / [English](devto/durable-objects-d1-coordination.md)（制作完成・Qiita・予定2026-10-09・公開確認済み（2026-10-09））
 - T41: [WorkersのwaitUntilで202を返した後、失敗と完了はどこで確認するか](public/workers-waituntil-failure-lifetime.md) / [English](devto/workers-waituntil-failure-lifetime.md)（制作完成・Qiita・予定2026-12-13・予約済み）
 - T42: [Cron Triggers・Queues・Workflowsを、失敗した後にどこから再開するかで選ぶ](articles/cloudflare-cron-queues-workflows.md) / [English](devto/cloudflare-cron-queues-workflows.md)（制作完成・Zenn・予定2026-10-05・公開確認済み（2026-10-08））
 - T43: [Workersのキャッシュを消しても応答が変わらない。ブラウザ側の保存と分けて確認する](public/cloudflare-cache-api-browser-cache.md) / [English](devto/cloudflare-cache-api-browser-cache.md)（制作完成・Qiita・予定2026-12-14・予約済み）

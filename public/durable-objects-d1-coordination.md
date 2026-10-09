@@ -6,11 +6,11 @@ tags:
   - d1
   - 設計
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-09T12:18:54+09:00"
+id: 31e50190423c94e787f6
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 ルームごとの状態をDurable Objectsへ移すとき、保存用のSQLが似ているからといって、D1のクエリをそのまま移せるとは限りません。各ObjectのSQLiteは、そのObject専用のストレージです。一つのD1に置いていた全ルームのデータを分けると、全体取得の経路も変わります。

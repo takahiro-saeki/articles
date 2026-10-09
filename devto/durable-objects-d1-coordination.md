@@ -3,7 +3,7 @@ devto_id: 4794156
 title: "Inventory cross-room queries before moving D1 data into Durable Objects"
 published: true
 tags: [cloudflare, architecture, database, distributed]
-canonical_url: https://zenn.dev/hirodeath/articles/durable-objects-d1-coordination
+canonical_url: https://qiita.com/hiro123/items/31e50190423c94e787f6
 ---
 
 When moving room state into Durable Objects, similar storage SQL does not mean every D1 query can move unchanged. Each Object has its own SQLite storage. Splitting data previously held in one D1 database also changes how you retrieve records across rooms.
