@@ -224,7 +224,7 @@
 - T41: [WorkersのwaitUntilで202を返した後、失敗と完了はどこで確認するか](public/workers-waituntil-failure-lifetime.md) / [English](devto/workers-waituntil-failure-lifetime.md)（制作完成・Qiita・予定2026-12-13・予約済み）
 - T42: [Cron Triggers・Queues・Workflowsを、失敗した後にどこから再開するかで選ぶ](articles/cloudflare-cron-queues-workflows.md) / [English](devto/cloudflare-cron-queues-workflows.md)（制作完成・Zenn・予定2026-10-05・公開確認済み（2026-10-08））
 - T43: [Workersのキャッシュを消しても応答が変わらない。ブラウザ側の保存と分けて確認する](public/cloudflare-cache-api-browser-cache.md) / [English](devto/cloudflare-cache-api-browser-cache.md)（制作完成・Qiita・予定2026-12-14・予約済み）
-- T44: [Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する](public/idempotency-key-result-storage.md) / [English](devto/idempotency-key-result-storage.md)（制作完成・Qiita・予定2026-10-10・再予約（英語は公開済み））
+- T44: [Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する](public/idempotency-key-result-storage.md) / [English](devto/idempotency-key-result-storage.md)（制作完成・Qiita・予定2026-10-10・公開確認済み（2026-10-10））
 - T45: [OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける](public/outbox-database-notification-boundary.md) / [English](devto/outbox-database-notification-boundary.md)（制作完成・Qiita・予定2026-10-11・再予約（英語は公開済み））
 - O01: [38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える](articles/publishing-38-day-audit.md) / [English](devto/publishing-38-day-audit.md)（制作完成・Zenn・予定2026-09-13・公開確認済み（2026-10-08））
 - O02: [日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う](public/bilingual-canonical-url-lifecycle.md) / [English](devto/bilingual-canonical-url-lifecycle.md)（制作完成・Qiita・予定2026-11-19・予約済み）

@@ -21,6 +21,15 @@
       "devto_id": 4794156,
       "devto_url": "https://dev.to/hirodeath/inventory-cross-room-queries-before-moving-d1-data-into-durable-objects-3oh3",
       "verified_at": "2026-10-09T06:02:10.986Z"
+    },
+    "idempotency-key-result-storage": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/b13669edaeffb9701f8e",
+      "published_at": "2026-10-10T11:58:37+09:00",
+      "devto_id": 4804226,
+      "devto_url": "https://dev.to/hirodeath/an-idempotency-key-needs-stored-results-testing-retries-and-concurrent-requests-24bh",
+      "verified_at": "2026-10-10T02:58:36.583Z"
     }
   }
 }

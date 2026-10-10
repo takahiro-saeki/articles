@@ -6,11 +6,11 @@ tags:
   - d1
   - 設計
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-10T11:58:37+09:00"
+id: b13669edaeffb9701f8e
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 作成APIの応答が返らなかったとき、クライアントには「作成前に失敗した」のか「作成済みだが応答を失った」のか分かりません。そこで同じ要求を再送すると、二つ目のデータができる可能性があります。

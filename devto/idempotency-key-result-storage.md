@@ -3,7 +3,7 @@ devto_id: 4804226
 title: "An idempotency key needs stored results: testing retries and concurrent requests"
 published: true
 tags: [api, cloudflare, database, testing]
-canonical_url: https://zenn.dev/hirodeath/articles/idempotency-key-result-storage
+canonical_url: https://qiita.com/hiro123/items/b13669edaeffb9701f8e
 ---
 
 When a create request produces no response, the client cannot distinguish failure before creation from a committed creation whose response was lost. Retrying can create a second record.
