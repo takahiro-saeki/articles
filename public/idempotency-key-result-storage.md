@@ -1,16 +1,18 @@
 ---
-title: "Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する"
+title: Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する
 tags:
-  - api
+  - API
   - cloudflare
-  - d1
+  - D1
   - 設計
 private: false
-updated_at: "2026-10-10T11:58:37+09:00"
+updated_at: '2026-10-10T18:28:23+09:00'
 id: b13669edaeffb9701f8e
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 作成APIの応答が返らなかったとき、クライアントには「作成前に失敗した」のか「作成済みだが応答を失った」のか分かりません。そこで同じ要求を再送すると、二つ目のデータができる可能性があります。
