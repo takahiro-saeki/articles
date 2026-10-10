@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-09
+- 最終確認日: 2026-10-10
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -62,3 +62,11 @@ T40「Durable Objectsへデータを分ける前に、D1の横断クエリを棚
 [公開run 37878689199](https://github.com/takahiro-saeki/articles/actions/runs/37878689199)と[再確認run 37891443141](https://github.com/takahiro-saeki/articles/actions/runs/37891443141)はいずれも成功。18:35 JSTの点検で、main `e10d90c`の日英原稿と公開APIの本文・タイトル・著者が一致し、認証なし実ページがHTTP 200であること、英語canonicalの一致を再確認した。10/8のT09も再照合済み。詳細は[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-09.json)に保存した。
 
 [ART-2](https://app.plane.so/hiro-work/browse/ART-2/)をDoneにし、ART-1と運用Wikiへ根拠を反映した。10/8以降の本日までの対象2組に未完了はない。点検からの追加dispatch・再投稿は行っていない。日本語の残りは66本（Zenn9・Qiita57）。T44/T45は10/10・10/11の予定を維持し、先行公開しない。
+
+### 2026-10-10の公開確認
+
+T44「Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する」は、[Qiita](https://qiita.com/hiro123/items/b13669edaeffb9701f8e)で11:58:37 JSTに公開された。09:00目標から2時間58分37秒遅れた。[既存英語版](https://dev.to/hirodeath/an-idempotency-key-needs-stored-results-testing-retries-and-concurrent-requests-24bh)はID `4804226`、10/6 12:28:58 JSTの初回公開日時を維持し、10/10 11:58:38 JSTにcanonicalを上記Qiita URLへ更新した。英語の新規投稿ではない。
+
+[公開run 38018903346](https://github.com/takahiro-saeki/articles/actions/runs/38018903346)と[再確認run 38028535933](https://github.com/takahiro-saeki/articles/actions/runs/38028535933)はいずれも成功。18:26 JSTの点検で、main `107dc06`の日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認した。認証なし実ページはHTTP 200、タイトル一致。T09・T40も再照合し、10/8以降の本日までの3組に未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-10.json)に根拠を保存した。
+
+[ART-3](https://app.plane.so/hiro-work/browse/ART-3/)をDoneにし、ART-1と運用Wikiへ反映した。点検からの追加dispatch・再投稿は行っていない。日本語の残りは65本（Zenn9・Qiita56）。T45は10/11、次回Zennは10/17の予定を維持する。
