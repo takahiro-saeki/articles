@@ -3,7 +3,7 @@ devto_id: 4809644
 title: "An outbox preserves notification intent; delivery deduplication is a separate boundary"
 published: true
 tags: [cloudflare, database, distributed, testing]
-canonical_url: https://zenn.dev/hirodeath/articles/outbox-database-notification-boundary
+canonical_url: https://qiita.com/hiro123/items/cd87126560ea16564d84
 ---
 
 Saving a record before calling a notification API leaves a gap where execution can stop. The data exists, but there is no record that a notification was required. Reversing the order can notify someone about data that never saved successfully.

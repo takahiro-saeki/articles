@@ -6,11 +6,11 @@ tags:
   - 通知
   - 分散システム
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-11T11:28:27+09:00"
+id: cd87126560ea16564d84
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 DBへ作成結果を保存した後に通知APIを呼ぶと、その間で処理が止まる可能性があります。DBにはデータがあるのに、通知すべきだったことを示す記録がありません。順序を逆にすると、今度は保存できなかったデータの通知が先に届く可能性があります。
