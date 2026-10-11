@@ -1,16 +1,18 @@
 ---
-title: "OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける"
+title: OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける
 tags:
   - cloudflare
-  - d1
+  - D1
   - 通知
   - 分散システム
 private: false
-updated_at: "2026-10-11T11:28:27+09:00"
+updated_at: '2026-10-11T18:37:46+09:00'
 id: cd87126560ea16564d84
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 DBへ作成結果を保存した後に通知APIを呼ぶと、その間で処理が止まる可能性があります。DBにはデータがあるのに、通知すべきだったことを示す記録がありません。順序を逆にすると、今度は保存できなかったデータの通知が先に届く可能性があります。
