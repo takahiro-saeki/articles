@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-10
+- 最終確認日: 2026-10-11
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -70,3 +70,11 @@ T44「Idempotency Keyを付けるだけでは二重処理を防げない。結�
 [公開run 38018903346](https://github.com/takahiro-saeki/articles/actions/runs/38018903346)と[再確認run 38028535933](https://github.com/takahiro-saeki/articles/actions/runs/38028535933)はいずれも成功。18:26 JSTの点検で、main `107dc06`の日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認した。認証なし実ページはHTTP 200、タイトル一致。T09・T40も再照合し、10/8以降の本日までの3組に未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-10.json)に根拠を保存した。
 
 [ART-3](https://app.plane.so/hiro-work/browse/ART-3/)をDoneにし、ART-1と運用Wikiへ反映した。点検からの追加dispatch・再投稿は行っていない。日本語の残りは65本（Zenn9・Qiita56）。T45は10/11、次回Zennは10/17の予定を維持する。
+
+### 2026-10-11の公開確認
+
+T45「OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける」は、[Qiita](https://qiita.com/hiro123/items/cd87126560ea16564d84)で11:28:27 JSTに公開された。09:00目標から2時間28分27秒遅れた。[既存英語版](https://dev.to/hirodeath/an-outbox-preserves-notification-intent-delivery-deduplication-is-a-separate-boundary-510h)はID `4809644`、10/7 10:39:03 JSTの初回公開日時を維持し、10/11 11:28:29 JSTにcanonicalを上記Qiita URLへ更新した。英語の新規投稿ではない。
+
+[公開run 38105255072](https://github.com/takahiro-saeki/articles/actions/runs/38105255072)と[再確認run 38115488476](https://github.com/takahiro-saeki/articles/actions/runs/38115488476)はいずれも成功。18:35 JSTの点検で、main `53213d2`の日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認した。認証なし実ページはHTTP 200、タイトル一致。T09・T40・T44も再照合し、10/8以降、本日までの4組に未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-11.json)に根拠を保存した。
+
+[ART-4](https://app.plane.so/hiro-work/browse/ART-4/)をDoneにし、ART-1と運用Wikiへ反映した。Zenn未公開4本のQiita回復と既存英語canonical更新はすべて完了。点検からの追加dispatch・再投稿は行っていない。日本語の残りは64本（Zenn9・Qiita55）。10/12から新しい日英1組の公開を予定し、次回Zennは10/17を維持する。全90組の公開は未完了のためART-1はIn Progressのままとする。
