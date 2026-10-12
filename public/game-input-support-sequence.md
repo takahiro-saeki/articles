@@ -6,11 +6,11 @@ tags:
   - 入力
   - テスト
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-12T11:52:54+09:00"
+id: 863735a90e1085b3155d
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 スティックを右へ倒すと、選択を一つ動かしたい。押し続けている間に届くイベントを全部「次へ」にすると、選択が飛び続けます。一方、攻撃の長押しでは、押した瞬間と離した瞬間の両方が必要です。

@@ -1,8 +1,9 @@
 ---
+devto_id: 4835448
 title: "Define one input action per screen across mouse, touch, and gamepad controls"
-published: false
+published: true
 tags: [godot, gamedev, testing, input]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/863735a90e1085b3155d
 ---
 
 Pushing a stick right should move the selection once. Treat every event received while the stick remains tilted as “next,” and the selection keeps jumping. Charging an attack, meanwhile, needs both the press and the release.

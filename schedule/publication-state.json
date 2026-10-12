@@ -39,6 +39,15 @@
       "devto_id": 4809644,
       "devto_url": "https://dev.to/hirodeath/an-outbox-preserves-notification-intent-delivery-deduplication-is-a-separate-boundary-510h",
       "verified_at": "2026-10-11T05:39:39.174Z"
+    },
+    "game-input-support-sequence": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/863735a90e1085b3155d",
+      "published_at": "2026-10-12T11:52:54+09:00",
+      "devto_id": 4835448,
+      "devto_url": "https://dev.to/hirodeath/define-one-input-action-per-screen-across-mouse-touch-and-gamepad-controls-2g4b",
+      "verified_at": "2026-10-12T02:52:53.633Z"
     }
   }
 }
