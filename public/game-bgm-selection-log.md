@@ -6,11 +6,11 @@ tags:
   - 音楽
   - 生成ai
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-13T13:08:12+09:00"
+id: 2b9c97494a40746ce603
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 ゲームへ音楽を追加すると、候補、採用した曲、保存したファイル、場面への割当が少しずつずれます。地図の曲を差し替えても旧曲は残せますし、別の場面が同じ音声ファイルを使うこともあります。「18曲ある」という数字だけでは、何を数えたのか分かりません。

@@ -1,8 +1,9 @@
 ---
+devto_id: 4841327
 title: "Audit a game soundtrack by selection records, playback slots, and actual files"
-published: false
+published: true
 tags: [gamedev, godot, audio, ai]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/2b9c97494a40746ce603
 ---
 
 Soundtrack candidates, selected compositions, stored files, and playback assignments gradually diverge. Replacing map music can leave the old file in storage, while two scenes may share one recording. “There are 18 tracks” does not explain what was counted.
