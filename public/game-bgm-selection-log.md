@@ -1,16 +1,18 @@
 ---
-title: "ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する"
+title: ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する
 tags:
   - ゲーム開発
-  - godot
+  - Godot
   - 音楽
-  - 生成ai
+  - 生成AI
 private: false
-updated_at: "2026-10-13T13:08:12+09:00"
+updated_at: '2026-10-13T18:38:40+09:00'
 id: 2b9c97494a40746ce603
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ゲームへ音楽を追加すると、候補、採用した曲、保存したファイル、場面への割当が少しずつずれます。地図の曲を差し替えても旧曲は残せますし、別の場面が同じ音声ファイルを使うこともあります。「18曲ある」という数字だけでは、何を数えたのか分かりません。
