@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-13
+- 最終確認日: 2026-10-14
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -94,3 +94,11 @@ O15「ゲームBGMの採用記録を、曲数・割当先・実ファイルで�
 [公開run 38344983145](https://github.com/takahiro-saeki/articles/actions/runs/38344983145)と[再確認run 38358301896](https://github.com/takahiro-saeki/articles/actions/runs/38358301896)はいずれも成功。18:36 JSTの点検で、main `a5043ab`の日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認した。認証なしの両実ページはHTTP 200、タイトル一致。10/8以降、本日までの6組すべてを再照合し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-13.json)に根拠を保存した。
 
 [ART-6](https://app.plane.so/hiro-work/browse/ART-6/)をDoneにし、ART-1と運用Wikiへ反映した。点検からの追加dispatch・再投稿は行っていない。日本語の残りは62本（Zenn9・Qiita53）。次は10/14 O16、次回Zennは10/17。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-14の公開確認
+
+O16「63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する」は、[Qiita](https://qiita.com/hiro123/items/863a22e166413d0aae2e)で11:22:10 JSTに公開された。09:00目標から2時間22分10秒遅れた。[英語版](https://dev.to/hirodeath/from-63-seconds-to-60-checking-a-game-trailer-against-its-timeline-and-video-files-1b6h)はID `4847368`、11:22:13 JSTに新規公開された。日本語の実公開後に公開し、canonicalは上記Qiita URLと一致する。
+
+[公開run 38500644364](https://github.com/takahiro-saeki/articles/actions/runs/38500644364)と[再確認run 38513168408](https://github.com/takahiro-saeki/articles/actions/runs/38513168408)はいずれも成功。18:26 JSTの点検で、main `3ffa209`の日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認した。認証なしの両実ページはHTTP 200、タイトル一致。10/8以降、本日までの7組すべてを再照合し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-14.json)に根拠を保存した。
+
+[ART-7](https://app.plane.so/hiro-work/browse/ART-7/)をDoneにし、ART-1と運用Wikiへ反映した。点検からの追加dispatch・再投稿は行っていない。日本語の残りは61本（Zenn9・Qiita52）。次は10/15 O21、次回Zennは10/17。全90組の公開は未完了のためART-1はIn Progressを維持する。
