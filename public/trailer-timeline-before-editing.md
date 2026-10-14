@@ -6,11 +6,11 @@ tags:
   - ffmpeg
   - 動画
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-14T11:22:10+09:00"
+id: 863a22e166413d0aae2e
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 短いゲームトレイラーでも、タイトル、戦闘、強化、ボス、公開先を順に入れると尺が埋まります。最後に数秒削るだけでは、最初に伝わる内容は変わりません。

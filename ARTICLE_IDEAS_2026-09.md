@@ -241,7 +241,7 @@
 - O13: [マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える](public/game-input-support-sequence.md) / [English](devto/game-input-support-sequence.md)（制作完成・Qiita・予定2026-10-12・公開確認済み（2026-10-12））
 - O14: [日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける](public/bilingual-story-archive-qa.md) / [English](devto/bilingual-story-archive-qa.md)（制作完成・Qiita・予定2026-11-25・予約済み）
 - O15: [ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する](public/game-bgm-selection-log.md) / [English](devto/game-bgm-selection-log.md)（制作完成・Qiita・予定2026-10-13・公開確認済み（2026-10-13））
-- O16: [63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する](public/trailer-timeline-before-editing.md) / [English](devto/trailer-timeline-before-editing.md)（制作完成・Qiita・予定2026-10-14・予約済み）
+- O16: [63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する](public/trailer-timeline-before-editing.md) / [English](devto/trailer-timeline-before-editing.md)（制作完成・Qiita・予定2026-10-14・公開確認済み（2026-10-14））
 - O17: [AI生成素材の出典、原本、採否をどう残したか](articles/generated-asset-provenance-decisions.md) / [English](devto/generated-asset-provenance-decisions.md)（制作完成・Zenn・予定2026-09-30・公開確認済み（2026-10-08））
 - O18: [ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか](articles/local-image-generation-reproducibility.md) / [English](devto/local-image-generation-reproducibility.md)（制作完成・Zenn・予定2026-10-01・公開確認済み（2026-10-08））
 - O19: [2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする](articles/solo-web-ios-maintenance-scope.md) / [English](devto/solo-web-ios-maintenance-scope.md)（制作完成・Zenn・予定2026-11-14・予約済み）
