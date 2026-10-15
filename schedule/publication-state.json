@@ -66,6 +66,15 @@
       "devto_id": 4847368,
       "devto_url": "https://dev.to/hirodeath/from-63-seconds-to-60-checking-a-game-trailer-against-its-timeline-and-video-files-1b6h",
       "verified_at": "2026-10-14T04:47:05.228Z"
+    },
+    "auth-incident-recovery-evidence": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/99a09ee6ee5cf25e8f94",
+      "published_at": "2026-10-15T11:03:04+09:00",
+      "devto_id": 4853518,
+      "devto_url": "https://dev.to/hirodeath/verify-authentication-recovery-before-treating-configuration-as-the-root-cause-553m",
+      "verified_at": "2026-10-15T02:03:04.022Z"
     }
   }
 }

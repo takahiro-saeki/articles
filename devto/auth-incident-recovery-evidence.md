@@ -1,8 +1,9 @@
 ---
+devto_id: 4853518
 title: "Verify authentication recovery before treating Configuration as the root cause"
-published: false
+published: true
 tags: [authentication, nextjs, testing, debugging]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/99a09ee6ee5cf25e8f94
 ---
 
 A return URL containing `error=Configuration` suggests a configuration mistake. Yet the inspected Auth.js version also produces that destination when a PKCE cookie is missing. The user-facing classification does not identify the cause by itself.

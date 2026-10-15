@@ -6,11 +6,11 @@ tags:
   - テスト
   - 運用
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-15T11:03:04+09:00"
+id: 99a09ee6ee5cf25e8f94
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 ログイン後の戻り先に`error=Configuration`が付いていると、設定値の間違いを疑いたくなります。ところが、今回確認したAuth.jsではPKCE Cookieの欠落もその表示へつながりました。画面へ出る分類だけでは、発生原因を特定できません。
