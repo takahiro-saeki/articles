@@ -1,9 +1,10 @@
 ---
+devto_id: 4859215
 title: "Consolidating Codex TODOs in Plane without merging different deliverables"
-published: false
+published: true
 description: "Existing tickets and Git records show why matching themes are not enough to identify duplicate work."
 tags: [plane, productivity, ai, webdev]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/3a7028821f58605e86fe
 ---
 
 Suppose a TODO to explain joining a group through an invitation link appears in more than one conversation. Merging it into an existing ticket because the title sounds familiar could combine a carousel and a video into one task.

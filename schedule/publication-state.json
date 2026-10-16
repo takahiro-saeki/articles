@@ -75,6 +75,15 @@
       "devto_id": 4853518,
       "devto_url": "https://dev.to/hirodeath/verify-authentication-recovery-before-treating-configuration-as-the-root-cause-553m",
       "verified_at": "2026-10-15T04:30:20.122Z"
+    },
+    "plane-codex-todo-consolidation": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/3a7028821f58605e86fe",
+      "published_at": "2026-10-16T10:29:30+09:00",
+      "devto_id": 4859215,
+      "devto_url": "https://dev.to/hirodeath/consolidating-codex-todos-in-plane-without-merging-different-deliverables-18ca",
+      "verified_at": "2026-10-16T01:29:29.941Z"
     }
   }
 }

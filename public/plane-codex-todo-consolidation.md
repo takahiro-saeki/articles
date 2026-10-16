@@ -6,11 +6,11 @@ tags:
   - タスク管理
   - 個人開発
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-16T10:29:30+09:00"
+id: 3a7028821f58605e86fe
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 「招待リンクから団体へ参加する方法を紹介する」というTODOを、複数の会話で見つけた場合を考えます。同じ名前だから既存チケットへまとめると、静止画の制作と動画の制作が一枚に混ざるかもしれません。
