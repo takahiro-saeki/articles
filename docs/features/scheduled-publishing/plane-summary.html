@@ -1,8 +1,8 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-15。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-16。</p>
 <h2>公開スケジュール</h2>
 <p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、次回は10/17。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。10/15のO21公開後、日本語の残りは60本（Zenn9、Qiita51）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>90本の日英原稿は完成済み。10/16のP17公開後、日本語の残りは59本（Zenn9、Qiita50）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
 <p>Zennの予定: 10/17、10/24、10/31、11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/6で、10/10に追加しない。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
@@ -77,3 +77,11 @@
 </li></ul>
 <p>publication-state.jsonにも両言語のURL・ID・verifiedを保存済み。点検からの追加dispatch・再投稿は行っていない。</p>
 <p><a rel="noopener noreferrer" href="https://app.plane.so/hiro-work/browse/ART-8/">ART-8: O21公開確認</a>を完了。10/8以降、本日までの8組に未完了なし。次は10/16 P17、次回Zennは10/17。</p>
+<h3>2026-10-16 10:30 JST 公開回復・確認</h3>
+<p>10:28 JST時点で本日分のrunは未開始、実行中runもなかった。保存済みIDはなく、公開先の一覧にも同一記事がないことを確認し、既存publish-scheduled.ymlをdate=2026-10-16、dry_run=falseで1回実行した。</p>
+<ul><li><p>日本語: <a rel="noopener noreferrer" href="https://qiita.com/hiro123/items/3a7028821f58605e86fe">Qiita P17</a>。2026-10-16 10:29:30 JST公開。09:00目標より1時間29分30秒遅延。</p>
+</li><li><p>英語: <a rel="noopener noreferrer" href="https://dev.to/hirodeath/consolidating-codex-todos-in-plane-without-merging-different-deliverables-18ca">dev.to P17</a>。ID 4859215、10/16 10:29:31 JSTに新規公開。日本語の実公開後に公開され、canonicalは上記Qiita URLと一致。</p>
+</li><li><p>復旧run: <a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/actions/runs/38835383028">38835383028</a>。success、境界テスト12件成功、公開API検証verified。ID・URL・状態をmain 96ef98aへ保存済み。</p>
+</li></ul>
+<p>10:30 JSTにmain 96ef98aの日英原稿と公開APIの本文・タイトル・著者を照合。認証なしの両実ページはHTTP 200、タイトル一致。10/8以降、本日までの9組すべてで本文・ID・canonical・実ページの公開を確認した。未来日の先行公開は行っていない。</p>
+<p><a rel="noopener noreferrer" href="https://app.plane.so/hiro-work/browse/ART-9/">ART-9: P17公開確認</a>を完了。10/8以降、本日までの9組に未完了なし。次は10/17 O20、週1回のZenn初回。</p>

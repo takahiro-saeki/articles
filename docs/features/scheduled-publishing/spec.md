@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-15
+- 最終確認日: 2026-10-16
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -110,3 +110,13 @@ O21「認証エラーのConfigurationを原因と決めつけず、復旧を確�
 [公開run 38668921281](https://github.com/takahiro-saeki/articles/actions/runs/38668921281)と[再確認run 38681793375](https://github.com/takahiro-saeki/articles/actions/runs/38681793375)はいずれも成功。18:34 JSTの点検で、main `227355c`の日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認した。認証なしの両実ページはHTTP 200、タイトル一致。10/8以降、本日までの8組すべてを再照合し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-15.json)に根拠を保存した。
 
 [ART-8](https://app.plane.so/hiro-work/browse/ART-8/)をDoneにし、ART-1と運用Wikiへ反映した。点検からの追加dispatch・再投稿は行っていない。日本語の残りは60本（Zenn9・Qiita51）。次は10/16 P17、次回Zennは10/17。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-16の公開回復・確認
+
+10:28 JST時点で本日分のrunは未開始、実行中runもなかった。保存済みIDがなく、Qiita・dev.toの公開一覧にも同一記事がないことを確認し、既存workflowを `date=2026-10-16`、`dry_run=false` で1回実行した。
+
+P17「CodexチャットのTODOをPlaneへ集約するとき、同じテーマを重複扱いしない」は、[Qiita](https://qiita.com/hiro123/items/3a7028821f58605e86fe)で10:29:30 JSTに公開された。09:00目標から1時間29分30秒遅れた。[英語版](https://dev.to/hirodeath/consolidating-codex-todos-in-plane-without-merging-different-deliverables-18ca)はID `4859215`、10:29:31 JSTに新規公開された。日本語の実公開後に公開し、canonicalは上記Qiita URLと一致する。
+
+[復旧run 38835383028](https://github.com/takahiro-saeki/articles/actions/runs/38835383028)は成功し、境界テスト12件も成功。ID・URL・verifiedをmain `96ef98a`へ保存した。10:30 JSTの点検で日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認し、認証なしの両実ページはHTTP 200、タイトル一致。10/8以降、本日までの9組すべてを再照合し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-16.json)に根拠を保存した。
+
+[ART-9](https://app.plane.so/hiro-work/browse/ART-9/)をDoneにし、ART-1と運用Wikiへ反映した。日本語の残りは59本（Zenn9・Qiita50）。次は10/17 O20、週1回のZenn初回。未来日の先行公開は行っていない。全90組の公開は未完了のためART-1はIn Progressを維持する。
