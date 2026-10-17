@@ -1,7 +1,7 @@
 {
   "last_zenn_publication": {
-    "slug": "cloudflare-cron-queues-workflows",
-    "published_at": "2026-10-06T12:29:03.955+09:00"
+    "slug": "expo-multi-device-push-rollout",
+    "published_at": "2026-10-17T10:47:59.955+09:00"
   },
   "articles": {
     "node-esm-commonjs-boundaries": {
@@ -87,8 +87,12 @@
     },
     "expo-multi-device-push-rollout": {
       "platform": "zenn",
-      "status": "awaiting_deployment",
-      "requested_at": "2026-10-17T01:47:54.876Z"
+      "status": "verified",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout",
+      "published_at": "2026-10-17T10:47:59.955+09:00",
+      "devto_id": 4865168,
+      "devto_url": "https://dev.to/hirodeath/a-multi-device-push-rollout-remains-incomplete-while-old-logout-behavior-survives-3881",
+      "verified_at": "2026-10-17T01:48:26.659Z"
     }
   }
 }

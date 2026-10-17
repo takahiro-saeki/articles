@@ -1,6 +1,7 @@
 ---
+devto_id: 4865168
 title: "A multi-device push rollout remains incomplete while old logout behavior survives"
-published: false
+published: true
 tags: [expo, mobile, testing, migration]
 canonical_url: https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout
 ---
