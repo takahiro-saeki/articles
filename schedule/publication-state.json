@@ -84,6 +84,11 @@
       "devto_id": 4859215,
       "devto_url": "https://dev.to/hirodeath/consolidating-codex-todos-in-plane-without-merging-different-deliverables-18ca",
       "verified_at": "2026-10-16T04:24:32.771Z"
+    },
+    "expo-multi-device-push-rollout": {
+      "platform": "zenn",
+      "status": "awaiting_deployment",
+      "requested_at": "2026-10-17T01:47:54.876Z"
     }
   }
 }

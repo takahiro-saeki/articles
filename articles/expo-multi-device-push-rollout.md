@@ -3,7 +3,7 @@ title: "複数端末Pushの移行は、旧版のログアウトが残る間は�
 emoji: "📱"
 type: "tech"
 topics: ["expo", "通知", "移行", "テスト"]
-published: false
+published: true
 ---
 
 サーバーで一人に複数のPush Tokenを保存できるようにしても、旧版アプリのログアウトが全端末解除を呼べば、ほかの端末の登録も消えます。APIの新しい動作だけでは、移行後の利用状態を説明できません。
