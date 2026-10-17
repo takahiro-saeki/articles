@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-16
+- 最終確認日: 2026-10-17
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -51,7 +51,7 @@ GitHub Actionsの予約実行には遅延があるため09:00は目標時刻で�
 
 - 実装: main反映済み（初回2ecfa9a、結果反映2a88b12、待機ジョブのcheckout修正1827ba3）。再実行37710179409でメタデータ保存まで確認。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
-- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。将来のZenn公開は未実行。
+- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17に初回公開を確認し、次回は10/24。以後の予定分は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。
 - 検証結果・実公開URL: [移行記録](../../../production/2026-09/scheduling/weekly-zenn/README.md)。
 
@@ -120,3 +120,13 @@ P17「CodexチャットのTODOをPlaneへ集約するとき、同じテーマを
 [復旧run 38835383028](https://github.com/takahiro-saeki/articles/actions/runs/38835383028)は成功し、境界テスト12件も成功。ID・URL・verifiedをmain `96ef98a`へ保存した。10:30 JSTの点検で日英原稿と公開APIの本文・タイトル・著者、英語canonicalの一致を確認し、認証なしの両実ページはHTTP 200、タイトル一致。10/8以降、本日までの9組すべてを再照合し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-16.json)に根拠を保存した。
 
 [ART-9](https://app.plane.so/hiro-work/browse/ART-9/)をDoneにし、ART-1と運用Wikiへ反映した。日本語の残りは59本（Zenn9・Qiita50）。次は10/17 O20、週1回のZenn初回。未来日の先行公開は行っていない。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-17の公開確認
+
+週1回のZenn運用の初回O20「複数端末Pushの移行は、旧版のログアウトが残る間は終わらない」は、[Zenn](https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout)で10:47:59.955 JSTに公開された（ID `649873`）。09:00目標から1時間47分59.955秒遅れた。[英語版](https://dev.to/hirodeath/a-multi-device-push-rollout-remains-incomplete-while-old-logout-behavior-survives-3881)はID `4865168`、10:48:27.368 JSTに新規公開され、canonicalは上記Zenn URLと一致する。
+
+[公開run 38992356619](https://github.com/takahiro-saeki/articles/actions/runs/38992356619)と[再確認run 39002039286](https://github.com/takahiro-saeki/articles/actions/runs/39002039286)はいずれも成功し、境界テスト12件も成功。20:08 JSTの点検で、main `71cbed8`とZennの認証なし実ページを照合し、HTTP 200・published・非プレビュー・タイトル・著者・path・公開日時・本文の表示テキスト・リンクの一致を確認した。
+
+dev.to公開APIのローカル取得は404で、`X-Cache: HIT, HIT`、`Age: 36037`秒の応答だった。本人用APIでアカウント`hirodeath`と既存IDの`published:true`・本文Markdown・タイトル・著者・canonicalを確認した。認証なし実ページもHTTP 200で、全文の表示テキスト（コード表示ボタンと空白を除く）・canonical・公開日時が一致。両Actionsの公開API検証も成功しているため、公開済みと判定した。キャッシュされたAPI応答を理由に再投稿は行っていない。
+
+10/8以降、本日までの10組・20実ページを確認し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-17.json)に根拠とAPIの例外を保存した。[ART-10](https://app.plane.so/hiro-work/browse/ART-10/)をDoneにし、ART-1・Project概要・運用Wikiへ反映した。追加dispatchはなし。日本語の残りは58本（Zenn8・Qiita50）。次は10/18 Qiita P19、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
