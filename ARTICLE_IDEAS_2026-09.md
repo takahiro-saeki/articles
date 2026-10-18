@@ -179,7 +179,7 @@
 - P16: [Codexへ渡すPlaneの本文には、完了条件と確認結果を別々に残す](public/plane-work-item-acceptance-evidence.md) / [English](devto/plane-work-item-acceptance-evidence.md)（制作完成・Qiita・予定2026-11-29・予約済み）
 - P17: [CodexチャットのTODOをPlaneへ集約するとき、同じテーマを重複扱いしない](public/plane-codex-todo-consolidation.md) / [English](devto/plane-codex-todo-consolidation.md)（制作完成・Qiita・予定2026-10-16・公開確認済み（2026-10-16））
 - P18: [Planeで個人開発を止めるとき、CancelledとArchiveに何を残すか](public/plane-close-paused-project.md) / [English](devto/plane-close-paused-project.md)（制作完成・Qiita・予定2026-11-30・予約済み）
-- P19: [一人開発のEstimateは、残り日数より抱えている作業の偏りに使う](public/plane-estimate-capacity-experiment.md) / [English](devto/plane-estimate-capacity-experiment.md)（制作完成・Qiita・予定2026-10-18・予約済み）
+- P19: [一人開発のEstimateは、残り日数より抱えている作業の偏りに使う](public/plane-estimate-capacity-experiment.md) / [English](devto/plane-estimate-capacity-experiment.md)（制作完成・Qiita・予定2026-10-18・公開確認済み（2026-10-18））
 - P20: [Plane Cloudとセルフホストを、復元時に引き受ける作業から比べる](articles/plane-cloud-self-host-comparison.md) / [English](devto/plane-cloud-self-host-comparison.md)（制作完成・Zenn・予定2026-11-21・予約済み）
 - T01: [Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる](public/promise-combinators-partial-failure.md) / [English](devto/promise-combinators-partial-failure.md)（制作完成・Qiita・予定2026-09-20・公開確認済み（2026-10-08））
 - T02: [TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる](public/typescript-satisfies-annotation-assertion.md) / [English](devto/typescript-satisfies-annotation-assertion.md)（制作完成・Qiita・予定2026-10-22・予約済み）

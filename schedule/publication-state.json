@@ -93,6 +93,15 @@
       "devto_id": 4865168,
       "devto_url": "https://dev.to/hirodeath/a-multi-device-push-rollout-remains-incomplete-while-old-logout-behavior-survives-3881",
       "verified_at": "2026-10-17T04:18:06.464Z"
+    },
+    "plane-estimate-capacity-experiment": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0",
+      "published_at": "2026-10-18T10:45:41+09:00",
+      "devto_id": 4869701,
+      "devto_url": "https://dev.to/hirodeath/using-estimates-to-spot-overloaded-solo-projects-before-predicting-dates-3j62",
+      "verified_at": "2026-10-18T01:45:40.373Z"
     }
   }
 }

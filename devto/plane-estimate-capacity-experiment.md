@@ -1,9 +1,10 @@
 ---
+devto_id: 4869701
 title: "Using estimates to spot overloaded solo projects before predicting dates"
-published: false
+published: true
 description: "A read-only audit of Plane Work Points compares task counts, missing estimates, and overlapping parent scope."
 tags: [plane, productivity, python, webdev]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0
 ---
 
 Planning to work on three tasks this week says little about their size. Exploring an email delivery service and implementing a feature across several devices can both count as one task.
