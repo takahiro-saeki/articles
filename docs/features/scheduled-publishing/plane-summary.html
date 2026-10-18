@@ -1,8 +1,8 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-17。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-18。</p>
 <h2>公開スケジュール</h2>
 <p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17の初回公開を確認済み。次回は10/24。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。10/17のO20公開後、日本語の残りは58本（Zenn8、Qiita50）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>90本の日英原稿は完成済み。10/18のP19公開後、日本語の残りは57本（Zenn8、Qiita49）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
 <p>Zennの残り予定: 10/24、10/31、11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/17 10:47:59.955 JST。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
@@ -94,3 +94,5 @@
 <p>ローカルのdev.to公開APIは404を返したが、応答はX-Cache: HIT, HIT、Age: 36037秒。本人用APIでhirodeathを確認し、既存IDのpublished:true・本文・タイトル・著者・canonicalを照合した。認証なしの実ページはHTTP 200で全文の表示テキスト・canonical・公開日時を確認。コード表示ボタンと空白を除いた本文が一致し、両Actionsの公開API検証も成功しているため、公開済みと判定した。APIのキャッシュ応答を根拠に再投稿していない。</p>
 <p>10/8以降、本日までの10組・20実ページを確認。両言語の実公開確認がそろい、publication-state.jsonにもURL・ID・verifiedを保存済み。</p>
 <p><a rel="noopener noreferrer" href="https://app.plane.so/hiro-work/browse/ART-10/">ART-10: O20公開確認</a>を完了。10/8以降、本日までの10組に未完了なし。次は10/18 Qiita P19、次回Zennは10/24。</p>
+
+<h3>2026-10-18 18:31 JST 公開確認</h3><p>main 13a1759の日英原稿と公開APIの本文・タイトル・著者を照合。認証なしの両実ページはHTTP 200でタイトル一致。英語canonicalも下記Qiita URLと一致した。</p><ul><li>日本語: <a href="https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0">Qiita P19</a>。2026-10-18 10:45:41 JST公開。09:00目標より1時間45分41秒遅延。</li><li>英語: <a href="https://dev.to/hirodeath/using-estimates-to-spot-overloaded-solo-projects-before-predicting-dates-3j62">dev.to P19</a>。ID 4869701、10/18 10:45:42 JSTに新規公開。日本語の実公開後に公開され、canonicalは上記Qiita URLと一致。</li><li>公開run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/39087639564">39087639564</a>。再確認run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/39096948528">39096948528</a>。両方success、境界テスト12件成功、同じID・URLでverified。</li></ul><p>10/8以降、本日までの11組・22実ページを確認。昨日O20のdev.to公開APIはキャッシュされた404（X-Cache: HIT, HIT、Age: 116681秒）が続くが、本人用APIでhirodeath・既存ID・published:true・本文・タイトル・canonicalを照合し、認証なし実ページの全文とcanonicalも一致した。Zennの公開メタデータ・本文・リンクも一致し、公開継続を確認。本日P19の公開APIは正常。publication-state.jsonに保存済みのIDと実公開URLを維持し、本点検では追加dispatch・再投稿を行っていない。</p><p><a href="https://app.plane.so/hiro-work/browse/ART-11/">ART-11: P19公開確認</a>を完了。10/8以降、本日までの11組に未完了なし。残り57組（日本語Zenn8・Qiita49）。次は10/19 Qiita T14、次回Zennは10/24。全90組は未完了のためART-1はIn Progressを維持する。</p>

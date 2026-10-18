@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-17
+- 最終確認日: 2026-10-18
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -130,3 +130,13 @@ P17「CodexチャットのTODOをPlaneへ集約するとき、同じテーマを
 dev.to公開APIのローカル取得は404で、`X-Cache: HIT, HIT`、`Age: 36037`秒の応答だった。本人用APIでアカウント`hirodeath`と既存IDの`published:true`・本文Markdown・タイトル・著者・canonicalを確認した。認証なし実ページもHTTP 200で、全文の表示テキスト（コード表示ボタンと空白を除く）・canonical・公開日時が一致。両Actionsの公開API検証も成功しているため、公開済みと判定した。キャッシュされたAPI応答を理由に再投稿は行っていない。
 
 10/8以降、本日までの10組・20実ページを確認し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-17.json)に根拠とAPIの例外を保存した。[ART-10](https://app.plane.so/hiro-work/browse/ART-10/)をDoneにし、ART-1・Project概要・運用Wikiへ反映した。追加dispatchはなし。日本語の残りは58本（Zenn8・Qiita50）。次は10/18 Qiita P19、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-18の公開確認
+
+P19「一人開発のEstimateは、残り日数より抱えている作業の偏りに使う」は、[Qiita](https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0)で10:45:41 JSTに公開された。09:00目標から1時間45分41秒遅れた。[英語版](https://dev.to/hirodeath/using-estimates-to-spot-overloaded-solo-projects-before-predicting-dates-3j62)はID `4869701`、10:45:42 JSTに新規公開され、canonicalは上記Qiita URLと一致する。
+
+[公開run 39087639564](https://github.com/takahiro-saeki/articles/actions/runs/39087639564)と[再確認run 39096948528](https://github.com/takahiro-saeki/articles/actions/runs/39096948528)はいずれも成功し、境界テスト12件も成功。18:31 JSTの点検で、main `13a1759`の日英原稿と公開APIの本文・タイトル・著者を照合。認証なしの両実ページはHTTP 200、タイトル一致。日本語の実公開後に英語が公開されたことを確認した。
+
+昨日O20のdev.to公開APIはキャッシュされた404（`X-Cache: HIT, HIT`、`Age: 116681`秒）が続くが、本人用APIでアカウント・既存ID・published:true・本文・タイトル・canonicalを照合し、認証なし実ページの全文とcanonicalも一致した。Zennの公開メタデータ・本文・リンクも再確認済み。本日P19の公開APIは正常で、昨日のAPI応答を根拠に再投稿はしていない。
+
+10/8以降、本日までの11組・22実ページを確認し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-18.json)に根拠を保存した。[ART-11](https://app.plane.so/hiro-work/browse/ART-11/)をDoneにし、ART-1・運用Wikiへ反映した。追加dispatchはなし。日本語の残りは57本（Zenn8・Qiita49）。次は10/19 Qiita T14、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
