@@ -1,16 +1,18 @@
 ---
-title: "一人開発のEstimateは、残り日数より抱えている作業の偏りに使う"
+title: 一人開発のEstimateは、残り日数より抱えている作業の偏りに使う
 tags:
   - plane
   - 個人開発
   - タスク管理
-  - python
+  - Python
 private: false
-updated_at: "2026-10-18T10:45:41+09:00"
+updated_at: '2026-10-18T18:33:24+09:00'
 id: e7cf1e1dd800e839acc0
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 「今週は3件進める」と決めても、その3件がメール配信の調査なのか、複数端末にまたがる機能なのかで重さは変わります。件数を揃えただけでは、引き受けた量を比べられません。
