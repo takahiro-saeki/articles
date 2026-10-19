@@ -102,6 +102,15 @@
       "devto_id": 4869701,
       "devto_url": "https://dev.to/hirodeath/using-estimates-to-spot-overloaded-solo-projects-before-predicting-dates-3j62",
       "verified_at": "2026-10-18T04:24:03.566Z"
+    },
+    "react-memoization-cost": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/2fda66bcf469a167e06b",
+      "published_at": "2026-10-19T11:02:57+09:00",
+      "devto_id": 4874778,
+      "devto_url": "https://dev.to/hirodeath/when-usememo-and-usecallback-help-count-the-work-they-actually-skip-4hob",
+      "verified_at": "2026-10-19T02:02:56.096Z"
     }
   }
 }

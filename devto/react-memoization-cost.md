@@ -1,9 +1,10 @@
 ---
+devto_id: 4874778
 title: "When useMemo and useCallback help: count the work they actually skip"
-published: false
+published: true
 description: "Production React benchmarks compare cheap arithmetic, a real schedule formatter, and callback props."
 tags: [react, javascript, performance, webdev]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/2fda66bcf469a167e06b
 ---
 
 Wrapping a cheap expression in `useMemo` reduced its calculation count but made the overall updates slower. In this small benchmark, updating 2,000 elements 100 times took a median of 29.7ms with direct calculation and 34.5ms with `useMemo`.
