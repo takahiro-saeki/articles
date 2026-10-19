@@ -1,16 +1,18 @@
 ---
-title: "useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる"
+title: useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる
 tags:
-  - react
-  - javascript
+  - React
+  - JavaScript
   - performance
   - 個人開発
 private: false
-updated_at: "2026-10-19T11:02:57+09:00"
+updated_at: '2026-10-19T18:38:25+09:00'
 id: 2fda66bcf469a167e06b
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 軽い式を`useMemo`で囲んだら、計算回数は減っても、画面更新全体は遅くなりました。今回の小さなベンチマークでは、2,000個の要素を100回更新した中央値が、直接計算29.7ms、`useMemo`あり34.5msでした。
