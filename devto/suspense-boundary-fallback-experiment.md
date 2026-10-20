@@ -1,9 +1,10 @@
 ---
+devto_id: 4880744
 title: "What stays visible when a Suspense boundary moves: five loading cases"
-published: false
+published: true
 description: "A production React experiment separates initial loading, urgent updates, transitions, and boundary resets."
 tags: [react, typescript, frontend, webdev]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/d0ed79eedc219863500c
 ---
 
 A search request makes the heading and input disappear along with the results. Moving `Suspense` around the results can change that behavior. Keeping previously displayed results also depends on how the update is scheduled.

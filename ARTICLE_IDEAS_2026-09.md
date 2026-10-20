@@ -198,7 +198,7 @@
 - T15: [useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する](public/use-sync-external-store-ssr.md) / [English](devto/use-sync-external-store-ssr.md)（制作完成・Qiita・予定2026-11-02・予約済み）
 - T16: [Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる](public/react-callback-ref-cleanup.md) / [English](devto/react-callback-ref-cleanup.md)（制作完成・Qiita・予定2026-11-03・予約済み）
 - T17: [useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する](public/use-action-state-form-experiment.md) / [English](devto/use-action-state-form-experiment.md)（制作完成・Qiita・予定2026-11-04・予約済み）
-- T18: [Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる](public/suspense-boundary-fallback-experiment.md) / [English](devto/suspense-boundary-fallback-experiment.md)（制作完成・Qiita・予定2026-10-20・予約済み）
+- T18: [Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる](public/suspense-boundary-fallback-experiment.md) / [English](devto/suspense-boundary-fallback-experiment.md)（制作完成・Qiita・予定2026-10-20・公開確認済み（2026-10-20））
 - T19: [Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる](articles/rsc-client-boundary-bundle.md) / [English](devto/rsc-client-boundary-bundle.md)（制作完成・Zenn・予定2026-11-28・予約済み）
 - T20: [Next.jsのServer ActionsとRoute Handlersは、呼び出し元との約束から選ぶ](articles/nextjs-actions-route-handlers-boundary.md) / [English](devto/nextjs-actions-route-handlers-boundary.md)（制作完成・Zenn・予定2026-09-19・公開確認済み（2026-10-08））
 - T21: [Next.js 16のキャッシュを、レスポンスと取得回数で見分ける](articles/nextjs-cache-response-experiment.md) / [English](devto/nextjs-cache-response-experiment.md)（制作完成・Zenn・予定2026-12-05・予約済み）

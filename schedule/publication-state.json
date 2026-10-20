@@ -111,6 +111,15 @@
       "devto_id": 4874778,
       "devto_url": "https://dev.to/hirodeath/when-usememo-and-usecallback-help-count-the-work-they-actually-skip-4hob",
       "verified_at": "2026-10-19T04:32:52.554Z"
+    },
+    "suspense-boundary-fallback-experiment": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/d0ed79eedc219863500c",
+      "published_at": "2026-10-20T11:19:48+09:00",
+      "devto_id": 4880744,
+      "devto_url": "https://dev.to/hirodeath/what-stays-visible-when-a-suspense-boundary-moves-five-loading-cases-3fnp",
+      "verified_at": "2026-10-20T02:19:47.824Z"
     }
   }
 }

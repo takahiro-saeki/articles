@@ -5,11 +5,11 @@ tags:
   - typescript
   - frontend
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-20T11:19:48+09:00"
+id: d0ed79eedc219863500c
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 検索結果を読み込むたびに、見出しと入力欄まで消える。結果部分へ`Suspense`を移すと、この消え方は変えられます。ただし、すでに表示した結果を残すには、更新の優先度も関係します。
