@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-19
+- 最終確認日: 2026-10-20
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -150,3 +150,13 @@ T14「useMemo・useCallbackで速くなる条件を、再計算の回数から�
 10/17 O20のdev.to公開APIは今回HTTP 200となり、本文・タイトル・著者・既存ID・canonicalが一致した。前回までのキャッシュされた404は今回観測されていない。Zennの公開メタデータ・本文・リンクも再確認し、過去11組の保存済みIDと初回公開日時は維持されている。
 
 10/8以降、本日までの12組・24実ページを確認し、未完了なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-19.json)に根拠を保存した。[ART-12](https://app.plane.so/hiro-work/browse/ART-12/)をDoneにし、ART-1・運用Wikiへ反映した。追加dispatchはなし。日本語の残りは56本（Zenn8・Qiita48）。次は10/20 Qiita T18、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-20の公開確認
+
+T18「Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる」は、[Qiita](https://qiita.com/hiro123/items/d0ed79eedc219863500c)で11:19:48 JSTに公開された。09:00目標から2時間19分48秒遅れた。[英語版](https://dev.to/hirodeath/what-stays-visible-when-a-suspense-boundary-moves-five-loading-cases-3fnp)はID `4880744`、11:19:49 JSTに新規公開され、canonicalは上記Qiita URLと一致する。
+
+[公開run 39358302822](https://github.com/takahiro-saeki/articles/actions/runs/39358302822)と[再確認run 39370946168](https://github.com/takahiro-saeki/articles/actions/runs/39370946168)はいずれも成功し、境界テスト12件も成功。18:27 JSTの点検で、main `68dcb8e`の日英原稿と公開APIの本文・タイトル・著者を照合。認証なしの両実ページはHTTP 200、タイトル一致。日本語の実公開後に英語が公開されたことを確認した。
+
+10/8以降、本日までの13組・26実ページを確認。Qiita12本と英語13本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn O20も公開メタデータ・本文・リンクを再確認した。過去12組の保存済みIDと初回公開日時は維持されている。
+
+[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-20.json)に根拠を保存した。[ART-13](https://app.plane.so/hiro-work/browse/ART-13/)をDoneにし、ART-1・運用Wikiへ反映した。10/8以降、本日までの未完了なし。追加dispatchはなし。日本語の残りは55本（Zenn8・Qiita47）。次は10/21 Qiita O25、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
