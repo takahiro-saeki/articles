@@ -120,6 +120,15 @@
       "devto_id": 4880744,
       "devto_url": "https://dev.to/hirodeath/what-stays-visible-when-a-suspense-boundary-moves-five-loading-cases-3fnp",
       "verified_at": "2026-10-20T04:42:06.125Z"
+    },
+    "five-minute-game-development-talk": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/5b9ce0d04a59f38f5efa",
+      "published_at": "2026-10-21T11:12:52+09:00",
+      "devto_id": 4886381,
+      "devto_url": "https://dev.to/hirodeath/editing-a-volt-nomad-talk-to-five-minutes-allocate-time-to-decisions-4dn8",
+      "verified_at": "2026-10-21T02:12:52.173Z"
     }
   }
 }

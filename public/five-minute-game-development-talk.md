@@ -6,11 +6,11 @@ tags:
   - gamedev
   - ai
 private: false
-updated_at: ''
-id: null
+updated_at: "2026-10-21T11:12:52+09:00"
+id: 5b9ce0d04a59f38f5efa
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 ゲーム制作の話をしようとすると、企画、没案、コード生成、素材、音楽、テスト、公開準備まで話したくなります。VOLT NOMADのLT初稿にも、それらを説明できる材料が揃っていました。

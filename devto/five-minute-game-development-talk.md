@@ -1,9 +1,10 @@
 ---
+devto_id: 4886381
 title: "Editing a VOLT NOMAD talk to five minutes: allocate time to decisions"
-published: false
+published: true
 description: "A review of real game-development slides turns a broad production story into a timed proposal without inventing a successful presentation."
 tags: [gamedev, speaking, ai, productivity]
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/5b9ce0d04a59f38f5efa
 ---
 
 A game-development talk can easily grow to include planning, rejected ideas, generated code, artwork, music, tests, and submission preparation. The initial VOLT NOMAD lightning-talk deck had material for all of them.
