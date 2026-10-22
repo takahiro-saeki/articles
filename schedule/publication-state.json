@@ -129,6 +129,15 @@
       "devto_id": 4886381,
       "devto_url": "https://dev.to/hirodeath/editing-a-volt-nomad-talk-to-five-minutes-allocate-time-to-decisions-4dn8",
       "verified_at": "2026-10-21T04:37:53.310Z"
+    },
+    "typescript-satisfies-annotation-assertion": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/df2b5c521387bc991b49",
+      "published_at": "2026-10-22T11:07:13+09:00",
+      "devto_id": 4892731,
+      "devto_url": "https://dev.to/hirodeath/comparing-satisfies-type-annotations-and-assertions-through-compiler-output-4f50",
+      "verified_at": "2026-10-22T02:07:12.771Z"
     }
   }
 }

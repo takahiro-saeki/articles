@@ -1,8 +1,9 @@
 ---
+devto_id: 4892731
 title: "Comparing satisfies, type annotations, and assertions through compiler output"
-published: false
+published: true
 tags: typescript, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/df2b5c521387bc991b49
 ---
 
 Use `satisfies` when a configuration value should meet a type while its individual properties remain convenient to use. Two common shortcuts are misleading, though: that it can never affect inference, and that it always rejects extra keys.
