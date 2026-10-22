@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-21
+- 最終確認日: 2026-10-22
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -170,3 +170,13 @@ O25「VOLT NOMADのLT資料を5分へ絞る。制作工程より、残す判断�
 10/8以降、本日までの14組・28実ページを確認。Qiita13本と英語14本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn O20も公開メタデータ・本文・リンクを再確認した。過去13組の保存済みIDと初回公開日時は維持されている。
 
 [点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-21.json)に根拠を保存した。[ART-14](https://app.plane.so/hiro-work/browse/ART-14/)をDoneにし、ART-1・運用Wikiへ反映した。10/8以降、本日までの未完了なし。追加dispatchはなし。日本語の残りは54本（Zenn8・Qiita46）。次は10/22 Qiita T02、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-22の公開確認
+
+T02「TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる」は、[Qiita](https://qiita.com/hiro123/items/df2b5c521387bc991b49)で11:07:13 JSTに公開された。09:00目標から2時間7分13秒遅れた。[英語版](https://dev.to/hirodeath/comparing-satisfies-type-annotations-and-assertions-through-compiler-output-4f50)はID `4892731`、11:07:14 JSTに新規公開され、canonicalは上記Qiita URLと一致する。
+
+[公開run 39709589090](https://github.com/takahiro-saeki/articles/actions/runs/39709589090)と[再確認run 39723257006](https://github.com/takahiro-saeki/articles/actions/runs/39723257006)はいずれも成功し、境界テスト12件も成功。18:26 JSTの点検で、main `e513068`の日英原稿と公開APIの本文・タイトル・著者を照合。認証なしの両実ページはHTTP 200、タイトル一致。日本語の実公開後に英語が公開されたことを確認した。
+
+10/8以降、本日までの15組・30実ページを確認。Qiita14本と英語15本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn O20も公開メタデータ・本文・リンクを再確認した。過去14組の保存済みIDと初回公開日時は維持されている。
+
+[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-22.json)に根拠を保存した。[ART-15](https://app.plane.so/hiro-work/browse/ART-15/)をDoneにし、ART-1・運用Wikiへ反映した。10/8以降、本日までの未完了なし。追加dispatchはなし。日本語の残りは53本（Zenn8・Qiita45）。次は10/23 Qiita T04、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
