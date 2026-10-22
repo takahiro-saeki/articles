@@ -1,13 +1,15 @@
 ---
-title: "TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる"
+title: TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる
 tags:
   - TypeScript
 private: false
-updated_at: "2026-10-22T11:07:13+09:00"
+updated_at: '2026-10-22T18:29:44+09:00'
 id: df2b5c521387bc991b49
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 `satisfies`は、設定値が型を満たすか確かめながら、各プロパティの具体的な型を使いたいときに役立ちます。ただし「何を付けても推論は一切変わらない」「余分なキーを必ず拒否する」と覚えると、実際の診断と食い違います。
