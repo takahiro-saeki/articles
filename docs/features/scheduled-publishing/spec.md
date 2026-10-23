@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-22
+- 最終確認日: 2026-10-23
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -180,3 +180,13 @@ T02「TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェ�
 10/8以降、本日までの15組・30実ページを確認。Qiita14本と英語15本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn O20も公開メタデータ・本文・リンクを再確認した。過去14組の保存済みIDと初回公開日時は維持されている。
 
 [点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-22.json)に根拠を保存した。[ART-15](https://app.plane.so/hiro-work/browse/ART-15/)をDoneにし、ART-1・運用Wikiへ反映した。10/8以降、本日までの未完了なし。追加dispatchはなし。日本語の残りは53本（Zenn8・Qiita45）。次は10/23 Qiita T04、次回Zennは10/24。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-23の公開確認
+
+T04「typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける」は、[Qiita](https://qiita.com/hiro123/items/816c214eb80036fbe359)で11:12:33 JSTに公開された。09:00目標から2時間12分33秒遅れた。[英語版](https://dev.to/hirodeath/choosing-type-or-interface-by-declaration-merging-and-conflict-diagnostics-2ob8)はID `4902233`、11:12:35 JSTに新規公開され、canonicalは上記Qiita URLと一致する。
+
+[公開run 39888293383](https://github.com/takahiro-saeki/articles/actions/runs/39888293383)と[再確認run 39901626871](https://github.com/takahiro-saeki/articles/actions/runs/39901626871)はいずれも成功し、境界テスト12件も成功。18:31 JSTの点検で、main `54440c5`の日英原稿と公開APIの本文・タイトル・著者を照合。認証なしの両実ページはHTTP 200、タイトル一致。日本語の実公開後に英語が公開されたことを確認した。
+
+10/8以降、本日までの16組・32実ページを確認。Qiita15本と英語16本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn O20も公開メタデータ・本文・リンクを再確認した。過去15組の保存済みIDと初回公開日時は維持されている。
+
+[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-23.json)に根拠を保存した。[ART-16](https://app.plane.so/hiro-work/browse/ART-16/)をDoneにし、ART-1・運用Wikiへ反映した。10/8以降、本日までの未完了なし。追加dispatchはなし。日本語の残りは52本（Zenn8・Qiita44）。次は10/24（土）Zenn O22。全90組の公開は未完了のためART-1はIn Progressを維持する。
