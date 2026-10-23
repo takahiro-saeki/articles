@@ -3,11 +3,11 @@ title: "typeとinterfaceは、宣言の追加と競合時のエラーで使い�
 tags:
   - TypeScript
 private: false
-updated_at: null
-id: null
+updated_at: "2026-10-23T11:12:33+09:00"
+id: 816c214eb80036fbe359
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `type`と`interface`を選ぶときは、あとから同じ名前へ宣言を追加してよい契約なのかを先に決めると整理できます。普通のオブジェクト型は両方で表せますが、同名宣言の追加と、競合するプロパティを合成したときの診断は同じではありません。

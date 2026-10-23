@@ -1,8 +1,9 @@
 ---
+devto_id: 4902233
 title: "Choosing type or interface by declaration merging and conflict diagnostics"
-published: false
+published: true
 tags: typescript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/816c214eb80036fbe359
 ---
 
 A useful starting point for choosing `type` or `interface` is whether other declarations should be allowed to extend the same named contract. Both can describe ordinary objects, but adding declarations and combining conflicting properties produce different diagnostics.

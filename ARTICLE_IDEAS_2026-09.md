@@ -184,7 +184,7 @@
 - T01: [Promise.all・allSettled・any・raceを、失敗が先に来る同じ入力で比べる](public/promise-combinators-partial-failure.md) / [English](devto/promise-combinators-partial-failure.md)（制作完成・Qiita・予定2026-09-20・公開確認済み（2026-10-08））
 - T02: [TypeScriptのsatisfies・型注釈・asを、推論結果と欠落チェックで比べる](public/typescript-satisfies-annotation-assertion.md) / [English](devto/typescript-satisfies-annotation-assertion.md)（制作完成・Qiita・予定2026-10-22・公開確認済み（2026-10-22））
 - T03: [unknownを付けるだけではAPI応答を検証できない。anyと型アサーションを比較する](public/unknown-api-runtime-validation.md) / [English](devto/unknown-api-runtime-validation.md)（制作完成・Qiita・予定2026-12-03・予約済み）
-- T04: [typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける](public/type-interface-declaration-merging.md) / [English](devto/type-interface-declaration-merging.md)（制作完成・Qiita・予定2026-10-23・予約済み）
+- T04: [typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける](public/type-interface-declaration-merging.md) / [English](devto/type-interface-declaration-merging.md)（制作完成・Qiita・予定2026-10-23・公開確認済み（2026-10-23））
 - T05: [enumをliteral unionへ変える前に、生成されるJavaScriptを確認する](public/literal-union-enum-output.md) / [English](devto/literal-union-enum-output.md)（制作完成・Qiita・予定2026-10-25・予約済み）
 - T06: [import typeを省くと何が残るか。tscとesbuildで副作用まで比較する](public/import-type-bundler-output.md) / [English](devto/import-type-bundler-output.md)（制作完成・Qiita・予定2026-10-26・予約済み）
 - T07: [structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる](public/structured-clone-json-data.md) / [English](devto/structured-clone-json-data.md)（制作完成・Qiita・予定2026-10-27・予約済み）

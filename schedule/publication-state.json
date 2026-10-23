@@ -138,6 +138,15 @@
       "devto_id": 4892731,
       "devto_url": "https://dev.to/hirodeath/comparing-satisfies-type-annotations-and-assertions-through-compiler-output-4f50",
       "verified_at": "2026-10-22T04:35:54.053Z"
+    },
+    "type-interface-declaration-merging": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/816c214eb80036fbe359",
+      "published_at": "2026-10-23T11:12:33+09:00",
+      "devto_id": 4902233,
+      "devto_url": "https://dev.to/hirodeath/choosing-type-or-interface-by-declaration-merging-and-conflict-diagnostics-2ob8",
+      "verified_at": "2026-10-23T02:12:32.674Z"
     }
   }
 }
