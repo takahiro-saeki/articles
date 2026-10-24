@@ -1,6 +1,7 @@
 ---
+devto_id: 4908268
 title: "Claim guest responses by transferring control of a record, not matching a name"
-published: false
+published: true
 tags: [authentication, architecture, typescript, webdev]
 canonical_url: https://zenn.dev/hirodeath/articles/guest-identity-without-placeholder-user
 ---
