@@ -147,6 +147,11 @@
       "devto_id": 4902233,
       "devto_url": "https://dev.to/hirodeath/choosing-type-or-interface-by-declaration-merging-and-conflict-diagnostics-2ob8",
       "verified_at": "2026-10-23T04:41:11.856Z"
+    },
+    "guest-identity-without-placeholder-user": {
+      "platform": "zenn",
+      "status": "awaiting_deployment",
+      "requested_at": "2026-10-24T02:10:56.658Z"
     }
   }
 }
