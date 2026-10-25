@@ -1,8 +1,8 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-24。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-25。</p>
 <h2>公開スケジュール</h2>
 <p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17・10/24の公開を確認済み。次回は10/31。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。10/24のO22公開後、日本語の残りは51本（Zenn7、Qiita44）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>90本の日英原稿は完成済み。10/25のT05公開後、日本語の残りは50本（Zenn7、Qiita43）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
 <p>Zennの残り予定: 10/31、11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/24 11:11:03.272 JST。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
@@ -109,3 +109,9 @@
 <p>main 5fe34c9を基準に10/8〜10/24の17組・34実ページを再確認。認証なし実ページは全てHTTP 200、タイトル一致。Qiita15本・英語17本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn2本の公開メタデータ・本文・リンクも一致。過去16組の保存済みIDと初回公開日時を維持している。未完了・期限超過なし。</p>
 <p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-10-24.json">点検記録</a>。追加dispatch・再投稿なし。残り51組（日本語Zenn7・Qiita44と英語51）。次は10/25 Qiita T05、次回Zennは10/31。ART-17は実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
 <p>Plane MCPの接続問題は既報のまま継続し、今回はhiro-workのブラウザ画面から記録を反映。記事公開処理には影響しない。</p>
+<h3>2026-10-25 18:27 JST 公開確認</h3>
+<p>T05「enumをliteral unionへ変える前に、生成されるJavaScriptを確認する」の日英実公開を確認。日本語は10:57:21 JST、英語は10:57:23 JSTに公開された。日本語は09:00目標から1時間57分21秒遅れた。</p>
+<ul><li>日本語: <a href="https://qiita.com/hiro123/items/dd7c31db2fa5a551396c">Qiita T05</a>（ID dd7c31db2fa5a551396c）。private:false、本文・タイトル・著者・URLを照合。</li><li>英語: <a href="https://dev.to/hirodeath/inspect-emitted-javascript-before-replacing-enums-with-literal-unions-12f6">dev.to T05</a>（ID 4912979）。日本語の実公開後に公開され、公開APIと実ページのcanonicalは上記Qiita URLと一致。</li><li>公開run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/40152596657">40152596657</a>、再確認run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/40162339795">40162339795</a>。両run成功、境界テスト12件成功、公開API検証verified。</li></ul>
+<p>main 9cf0ef4を基準に10/8〜10/25の18組・認証なし36実ページを再照合。全ページHTTP 200・タイトル一致。Qiita16本・英語18本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn2本の公開メタデータ・本文表示テキスト・リンクも一致。過去17組の保存済みIDと初回公開日時を維持。未完了・期限超過なし。</p>
+<p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-10-25.json">点検記録</a>。追加dispatch・再投稿なし。残り50組（日本語Zenn7・Qiita43、英語50）、最終予定12/14。次は10/26 Qiita T06、次回Zennは10/31。ART-18は実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
+<p>Plane MCPの接続問題は既報のまま継続し、hiro-workのブラウザ画面から記録を反映。記事公開処理には影響しない。</p>
