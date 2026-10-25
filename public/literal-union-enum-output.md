@@ -1,14 +1,16 @@
 ---
-title: "enumをliteral unionへ変える前に、生成されるJavaScriptを確認する"
+title: enumをliteral unionへ変える前に、生成されるJavaScriptを確認する
 tags:
   - TypeScript
   - Node.js
 private: false
-updated_at: "2026-10-25T10:57:21+09:00"
+updated_at: '2026-10-25T18:30:47+09:00'
 id: dd7c31db2fa5a551396c
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 状態が`"ready"`か`"waiting"`かを型で制限したいだけなら、literal unionで表せます。実行時に`State.Ready`という名前でも参照したいなら、値のオブジェクトも必要です。
