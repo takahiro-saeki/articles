@@ -1,8 +1,9 @@
 ---
+devto_id: 4912979
 title: "Inspect emitted JavaScript before replacing enums with literal unions"
-published: false
+published: true
 tags: typescript, javascript, node
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/dd7c31db2fa5a551396c
 ---
 
 If a state only needs to be constrained to `"ready"` or `"waiting"` in the type system, a literal union can express that. If code must also refer to a named value such as `State.Ready` at runtime, it needs a value object as well.

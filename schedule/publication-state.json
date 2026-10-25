@@ -156,6 +156,15 @@
       "devto_id": 4908268,
       "devto_url": "https://dev.to/hirodeath/claim-guest-responses-by-transferring-control-of-a-record-not-matching-a-name-k1e",
       "verified_at": "2026-10-24T04:29:25.723Z"
+    },
+    "literal-union-enum-output": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/dd7c31db2fa5a551396c",
+      "published_at": "2026-10-25T10:57:21+09:00",
+      "devto_id": 4912979,
+      "devto_url": "https://dev.to/hirodeath/inspect-emitted-javascript-before-replacing-enums-with-literal-unions-12f6",
+      "verified_at": "2026-10-25T01:57:21.339Z"
     }
   }
 }
