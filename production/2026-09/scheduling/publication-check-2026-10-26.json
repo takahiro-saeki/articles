@@ -1,0 +1,848 @@
+{
+  "checked_at": "2026-10-26T09:33:53.335048+00:00",
+  "main": "4382748ebce5d44f6f076d422b5be5ac80376546",
+  "runs": [
+    "https://github.com/takahiro-saeki/articles/actions/runs/40256821074",
+    "https://github.com/takahiro-saeki/articles/actions/runs/40270129729"
+  ],
+  "articles": [
+    {
+      "date": "2026-10-08",
+      "slug": "node-esm-commonjs-boundaries",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+        "published_at": "2026-10-08T09:46:13+09:00",
+        "devto_id": 4785124,
+        "devto_url": "https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072",
+        "verified_at": "2026-10-08T00:54:47.854Z"
+      },
+      "checks": [
+        {
+          "source": "public/node-esm-commonjs-boundaries.md",
+          "page_url": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/77dffa5c9da6166e66a6",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "77dffa5c9da6166e66a6",
+          "published_at": "2026-10-08T09:46:13+09:00",
+          "canonical": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/node-esm-commonjs-boundaries.md",
+          "page_url": "https://dev.to/hirodeath/debugging-mixed-esm-and-commonjs-separate-module-classification-from-loading-3072",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4785124",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4785124,
+          "published_at": "2026-10-02T02:44:50Z",
+          "canonical": "https://qiita.com/hiro123/items/77dffa5c9da6166e66a6",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "slug": "durable-objects-d1-coordination",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/31e50190423c94e787f6",
+        "published_at": "2026-10-09T12:18:54+09:00",
+        "devto_id": 4794156,
+        "devto_url": "https://dev.to/hirodeath/inventory-cross-room-queries-before-moving-d1-data-into-durable-objects-3oh3",
+        "verified_at": "2026-10-09T06:02:10.986Z"
+      },
+      "checks": [
+        {
+          "source": "public/durable-objects-d1-coordination.md",
+          "page_url": "https://qiita.com/hiro123/items/31e50190423c94e787f6",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/31e50190423c94e787f6",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "31e50190423c94e787f6",
+          "published_at": "2026-10-09T12:18:54+09:00",
+          "canonical": "https://qiita.com/hiro123/items/31e50190423c94e787f6",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/durable-objects-d1-coordination.md",
+          "page_url": "https://dev.to/hirodeath/inventory-cross-room-queries-before-moving-d1-data-into-durable-objects-3oh3",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4794156",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4794156,
+          "published_at": "2026-10-04T03:01:29Z",
+          "canonical": "https://qiita.com/hiro123/items/31e50190423c94e787f6",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "slug": "idempotency-key-result-storage",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/b13669edaeffb9701f8e",
+        "published_at": "2026-10-10T11:58:37+09:00",
+        "devto_id": 4804226,
+        "devto_url": "https://dev.to/hirodeath/an-idempotency-key-needs-stored-results-testing-retries-and-concurrent-requests-24bh",
+        "verified_at": "2026-10-10T05:44:43.735Z"
+      },
+      "checks": [
+        {
+          "source": "public/idempotency-key-result-storage.md",
+          "page_url": "https://qiita.com/hiro123/items/b13669edaeffb9701f8e",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/b13669edaeffb9701f8e",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "b13669edaeffb9701f8e",
+          "published_at": "2026-10-10T11:58:37+09:00",
+          "canonical": "https://qiita.com/hiro123/items/b13669edaeffb9701f8e",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/idempotency-key-result-storage.md",
+          "page_url": "https://dev.to/hirodeath/an-idempotency-key-needs-stored-results-testing-retries-and-concurrent-requests-24bh",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4804226",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4804226,
+          "published_at": "2026-10-06T03:28:58Z",
+          "canonical": "https://qiita.com/hiro123/items/b13669edaeffb9701f8e",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "slug": "outbox-database-notification-boundary",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/cd87126560ea16564d84",
+        "published_at": "2026-10-11T11:28:27+09:00",
+        "devto_id": 4809644,
+        "devto_url": "https://dev.to/hirodeath/an-outbox-preserves-notification-intent-delivery-deduplication-is-a-separate-boundary-510h",
+        "verified_at": "2026-10-11T05:39:39.174Z"
+      },
+      "checks": [
+        {
+          "source": "public/outbox-database-notification-boundary.md",
+          "page_url": "https://qiita.com/hiro123/items/cd87126560ea16564d84",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/cd87126560ea16564d84",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "cd87126560ea16564d84",
+          "published_at": "2026-10-11T11:28:27+09:00",
+          "canonical": "https://qiita.com/hiro123/items/cd87126560ea16564d84",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/outbox-database-notification-boundary.md",
+          "page_url": "https://dev.to/hirodeath/an-outbox-preserves-notification-intent-delivery-deduplication-is-a-separate-boundary-510h",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4809644",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4809644,
+          "published_at": "2026-10-07T01:39:03Z",
+          "canonical": "https://qiita.com/hiro123/items/cd87126560ea16564d84",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "slug": "game-input-support-sequence",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/863735a90e1085b3155d",
+        "published_at": "2026-10-12T11:52:54+09:00",
+        "devto_id": 4835448,
+        "devto_url": "https://dev.to/hirodeath/define-one-input-action-per-screen-across-mouse-touch-and-gamepad-controls-2g4b",
+        "verified_at": "2026-10-12T05:49:26.422Z"
+      },
+      "checks": [
+        {
+          "source": "public/game-input-support-sequence.md",
+          "page_url": "https://qiita.com/hiro123/items/863735a90e1085b3155d",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/863735a90e1085b3155d",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "863735a90e1085b3155d",
+          "published_at": "2026-10-12T11:52:54+09:00",
+          "canonical": "https://qiita.com/hiro123/items/863735a90e1085b3155d",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/game-input-support-sequence.md",
+          "page_url": "https://dev.to/hirodeath/define-one-input-action-per-screen-across-mouse-touch-and-gamepad-controls-2g4b",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4835448",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4835448,
+          "published_at": "2026-10-12T02:52:55Z",
+          "canonical": "https://qiita.com/hiro123/items/863735a90e1085b3155d",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "slug": "game-bgm-selection-log",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/2b9c97494a40746ce603",
+        "published_at": "2026-10-13T13:08:12+09:00",
+        "devto_id": 4841327,
+        "devto_url": "https://dev.to/hirodeath/audit-a-game-soundtrack-by-selection-records-playback-slots-and-actual-files-4cai",
+        "verified_at": "2026-10-13T06:43:22.587Z"
+      },
+      "checks": [
+        {
+          "source": "public/game-bgm-selection-log.md",
+          "page_url": "https://qiita.com/hiro123/items/2b9c97494a40746ce603",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/2b9c97494a40746ce603",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "2b9c97494a40746ce603",
+          "published_at": "2026-10-13T13:08:12+09:00",
+          "canonical": "https://qiita.com/hiro123/items/2b9c97494a40746ce603",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/game-bgm-selection-log.md",
+          "page_url": "https://dev.to/hirodeath/audit-a-game-soundtrack-by-selection-records-playback-slots-and-actual-files-4cai",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4841327",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4841327,
+          "published_at": "2026-10-13T04:08:13Z",
+          "canonical": "https://qiita.com/hiro123/items/2b9c97494a40746ce603",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "slug": "trailer-timeline-before-editing",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/863a22e166413d0aae2e",
+        "published_at": "2026-10-14T11:22:10+09:00",
+        "devto_id": 4847368,
+        "devto_url": "https://dev.to/hirodeath/from-63-seconds-to-60-checking-a-game-trailer-against-its-timeline-and-video-files-1b6h",
+        "verified_at": "2026-10-14T04:47:05.228Z"
+      },
+      "checks": [
+        {
+          "source": "public/trailer-timeline-before-editing.md",
+          "page_url": "https://qiita.com/hiro123/items/863a22e166413d0aae2e",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/863a22e166413d0aae2e",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "863a22e166413d0aae2e",
+          "published_at": "2026-10-14T11:22:10+09:00",
+          "canonical": "https://qiita.com/hiro123/items/863a22e166413d0aae2e",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/trailer-timeline-before-editing.md",
+          "page_url": "https://dev.to/hirodeath/from-63-seconds-to-60-checking-a-game-trailer-against-its-timeline-and-video-files-1b6h",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4847368",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4847368,
+          "published_at": "2026-10-14T02:22:13Z",
+          "canonical": "https://qiita.com/hiro123/items/863a22e166413d0aae2e",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "slug": "auth-incident-recovery-evidence",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/99a09ee6ee5cf25e8f94",
+        "published_at": "2026-10-15T11:03:04+09:00",
+        "devto_id": 4853518,
+        "devto_url": "https://dev.to/hirodeath/verify-authentication-recovery-before-treating-configuration-as-the-root-cause-553m",
+        "verified_at": "2026-10-15T04:30:20.122Z"
+      },
+      "checks": [
+        {
+          "source": "public/auth-incident-recovery-evidence.md",
+          "page_url": "https://qiita.com/hiro123/items/99a09ee6ee5cf25e8f94",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/99a09ee6ee5cf25e8f94",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "99a09ee6ee5cf25e8f94",
+          "published_at": "2026-10-15T11:03:04+09:00",
+          "canonical": "https://qiita.com/hiro123/items/99a09ee6ee5cf25e8f94",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/auth-incident-recovery-evidence.md",
+          "page_url": "https://dev.to/hirodeath/verify-authentication-recovery-before-treating-configuration-as-the-root-cause-553m",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4853518",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4853518,
+          "published_at": "2026-10-15T02:03:05Z",
+          "canonical": "https://qiita.com/hiro123/items/99a09ee6ee5cf25e8f94",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "slug": "plane-codex-todo-consolidation",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/3a7028821f58605e86fe",
+        "published_at": "2026-10-16T10:29:30+09:00",
+        "devto_id": 4859215,
+        "devto_url": "https://dev.to/hirodeath/consolidating-codex-todos-in-plane-without-merging-different-deliverables-18ca",
+        "verified_at": "2026-10-16T04:24:32.771Z"
+      },
+      "checks": [
+        {
+          "source": "public/plane-codex-todo-consolidation.md",
+          "page_url": "https://qiita.com/hiro123/items/3a7028821f58605e86fe",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/3a7028821f58605e86fe",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "3a7028821f58605e86fe",
+          "published_at": "2026-10-16T10:29:30+09:00",
+          "canonical": "https://qiita.com/hiro123/items/3a7028821f58605e86fe",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/plane-codex-todo-consolidation.md",
+          "page_url": "https://dev.to/hirodeath/consolidating-codex-todos-in-plane-without-merging-different-deliverables-18ca",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4859215",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4859215,
+          "published_at": "2026-10-16T01:29:31Z",
+          "canonical": "https://qiita.com/hiro123/items/3a7028821f58605e86fe",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "slug": "expo-multi-device-push-rollout",
+      "state": {
+        "platform": "zenn",
+        "status": "verified",
+        "canonical_url": "https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout",
+        "published_at": "2026-10-17T10:47:59.955+09:00",
+        "devto_id": 4865168,
+        "devto_url": "https://dev.to/hirodeath/a-multi-device-push-rollout-remains-incomplete-while-old-logout-behavior-survives-3881",
+        "verified_at": "2026-10-17T04:18:06.464Z"
+      },
+      "checks": [
+        {
+          "source": "articles/expo-multi-device-push-rollout.md",
+          "page_url": "https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout",
+          "page_status": 200,
+          "page_title_match": true,
+          "id": 649873,
+          "published_at": "2026-10-17T10:47:59.955+09:00",
+          "metadata_source": "anonymous page __NEXT_DATA__",
+          "canonical": "https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout",
+          "public_metadata_match": true,
+          "body_visible_text_match": true,
+          "body_links_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/expo-multi-device-push-rollout.md",
+          "page_url": "https://dev.to/hirodeath/a-multi-device-push-rollout-remains-incomplete-while-old-logout-behavior-survives-3881",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4865168",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4865168,
+          "published_at": "2026-10-17T01:48:27Z",
+          "canonical": "https://zenn.dev/hirodeath/articles/expo-multi-device-push-rollout",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "slug": "plane-estimate-capacity-experiment",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0",
+        "published_at": "2026-10-18T10:45:41+09:00",
+        "devto_id": 4869701,
+        "devto_url": "https://dev.to/hirodeath/using-estimates-to-spot-overloaded-solo-projects-before-predicting-dates-3j62",
+        "verified_at": "2026-10-18T04:24:03.566Z"
+      },
+      "checks": [
+        {
+          "source": "public/plane-estimate-capacity-experiment.md",
+          "page_url": "https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/e7cf1e1dd800e839acc0",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "e7cf1e1dd800e839acc0",
+          "published_at": "2026-10-18T10:45:41+09:00",
+          "canonical": "https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/plane-estimate-capacity-experiment.md",
+          "page_url": "https://dev.to/hirodeath/using-estimates-to-spot-overloaded-solo-projects-before-predicting-dates-3j62",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4869701",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4869701,
+          "published_at": "2026-10-18T01:45:42Z",
+          "canonical": "https://qiita.com/hiro123/items/e7cf1e1dd800e839acc0",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "react-memoization-cost",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/2fda66bcf469a167e06b",
+        "published_at": "2026-10-19T11:02:57+09:00",
+        "devto_id": 4874778,
+        "devto_url": "https://dev.to/hirodeath/when-usememo-and-usecallback-help-count-the-work-they-actually-skip-4hob",
+        "verified_at": "2026-10-19T04:32:52.554Z"
+      },
+      "checks": [
+        {
+          "source": "public/react-memoization-cost.md",
+          "page_url": "https://qiita.com/hiro123/items/2fda66bcf469a167e06b",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/2fda66bcf469a167e06b",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "2fda66bcf469a167e06b",
+          "published_at": "2026-10-19T11:02:57+09:00",
+          "canonical": "https://qiita.com/hiro123/items/2fda66bcf469a167e06b",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/react-memoization-cost.md",
+          "page_url": "https://dev.to/hirodeath/when-usememo-and-usecallback-help-count-the-work-they-actually-skip-4hob",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4874778",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4874778,
+          "published_at": "2026-10-19T02:02:59Z",
+          "canonical": "https://qiita.com/hiro123/items/2fda66bcf469a167e06b",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "slug": "suspense-boundary-fallback-experiment",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/d0ed79eedc219863500c",
+        "published_at": "2026-10-20T11:19:48+09:00",
+        "devto_id": 4880744,
+        "devto_url": "https://dev.to/hirodeath/what-stays-visible-when-a-suspense-boundary-moves-five-loading-cases-3fnp",
+        "verified_at": "2026-10-20T04:42:06.125Z"
+      },
+      "checks": [
+        {
+          "source": "public/suspense-boundary-fallback-experiment.md",
+          "page_url": "https://qiita.com/hiro123/items/d0ed79eedc219863500c",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/d0ed79eedc219863500c",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "d0ed79eedc219863500c",
+          "published_at": "2026-10-20T11:19:48+09:00",
+          "canonical": "https://qiita.com/hiro123/items/d0ed79eedc219863500c",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/suspense-boundary-fallback-experiment.md",
+          "page_url": "https://dev.to/hirodeath/what-stays-visible-when-a-suspense-boundary-moves-five-loading-cases-3fnp",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4880744",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4880744,
+          "published_at": "2026-10-20T02:19:49Z",
+          "canonical": "https://qiita.com/hiro123/items/d0ed79eedc219863500c",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "slug": "five-minute-game-development-talk",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/5b9ce0d04a59f38f5efa",
+        "published_at": "2026-10-21T11:12:52+09:00",
+        "devto_id": 4886381,
+        "devto_url": "https://dev.to/hirodeath/editing-a-volt-nomad-talk-to-five-minutes-allocate-time-to-decisions-4dn8",
+        "verified_at": "2026-10-21T04:37:53.310Z"
+      },
+      "checks": [
+        {
+          "source": "public/five-minute-game-development-talk.md",
+          "page_url": "https://qiita.com/hiro123/items/5b9ce0d04a59f38f5efa",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/5b9ce0d04a59f38f5efa",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "5b9ce0d04a59f38f5efa",
+          "published_at": "2026-10-21T11:12:52+09:00",
+          "canonical": "https://qiita.com/hiro123/items/5b9ce0d04a59f38f5efa",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/five-minute-game-development-talk.md",
+          "page_url": "https://dev.to/hirodeath/editing-a-volt-nomad-talk-to-five-minutes-allocate-time-to-decisions-4dn8",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4886381",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4886381,
+          "published_at": "2026-10-21T02:12:54Z",
+          "canonical": "https://qiita.com/hiro123/items/5b9ce0d04a59f38f5efa",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "slug": "typescript-satisfies-annotation-assertion",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/df2b5c521387bc991b49",
+        "published_at": "2026-10-22T11:07:13+09:00",
+        "devto_id": 4892731,
+        "devto_url": "https://dev.to/hirodeath/comparing-satisfies-type-annotations-and-assertions-through-compiler-output-4f50",
+        "verified_at": "2026-10-22T04:35:54.053Z"
+      },
+      "checks": [
+        {
+          "source": "public/typescript-satisfies-annotation-assertion.md",
+          "page_url": "https://qiita.com/hiro123/items/df2b5c521387bc991b49",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/df2b5c521387bc991b49",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "df2b5c521387bc991b49",
+          "published_at": "2026-10-22T11:07:13+09:00",
+          "canonical": "https://qiita.com/hiro123/items/df2b5c521387bc991b49",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/typescript-satisfies-annotation-assertion.md",
+          "page_url": "https://dev.to/hirodeath/comparing-satisfies-type-annotations-and-assertions-through-compiler-output-4f50",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4892731",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4892731,
+          "published_at": "2026-10-22T02:07:14Z",
+          "canonical": "https://qiita.com/hiro123/items/df2b5c521387bc991b49",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "slug": "type-interface-declaration-merging",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/816c214eb80036fbe359",
+        "published_at": "2026-10-23T11:12:33+09:00",
+        "devto_id": 4902233,
+        "devto_url": "https://dev.to/hirodeath/choosing-type-or-interface-by-declaration-merging-and-conflict-diagnostics-2ob8",
+        "verified_at": "2026-10-23T04:41:11.856Z"
+      },
+      "checks": [
+        {
+          "source": "public/type-interface-declaration-merging.md",
+          "page_url": "https://qiita.com/hiro123/items/816c214eb80036fbe359",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/816c214eb80036fbe359",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "816c214eb80036fbe359",
+          "published_at": "2026-10-23T11:12:33+09:00",
+          "canonical": "https://qiita.com/hiro123/items/816c214eb80036fbe359",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/type-interface-declaration-merging.md",
+          "page_url": "https://dev.to/hirodeath/choosing-type-or-interface-by-declaration-merging-and-conflict-diagnostics-2ob8",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4902233",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4902233,
+          "published_at": "2026-10-23T02:12:35Z",
+          "canonical": "https://qiita.com/hiro123/items/816c214eb80036fbe359",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "slug": "guest-identity-without-placeholder-user",
+      "state": {
+        "platform": "zenn",
+        "status": "verified",
+        "canonical_url": "https://zenn.dev/hirodeath/articles/guest-identity-without-placeholder-user",
+        "published_at": "2026-10-24T11:11:03.272+09:00",
+        "devto_id": 4908268,
+        "devto_url": "https://dev.to/hirodeath/claim-guest-responses-by-transferring-control-of-a-record-not-matching-a-name-k1e",
+        "verified_at": "2026-10-24T04:29:25.723Z"
+      },
+      "checks": [
+        {
+          "source": "articles/guest-identity-without-placeholder-user.md",
+          "page_url": "https://zenn.dev/hirodeath/articles/guest-identity-without-placeholder-user",
+          "page_status": 200,
+          "page_title_match": true,
+          "id": 649880,
+          "published_at": "2026-10-24T11:11:03.272+09:00",
+          "metadata_source": "anonymous page __NEXT_DATA__",
+          "canonical": "https://zenn.dev/hirodeath/articles/guest-identity-without-placeholder-user",
+          "public_metadata_match": true,
+          "body_visible_text_match": true,
+          "body_links_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/guest-identity-without-placeholder-user.md",
+          "page_url": "https://dev.to/hirodeath/claim-guest-responses-by-transferring-control-of-a-record-not-matching-a-name-k1e",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4908268",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4908268,
+          "published_at": "2026-10-24T02:11:29Z",
+          "canonical": "https://zenn.dev/hirodeath/articles/guest-identity-without-placeholder-user",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "slug": "literal-union-enum-output",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/dd7c31db2fa5a551396c",
+        "published_at": "2026-10-25T10:57:21+09:00",
+        "devto_id": 4912979,
+        "devto_url": "https://dev.to/hirodeath/inspect-emitted-javascript-before-replacing-enums-with-literal-unions-12f6",
+        "verified_at": "2026-10-25T04:34:00.226Z"
+      },
+      "checks": [
+        {
+          "source": "public/literal-union-enum-output.md",
+          "page_url": "https://qiita.com/hiro123/items/dd7c31db2fa5a551396c",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/dd7c31db2fa5a551396c",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "dd7c31db2fa5a551396c",
+          "published_at": "2026-10-25T10:57:21+09:00",
+          "canonical": "https://qiita.com/hiro123/items/dd7c31db2fa5a551396c",
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        },
+        {
+          "source": "devto/literal-union-enum-output.md",
+          "page_url": "https://dev.to/hirodeath/inspect-emitted-javascript-before-replacing-enums-with-literal-unions-12f6",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4912979",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4912979,
+          "published_at": "2026-10-25T01:57:23Z",
+          "canonical": "https://qiita.com/hiro123/items/dd7c31db2fa5a551396c",
+          "page_canonical_match": true,
+          "stored_id_unchanged": true,
+          "first_publication_unchanged": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "slug": "import-type-bundler-output",
+      "state": {
+        "platform": "qiita",
+        "status": "verified",
+        "canonical_url": "https://qiita.com/hiro123/items/943c447584e4a7f4c3ae",
+        "published_at": "2026-10-26T10:58:58+09:00",
+        "devto_id": 4918311,
+        "devto_url": "https://dev.to/hirodeath/what-remains-without-import-type-comparing-tsc-esbuild-and-side-effects-3pmi",
+        "verified_at": "2026-10-26T04:38:51.038Z"
+      },
+      "checks": [
+        {
+          "source": "public/import-type-bundler-output.md",
+          "page_url": "https://qiita.com/hiro123/items/943c447584e4a7f4c3ae",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://qiita.com/api/v2/items/943c447584e4a7f4c3ae",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": "943c447584e4a7f4c3ae",
+          "published_at": "2026-10-26T10:58:58+09:00",
+          "canonical": "https://qiita.com/hiro123/items/943c447584e4a7f4c3ae",
+          "saved_id_match": true,
+          "saved_publication_time_match": true
+        },
+        {
+          "source": "devto/import-type-bundler-output.md",
+          "page_url": "https://dev.to/hirodeath/what-remains-without-import-type-comparing-tsc-esbuild-and-side-effects-3pmi",
+          "page_status": 200,
+          "page_title_match": true,
+          "api_url": "https://dev.to/api/articles/4918311",
+          "public_api_status": 200,
+          "api_match": true,
+          "id": 4918311,
+          "published_at": "2026-10-26T01:58:59Z",
+          "canonical": "https://qiita.com/hiro123/items/943c447584e4a7f4c3ae",
+          "page_canonical_match": true,
+          "saved_id_match": true,
+          "published_after_japanese": true
+        }
+      ]
+    }
+  ]
+}
