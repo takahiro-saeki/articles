@@ -1,8 +1,9 @@
 ---
+devto_id: 4918311
 title: "What remains without import type? Comparing tsc, esbuild, and side effects"
-published: false
+published: true
 tags: typescript, javascript, esbuild, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/943c447584e4a7f4c3ae
 ---
 
 Some configurations automatically erase an import used only as a type, even without `import type`. With `verbatimModuleSyntax: true`, however, the spelling also changed whether a module's side effect ran. Check type-checking success separately from runtime module evaluation.

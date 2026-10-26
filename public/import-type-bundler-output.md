@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - esbuild
 private: false
-updated_at: null
-id: null
+updated_at: "2026-10-26T10:58:58+09:00"
+id: 943c447584e4a7f4c3ae
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `import type`を省いても、型としてしか使わないimportが自動で消える設定はあります。一方、`verbatimModuleSyntax: true`では書き方によって副作用の実行まで変わりました。型検査に通るかと、読み込み先が実行されるかを分けて確認します。

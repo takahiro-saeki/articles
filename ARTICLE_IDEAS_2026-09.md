@@ -186,7 +186,7 @@
 - T03: [unknownを付けるだけではAPI応答を検証できない。anyと型アサーションを比較する](public/unknown-api-runtime-validation.md) / [English](devto/unknown-api-runtime-validation.md)（制作完成・Qiita・予定2026-12-03・予約済み）
 - T04: [typeとinterfaceは、宣言の追加と競合時のエラーで使い分ける](public/type-interface-declaration-merging.md) / [English](devto/type-interface-declaration-merging.md)（制作完成・Qiita・予定2026-10-23・公開確認済み（2026-10-23））
 - T05: [enumをliteral unionへ変える前に、生成されるJavaScriptを確認する](public/literal-union-enum-output.md) / [English](devto/literal-union-enum-output.md)（制作完成・Qiita・予定2026-10-25・公開確認済み（2026-10-25））
-- T06: [import typeを省くと何が残るか。tscとesbuildで副作用まで比較する](public/import-type-bundler-output.md) / [English](devto/import-type-bundler-output.md)（制作完成・Qiita・予定2026-10-26・予約済み）
+- T06: [import typeを省くと何が残るか。tscとesbuildで副作用まで比較する](public/import-type-bundler-output.md) / [English](devto/import-type-bundler-output.md)（制作完成・Qiita・予定2026-10-26・公開確認済み（2026-10-26））
 - T07: [structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる](public/structured-clone-json-data.md) / [English](devto/structured-clone-json-data.md)（制作完成・Qiita・予定2026-10-27・予約済み）
 - T08: [AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する](public/abortcontroller-cancellable-tasks.md) / [English](devto/abortcontroller-cancellable-tasks.md)（制作完成・Qiita・予定2026-10-28・予約済み）
 - T09: [ESMとCommonJSが混ざったら、Node.jsの判定と読み込み方法を分けて調べる](public/node-esm-commonjs-boundaries.md) / [English](devto/node-esm-commonjs-boundaries.md)（制作完成・Qiita・予定2026-10-08・公開確認済み（2026-10-08））

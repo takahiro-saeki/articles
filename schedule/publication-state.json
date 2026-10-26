@@ -165,6 +165,15 @@
       "devto_id": 4912979,
       "devto_url": "https://dev.to/hirodeath/inspect-emitted-javascript-before-replacing-enums-with-literal-unions-12f6",
       "verified_at": "2026-10-25T04:34:00.226Z"
+    },
+    "import-type-bundler-output": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/943c447584e4a7f4c3ae",
+      "published_at": "2026-10-26T10:58:58+09:00",
+      "devto_id": 4918311,
+      "devto_url": "https://dev.to/hirodeath/what-remains-without-import-type-comparing-tsc-esbuild-and-side-effects-3pmi",
+      "verified_at": "2026-10-26T01:58:57.928Z"
     }
   }
 }
