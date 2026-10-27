@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-10-26
+- 最終確認日: 2026-10-27
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -214,3 +214,11 @@ T06「import typeを省くと何が残るか。tscとesbuildで副作用まで�
 [公開run 40256821074](https://github.com/takahiro-saeki/articles/actions/runs/40256821074)と[再確認run 40270129729](https://github.com/takahiro-saeki/articles/actions/runs/40270129729)はいずれも成功し、境界テスト12件と公開API検証も成功。18:33 JSTの点検ではmain `4382748`を基準に10/8〜10/26の19組・38実ページを再照合した。認証なし実ページは全てHTTP 200・タイトル一致。Qiita17本・英語19本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn2本はpublished・非プレビュー・公開メタデータ・本文表示テキスト・リンクが一致した。過去18組の保存済みIDと初回公開日時を維持し、未完了・期限超過なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-26.json)に根拠を保存した。
 
 追加dispatch・再投稿は行っていない。残り49組（日本語Zenn7・Qiita42と英語49）。次は10/27 Qiita T07、次回Zennは10/31、最終予定は12/14。Plane MCPの接続問題は既報のまま継続している。ブラウザでhiro-workを確認し、ART-19をDoneへ更新、ART-1と運用Wikiへ根拠・残数・次回予定を反映した。再読み込み後の保存内容を確認済み。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-10-27の公開確認
+
+T07「structuredCloneとJSON往復コピーを、値と参照の壊れ方で比べる」は、[Qiita](https://qiita.com/hiro123/items/c571f84cad78f7f1919a)で11:36:55 JSTに公開された（ID `c571f84cad78f7f1919a`）。09:00目標から2時間36分55秒遅れた。[英語版](https://dev.to/hirodeath/comparing-structuredclone-and-json-copies-through-values-and-reference-identity-2noe)はID `4925161`、11:36:56 JSTに公開され、公開APIとHTMLのcanonicalは上記Qiita URLと一致する。日本語の実公開後に英語が公開されたことを確認した。
+
+[公開run 40439441406](https://github.com/takahiro-saeki/articles/actions/runs/40439441406)と[再確認run 40452497788](https://github.com/takahiro-saeki/articles/actions/runs/40452497788)はいずれも成功し、境界テスト12件と公開API検証も成功。18:28 JSTの点検ではmain `4f2f75f`を基準に10/8〜10/27の20組・40実ページを再照合した。認証なし実ページは全てHTTP 200・タイトル一致。Qiita18本・英語20本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn2本はpublished・非プレビュー・公開メタデータ・本文表示テキスト・リンクが一致した。過去19組の保存済みIDと初回公開日時を維持し、未完了・期限超過なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-10-27.json)に根拠を保存した。
+
+追加dispatch・再投稿は行っていない。残り48組（日本語Zenn7・Qiita41と英語48）。次は10/28 Qiita T08、次回Zennは10/31、最終予定は12/14。Plane MCPがOAuth接続で利用可能になり、各書き込み前にhiro-workを確認して[ART-20](https://app.plane.so/hiro-work/browse/ART-20/)をDoneへ更新、ART-1と運用Wikiへ根拠・残数・次回予定を反映した。APIによる読み戻しで本文・リンク・状態と既存履歴の保持を確認し、10/23から継続していたMCP接続問題の復旧を確認した。全90組の公開は未完了のためART-1はIn Progressを維持する。
