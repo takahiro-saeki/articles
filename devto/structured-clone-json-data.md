@@ -1,8 +1,9 @@
 ---
+devto_id: 4925161
 title: "Comparing structuredClone and JSON copies through values and reference identity"
-published: false
+published: true
 tags: javascript, node, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/c571f84cad78f7f1919a
 ---
 
 Copying an object with `JSON.parse(JSON.stringify(value))` can succeed while changing what the data means. In this experiment, the changes went beyond turning a Date into a string: Map contents and relationships between references changed too.

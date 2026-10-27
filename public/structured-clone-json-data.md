@@ -4,11 +4,11 @@ tags:
   - JavaScript
   - Node.js
 private: false
-updated_at: null
-id: null
+updated_at: "2026-10-27T11:36:55+09:00"
+id: c571f84cad78f7f1919a
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `JSON.parse(JSON.stringify(value))`でオブジェクトをコピーすると、コピー処理そのものは成功してもデータの意味が変わることがあります。Dateが文字列になるだけでなく、Mapの中身や、同じオブジェクトを指していた関係も変わりました。
