@@ -5,11 +5,11 @@ tags:
   - Node.js
   - 非同期処理
 private: false
-updated_at: null
-id: null
+updated_at: "2026-10-28T11:45:40+09:00"
+id: fad56597209be02192ae
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `AbortController`はfetch専用ではありません。ただし、`abort()`を呼べば任意のPromiseが止まるわけでもありません。処理側がsignalを受け取り、待機の解除とPromiseのrejectを実装する必要があります。

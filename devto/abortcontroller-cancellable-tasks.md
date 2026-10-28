@@ -1,8 +1,9 @@
 ---
+devto_id: 4931669
 title: "Cancelling timers with AbortController: seven cases including cleanup"
-published: false
+published: true
 tags: javascript, node, async, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/fad56597209be02192ae
 ---
 
 `AbortController` is not limited to fetch. Calling `abort()` does not stop an arbitrary Promise, though. The operation must accept the signal and implement both stopping its wait and rejecting its Promise.

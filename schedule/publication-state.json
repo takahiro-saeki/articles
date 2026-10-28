@@ -183,6 +183,15 @@
       "devto_id": 4925161,
       "devto_url": "https://dev.to/hirodeath/comparing-structuredclone-and-json-copies-through-values-and-reference-identity-2noe",
       "verified_at": "2026-10-27T04:56:41.353Z"
+    },
+    "abortcontroller-cancellable-tasks": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/fad56597209be02192ae",
+      "published_at": "2026-10-28T11:45:40+09:00",
+      "devto_id": 4931669,
+      "devto_url": "https://dev.to/hirodeath/cancelling-timers-with-abortcontroller-seven-cases-including-cleanup-1g7c",
+      "verified_at": "2026-10-28T02:45:40.274Z"
     }
   }
 }
