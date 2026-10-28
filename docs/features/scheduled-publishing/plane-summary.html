@@ -1,8 +1,8 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-27。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-10-28。</p>
 <h2>公開スケジュール</h2>
 <p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17・10/24の公開を確認済み。次回は10/31。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。10/27のT07公開後、日本語の残りは48本（Zenn7、Qiita41）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>90本の日英原稿は完成済み。10/28のT08公開後、日本語の残りは47本（Zenn7、Qiita40）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
 <p>Zennの残り予定: 10/31、11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/24 11:11:03.272 JST。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
@@ -129,3 +129,10 @@
 <p>main 4f2f75fを基準に10/8〜10/27の20組・認証なし40実ページを再照合。全ページHTTP 200・タイトル一致。Qiita18本・英語20本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn2本の公開メタデータ・本文表示テキスト・リンクも一致。過去19組の保存済みIDと初回公開日時を維持。未完了・期限超過なし。</p>
 <p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-10-27.json" rel="noopener noreferrer">点検記録</a>。追加dispatch・再投稿なし。残り48組（日本語Zenn7・Qiita41、英語48）、最終予定12/14。次は10/28 Qiita T08、次回Zennは10/31。ART-20は日英の実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
 <p>Plane MCPはOAuth接続でhiro-workへの読み取り・書き込みを再確認し、ART-20のDoneと公開根拠をAPIで読み戻した。10/23から継続していたMCP接続問題の復旧を確認。</p>
+<h3>2026-10-28 18:34 JST 公開確認</h3>
+<p>T08「AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する」の日英公開を確認。</p>
+<ul><li><p>日本語: <a href="https://qiita.com/hiro123/items/fad56597209be02192ae" rel="noopener noreferrer">Qiita</a>。ID fad56597209be02192ae、2026-10-28 11:45:40 JST公開。09:00目標から2時間45分40秒遅れ。</p></li>
+<li><p>英語: <a href="https://dev.to/hirodeath/cancelling-timers-with-abortcontroller-seven-cases-including-cleanup-1g7c" rel="noopener noreferrer">dev.to</a>。ID 4931669、2026-10-28 11:45:42 JST公開。日本語公開後で、公開APIとHTMLのcanonicalは上記Qiita URLと一致。</p></li>
+<li><p>公開run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/40622805866" rel="noopener noreferrer">40622805866</a>、再確認run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/40638504889" rel="noopener noreferrer">40638504889</a>。両run成功、境界テスト12件成功、公開API検証verified。</p></li></ul>
+<p>main e3c48f1を基準に10/8〜10/28の21組・認証なし42実ページを再照合。全ページHTTP 200・タイトル一致。Qiita19本・英語21本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn2本の公開メタデータ・本文表示テキスト・リンクも一致。過去20組の保存済みIDと初回公開日時を維持。未完了・期限超過なし。</p>
+<p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-10-28.json" rel="noopener noreferrer">点検記録</a>。追加dispatch・再投稿なし。残り47組（日本語Zenn7・Qiita40、英語47）、最終予定12/14。次は10/29 Qiita T11、次回Zennは10/31。ART-21は日英の実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
