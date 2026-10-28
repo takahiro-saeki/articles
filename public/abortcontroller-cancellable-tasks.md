@@ -1,15 +1,17 @@
 ---
-title: "AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する"
+title: AbortControllerでタイマーを止める。開始前・待機中・完了後の7条件を確認する
 tags:
   - JavaScript
   - Node.js
   - 非同期処理
 private: false
-updated_at: "2026-10-28T11:45:40+09:00"
+updated_at: '2026-10-28T18:36:49+09:00'
 id: fad56597209be02192ae
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 `AbortController`はfetch専用ではありません。ただし、`abort()`を呼べば任意のPromiseが止まるわけでもありません。処理側がsignalを受け取り、待機の解除とPromiseのrejectを実装する必要があります。
