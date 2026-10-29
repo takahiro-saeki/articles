@@ -1,8 +1,9 @@
 ---
+devto_id: 4937976
 title: "How index keys affect inputs: compare DOM, row state, and parent state"
-published: false
+published: true
 tags: react, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/0b0e7465b39bcb4cf573
 ---
 
 When the first row is removed from a React list, do input values stay with the remaining rows? With index keys, the result depended on who owned the value.

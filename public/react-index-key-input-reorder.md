@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - フロントエンド
 private: false
-updated_at: null
-id: null
+updated_at: "2026-10-29T12:06:22+09:00"
+id: 0b0e7465b39bcb4cf573
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Reactのリストで先頭の行を削除したとき、入力値は残った行に付いてくるでしょうか。indexをkeyにした場合は、値を誰が持つかで結果が変わりました。

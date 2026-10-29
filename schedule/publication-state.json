@@ -192,6 +192,15 @@
       "devto_id": 4931669,
       "devto_url": "https://dev.to/hirodeath/cancelling-timers-with-abortcontroller-seven-cases-including-cleanup-1g7c",
       "verified_at": "2026-10-28T05:31:45.424Z"
+    },
+    "react-index-key-input-reorder": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/0b0e7465b39bcb4cf573",
+      "published_at": "2026-10-29T12:06:22+09:00",
+      "devto_id": 4937976,
+      "devto_url": "https://dev.to/hirodeath/how-index-keys-affect-inputs-compare-dom-row-state-and-parent-state-bgn",
+      "verified_at": "2026-10-29T03:06:21.769Z"
     }
   }
 }
