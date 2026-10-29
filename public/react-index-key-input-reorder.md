@@ -1,15 +1,17 @@
 ---
-title: "Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する"
+title: Reactのkeyをindexにすると入力欄はどうずれるか。値の持ち主を分けて再現する
 tags:
   - React
   - JavaScript
   - フロントエンド
 private: false
-updated_at: "2026-10-29T12:06:22+09:00"
+updated_at: '2026-10-29T18:37:07+09:00'
 id: 0b0e7465b39bcb4cf573
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Reactのリストで先頭の行を削除したとき、入力値は残った行に付いてくるでしょうか。indexをkeyにした場合は、値を誰が持つかで結果が変わりました。
