@@ -1,15 +1,17 @@
 ---
-title: "Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する"
+title: Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する
 tags:
   - React
   - JavaScript
   - useEffect
 private: false
-updated_at: "2026-10-30T12:10:30+09:00"
+updated_at: '2026-10-30T21:09:57+09:00'
 id: 02b3684dd1cd4dec3db6
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Strict ModeでEffectのsetupが2回記録されたときは、間にcleanupがあるかと、最後に残った購読数を確認します。setupの回数だけを1回へ抑えても、後始末ができているとは限りません。
