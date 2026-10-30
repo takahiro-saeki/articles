@@ -1,8 +1,9 @@
 ---
+devto_id: 4944457
 title: "When Strict Mode reruns Effects: inspect subscription setup and cleanup"
-published: false
+published: true
 tags: react, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/02b3684dd1cd4dec3db6
 ---
 
 When Strict Mode logs an Effect setup twice, check whether cleanup ran between the setups and how many subscriptions remain. Reducing the setup count to one does not establish that cleanup works.

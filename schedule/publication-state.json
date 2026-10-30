@@ -201,6 +201,15 @@
       "devto_id": 4937976,
       "devto_url": "https://dev.to/hirodeath/how-index-keys-affect-inputs-compare-dom-row-state-and-parent-state-bgn",
       "verified_at": "2026-10-29T05:39:48.803Z"
+    },
+    "strict-mode-effect-cleanup": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/02b3684dd1cd4dec3db6",
+      "published_at": "2026-10-30T12:10:30+09:00",
+      "devto_id": 4944457,
+      "devto_url": "https://dev.to/hirodeath/when-strict-mode-reruns-effects-inspect-subscription-setup-and-cleanup-1b0c",
+      "verified_at": "2026-10-30T03:10:29.817Z"
     }
   }
 }

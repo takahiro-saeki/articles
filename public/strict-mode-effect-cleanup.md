@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - useEffect
 private: false
-updated_at: null
-id: null
+updated_at: "2026-10-30T12:10:30+09:00"
+id: 02b3684dd1cd4dec3db6
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Strict ModeでEffectのsetupが2回記録されたときは、間にcleanupがあるかと、最後に残った購読数を確認します。setupの回数だけを1回へ抑えても、後始末ができているとは限りません。
