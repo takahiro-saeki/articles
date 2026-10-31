@@ -1,9 +1,10 @@
 ---
+devto_id: 4950455
 title: "Carrying unfinished work between Plane cycles without closing the release"
-published: false
+published: true
 description: "A proposed weekly workflow uses actual acceptance criteria to separate development completion from distribution."
 tags: [plane, productivity, webdev, devops]
-canonical_url: "https://zenn.dev/hirodeath/articles/plane-cycle-release-module"
+canonical_url: https://zenn.dev/hirodeath/articles/plane-cycle-release-module
 ---
 
 The implementation is ready at the end of the week, but mobile verification remains. Marking the work item Done just to close the weekly cycle would make that unfinished verification look complete.

@@ -1,7 +1,7 @@
 {
   "last_zenn_publication": {
-    "slug": "guest-identity-without-placeholder-user",
-    "published_at": "2026-10-24T11:11:03.272+09:00"
+    "slug": "plane-cycle-release-module",
+    "published_at": "2026-10-31T11:55:58.043+09:00"
   },
   "articles": {
     "node-esm-commonjs-boundaries": {
@@ -213,8 +213,12 @@
     },
     "plane-cycle-release-module": {
       "platform": "zenn",
-      "status": "awaiting_deployment",
-      "requested_at": "2026-10-31T02:55:53.276Z"
+      "status": "verified",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/plane-cycle-release-module",
+      "published_at": "2026-10-31T11:55:58.043+09:00",
+      "devto_id": 4950455,
+      "devto_url": "https://dev.to/hirodeath/carrying-unfinished-work-between-plane-cycles-without-closing-the-release-4lf8",
+      "verified_at": "2026-10-31T02:56:25.074Z"
     }
   }
 }
