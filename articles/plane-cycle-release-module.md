@@ -3,7 +3,7 @@ title: "週末に終わらなかった作業を、CycleとリリースModuleで�
 emoji: "🗓️"
 type: "idea"
 topics: ["plane", "個人開発", "タスク管理", "リリース"]
-published: false
+published: true
 ---
 
 週の終わりに実装はできたが、モバイルの確認が残った。このとき週のCycleを閉じるためにWork ItemまでDoneへ変えると、確認待ちの作業が完了に見えてしまいます。
