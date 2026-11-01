@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - フォーム
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-01T11:49:40+09:00"
+id: 78cb5e40cc145c2ff5d8
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 フォームの項目数だけで、controlledとuncontrolledのどちらが向いているかは決まりません。controlledでも、stateを各入力欄へ置くと、1欄の編集で呼ばれた入力コンポーネントは1つでした。

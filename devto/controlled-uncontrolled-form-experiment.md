@@ -1,8 +1,9 @@
 ---
+devto_id: 4955566
 title: "Controlled input work depends on state placement: compare 10, 100, and 500 fields"
-published: false
+published: true
 tags: react, javascript, performance, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/78cb5e40cc145c2ff5d8
 ---
 
 Field count alone does not determine whether a form should use controlled or uncontrolled inputs. Even with controlled inputs, placing state in each field meant editing one field invoked only one input component.

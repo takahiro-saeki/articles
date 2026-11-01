@@ -219,6 +219,15 @@
       "devto_id": 4950455,
       "devto_url": "https://dev.to/hirodeath/carrying-unfinished-work-between-plane-cycles-without-closing-the-release-4lf8",
       "verified_at": "2026-10-31T05:29:50.571Z"
+    },
+    "controlled-uncontrolled-form-experiment": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/78cb5e40cc145c2ff5d8",
+      "published_at": "2026-11-01T11:49:40+09:00",
+      "devto_id": 4955566,
+      "devto_url": "https://dev.to/hirodeath/controlled-input-work-depends-on-state-placement-compare-10-100-and-500-fields-3kfh",
+      "verified_at": "2026-11-01T02:49:39.796Z"
     }
   }
 }
