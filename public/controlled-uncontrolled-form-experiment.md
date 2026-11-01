@@ -1,15 +1,17 @@
 ---
-title: "controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する"
+title: controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する
 tags:
   - React
   - JavaScript
   - フォーム
 private: false
-updated_at: "2026-11-01T11:49:40+09:00"
+updated_at: '2026-11-01T18:34:09+09:00'
 id: 78cb5e40cc145c2ff5d8
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 フォームの項目数だけで、controlledとuncontrolledのどちらが向いているかは決まりません。controlledでも、stateを各入力欄へ置くと、1欄の編集で呼ばれた入力コンポーネントは1つでした。
