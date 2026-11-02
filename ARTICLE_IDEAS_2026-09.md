@@ -195,7 +195,7 @@
 - T12: [Strict ModeでEffectが二度動く条件を、購読のsetupとcleanupで確認する](public/strict-mode-effect-cleanup.md) / [English](devto/strict-mode-effect-cleanup.md)（制作完成・Qiita・予定2026-10-30・公開確認済み（2026-10-30））
 - T13: [controlled inputの再実行はstateの置き場所で変わる。10・100・500項目で比較する](public/controlled-uncontrolled-form-experiment.md) / [English](devto/controlled-uncontrolled-form-experiment.md)（制作完成・Qiita・予定2026-11-01・公開確認済み（2026-11-01））
 - T14: [useMemo・useCallbackで速くなる条件を、再計算の回数から確かめる](public/react-memoization-cost.md) / [English](devto/react-memoization-cost.md)（制作完成・Qiita・予定2026-10-19・公開確認済み（2026-10-19））
-- T15: [useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する](public/use-sync-external-store-ssr.md) / [English](devto/use-sync-external-store-ssr.md)（制作完成・Qiita・予定2026-11-02・予約済み）
+- T15: [useSyncExternalStoreで通知だけでは更新されない理由と、SSRの初期snapshotを確認する](public/use-sync-external-store-ssr.md) / [English](devto/use-sync-external-store-ssr.md)（制作完成・Qiita・予定2026-11-02・公開確認済み（2026-11-02））
 - T16: [Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる](public/react-callback-ref-cleanup.md) / [English](devto/react-callback-ref-cleanup.md)（制作完成・Qiita・予定2026-11-03・予約済み）
 - T17: [useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する](public/use-action-state-form-experiment.md) / [English](devto/use-action-state-form-experiment.md)（制作完成・Qiita・予定2026-11-04・予約済み）
 - T18: [Suspenseの境界を狭めると何が残るか。初回表示と再取得を5条件で比べる](public/suspense-boundary-fallback-experiment.md) / [English](devto/suspense-boundary-fallback-experiment.md)（制作完成・Qiita・予定2026-10-20・公開確認済み（2026-10-20））

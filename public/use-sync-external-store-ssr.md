@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - SSR
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-02T11:56:52+09:00"
+id: f25c5fe8d0bb1402cb40
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 外部ストアが変更を通知しても、`useSyncExternalStore`を使った画面が変わらないことがあります。同じsnapshotオブジェクトを直接書き換えると、今回の実験では通知後も画面の値は`0`のままでした。

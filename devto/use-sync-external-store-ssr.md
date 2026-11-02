@@ -1,8 +1,9 @@
 ---
+devto_id: 4959951
 title: "useSyncExternalStore: test snapshot identity and the initial SSR value"
-published: false
+published: true
 tags: react, javascript, ssr, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/f25c5fe8d0bb1402cb40
 ---
 
 An external store can notify its subscribers without changing the screen rendered through `useSyncExternalStore`. After the same snapshot object was mutated in this experiment, the screen still displayed `0` following the notification.
