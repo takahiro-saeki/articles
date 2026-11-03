@@ -5,11 +5,11 @@ tags:
   - TypeScript
   - JavaScript
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-03T13:14:59+09:00"
+id: d36e10885b95a6dfee92
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Reactのcallback refは、DOM nodeを受け取るだけでなく、解除時に呼ぶcleanup関数を返せます。React 19で追加されたこの仕組みを、ResizeObserverの登録と解除で確認しました。

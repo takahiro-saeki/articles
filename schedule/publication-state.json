@@ -237,6 +237,15 @@
       "devto_id": 4959951,
       "devto_url": "https://dev.to/hirodeath/usesyncexternalstore-test-snapshot-identity-and-the-initial-ssr-value-4240",
       "verified_at": "2026-11-02T05:54:54.315Z"
+    },
+    "react-callback-ref-cleanup": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/d36e10885b95a6dfee92",
+      "published_at": "2026-11-03T13:14:59+09:00",
+      "devto_id": 4966454,
+      "devto_url": "https://dev.to/hirodeath/testing-callback-ref-cleanup-on-the-same-dom-node-and-in-typescript-5e3e",
+      "verified_at": "2026-11-03T04:14:59.087Z"
     }
   }
 }

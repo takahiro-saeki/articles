@@ -1,8 +1,9 @@
 ---
+devto_id: 4966454
 title: "Testing callback ref cleanup on the same DOM node and in TypeScript"
-published: false
+published: true
 tags: react, typescript, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/d36e10885b95a6dfee92
 ---
 
 A React callback ref can return a cleanup function as well as receive a DOM node. This capability, added in React 19, was tested through ResizeObserver registration and disconnection.
