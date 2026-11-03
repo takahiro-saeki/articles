@@ -1,15 +1,17 @@
 ---
-title: "Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる"
+title: Reactのcallback refが返すcleanupを、同じDOMの再描画と型検査で確かめる
 tags:
   - React
   - TypeScript
   - JavaScript
 private: false
-updated_at: "2026-11-03T13:14:59+09:00"
+updated_at: '2026-11-03T18:37:36+09:00'
 id: d36e10885b95a6dfee92
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Reactのcallback refは、DOM nodeを受け取るだけでなく、解除時に呼ぶcleanup関数を返せます。React 19で追加されたこの仕組みを、ResizeObserverの登録と解除で確認しました。
