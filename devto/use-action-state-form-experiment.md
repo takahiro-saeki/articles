@@ -1,8 +1,9 @@
 ---
+devto_id: 4972846
 title: "Does useActionState preserve input? Nine comparisons with manual form state"
-published: false
+published: true
 tags: react, javascript, forms, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/ffbb8428c1da5dc00651
 ---
 
 `useActionState` manages an Action's result and pending status. It does not automatically preserve input values. In this fixture, returning a validation-error result still cleared the uncontrolled input.

@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - フォーム
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-04T12:34:01+09:00"
+id: ffbb8428c1da5dc00651
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `useActionState`は、Actionの結果とpendingを管理します。入力欄の値まで自動的に保存するHookではありません。今回のフォームでは、検証エラーを戻り値で返しただけでもuncontrolled inputが空になりました。

@@ -246,6 +246,15 @@
       "devto_id": 4966454,
       "devto_url": "https://dev.to/hirodeath/testing-callback-ref-cleanup-on-the-same-dom-node-and-in-typescript-5e3e",
       "verified_at": "2026-11-03T06:40:11.456Z"
+    },
+    "use-action-state-form-experiment": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/ffbb8428c1da5dc00651",
+      "published_at": "2026-11-04T12:34:01+09:00",
+      "devto_id": 4972846,
+      "devto_url": "https://dev.to/hirodeath/does-useactionstate-preserve-input-nine-comparisons-with-manual-form-state-32m7",
+      "verified_at": "2026-11-04T03:33:59.213Z"
     }
   }
 }
