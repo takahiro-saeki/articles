@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-03
+- 最終確認日: 2026-11-04
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -278,3 +278,11 @@ T16「Reactのcallback refが返すcleanupを、同じDOMの再描画と型検�
 [公開run 41576984872](https://github.com/takahiro-saeki/articles/actions/runs/41576984872)と[再確認run 41591328339](https://github.com/takahiro-saeki/articles/actions/runs/41591328339)はいずれも成功し、境界テスト12件と公開API検証も成功。18:35 JSTの点検ではmain `718b465`を基準に10/8〜11/3の27組・54実ページを再照合した。認証なし実ページは全てHTTP 200・タイトル一致。Qiita24本・英語27本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn3本はpublished・非プレビュー・公開メタデータ・本文表示テキスト・リンクが一致した。過去26組の保存済みIDと初回公開日時を維持し、未完了・期限超過なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-03.json)に根拠を保存した。
 
 追加dispatch・再投稿は行っていない。残り41組（日本語Zenn6・Qiita35と英語41）。次は11/4 Qiita T17、次回Zennは11/7、最終予定は12/14。各書き込み前にPlaneのhiro-workを確認して[ART-27](https://app.plane.so/hiro-work/browse/ART-27/)をDoneへ更新し、ART-1と運用Wikiへ根拠・残数・次回予定を反映した。APIによる読み戻しで本文・リンク・状態と既存履歴の保持を確認済み。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-11-04の公開確認
+
+T17「useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する」は、[Qiita](https://qiita.com/hiro123/items/ffbb8428c1da5dc00651)で12:34:01 JSTに公開された（ID `ffbb8428c1da5dc00651`）。09:00目標から3時間34分01秒遅れた。[英語版](https://dev.to/hirodeath/does-useactionstate-preserve-input-nine-comparisons-with-manual-form-state-32m7)はID `4972846`、12:34:03 JSTに公開され、公開APIとHTMLのcanonicalは上記Qiita URLと一致する。日本語の実公開後に英語が公開されたことを確認した。
+
+[公開run 41767891015](https://github.com/takahiro-saeki/articles/actions/runs/41767891015)と[再確認run 41783454948](https://github.com/takahiro-saeki/articles/actions/runs/41783454948)はいずれも成功し、境界テスト12件と公開API検証も成功。18:35 JSTの点検ではmain `0fdb816`を基準に10/8〜11/4の28組・56実ページを再照合した。認証なし実ページは全てHTTP 200・タイトル一致。Qiita25本・英語28本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn3本はpublished・非プレビュー・公開メタデータ・本文表示テキスト・リンクが一致した。過去27組の保存済みIDと初回公開日時を維持し、未完了・期限超過なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-04.json)に根拠を保存した。
+
+追加dispatch・再投稿は行っていない。残り40組（日本語Zenn6・Qiita34と英語40）。次は11/5 Qiita T10、次回Zennは11/7、最終予定は12/14。各書き込み前にPlaneのhiro-workを確認して[ART-28](https://app.plane.so/hiro-work/browse/ART-28/)をDoneへ更新し、ART-1と運用Wikiへ根拠・残数・次回予定を反映した。APIによる読み戻しで本文・リンク・状態と既存履歴の保持を確認済み。全90組の公開は未完了のためART-1はIn Progressを維持する。

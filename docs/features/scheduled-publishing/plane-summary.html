@@ -1,8 +1,8 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-11-03。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-11-04。</p>
 <h2>公開スケジュール</h2>
 <p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17・10/24・10/31の公開を確認済み。次回は11/7。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。11/3のT16公開後、日本語の残りは41本（Zenn6、Qiita35）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>90本の日英原稿は完成済み。11/4のT17公開後、日本語の残りは40本（Zenn6、Qiita34）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
 <p>Zennの残り予定: 11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/31 11:55:58.043 JST。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
@@ -184,3 +184,10 @@
 <li><p>公開run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/41576984872" rel="noopener noreferrer">41576984872</a>、再確認run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/41591328339" rel="noopener noreferrer">41591328339</a>。両run成功、境界テスト12件成功、公開API検証verified。</p></li></ul>
 <p>main 718b465を基準に10/8〜11/3の27組・認証なし54実ページを再照合。全ページHTTP 200・タイトル一致。Qiita24本・英語27本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn3本の公開メタデータ・本文表示テキスト・リンクも一致。過去26組の保存済みIDと初回公開日時を維持。未完了・期限超過なし。</p>
 <p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-11-03.json" rel="noopener noreferrer">点検記録</a>。追加dispatch・再投稿なし。残り41組（日本語Zenn6・Qiita35、英語41）、最終予定12/14。次は11/4 Qiita T17、次回Zennは11/7。ART-27は日英の実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
+<h2>2026-11-04 18:35 JST 公開確認</h2>
+<p>T17「useActionStateは入力値も残してくれるか。通常のフォームstateと9条件で比較する」の日英公開を確認した。</p>
+<ul><li><p>日本語: <a href="https://qiita.com/hiro123/items/ffbb8428c1da5dc00651" rel="noopener noreferrer">Qiita実公開ページ</a>。ID ffbb8428c1da5dc00651、2026-11-04 12:34:01 JST公開。09:00目標から3時間34分01秒遅延。</p></li>
+<li><p>英語: <a href="https://dev.to/hirodeath/does-useactionstate-preserve-input-nine-comparisons-with-manual-form-state-32m7" rel="noopener noreferrer">dev.to実公開ページ</a>。ID 4972846、2026-11-04 12:34:03 JST公開。日本語の実公開後に公開され、APIと実ページのcanonicalは上記Qiita URLと一致。</p></li>
+<li><p>公開run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/41767891015" rel="noopener noreferrer">41767891015</a>、再確認run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/41783454948" rel="noopener noreferrer">41783454948</a>。両run成功、境界テスト12件成功、公開API検証verified。</p></li></ul>
+<p>main 0fdb816を基準に10/8〜11/4の28組・認証なし56実ページを再照合。全ページHTTP 200・タイトル一致。Qiita25本・英語28本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn3本の公開メタデータ・本文表示テキスト・リンクも一致。過去27組の保存済みIDと初回公開日時を維持。未完了・期限超過なし。</p>
+<p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-11-04.json" rel="noopener noreferrer">点検記録</a>。追加dispatch・再投稿なし。残り40組（日本語Zenn6・Qiita34、英語40）、最終予定12/14。次は11/5 Qiita T10、次回Zennは11/7。ART-28は日英の実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
