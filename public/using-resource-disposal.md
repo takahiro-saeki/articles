@@ -1,15 +1,17 @@
 ---
-title: "JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する"
+title: JavaScriptのusingは、returnや例外の後で何を解放するか。9条件で確認する
 tags:
   - JavaScript
   - Node.js
   - リソース管理
 private: false
-updated_at: "2026-11-05T12:54:26+09:00"
+updated_at: '2026-11-05T18:38:17+09:00'
 id: 273e780a083803e5db4e
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 `using`は、解放用のメソッドを持つオブジェクトをスコープへ登録し、そこを抜けるときに後始末を呼ぶ構文です。複数のリソースを用意した場合は、取得した順と逆に解放されました。途中のreturnでも同じです。
