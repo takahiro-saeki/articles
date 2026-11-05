@@ -255,6 +255,15 @@
       "devto_id": 4972846,
       "devto_url": "https://dev.to/hirodeath/does-useactionstate-preserve-input-nine-comparisons-with-manual-form-state-32m7",
       "verified_at": "2026-11-04T06:07:35.256Z"
+    },
+    "using-resource-disposal": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/273e780a083803e5db4e",
+      "published_at": "2026-11-05T12:54:26+09:00",
+      "devto_id": 4979127,
+      "devto_url": "https://dev.to/hirodeath/what-javascript-using-disposes-after-returns-and-exceptions-nine-checks-570f",
+      "verified_at": "2026-11-05T03:54:26.149Z"
     }
   }
 }

@@ -5,11 +5,11 @@ tags:
   - Node.js
   - リソース管理
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-05T12:54:26+09:00"
+id: 273e780a083803e5db4e
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `using`は、解放用のメソッドを持つオブジェクトをスコープへ登録し、そこを抜けるときに後始末を呼ぶ構文です。複数のリソースを用意した場合は、取得した順と逆に解放されました。途中のreturnでも同じです。

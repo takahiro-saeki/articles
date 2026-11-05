@@ -1,8 +1,9 @@
 ---
+devto_id: 4979127
 title: "What JavaScript using disposes after returns and exceptions: nine checks"
-published: false
+published: true
 tags: javascript, node, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/273e780a083803e5db4e
 ---
 
 `using` registers an object with a disposal method in a scope and calls cleanup when that scope ends. When several resources were registered, they were disposed in reverse acquisition order. An early return followed the same rule.
