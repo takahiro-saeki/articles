@@ -264,6 +264,15 @@
       "devto_id": 4979127,
       "devto_url": "https://dev.to/hirodeath/what-javascript-using-disposes-after-returns-and-exceptions-nine-checks-570f",
       "verified_at": "2026-11-05T06:36:19.156Z"
+    },
+    "nextjs-middleware-proxy-migration": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/4d55773b8550233efb42",
+      "published_at": "2026-11-06T12:52:34+09:00",
+      "devto_id": 4985706,
+      "devto_url": "https://dev.to/hirodeath/migrating-nextjs-middleware-to-proxy-verify-the-matcher-and-runtime-after-renaming-1o58",
+      "verified_at": "2026-11-06T03:52:33.989Z"
     }
   }
 }

@@ -1,8 +1,9 @@
 ---
+devto_id: 4985706
 title: "Migrating Next.js Middleware to Proxy: verify the matcher and runtime after renaming"
-published: false
+published: true
 tags: nextjs, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/4d55773b8550233efb42
 ---
 
 After renaming Middleware to Proxy, verify which requests pass through it and which runtime it uses. Next.js 16.3.4's codemod transformed this minimal example, while a comparison version that added a runtime export to Proxy failed to build.

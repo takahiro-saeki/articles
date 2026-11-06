@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - 移行
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-06T12:52:34+09:00"
+id: 4d55773b8550233efb42
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 MiddlewareをProxyへ移すときは、ファイル名と関数名を変えた後で、通るリクエストとruntimeを確認します。Next.js 16.3.4のcodemodは今回の最小例を変換できましたが、Proxyへruntime指定を残す比較用コードはbuildに失敗しました。
