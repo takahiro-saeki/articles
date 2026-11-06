@@ -1,15 +1,17 @@
 ---
-title: "Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する"
+title: Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する
 tags:
   - Next.js
   - JavaScript
   - 移行
 private: false
-updated_at: "2026-11-06T12:52:34+09:00"
+updated_at: '2026-11-06T20:01:13+09:00'
 id: 4d55773b8550233efb42
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 MiddlewareをProxyへ移すときは、ファイル名と関数名を変えた後で、通るリクエストとruntimeを確認します。Next.js 16.3.4のcodemodは今回の最小例を変換できましたが、Proxyへruntime指定を残す比較用コードはbuildに失敗しました。
