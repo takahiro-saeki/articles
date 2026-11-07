@@ -273,6 +273,11 @@
       "devto_id": 4985706,
       "devto_url": "https://dev.to/hirodeath/migrating-nextjs-middleware-to-proxy-verify-the-matcher-and-runtime-after-renaming-1o58",
       "verified_at": "2026-11-06T06:32:17.184Z"
+    },
+    "plane-initiative-personal-products": {
+      "platform": "zenn",
+      "status": "awaiting_deployment",
+      "requested_at": "2026-11-07T03:27:24.760Z"
     }
   }
 }
