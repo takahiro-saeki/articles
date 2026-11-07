@@ -1,9 +1,10 @@
 ---
+devto_id: 4991673
 title: "Define shared acceptance criteria before adding every personal product to a Plane initiative"
-published: false
+published: true
 description: "An initiative proposal starts with verified project mappings and a bounded notification-diagnostics objective."
 tags: [plane, productivity, webdev, devops]
-canonical_url: "https://zenn.dev/hirodeath/articles/plane-initiative-personal-products"
+canonical_url: https://zenn.dev/hirodeath/articles/plane-initiative-personal-products
 ---
 
 Putting personal products on one list can look like progress toward managing them together. But grouping a web service, a practice journal, and a game does not establish when the group is finished.

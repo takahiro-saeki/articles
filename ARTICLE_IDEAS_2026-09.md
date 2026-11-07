@@ -170,7 +170,7 @@
 - P07: [PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する](public/plane-pql-personal-dashboard.md) / [English](devto/plane-pql-personal-dashboard.md)（制作完成・Qiita・予定2026-11-15・予約済み）
 - P08: [週末に終わらなかった作業を、CycleとリリースModuleでどう扱うか](articles/plane-cycle-release-module.md) / [English](devto/plane-cycle-release-module.md)（制作完成・Zenn・予定2026-10-31・公開確認済み（2026-10-31））
 - P09: [PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく](public/plane-version-module.md) / [English](devto/plane-version-module.md)（制作完成・Qiita・予定2026-11-27・予約済み）
-- P10: [個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める](articles/plane-initiative-personal-products.md) / [English](devto/plane-initiative-personal-products.md)（制作完成・Zenn・予定2026-11-07・予約済み）
+- P10: [個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める](articles/plane-initiative-personal-products.md) / [English](devto/plane-initiative-personal-products.md)（制作完成・Zenn・予定2026-11-07・公開確認済み（2026-11-07））
 - P11: [Planeの定期作業は、次回の起票と前回の未完了を分けて管理する](public/plane-recurring-maintenance.md) / [English](devto/plane-recurring-maintenance.md)（制作完成・Qiita・予定2026-11-16・予約済み）
 - P12: [PlaneのIntakeを使う前に、受け入れ判断と作業の状態を分ける](public/plane-intake-before-backlog.md) / [English](devto/plane-intake-before-backlog.md)（制作完成・Qiita・予定2026-11-17・予約済み）
 - P13: [PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる](public/plane-project-template.md) / [English](devto/plane-project-template.md)（制作完成・Qiita・予定2026-11-18・予約済み）

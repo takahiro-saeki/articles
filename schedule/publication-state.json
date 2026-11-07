@@ -1,7 +1,7 @@
 {
   "last_zenn_publication": {
-    "slug": "plane-cycle-release-module",
-    "published_at": "2026-10-31T11:55:58.043+09:00"
+    "slug": "plane-initiative-personal-products",
+    "published_at": "2026-11-07T12:27:29.787+09:00"
   },
   "articles": {
     "node-esm-commonjs-boundaries": {
@@ -276,8 +276,12 @@
     },
     "plane-initiative-personal-products": {
       "platform": "zenn",
-      "status": "awaiting_deployment",
-      "requested_at": "2026-11-07T03:27:24.760Z"
+      "status": "verified",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/plane-initiative-personal-products",
+      "published_at": "2026-11-07T12:27:29.787+09:00",
+      "devto_id": 4991673,
+      "devto_url": "https://dev.to/hirodeath/define-shared-acceptance-criteria-before-adding-every-personal-product-to-a-plane-initiative-9kn",
+      "verified_at": "2026-11-07T03:27:56.690Z"
     }
   }
 }
