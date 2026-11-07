@@ -1,9 +1,9 @@
 <h1>日本語・英語記事の予約公開</h1>
-<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-11-06。</p>
+<p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-11-07。</p>
 <h2>公開スケジュール</h2>
-<p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17・10/24・10/31の公開を確認済み。次回は11/7。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。11/6のT22公開後、日本語の残りは38本（Zenn6、Qiita32）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
-<p>Zennの残り予定: 11/7、11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は10/31 11:55:58.043 JST。</p>
+<p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17・10/24・10/31・11/7の公開を確認済み。次回は11/14。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
+<p>90本の日英原稿は完成済み。11/7のP10公開後、日本語の残りは37本（Zenn5、Qiita32）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>Zennの残り予定: 11/14、11/21、11/28、12/5、12/12。直近のZenn実公開は11/7 12:27:29.787 JST。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
 </li><li><p>続いてdev.toを公開する。既存英語版はIDを維持し、日本語の実URLへcanonicalを更新する。</p>
@@ -207,3 +207,7 @@
 <li><p>公開run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/42159130434" rel="noopener noreferrer">42159130434</a>、再確認run: <a href="https://github.com/takahiro-saeki/articles/actions/runs/42175043533" rel="noopener noreferrer">42175043533</a>。両run成功、境界テスト12件成功、公開API検証verified。</p></li></ul>
 <p>main f0b1cd5を基準に10/8〜11/6の30組・認証なし60実ページを再照合。全ページHTTP 200・タイトル一致。Qiita27本・英語30本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn3本の公開メタデータ・本文表示テキスト・リンクも一致。過去29組の保存済みIDと初回公開日時を維持。未完了・期限超過なし。</p>
 <p><a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-11-06.json" rel="noopener noreferrer">点検記録</a>。追加dispatch・再投稿なし。残り38組（日本語Zenn6・Qiita32、英語38）、最終予定12/14。次は11/7（土）Zenn P10。ART-30は日英の実公開確認を完了。全90組の公開は未完了のためART-1はIn Progressを維持する。</p>
+
+<h2>2026-11-07 18:34 JST 公開確認</h2>
+<p>11月7日、P10の日本語版は12:27:29.787 JSTに公開（09:00の目標から3時間27分29.787秒後）、英語版は12:27:57 JSTに公開された。英語版の公開APIとページのcanonicalは日本語版のURLと一致した。<a href="https://zenn.dev/hirodeath/articles/plane-initiative-personal-products" rel="noopener noreferrer">Zenn（ID 649893）</a>、<a href="https://dev.to/hirodeath/define-shared-acceptance-criteria-before-adding-every-personal-product-to-a-plane-initiative-9kn" rel="noopener noreferrer">dev.to（ID 4991673）</a>。</p><p>ログインせず両ページを閲覧し、Zennの公開状態・表示本文・リンク、dev.toのAPI本文・タイトルを原稿と照合した。両方の予約実行でテスト12件が通り、公開確認が完了した。<a href="https://github.com/takahiro-saeki/articles/actions/runs/42334082431" rel="noopener noreferrer">公開run</a>、<a href="https://github.com/takahiro-saeki/articles/actions/runs/42344466243" rel="noopener noreferrer">再確認run</a>。</p>
+<p>10/8〜11/7の31組・62ページはすべて認証なしでHTTP 200。過去30組のID・初回公開日時も前日の記録と一致した。制作進捗表では90組中53組が公開確認済み。残り37組の日本語版はZenn 5本、Qiita 32本で、各組に英語版がある。次は11/8のQiita（T23）、次のZennは11/14、最終予定は12/14。<a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-11-07.json" rel="noopener noreferrer">点検記録</a>。</p>

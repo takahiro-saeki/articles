@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-06
+- 最終確認日: 2026-11-07
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -51,7 +51,7 @@ GitHub Actionsの予約実行には遅延があるため09:00は目標時刻で�
 
 - 実装: main反映済み（初回2ecfa9a、結果反映2a88b12、待機ジョブのcheckout修正1827ba3）。再実行37710179409でメタデータ保存まで確認。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
-- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17・10/24・10/31の公開を確認し、次回は11/7。以後の予定分は未実行。
+- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17・10/24・10/31・11/7の公開を確認し、次回は11/14。以後の予定分は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。
 - 検証結果・実公開URL: [移行記録](../../../production/2026-09/scheduling/weekly-zenn/README.md)。
 
@@ -302,3 +302,11 @@ T22「Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとrun
 [公開run 42159130434](https://github.com/takahiro-saeki/articles/actions/runs/42159130434)と[再確認run 42175043533](https://github.com/takahiro-saeki/articles/actions/runs/42175043533)はいずれも成功し、境界テスト12件と公開API検証も成功。18:42 JSTの点検ではmain `f0b1cd5`を基準に10/8〜11/6の30組・60実ページを再照合した。認証なし実ページは全てHTTP 200・タイトル一致。Qiita27本・英語30本の公開APIで本文・タイトル・著者・canonicalが一致し、Zenn3本はpublished・非プレビュー・公開メタデータ・本文表示テキスト・リンクが一致した。過去29組の保存済みIDと初回公開日時を維持し、未完了・期限超過なし。[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-06.json)に根拠を保存した。
 
 追加dispatch・再投稿は行っていない。残り38組（日本語Zenn6・Qiita32と英語38）。次は11/7（土）Zenn P10、最終予定は12/14。各書き込み前にPlaneのhiro-workを確認して[ART-30](https://app.plane.so/hiro-work/browse/ART-30/)をDoneへ更新し、ART-1と運用Wikiへ根拠・残数・次回予定を反映した。APIによる読み戻しで本文・リンク・状態と既存履歴の保持を確認済み。全90組の公開は未完了のためART-1はIn Progressを維持する。
+
+### 2026-11-07の公開確認
+
+P10「個人開発のInitiativeは、全プロダクトを入れる前に共通の完了条件を決める」の日本語版は12:27:29.787 JSTに公開された（Zenn ID 649893）。09:00の目標から3時間27分29.787秒遅れた。英語版は12:27:57 JSTに公開され（dev.to ID 4991673）、公開APIとHTMLのcanonicalはいずれも日本語版のURLと一致した。[Zenn](https://zenn.dev/hirodeath/articles/plane-initiative-personal-products)／[dev.to](https://dev.to/hirodeath/define-shared-acceptance-criteria-before-adding-every-personal-product-to-a-plane-initiative-9kn)
+
+公開runと再確認runはそれぞれ12件のテストに合格し、同じ日英URLを検証した。18:34 JSTにmain `e6c859e` と10/8〜11/7の31組を照合し、認証なしで62ページすべてがHTTP 200を返し、タイトルが一致することを確認した。Zenn 4本は公開状態・表示本文・リンク、Qiita 27本とdev.to 31本はAPIの本文・著者・IDを照合した。英語版31本のcanonicalと、過去30組のID・初回公開日時も一致した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/42334082431)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/42344466243)／[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-07.json)
+
+制作進捗表で公開確認済みは53/90組。残り37組の日本語版はZenn 5本、Qiita 32本。次は11/8のQiita（T23）、次のZennは11/14、最終予定は12/14。ART-31をDoneにし、ART-1はIn Progressを維持した。[ART-31](https://app.plane.so/hiro-work/browse/ART-31/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
