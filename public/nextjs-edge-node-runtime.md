@@ -1,15 +1,17 @@
 ---
-title: "Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する"
+title: Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する
 tags:
   - Next.js
   - Node.js
   - JavaScript
 private: false
-updated_at: "2026-11-08T11:55:15+09:00"
+updated_at: '2026-11-08T18:38:11+09:00'
 id: bbae53f94798eacb90ad
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 runtimeの互換性は、importが通るかだけでなく、HTTPリクエストでその処理を実行できるかまで確認します。Next.js 16.3.4では、Edge側の`eval`を含むルートはbuildに成功しましたが、呼び出すと500になりました。
