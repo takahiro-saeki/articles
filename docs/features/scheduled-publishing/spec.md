@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-07
+- 最終確認日: 2026-11-08
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -310,3 +310,11 @@ P10「個人開発のInitiativeは、全プロダクトを入れる前に共通�
 公開runと再確認runはそれぞれ12件のテストに合格し、同じ日英URLを検証した。18:34 JSTにmain `e6c859e` と10/8〜11/7の31組を照合し、認証なしで62ページすべてがHTTP 200を返し、タイトルが一致することを確認した。Zenn 4本は公開状態・表示本文・リンク、Qiita 27本とdev.to 31本はAPIの本文・著者・IDを照合した。英語版31本のcanonicalと、過去30組のID・初回公開日時も一致した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/42334082431)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/42344466243)／[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-07.json)
 
 制作進捗表で公開確認済みは53/90組。残り37組の日本語版はZenn 5本、Qiita 32本。次は11/8のQiita（T23）、次のZennは11/14、最終予定は12/14。ART-31をDoneにし、ART-1はIn Progressを維持した。[ART-31](https://app.plane.so/hiro-work/browse/ART-31/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
+
+### 2026-11-08の公開確認
+
+T23「Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する」は、Qiitaで11:55:15 JSTに公開された（ID `bbae53f94798eacb90ad`）。09:00の目標から2時間55分15秒遅れた。dev.toはその1秒後の11:55:16 JSTに公開された（ID `4996644`）。英語版の公開APIとHTMLのcanonicalはいずれも日本語版のURLと一致した。[Qiita](https://qiita.com/hiro123/items/bbae53f94798eacb90ad)／[dev.to](https://dev.to/hirodeath/comparing-nextjs-edge-and-nodejs-a-successful-build-is-not-a-successful-request-4cf3)
+
+18:36 JSTにmain `907401b` と10/8〜11/8の32組を照合した。日英64ページすべてが認証なしでHTTP 200を返した。Qiita 28本とdev.to 32本の著者・タイトル・本文、Zenn 4本の公開状態・表示本文・リンク、英語版32本のcanonicalを確認した。既刊31組のID・初回公開日時は前日の記録と一致した。公開・再確認の両runでテスト12件と公開確認が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/42440517974)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/42452598313)／[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-08.json)
+
+制作進捗表では54/90組が公開確認済み。残り36組の日本語版はZenn 5本、Qiita 31本。次は11/9のQiita（T24）、次のZennは11/14、最終予定は12/14。ART-32はDone、ART-1はIn Progress。[ART-32](https://app.plane.so/hiro-work/browse/ART-32/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
