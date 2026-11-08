@@ -1,8 +1,9 @@
 ---
+devto_id: 4996644
 title: "Comparing Next.js Edge and Node.js: a successful build is not a successful request"
-published: false
+published: true
 tags: nextjs, node, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/bbae53f94798eacb90ad
 ---
 
 Runtime compatibility needs an HTTP execution check as well as an import or build check. In Next.js 16.3.4, the Edge route containing `eval` built successfully but returned 500 when called.

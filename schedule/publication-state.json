@@ -282,6 +282,15 @@
       "devto_id": 4991673,
       "devto_url": "https://dev.to/hirodeath/define-shared-acceptance-criteria-before-adding-every-personal-product-to-a-plane-initiative-9kn",
       "verified_at": "2026-11-07T05:51:27.482Z"
+    },
+    "nextjs-edge-node-runtime": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/bbae53f94798eacb90ad",
+      "published_at": "2026-11-08T11:55:15+09:00",
+      "devto_id": 4996644,
+      "devto_url": "https://dev.to/hirodeath/comparing-nextjs-edge-and-nodejs-a-successful-build-is-not-a-successful-request-4cf3",
+      "verified_at": "2026-11-08T02:55:15.128Z"
     }
   }
 }
