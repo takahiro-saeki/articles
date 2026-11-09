@@ -5,11 +5,11 @@ tags:
   - 環境変数
   - JavaScript
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-09T12:16:08+09:00"
+id: a8a76cf36108e1acd369
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `NEXT_PUBLIC_`の値を変更してサーバーを起動し直しても、今回のブラウザー表示はbuild時の値のままでした。一方、動的に描画するServer Componentが読んだサーバー用の値は、起動時の環境変数へ変わりました。

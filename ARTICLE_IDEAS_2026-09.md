@@ -204,7 +204,7 @@
 - T21: [Next.js 16のキャッシュを、レスポンスと取得回数で見分ける](articles/nextjs-cache-response-experiment.md) / [English](devto/nextjs-cache-response-experiment.md)（制作完成・Zenn・予定2026-12-05・予約済み）
 - T22: [Next.jsのMiddlewareをProxyへ移す。名前の変換後にmatcherとruntimeを確認する](public/nextjs-middleware-proxy-migration.md) / [English](devto/nextjs-middleware-proxy-migration.md)（制作完成・Qiita・予定2026-11-06・公開確認済み（2026-11-06））
 - T23: [Next.jsのEdgeとNode.jsを同じ処理で比べる。build成功と実行成功は分けて確認する](public/nextjs-edge-node-runtime.md) / [English](devto/nextjs-edge-node-runtime.md)（制作完成・Qiita・予定2026-11-08・公開確認済み（2026-11-08））
-- T24: [NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する](public/next-public-build-runtime-env.md) / [English](devto/next-public-build-runtime-env.md)（制作完成・Qiita・予定2026-11-09・予約済み）
+- T24: [NEXT_PUBLICは起動時に変わるか。同じNext.js buildを別の環境変数で動かして確認する](public/next-public-build-runtime-env.md) / [English](devto/next-public-build-runtime-env.md)（制作完成・Qiita・予定2026-11-09・公開確認済み（2026-11-09））
 - T25: [Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる](public/next-image-html-network.md) / [English](devto/next-image-html-network.md)（制作完成・Qiita・予定2026-11-10・予約済み）
 - T26: [Expo SecureStoreとAsyncStorageを、秘密情報と復旧方法から使い分ける](public/expo-securestore-asyncstorage-boundary.md) / [English](devto/expo-securestore-asyncstorage-boundary.md)（制作完成・Qiita・予定2026-12-04・予約済み）
 - T27: [Expo Push Token・FCM Token・APNs Tokenは、送信先のAPIから区別する](public/expo-fcm-apns-token-routing.md) / [English](devto/expo-fcm-apns-token-routing.md)（制作完成・Qiita・予定2026-12-06・予約済み）

@@ -1,8 +1,9 @@
 ---
+devto_id: 5001555
 title: "Do NEXT_PUBLIC values change at startup? Run one Next.js build with two environments"
-published: false
+published: true
 tags: nextjs, javascript, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/a8a76cf36108e1acd369
 ---
 
 Changing a `NEXT_PUBLIC_` value and restarting the server left this browser display at its build-time value. A dynamically rendered Server Component, however, read the server-only value supplied at startup.

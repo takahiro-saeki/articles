@@ -291,6 +291,15 @@
       "devto_id": 4996644,
       "devto_url": "https://dev.to/hirodeath/comparing-nextjs-edge-and-nodejs-a-successful-build-is-not-a-successful-request-4cf3",
       "verified_at": "2026-11-08T05:54:53.580Z"
+    },
+    "next-public-build-runtime-env": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/a8a76cf36108e1acd369",
+      "published_at": "2026-11-09T12:16:08+09:00",
+      "devto_id": 5001555,
+      "devto_url": "https://dev.to/hirodeath/do-nextpublic-values-change-at-startup-run-one-nextjs-build-with-two-environments-1i1b",
+      "verified_at": "2026-11-09T03:16:08.176Z"
     }
   }
 }
