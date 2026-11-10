@@ -5,11 +5,11 @@ tags:
   - 画像
   - フロントエンド
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-10T13:55:16+09:00"
+id: ea4b4088ece2f4135edf
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 `Image`が出力した`src`だけを見ても、実際にダウンロードされた画像の幅は分かりませんでした。今回、`src`が幅3840を指す画像でも、ブラウザーの`currentSrc`は幅640を指していました。

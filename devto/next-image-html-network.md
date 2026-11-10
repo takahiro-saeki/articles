@@ -1,8 +1,9 @@
 ---
+devto_id: 5008542
 title: "Which image does Next.js Image fetch? Compare src, srcset, and currentSrc in a browser"
-published: false
+published: true
 tags: nextjs, javascript, webdev, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/ea4b4088ece2f4135edf
 ---
 
 The `src` emitted by Image did not, by itself, reveal the width actually downloaded. In this test, an image whose `src` pointed to width 3840 had a browser `currentSrc` pointing to width 640.

@@ -300,6 +300,15 @@
       "devto_id": 5001555,
       "devto_url": "https://dev.to/hirodeath/do-nextpublic-values-change-at-startup-run-one-nextjs-build-with-two-environments-1i1b",
       "verified_at": "2026-11-09T06:13:35.962Z"
+    },
+    "next-image-html-network": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/ea4b4088ece2f4135edf",
+      "published_at": "2026-11-10T13:55:16+09:00",
+      "devto_id": 5008542,
+      "devto_url": "https://dev.to/hirodeath/which-image-does-nextjs-image-fetch-compare-src-srcset-and-currentsrc-in-a-browser-44b9",
+      "verified_at": "2026-11-10T04:55:16.316Z"
     }
   }
 }
