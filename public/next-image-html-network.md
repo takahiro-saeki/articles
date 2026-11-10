@@ -1,15 +1,17 @@
 ---
-title: "Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる"
+title: Next.jsのImageはどの画像を取得するか。src・srcset・currentSrcを実ブラウザーで比べる
 tags:
   - Next.js
   - 画像
   - フロントエンド
 private: false
-updated_at: "2026-11-10T13:55:16+09:00"
+updated_at: '2026-11-10T18:36:36+09:00'
 id: ea4b4088ece2f4135edf
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 `Image`が出力した`src`だけを見ても、実際にダウンロードされた画像の幅は分かりませんでした。今回、`src`が幅3840を指す画像でも、ブラウザーの`currentSrc`は幅640を指していました。
