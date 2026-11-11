@@ -309,6 +309,15 @@
       "devto_id": 5008542,
       "devto_url": "https://dev.to/hirodeath/which-image-does-nextjs-image-fetch-compare-src-srcset-and-currentsrc-in-a-browser-44b9",
       "verified_at": "2026-11-10T07:09:29.017Z"
+    },
+    "sqlite-foreign-key-child-index": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/ccf00a4a7f6b62166ac1",
+      "published_at": "2026-11-11T12:24:27+09:00",
+      "devto_id": 5014093,
+      "devto_url": "https://dev.to/hirodeath/sqlite-foreign-keys-do-not-create-child-indexes-inspect-a-parent-deletion-plan-1lm7",
+      "verified_at": "2026-11-11T03:24:26.800Z"
     }
   }
 }

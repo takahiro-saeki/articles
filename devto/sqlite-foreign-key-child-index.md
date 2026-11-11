@@ -1,8 +1,9 @@
 ---
+devto_id: 5014093
 title: "SQLite foreign keys do not create child indexes: inspect a parent deletion plan"
-published: false
+published: true
 tags: sqlite, sql, database, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/ccf00a4a7f6b62166ac1
 ---
 
 Writing `REFERENCES parent(id)` in SQLite did not automatically create an index on the child's reference column. Referential-integrity checks still worked, but finding children during a parent deletion used a SCAN.

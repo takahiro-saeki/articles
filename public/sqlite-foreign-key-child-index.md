@@ -5,11 +5,11 @@ tags:
   - SQL
   - データベース
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-11T12:24:27+09:00"
+id: ccf00a4a7f6b62166ac1
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 SQLiteで`REFERENCES parent(id)`を書いても、子テーブルの参照列にindexは自動作成されませんでした。参照整合性の検査は動きますが、親を削除するときの子の検索はSCANになりました。
