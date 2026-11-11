@@ -1,15 +1,17 @@
 ---
-title: "SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する"
+title: SQLiteの外部キーだけでは子のindexはできない。親削除の検索計画で確認する
 tags:
   - SQLite
   - SQL
-  - データベース
+  - Database
 private: false
-updated_at: "2026-11-11T12:24:27+09:00"
+updated_at: '2026-11-11T18:37:00+09:00'
 id: ccf00a4a7f6b62166ac1
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 SQLiteで`REFERENCES parent(id)`を書いても、子テーブルの参照列にindexは自動作成されませんでした。参照整合性の検査は動きますが、親を削除するときの子の検索はSCANになりました。
