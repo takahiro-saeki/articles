@@ -1,15 +1,17 @@
 ---
-title: "Planeのラベルを足す前に、状態と優先度で探せる作業を数える"
+title: Planeのラベルを足す前に、状態と優先度で探せる作業を数える
 tags:
-  - Plane
+  - plane
   - タスク管理
   - 個人開発
 private: false
-updated_at: "2026-11-12T13:34:16+09:00"
+updated_at: '2026-11-12T19:32:45+09:00'
 id: f1bbbf026689df5c5977
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Planeへ分類を追加する前に、既存のプロパティで何を検索できるかを確認します。今回調べたSquadNoteでは、ラベルは0件でした。それでも、状態と優先度は保存されていました。
