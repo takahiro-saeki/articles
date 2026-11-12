@@ -1,8 +1,9 @@
 ---
+devto_id: 5020652
 title: "Before adding Plane labels, count what states and priorities already tell you"
-published: false
+published: true
 tags: plane, productivity, discuss
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/f1bbbf026689df5c5977
 ---
 
 Before adding categories in Plane, check what the existing properties already let you find. SquadNote had no labels in the inspected project, but its work items did have states and priorities.

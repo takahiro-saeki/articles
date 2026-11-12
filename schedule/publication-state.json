@@ -318,6 +318,15 @@
       "devto_id": 5014093,
       "devto_url": "https://dev.to/hirodeath/sqlite-foreign-keys-do-not-create-child-indexes-inspect-a-parent-deletion-plan-1lm7",
       "verified_at": "2026-11-11T06:03:56.637Z"
+    },
+    "plane-label-taxonomy": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/f1bbbf026689df5c5977",
+      "published_at": "2026-11-12T13:34:16+09:00",
+      "devto_id": 5020652,
+      "devto_url": "https://dev.to/hirodeath/before-adding-plane-labels-count-what-states-and-priorities-already-tell-you-2l61",
+      "verified_at": "2026-11-12T04:34:16.043Z"
     }
   }
 }

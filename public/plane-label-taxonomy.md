@@ -5,11 +5,11 @@ tags:
   - タスク管理
   - 個人開発
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-12T13:34:16+09:00"
+id: f1bbbf026689df5c5977
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Planeへ分類を追加する前に、既存のプロパティで何を検索できるかを確認します。今回調べたSquadNoteでは、ラベルは0件でした。それでも、状態と優先度は保存されていました。
