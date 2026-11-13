@@ -1,15 +1,17 @@
 ---
-title: "Planeの横断Viewが0件でも、今日の作業がないとは限らない"
+title: Planeの横断Viewが0件でも、今日の作業がないとは限らない
 tags:
-  - Plane
+  - plane
   - タスク管理
   - 個人開発
 private: false
-updated_at: "2026-11-13T12:48:20+09:00"
+updated_at: '2026-11-13T18:30:24+09:00'
 id: cada1ba1820049fe28f5
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 「自分が担当し、今日までが期限の未完了」を検索すると0件でした。担当者の条件を外すと15件あり、その15件はすべて担当者未設定でした。
