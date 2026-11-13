@@ -166,7 +166,7 @@
 - P03: [PlaneのProject・Module・Cycle・Initiativeを、完了させたいものから選ぶ](articles/plane-project-module-cycle-initiative.md) / [English](devto/plane-project-module-cycle-initiative.md)（制作完成・Zenn・予定2026-09-18・公開確認済み（2026-10-08））
 - P04: [Planeの「確認待ち」をどのグループへ置くか。3プロジェクトの状態を点検する](public/plane-status-by-deliverable.md) / [English](devto/plane-status-by-deliverable.md)（制作完成・Qiita・予定2026-11-26・予約済み）
 - P05: [Planeのラベルを足す前に、状態と優先度で探せる作業を数える](public/plane-label-taxonomy.md) / [English](devto/plane-label-taxonomy.md)（制作完成・Qiita・予定2026-11-12・公開確認済み（2026-11-12））
-- P06: [Planeの横断Viewが0件でも、今日の作業がないとは限らない](public/plane-today-cross-project-view.md) / [English](devto/plane-today-cross-project-view.md)（制作完成・Qiita・予定2026-11-13・予約済み）
+- P06: [Planeの横断Viewが0件でも、今日の作業がないとは限らない](public/plane-today-cross-project-view.md) / [English](devto/plane-today-cross-project-view.md)（制作完成・Qiita・予定2026-11-13・公開確認済み（2026-11-13））
 - P07: [PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する](public/plane-pql-personal-dashboard.md) / [English](devto/plane-pql-personal-dashboard.md)（制作完成・Qiita・予定2026-11-15・予約済み）
 - P08: [週末に終わらなかった作業を、CycleとリリースModuleでどう扱うか](articles/plane-cycle-release-module.md) / [English](devto/plane-cycle-release-module.md)（制作完成・Zenn・予定2026-10-31・公開確認済み（2026-10-31））
 - P09: [PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく](public/plane-version-module.md) / [English](devto/plane-version-module.md)（制作完成・Qiita・予定2026-11-27・予約済み）

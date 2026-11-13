@@ -327,6 +327,15 @@
       "devto_id": 5020652,
       "devto_url": "https://dev.to/hirodeath/before-adding-plane-labels-count-what-states-and-priorities-already-tell-you-2l61",
       "verified_at": "2026-11-12T07:03:43.947Z"
+    },
+    "plane-today-cross-project-view": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/cada1ba1820049fe28f5",
+      "published_at": "2026-11-13T12:48:20+09:00",
+      "devto_id": 5026899,
+      "devto_url": "https://dev.to/hirodeath/an-empty-cross-project-plane-view-does-not-mean-there-is-no-work-for-today-1eba",
+      "verified_at": "2026-11-13T03:48:19.966Z"
     }
   }
 }

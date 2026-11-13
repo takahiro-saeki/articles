@@ -1,8 +1,9 @@
 ---
+devto_id: 5026899
 title: "An empty cross-project Plane view does not mean there is no work for today"
-published: false
+published: true
 tags: plane, productivity, testing
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/cada1ba1820049fe28f5
 ---
 
 Filtering for open work assigned to the caller and due by today returned 0 items. Removing the assignee condition returned 15, all of them unassigned.
