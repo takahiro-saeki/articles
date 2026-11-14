@@ -1,9 +1,10 @@
 ---
+devto_id: 5033266
 title: "Auditing maintenance across two apps by web, OTA, and native release paths"
-published: false
+published: true
 description: "SquadNote and Voices Diary share frameworks but differ in release profiles, runtime policies, and notification scope."
 tags: [expo, nextjs, webdev, productivity]
-canonical_url: "https://zenn.dev/hirodeath/articles/solo-web-ios-maintenance-scope"
+canonical_url: https://zenn.dev/hirodeath/articles/solo-web-ios-maintenance-scope
 ---
 
 Two services built with Next.js and Expo do not necessarily share the same maintenance commands or acceptance checks. Identically named configurations can point to different distribution methods or API environments.

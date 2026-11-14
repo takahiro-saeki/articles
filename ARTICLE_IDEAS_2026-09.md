@@ -244,7 +244,7 @@
 - O16: [63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する](public/trailer-timeline-before-editing.md) / [English](devto/trailer-timeline-before-editing.md)（制作完成・Qiita・予定2026-10-14・公開確認済み（2026-10-14））
 - O17: [AI生成素材の出典、原本、採否をどう残したか](articles/generated-asset-provenance-decisions.md) / [English](devto/generated-asset-provenance-decisions.md)（制作完成・Zenn・予定2026-09-30・公開確認済み（2026-10-08））
 - O18: [ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか](articles/local-image-generation-reproducibility.md) / [English](devto/local-image-generation-reproducibility.md)（制作完成・Zenn・予定2026-10-01・公開確認済み（2026-10-08））
-- O19: [2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする](articles/solo-web-ios-maintenance-scope.md) / [English](devto/solo-web-ios-maintenance-scope.md)（制作完成・Zenn・予定2026-11-14・予約済み）
+- O19: [2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする](articles/solo-web-ios-maintenance-scope.md) / [English](devto/solo-web-ios-maintenance-scope.md)（制作完成・Zenn・予定2026-11-14・公開確認済み（2026-11-14））
 - O20: [複数端末Pushの移行は、旧版のログアウトが残る間は終わらない](articles/expo-multi-device-push-rollout.md) / [English](devto/expo-multi-device-push-rollout.md)（制作完成・Zenn・予定2026-10-17・公開確認済み（2026-10-17））
 - O21: [認証エラーのConfigurationを原因と決めつけず、復旧を確認する](public/auth-incident-recovery-evidence.md) / [English](devto/auth-incident-recovery-evidence.md)（制作完成・Qiita・予定2026-10-15・公開確認済み（2026-10-15））
 - O22: [ゲスト回答をアカウントへ引き継ぐ。名前ではなく回答の操作権を渡す](articles/guest-identity-without-placeholder-user.md) / [English](devto/guest-identity-without-placeholder-user.md)（制作完成・Zenn・予定2026-10-24・公開確認済み（2026-10-24））

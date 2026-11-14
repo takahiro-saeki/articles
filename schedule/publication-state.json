@@ -1,7 +1,7 @@
 {
   "last_zenn_publication": {
-    "slug": "plane-initiative-personal-products",
-    "published_at": "2026-11-07T12:27:29.787+09:00"
+    "slug": "solo-web-ios-maintenance-scope",
+    "published_at": "2026-11-14T12:46:15.949+09:00"
   },
   "articles": {
     "node-esm-commonjs-boundaries": {
@@ -339,8 +339,12 @@
     },
     "solo-web-ios-maintenance-scope": {
       "platform": "zenn",
-      "status": "awaiting_deployment",
-      "requested_at": "2026-11-14T03:46:10.486Z"
+      "status": "verified",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/solo-web-ios-maintenance-scope",
+      "published_at": "2026-11-14T12:46:15.949+09:00",
+      "devto_id": 5033266,
+      "devto_url": "https://dev.to/hirodeath/auditing-maintenance-across-two-apps-by-web-ota-and-native-release-paths-2kd5",
+      "verified_at": "2026-11-14T03:46:43.045Z"
     }
   }
 }
