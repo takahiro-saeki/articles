@@ -336,6 +336,11 @@
       "devto_id": 5026899,
       "devto_url": "https://dev.to/hirodeath/an-empty-cross-project-plane-view-does-not-mean-there-is-no-work-for-today-1eba",
       "verified_at": "2026-11-13T06:32:48.180Z"
+    },
+    "solo-web-ios-maintenance-scope": {
+      "platform": "zenn",
+      "status": "awaiting_deployment",
+      "requested_at": "2026-11-14T03:46:10.486Z"
     }
   }
 }

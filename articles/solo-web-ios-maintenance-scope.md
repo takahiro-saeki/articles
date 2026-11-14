@@ -3,7 +3,7 @@ title: "2サービスの保守を、Web・OTA・ネイティブの配布経路�
 emoji: "🛠️"
 type: "idea"
 topics: ["個人開発", "expo", "nextjs", "運用"]
-published: false
+published: true
 ---
 
 同じNext.jsとExpoを使うサービスが二つあっても、同じコマンドと確認項目だけで保守できるとは限りません。設定名が同じでも、配布先やAPIの接続先が違う場合があります。
