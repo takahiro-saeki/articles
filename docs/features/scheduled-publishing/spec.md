@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-13
+- 最終確認日: 2026-11-15
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -51,7 +51,7 @@ GitHub Actionsの予約実行には遅延があるため09:00は目標時刻で�
 
 - 実装: main反映済み（初回2ecfa9a、結果反映2a88b12、待機ジョブのcheckout修正1827ba3）。再実行37710179409でメタデータ保存まで確認。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
-- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17・10/24・10/31・11/7の公開を確認し、次回は11/14。以後の予定分は未実行。
+- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17・10/24・10/31・11/7・11/14の公開を確認し、次回は11/21。以後の予定分は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。
 - 検証結果・実公開URL: [移行記録](../../../production/2026-09/scheduling/weekly-zenn/README.md)。
 
@@ -358,3 +358,13 @@ P06「Planeの横断Viewが0件でも、今日の作業がないとは限らな�
 18:28 JSTにmain `9cf8d99` と10/8以降の37組を照合した。日英74ページを認証なしで閲覧し、Qiita 33本・dev.to 37本はAPIの著者・タイトル・本文、Zenn 4本は公開状態・表示本文・リンクを確認した。すべての英語版でcanonicalが各日本語版と一致し、既刊36組のIDと初回公開日時も前日の記録と一致した。公開と再確認の両runでテスト12件と公開確認が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/43361355746)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/43379438046)／[点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-13.json)
 
 制作進捗表では59/90組が公開確認済み。残り31組の日本語版はQiita 26本、Zenn 5本。次は11/14（土）のZenn（O19）、最終予定は12/14。ART-37はDone、ART-1はIn Progress。[ART-37](https://app.plane.so/hiro-work/browse/ART-37/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
+
+### 2026-11-14の公開確認（11/15 08:32 JST点検）
+
+O19「2サービスの保守を、Web・OTA・ネイティブの配布経路で棚卸しする」は11/14（土）12:46:15.949 JSTにZennで公開された（ID `649903`、09:00の目標から3時間46分15.949秒遅れ）。英語版は12:46:43 JSTに公開され（dev.to ID `5033266`）、APIと公開ページのcanonicalはどちらもZennの公開URLと一致した。[Zenn](https://zenn.dev/hirodeath/articles/solo-web-ios-maintenance-scope)／[dev.to](https://dev.to/hirodeath/auditing-maintenance-across-two-apps-by-web-ota-and-native-release-paths-2kd5)
+
+公開runはZennの初回取得で403を受け、同じrun内の再確認で公開を確認した。公開・再確認の両runでテスト12件が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/43553306858)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/43565057598)
+
+11/15 08:32 JSTにmain `3ffb677` を基準に、10/8〜11/14の38組・76ページをログインなしで照合した。日本語はQiita 33本とZenn 5本。英語版38本のcanonical、既刊37組のIDと初回公開日時はいずれも記録と一致した。[38組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-14.json)
+
+制作進捗表は60/90組が公開確認済み。残り30組（Qiita 26本、Zenn 4本）は11/15のQiita（P07、09:00 JST目標）から12/14まで。次のZennは11/21。ART-38はDone、ART-1はIn Progress。[ART-38](https://app.plane.so/hiro-work/browse/ART-38/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
