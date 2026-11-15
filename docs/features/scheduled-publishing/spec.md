@@ -368,3 +368,11 @@ O19「2サービスの保守を、Web・OTA・ネイティブの配布経路で�
 11/15 08:32 JSTにmain `3ffb677` を基準に、10/8〜11/14の38組・76ページをログインなしで照合した。日本語はQiita 33本とZenn 5本。英語版38本のcanonical、既刊37組のIDと初回公開日時はいずれも記録と一致した。[38組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-14.json)
 
 制作進捗表は60/90組が公開確認済み。残り30組（Qiita 26本、Zenn 4本）は11/15のQiita（P07、09:00 JST目標）から12/14まで。次のZennは11/21。ART-38はDone、ART-1はIn Progress。[ART-38](https://app.plane.so/hiro-work/browse/ART-38/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
+
+### 2026-11-15の公開確認
+
+P07「PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する」は12:25:40 JSTにQiitaで公開された（ID `8c2b1d1851c405782dd6`）。09:00の目標から3時間25分40秒遅れた。dev.toの公開は1秒後の12:25:41 JST（ID `5039148`）。英語版のAPIとHTMLのcanonicalはいずれもQiitaの公開URLを指している。[Qiita](https://qiita.com/hiro123/items/8c2b1d1851c405782dd6)／[dev.to](https://dev.to/hirodeath/parentheses-change-plane-pql-results-compare-121-and-150-items-by-state-1bd1)
+
+18:33 JSTにmain `7150e07` の原稿と10/8〜11/15の39組を照合した。日英78ページをログインなしで閲覧し、Qiita 34本とdev.to 39本の著者・タイトル・本文、Zenn 5本の公開状態・表示本文・リンクを確認した。英語版39本のcanonicalと既刊38組のID・初回公開日時も一致した。公開・再確認の両runでテスト12件と日英の公開確認が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/43672304392)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/43684831563)／[39組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-15.json)
+
+制作進捗表では61/90組が公開確認済み。残り29組の日本語版はQiita 25本、Zenn 4本。次は11/16のQiita（P11）、次のZennは11/21、最終予定は12/14。ART-39はDone、ART-1はIn Progress。[ART-39](https://app.plane.so/hiro-work/browse/ART-39/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)

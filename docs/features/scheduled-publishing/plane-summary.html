@@ -2,7 +2,7 @@
 <p>機能ID: scheduled-publishing。Project: articles (ART)、Workspace: hiro-work。最終確認: 2026-11-15。</p>
 <h2>公開スケジュール</h2>
 <p>日本語は1日1本、09:00 JSTを目標に公開する。Zennは毎週土曜1本、10/17・10/24・10/31・11/7・11/14の公開を確認済み。次回は11/21。その他の日はQiita。dev.toは対応する日本語の実公開を確認してから公開・更新する。</p>
-<p>90本の日英原稿は完成済み。11/14のO19公開後、日本語の残りは30本（Zenn4、Qiita26）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
+<p>90本の日英原稿は完成済み。11/15のP07公開後、日本語の残りは29本（Zenn4、Qiita25）。最終予定日は2026-12-14。個別の期日はART-1配下の67チケットと<a rel="noopener noreferrer" href="https://github.com/takahiro-saeki/articles/blob/main/schedule/ARTICLE_SCHEDULE_2026-09.md">90本の予約表</a>で確認する。予約の正本はGit。</p>
 <p>Zennの残り予定: 11/21、11/28、12/5、12/12。直近のZenn実公開は11/14 12:46:15.949 JST。</p>
 <h2>日次運用</h2>
 <ol><li><p>GitHub Actionsのpublish-scheduled.ymlが当日の日本語を公開し、公開API・認証なし実ページを確認する。</p>
@@ -116,3 +116,8 @@
 <p>11/14のO19は、Zennで12:46:15.949 JSTに公開された（ID 649903、09:00の目標から3時間46分15.949秒遅れ）。dev.toの公開は12:46:43 JST（ID 5033266）。両ページをログインなしで閲覧し、本文と著者を原稿・公開メタデータと照合した。英語版のAPIとHTMLでcanonicalがZennの公開URLと一致した。<a href="https://zenn.dev/hirodeath/articles/solo-web-ios-maintenance-scope">日本語版</a>／<a href="https://dev.to/hirodeath/auditing-maintenance-across-two-apps-by-web-ota-and-native-release-paths-2kd5">英語版</a></p>
 <p>公開runはZennの初回取得で403を受けた後、同じrun内で公開確認に成功した。再確認runも成功し、両runでテスト12件が通過した。<a href="https://github.com/takahiro-saeki/articles/actions/runs/43553306858">公開run</a>／<a href="https://github.com/takahiro-saeki/articles/actions/runs/43565057598">再確認run</a></p>
 <p>10/8〜11/14の38組・76ページをログインなしで確認した。英語版38本のcanonicalは日本語版のURLと一致し、既刊37組のIDと初回公開日時も前回の記録と一致した。進捗表では60/90組が公開確認済み。残り30組（Qiita 26本、Zenn 4本）の先頭は11/15のQiita（P07、09:00 JST目標）。次のZennは11/21、最終予定は12/14。<a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-11-14.json">38組の点検記録</a></p>
+
+<h2>2026-11-15 18:33 JST 公開確認</h2>
+<p>P07「PlaneのPQLは括弧で結果が変わる。121件と150件を状態別に照合する」は12:25:40 JSTにQiitaで公開された（ID 8c2b1d1851c405782dd6）。09:00の目標から3時間25分40秒遅れた。英語版は1秒後の12:25:41 JSTに公開された（dev.to ID 5039148）。日英ともにログインなしで閲覧でき、公開APIの著者・タイトル・本文は原稿と一致した。英語版のAPIとHTMLはいずれもQiitaの公開URLをcanonicalに指定している。<a href="https://qiita.com/hiro123/items/8c2b1d1851c405782dd6">日本語版</a>／<a href="https://dev.to/hirodeath/parentheses-change-plane-pql-results-compare-121-and-150-items-by-state-1bd1">英語版</a></p>
+<p>公開runと再確認runはいずれもテスト12件と日英の公開確認に成功した。<a href="https://github.com/takahiro-saeki/articles/actions/runs/43672304392">公開run</a>／<a href="https://github.com/takahiro-saeki/articles/actions/runs/43684831563">再確認run</a></p>
+<p>10/8〜11/15の39組・78ページをログインなしで確認した。すべての英語版でcanonicalが日本語版の公開URLと一致し、既刊38組のIDと初回公開日時も前回の記録と一致した。進捗表では61/90組が公開確認済み。残り29組の日本語版はQiita 25本、Zenn 4本。次は11/16のQiita（P11）、次のZennは11/21、最終予定は12/14。<a href="https://github.com/takahiro-saeki/articles/blob/main/production/2026-09/scheduling/publication-check-2026-11-15.json">39組の点検記録</a></p>
