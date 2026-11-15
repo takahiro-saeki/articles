@@ -345,6 +345,15 @@
       "devto_id": 5033266,
       "devto_url": "https://dev.to/hirodeath/auditing-maintenance-across-two-apps-by-web-ota-and-native-release-paths-2kd5",
       "verified_at": "2026-11-14T06:10:54.792Z"
+    },
+    "plane-pql-personal-dashboard": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/8c2b1d1851c405782dd6",
+      "published_at": "2026-11-15T12:25:40+09:00",
+      "devto_id": 5039148,
+      "devto_url": "https://dev.to/hirodeath/parentheses-change-plane-pql-results-compare-121-and-150-items-by-state-1bd1",
+      "verified_at": "2026-11-15T03:25:40.040Z"
     }
   }
 }

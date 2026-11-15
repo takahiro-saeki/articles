@@ -1,8 +1,9 @@
 ---
+devto_id: 5039148
 title: "Parentheses change Plane PQL results: compare 121 and 150 items by state"
-published: false
+published: true
 tags: plane, testing, productivity
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/8c2b1d1851c405782dd6
 ---
 
 A query intended to find open High or Urgent work can include completed items when AND and OR are combined incorrectly. In the personal workspace, parentheses produced 121 results; removing them produced 150. The extra 29 were Completed.

@@ -5,11 +5,11 @@ tags:
   - タスク管理
   - テスト
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-15T12:25:40+09:00"
+id: 8c2b1d1851c405782dd6
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 未完了のHighまたはUrgentを探すつもりでも、ANDとORの組み合わせによって完了済みが入ります。個人Workspaceで実行すると、括弧を付けた式は121件、付けない式は150件でした。増えた29件はCompletedです。
