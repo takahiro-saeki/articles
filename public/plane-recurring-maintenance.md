@@ -1,15 +1,17 @@
 ---
-title: "Planeの定期作業は、次回の起票と前回の未完了を分けて管理する"
+title: Planeの定期作業は、次回の起票と前回の未完了を分けて管理する
 tags:
-  - Plane
+  - plane
   - タスク管理
   - 運用
 private: false
-updated_at: "2026-11-16T12:26:11+09:00"
+updated_at: '2026-11-16T18:35:11+09:00'
 id: 880b4e5c4b3a2211f6ee
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 毎週の保守を自動で起票しても、先週の確認が終わったことにはなりません。PlaneのRecurring Work Itemsを使うなら、新しく作る一回分の内容と、すでに作られた未完了の扱いを決めます。
