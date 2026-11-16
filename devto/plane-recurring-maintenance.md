@@ -1,8 +1,9 @@
 ---
+devto_id: 5044628
 title: "Plane recurring work needs two checks: the next instance and unfinished earlier work"
-published: false
+published: true
 tags: plane, productivity, discuss
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/880b4e5c4b3a2211f6ee
 ---
 
 Automatically creating this week's maintenance task does not finish last week's check. When adopting Plane Recurring Work Items, define both the next instance's scope and how unfinished earlier instances will be handled.
