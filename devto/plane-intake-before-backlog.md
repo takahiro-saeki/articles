@@ -1,8 +1,9 @@
 ---
+devto_id: 5054294
 title: "Before using Plane Intake, separate the triage decision from the work state"
-published: false
+published: true
 tags: plane, productivity, discuss
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/c90cab42c97015d63d9c
 ---
 
 An idea or request need not immediately enter the execution backlog. Before adopting Plane Intake as a personal collection point, decide who submits to it and what must be checked before work enters a project.

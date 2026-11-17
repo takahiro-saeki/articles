@@ -5,11 +5,11 @@ tags:
   - タスク管理
   - 個人開発
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-17T14:25:46+09:00"
+id: c90cab42c97015d63d9c
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 思いつきや要望を、すぐ実行するバックログへ入れる必要はありません。ただし、PlaneのIntakeを個人用メモ箱として採用する前に、誰から受け付け、何を確かめてProjectへ入れるかを決めます。

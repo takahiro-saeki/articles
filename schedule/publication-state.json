@@ -363,6 +363,15 @@
       "devto_id": 5044628,
       "devto_url": "https://dev.to/hirodeath/plane-recurring-work-needs-two-checks-the-next-instance-and-unfinished-earlier-work-2c5n",
       "verified_at": "2026-11-16T06:17:39.688Z"
+    },
+    "plane-intake-before-backlog": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/c90cab42c97015d63d9c",
+      "published_at": "2026-11-17T14:25:46+09:00",
+      "devto_id": 5054294,
+      "devto_url": "https://dev.to/hirodeath/before-using-plane-intake-separate-the-triage-decision-from-the-work-state-262p",
+      "verified_at": "2026-11-17T05:25:46.563Z"
     }
   }
 }
