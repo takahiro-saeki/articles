@@ -1,8 +1,9 @@
 ---
+devto_id: 5061737
 title: "Separate reusable settings from per-project decisions in Plane Project Templates"
-published: false
+published: true
 tags: plane, productivity, discuss
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/8f4521097d2e25df5c20
 ---
 
 When templating the start of a personal project, do not blindly reuse the previous project's identifier, dates, or assignee. Reuse the initial checks, while deciding the repository and delivery path for each new project.
