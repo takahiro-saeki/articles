@@ -1,15 +1,17 @@
 ---
-title: "PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる"
+title: PlaneのProject Templateには、固定する設定と毎回確認する値を分けて入れる
 tags:
-  - Plane
+  - plane
   - 個人開発
   - タスク管理
 private: false
-updated_at: "2026-11-18T13:52:15+09:00"
+updated_at: '2026-11-19T07:50:41+09:00'
 id: 8f4521097d2e25df5c20
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 新しい個人開発の準備をテンプレート化するとき、前のProjectの識別子、期限、担当者まで無条件に使い回さないようにします。共通にするのは開始時の確認手順で、対象のリポジトリや配布経路は新しいProjectごとに決めます。
