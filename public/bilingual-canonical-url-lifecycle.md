@@ -1,15 +1,17 @@
 ---
-title: "日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う"
+title: 日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う
 tags:
   - Qiita
   - devto
   - JavaScript
 private: false
-updated_at: "2026-11-19T13:44:12+09:00"
+updated_at: '2026-11-19T18:31:46+09:00'
 id: 1b3443fc226334eeb599
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Qiita向け日本語記事をまだ作成していない段階では、英語版のcanonical URLに必要な記事IDがありません。このリポジトリでは、Zennはslugから予定URLを組み立て、Qiitaは投稿APIの応答URLを使っています。原稿を揃えることと、URLを確定することは別の工程です。
