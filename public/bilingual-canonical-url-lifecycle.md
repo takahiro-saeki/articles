@@ -5,11 +5,11 @@ tags:
   - devto
   - JavaScript
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-19T13:44:12+09:00"
+id: 1b3443fc226334eeb599
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Qiita向け日本語記事をまだ作成していない段階では、英語版のcanonical URLに必要な記事IDがありません。このリポジトリでは、Zennはslugから予定URLを組み立て、Qiitaは投稿APIの応答URLを使っています。原稿を揃えることと、URLを確定することは別の工程です。

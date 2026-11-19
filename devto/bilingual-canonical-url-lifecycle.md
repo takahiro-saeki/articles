@@ -1,8 +1,9 @@
 ---
+devto_id: 5070264
 title: "A bilingual article\u2019s canonical URL changes from a draft decision to an API result"
-published: false
+published: true
 tags: writing, javascript, discuss
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/1b3443fc226334eeb599
 ---
 
 Before a Japanese Qiita article has been created, its English counterpart lacks the article ID needed for its canonical URL. This repository constructs a planned Zenn URL from the slug and uses the publishing API's response URL for Qiita. Manuscripts and their URLs become ready at different stages.

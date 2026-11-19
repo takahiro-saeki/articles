@@ -381,6 +381,15 @@
       "devto_id": 5061737,
       "devto_url": "https://dev.to/hirodeath/separate-reusable-settings-from-per-project-decisions-in-plane-project-templates-bo3",
       "verified_at": "2026-11-18T07:16:28.599Z"
+    },
+    "bilingual-canonical-url-lifecycle": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/1b3443fc226334eeb599",
+      "published_at": "2026-11-19T13:44:12+09:00",
+      "devto_id": 5070264,
+      "devto_url": "https://dev.to/hirodeath/a-bilingual-articles-canonical-url-changes-from-a-draft-decision-to-an-api-result-4e95",
+      "verified_at": "2026-11-19T04:44:12.275Z"
     }
   }
 }

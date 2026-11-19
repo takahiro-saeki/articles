@@ -227,7 +227,7 @@
 - T44: [Idempotency Keyを付けるだけでは二重処理を防げない。結果の保存まで検証する](public/idempotency-key-result-storage.md) / [English](devto/idempotency-key-result-storage.md)（制作完成・Qiita・予定2026-10-10・公開確認済み（2026-10-10））
 - T45: [OutboxでDB更新と通知をつなぐ。通知の意図が残ることと重複しないことを分ける](public/outbox-database-notification-boundary.md) / [English](devto/outbox-database-notification-boundary.md)（制作完成・Qiita・予定2026-10-11・公開確認済み（2026-10-11））
 - O01: [38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える](articles/publishing-38-day-audit.md) / [English](devto/publishing-38-day-audit.md)（制作完成・Zenn・予定2026-09-13・公開確認済み（2026-10-08））
-- O02: [日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う](public/bilingual-canonical-url-lifecycle.md) / [English](devto/bilingual-canonical-url-lifecycle.md)（制作完成・Qiita・予定2026-11-19・予約済み）
+- O02: [日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う](public/bilingual-canonical-url-lifecycle.md) / [English](devto/bilingual-canonical-url-lifecycle.md)（制作完成・Qiita・予定2026-11-19・公開確認済み（2026-11-19））
 - O03: [予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する](articles/scheduled-publishing-recovery-boundary.md) / [English](devto/scheduled-publishing-recovery-boundary.md)（制作完成・Zenn・予定2026-09-23・公開確認済み（2026-10-08））
 - O04: [記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える](public/article-stock-coverage-days.md) / [English](devto/article-stock-coverage-days.md)（制作完成・Qiita・予定2026-11-20・予約済み）
 - O05: [Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法](articles/repository-decision-log-evidence.md) / [English](devto/repository-decision-log-evidence.md)（制作完成・Zenn・予定2026-09-17・公開確認済み（2026-10-08））
