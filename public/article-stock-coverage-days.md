@@ -1,15 +1,17 @@
 ---
-title: "記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える"
+title: 記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える
 tags:
   - 記事執筆
   - Python
   - 個人開発
 private: false
-updated_at: "2026-11-20T13:35:14+09:00"
+updated_at: '2026-11-20T18:35:18+09:00'
 id: 473cf672ed36695ea711
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 日英の原稿が136ファイルあっても、136日分のストックにはなりません。同じ内容の日英は一組です。さらに、本文が検証済みでもcanonical URLが未確定なら、この制作ルールでは完成した一組に数えられません。
