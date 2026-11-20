@@ -5,11 +5,11 @@ tags:
   - Python
   - 個人開発
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-20T13:35:14+09:00"
+id: 473cf672ed36695ea711
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 日英の原稿が136ファイルあっても、136日分のストックにはなりません。同じ内容の日英は一組です。さらに、本文が検証済みでもcanonical URLが未確定なら、この制作ルールでは完成した一組に数えられません。

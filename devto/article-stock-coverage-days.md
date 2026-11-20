@@ -1,8 +1,9 @@
 ---
+devto_id: 5078736
 title: "How many days of article stock remain? Count bilingual pairs against platform slots"
-published: false
+published: true
 tags: writing, python, productivity
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/473cf672ed36695ea711
 ---
 
 Having 136 Japanese and English manuscript files does not provide 136 days of stock. Two language versions of the same content form one pair. Under this production policy, a verified body with an unresolved canonical URL also does not count as a completed pair.

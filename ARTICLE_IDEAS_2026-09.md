@@ -229,7 +229,7 @@
 - O01: [38日分のQiita・Zenn・dev.to投稿記録を監査する。予約と公開済みを分けて数える](articles/publishing-38-day-audit.md) / [English](devto/publishing-38-day-audit.md)（制作完成・Zenn・予定2026-09-13・公開確認済み（2026-10-08））
 - O02: [日英記事のcanonical URLは、原稿作成時と投稿応答後で確定方法が違う](public/bilingual-canonical-url-lifecycle.md) / [English](devto/bilingual-canonical-url-lifecycle.md)（制作完成・Qiita・予定2026-11-19・公開確認済み（2026-11-19））
 - O03: [予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する](articles/scheduled-publishing-recovery-boundary.md) / [English](devto/scheduled-publishing-recovery-boundary.md)（制作完成・Zenn・予定2026-09-23・公開確認済み（2026-10-08））
-- O04: [記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える](public/article-stock-coverage-days.md) / [English](devto/article-stock-coverage-days.md)（制作完成・Qiita・予定2026-11-20・予約済み）
+- O04: [記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える](public/article-stock-coverage-days.md) / [English](devto/article-stock-coverage-days.md)（制作完成・Qiita・予定2026-11-20・公開確認済み（2026-11-20））
 - O05: [Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法](articles/repository-decision-log-evidence.md) / [English](devto/repository-decision-log-evidence.md)（制作完成・Zenn・予定2026-09-17・公開確認済み（2026-10-08））
 - O06: [GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける](public/personal-company-github-identity-guard.md) / [English](devto/personal-company-github-identity-guard.md)（制作完成・Qiita・予定2026-11-22・予約済み）
 - O07: [AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む](articles/ai-code-review-invariants.md) / [English](devto/ai-code-review-invariants.md)（制作完成・Zenn・予定2026-09-21・公開確認済み（2026-10-08））
