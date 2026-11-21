@@ -3,7 +3,7 @@ title: "Plane Cloudとセルフホストを、復元時に引き受ける作業�
 emoji: "🗄️"
 type: "tech"
 topics: ["plane", "docker", "selfhosted", "個人開発"]
-published: false
+published: true
 ---
 
 Planeを個人で使うなら、無料のCommunity Editionを自分のサーバーへ置くほうがよいのでしょうか。比較するときは、月額だけでなく、壊れた管理環境を自分で戻せるかまで含めたいところです。

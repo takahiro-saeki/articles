@@ -399,6 +399,11 @@
       "devto_id": 5078736,
       "devto_url": "https://dev.to/hirodeath/how-many-days-of-article-stock-remain-count-bilingual-pairs-against-platform-slots-1h80",
       "verified_at": "2026-11-20T07:04:13.357Z"
+    },
+    "plane-cloud-self-host-comparison": {
+      "platform": "zenn",
+      "status": "awaiting_deployment",
+      "requested_at": "2026-11-21T04:29:44.543Z"
     }
   }
 }
