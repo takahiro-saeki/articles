@@ -1,9 +1,10 @@
 ---
+devto_id: 5085825
 title: "Comparing Plane Cloud and self-hosting by the recovery work you take on"
-published: false
+published: true
 description: "A fault-injection experiment with Plane's Community restore CLI adds recovery verification to a personal hosting decision."
 tags: [plane, docker, selfhosted, devops]
-canonical_url: "https://zenn.dev/hirodeath/articles/plane-cloud-self-host-comparison"
+canonical_url: https://zenn.dev/hirodeath/articles/plane-cloud-self-host-comparison
 ---
 
 For personal use, is it better to put Plane's free Community Edition on your own server? The comparison should include whether you can recover the task management environment after a failure, alongside its monthly price.

@@ -1,7 +1,7 @@
 {
   "last_zenn_publication": {
-    "slug": "solo-web-ios-maintenance-scope",
-    "published_at": "2026-11-14T12:46:15.949+09:00"
+    "slug": "plane-cloud-self-host-comparison",
+    "published_at": "2026-11-21T13:29:49.292+09:00"
   },
   "articles": {
     "node-esm-commonjs-boundaries": {
@@ -402,8 +402,12 @@
     },
     "plane-cloud-self-host-comparison": {
       "platform": "zenn",
-      "status": "awaiting_deployment",
-      "requested_at": "2026-11-21T04:29:44.543Z"
+      "status": "verified",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/plane-cloud-self-host-comparison",
+      "published_at": "2026-11-21T13:29:49.292+09:00",
+      "devto_id": 5085825,
+      "devto_url": "https://dev.to/hirodeath/comparing-plane-cloud-and-self-hosting-by-the-recovery-work-you-take-on-1c48",
+      "verified_at": "2026-11-21T04:30:16.274Z"
     }
   }
 }
