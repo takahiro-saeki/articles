@@ -1,15 +1,17 @@
 ---
-title: "GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける"
+title: GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける
 tags:
   - GitHub
   - Git
   - ShellScript
 private: false
-updated_at: "2026-11-22T12:43:08+09:00"
+updated_at: '2026-11-22T18:30:54+09:00'
 id: 6f8d24d9fc9c24ec80b4
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 個人用と会社用のGitHubアカウントを使う環境では、ディレクトリから期待するアカウントを決め、その実行環境で実際に使うアカウントを確認します。remoteのownerを見ただけでは、認証する主体は確定しません。
