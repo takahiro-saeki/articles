@@ -1,8 +1,9 @@
 ---
+devto_id: 5091584
 title: "Check GitHub identity and destination before pushing: a hook denial is only part of the check"
-published: false
+published: true
 tags: github, git, security
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/6f8d24d9fc9c24ec80b4
 ---
 
 When personal and company GitHub accounts share an environment, use the working directory to select the expected account, then check which account the execution environment actually uses. A remote's owner alone does not establish the authenticated identity.

@@ -5,11 +5,11 @@ tags:
   - Git
   - ShellScript
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-22T12:43:08+09:00"
+id: 6f8d24d9fc9c24ec80b4
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 個人用と会社用のGitHubアカウントを使う環境では、ディレクトリから期待するアカウントを決め、その実行環境で実際に使うアカウントを確認します。remoteのownerを見ただけでは、認証する主体は確定しません。

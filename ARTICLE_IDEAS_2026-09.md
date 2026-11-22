@@ -231,7 +231,7 @@
 - O03: [予約投稿の再実行で重複を防げる範囲。保存済みIDと応答消失を分けて検証する](articles/scheduled-publishing-recovery-boundary.md) / [English](devto/scheduled-publishing-recovery-boundary.md)（制作完成・Zenn・予定2026-09-23・公開確認済み（2026-10-08））
 - O04: [記事ストックは何日分あるか。日英の組と媒体別の公開枠から数える](public/article-stock-coverage-days.md) / [English](devto/article-stock-coverage-days.md)（制作完成・Qiita・予定2026-11-20・公開確認済み（2026-11-20））
 - O05: [Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法](articles/repository-decision-log-evidence.md) / [English](devto/repository-decision-log-evidence.md)（制作完成・Zenn・予定2026-09-17・公開確認済み（2026-10-08））
-- O06: [GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける](public/personal-company-github-identity-guard.md) / [English](devto/personal-company-github-identity-guard.md)（制作完成・Qiita・予定2026-11-22・予約済み）
+- O06: [GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける](public/personal-company-github-identity-guard.md) / [English](devto/personal-company-github-identity-guard.md)（制作完成・Qiita・予定2026-11-22・公開確認済み（2026-11-22））
 - O07: [AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む](articles/ai-code-review-invariants.md) / [English](devto/ai-code-review-invariants.md)（制作完成・Zenn・予定2026-09-21・公開確認済み（2026-10-08））
 - O08: [Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す](public/long-task-repository-handoff.md) / [English](devto/long-task-repository-handoff.md)（制作完成・Qiita・予定2026-11-23・予約済み）
 - O09: [AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる](articles/devlog-primary-source-reconstruction.md) / [English](devto/devlog-primary-source-reconstruction.md)（制作完成・Zenn・予定2026-09-28・公開確認済み（2026-10-08））
