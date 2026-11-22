@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-21 18:37 JST
+- 最終確認日: 2026-11-22 18:28 JST
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -426,3 +426,11 @@ P20「Plane Cloudとセルフホストを、復元時に引き受ける作業か
 P20の最初の本文比較は、ローカル点検処理が太字のMarkdown記号を除いていなかったため不一致になった。差分はその記号だけと確認し、コード内の文字を保持した正規化へ修正した。太字、インラインコード、コードフェンス、本文改変の検出、P20の表示本文の5ケースを確認し、P20の日英を再取得して照合した。他44組の成功結果は保持した。原稿・公開内容の修正や再投稿は行っていない。
 
 制作進捗表では67/90組が公開確認済み。残り23組の日本語版はQiita 20本とZenn 3本。次は11/22のQiita（O06）、次のZennは11/28、最終予定は12/14。期限超過の未完了はなく、追加dispatchは不要だった。ART-45をDone、ART-1をIn Progressとして記録し、運用Wikiと機能一覧も更新・読み戻し確認済み。[ART-45](https://app.plane.so/hiro-work/browse/ART-45/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
+
+### 2026-11-22の公開確認
+
+O06「GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける」は12:43:08 JSTにQiitaで公開された（ID `6f8d24d9fc9c24ec80b4`）。09:00の目標から3時間43分8秒遅れた。英語版は1秒後の12:43:09 JSTに公開され（dev.to ID `5091584`）、APIとHTMLのcanonicalはいずれもQiitaの公開URLと一致した。[Qiita](https://qiita.com/hiro123/items/6f8d24d9fc9c24ec80b4)／[dev.to](https://dev.to/hirodeath/check-github-identity-and-destination-before-pushing-a-hook-denial-is-only-part-of-the-check-17g7)
+
+18:28 JSTにmain `9d66641` の原稿と10/8〜11/22の46組を照合した。日英92ページをログインなしで閲覧し、Qiita 40本とdev.to 46本の著者・タイトル・本文、Zenn 6本の公開状態・表示本文・リンクを確認した。英語版46本のcanonicalと既刊45組のID・初回公開日時も一致した。公開・再確認の両runでテスト12件と日英の公開確認が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/44981877340)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/44994562976)／[46組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-22.json)
+
+制作進捗表では68/90組が公開確認済み。残り22組の日本語版はQiita 19本とZenn 3本。次は11/23のQiita（O08）、次のZennは11/28、最終予定は12/14。期限超過の未完了はなく、追加dispatch・再投稿は行っていない。ART-46をDone、ART-1をIn Progressとして記録し、運用Wikiと機能一覧も更新・読み戻し確認済み。[ART-46](https://app.plane.so/hiro-work/browse/ART-46/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
