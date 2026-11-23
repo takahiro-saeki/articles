@@ -1,8 +1,9 @@
 ---
+devto_id: 5097360
 title: "Resume a long Codex task by reconstructing progress from its evidence files"
-published: false
+published: true
 tags: ai, git, productivity
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/744207e9b50b429ca837
 ---
 
 A handoff saying "68 articles are done" is insufficient for resuming a long writing task. Of the 68 pairs with verified bodies, only 41 were complete with resolved URLs. The remaining 27 were waiting for canonical URLs, not for their bodies to be rewritten.

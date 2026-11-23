@@ -5,11 +5,11 @@ tags:
   - Git
   - ドキュメント
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-23T13:19:54+09:00"
+id: 744207e9b50b429ca837
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 長い記事制作を再開するとき、「68本できた」という引き継ぎだけでは次の作業を決められません。本文の検証が終わった68組のうち、URLまで確定した完成品は41組でした。残る27組は本文を書き直す対象ではなく、canonical URL待ちです。

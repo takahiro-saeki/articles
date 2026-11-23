@@ -233,7 +233,7 @@
 - O05: [Codexとの判断をリポジトリへ残す。決定ログを実装と検証から読み直す方法](articles/repository-decision-log-evidence.md) / [English](devto/repository-decision-log-evidence.md)（制作完成・Zenn・予定2026-09-17・公開確認済み（2026-10-08））
 - O06: [GitHubの誤アカウントpushを防ぐ前提確認。hookの拒否と確認失敗を分ける](public/personal-company-github-identity-guard.md) / [English](devto/personal-company-github-identity-guard.md)（制作完成・Qiita・予定2026-11-22・公開確認済み（2026-11-22））
 - O07: [AIが書いたコードを「動いた」で終わらせない。条件を一つ壊してテストを読む](articles/ai-code-review-invariants.md) / [English](devto/ai-code-review-invariants.md)（制作完成・Zenn・予定2026-09-21・公開確認済み（2026-10-08））
-- O08: [Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す](public/long-task-repository-handoff.md) / [English](devto/long-task-repository-handoff.md)（制作完成・Qiita・予定2026-11-23・予約済み）
+- O08: [Codexの長い作業を再開するとき、進捗件数を根拠ファイルから組み直す](public/long-task-repository-handoff.md) / [English](devto/long-task-repository-handoff.md)（制作完成・Qiita・予定2026-11-23・公開確認済み（2026-11-23））
 - O09: [AIチャットから制作記を書く前に、数字と完了状態を一次資料で確かめる](articles/devlog-primary-source-reconstruction.md) / [English](devto/devlog-primary-source-reconstruction.md)（制作完成・Zenn・予定2026-09-28・公開確認済み（2026-10-08））
 - O10: [Game Jamのリポジトリを次回も使う。イベントの境界と書き出し先を固定する](articles/game-jam-repository-reuse.md) / [English](devto/game-jam-repository-reuse.md)（制作完成・Zenn・予定2026-09-22・公開確認済み（2026-10-08））
 - O11: [ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する](public/game-prototype-archive-decisions.md) / [English](devto/game-prototype-archive-decisions.md)（制作完成・Qiita・予定2026-11-24・予約済み）

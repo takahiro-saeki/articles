@@ -417,6 +417,15 @@
       "devto_id": 5091584,
       "devto_url": "https://dev.to/hirodeath/check-github-identity-and-destination-before-pushing-a-hook-denial-is-only-part-of-the-check-17g7",
       "verified_at": "2026-11-22T06:37:38.776Z"
+    },
+    "long-task-repository-handoff": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/744207e9b50b429ca837",
+      "published_at": "2026-11-23T13:19:54+09:00",
+      "devto_id": 5097360,
+      "devto_url": "https://dev.to/hirodeath/resume-a-long-codex-task-by-reconstructing-progress-from-its-evidence-files-4kal",
+      "verified_at": "2026-11-23T04:19:54.530Z"
     }
   }
 }
