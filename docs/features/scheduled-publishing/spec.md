@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-23 18:32 JST
+- 最終確認日: 2026-11-24 18:36 JST
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -444,3 +444,11 @@ O08「Codexの長い作業を再開するとき、進捗件数を根拠ファイ
 制作進捗表では69/90組が公開確認済み。残り21組の日本語版はQiita 18本とZenn 3本。次は11/24のQiita（O11）、次のZennは11/28、最終予定は12/14。期限超過の未完了はなく、追加dispatch・再投稿は行っていない。ART-47をDone、ART-1をIn Progressとして記録し、運用Wikiと機能一覧も更新・読み戻し確認済み。[ART-47](https://app.plane.so/hiro-work/browse/ART-47/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
 
 運用Wikiの初回更新はHTTP 413で拒否された。再取得で未更新と確認し、送信HTMLからエディターのclass・data属性だけを除いて再送した。本文と141件のリンクは保持され、更新後の読み戻しも一致した。記事の公開処理への影響はない。
+
+### 2026-11-24の公開確認
+
+O11「ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する」は16:17:23 JSTにQiitaで公開された（ID `587233a9aae250422bfe`）。09:00の目標から7時間17分23秒遅れた。英語版は2秒後の16:17:25 JSTに公開され（dev.to ID `5105849`）、APIとHTMLのcanonicalはいずれもQiitaの公開URLと一致した。[Qiita](https://qiita.com/hiro123/items/587233a9aae250422bfe)／[dev.to](https://dev.to/hirodeath/archive-retired-game-prototypes-while-checking-what-the-current-build-actually-launches-4lpn)
+
+18:36 JSTにmain `b547b4d` の原稿と10/8〜11/24の48組を照合した。日英96ページをログインなしで閲覧し、Qiita 42本とdev.to 48本の著者・タイトル・本文、Zenn 6本の公開状態・表示本文・リンクを確認した。英語版48本のcanonicalと既刊47組のID・初回公開日時も一致した。本日の公開runは1件で、テスト12件と日英の公開確認が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/45346819848)／[48組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-24.json)
+
+制作進捗表では70/90組が公開確認済み。残り20組の日本語版はQiita 17本とZenn 3本。次は11/25のQiita（O14）、次のZennは11/28、最終予定は12/14。期限超過の未完了はなく、追加dispatch・再投稿は行っていない。ART-48をDone、ART-1をIn Progressとして記録し、運用Wiki・機能一覧・Projectの次回Zenn日付も更新・読み戻し確認済み。[ART-48](https://app.plane.so/hiro-work/browse/ART-48/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
