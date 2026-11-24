@@ -5,11 +5,11 @@ tags:
   - Git
   - 個人開発
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-24T16:17:23+09:00"
+id: 587233a9aae250422bfe
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 採用しなかったゲーム試作を残す場合、ソースがGitにあることと、現在のゲームから遊べることを分けて確認します。VOLT NOMADのリポジトリでは、旧試作のコードと画像がarchiveへ移され、起動画面はVOLT NOMADへ直接進む構成になっていました。

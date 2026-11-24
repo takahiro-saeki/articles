@@ -1,8 +1,9 @@
 ---
+devto_id: 5105849
 title: "Archive retired game prototypes while checking what the current build actually launches"
-published: false
+published: true
 tags: gamedev, git, godot
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/587233a9aae250422bfe
 ---
 
 When retaining game prototypes that were not selected, distinguish code preserved in Git from games playable through the current application. In the VOLT NOMAD repository, old prototype code and images moved into an archive while startup was changed to open VOLT NOMAD directly.

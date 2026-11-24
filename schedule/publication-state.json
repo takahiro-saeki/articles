@@ -426,6 +426,15 @@
       "devto_id": 5097360,
       "devto_url": "https://dev.to/hirodeath/resume-a-long-codex-task-by-reconstructing-progress-from-its-evidence-files-4kal",
       "verified_at": "2026-11-23T07:26:37.389Z"
+    },
+    "game-prototype-archive-decisions": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/587233a9aae250422bfe",
+      "published_at": "2026-11-24T16:17:23+09:00",
+      "devto_id": 5105849,
+      "devto_url": "https://dev.to/hirodeath/archive-retired-game-prototypes-while-checking-what-the-current-build-actually-launches-4lpn",
+      "verified_at": "2026-11-24T07:17:22.466Z"
     }
   }
 }
