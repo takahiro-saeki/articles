@@ -1,15 +1,17 @@
 ---
-title: "ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する"
+title: ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する
 tags:
   - Godot
   - Git
   - 個人開発
 private: false
-updated_at: "2026-11-24T16:17:23+09:00"
+updated_at: '2026-11-24T18:40:11+09:00'
 id: 587233a9aae250422bfe
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 採用しなかったゲーム試作を残す場合、ソースがGitにあることと、現在のゲームから遊べることを分けて確認します。VOLT NOMADのリポジトリでは、旧試作のコードと画像がarchiveへ移され、起動画面はVOLT NOMADへ直接進む構成になっていました。
