@@ -239,7 +239,7 @@
 - O11: [ゲームの旧試作をarchiveへ移す。コードの保存と現在の起動対象を別々に確認する](public/game-prototype-archive-decisions.md) / [English](devto/game-prototype-archive-decisions.md)（制作完成・Qiita・予定2026-11-24・公開確認済み（2026-11-24））
 - O12: [itch.io提出前に揃えるゲーム外の成果物。説明文と画像の実体を確認する](articles/itch-submission-deliverables.md) / [English](devto/itch-submission-deliverables.md)（制作完成・Zenn・予定2026-09-29・公開確認済み（2026-10-08））
 - O13: [マウス・タッチ・ゲームパッドの入力を、画面と一押しの単位で揃える](public/game-input-support-sequence.md) / [English](devto/game-input-support-sequence.md)（制作完成・Qiita・予定2026-10-12・公開確認済み（2026-10-12））
-- O14: [日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける](public/bilingual-story-archive-qa.md) / [English](devto/bilingual-story-archive-qa.md)（制作完成・Qiita・予定2026-11-25・予約済み）
+- O14: [日英33イベントの確認表を再生成する。イベント数が合っても会話は抜ける](public/bilingual-story-archive-qa.md) / [English](devto/bilingual-story-archive-qa.md)（制作完成・Qiita・予定2026-11-25・公開確認済み（2026-11-25））
 - O15: [ゲームBGMの採用記録を、曲数・割当先・実ファイルで照合する](public/game-bgm-selection-log.md) / [English](devto/game-bgm-selection-log.md)（制作完成・Qiita・予定2026-10-13・公開確認済み（2026-10-13））
 - O16: [63秒から60秒へ。ゲームトレイラーの尺をコードと動画で照合する](public/trailer-timeline-before-editing.md) / [English](devto/trailer-timeline-before-editing.md)（制作完成・Qiita・予定2026-10-14・公開確認済み（2026-10-14））
 - O17: [AI生成素材の出典、原本、採否をどう残したか](articles/generated-asset-provenance-decisions.md) / [English](devto/generated-asset-provenance-decisions.md)（制作完成・Zenn・予定2026-09-30・公開確認済み（2026-10-08））

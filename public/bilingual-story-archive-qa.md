@@ -5,11 +5,11 @@ tags:
   - JavaScript
   - テスト
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-25T14:50:13+09:00"
+id: 31e053b830bb382ad2dc
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 VOLT NOMADには日英33イベントの会話カタログと、校正用Markdownを作るスクリプトがあります。固定版から再生成すると33イベント・101行の会話を確認できました。ただし、関数呼び出しを改行するだけで、イベント数は変わらず会話が1行抜けることも再現しました。

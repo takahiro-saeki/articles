@@ -1,8 +1,9 @@
 ---
+devto_id: 5113529
 title: "Regenerate a 33-event bilingual review table: matching event counts can still hide missing dialogue"
-published: false
+published: true
 tags: gamedev, godot, testing, javascript
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/31e053b830bb382ad2dc
 ---
 
 VOLT NOMAD has a bilingual catalogue of 33 story events and a script that produces a Markdown proofreading table. Regenerating the table from a fixed revision yielded 33 events and 101 dialogue rows. Adding a line break inside a function call also reproduced a missing dialogue row while the event count remained unchanged.
