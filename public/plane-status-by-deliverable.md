@@ -1,15 +1,17 @@
 ---
-title: "Planeの「確認待ち」をどのグループへ置くか。3プロジェクトの状態を点検する"
+title: Planeの「確認待ち」をどのグループへ置くか。3プロジェクトの状態を点検する
 tags:
-  - Plane
+  - plane
   - タスク管理
   - 個人開発
 private: false
-updated_at: "2026-11-26T14:40:21+09:00"
+updated_at: '2026-11-26T18:37:45+09:00'
 id: 0dc8ae7f9c437db797f9
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Planeで「確認待ち」を追加するときは、表示名を決める前に、その作業が完了済みかを決めます。確認が受け入れ条件に含まれるなら、表示名にかかわらず未完了のグループへ置きます。
