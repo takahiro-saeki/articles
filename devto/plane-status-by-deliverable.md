@@ -1,8 +1,9 @@
 ---
+devto_id: 5121757
 title: "Choosing a Plane state group for work that is waiting for verification"
-published: false
+published: true
 tags: plane, productivity, projectmanagement
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/0dc8ae7f9c437db797f9
 ---
 
 Before adding a state called "Ready for verification" in Plane, decide whether the work is complete. If verification belongs to its acceptance criteria, changing the display name should still leave it in an unfinished group.

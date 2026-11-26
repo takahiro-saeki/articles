@@ -5,11 +5,11 @@ tags:
   - タスク管理
   - 個人開発
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-26T14:40:21+09:00"
+id: 0dc8ae7f9c437db797f9
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 Planeで「確認待ち」を追加するときは、表示名を決める前に、その作業が完了済みかを決めます。確認が受け入れ条件に含まれるなら、表示名にかかわらず未完了のグループへ置きます。

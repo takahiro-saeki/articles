@@ -444,6 +444,15 @@
       "devto_id": 5113529,
       "devto_url": "https://dev.to/hirodeath/regenerate-a-33-event-bilingual-review-table-matching-event-counts-can-still-hide-missing-dialogue-k22",
       "verified_at": "2026-11-25T08:22:01.761Z"
+    },
+    "plane-status-by-deliverable": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/0dc8ae7f9c437db797f9",
+      "published_at": "2026-11-26T14:40:21+09:00",
+      "devto_id": 5121757,
+      "devto_url": "https://dev.to/hirodeath/choosing-a-plane-state-group-for-work-that-is-waiting-for-verification-3563",
+      "verified_at": "2026-11-26T05:40:21.019Z"
     }
   }
 }
