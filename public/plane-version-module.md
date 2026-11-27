@@ -1,15 +1,17 @@
 ---
-title: "PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく"
+title: PlaneのModuleをバージョン単位にする前に、配布物の識別情報を分けておく
 tags:
-  - Plane
-  - Expo
+  - plane
+  - expo
   - 個人開発
 private: false
-updated_at: "2026-11-27T14:34:31+09:00"
+updated_at: '2026-11-27T18:35:57+09:00'
 id: faad87b314d8c7111a04
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 「1.0.11の確認」と書いてあっても、どのアプリを確認したかは一意に決まりません。iOSとAndroidがあり、同じ表示バージョンでもビルドし直すことがあるからです。
