@@ -1,8 +1,9 @@
 ---
+devto_id: 5129833
 title: "A version-named Plane Module still needs evidence identifying the tested build"
-published: false
+published: true
 tags: plane, expo, projectmanagement
-canonical_url: null
+canonical_url: https://qiita.com/hiro123/items/faad87b314d8c7111a04
 ---
 
 "Verified 1.0.11" does not uniquely identify an app. There may be iOS and Android builds, and a rebuild can retain the same version displayed to users.

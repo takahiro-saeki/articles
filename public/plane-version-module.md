@@ -5,11 +5,11 @@ tags:
   - Expo
   - 個人開発
 private: false
-updated_at: null
-id: null
+updated_at: "2026-11-27T14:34:31+09:00"
+id: faad87b314d8c7111a04
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 「1.0.11の確認」と書いてあっても、どのアプリを確認したかは一意に決まりません。iOSとAndroidがあり、同じ表示バージョンでもビルドし直すことがあるからです。

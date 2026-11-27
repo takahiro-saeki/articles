@@ -453,6 +453,15 @@
       "devto_id": 5121757,
       "devto_url": "https://dev.to/hirodeath/choosing-a-plane-state-group-for-work-that-is-waiting-for-verification-3563",
       "verified_at": "2026-11-26T08:06:40.966Z"
+    },
+    "plane-version-module": {
+      "platform": "qiita",
+      "status": "verified",
+      "canonical_url": "https://qiita.com/hiro123/items/faad87b314d8c7111a04",
+      "published_at": "2026-11-27T14:34:31+09:00",
+      "devto_id": 5129833,
+      "devto_url": "https://dev.to/hirodeath/a-version-named-plane-module-still-needs-evidence-identifying-the-tested-build-13ip",
+      "verified_at": "2026-11-27T05:34:30.914Z"
     }
   }
 }
