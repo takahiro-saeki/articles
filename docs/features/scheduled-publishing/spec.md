@@ -2,7 +2,7 @@
 
 - 機能ID: scheduled-publishing
 - 対象: 個人リポジトリ takahiro-saeki/articles
-- 最終確認日: 2026-11-27 18:33 JST
+- 最終確認日: 2026-11-28 18:37 JST
 - 比較基準: main c393e18960b3712b655e01a646aea44aafeb2efb
 - 変更ブランチ: codex/weekly-zenn-qiita
 - Plane: [articles (ART)](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/issues/)。2026-10-08のユーザー依頼でhiro-workに作成。[運用Wiki](https://app.plane.so/hiro-work/projects/d4c06eb2-dcab-4871-a8ff-53e3a5427398/pages/3dbae505-c466-448f-9122-8611396127b4)へ同期・読み戻し確認済み。
@@ -51,7 +51,7 @@ GitHub Actionsの予約実行には遅延があるため09:00は目標時刻で�
 
 - 実装: main反映済み（初回2ecfa9a、結果反映2a88b12、待機ジョブのcheckout修正1827ba3）。再実行37710179409でメタデータ保存まで確認。
 - 検証: publisherの12ケース、90組dry-run、180本文・タイトル不変、frontmatter・canonical・タグ数・コードフェンス・重複・予約日を照合。
-- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17・10/24・10/31・11/7・11/14・11/21の公開を確認し、次回は11/28。以後の予定分は未実行。
+- 配信: 予約workflowはactive。10/8のQiita公開と既存英語版canonical更新をworkflowの公開API照合とログアウト状態のブラウザで確認済み。週1回のZennは10/17・10/24・10/31・11/7・11/14・11/21・11/28の公開を確認し、次回は12/5。以後の予定分は未実行。
 - Webアプリ画面・iOS・Android・Cloudflare構成: 対象外。
 - 検証結果・実公開URL: [移行記録](../../../production/2026-09/scheduling/weekly-zenn/README.md)。
 
@@ -476,3 +476,11 @@ P09「PlaneのModuleをバージョン単位にする前に、配布物の識別
 18:33 JSTにmain `fe6accd` の原稿と10/8〜11/27の51組を照合した。日英102ページをログインなしで閲覧し、Qiita 45本・Zenn 6本・dev.to 51本の公開APIと実ページを確認した。英語版51本のcanonical、既刊50組のID・初回公開日時が一致した。予約実行の公開・再確認の両runでテスト12件と日英の公開確認が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/45946596332)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/45964401867)／[51組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-27.json)
 
 現行mainの制作進捗表では73/90組が公開確認済み。残り17組の日本語版はQiita 14本とZenn 3本。次は11/28のZenn（T19）。期限超過の未完了はなく、公開は予約実行で完了した。ART-51をDone、ART-1をIn Progressとして記録し、運用Wikiと機能一覧を読み戻した。[ART-51](https://app.plane.so/hiro-work/browse/ART-51/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
+
+### 2026-11-28の公開確認
+
+T19「Client境界を増やすとbundleは増えるか。境界1か所と2か所を実際に比べる」は14:11:32.918 JSTにZennで公開された（ID 649901）。09:00の目標から5時間11分32.918秒遅れた。英語版は14:12:01 JSTに公開された（dev.to ID 5136750）。APIとHTMLのcanonicalはいずれも日本語版の公開URLと一致した。[Zenn](https://zenn.dev/hirodeath/articles/rsc-client-boundary-bundle)／[dev.to](https://dev.to/hirodeath/do-more-client-boundaries-mean-more-javascript-comparing-one-entry-with-two-2ahm)
+
+18:37 JSTにmain `3ef8528` の原稿と10/8〜11/28の52組を照合した。日英104ページを認証なしで取得し、Qiita 45本・Zenn 7本・dev.to 52本の公開APIと実ページを確認した。既刊51組のID・初回公開日時と、英語52本のAPI・HTMLのcanonicalが一致した。公開と再確認の両runでテスト12件と日英公開検証が成功した。[公開run](https://github.com/takahiro-saeki/articles/actions/runs/46110944454)／[再確認run](https://github.com/takahiro-saeki/articles/actions/runs/46122135026)／[52組の点検記録](../../../production/2026-09/scheduling/publication-check-2026-11-28.json)
+
+制作進捗表では74/90組が公開確認済み。残り16組は日本語のQiita 14本とZenn 2本。次は11/29のQiita（P16）、次のZennは12/5、最終予定は12/14。期限超過の未完了はなく、公開は予約実行で完了した。ART-52をDone、ART-1をIn Progressとして記録した。[ART-52](https://app.plane.so/hiro-work/browse/ART-52/)／[ART-1](https://app.plane.so/hiro-work/browse/ART-1/)
