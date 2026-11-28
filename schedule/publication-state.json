@@ -462,6 +462,11 @@
       "devto_id": 5129833,
       "devto_url": "https://dev.to/hirodeath/a-version-named-plane-module-still-needs-evidence-identifying-the-tested-build-13ip",
       "verified_at": "2026-11-27T08:16:36.208Z"
+    },
+    "rsc-client-boundary-bundle": {
+      "platform": "zenn",
+      "status": "awaiting_deployment",
+      "requested_at": "2026-11-28T05:11:28.295Z"
     }
   }
 }

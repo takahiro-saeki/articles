@@ -3,7 +3,7 @@ title: "Client境界を増やすとbundleは増えるか。境界1か所と2か�
 emoji: "📦"
 type: "tech"
 topics: ["nextjs", "react", "frontend", "performance"]
-published: false
+published: true
 ---
 
 `'use client'`を減らせばJavaScriptも減る、とは限りません。今回、ページ全体を一つのClient Componentにした構成より、二つのボタンを別々のClient Componentにした構成のほうが、初回HTMLから読み込むJavaScriptは22,883 bytes少なくなりました。
