@@ -1,9 +1,10 @@
 ---
+devto_id: 5136750
 title: "Do more Client boundaries mean more JavaScript? Comparing one entry with two"
-published: false
+published: true
 description: "Three equivalent Next.js pages show why imported dependencies matter more than counting use client directives."
 tags: [nextjs, react, performance, webdev]
-canonical_url: "https://zenn.dev/hirodeath/articles/rsc-client-boundary-bundle"
+canonical_url: https://zenn.dev/hirodeath/articles/rsc-client-boundary-bundle
 ---
 
 Fewer `'use client'` directives do not necessarily mean less JavaScript. In this experiment, putting two buttons in separate Client Components required 22,883 fewer bytes of JavaScript referenced by the initial HTML than making the whole page one Client Component.

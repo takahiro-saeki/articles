@@ -1,7 +1,7 @@
 {
   "last_zenn_publication": {
-    "slug": "plane-cloud-self-host-comparison",
-    "published_at": "2026-11-21T13:29:49.292+09:00"
+    "slug": "rsc-client-boundary-bundle",
+    "published_at": "2026-11-28T14:11:32.918+09:00"
   },
   "articles": {
     "node-esm-commonjs-boundaries": {
@@ -465,8 +465,12 @@
     },
     "rsc-client-boundary-bundle": {
       "platform": "zenn",
-      "status": "awaiting_deployment",
-      "requested_at": "2026-11-28T05:11:28.295Z"
+      "status": "verified",
+      "canonical_url": "https://zenn.dev/hirodeath/articles/rsc-client-boundary-bundle",
+      "published_at": "2026-11-28T14:11:32.918+09:00",
+      "devto_id": 5136750,
+      "devto_url": "https://dev.to/hirodeath/do-more-client-boundaries-mean-more-javascript-comparing-one-entry-with-two-2ahm",
+      "verified_at": "2026-11-28T05:12:00.550Z"
     }
   }
 }
